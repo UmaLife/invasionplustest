@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>InvasionPlus</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial,sans-serif;
+        }
+        body{
+            background: #000;
+            color: #fff;
+        }
+        .navbar{
+            display: flex;
+            position: relative;
+            align-items: center;
+            padding: 20px 40px;
+            background: black;
+        }
+        .logo{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .logo img
+        {
+            height:45px;
+            object-fit:contain;
+        }
+        .nav-icons{
+            margin-left: auto;
+        }
+        .search-icon{
+            color: #fff;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .search-overlay{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            background: rgba(20, 20, 20, 0.95);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: translateY(-100%);
+            transition: 0.4s ease;
+            z-index: 999;
+            pointer-events: none;
+            opacity: 0;
+        }
+        .search-overlay.active{
+            transform: translateY(0);
+            pointer-events: auto;
+            opacity: 1;
+        }
+        .search-box{
+            position: relative;
+            width: 60%;
+        }
+        .search-box input{
+            width: 100%;
+            padding: 20px;
+            font-size: 15px;
+            border: none;
+            border-bottom:1px solid #949494;
+            background: transparent;
+            color: #fff;
+            outline: none;
+            text-align: center;
+        }
+        .close-btn{
+            position: absolute;
+            top: -60px;
+            right: 0;
+            font-size: 15px;
+            color:white;
+            cursor: pointer;
+        }
+        .homepage.blur{
+            opacity: 0.3;
+            transition: 0.3;
+        }
+    </style>
+</head>
+<body>
+    <!--navigation bar-->
+    <div class="navbar">
+        <div class="logo"><img src="static/logo1.jpeg"alt="logo"></div>
+        <div class="nav-icons">
+            <div class="search-icon" onclick="openSearch()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+    </div>
+<!---Overlay Search-->
+    <div id="searchOverlay" class="search-overlay">
+        <div class="search-box">
+            <input type="text" placeholder="Search your product" autofocus>
+            <i class="fa-solid fa-xmark close-btn" onclick="closeSearch()"></i>
+        </div>
+    </div>
+    <div class="homepage" id="homepage">
+
+    </div>
+
+
+
+<script>
+    function openSearch(){
+        document.getElementById("searchOverlay").classList.toggle("active");
+        document.getElementById("homepage").classList.toggle("blur");
+    }
+    function closeSearch(){
+        document.getElementById("searchOverlay").classList.remove("active");
+        document.getElementById("homepage").classList.remove("blur");
+    }
+</script>
+</body>
+</html>
