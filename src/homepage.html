@@ -50,9 +50,9 @@
         </div>
         <ul>
             <li onclick="openProductPanel()">Product</li>
-            <li>Software</li>
-            <li>Contact</li>
-            <li>About Us</li>
+            <li onclick="closeProductPanel()">Software</li>
+            <li onclick="closeProductPanel()">Contact</li>
+            <li onclick="closeProductPanel()">About Us</li>
         </ul>
         <div class="menu-logo">
             <img src="static/logo.png"alt="logo">
@@ -129,10 +129,26 @@
         document.getElementById("sideMenu").classList.toggle("active");
     }
     function closeMenu(){
-        document.getElementById("sideMenu").classList.remove("active");
+    document.getElementById("sideMenu").classList.remove("active");
+    document.getElementById("productPanel").classList.remove("active");
     }
     function openProductPanel(){
-        document.getElementById("productPanel").classList.toggle("active");
+        let menu = document.getElementById("sideMenu");
+        let panel = document.getElementById("productPanel");
+
+        // if already open → close it
+        if(panel.classList.contains("active")){
+            panel.classList.remove("active");
+            menu.classList.remove("shift");
+        } 
+        else {
+            panel.classList.add("active");
+            menu.classList.add("shift");
+        }
+    }
+    function closeProductPanel(){
+    document.getElementById("productPanel").classList.remove("active");
+    document.getElementById("sideMenu").classList.remove("shift");
     }
     
 </script>
