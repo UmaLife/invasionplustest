@@ -55,9 +55,7 @@
             <li onclick="closeProductPanel()">About Us</li>
         </ul>
         <div class="menu-logo">
-            <a href="homepage.html">
             <img src="static/logo.png"alt="logo">
-            </a>
         </div>
         <i class="fa-solid fa-xmark menu-close" onclick="closeMenu()"></i>
         </div>
@@ -76,82 +74,12 @@
             <img src="static/monitor.png">
             <span>Monitor</span>
         </a>
-        </div>
+
     </div>
-    <section class="banner-container">
-        <div class="slides" id="slides">
-            <div class="silde">
-                <img src="static/banner1 .png">
-                <div class="slide-content">
-                <h1>New Model 2026</h1>
-                <a href="#" class="learn-more">LEARN MORE ></a>
-                </div>
-            </div>
-            <div class="slide">
-                <img src="static/banner2.png">
-                <div class="slide-content">
-                <h1>High Performance</h1>
-                <a href="#" class="learn-more">LEARN MORE ></a>
-                </div>
-            </div>
-            <div class="slide">
-                <img src="static/banner3.png">
-                <div class="slide-content">
-                <h1>Future Tech</h1>
-                <a href="#" class="learn-more">LEARN MORE ></a>
-                </div>
-            </div>
-        </div>
-        <div class="banner-nav">
-            <div class="nav-item active" onclick="goToSlide(0)">
-                <div class="nav-progress"></div>
-            </div>
-            <div class="nav-item " onclick="goToSlide(1)">
-                <div class="nav-progress"></div>
-            </div>
-            <div class="nav-item" onclick="goToSlide(2)">
-                <div class="nav-progress"></div>
-            </div>
-        </div>
-    </section>
-    <!--category-->
-    <section class="category-section">
-        <h2>Explore By Category</h2>
-        <div class="category-grid">
-            <div>
-                <div class="cat-card">
-                    <img src="static/cooling.png">
-                </div>
-                <p class="cat-label">Cooler</p>
-            </div>
-            <div>
-                <div class="cat-card">
-                    <img src="static/cases.png">
-                </div>
-                <p class="cat-label">Case</p>
-            </div>
-            <div>
-                <div class="cat-card">
-                    <img src="static/monitor.png">
-                </div>
-                <p class="cat-label">Monitor</p>
-            </div>
-        </div>
-    </section>
-    <!--video-->
-    <section class="video-section">
-        <div class="video-wrapper">
-            <div class="video-card">
-                <video src="static/video1.mp4" muted loop onmouseover="this.play()" onmouseout="this.pause"></video>
-            </div>
-            <div class="video-card">
-                <video src="static/video2.mp4" muted loop onmouseover="this.play()" onmouseout="this.pause"></video>
-            </div>
-            <div class="video-card">
-                <video src="static/video3.mp4" muted loop onmouseover="this.play()" onmouseout="this.pause"></video>
-            </div>
-        </div>
-    </section>
+    </div>
+    <div class="homepage" id="homepage">
+
+    </div>
 
     <!--footer-->
     <footer class="site-footer">
@@ -181,7 +109,7 @@
                     <a href="#"><i class="fa-regular fa-envelope"></i></a>
                     <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
                     <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/invasion.my?igsh=ajB0NTlydGd1bnd5"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
                     <a href="#"><i class="fa-brands fa-tiktok"></i></a>
                 </div>
             </div>
@@ -222,28 +150,8 @@
     document.getElementById("productPanel").classList.remove("active");
     document.getElementById("sideMenu").classList.remove("shift");
     }
-
-    let currentSlide=0;
-    const slides=document.getElementById('slides');
-    const navItems=document.querySelectorAll('.nav-item');
-    function updateSlider() {
-        slides.style.transform = `translateX(-${currentSlide * 100}%)`;
-        navItems.forEach((item, index) => {
-            item.classList.toggle('active', index === currentSlide);
-        });
-    }
-
-    function nextSlide() {
-        currentSlide = (currentSlide + 1) % 3;
-        updateSlider();
-    }
-    function goToSlide(index) {
-        currentSlide = index;
-        updateSlider();
-    }
-
-    setInterval(nextSlide, 5000);
     
 </script>
 </body>
+<script src="set.js"></script>
 </html>
