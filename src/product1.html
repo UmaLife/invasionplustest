@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="static/style.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+    <title>InvasionPlus</title>
+
+</head>
+<body>
+        <div class="main-content">
+
+    <div class="product-section">
+
+    <h1>Product 1</h1>
+
+    <div id="viewer-container">
+    </div>
+
+</div>
+</div>
+
+   
+<script src="BorderGlow.js"></script>
+<border-glow color="280 80 60" intensity="0.8">
+<div id="viewer-container" style="width: 100%; height: 500px;">
+    <model-viewer 
+        src="./static/model.glb"
+        alt="InvasionPlus Product Model"
+        auto-rotate 
+        camera-controls 
+        shadow-intensity="2" 
+        environment-image="neutral"
+        exposure="1.2"
+        interaction-prompt="auto"
+        style="width: 100%; height: 100%; --poster-color: transparent;">
+        
+        <!-- Slot for a loading label -->
+        <div slot="poster" style="color: white; display: flex; justify-content: center; align-items: center; height: 100%;">
+            <p>Loading 3D Model...</p>
+        </div>
+    </model-viewer>
+</div>
+</border-glow>
+
+<border-glow color="150 80 50">
+    <p>Another reusable section!</p>
+</border-glow>
+
+
+<script src="set.js"></script>
+
+</body>
+</html>

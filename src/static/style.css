@@ -312,3 +312,39 @@ body{
         margin-bottom: 30px;
     }
 }
+
+/* product animation */
+#viewer-container {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin: 20px 0;
+    cursor: grab;
+    width: 10px; 
+    
+}
+
+#viewer-container:active {
+    cursor: grabbing;
+}
+
+/* This adds space around the whole glowing box */
+border-glow {
+    margin: 40px auto;    /* 40px space top/bottom, 'auto' centers it left/right */
+    width: 90%;           /* Box takes up 90% of screen width */
+    max-width: 1200px;    /* Prevents it from getting too huge on big monitors */
+    display: block;       /* Necessary for the margins to work properly */
+}
+
+.text-type {
+  display: inline-block;
+  white-space: pre-wrap;
+}
+
+.text-type__cursor {
+  margin-left: 0.25rem;
+  display: inline-block;
+  opacity: 1;
+}
+
+.text-type__cursor--hidden {
+  display: none;
+}
