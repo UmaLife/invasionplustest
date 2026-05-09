@@ -6,12 +6,95 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="static/style.css">
     <title>InvasionPlus</title>
-
 </head>
-<body>
-    
-    <div class="homepage" id="homepage">
-    </div>
+<body>    
+    <section class="banner-container">
+        <div id="light-rays-canvas-container" class="rays-background"></div>
+
+        <div class="sticky-wrapper">
+            
+            <div class="sticky-slide">
+                <div class="image-box" style="background: transparent;">
+                    <div class="slide-content">
+                        <h1>Invasion Plus</h1>
+                        <p>Experience the New Standard</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sticky-slide">
+                <div class="image-box">
+                    <img src="static/banner1.png" alt="New Model">
+                    <div class="slide-content">
+                        <h1>New Model 2026</h1>
+                        <a href="#" class="learn-more">LEARN MORE ></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sticky-slide">
+                <div class="image-box">
+                    <img src="static/banner2.png" alt="High Performance">
+                    <div class="slide-content">
+                        <h1>High Performance</h1>
+                        <a href="#" class="learn-more">LEARN MORE ></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sticky-slide">
+                <div class="image-box">
+                    <img src="static/banner3.png" alt="Future Tech">
+                    <div class="slide-content">
+                        <h1>Future Tech</h1>
+                        <a href="#" class="learn-more">LEARN MORE ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--category-->
+    <section class="category-section">
+        <h2>Explore By Category</h2>
+        <div class="category-grid">
+            <div>
+                <div class="cat-card">
+                    <img src="static/cate2.png">
+                </div>
+                <p class="cat-label">Cooler</p>
+            </div>
+            <div>
+                <div class="cat-card">
+                    <img src="static/cate1.png">
+                </div>
+                <p class="cat-label">Case</p>
+            </div>
+            <div>
+                <div class="cat-card">
+                    <img src="static/cate3.png">
+                </div>
+                <p class="cat-label">Monitor</p>
+            </div>
+        </div>
+    </section>
+    <!--video-->
+    <section class="video-section">
+        <div class="video-wrapper">
+            <div class="video-card">
+                <video src="static/video1.mp4" muted loop onmouseover="this.play()" onmouseout="this.pause"></video>
+            </div>
+            <div class="video-card">
+                <video src="static/video2.mp4" muted loop onmouseover="this.play()" onmouseout="this.pause"></video>
+            </div>
+            <div class="video-card">
+                <video src="static/video3.mp4" muted loop onmouseover="this.play()" onmouseout="this.pause"></video>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/ogl"></script>
+    <script src="static/lightrays.js"></script>
+    <script src="static/home.js"></script>
 </body>
-<script src="set.js"></script>
+<script src="set.js">
+</script>
 </html>
