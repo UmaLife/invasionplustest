@@ -374,16 +374,25 @@ border-glow {
     }
 }
 #topic-text {
-    display: block;        
-    margin-bottom: 30px;  
-    font-size: 3.2rem;     
+    display: inline-block;        
+    margin-bottom: 15px;  
+    font-size: 2rem;     
     color: white;
+    font-weight: 300; 
+    will-change: transform, opacity, letter-spacing;
+    z-index: 20;
+            width: 90%;
+            max-width: 800px;
+            letter-spacing: 0.2em; 
 }
 
 #description-text {
-    line-height: 1.6;     
+    text-align: left;
+    line-height: 2;     
     opacity: 0.9;
-    color:#949494
+    color:#949494;
+    letter-spacing: 0.1em; 
+
 }
 
 .typed-cursor {
@@ -413,4 +422,8 @@ border-glow {
 #lightRaysCanvas {
     width: 100%;
     height: 100%;
+}
+
+.site-footer {
+    scroll-snap-align: end;
 }

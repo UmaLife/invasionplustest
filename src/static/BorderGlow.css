@@ -204,18 +204,16 @@ border-glow {
 }
 
  * { margin: 0; padding: 0; box-sizing: border-box; }
-        body, html { 
-            background-color: #080b12; 
-            color: white; 
-            font-family: sans-serif;
-            overflow-x: hidden;
-        }
+        html, body {
+    height: auto; 
+    overflow-y: auto; /* Enable outside scroll */
+    overflow-x: hidden;
+    margin: 0;
+}
 
         .scroll-container {
-            height: 100vh;
-            overflow-y: scroll;
-            scroll-snap-type: y mandatory;
-            scroll-behavior: smooth;
+           height: auto; /* Let it grow with content */
+         overflow: visible; /* Don't trap the scroll here */
         }
 
         section {
@@ -256,11 +254,9 @@ border-glow {
 
 #titleS2 {
     font-size: 2rem;
-    font-weight: 600; 
-
+    font-weight: 300; 
     margin-bottom: 20px;
     color: #ffffff;
-    will-change: transform, opacity, letter-spacing;
 }
 
 .description {
@@ -299,4 +295,37 @@ border-glow {
         h2 { font-size: 4rem; opacity: 0.8; }
         p { color: #6366f1; font-weight: bold; margin-bottom: 10px; letter-spacing: 2px; }
 
-        
+.product-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center; /* This centers the card vertically */
+    justify-content: center;
+    
+    /* ADJUST THIS: Negative margin pulls the section up into the gap */
+    margin-top: -100px; 
+    
+    /* Ensure it aligns with your snap settings */
+    scroll-snap-align: start;
+    position: relative;
+    background: transparent;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Aligns content to the top */
+    padding-top: 50px; /* Precise control over the top gap */
+}
+
+.product-section3 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* This "justifies" the border box to the top to close the gap */
+    justify-content: flex-start; 
+    align-items: center;
+    padding-top: 2vh; /* Small gap from the top */
+    scroll-snap-align: start;
+    box-sizing: border-box;
+}

@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product2 - LightRays Integration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="static/BorderGlow.css">
+    <link rel="stylesheet" href="static/style.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script type="importmap">
     {
         "imports": {
@@ -12,14 +16,14 @@
         }
     }
     </script>
+    
 </head>
 <body>
-
     <div class="scroll-container" id="scrollBox">
         <section class="section-1">
             <div class="text-content">
-                <p>Welcome</p>
-                <h1>Creative<br>Full-Stack<br>Developer</h1>
+                <p>E20</p>
+                <h1>Cases<br></h1>
             </div>
         </section>
 
@@ -29,7 +33,7 @@
             <div class="text-content" style="position: relative; z-index: 2;">
                 <h3 id="titleS2">Optimized for Maximum Airflow</h3>
                 <p class="description">
-                    Experience peak performance with a chassis designed for high-end cooling. 
+                    Experience peak performance with a chassis designed for high-end cooling. The E20 series supports up to nine 120mm fans for ultimate thermal control.
                 </p>
             </div>
 
@@ -38,67 +42,114 @@
             </div>
         </section>
 
-        <section class="section-3" id="s3">
-        <p>ddd</p></section>
+         <section class="product-section3">
+            <script src="scroll.js"></script>
+            <div class="containerscroll">
+            <div class="cardscroll" id="tilt-cardscroll">
+            </div>
+            </div>
+
+            <script src="BorderGlow.js"></script>
+            <border-glow color="280 80 60" intensity="0.8">
+                <div class="product-flex-container">
+                    
+                    <div class="product-text">
+                        <h1 id="topic-text"></h1> 
+                        <p id="description-text"></p>
+                    </div>
+
+                    <div class="product-visual">
+                        <model-viewer 
+                            src="./static/model.glb"
+                            alt="InvasionPlus Product Model"
+                            auto-rotate 
+                            camera-controls 
+                            shadow-intensity="2" 
+                            interaction-prompt="none"
+                            >
+                        </model-viewer>
+                    </div>
+
+                </div>
+            </border-glow>
+
+            <script src="set.js"></script>
+            <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+            <script>
+            // 1. First, type the Topic
+            var typedTopic = new Typed('#topic-text', {
+                strings: ["Tool - Free Access"],
+                typeSpeed: 10,
+                showCursor: true,
+                onComplete: function(self) {
+                // Hide the first cursor when finished
+                self.cursor.style.display = 'none';
+                
+                // 2. Start typing the Description only AFTER Topic is done
+                new Typed('#description-text', {
+                    strings: ["Panel are effortlessly removable to streamline system building, component upgrades, and routine maintanence"],
+                    typeSpeed: 5,
+                    loop: false // Stays there forever
+                });
+                }
+            });
+            </script>
+        </section>
     </div>
 
     <script type="module">
-        // Direct relative import is usually safer for local files
-        import { LightRaysNative } from './lightray.js';
+    import { LightRaysNative } from './lightray.js';
 
-        // Initialize Light Rays
-        const raysContainer = document.getElementById('light-rays-container');
-        if (raysContainer) {
-            new LightRaysNative(raysContainer, {
-                raysColor: "#ffffff",
-                lightSpread: 0.6
-            });
-        }
+    // 1. Initialize Light Rays
+    const raysContainer = document.getElementById('light-rays-container');
+    if (raysContainer) {
+        new LightRaysNative(raysContainer, {
+            raysColor: "#ffffff",
+            lightSpread: 0.6
+        });
+    }
 
-        // Scroll Logic
-        const scrollBox = document.getElementById('scrollBox');
+    // 2. Animation Logic (Controlled by Outside Scroll)
+    window.addEventListener('scroll', () => {
+        // Use window.scrollY because the scroll is now on the "outside"
+        const scrollTop = window.scrollY;
+        const vh = window.innerHeight;
+
+        // Calculate progress (p)
+        // We divide by vh so the animation completes as you scroll through the first section
+        let progress = scrollTop / vh;
+        let p = Math.max(0, Math.min(1, progress));
+
         const photo = document.getElementById('photo');
         const titleS2 = document.getElementById('titleS2');
+        const description = document.querySelector('.description');
 
-       scrollBox.addEventListener('scroll', () => {
-    const scrollTop = scrollBox.scrollTop;
-    const vh = window.innerHeight;
-    const vw = window.innerWidth;
+        // Image Animation with your specific edits
+        if (photo) {
+            photo.style.opacity = p;
+            const scale = 0.35 + (p * 0.4); 
+            const slideEffect = (1 - p) * 450; 
+            const extraDown = p * -80; 
+            
+            // Kept your 117% and -80 shift
+            photo.style.transform = `translate(calc(117% + ${slideEffect}px), calc(-50% + ${extraDown}px)) scale(${scale})`;
+        }
 
-    let progress = scrollTop / vh;
-    let p = Math.max(0, Math.min(1, progress));
+        // Succession Text Animation
+        if (titleS2) {
+            titleS2.style.opacity = p;
+            const drift = (1 - p) * 30;
+            titleS2.style.transform = `translateY(${drift}px)`;
+            titleS2.style.letterSpacing = `${0.1 + (p * 0.2)}em`;
+        }
 
-  
-    photo.style.opacity = p;
-    const scale = 0.35 + (p * 0.4); 
-    const slideEffect = (1 - p) * 450; 
-    const extraDown = p * -80; 
-    photo.style.transform = `translate(calc(117% + ${slideEffect}px), calc(-50% + ${extraDown}px)) scale(${scale})`;
-
-    // --- SUCCESSION TEXT ANIMATION ---
-    const titleS2 = document.getElementById('titleS2');
-    const description = document.querySelector('.description');
-
-    if (titleS2) {
-        // 1. Fade in
-        titleS2.style.opacity = p;
-        
-        // 2. Subtle upward drift: starts 30px down, moves to 0
-        const drift = (1 - p) * 30;
-        titleS2.style.transform = `translateY(${drift}px)`;
-        
-        // 3. Dynamic letter spacing: starts tight, expands slightly
-        // Succession titles often feel like they are "breathing"
-        titleS2.style.letterSpacing = `${0.1 + (p * 0.2)}em`;
-    }
-
-    if (description) {
-        // Delay the description slightly by squaring the progress or using a threshold
-        const descP = Math.max(0, (p - 0.2) / 0.8); 
-        description.style.opacity = descP;
-        description.style.transform = `translateY(${(1 - descP) * 20}px)`;
-    }
-});
-    </script>
+        if (description) {
+            const descP = Math.max(0, (p - 0.2) / 0.8); 
+            description.style.opacity = descP;
+            description.style.transform = `translateY(${(1 - descP) * 20}px)`;
+        }
+    });
+</script>
+    <script src="set.js"></script>
 </body>
 </html>
