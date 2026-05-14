@@ -1,4 +1,5 @@
 import { LightRaysNative } from './lightray.js';
+import './magicbento.js';
 
 const raysContainer = document.querySelector('.rays-container');
 
@@ -77,9 +78,7 @@ function updateSlides() {
 }
 
 window.addEventListener('scroll', updateSlides);
-
 window.addEventListener('load', updateSlides);
-
 updateSlides();
 
 dots.forEach((dot, i) => {
@@ -99,46 +98,4 @@ dots.forEach((dot, i) => {
 
     });
 
-});
-
-const videos = document.querySelectorAll(".video-slide");
-const nextBtn = document.querySelector(".video-btn.next");
-const prevBtn = document.querySelector(".video-btn.prev");
-
-let index = 0;
-
-function showVideo(i) {
-    videos.forEach(v => v.classList.remove("active"));
-    videos[i].classList.add("active");
-    videos[i].currentTime = 0;
-    videos[i].play();
-}
-
-nextBtn.addEventListener("click", () => {
-    index = (index + 1) % videos.length;
-    showVideo(index);
-});
-
-prevBtn.addEventListener("click", () => {
-    index = (index - 1 + videos.length) % videos.length;
-    showVideo(index);
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    const observerOptions = {
-        threshold: 0.2 
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.querySelector('.reveal-content').classList.add('active');
-            }
-        });
-    }, observerOptions);
-
-    const thankYouSection = document.querySelector('.thank-you-section');
-    if (thankYouSection) {
-        observer.observe(thankYouSection);
-    }
 });
