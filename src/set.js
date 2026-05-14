@@ -26,9 +26,15 @@ const footerTemplate = `
             <div class="social-icons">
                 <a href="#"><i class="fa-regular fa-envelope"></i></a>
                 <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.facebook.com/InvasionPlus" target="_blank" title="Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Finvasionplus%3Figsh%3DMWdheTRocjluNmN6Yw%253D%253D&is_from_rle" target="_blank" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@invasionplus" target="_blank" title="TikTok">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
             </div>
         </div>
     </div>
