@@ -57,7 +57,7 @@ class BorderGlow extends HTMLElement {
         };
 
         // Start the intro after a tiny delay so the CSS has time to load
-        setTimeout(runIntro, 100);
+        this.runIntro = runIntro;
 
         // --- 3. MOUSE TRACKING LOGIC ---
         this.ownerDocument.addEventListener('mousemove', (e) => {

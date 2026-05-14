@@ -4,7 +4,6 @@ import { Canvas, useFrame, useLoader, useThree, invalidate } from '@react-three/
 import { OrbitControls, useGLTF, useFBX, useProgress, Html, Environment, ContactShadows } from '@react-three/drei';
 import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader';
 import * as THREE from 'three';
-import TextType from './components/TextType';
 
 const isTouch = typeof window !== 'undefined' && ('ontouchstart' in window || navigator.maxTouchPoints > 0);
 const deg2rad = d => (d * Math.PI) / 180;

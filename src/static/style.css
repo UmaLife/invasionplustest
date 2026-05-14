@@ -10,7 +10,16 @@
 body{
     background: #000;
     color: #fff;
+    min-width: 1200px;
+    overflow-x: auto;
     }
+
+section {
+    width: 100%;
+    display: block;
+    clear: both;        /* Prevents floating elements from clashing */
+}
+
 .navbar{
     display: flex;
     position: relative;
@@ -573,6 +582,8 @@ border-glow {
     opacity: 0.9;
     color:#949494;
     letter-spacing: 0.1em; 
+    max-width: 500px;
+    margin: 0 auto;
 
 }
 
@@ -607,4 +618,151 @@ border-glow {
 
 .site-footer {
     scroll-snap-align: end;
+}
+
+.spec-container {
+    width: 90%;
+    max-width: 1200px; /* Reduced from 1400px */
+    display: flex;
+    justify-content: flex-start;;
+    gap: 100px;
+    margin: 0 auto;
+}
+
+.spec-image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100px;
+}
+
+.spec-image img{
+    width: 100%;
+    max-width: 450px;
+    object-fit: contain;
+}
+
+.spec-content{
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content:center;
+    padding-top: 20px;
+}
+
+.spec-row{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #434343;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 100%; /* Ensures it stays within its parent */
+    box-sizing: border-box;
+}
+
+.spec-title{
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    min-width: 200px;
+}
+
+.spec-value{
+    font-size: 15px;
+    color: #c7c7c7;
+    text-align: left;
+    flex: 1;
+    line-height: 1.6;
+    overflow-wrap: break-word;
+}
+
+/* TOPIC */
+.spec-topic {
+    width: 100%;
+    max-width: 1400px;  /* Matches your .spec-container width */
+    margin: 0 auto 35px auto; /* 'auto' left/right centers the block */
+    
+    text-align: left;   /* Keeps the text on the left of that block */
+    padding-left: 130px; /* Optional: adds a tiny bit of breathing room */
+    
+    font-size: 20px;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.spec-topicfirst {
+    width: 100%;
+    max-width: 1400px;  /* Matches your .spec-container width */
+    margin: 0 auto 35px auto; /* 'auto' left/right centers the block */
+    
+    text-align: left;   /* Keeps the text on the left of that block */
+    padding-left: 130px; /* Optional: adds a tiny bit of breathing room */
+    
+    font-size: 20px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    padding-top: 150px;
+}
+
+.specrow1 {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 0;
+    border-bottom: 1px solid #333; 
+    gap:10px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 100%; /* Ensures it stays within its parent */
+    box-sizing: border-box;
+}
+
+.spec-values-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px; /* Adds space between your 3 lines */
+    color: #ccc;
+    overflow-wrap: break-word;
+}
+
+.spec-value {
+    display: block;
+}
+
+/* Apply this to the wrapper/container holding your specrows */
+.spec-section-wrapper {
+    padding-bottom: 1000px; /* Adjust this to push the footer further down */
+    display: block; 
+    width: 100%;
+    min-height: 1000px;
+}
+
+.spec-section {
+         /* Ensure the section isn't pushing away from the top */
+    width: 1500px;
+    min-height: 100vh;
+    justify-content: flex-start;
+    gap: 50px;
+    padding: 80px;
+    width: 1500px;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 auto;
+}
+
+.main-site-wrapper {
+    width: 1200px;     
+    min-width: 1200px; 
+    margin: 0 auto;     
+    position: relative; 
+}
+
+.section4 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This centers the children blocks */
 }
