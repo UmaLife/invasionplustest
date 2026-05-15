@@ -84,7 +84,7 @@ const navbarTemplate = `
             <input type="text" placeholder="Search your product">
         </div>
         <ul>
-            <li onclick="openProductPanel()">Product</li>
+            <li id="productMenu" onclick="openProductPanel()">Product</li>
             <li onclick="closeProductPanel()">Software</li>
             <li onclick="closeProductPanel()">Contact</li>
             <li onclick="closeProductPanel()">About Us</li>
@@ -92,6 +92,22 @@ const navbarTemplate = `
         <div class="menu-logo">
             <a href="homepage.html">
             <img src="static/logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="menu-bottom-text">
+            ENGINEERED FOR PERFORMANCE
+        </div>
+        <div class="menu-socials">
+            <a href="#"><i class="fa-regular fa-envelope"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/InvasionPlus" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/invasionplus" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@invasionplus" target="_blank">
+                <i class="fa-brands fa-tiktok"></i>
             </a>
         </div>
         <i class="fa-solid fa-xmark menu-close" onclick="closeMenu()"></i>
@@ -141,16 +157,19 @@ function openProductPanel(){
 
     let menu = document.getElementById("sideMenu");
     let panel = document.getElementById("productPanel");
+    let productMenu = document.getElementById("productMenu");
 
     if(panel.classList.contains("active")){
 
         panel.classList.remove("active");
         menu.classList.remove("shift");
+        productMenu.classList.remove("active");
 
     } else {
 
         panel.classList.add("active");
         menu.classList.add("shift");
+        productMenu.classList.add("active");
 
     }
 }
