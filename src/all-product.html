@@ -11,31 +11,6 @@
 
 </head>
 <body>
-    <!--navigation bar-->
-    <div class="navbar">
-        <div class="menu-icon" onclick="openMenu()">
-            <span></span>
-            <span></span>
-        </div>
-
-        <div class="logo">
-            <a href="homepage.html">
-            <img src="static/logo1.jpeg"alt="logo">
-            </a>
-        </div>
-
-        <div class="nav-icons">
-            <div class="search-icon" onclick="openSearch()">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            <div class="allproduct-icon">
-                <i class="fa fa-shopping-bag"></i>
-            </div>
-            <div class="location-icon">
-                <i class="fa-solid fa-location-dot"></i>
-            </div>
-        </div>
-    </div>
 <!---Overlay Search-->
     <div id="searchOverlay" class="search-overlay">
         <div class="search-box">
@@ -88,29 +63,29 @@
     <div class="category-container">
         <h3 class="breadcrumb">Home/All Cases</h3>
         <h2 class="product-type">All Cases</h2>
+        <p class="category-subtitle">
+            Explore premium gaming cases built for airflow, performance, and aesthetics.
+        </p>
 
         <div class="type-list">
             <article class="card">
                 <img src="static/E-ATX.png" alt="Product Pic">
-                <div class="product-name">
+                <div class="type-name">
                     <h3>E-ATX</h3>
-                    <a href="#" class="view-products">View Products</a>
                 </div>
             </article>
 
             <article class="card">
                 <img src="static/ATX.png" alt="Product Pic">
-                <div class="product-name">
+                <div class="type-name">
                     <h3>ATX</h3>
-                    <a href="#" class="view-products">View Products</a>
                 </div>
             </article>
 
             <article class="card">
                 <img src="static/M-ATX.png" alt="Product Pic">
-                <div class="product-name">
+                <div class="type-name">
                     <h3>M-ATX</h3>
-                    <a href="#" class="view-products">View Products</a>
                 </div>
             </article>
         </div>
@@ -118,18 +93,18 @@
     </section>
 
 <!---Product-->
-    <section class="products">
-
+    <div class ="product-area">
+        
         <!--buttons-->
         <div class="filters">
             <div class="filters-button">
-                <h3 class="filter">Filter ></h3>
-                <h3 class="filter">Price ></h3>
-                <h3 class="filter">Case Size ></h3>
+                <h3>Filter by:</h3>
+                <h4 class="filter">Price</h4>
+                <h4 class="filter">Case Size </h4>
             </div>
 
             <div class="sorting">
-                <span>Sort by:</span>
+                <h3>Sort by:</h3>
                     <select>
                         <option class="newest">Newest First</option>
                         <option class="price-low">Price Low to High</option>
@@ -142,44 +117,69 @@
 
         <div class="product-container">
             <div class="product-list">
+
                 <article class="product">
-                    <img src="static/M-ATX.png" alt="Product Pic">
-                        <div class="product-name">
-                            <h3>M-ATX</h3>
-                            <a href="#" class="view-products">View Products</a>
-                        </div>
+                    <img src="static/E10.png" alt="Product Pic">
+
+                    <div class="product-name">
+                        <h3>E10</h3>
+                        <p>E-ATX Case</p>
+                        <p>Variation: Black</p>
+
+                        <span class="price">RM 299</span>
+                         <div class="price-divider"></div>
+                        <a href="#" class="product-learn-more">
+                            Learn More →
+                        </a>
+                    </div>
                 </article>
 
                 <article class="product">
-                    <img src="static/M-ATX.png" alt="Product Pic">
-                        <div class="product-name">
-                            <h3>M-ATX</h3>
-                            <a href="#" class="view-products">View Products</a>
-                        </div>
+                    <img src="static/E20.4.png" alt="Product Pic">
+
+                    <div class="product-name">
+                        <h3>E20</h3>
+                        <p>E-ATX Case</p>
+                        <p>Variation: Black</p>
+
+                        <span class="price">RM 299</span>
+                         <div class="price-divider"></div>
+                        <a href="#" class="product-learn-more">
+                            Learn More →
+                        </a>
+                    </div>
                 </article>
 
-                <article class="product">
-                    <img src="static/M-ATX.png" alt="Product Pic">
-                        <div class="product-name">
-                            <h3>M-ATX</h3>
-                            <a href="#" class="view-products">View Products</a>
-                        </div>
+               <article class="product">
+                    <img src="static/GENESIS-M WHITE-01.png" alt="Product Pic">
+
+                    <div class="product-name">
+                        <h3>GENESIS-M</h3>
+                        <p>E-ATX Case</p>
+                        <p>Variation: Black/White</p>
+
+                        <span class="price">RM 299</span>
+                         <div class="price-divider"></div>
+                        <a href="#" class="product-learn-more">
+                            Learn More →
+                        </a>
+                    </div>
                 </article>
 
-                <article class="product">
-                    <img src="static/M-ATX.png" alt="Product Pic">
-                        <div class="product-name">
-                            <h3>M-ATX</h3>
-                            <a href="#" class="view-products">View Products</a>
-                        </div>
-                </article>
+               <article class="product">
+                    <img src="static/GENESIS WHITE-01.png" alt="Product Pic">
 
-                <article class="product">
-                    <img src="static/M-ATX.png" alt="Product Pic">
-                        <div class="product-name">
-                            <h3>M-ATX</h3>
-                            <a href="#" class="view-products">View Products</a>
-                        </div>
+                    <div class="product-name">
+                        <h3>GENESIS</h3>
+                        <p>E-ATX Case</p>
+                        <p>Variation: Black/White</p>
+
+                        <span class="price">RM 299</span>
+                         <div class="price-divider"></div>
+                        <a href="#" class="product-learn-more">
+                            Learn More →
+                        </a>
+                    </div>
                 </article>
 
             </div>
@@ -187,76 +187,8 @@
     </section>
 
 
-    <!--footer-->
-    <footer class="site-footer">
-        <div class="footer-logo">
-            <img src="static/logo.png" alt="INVASION PLUS">
-        </div>
-        <div class="footer-content">
-            <div class="footer-column">
-                <h3>EXPLORE:</h3>
-                <ul>
-                    <li><a href="allproduct.html">All Product</a></li>
-                    <li><a href="cases.html">Cases</a></li>
-                    <li><a href="cooling.html">Cooling</a></li>
-                    <li><a href="monitor.html">Monitors</a></li>
-                </ul>
-            </div>                
-            <div class="footer-column">
-                <h3>ABOUT US:</h3>
-                <ul>
-                    <li><a href="ContactUs.html">Contact Us</a></li>
-                    <li><a href="Location.html">Location</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>LET'S CONNECT:</h3>
-                <div class="social-icons">
-                    <a href="#"><i class="fa-regular fa-envelope"></i></a>
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-<script>
-    function openSearch(){
-        document.getElementById("searchOverlay").classList.toggle("active");
-        document.getElementById("homepage").classList.toggle("blur");
-    }
-    function closeSearch(){
-        document.getElementById("searchOverlay").classList.remove("active");
-        document.getElementById("homepage").classList.remove("blur");
-    }
-    function openMenu(){
-        document.getElementById("sideMenu").classList.toggle("active");
-    }
-    function closeMenu(){
-    document.getElementById("sideMenu").classList.remove("active");
-    document.getElementById("productPanel").classList.remove("active");
-    }
-    function openProductPanel(){
-        let menu = document.getElementById("sideMenu");
-        let panel = document.getElementById("productPanel");
-
-        // if already open → close it
-        if(panel.classList.contains("active")){
-            panel.classList.remove("active");
-            menu.classList.remove("shift");
-        } 
-        else {
-            panel.classList.add("active");
-            menu.classList.add("shift");
-        }
-    }
-    function closeProductPanel(){
-    document.getElementById("productPanel").classList.remove("active");
-    document.getElementById("sideMenu").classList.remove("shift");
-    }
-    
+<script type="module" src="home.js"></script>
+<script src="set.js">
 </script>
 </body>
 </html>
