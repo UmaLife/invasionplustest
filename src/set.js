@@ -202,7 +202,7 @@ const navbarTemplate = `
     </div>
     <div class="product-panel" id="productPanel">
         <div class="panel-content">
-        <a href="cases.html" class="product-item">
+        <a href="all-product.html" class="product-item">
             <img src="static/cases.png">
             <span>Cases</span>
         </a>
