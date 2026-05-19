@@ -15,7 +15,7 @@ const footerTemplate = `
 
                     <ul>
                         <li>
-                            <a href="allproduct.html">
+                            <a href="all-product.html">
                                 All Product
                             </a>
                         </li>
