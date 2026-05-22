@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product2 - LightRays Integration</title>
+    <title id="page-title">Product</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="static/BorderGlow.css">
     <link rel="stylesheet" href="static/style.css">
+
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
     <script type="importmap">
     {
         "imports": {
@@ -17,395 +20,364 @@
     }
     </script>
 </head>
+
 <body>
-    <div class="scroll-container" id="scrollBox">
-        <!-- SECTION 6 -->
- 
-        <section class="section6">
 
-    <!-- SIDEBAR -->
+<div class="scroll-container" id="scrollBox">
 
-    <div class="section6-sidebar">
+    <!-- SECTION 6 -->
+    <section class="section6">
 
-        <img src="static/E20.4.png"
-             class="section6-thumb active"
-             data-color="black" />
+        <div class="section6-sidebar" id="thumbnail-container"></div>
 
-        <img src="static/E20.1.png"
-             class="section6-thumb"
-             data-color="black" />
+        <div class="section6-content">
 
-        <img src="static/E20.3.png"
-             class="section6-thumb"
-             data-color="black"/>
+            <div class="section6-text">
 
-        <img src="static/E20.7.png"
-             class="section6-thumb"
-             data-color="black"/>
+                <h1 id="product-name"></h1>
+                <h3 id="product-price"></h3>
 
-        <img src="static/E20.2.png"
-             class="section6-thumb"
-             data-color="black"/>
+                <div class="section6-info">
 
-        <img src="static/E20.5.png"
-             class="section6-thumb"
-             data-color="black"/>
+                    <div class="section6-variation-row">
+                        <h4 class="section6-variation-title">
+                            <strong>Variations:</strong>
+                        </h4>
 
-        <img src="static/E20.9.png"
-             class="section6-thumb"
-             data-color="black" />
+                        <div class="section6-variations">
+                            <span class="section6-variation active"
+                                  data-color="black"
+                                  style="background:#111;">
+                            </span>
 
-    </div>
+                            <span class="section6-variation white-variation"
+                                  data-color="white"
+                                  style="background:#f1f1f1;">
+                            </span>
+                        </div>
+                    </div>
 
-
-    <!-- CONTENT -->
-
-    <div class="section6-content">
-
-
-        <!-- TEXT -->
-
-        <div class="section6-text">
-
-            <h1>E-20</h1>
-
-            <h3>RM259.00</h3>
-
-
-            <!-- INFO -->
-
-            <div class="section6-info">
-
-                <div class="section6-variation-row">
-
-                    <h4 class="section6-variation-title">
-                        <strong>Variations:</strong>
+                    <h4 class="section6-fans">
+                        <strong>Fans:</strong>
+                        <span id="product-fans" class="section6-fans-text"></span>
                     </h4>
 
-                    <div class="section6-variations">
-
-                        <span class="section6-variation active"
-                              data-color="black"
-                              style="background:#111;">
-                        </span>
-
-                        <span class="section6-variation white-variation"
-                              data-color="white"
-                              style="background:#f1f1f1;">
-                        </span>
-
-                    </div>
+                    <p id="product-description"></p>
 
                 </div>
+            </div>
 
-
-                <h4 class="section6-fans">
-                    <strong>Fans:</strong> <span class="section6-fans-text">with 4 ARGB Fans</span>
-                </h4>
-                <p>
-                 Invasion Plus E-20 combines a mostly mesh design with optimised vertical airflow, letting air move naturally and efficiently through the case. Supporting up to 10 fans, it keeps your system cool, steady, and effortless, in a clean, carefully considered layout —designed so every detail simply works for you.
-            </p>
+            <div class="section6-visual">
+                <div class="section6-circle"></div>
+                <img id="main-image" class="section6-main-img" src="">
             </div>
 
         </div>
+    </section>
+
+    <!-- SECTION 2 -->
+    <section class="section-2" id="s2">
+
+        <div id="light-rays-container"
+             class="light-rays-container"
+             style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 1;">
+        </div>
+
+        <div class="text-content" style="position: relative; z-index: 2;">
+            <h3 id="titleS2"></h3>
+            <p id="hero-description" class="description"></p>
+        </div>
+
+        <div class="image-container" id="photo" style="position: relative; z-index: 2;">
+            <img id="hero-image" src="" alt="Product Photo">
+        </div>
+
+    </section>
+
+    <!-- PRODUCT DESCRIPTION -->
+    <section class="product-section5">
+
+        <div class="spec-topic-wrapper">
+            <h1 class="spec-topic">| Product Description</h1>
+        </div>
+
+        <div class="product-card5">
+            <div class="glow"></div>
+
+            <img id="description-image" class="product-img5" src="" alt="Product">
+
+            <div class="feature5 left5 one5">
+                <div class="text5">
+                    <h3 id="feature-title-1"></h3>
+                    <p id="feature-desc-1"></p>
+                </div>
+                <span class="line5"></span>
+                <span class="dot5"></span>
+            </div>
+
+            <div class="feature5 left5 two5">
+                <div class="text5">
+                    <h3 id="feature-title-2"></h3>
+                    <p id="feature-desc-2"></p>
+                </div>
+                <span class="line5"></span>
+                <span class="dot5"></span>
+            </div>
+
+            <div class="feature5 left5 three5">
+                <div class="text5">
+                    <h3 id="feature-title-3"></h3>
+                    <p id="feature-desc-3"></p>
+                </div>
+                <span class="line5"></span>
+                <span class="dot5"></span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 3D MODEL SECTION -->
 
 
-        <!-- IMAGE -->
+    <!-- SPECS -->
+    <div class="section4">
 
-        <div class="section6-visual">
+        <h1 class="spec-topic2">| Specs</h1>
 
-            <div class="section6-circle"></div>
+        <div class="spec-container">
 
-            <img src="static/E20.4.png"
-                 class="section6-main-img" />
+            <div class="spec-image">
+                <img id="spec-image" src="" alt="Product Spec Image">
+            </div>
+
+            <div class="spec-content" id="spec-content"></div>
 
         </div>
     </div>
 
-</section>
+    <section class="section7"></section>
 
+</div>
 
-        <section class="section-2" id="s2">
-                    <div id="light-rays-container" class="light-rays-container" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 1;"></div>
-                    
-                    <div class="text-content" style="position: relative; z-index: 2;">
-                        <h3 id="titleS2">Optimized for Maximum Airflow</h3>
-                        <p class="description">
-                            Experience peak performance with a chassis designed for high-end cooling. The E20 series supports up to nine 120mm fans for ultimate thermal control.
-                        </p>
-                    </div>
+<script type="module">
+import { LightRaysNative } from './lightray.js';
 
-                    <div class="image-container" id="photo" style="position: relative; z-index: 2;">
-                        <img src="static/E20.png" alt="Photo">
-                    </div>
-            </section>
+const raysContainer = document.getElementById('light-rays-container');
 
-
-        <section class="product-section5">
-            <div class="spec-topic-wrapper">
-                <h1 class="spec-topic">| Product Description</h1>
-            </div>
-
-            <div class="product-card5">
-                <div class="glow"></div>
-
-                <img class="product-img5" src="static/E20.1.png" alt="Gaming PC case">
-
-                <div class="feature5 left5 one5">
-                    <div class="text5">
-                        <h3>Optimized Airflow Layout</h3>
-                        <p>Designed with multiple fan mounting positions and ventilated panels to maintain consistent airflow throughout the system.</p>
-                    </div>
-                    <span class="line5"></span>
-                    <span class="dot5"></span>
-                </div>
-
-                <div class="feature5 left5 two5">
-                    <div class="text5">
-                        <h3>Multiple Storage Expansion</h3>
-                        <p>Supports several SSD and HDD installation slots for flexible storage upgrades and faster data access performance.</p>
-                    </div>
-                    <span class="line5"></span>
-                    <span class="dot5"></span>
-                </div>
-
-                <div class="feature5 left5 three5">
-                    <div class="text5">
-                        <h3>Spacious Mid-Tower Interior</h3>
-                        <p>Provides ample space for high-end GPUs, multiple storage devices, and easy cable management for a clean build appearance.</p>
-                    </div>
-                    <span class="line5"></span>
-                    <span class="dot5"></span>
-                </div>
-            </div>
-            
-        </section>
-        
-
-
-         <section class="product-section3">
-
-            <script src="scroll.js"></script>
-
-            <div class="containerscroll">
-                <div class="cardscroll" id="tilt-cardscroll">
-                </div>
-            </div>
-
-            <script src="BorderGlow.js"></script>
-
-            <border-glow color="280 80 60" intensity="0.8">
-
-                <div class="product-flex-container">
-
-                    <div class="product-text">
-
-                       <h2 className="fade-in-title">Tool - Free Access</h2>
-
-                        <p className="fade-in-description">
-                        Panels are effortlessly removable to streamline system building,
-                        component upgrades, and routine maintenance
-                        </p>    
-                    </div>
-
-                    <div class="product-visual">
-
-                        <model-viewer 
-                            src="./static/model.glb"
-                            alt="InvasionPlus Product Model"
-                            auto-rotate 
-                            camera-controls 
-                            shadow-intensity="2" 
-                            interaction-prompt="none">
-                        </model-viewer>
-
-                    </div>
-
-                </div>
-
-            </border-glow>
-
-            <script src="set.js"></script>
-
-</section>
-
-<style>
-#topic-text {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeSlideIn 1s ease forwards;
+if (raysContainer) {
+    new LightRaysNative(raysContainer, {
+        raysColor: "#ffffff",
+        lightSpread: 0.6
+    });
 }
+</script>
+<script src="scroll.js"></script>
+<script src="BorderGlow.js"></script>
+<script src="set.js"></script>
+<script src="script.js"></script>
+<script>
+async function loadProduct() {
+    const params = new URLSearchParams(window.location.search);
+    const productId =
+    (params.get("id") || "e20").toLowerCase();
 
-#description-text {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeSlideIn 1s ease forwards;
-    animation-delay: 0.3s;
-}
+    const response = await fetch("products.json");
+    const data = await response.json();
 
-@keyframes fadeSlideIn {
+    const product = data.products.find(item => item.id === productId);
 
-    from {
-        opacity: 0;
-        transform: translateY(20px);
+    if (!product) {
+        alert("Product not found");
+        return;
     }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
+    document.title = product.name + " Product Page";
+
+    document.getElementById("product-name").textContent = product.name;
+    document.getElementById("product-price").textContent = product.price;
+    document.getElementById("product-fans").textContent = product.fans;
+    document.getElementById("product-description").textContent = product.description;
+
+    const mainImage = document.getElementById("main-image");
+
+        mainImage.src = product.mainImage;
+        mainImage.classList.add("img-animate");
+        
+    document.getElementById("hero-image").src = product.heroImage;
+    document.getElementById("description-image").src = product.descriptionImage;
+    document.getElementById("spec-image").src = product.specImage;
+
+
+    document.getElementById("titleS2").textContent = product.heroTitle;
+    document.getElementById("hero-description").textContent = product.heroDescription;
+
+
+    loadThumbnails(product);
+    loadFeatures(product);
+    loadSpecs(product);
+
+    
+}
+
+function loadThumbnails(product, color = "black") {
+
+    const thumbnailContainer =
+        document.getElementById("thumbnail-container");
+
+    thumbnailContainer.innerHTML = "";
+
+    // CHECK VARIATION
+    let images;
+
+    if (product.variations) {
+
+        images = product.variations[color];
+
+    } else {
+
+        images = product.images;
     }
 
-}
-</style>
+    images.forEach((image, index) => {
 
-             <div class="section4">
+        const img = document.createElement("img");
 
-            <!-- TOPIC -->
-           <h1 class="spec-topic">| Specs</h1>
-            <div class="spec-container">
+        img.src = image;
 
-                <!-- LEFT IMAGE -->
-                <div class="spec-image">
-                    <img src="./static/E20.5.png" alt="Product Chair">
-                </div>
+        img.className = "section6-thumb";
 
-                <!-- RIGHT SPECS -->
-                <div class="spec-content">
+        if (index === 0) {
+            img.classList.add("active");
+        }
 
-                    <div class="spec-row">
-                        <span class="spec-title">Model</span>
-                        <span class="spec-value">E - 20</span>
-                    </div>
+        img.addEventListener("click", function () {
 
-                    <div class="spec-row">
-                        <span class="spec-title">Material</span>
-                        <span class="spec-value">SPCC 0.7 MM</span>
-                    </div>
+            const mainImage =
+                document.getElementById("main-image");
 
-                    <div class="spec-row">
-                        <span class="spec-title">Chasis Dimension</span>
-                        <span class="spec-value">483mm(L) x 238mm(W) x 490mm(H)</span>
-                    </div>
+            mainImage.classList.remove("img-animate");
 
-                    <div class="spec-row">
-                        <span class="spec-title">Carton Size</span>
-                        <span class="spec-value">553mm(L) x 302mm(W) x 552mm(H)</span>
-                    </div>
+            void mainImage.offsetWidth;
 
-                    <div class="spec-row">
-                        <span class="spec-title">I/O Port</span>
-                        <span class="spec-value">USB 3.0*2 + TYPE-C*1 + HD AUDIO</span>
-                    </div>
+            mainImage.src = image;
 
-                    <div class="spec-row">
-                        <span class="spec-title">3.5″ + 2.5″ Drive Bays</span>
-                        <span class="spec-value">
-                            2 x HDD + 3 x SSD
-                        </span>
-                    </div>
+            mainImage.classList.add("img-animate");
 
-                    <div class="spec-row">
-                        <span class="spec-title">PCI Slots</span>
-                        <span class="spec-value">7 Slots</span>
-                    </div>
+            document.querySelectorAll(".section6-thumb")
+                .forEach(thumb => {
+                    thumb.classList.remove("active");
+                });
 
-                    <div class="specrow1">
-                        <span class="spec-title">Air Cooling</span>
-                        <!-- The container for your 3 lines -->
-                        <div class="spec-values-group">
-                            <span class="spec-value"><strong>Rear</strong> ~ 120 MM x 1 </span>
-                            <span class="spec-value"><strong>MB</strong> ~ 120MM x 3 OR 140MM x 2 </span>
-                            <span class="spec-value"><strong>PSU</strong> ~ 120MM x 3 OR 140MM x 3 </span>
-                        </div>
-                    </div>
-
-                    <div class="specrow1">
-                        <span class="spec-title">Liquid Cooling</span>
-                        <!-- The container for your 3 lines -->
-                        <div class="spec-values-group">
-                            <span class="spec-value"><strong>Top</strong>  ~ 120 MM </span>
-                            <span class="spec-value"><strong>Rear</strong> ~ 240 MM </span>
-                            <span class="spec-value"><strong>MB</strong> ~ 180 MM </span>
-                        </div>
-                    </div>
-
-                    <div class="spec-row">
-                        <span class="spec-title">CPU Cooler Height</span>
-                        <span class="spec-value">180 MM</span>
-                    </div>
-
-                    <div class="specrow1">
-                        <span class="spec-title">VGA Card Length</span>
-                        <!-- The container for your 3 lines -->
-                        <div class="spec-values-group">
-                            <span class="spec-value">480 MM without MB Fan</span>
-                            <span class="spec-value">#70 MM with MB Fan</span>
-            
-                        </div>
-                    </div>
-
-                </div>
-                </div>
-            </div>
-        
-    <section class="section7">
-        </section>
-
-
-    <script type="module">
-    import { LightRaysNative } from './lightray.js';
-
-    // 1. Initialize Light Rays
-    const raysContainer = document.getElementById('light-rays-container');
-    if (raysContainer) {
-        new LightRaysNative(raysContainer, {
-            raysColor: "#ffffff",
-            lightSpread: 0.6
+            img.classList.add("active");
         });
-    }
 
-    // 2. Animation Logic (Controlled by Outside Scroll)
-    window.addEventListener('scroll', () => {
-        // Use window.scrollY because the scroll is now on the "outside"
-        const scrollTop = window.scrollY;
-        const vh = window.innerHeight;
+        thumbnailContainer.appendChild(img);
+    });
 
-        // Calculate progress (p)
-        // We divide by vh so the animation completes as you scroll through the first section
-        let progress = scrollTop / vh;
-        let p = Math.max(0, Math.min(1, progress));
+    document.getElementById("main-image").src =
+        images[0];
 
-        const photo = document.getElementById('photo');
-        const titleS2 = document.getElementById('titleS2');
-        const description = document.querySelector('.description');
+    const variations = document.querySelectorAll(".section6-variation");
 
-        // Image Animation with your specific edits
-        if (photo) {
-            photo.style.opacity = p;
-            const scale = 0.35 + (p * 0.4); 
-            const slideEffect = (1 - p) * 450; 
-            const extraDown = p * -80; 
-            
-            // Kept your 117% and -80 shift
-            photo.style.transform = `translate(calc(117% + ${slideEffect}px), calc(-50% + ${extraDown}px)) scale(${scale})`;
-        }
+if (product.variations) {
+    variations.forEach(btn => {
+        btn.style.display = "block";
 
-        // Succession Text Animation
-        if (titleS2) {
-            titleS2.style.opacity = p;
-            const drift = (1 - p) * 30;
-            titleS2.style.transform = `translateY(${drift}px)`;
-            titleS2.style.letterSpacing = `${0.1 + (p * 0.2)}em`;
-        }
+        btn.addEventListener("click", function () {
+            const color = btn.dataset.color;
+            const images = product.variations[color];
+            const mainImage = document.getElementById("main-image");
 
-        if (description) {
-            const descP = Math.max(0, (p - 0.2) / 0.8); 
-            description.style.opacity = descP;
-            description.style.transform = `translateY(${(1 - descP) * 20}px)`;
+            variations.forEach(v => v.classList.remove("active"));
+            btn.classList.add("active");
+
+            loadThumbnails(product, color);
+
+            mainImage.classList.remove("img-animate");
+            void mainImage.offsetWidth;
+
+            mainImage.src = images[0];
+
+            mainImage.classList.add("img-animate");
+        });
+    });
+} else {
+    document.querySelector(".white-variation").style.display = "none";
+}
+}
+
+
+
+function loadFeatures(product) {
+    product.features.forEach((feature, index) => {
+        const number = index + 1;
+
+        const titleElement = document.getElementById(`feature-title-${number}`);
+        const descElement = document.getElementById(`feature-desc-${number}`);
+
+        if (titleElement && descElement) {
+            titleElement.textContent = feature.title;
+            descElement.textContent = feature.description;
         }
     });
+}
+
+function loadSpecs(product) {
+    const specContent = document.getElementById("spec-content");
+    specContent.innerHTML = "";
+
+    for (const [title, value] of Object.entries(product.specs)) {
+        const row = document.createElement("div");
+        row.className = "spec-row";
+
+        row.innerHTML = `
+            <span class="spec-title">${title}</span>
+            <span class="spec-value">${value}</span>
+        `;
+
+        specContent.appendChild(row);
+    }
+}
+
+window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const vh = window.innerHeight;
+
+    let progress = scrollTop / vh;
+    let p = Math.max(0, Math.min(1, progress));
+
+    const photo = document.getElementById('photo');
+    const titleS2 = document.getElementById('titleS2');
+    const description = document.querySelector('.description');
+
+    if (photo) {
+        photo.style.opacity = p;
+        const scale = 0.35 + (p * 0.4);
+        const slideEffect = (1 - p) * 450;
+        const extraDown = p * -80;
+
+        photo.style.transform = `translate(calc(117% + ${slideEffect}px), calc(-50% + ${extraDown}px)) scale(${scale})`;
+    }
+
+    if (titleS2) {
+        titleS2.style.opacity = p;
+        const drift = (1 - p) * 30;
+        titleS2.style.transform = `translateY(${drift}px)`;
+        titleS2.style.letterSpacing = `${0.1 + (p * 0.2)}em`;
+    }
+
+    if (description) {
+        const descP = Math.max(0, (p - 0.2) / 0.8);
+        description.style.opacity = descP;
+        description.style.transform = `translateY(${(1 - descP) * 20}px)`;
+    }
+});
+
+loadProduct();
 </script>
-    <script src="set.js"></script>
-    <script src="animatescroll.js"></script>
+
+<script src="set.js"></script>
+<script src="animatescroll.js"></script>
+
 </body>
 </html>

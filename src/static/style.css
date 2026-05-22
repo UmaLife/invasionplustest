@@ -622,7 +622,7 @@ border-glow {
 
 .spec-container {
     width: 90%;
-    max-width: 1200px; /* Reduced from 1400px */
+    max-width: 1200px; 
     display: flex;
     justify-content: flex-start;;
     gap: 100px;
@@ -654,7 +654,6 @@ border-glow {
 
 .spec-row{
     display: flex;
-    justify-content: space-between;
     gap: 20px;
     padding-bottom: 18px;
     border-bottom: 1px solid #434343;
@@ -683,11 +682,11 @@ border-glow {
 /* TOPIC */
 .spec-topic {
     width: 100%;
-    max-width: 1400px;  /* Matches your .spec-container width */
-    margin: 0 auto 35px auto; /* 'auto' left/right centers the block */
+    max-width: 1400px;  
+    margin: 0 auto 35px auto; 
     
-    text-align: left;   /* Keeps the text on the left of that block */
-    padding-left: 130px; /* Optional: adds a tiny bit of breathing room */
+    text-align: left;  
+    padding-left: 130px; 
     
     font-size: 20px;
     color: #ffffff;
@@ -696,11 +695,11 @@ border-glow {
 
 .spec-topicfirst {
     width: 100%;
-    max-width: 1400px;  /* Matches your .spec-container width */
-    margin: 0 auto 35px auto; /* 'auto' left/right centers the block */
+    max-width: 1400px;  
+    margin: 0 auto 35px auto; 
     
-    text-align: left;   /* Keeps the text on the left of that block */
-    padding-left: 130px; /* Optional: adds a tiny bit of breathing room */
+    text-align: left;   
+    padding-left: 130px; 
     
     font-size: 20px;
     color: #ffffff;

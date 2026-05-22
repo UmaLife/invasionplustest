@@ -1,0 +1,439 @@
+{
+  "products": [
+    {
+      "id": "e20",
+      "name": "E-20",
+      "price": "RM259.00",
+      "fans": "with 4 ARGB Fans",
+      "description": "Invasion Plus E-20 combines a mostly mesh design with optimised vertical airflow, letting air move naturally and efficiently through the case. Supporting up to 10 fans, it keeps your system cool, steady, and effortless, in a clean, carefully considered layout — designed so every detail simply works for you.",
+      "heroTitle": "Optimized for Maximum Airflow",
+      "heroDescription": "Experience peak performance with a chassis designed for high-end cooling. The E20 series supports up to nine 120mm fans for ultimate thermal control.",
+      "mainImage": "static/E20.4.png",
+      "heroImage": "static/E20.png",
+      "descriptionImage": "static/E20.1.png",
+      "specImage": "static/E20.5.png",
+      "images": [
+        "static/E20.4.png",
+        "static/E20.1.png",
+        "static/E20.3.png",
+        "static/E20.7.png",
+        "static/E20.2.png",
+        "static/E20.5.png",
+        "static/E20.9.png"
+      ],
+      "features": [
+        {
+          "title": "Optimized Airflow Layout",
+          "description": "Designed with multiple fan mounting positions and ventilated panels to maintain consistent airflow throughout the system."
+        },
+        {
+          "title": "Multiple Storage Expansion",
+          "description": "Supports several SSD and HDD installation slots for flexible storage upgrades and faster data access performance."
+        },
+        {
+          "title": "Spacious Mid-Tower Interior",
+          "description": "Provides ample space for high-end GPUs, multiple storage devices, and easy cable management for a clean build appearance."
+        }
+      ],
+      "specs": {
+        "Model": "E - 20",
+        "Material": "SPCC 0.7 MM",
+        "Chasis Dimension": "483mm(L) x 238mm(W) x 490mm(H)",
+        "Carton Size": "553mm(L) x 302mm(W) x 552mm(H)",
+        "I/O Port": "USB 3.0*2 + TYPE-C*1 + HD AUDIO",
+        "3.5″ + 2.5″ Drive Bays": "2 x HDD + 3 x SSD",
+        "PCI Slots": "7 Slots",
+        "Air Cooling": "<b>Rear</b> ~ 120 MM x 1<br><b>MB</b> ~ 120MM x 3 OR 140MM x 2<br><b>PSU</b> ~ 120MM x 3 OR 140MM x 3",
+        "Liquid Cooling": "<b>Top </b>~ 120 MM <br><b> Rear</b> ~ 240 MM <br><b> MB</b> ~ 180 MM",
+        "CPU Cooler Height": "180 MM",
+        "VGA Card Length": "480 MM without MB Fan <br> 470 MM with MB Fan"
+      }
+    },
+
+      {
+      "id": "atlas",
+      "name": "ATLAS",
+      "price": "RM259.00 - RM269.00",
+      "fans": "with 4 Infinity ARGB Fans",
+      "description": "",
+      "heroTitle": "Exceptional Air Cooling Support",
+      "heroDescription": "Featuring a Hight - Airflow layout and multiple fan mounts to keep your components cool under heavy workloads ",
+      "mainImage": "static/ALTAS-BLACK-01.png",
+      "heroImage": "static/ALTAS-BLACK-02.png",
+      "descriptionImage": "static/ALTAS-BLACK-03.png",
+      "specImage": "static/ALTAS-BLACK-02.png",
+      "variations": {
+      "black": [
+        "static/ALTAS-BLACK-01.png",
+        "static/ALTAS-BLACK-02.png",
+        "static/ALTAS-BLACK-03.png",
+        "static/ALTAS-BLACK-04.png",
+        "static/ALTAS-BLACK-05.png"
+      ],
+      "white": [
+        "static/ALTAS-WHITE-01.png",
+        "static/ALTAS-WHITE-02.png",
+        "static/ATLAS-WHITE-03.png",
+        "static/ATLAS-WHITE-04.png",
+        "static/ATLAS-WHITE-05.png"
+      ]
+    },
+      "features": [
+        {
+          "title": "Optimized Airflow Layout",
+          "description": "Designed with multiple fan mounting positions and ventilated panels to maintain consistent airflow throughout the system."
+        },
+        {
+          "title": "Multiple Storage Expansion",
+          "description": "Supports several SSD and HDD installation slots for flexible storage upgrades and faster data access performance."
+        },
+        {
+          "title": "Spacious Mid-Tower Interior",
+          "description": "Provides ample space for high-end GPUs, multiple storage devices, and easy cable management for a clean build appearance."
+        }
+      ],
+      "specs": {
+        "Model": "ATLAS",
+        "Front Panel": "Tempered Glass",
+        "Left Side Panel": "Tempered Glass",
+        "Right Side Panel": "Tempered Glass",
+        "Chasis": "0.6mm",
+        "USB 3.0 x 2": "Included",
+        "Type C x 1": "Included",
+        "Motherboard Support": "ITX / M-ATX",
+        "PSU Port": "Bottom / ATX / 140-160mm",
+        "Size": "<b>Front</b>~ N/A <br><b>Top </b>~ 3 x 120mm (Fan Optional) - support 360mm liquid cooler <br><b> Rear</b> ~ 1 x 120mm (Fan optional) - support 120mm liquid cooler <br><b>Bottom</b> ~ 3 x 120mm (Fan optional) ",
+        "Drive Bays": "5.25″ ODD x0 <br>3.5″ HDD x2<br>2.5″ SSD x2",
+        "PCI Slots": "x 4",
+        "Product Dimesion": "<b>Chassis size</b> ~ 430(L) x 228(W) x 445mm (H) <br><b>Product Size</b> ~ 435(L) x 228(W) x 475mm (H) <br><b>Carton Size</b> ~ 525(L) x 290(W) x 500mm (H) ",
+        "Package": "Poly Foam",
+        "Max.VGA Card": "420mm",
+        "Max.CPU Cooler": "165mm"
+      }
+    },
+ 
+    {
+      "id": "e10",
+      "name": "E-10",
+      "price": "RM259.00 - RM269.00",
+      "fans": "with 4 Infinity ARGB Fans",
+      "description": "Invasion Plus E-10 puts your build on full display with a sleek horizontal layout. Dual chambers thoughtfully separate power and storage from your components, keeping airflow smooth, noise low, and cables neatly out of sight. Personalize your rig and make it feel just right.",
+      "heroTitle": "Exceptional Air Cooling Support",
+      "heroDescription": "Featuring a Hight - Airflow layout and multiple fan mounts to keep your components cool under heavy workloads ",
+      "mainImage": "static/ALTAS-BLACK-01.png",
+      "heroImage": "static/ALTAS-BLACK-02.png",
+      "descriptionImage": "static/ALTAS-BLACK-03.png",
+      "specImage": "static/ALTAS-BLACK-02.png",
+      "images": [
+        "static/E10 (1).png",
+        "static/E10 (2).png",
+        "static/E10 (3).png",
+        "static/E10 (4).png",
+        "static/E10 (5).png",
+        "static/E10 (6).png",
+        "static/E10 (7).png",
+        "static/E10 (8).png"
+      ],
+      "features": [
+        {
+          "title": "Optimized Airflow Layout",
+          "description": "Designed with multiple fan mounting positions and ventilated panels to maintain consistent airflow throughout the system."
+        },
+        {
+          "title": "Multiple Storage Expansion",
+          "description": "Supports several SSD and HDD installation slots for flexible storage upgrades and faster data access performance."
+        },
+        {
+          "title": "Spacious Mid-Tower Interior",
+          "description": "Provides ample space for high-end GPUs, multiple storage devices, and easy cable management for a clean build appearance."
+        }
+      ],
+       "specs": {
+        "Model": "E - 10",
+        "Material": "SPCC 0.7 MM",
+        "Chasis Dimension": "436.5mm(L) x 315mm(W) x 390mm(H)",
+        "Carton Size": "531.5mm(L) x 409.5mm(W) x 398mm(H)",
+        "I/O Port": "USB 3.0 x 2 + Type-C x 1 + HD Audio",
+        "3.5″ + 2.5″ Drive Bays": "2 x HDD + 1 x SSD",
+        "PCI Slots": "5 Slots",
+        "Air Cooling": "<b>Rear</b> ~ 120 MM x 1<br><b>Bottom</b> ~ 120MM x 2",
+        "Liquid Cooling": "<b>Bottom </b>~ 240 MM",
+        "CPU Cooler Height": "165 MM",
+        "VGA Card Length": "430 MM without MB Fan <br> 300 MM with MB Fan"
+      }
+    },
+
+    {
+      "id": "erebus",
+      "name": "EREBUS",
+      "price": "RM249.00 - RM259.00",
+      "fans": "with 6 Infinity ARGB Fans",
+      "description": "",
+      "heroTitle": "Exceptional Air Cooling Support",
+      "heroDescription": "Featuring a Hight - Airflow layout and multiple fan mounts to keep your components cool under heavy workloads ",
+      "mainImage": "static/ALTAS-BLACK-01.png",
+      "heroImage": "static/ALTAS-BLACK-02.png",
+      "descriptionImage": "static/ALTAS-BLACK-03.png",
+      "specImage": "static/ALTAS-BLACK-02.png",
+      "variations": {
+      "black": [
+        "static/EREBUS BLACK - 01.png",
+        "static/EREBUS BLACK -02.png",
+        "static/EREBUS BLACK - 03.png"
+      ],
+      "white": [
+        "static/EREBUS WHITE -01.png",
+        "static/EREBUS WHITE - 02.png",
+        "static/EREBUS WHITE - 03.png"
+        
+      ]
+    },
+      "features": [
+        {
+          "title": "Optimized Airflow Layout",
+          "description": "Designed with multiple fan mounting positions and ventilated panels to maintain consistent airflow throughout the system."
+        },
+        {
+          "title": "Multiple Storage Expansion",
+          "description": "Supports several SSD and HDD installation slots for flexible storage upgrades and faster data access performance."
+        },
+        {
+          "title": "Spacious Mid-Tower Interior",
+          "description": "Provides ample space for high-end GPUs, multiple storage devices, and easy cable management for a clean build appearance."
+        }
+      ],
+      "specs": {
+        "Model": "EREBUS",
+        "Front Panel": "Steel + Tempered Glass",
+        "Left Side Panel": "Tempered glass with back screw",
+        "Right Side Panel": "Ventilation holes on right side",
+        "Chasis": "0.5mm",
+        "USB 3.0 x 2": "Included",
+        "Type C x 1": "Included",
+        "Motherboard Support": "ITX / M-ATX",
+        "PSU Port": "Rear side / ATX",
+        "Size": "<b>Front</b>~ N/A <br><b>Top </b>~ 3 x 120mm (Fan Optional) - support 360mm liquid cooler <br><b> Rear</b> ~ 1 x 120mm (Fan optional) - support 120mm liquid cooler <br><b>Bottom</b> ~ 3 x 120mm (Fan optional) ",
+        "Drive Bays": "5.25″ ODD x0 <br>3.5″ HDD x2<br>2.5″ SSD x2",
+        "PCI Slots": "x 5",
+        "Product Dimesion": "<b>Chassis size</b> ~ 430(L) x 227(W) x 355mm (H) <br><b>Product Size</b> ~ 443(L) x 277(W) x 377mm (H) <br><b>Carton Size</b> ~ 432(L) x 344(W) x 515mm (H) ",
+        "Package": "Poly Foam",
+        "Max.VGA Card": "420mm",
+        "Max.CPU Cooler": "155mm"
+      }
+    },
+
+    {
+      "id": "genesis",
+      "name": "GENESIS",
+      "price": "RM249.00 - RM259.00",
+      "fans": "with 6 Infinity ARGB Fans",
+      "description": "The Invasion Genesis features tempered glass panels on the front, side, and top, offering a panoramic three-sided view that showcases your build with stunning clarity. Its aquarium-inspired design elegantly displays GPUs, motherboards, and cooling solutions, creating a visually striking centerpiece while maintaining a clean, minimalist aesthetic.",
+      "heroTitle": "Exceptional Air Cooling Support",
+      "heroDescription": "Featuring a Hight - Airflow layout and multiple fan mounts to keep your components cool under heavy workloads ",
+      "mainImage": "static/ALTAS-BLACK-01.png",
+      "heroImage": "static/ALTAS-BLACK-02.png",
+      "descriptionImage": "static/ALTAS-BLACK-03.png",
+      "specImage": "static/ALTAS-BLACK-02.png",
+      "variations": {
+      "black": [
+        "static/GENESIS BLACK-01.png",
+        "static/GENESIS BLACK-02.png",
+        "static/GENESIS BLACK-03.png",
+        "static/GENESIS BLACK-04.png",
+        "static/GENESIS BLACK-05.png",
+        "static/GENESIS BLACK-06.png",
+        "static/GENESIS BLACK-07.png",
+        "static/GENESIS BLACK-08.png"
+      ],
+      "white": [
+        "static/GENESIS WHITE-01.png",
+        "static/GENESIS WHITE-02.png",
+        "static/GENESIS WHITE-03.png",
+        "static/GENESIS WHITE-04.png",
+        "static/GENESIS WHITE-05.png",
+        "static/GENESIS WHITE-06.png",
+        "static/GENESIS WHITE-07.png",
+        "static/GENESIS WHITE-08.png"
+        
+      ]
+    },
+      "features": [
+        {
+          "title": "Optimized Airflow Layout",
+          "description": "Designed with multiple fan mounting positions and ventilated panels to maintain consistent airflow throughout the system."
+        },
+        {
+          "title": "Multiple Storage Expansion",
+          "description": "Supports several SSD and HDD installation slots for flexible storage upgrades and faster data access performance."
+        },
+        {
+          "title": "Spacious Mid-Tower Interior",
+          "description": "Provides ample space for high-end GPUs, multiple storage devices, and easy cable management for a clean build appearance."
+        }
+      ],
+      "specs": {
+        "Model": "GENESIS",
+        "MB Type": "ATX , M-ATX , ITX (support MB back plug)",
+        "Front Panel": "Tempered Glass Panel",
+        "Side Panel": "Left Tempered Glass, Right Metal with Airy Holes",
+        "Top Panel": "Tempered Glass Panel",
+        "Bottom Panel": "Magnetic Dust Filter",
+        "I/O Port USB": "USB3.0 x 1, USB2.0 x 1, Type-C x 1, HD Audio x 1, Power Button, Reset Button",
+        "PSU": "ATX PSU (max 240mm)",
+        "Fan Support": "<b>Motherboard</b>~ 12cm x 2 <br><b>Rear </b>~ 12cm x 1 <br><b> Bottom</b> ~ 12cm x 3 ",
+        "Radiator Support": "<b>Motherboard</b>~ 280 / 240 / 120mm <br><b>Bottom </b> ~ 360 / 280 / 240mm",
+        "Drive Bay 3.5″" : "HDD 1 pc",
+        "Drive Bay 2.5″" : "SSD 2 pcs",
+        "PCI Expansion Slots" : "7",
+        "Max VGA Card" : "410mm",
+        "Max CPU Cooler" : "160mm",
+        "Case Size" : "420mm(L) x 285mm(W) x 380mm(H)",
+        "Carton Size" : "515mm(L) x 358mm(W) x 425mm(H)"
+
+      }
+    },
+
+    {
+      "id": "genesism",
+      "name": "GENESIS-M",
+      "price": "RM329.00 - RM339.00",
+      "fans": "with 4 Infinity ARGB Fans",
+      "description": "The Genesis-M reveals your build through three-sided tempered glass, offering a compact panoramic view. Mini aquarium-inspired, it frames GPUs, motherboards, and cooling solutions with refined simplicity, keeping the interior clean, polished, and striking",
+      "heroTitle": "Exceptional Air Cooling Support",
+      "heroDescription": "Featuring a Hight - Airflow layout and multiple fan mounts to keep your components cool under heavy workloads ",
+      "mainImage": "static/ALTAS-BLACK-01.png",
+      "heroImage": "static/ALTAS-BLACK-02.png",
+      "descriptionImage": "static/ALTAS-BLACK-03.png",
+      "specImage": "static/GENESIS-M BLACK-07.png",
+      "variations": {
+      "black": [
+        "static/GENESIS-M BLACK-01.png",
+        "static/GENESIS-M BLACK-02.png",
+        "static/GENESIS-M BLACK-03.png",
+        "static/GENESIS-M BLACK-04.png",
+        "static/GENESIS-M BLACK-05.png",
+        "static/GENESIS-M BLACK-06.png",
+        "static/GENESIS-M BLACK-07.png",
+        "static/GENESIS-M BLACK-08.png"
+      ],
+      "white": [
+        "static/GENESIS-M WHITE-01.png",
+        "static/GENESIS-M WHITE-02.png",
+        "static/GENESIS-M WHITE-03.png",
+        "static/GENESIS-M WHITE-04.png",
+        "static/GENESIS-M WHITE-05.png",
+        "static/GENESIS-M WHITE-06.png",
+        "static/GENESIS-M WHITE-07.png",
+        "static/GENESIS-M WHITE-08.png"
+        
+      ]
+    },
+      "features": [
+        {
+          "title": "Optimized Airflow Layout",
+          "description": "Designed with multiple fan mounting positions and ventilated panels to maintain consistent airflow throughout the system."
+        },
+        {
+          "title": "Multiple Storage Expansion",
+          "description": "Supports several SSD and HDD installation slots for flexible storage upgrades and faster data access performance."
+        },
+        {
+          "title": "Spacious Mid-Tower Interior",
+          "description": "Provides ample space for high-end GPUs, multiple storage devices, and easy cable management for a clean build appearance."
+        }
+      ],
+      "specs": {
+        "Model": "GENESIS-M",
+        "MB Type": "M-ATX , ITX (support MB back plug)",
+        "Front Panel": "Tempered Glass Panel",
+        "Side Panel": "Left Tempered Glass, Right Metal with Airy Holes",
+        "Top Panel": "Tempered Glass Panel",
+        "Bottom Panel": "Magnetic Dust Filter",
+        "I/O Port USB": "USB3.0 x 2, Type-C x 1, HD Audio x 1, Power Button, Reset Button",
+        "PSU": "ATX PSU (max 240mm)",
+        "Fan Support": "<b>Motherboard</b>~ 12cm x 2 <br><b>Rear </b>~ 12cm x 1 <br><b> Bottom</b> ~ 12cm x 3 ",
+        "Radiator Support": "<b>Motherboard</b>~ 280 / 240 / 120mm <br><b>Bottom </b> ~ 360 / 280 / 240mm",
+        "Drive Bay 3.5″" : "HDD 1 pc",
+        "Drive Bay 2.5″" : "SSD 2 pcs",
+        "PCI Expansion Slots" : "5",
+        "Max VGA Card" : "410mm",
+        "Max CPU Cooler" : "160mm",
+        "Case Size" : "420mm(L) x 285mm(W) x 350mm(H)",
+        "Carton Size" : "515mm(L) x 358mm(W) x 415mm(H)"
+
+      }
+    },
+
+     {
+      "id": "kratos",
+      "name": "KRATOS",
+      "price": "RM279.00 - RM329.00",
+      "fans": "with 4 Infinity ARGB Fans",
+      "description": "The Genesis-M reveals your build through three-sided tempered glass, offering a compact panoramic view. Mini aquarium-inspired, it frames GPUs, motherboards, and cooling solutions with refined simplicity, keeping the interior clean, polished, and striking",
+      "heroTitle": "Exceptional Air Cooling Support",
+      "heroDescription": "Featuring a Hight - Airflow layout and multiple fan mounts to keep your components cool under heavy workloads ",
+      "mainImage": "static/ALTAS-BLACK-01.png",
+      "heroImage": "static/ALTAS-BLACK-02.png",
+      "descriptionImage": "static/ALTAS-BLACK-03.png",
+      "specImage": "static/GENESIS-M BLACK-07.png",
+      "variations": {
+      "black": [
+        "static/GENESIS-M BLACK-01.png",
+        "static/GENESIS-M BLACK-02.png",
+        "static/GENESIS-M BLACK-03.png",
+        "static/GENESIS-M BLACK-04.png",
+        "static/GENESIS-M BLACK-05.png",
+        "static/GENESIS-M BLACK-06.png",
+        "static/GENESIS-M BLACK-07.png",
+        "static/GENESIS-M BLACK-08.png"
+      ],
+      "white": [
+        "static/GENESIS-M WHITE-01.png",
+        "static/GENESIS-M WHITE-02.png",
+        "static/GENESIS-M WHITE-03.png",
+        "static/GENESIS-M WHITE-04.png",
+        "static/GENESIS-M WHITE-05.png",
+        "static/GENESIS-M WHITE-06.png",
+        "static/GENESIS-M WHITE-07.png",
+        "static/GENESIS-M WHITE-08.png"
+        
+      ]
+    },
+      "features": [
+        {
+          "title": "Optimized Airflow Layout",
+          "description": "Designed with multiple fan mounting positions and ventilated panels to maintain consistent airflow throughout the system."
+        },
+        {
+          "title": "Multiple Storage Expansion",
+          "description": "Supports several SSD and HDD installation slots for flexible storage upgrades and faster data access performance."
+        },
+        {
+          "title": "Spacious Mid-Tower Interior",
+          "description": "Provides ample space for high-end GPUs, multiple storage devices, and easy cable management for a clean build appearance."
+        }
+      ],
+      "specs": {
+        "Model": "GENESIS-M",
+        "MB Type": "M-ATX , ITX (support MB back plug)",
+        "Front Panel": "Tempered Glass Panel",
+        "Side Panel": "Left Tempered Glass, Right Metal with Airy Holes",
+        "Top Panel": "Tempered Glass Panel",
+        "Bottom Panel": "Magnetic Dust Filter",
+        "I/O Port USB": "USB3.0 x 2, Type-C x 1, HD Audio x 1, Power Button, Reset Button",
+        "PSU": "ATX PSU (max 240mm)",
+        "Fan Support": "<b>Motherboard</b>~ 12cm x 2 <br><b>Rear </b>~ 12cm x 1 <br><b> Bottom</b> ~ 12cm x 3 ",
+        "Radiator Support": "<b>Motherboard</b>~ 280 / 240 / 120mm <br><b>Bottom </b> ~ 360 / 280 / 240mm",
+        "Drive Bay 3.5″" : "HDD 1 pc",
+        "Drive Bay 2.5″" : "SSD 2 pcs",
+        "PCI Expansion Slots" : "5",
+        "Max VGA Card" : "410mm",
+        "Max CPU Cooler" : "160mm",
+        "Case Size" : "420mm(L) x 285mm(W) x 350mm(H)",
+        "Carton Size" : "515mm(L) x 358mm(W) x 415mm(H)"
+
+      }
+    }
+    
+  ]
+}

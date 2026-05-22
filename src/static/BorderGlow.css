@@ -568,7 +568,7 @@ section {
 }
 
 .section6-text h1{
-    font-size:70px;
+    font-size:50px;
     font-weight:200;
     letter-spacing:8px;
     color:#c3bfbf;
@@ -610,19 +610,30 @@ section {
 }
 
 
-
-.section6-main-img{
+.section6-main-img {
     width:600px;
     max-width:90%;
     position:relative;
     z-index:5;
     object-fit:contain;
     filter:drop-shadow(0 30px 50px rgba(0,0,0,0.7));
-
-    animation:
-    productReveal5 1.2s ease forwards .4s;
 }
 
+.section6-main-img.img-animate {
+    animation: mainImageChange 0.7s ease forwards;
+}
+
+@keyframes mainImageChange {
+    from {
+        opacity: 0;
+        transform: translateY(40px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
 /* FADE IN FROM BOTTOM */
 
 @keyframes revealBottom6{
@@ -639,9 +650,6 @@ section {
 
 }
 
-.section6-main-img.animate{
-    animation:revealBottom6 .7s ease forwards;
-}
 
 /* RESPONSIVE */
 
@@ -921,6 +929,15 @@ section {
 
 }
 
+.spec-topic2 {
+
+    font-size: 21px;
+    color: white;
+    margin-bottom: 30px;
+    padding-right: 1020px;
+    padding-top:130px;
+}
+
 .spec-topic{
     text-align:left;
 }
@@ -956,3 +973,4 @@ section {
     animation: fadeSlideIn 1s ease forwards;
     animation-delay: 0.3s;
 }
+
