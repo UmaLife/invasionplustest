@@ -19,7 +19,13 @@
         "static/E20.7.png",
         "static/E20.2.png",
         "static/E20.5.png",
-        "static/E20.9.png"
+        "static/E20.9.png",
+        "static/E20.1.png"
+      ],
+      "highlightImages": [
+      "static/E20.11.png",
+      "static/E20.1.png",
+      "static/E20.3.png"
       ],
       "features": [
         {

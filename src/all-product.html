@@ -68,26 +68,32 @@
         </p>
 
         <div class="type-list">
-            <article class="card">
-                <img src="static/E-ATX.png" alt="Product Pic">
-                <div class="type-name">
-                    <h3>E-ATX</h3>
-                </div>
-            </article>
+            <a href="e-atx.html" class="type-card-link">
+                <article class="card">
+                    <img src="static/e-atx-icon.png" alt="E-ATX Case">
+                    <div class="type-name">
+                        <h3>E-ATX</h3>
+                    </div>
+                </article>
+            </a>
 
-            <article class="card">
-                <img src="static/ATX.png" alt="Product Pic">
-                <div class="type-name">
-                    <h3>ATX</h3>
-                </div>
-            </article>
+            <a href="atx.html" class="type-card-link">
+                <article class="card">
+                    <img src="static/atx-icon.png" alt="ATX Case">
+                    <div class="type-name">
+                        <h3>ATX</h3>
+                    </div>
+                </article>
+            </a>
 
-            <article class="card">
-                <img src="static/M-ATX.png" alt="Product Pic">
-                <div class="type-name">
-                    <h3>M-ATX</h3>
-                </div>
-            </article>
+            <a href="m-atx.html" class="type-card-link">
+                <article class="card">
+                    <img src="static/m-atx-icon.png" alt="M-ATX Case">
+                    <div class="type-name">
+                        <h3>M-ATX</h3>
+                    </div>
+                </article>
+            </a>
         </div>
         <div class="divider"></div>
     </section>
@@ -116,72 +122,7 @@
         </div>
 
         <div class="product-container">
-            <div class="product-list">
-
-                <article class="product">
-                    <img src="static/E10.png" alt="Product Pic">
-
-                    <div class="product-name">
-                        <h3>E10</h3>
-                        <p>E-ATX Case</p>
-                        <p>Variation: Black</p>
-
-                        <span class="price">RM 299</span>
-                         <div class="price-divider"></div>
-                        <a href="#" class="product-learn-more">
-                            Learn More →
-                        </a>
-                    </div>
-                </article>
-
-                <article class="product">
-                    <img src="static/E20.4.png" alt="Product Pic">
-
-                    <div class="product-name">
-                        <h3>E20</h3>
-                        <p>E-ATX Case</p>
-                        <p>Variation: Black</p>
-
-                        <span class="price">RM 299</span>
-                         <div class="price-divider"></div>
-                        <a href="product2.html" class="product-learn-more">
-                            Learn More →
-                        </a>
-                    </div>
-                </article>
-
-               <article class="product">
-                    <img src="static/GENESIS-M WHITE-01.png" alt="Product Pic">
-
-                    <div class="product-name">
-                        <h3>GENESIS-M</h3>
-                        <p>E-ATX Case</p>
-                        <p>Variation: Black/White</p>
-
-                        <span class="price">RM 299</span>
-                         <div class="price-divider"></div>
-                        <a href="#" class="product-learn-more">
-                            Learn More →
-                        </a>
-                    </div>
-                </article>
-
-               <article class="product">
-                    <img src="static/GENESIS WHITE-01.png" alt="Product Pic">
-
-                    <div class="product-name">
-                        <h3>GENESIS</h3>
-                        <p>E-ATX Case</p>
-                        <p>Variation: Black/White</p>
-
-                        <span class="price">RM 299</span>
-                         <div class="price-divider"></div>
-                        <a href="#" class="product-learn-more">
-                            Learn More →
-                        </a>
-                    </div>
-                </article>
-
+            <div class="product-list" id="cases-product-list">
             </div>
         </div>
     </section>
@@ -189,6 +130,49 @@
 
 <script type="module" src="home.js"></script>
 <script src="set.js">
+</script>
+<script>
+async function loadCasesProducts() {
+    const productList = document.getElementById("cases-product-list");
+
+    const response = await fetch("products.json");
+    const data = await response.json();
+
+    productList.innerHTML = "";
+
+    data.products.forEach(product => {
+        const image =
+            product.mainImage ||
+            product.images?.[0] ||
+            product.variations?.black?.[0] ||
+            "static/fallback.png";
+
+        const variations = product.variations
+            ? Object.keys(product.variations).join("/")
+            : "Black";
+
+        productList.innerHTML += `
+            <article class="product">
+                <img src="${image}" alt="${product.name}">
+
+                <div class="product-name">
+                    <h3>${product.name}</h3>
+                    <p>Gaming Case</p>
+                    <p>Variation: ${variations}</p>
+
+                    <span class="price">${product.price}</span>
+                    <div class="price-divider"></div>
+
+                    <a href="product2.html?id=${product.id}" class="product-learn-more">
+                        Learn More →
+                    </a>
+                </div>
+            </article>
+        `;
+    });
+}
+
+loadCasesProducts();
 </script>
 </body>
 </html>
