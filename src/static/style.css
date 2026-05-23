@@ -22,6 +22,7 @@ body{
     color: #fff;
     min-width: 1200px;
     overflow-x: auto;
+    overflow-y: visible;
     }
 
 section {
@@ -1183,6 +1184,41 @@ border-glow {
     letter-spacing: 1px;
 }
 
+.product-section5 > .spec-topic-wrapper {
+    width: min(1100px, 100%);
+    padding: 0 ;
+    margin: 0 auto 24px;
+}
+
+.product-section5 > .spec-topic-wrapper .spec-topic {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    display: block;
+}
+
+/* Product Highlights topic */
+.product-description-scroll .description-sticky > .spec-topic-wrapper {
+    position: absolute;
+    top: 100px;
+    left: 8%;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    z-index: 5;
+}
+
+.product-description-scroll .description-sticky > .spec-topic-wrapper .spec-topic {
+    width: auto;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    display: block;
+}
+
 .spec-topicfirst {
     width: 100%;
     max-width: 1400px;  
@@ -1254,4 +1290,102 @@ border-glow {
     display: flex;
     flex-direction: column;
     align-items: center; /* This centers the children blocks */
+}
+
+/* product scroll effect*/
+.product-description-scroll {
+    height: 400vh;
+    position: relative;
+    background: #050505;
+    padding-top: 0 !important;
+    display: block !important;
+    overflow: visible;
+}
+
+.description-sticky {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: #050505;
+}
+
+.description-sticky.is-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+
+.description-sticky.is-bottom {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+}
+
+.highlight-topic {
+    position: absolute;
+    top: 16px;
+    left: 20%;
+    z-index: 5;
+}
+
+#highlight-slides {
+    position: absolute;
+    inset: 0;
+}
+
+.highlight-slide {
+    position: absolute;
+    inset: 0;
+    padding: 0 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    opacity: 0;
+    z-index: 1;
+    pointer-events: none;
+    transition: opacity 1s ease;
+}
+
+.highlight-slide.active {
+    opacity: 1;
+    z-index: 2;
+    pointer-events: auto;
+}
+
+.description-left {
+    width: 42%;
+    color: white;
+}
+
+.description-left h1 {
+    font-size: 3.8rem;
+    margin-bottom: 24px;
+    letter-spacing: 0.05em;
+}
+
+.description-left p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #cfcfcf;
+}
+
+.description-right {
+    width: 52%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-right img {
+    max-width: 90%;
+    max-height: 76vh;
+    object-fit: contain;
+    display: block;
 }

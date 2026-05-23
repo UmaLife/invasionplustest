@@ -136,7 +136,17 @@
         </div>
     </section>
 
-    <!-- 3D MODEL SECTION -->
+    <!-- SCROLLING SECTION -->
+    <section class="product-description-scroll">
+        <div class="description-sticky">
+            <div class="spec-topic-wrapper">
+                <h1 class="spec-topic">| Product Highlight</h1>
+            </div>
+    
+            <div id="highlight-slides"></div>
+
+        </div>
+    </section>
 
 
     <!-- SPECS -->
@@ -172,14 +182,16 @@ if (raysContainer) {
 }
 </script>
 <script src="scroll.js"></script>
-<script src="BorderGlow.js"></script>
+<script src="borderglow.js"></script>
 <script src="set.js"></script>
-<script src="script.js"></script>
 <script>
+let productScrollFeatureData = [];
+let currentScrollFeatureIndex = 0;
+let scrollFeatureChanging = false;
+
 async function loadProduct() {
     const params = new URLSearchParams(window.location.search);
-    const productId =
-    (params.get("id") || "e20").toLowerCase();
+    const productId = (params.get("id") || "e20").toLowerCase();
 
     const response = await fetch("products.json");
     const data = await response.json();
@@ -199,51 +211,41 @@ async function loadProduct() {
     document.getElementById("product-description").textContent = product.description;
 
     const mainImage = document.getElementById("main-image");
+    mainImage.src = product.mainImage;
+    mainImage.classList.add("img-animate");
 
-        mainImage.src = product.mainImage;
-        mainImage.classList.add("img-animate");
-        
     document.getElementById("hero-image").src = product.heroImage;
     document.getElementById("description-image").src = product.descriptionImage;
     document.getElementById("spec-image").src = product.specImage;
 
-
     document.getElementById("titleS2").textContent = product.heroTitle;
     document.getElementById("hero-description").textContent = product.heroDescription;
-
 
     loadThumbnails(product);
     loadFeatures(product);
     loadSpecs(product);
 
-    
+    loadScrollFeatures(product);
+    updateDescriptionScroll();
 }
 
 function loadThumbnails(product, color = "black") {
-
-    const thumbnailContainer =
-        document.getElementById("thumbnail-container");
+    const thumbnailContainer = document.getElementById("thumbnail-container");
 
     thumbnailContainer.innerHTML = "";
 
-    // CHECK VARIATION
     let images;
 
     if (product.variations) {
-
         images = product.variations[color];
-
     } else {
-
         images = product.images;
     }
 
     images.forEach((image, index) => {
-
         const img = document.createElement("img");
 
         img.src = image;
-
         img.className = "section6-thumb";
 
         if (index === 0) {
@@ -251,22 +253,17 @@ function loadThumbnails(product, color = "black") {
         }
 
         img.addEventListener("click", function () {
-
-            const mainImage =
-                document.getElementById("main-image");
+            const mainImage = document.getElementById("main-image");
 
             mainImage.classList.remove("img-animate");
-
             void mainImage.offsetWidth;
 
             mainImage.src = image;
-
             mainImage.classList.add("img-animate");
 
-            document.querySelectorAll(".section6-thumb")
-                .forEach(thumb => {
-                    thumb.classList.remove("active");
-                });
+            document.querySelectorAll(".section6-thumb").forEach(thumb => {
+                thumb.classList.remove("active");
+            });
 
             img.classList.add("active");
         });
@@ -274,39 +271,35 @@ function loadThumbnails(product, color = "black") {
         thumbnailContainer.appendChild(img);
     });
 
-    document.getElementById("main-image").src =
-        images[0];
+    document.getElementById("main-image").src = images[0];
 
     const variations = document.querySelectorAll(".section6-variation");
 
-if (product.variations) {
-    variations.forEach(btn => {
-        btn.style.display = "block";
+    if (product.variations) {
+        variations.forEach(btn => {
+            btn.style.display = "block";
 
-        btn.addEventListener("click", function () {
-            const color = btn.dataset.color;
-            const images = product.variations[color];
-            const mainImage = document.getElementById("main-image");
+            btn.addEventListener("click", function () {
+                const color = btn.dataset.color;
+                const images = product.variations[color];
+                const mainImage = document.getElementById("main-image");
 
-            variations.forEach(v => v.classList.remove("active"));
-            btn.classList.add("active");
+                variations.forEach(v => v.classList.remove("active"));
+                btn.classList.add("active");
 
-            loadThumbnails(product, color);
+                loadThumbnails(product, color);
 
-            mainImage.classList.remove("img-animate");
-            void mainImage.offsetWidth;
+                mainImage.classList.remove("img-animate");
+                void mainImage.offsetWidth;
 
-            mainImage.src = images[0];
-
-            mainImage.classList.add("img-animate");
+                mainImage.src = images[0];
+                mainImage.classList.add("img-animate");
+            });
         });
-    });
-} else {
-    document.querySelector(".white-variation").style.display = "none";
+    } else {
+        document.querySelector(".white-variation").style.display = "none";
+    }
 }
-}
-
-
 
 function loadFeatures(product) {
     product.features.forEach((feature, index) => {
@@ -339,16 +332,89 @@ function loadSpecs(product) {
     }
 }
 
-window.addEventListener('scroll', () => {
+function loadScrollFeatures(product) {
+    const scrollImages =
+        product.highlightImages ||
+        product.variations?.black ||
+        Object.values(product.variations || {})[0] ||
+        [];
+
+    const slidesContainer = document.getElementById("highlight-slides");
+    slidesContainer.innerHTML = "";
+
+    product.features.forEach((feature, index) => {
+        const slide = document.createElement("div");
+        slide.className = "highlight-slide";
+
+        if (index === 0) {
+            slide.classList.add("active");
+        }
+
+        slide.innerHTML = `
+            <div class="description-left">
+                <h1>${feature.title}</h1>
+                <p>${feature.description}</p>
+            </div>
+
+            <div class="description-right">
+                <img src="${scrollImages[index] || product.descriptionImage}" alt="Product Feature">
+            </div>
+        `;
+
+        slidesContainer.appendChild(slide);
+    });
+}
+
+function updateDescriptionScroll() {
+    const section = document.querySelector(".product-description-scroll");
+    const sticky = document.querySelector(".description-sticky");
+    const slides = document.querySelectorAll(".highlight-slide");
+
+    if (!section || !sticky || slides.length === 0) return;
+
+    const scrollTop =
+        document.documentElement.scrollTop ||
+        document.body.scrollTop ||
+        window.pageYOffset ||
+        0;
+
+    const viewportHeight = window.innerHeight;
+    const sectionStart = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+    const sectionEnd = sectionStart + sectionHeight - viewportHeight;
+    const totalScrollable = sectionHeight - viewportHeight;
+
+    let progress = (scrollTop - sectionStart) / totalScrollable;
+    progress = Math.max(0, Math.min(progress, 1));
+
+    sticky.classList.remove("is-fixed", "is-bottom");
+
+    if (scrollTop >= sectionStart && scrollTop < sectionEnd) {
+        sticky.classList.add("is-fixed");
+    } else if (scrollTop >= sectionEnd) {
+        sticky.classList.add("is-bottom");
+    }
+
+    const index = Math.min(
+        slides.length - 1,
+        Math.round(progress * (slides.length - 1))
+    );
+
+    slides.forEach((slide, i) => {
+        slide.classList.toggle("active", i === index);
+    });
+}
+
+window.addEventListener("scroll", () => {
     const scrollTop = window.scrollY;
     const vh = window.innerHeight;
 
     let progress = scrollTop / vh;
     let p = Math.max(0, Math.min(1, progress));
 
-    const photo = document.getElementById('photo');
-    const titleS2 = document.getElementById('titleS2');
-    const description = document.querySelector('.description');
+    const photo = document.getElementById("photo");
+    const titleS2 = document.getElementById("titleS2");
+    const description = document.querySelector(".description");
 
     if (photo) {
         photo.style.opacity = p;
@@ -371,12 +437,13 @@ window.addEventListener('scroll', () => {
         description.style.opacity = descP;
         description.style.transform = `translateY(${(1 - descP) * 20}px)`;
     }
+
+    updateDescriptionScroll();
 });
 
 loadProduct();
 </script>
 
-<script src="set.js"></script>
 <script src="animatescroll.js"></script>
 
 </body>
