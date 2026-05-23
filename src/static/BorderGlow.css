@@ -1,3 +1,11 @@
+html, body {
+    height: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 0;
+    width: 100%;
+}
+
 
 .border-glow-card {
   width: 1200px;
@@ -258,19 +266,16 @@
     max-width: 600px;
     margin: 0 auto;
 }
-.image-container {
-    position: absolute; 
-    top: 50%;
-    right: 50%; 
-    z-index: 10;
-    pointer-events: none;
-    opacity: 0; 
-    will-change: transform, opacity;
-    max-width: 1400px;
+.image-container{
+    position:absolute;
+    top:65%;
+    left:50%;
+    transform:translate(-50%, -50%) !important;
+    opacity:1 !important;
 }
 
 .image-container img {
-   width: 650px;
+   width: 450px;
     height: auto;
 }
 
