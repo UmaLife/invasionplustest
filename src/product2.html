@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Product</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="static/BorderGlow.css">
+    <link rel="stylesheet" href="static/style.css">
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script type="importmap">
+    {
+        "imports": {
+            "ogl": "https://cdn.jsdelivr.net/npm/ogl@1.0.11/+esm"
+        }
+    }
+    </script>
+</head>
+
+<body>
+
+<div class="scroll-container" id="scrollBox">
+
+    <!-- SECTION 6 -->
+    <section class="section6">
+
+        <div class="section6-sidebar" id="thumbnail-container"></div>
+
+        <div class="section6-content">
+
+            <div class="section6-text">
+
+                <h1 id="product-name"></h1>
+                <h3 id="product-price"></h3>
+
+                <div class="section6-info">
+
+                    <div class="section6-variation-row">
+                        <h4 class="section6-variation-title">
+                            <strong>Variations:</strong>
+                        </h4>
+
+                        <div class="section6-variations">
+                            <span class="section6-variation active"
+                                  data-color="black"
+                                  style="background:#111;">
+                            </span>
+
+                            <span class="section6-variation white-variation"
+                                  data-color="white"
+                                  style="background:#f1f1f1;">
+                            </span>
+                        </div>
+                    </div>
+
+                    <h4 class="section6-fans">
+                        <strong>Fans:</strong>
+                        <span id="product-fans" class="section6-fans-text"></span>
+                    </h4>
+
+                    <p id="product-description"></p>
+
+                </div>
+            </div>
+
+            <div class="section6-visual">
+                <div class="section6-circle"></div>
+                <img id="main-image" class="section6-main-img" src="">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 2 -->
+    <section class="section-2" id="s2">
+
+        <div id="light-rays-container"
+             class="light-rays-container"
+             style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 1;">
+        </div>
+
+        <div class="text-content" style="position: relative; z-index: 2;">
+            <h3 id="titleS2"></h3>
+            <p id="hero-description" class="description"></p>
+        </div>
+
+        <div class="image-container" id="photo" style="position: relative; z-index: 2;">
+            <img id="hero-image" src="" alt="Product Photo">
+        </div>
+
+    </section>
+
+    <!-- PRODUCT DESCRIPTION -->
+    <section class="product-section5">
+
+        <div class="spec-topic-wrapper">
+            <h1 class="spec-topic">| Product Description</h1>
+        </div>
+
+        <div class="product-card5">
+            <div class="glow"></div>
+
+            <img id="description-image" class="product-img5" src="" alt="Product">
+
+            <div class="feature5 left5 one5">
+                <div class="text5">
+                    <h3 id="feature-title-1"></h3>
+                    <p id="feature-desc-1"></p>
+                </div>
+                <span class="line5"></span>
+                <span class="dot5"></span>
+            </div>
+
+            <div class="feature5 left5 two5">
+                <div class="text5">
+                    <h3 id="feature-title-2"></h3>
+                    <p id="feature-desc-2"></p>
+                </div>
+                <span class="line5"></span>
+                <span class="dot5"></span>
+            </div>
+
+            <div class="feature5 left5 three5">
+                <div class="text5">
+                    <h3 id="feature-title-3"></h3>
+                    <p id="feature-desc-3"></p>
+                </div>
+                <span class="line5"></span>
+                <span class="dot5"></span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 3D MODEL SECTION -->
+
+
+    <!-- SPECS -->
+    <div class="section4">
+
+        <h1 class="spec-topic2">| Specs</h1>
+
+        <div class="spec-container">
+
+            <div class="spec-image">
+                <img id="spec-image" src="" alt="Product Spec Image">
+            </div>
+
+            <div class="spec-content" id="spec-content"></div>
+
+        </div>
+    </div>
+
+    <section class="section7"></section>
+
+</div>
+
+<script type="module">
+import { LightRaysNative } from './lightray.js';
+
+const raysContainer = document.getElementById('light-rays-container');
+
+if (raysContainer) {
+    new LightRaysNative(raysContainer, {
+        raysColor: "#ffffff",
+        lightSpread: 0.6
+    });
+}
+</script>
+<script src="scroll.js"></script>
+<script src="BorderGlow.js"></script>
+<script src="set.js"></script>
+<script src="script.js"></script>
+<script>
+async function loadProduct() {
+    const params = new URLSearchParams(window.location.search);
+    const productId =
+    (params.get("id") || "e20").toLowerCase();
+
+    const response = await fetch("products.json");
+    const data = await response.json();
+
+    const product = data.products.find(item => item.id === productId);
+
+    if (!product) {
+        alert("Product not found");
+        return;
+    }
+
+    document.title = product.name + " Product Page";
+
+    document.getElementById("product-name").textContent = product.name;
+    document.getElementById("product-price").textContent = product.price;
+    document.getElementById("product-fans").textContent = product.fans;
+    document.getElementById("product-description").textContent = product.description;
+
+    const mainImage = document.getElementById("main-image");
+
+        mainImage.src = product.mainImage;
+        mainImage.classList.add("img-animate");
+        
+    document.getElementById("hero-image").src = product.heroImage;
+    document.getElementById("description-image").src = product.descriptionImage;
+    document.getElementById("spec-image").src = product.specImage;
+
+
+    document.getElementById("titleS2").textContent = product.heroTitle;
+    document.getElementById("hero-description").textContent = product.heroDescription;
+
+
+    loadThumbnails(product);
+    loadFeatures(product);
+    loadSpecs(product);
+
+    
+}
+
+function loadThumbnails(product, color = "black") {
+
+    const thumbnailContainer =
+        document.getElementById("thumbnail-container");
+
+    thumbnailContainer.innerHTML = "";
+
+    // CHECK VARIATION
+    let images;
+
+    if (product.variations) {
+
+        images = product.variations[color];
+
+    } else {
+
+        images = product.images;
+    }
+
+    images.forEach((image, index) => {
+
+        const img = document.createElement("img");
+
+        img.src = image;
+
+        img.className = "section6-thumb";
+
+        if (index === 0) {
+            img.classList.add("active");
+        }
+
+        img.addEventListener("click", function () {
+
+            const mainImage =
+                document.getElementById("main-image");
+
+            mainImage.classList.remove("img-animate");
+
+            void mainImage.offsetWidth;
+
+            mainImage.src = image;
+
+            mainImage.classList.add("img-animate");
+
+            document.querySelectorAll(".section6-thumb")
+                .forEach(thumb => {
+                    thumb.classList.remove("active");
+                });
+
+            img.classList.add("active");
+        });
+
+        thumbnailContainer.appendChild(img);
+    });
+
+    document.getElementById("main-image").src =
+        images[0];
+
+    const variations = document.querySelectorAll(".section6-variation");
+
+if (product.variations) {
+    variations.forEach(btn => {
+        btn.style.display = "block";
+
+        btn.addEventListener("click", function () {
+            const color = btn.dataset.color;
+            const images = product.variations[color];
+            const mainImage = document.getElementById("main-image");
+
+            variations.forEach(v => v.classList.remove("active"));
+            btn.classList.add("active");
+
+            loadThumbnails(product, color);
+
+            mainImage.classList.remove("img-animate");
+            void mainImage.offsetWidth;
+
+            mainImage.src = images[0];
+
+            mainImage.classList.add("img-animate");
+        });
+    });
+} else {
+    document.querySelector(".white-variation").style.display = "none";
+}
+}
+
+
+
+function loadFeatures(product) {
+    product.features.forEach((feature, index) => {
+        const number = index + 1;
+
+        const titleElement = document.getElementById(`feature-title-${number}`);
+        const descElement = document.getElementById(`feature-desc-${number}`);
+
+        if (titleElement && descElement) {
+            titleElement.textContent = feature.title;
+            descElement.textContent = feature.description;
+        }
+    });
+}
+
+function loadSpecs(product) {
+    const specContent = document.getElementById("spec-content");
+    specContent.innerHTML = "";
+
+    for (const [title, value] of Object.entries(product.specs)) {
+        const row = document.createElement("div");
+        row.className = "spec-row";
+
+        row.innerHTML = `
+            <span class="spec-title">${title}</span>
+            <span class="spec-value">${value}</span>
+        `;
+
+        specContent.appendChild(row);
+    }
+}
+
+window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const vh = window.innerHeight;
+
+    let progress = scrollTop / vh;
+    let p = Math.max(0, Math.min(1, progress));
+
+    const photo = document.getElementById('photo');
+    const titleS2 = document.getElementById('titleS2');
+    const description = document.querySelector('.description');
+
+    if (photo) {
+        photo.style.opacity = p;
+        const scale = 0.35 + (p * 0.4);
+        const slideEffect = (1 - p) * 450;
+        const extraDown = p * -80;
+
+        photo.style.transform = `translate(calc(117% + ${slideEffect}px), calc(-50% + ${extraDown}px)) scale(${scale})`;
+    }
+
+    if (titleS2) {
+        titleS2.style.opacity = p;
+        const drift = (1 - p) * 30;
+        titleS2.style.transform = `translateY(${drift}px)`;
+        titleS2.style.letterSpacing = `${0.1 + (p * 0.2)}em`;
+    }
+
+    if (description) {
+        const descP = Math.max(0, (p - 0.2) / 0.8);
+        description.style.opacity = descP;
+        description.style.transform = `translateY(${(1 - descP) * 20}px)`;
+    }
+});
+
+loadProduct();
+</script>
+
+<script src="set.js"></script>
+<script src="animatescroll.js"></script>
+
+</body>
+</html>

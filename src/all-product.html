@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/style1.css">
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans" rel="stylesheet">
+    <title>InvasionPlus</title>
+
+</head>
+<body>
+<!---Overlay Search-->
+    <div id="searchOverlay" class="search-overlay">
+        <div class="search-box">
+            <input type="text" placeholder="Search your product" autofocus>
+            <i class="fa-solid fa-xmark close-btn" onclick="closeSearch()"></i>
+        </div>
+    </div>
+<!--Menu bar-->
+    <div class="side-menu" id="sideMenu">
+        <div class="menu-content">
+        <h2>MENU</h2>
+        <div class="menu-search">
+            <input type="text" placeholder="Search your product">
+        </div>
+        <ul>
+            <li onclick="openProductPanel()">Product</li>
+            <li onclick="closeProductPanel()">Software</li>
+            <li onclick="closeProductPanel()">Contact</li>
+            <li onclick="closeProductPanel()">About Us</li>
+        </ul>
+        <div class="menu-logo">
+            <img src="static/logo.png"alt="logo">
+        </div>
+        <i class="fa-solid fa-xmark menu-close" onclick="closeMenu()"></i>
+        </div>
+    </div>
+    <div class="product-panel" id="productPanel">
+        <div class="panel-content">
+        <a href="cases.html" class="product-item">
+            <img src="static/cases.png">
+            <span>Cases</span>
+        </a>
+        <a href="cooling.html" class="product-item">
+            <img src="static/cooling.png">
+            <span>Cooling</span>
+        </a>
+        <a href="monitor.html" class="product-item">
+            <img src="static/monitor.png">
+            <span>Monitor</span>
+        </a>
+
+    </div>
+    </div>
+    <div class="homepage" id="homepage">
+
+    </div>
+
+<!--Product type-->
+<section class="cases">
+    <div class="category-container">
+        <h3 class="breadcrumb">Home/All Cases</h3>
+        <h2 class="product-type">All Cases</h2>
+        <p class="category-subtitle">
+            Explore premium gaming cases built for airflow, performance, and aesthetics.
+        </p>
+
+        <div class="type-list">
+            <article class="card">
+                <img src="static/E-ATX.png" alt="Product Pic">
+                <div class="type-name">
+                    <h3>E-ATX</h3>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="static/ATX.png" alt="Product Pic">
+                <div class="type-name">
+                    <h3>ATX</h3>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="static/M-ATX.png" alt="Product Pic">
+                <div class="type-name">
+                    <h3>M-ATX</h3>
+                </div>
+            </article>
+        </div>
+        <div class="divider"></div>
+    </section>
+
+<!---Product-->
+    <div class ="product-area">
+        
+        <!--buttons-->
+        <div class="filters">
+            <div class="filters-button">
+                <h3>Filter by:</h3>
+                <h4 class="filter">Price</h4>
+                <h4 class="filter">Case Size </h4>
+            </div>
+
+            <div class="sorting">
+                <h3>Sort by:</h3>
+                    <select>
+                        <option class="newest">Newest First</option>
+                        <option class="price-low">Price Low to High</option>
+                        <option class="price-high">Price High to Low</option>
+                    </select>
+            </div>
+
+
+        </div>
+
+        <div class="product-container">
+            <div class="product-list">
+
+                <article class="product">
+                    <img src="static/E10.png" alt="Product Pic">
+
+                    <div class="product-name">
+                        <h3>E10</h3>
+                        <p>E-ATX Case</p>
+                        <p>Variation: Black</p>
+
+                        <span class="price">RM 299</span>
+                         <div class="price-divider"></div>
+                        <a href="#" class="product-learn-more">
+                            Learn More →
+                        </a>
+                    </div>
+                </article>
+
+                <article class="product">
+                    <img src="static/E20.4.png" alt="Product Pic">
+
+                    <div class="product-name">
+                        <h3>E20</h3>
+                        <p>E-ATX Case</p>
+                        <p>Variation: Black</p>
+
+                        <span class="price">RM 299</span>
+                         <div class="price-divider"></div>
+                        <a href="product2.html" class="product-learn-more">
+                            Learn More →
+                        </a>
+                    </div>
+                </article>
+
+               <article class="product">
+                    <img src="static/GENESIS-M WHITE-01.png" alt="Product Pic">
+
+                    <div class="product-name">
+                        <h3>GENESIS-M</h3>
+                        <p>E-ATX Case</p>
+                        <p>Variation: Black/White</p>
+
+                        <span class="price">RM 299</span>
+                         <div class="price-divider"></div>
+                        <a href="#" class="product-learn-more">
+                            Learn More →
+                        </a>
+                    </div>
+                </article>
+
+               <article class="product">
+                    <img src="static/GENESIS WHITE-01.png" alt="Product Pic">
+
+                    <div class="product-name">
+                        <h3>GENESIS</h3>
+                        <p>E-ATX Case</p>
+                        <p>Variation: Black/White</p>
+
+                        <span class="price">RM 299</span>
+                         <div class="price-divider"></div>
+                        <a href="#" class="product-learn-more">
+                            Learn More →
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+
+<script type="module" src="home.js"></script>
+<script src="set.js">
+</script>
+</body>
+</html>
