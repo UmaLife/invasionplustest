@@ -8,24 +8,24 @@
       "description": "Invasion Plus E-20 combines a mostly mesh design with optimised vertical airflow, letting air move naturally and efficiently through the case. Supporting up to 10 fans, it keeps your system cool, steady, and effortless, in a clean, carefully considered layout — designed so every detail simply works for you.",
       "heroTitle": "Optimized for Maximum Airflow",
       "heroDescription": "Experience peak performance with a chassis designed for high-end cooling. The E20 series supports up to nine 120mm fans for ultimate thermal control.",
-      "mainImage": "static/E20.4.png",
-      "heroImage": "static/E20.png",
-      "descriptionImage": "static/E20.1.png",
-      "specImage": "static/E20.5.png",
+      "mainImage": "static/E20/E20.4.png",
+      "heroImage": "static/E20/E20.png",
+      "descriptionImage": "static/E20/E20.1.png",
+      "specImage": "static/E20/E20.5.png",
       "images": [
-        "static/E20.4.png",
-        "static/E20.1.png",
-        "static/E20.3.png",
-        "static/E20.7.png",
-        "static/E20.2.png",
-        "static/E20.5.png",
-        "static/E20.9.png",
-        "static/E20.1.png"
+        "static/E20/E20.4.png",
+        "static/E20/E20.1.png",
+        "static/E20/E20.3.png",
+        "static/E20/E20.7.png",
+        "static/E20/E20.2.png",
+        "static/E20/E20.5.png",
+        "static/E20/E20.9.png",
+        "static/E20/E20.1.png"
       ],
       "highlightImages": [
-      "static/E20.11.png",
-      "static/E20.1.png",
-      "static/E20.3.png"
+      "static/E20/E20.11.png",
+      "static/E20/E20.1.png",
+      "static/E20/E20.3.png"
       ],
       "features": [
         {
@@ -64,24 +64,25 @@
       "description": "",
       "heroTitle": "Exceptional Air Cooling Support",
       "heroDescription": "Featuring a Hight - Airflow layout and multiple fan mounts to keep your components cool under heavy workloads ",
-      "mainImage": "static/ALTAS-BLACK-01.png",
-      "heroImage": "static/ALTAS-BLACK-02.png",
-      "descriptionImage": "static/ALTAS-BLACK-03.png",
-      "specImage": "static/ALTAS-BLACK-02.png",
+      "mainImage": "static/ATLAS/ALTAS-BLACK-01.png",
+      "heroImage": "static/ATLAS/ALTAS-BLACK-02.png",
+      "descriptionImage": "static/ATLAS/ALTAS-BLACK-03.png",
+      "specImage": "static/ATLAS/ALTAS-BLACK-02.png",
       "variations": {
       "black": [
-        "static/ALTAS-BLACK-01.png",
-        "static/ALTAS-BLACK-02.png",
-        "static/ALTAS-BLACK-03.png",
-        "static/ALTAS-BLACK-04.png",
-        "static/ALTAS-BLACK-05.png"
+        "static/ATLAS/ALTAS-BLACK-01.png",
+        "static/ATLAS/ALTAS-BLACK-02.png",
+        "static/ATLAS/ALTAS-BLACK-03.png",
+        "static/ATLAS/ALTAS-BLACK-03.png",
+        "static/ATLAS/ALTAS-BLACK-04.png",
+        "static/ATLAS/ALTAS-BLACK-05.png"
       ],
       "white": [
-        "static/ALTAS-WHITE-01.png",
-        "static/ALTAS-WHITE-02.png",
-        "static/ATLAS-WHITE-03.png",
-        "static/ATLAS-WHITE-04.png",
-        "static/ATLAS-WHITE-05.png"
+        "static/ATLAS/ALTAS-WHITE-01.png",
+        "static/ATLAS/ALTAS-WHITE-02.png",
+        "static/ATLAS/ATLAS-WHITE-03.png",
+        "static/ATLAS/ATLAS-WHITE-04.png",
+        "static/ATLAS/ATLAS-WHITE-05.png"
       ]
     },
       "features": [
@@ -131,14 +132,14 @@
       "descriptionImage": "static/ALTAS-BLACK-03.png",
       "specImage": "static/ALTAS-BLACK-02.png",
       "images": [
-        "static/E10 (1).png",
-        "static/E10 (2).png",
-        "static/E10 (3).png",
-        "static/E10 (4).png",
-        "static/E10 (5).png",
-        "static/E10 (6).png",
-        "static/E10 (7).png",
-        "static/E10 (8).png"
+        "static/E10/E10 (1).png",
+        "static/E10/E10 (2).png",
+        "static/E10/E10 (3).png",
+        "static/E10/E10 (4).png",
+        "static/E10/E10 (5).png",
+        "static/E10/E10 (6).png",
+        "static/E10/E10 (7).png",
+        "static/E10/E10 (8).png"
       ],
       "features": [
         {
@@ -183,14 +184,14 @@
       "specImage": "static/ALTAS-BLACK-02.png",
       "variations": {
       "black": [
-        "static/EREBUS BLACK - 01.png",
-        "static/EREBUS BLACK -02.png",
-        "static/EREBUS BLACK - 03.png"
+        "static/EREBUS/EREBUS BLACK - 01.png",
+        "static/EREBUS/EREBUS BLACK -02.png",
+        "static/EREBUS/EREBUS BLACK - 03.png"
       ],
       "white": [
-        "static/EREBUS WHITE -01.png",
-        "static/EREBUS WHITE - 02.png",
-        "static/EREBUS WHITE - 03.png"
+        "static/EREBUS/EREBUS WHITE -01.png",
+        "static/EREBUS/EREBUS WHITE - 02.png",
+        "static/EREBUS/EREBUS WHITE - 03.png"
         
       ]
     },
@@ -242,24 +243,24 @@
       "specImage": "static/ALTAS-BLACK-02.png",
       "variations": {
       "black": [
-        "static/GENESIS BLACK-01.png",
-        "static/GENESIS BLACK-02.png",
-        "static/GENESIS BLACK-03.png",
-        "static/GENESIS BLACK-04.png",
-        "static/GENESIS BLACK-05.png",
-        "static/GENESIS BLACK-06.png",
-        "static/GENESIS BLACK-07.png",
-        "static/GENESIS BLACK-08.png"
+        "static/GENESIS/GENESIS BLACK-01.png",
+        "static/GENESIS/GENESIS BLACK-02.png",
+        "static/GENESIS/GENESIS BLACK-03.png",
+        "static/GENESIS/GENESIS BLACK-04.png",
+        "static/GENESIS/GENESIS BLACK-05.png",
+        "static/GENESIS/GENESIS BLACK-06.png",
+        "static/GENESIS/GENESIS BLACK-07.png",
+        "static/GENESIS/GENESIS BLACK-08.png"
       ],
       "white": [
-        "static/GENESIS WHITE-01.png",
-        "static/GENESIS WHITE-02.png",
-        "static/GENESIS WHITE-03.png",
-        "static/GENESIS WHITE-04.png",
-        "static/GENESIS WHITE-05.png",
-        "static/GENESIS WHITE-06.png",
-        "static/GENESIS WHITE-07.png",
-        "static/GENESIS WHITE-08.png"
+        "static/GENESIS/GENESIS WHITE-01.png",
+        "static/GENESIS/GENESIS WHITE-02.png",
+        "static/GENESIS/GENESIS WHITE-03.png",
+        "static/GENESIS/GENESIS WHITE-04.png",
+        "static/GENESIS/GENESIS WHITE-05.png",
+        "static/GENESIS/GENESIS WHITE-06.png",
+        "static/GENESIS/GENESIS WHITE-07.png",
+        "static/GENESIS/GENESIS WHITE-08.png"
         
       ]
     },
@@ -313,24 +314,24 @@
       "specImage": "static/GENESIS-M BLACK-07.png",
       "variations": {
       "black": [
-        "static/GENESIS-M BLACK-01.png",
-        "static/GENESIS-M BLACK-02.png",
-        "static/GENESIS-M BLACK-03.png",
-        "static/GENESIS-M BLACK-04.png",
-        "static/GENESIS-M BLACK-05.png",
-        "static/GENESIS-M BLACK-06.png",
-        "static/GENESIS-M BLACK-07.png",
-        "static/GENESIS-M BLACK-08.png"
+        "static/GENESIS-M/GENESIS-M BLACK-01.png",
+        "static/GENESIS-M/GENESIS-M BLACK-02.png",
+        "static/GENESIS-M/GENESIS-M BLACK-03.png",
+        "static/GENESIS-M/GENESIS-M BLACK-04.png",
+        "static/GENESIS-M/GENESIS-M BLACK-05.png",
+        "static/GENESIS-M/GENESIS-M BLACK-06.png",
+        "static/GENESIS-M/GENESIS-M BLACK-07.png",
+        "static/GENESIS-M/GENESIS-M BLACK-08.png"
       ],
       "white": [
-        "static/GENESIS-M WHITE-01.png",
-        "static/GENESIS-M WHITE-02.png",
-        "static/GENESIS-M WHITE-03.png",
-        "static/GENESIS-M WHITE-04.png",
-        "static/GENESIS-M WHITE-05.png",
-        "static/GENESIS-M WHITE-06.png",
-        "static/GENESIS-M WHITE-07.png",
-        "static/GENESIS-M WHITE-08.png"
+        "static/GENESIS-M/GENESIS-M WHITE-01.png",
+        "static/GENESIS-M/GENESIS-M WHITE-02.png",
+        "static/GENESIS-M/GENESIS-M WHITE-03.png",
+        "static/GENESIS-M/GENESIS-M WHITE-04.png",
+        "static/GENESIS-M/GENESIS-M WHITE-05.png",
+        "static/GENESIS-M/GENESIS-M WHITE-06.png",
+        "static/GENESIS-M/GENESIS-M WHITE-07.png",
+        "static/GENESIS-M/GENESIS-M WHITE-08.png"
         
       ]
     },
@@ -384,24 +385,14 @@
       "specImage": "static/GENESIS-M BLACK-07.png",
       "variations": {
       "black": [
-        "static/GENESIS-M BLACK-01.png",
-        "static/GENESIS-M BLACK-02.png",
-        "static/GENESIS-M BLACK-03.png",
-        "static/GENESIS-M BLACK-04.png",
-        "static/GENESIS-M BLACK-05.png",
-        "static/GENESIS-M BLACK-06.png",
-        "static/GENESIS-M BLACK-07.png",
-        "static/GENESIS-M BLACK-08.png"
+        "static/KRATOS/KRATOS-BLACK-01.png",
+        "static/KRATOS/KRATOS-BLACK-02.png",
+        "static/KRATOS/KRATOS-BLACK-03.png"
       ],
       "white": [
-        "static/GENESIS-M WHITE-01.png",
-        "static/GENESIS-M WHITE-02.png",
-        "static/GENESIS-M WHITE-03.png",
-        "static/GENESIS-M WHITE-04.png",
-        "static/GENESIS-M WHITE-05.png",
-        "static/GENESIS-M WHITE-06.png",
-        "static/GENESIS-M WHITE-07.png",
-        "static/GENESIS-M WHITE-08.png"
+        "static/KRATOS/KRATOS-WHITE-01.png",
+        "static/KRATOS/KRATOS-WHITE-01.png",
+        "static/KRATOS/KRATOS-WHITE-01.png"
         
       ]
     },
@@ -420,26 +411,269 @@
         }
       ],
       "specs": {
-        "Model": "GENESIS-M",
-        "MB Type": "M-ATX , ITX (support MB back plug)",
-        "Front Panel": "Tempered Glass Panel",
-        "Side Panel": "Left Tempered Glass, Right Metal with Airy Holes",
-        "Top Panel": "Tempered Glass Panel",
-        "Bottom Panel": "Magnetic Dust Filter",
-        "I/O Port USB": "USB3.0 x 2, Type-C x 1, HD Audio x 1, Power Button, Reset Button",
-        "PSU": "ATX PSU (max 240mm)",
-        "Fan Support": "<b>Motherboard</b>~ 12cm x 2 <br><b>Rear </b>~ 12cm x 1 <br><b> Bottom</b> ~ 12cm x 3 ",
-        "Radiator Support": "<b>Motherboard</b>~ 280 / 240 / 120mm <br><b>Bottom </b> ~ 360 / 280 / 240mm",
-        "Drive Bay 3.5″" : "HDD 1 pc",
-        "Drive Bay 2.5″" : "SSD 2 pcs",
-        "PCI Expansion Slots" : "5",
-        "Max VGA Card" : "410mm",
-        "Max CPU Cooler" : "160mm",
-        "Case Size" : "420mm(L) x 285mm(W) x 350mm(H)",
-        "Carton Size" : "515mm(L) x 358mm(W) x 415mm(H)"
+        "Model": "KRATOS",
+        "Front Panel": "ABS + plastic + Tempered Glass Panel",
+        "Left Side Panel": "Tempered glass with buckle",
+        "Right Side Panel": "Ventilation holes on right side",
+        "Chassis": "0.6 - 0.8 mm",
+        "USB3.0 x 2": "Included",
+        "Type C x 1": "Included",
+        "Motherboard Support": "ITX/M-ATX/ATX",
+        "PSU Support": "Front Top/ATX/140-160MM",
+        "Size": "<b>Front</b>~ N/A <br><b>M/B</b> ~ N/A <b>Top </b>~ 3 x 120mm (Fan Optional) - support 360mm liquid cooler <br><b> Rear</b> ~ 1 x 120mm (Fan optional) - support 120mm liquid cooler <br><b>Bottom</b> ~ 3 x 120mm (Fan optional) ",
+        "Drive Bays": "5.25″ ODD x0 <br>3.5″ HDD x2<br>2.5″ SSD x3",
+        "PCI Slots" : "x 7",
+        "Product Dimesion": "<b>Chassis size</b> ~ 440(L) x 242(W) x 350mm (H) <br><b>Product Size</b> ~ 440(L) x 242(W) x 370mm (H) <br><b>Carton Size</b> ~ 440(L) x 305(W) x 530mm (H) ",
+        "Package" : "Poly Foam",
+        "Max VGA Card" : "395mm",
+        "Max CPU Cooler" : "180mm"
 
       }
+    },
+
+    {
+      "id": "t1000",
+      "name": "T-1000",
+      "price": "RM259.00 - RM299.00",
+      "fans": "with 10 ARGB Fans / with 4 ARGB Fans / with 7 ARGB Fans",
+      "description": "Invasion Plus E-10 puts your build on full display with a sleek horizontal layout. Dual chambers thoughtfully separate power and storage from your components, keeping airflow smooth, noise low, and cables neatly out of sight. Personalize your rig and make it feel just right.",
+      "heroTitle": "Exceptional Air Cooling Support",
+      "heroDescription": "Featuring a Hight - Airflow layout and multiple fan mounts to keep your components cool under heavy workloads ",
+      "mainImage": "static/ALTAS-BLACK-01.png",
+      "heroImage": "static/ALTAS-BLACK-02.png",
+      "descriptionImage": "static/ALTAS-BLACK-03.png",
+      "specImage": "static/ALTAS-BLACK-02.png",
+      "images": [
+        "static/T-1000/T-1000B-01.png",
+        "static/T-1000/T-1000B-02.png",
+        "static/T-1000/T-1000B-03.png",
+        "static/T-1000/T-1000B-04.png"
+      ],
+      "features": [
+        {
+          "title": "Optimized Airflow Layout",
+          "description": "Designed with multiple fan mounting positions and ventilated panels to maintain consistent airflow throughout the system."
+        },
+        {
+          "title": "Multiple Storage Expansion",
+          "description": "Supports several SSD and HDD installation slots for flexible storage upgrades and faster data access performance."
+        },
+        {
+          "title": "Spacious Mid-Tower Interior",
+          "description": "Provides ample space for high-end GPUs, multiple storage devices, and easy cable management for a clean build appearance."
+        }
+      ],
+       "specs": {
+        "Model": "T - 1000",
+        "Material": "SPCC 0.7 MM",
+        "Chasis Dimension": "440mm(L) x 235mm(W) x 405mm(H)",
+        "Carton Size": "534mm(L) x 337mm(W) x 577mm(H)",
+        "I/O Port": "USB 3.0 x 2 + Type-C x 1 + HD Audio",
+        "Weight": "7.3KGS(N.W.) / 9.1KGS(G.W.)",
+        "3.5″ + 205″ Drive Bays": "1 + 1",
+        "PCI Slots": "5 Slots",
+        "Air Cooling": "<b>Top</b> ~ 120mm x 3 or 140mm x 2 (Max.)<br><b>Rear</b> ~ 120mm x 1 or 140mm x 1 (Max.)<br><b>Motherboard Cover</b> ~ 120mm x 3 (Max.)<br><b>PSU Cover</b> ~ 120mm x 2 or 140mm x 1 (Max.) <br><b>Bottom</b> ~ 120mm x 1 (Max.)",
+        "Liquid Cooling": "<b>Top</b> ~ 240mm / 280mm / 360mm <br><b>Rear </b>~ 120mm <br><b>Motherboard Cover</b> ~ 360mm",
+        "CPU Cooler Height": "180mm",
+        "VGA Card Length": "430mm"
+      }
+    },
+
+    {
+      "id": "thanatos",
+      "name": "THANATOS",
+      "price": "RM309.00 - RM319.00",
+      "fans": "with 6 Infinity ARGB Fans",
+      "description": "Invasion Plus Thanatos features a refined vertical layout that optimizes airflow through natural heat rise, reduces desk space, and showcases your components in a clean, architectural form-crafted for balanced performance and a premium sanctuary.",
+      "heroTitle": "Exceptional Air Cooling Support",
+      "heroDescription": "Featuring a Hight - Airflow layout and multiple fan mounts to keep your components cool under heavy workloads ",
+      "mainImage": "static/ALTAS-BLACK-01.png",
+      "heroImage": "static/ALTAS-BLACK-02.png",
+      "descriptionImage": "static/ALTAS-BLACK-03.png",
+      "specImage": "static/GENESIS-M BLACK-07.png",
+      "variations": {
+      "black": [
+        "static/THANATOS/THANATOS BLACK - 01.png",
+        "static/THANATOS/THANATOS BLACK - 02.png"
+      ],
+      "white": [
+        "static/THANATOS/THANATOS WHITE - 01.png",
+        "static/THANATOS/THANATOS WHITE - 02.png"
+        
+      ]
+    },
+      "features": [
+        {
+          "title": "Optimized Airflow Layout",
+          "description": "Designed with multiple fan mounting positions and ventilated panels to maintain consistent airflow throughout the system."
+        },
+        {
+          "title": "Multiple Storage Expansion",
+          "description": "Supports several SSD and HDD installation slots for flexible storage upgrades and faster data access performance."
+        },
+        {
+          "title": "Spacious Mid-Tower Interior",
+          "description": "Provides ample space for high-end GPUs, multiple storage devices, and easy cable management for a clean build appearance."
+        }
+      ],
+      "specs": {
+        "Model": "THANATOS",
+        "Front Panel": "ABS + plastic + Tempered Glass Panel",
+        "Left Side Panel": "Tempered glass with buckle",
+        "Right Side Panel": "Ventilation holes on right side",
+        "Chassis": "0.6 - 0.7 mm",
+        "USB3.0 x 2": "Included",
+        "Type C x 1": "Included",
+        "Motherboard Support": "ITX/M-ATX/ATX",
+        "Size": "<b>Front</b>~ N/A <br><b>M/B</b> ~ 3 x 120mm(Fan optional) <b>Top </b>~ 2 x 120mm (Fan Optional) - support 240mm liquid cooler <br><b> Rear</b> ~ 3 x 120mm (Fan optional) - support 240 or 360mm liquid cooler <br><b>Bottom</b> ~ 2 x 120mm (Fan optional) ",
+        "Drive Bays": "5.25″ ODD x0 <br>3.5″ HDD x2<br>2.5″ SSD x4",
+        "PCI Slots" : "x 8",
+        "Product Dimesion": "<b>Chassis size</b> ~ 444(L) x 238(W) x 495mm (H) <br><b>Product Size</b> ~ 444(L) x 238(W) x 495mm (H) <br><b>Carton Size</b> ~ 542(L) x 310(W) x 588mm (H) ",
+        "Package" : "PEPE Foam",
+        "Max VGA Card" : "410mm",
+        "Max CPU Cooler" : "178mm"
+
+      }
+    },
+
+    {
+      "id": "theview5",
+      "name": "THE VIEW 5",
+      "price": "RM249.00 - RM259.00",
+      "fans": "with 3 Infinity ARGB Fans",
+      "description": "Invasion Plus View 5 puts your build on full panoramic seaview, with its 5.5-inch TFT screen for crisp, vibrant visuals. Vertical airflow keeps it cool and smooth—make your rig truly your own.",
+      "heroTitle": "Exceptional Air Cooling Support",
+      "heroDescription": "Featuring a Hight - Airflow layout and multiple fan mounts to keep your components cool under heavy workloads ",
+      "mainImage": "static/ALTAS-BLACK-01.png",
+      "heroImage": "static/ALTAS-BLACK-02.png",
+      "descriptionImage": "static/ALTAS-BLACK-03.png",
+      "specImage": "static/GENESIS-M BLACK-07.png",
+      "variations": {
+      "black": [
+        "static/THE VIEW 5/THE VIEW 5 BLACK-01.png",
+        "static/THE VIEW 5/THE VIEW 5 BLACK-02.png",
+        "static/THE VIEW 5/THE VIEW 5 BLACK-03.png",
+        "static/THE VIEW 5/THE VIEW 5 BLACK-04.png",
+        "static/THE VIEW 5/THE VIEW 5 BLACK-05.png"
+      ],
+      "white": [
+        "static/THE VIEW 5/THE VIEW 5 WHITE-01.png",
+        "static/THE VIEW 5/THE VIEW 5 WHITE-02.png",
+        "static/THE VIEW 5/THE VIEW 5 WHITE-03.png",
+        "static/THE VIEW 5/THE VIEW 5 WHITE-04.png",
+        "static/THE VIEW 5/THE VIEW 5 WHITE-05.png"
+        
+      ]
+    },
+      "features": [
+        {
+          "title": "Optimized Airflow Layout",
+          "description": "Designed with multiple fan mounting positions and ventilated panels to maintain consistent airflow throughout the system."
+        },
+        {
+          "title": "Multiple Storage Expansion",
+          "description": "Supports several SSD and HDD installation slots for flexible storage upgrades and faster data access performance."
+        },
+        {
+          "title": "Spacious Mid-Tower Interior",
+          "description": "Provides ample space for high-end GPUs, multiple storage devices, and easy cable management for a clean build appearance."
+        }
+      ],
+      "specs": {
+        "Model": "The View 5",
+        "Motherboard Support": "MicroATX / ITX",
+        "LCD Screen": "Optional Customized 5″ TFT Display",
+        "Top Cover": "Metal Top Cover with Dust Filter",
+        "Left Side Panel": "Tempered glass with Buckle Design",
+        "Right Side Panel": "Metal Side Cover",
+        "Chassis Thickness": "0.45 - 0.55 mm",
+        "I/O Port": "USB 3.0 x 2 + HD AUDIO (Included) <br>USB 3.1 / Type-C (Included)",
+        "PSU Position": "<b>M/B</b> ~ 2x120mm (Fan optional) <br><b>Rear</b> ~ 1 x 120mm (Fan optional) <br><b>Top</b> ~ 3x120mm or 2x140mm (Fan optional) <br><b>PSU Chamber</b> ~ 3 x 120mm (Fan optional)",
+        "Reserved Radiator Support": "<b>Rear</b> ~ 1 x 120mm AIO support <br><b>Top</b> ~ 240 / 280 / 360mm AIO support ",
+        "Drive Bays": "3.5″ HDD x2 , 2.5″ SSD x1",
+        "PCI Slots" : "4 Slots",
+        "Chassis size": "455(L) x 220(W) x 395mm (H)",
+        "Product Size": "460(L) x 220(W) x 403mm (H)",
+        "Carton Size": "452(L) x 277(W) x 538mm (H)",
+        "Max VGA Card Length" : "420mm",
+        "Max CPU Cooler Height" : "174mm",
+        "Cable Management Space" : "Max 21mm",
+        "5inch TFT Screen Specification" : "ss"
+
+      }
+    },
+
+    {
+      "id": "zoom",
+      "name": "ZOOM",
+      "price": "RM309.00 - RM319.00",
+      "fans": "with 4 Infinity ARGB Fans",
+      "description": "Invasion Plus Zoom puts your build on full panoramic seaview, where every detail can be truly appreciated and shine. With smart vertical airflow and refined mesh, your system stays smooth, quiet, and naturally cool. Balanced, alive, and artful—it just feels right the moment you power it up.",
+      "heroTitle": "Exceptional Air Cooling Support",
+      "heroDescription": "Featuring a Hight - Airflow layout and multiple fan mounts to keep your components cool under heavy workloads ",
+      "mainImage": "static/ALTAS-BLACK-01.png",
+      "heroImage": "static/ALTAS-BLACK-02.png",
+      "descriptionImage": "static/ALTAS-BLACK-03.png",
+      "specImage": "static/GENESIS-M BLACK-07.png",
+      "variations": {
+      "black": [
+        "static/ZOOM/ZOOM.jpg",
+        "static/ZOOM/ZOOM-12.jpg",
+        "static/ZOOM/ZOOM-11.jpg",
+        "static/ZOOM/ZOOM-10.jpg",
+        "static/ZOOM/ZOOM-09.jpg",
+        "static/ZOOM/ZOOM-08.jpg",
+        "static/ZOOM/ZOOM-07.jpg",
+        "static/ZOOM/ZOOM-06.jpg",
+        "static/ZOOM/ZOOM-05.jpg",
+        "static/ZOOM/ZOOM-04.jpg",
+        "static/ZOOM/ZOOM-03.jpg",
+        "static/ZOOM/ZOOM-02.jpg",
+        "static/ZOOM/ZOOM-01.jpg"
+      ],
+      "white": [
+        "static/ZOOM/ZOOM.png",
+        "static/ZOOM/1.jpg",
+        "static/ZOOM/3.jpg",
+        "static/ZOOM/5.jpg",
+        "static/ZOOM/9.jpg"
+      ]
+    },
+      "features": [
+        {
+          "title": "Optimized Airflow Layout",
+          "description": "Designed with multiple fan mounting positions and ventilated panels to maintain consistent airflow throughout the system."
+        },
+        {
+          "title": "Multiple Storage Expansion",
+          "description": "Supports several SSD and HDD installation slots for flexible storage upgrades and faster data access performance."
+        },
+        {
+          "title": "Spacious Mid-Tower Interior",
+          "description": "Provides ample space for high-end GPUs, multiple storage devices, and easy cable management for a clean build appearance."
+        }
+      ],
+      "specs": {
+        "Model": "ZOOM",
+        "MB Type" : "ATX, Micro-ATX, Mini-ITX (Support back-connect motherboard)",
+        "Front Panel": "Tempered Glass Panel",
+        "Side Panel": "Left Quick Detachable Tempered Glass, Right Metal",
+        "Top Panel": "Quick Detachable Metal Board",
+        "I/O Port USB": "USB3.0 x 2 + TYPE-C; HD Audio x 1; Power Button",
+        "PSU": "ATX PSU 200mm",
+        "Fan Support": "<b>Front</b>~ 12cm Fan x 2 <br><b>Left Rear </b>~ 12cm Fan x 1 <br><b>Top</b><b> ~ 12cm Fan x 3<br> Bottom</b> ~ 12cm Fan x 3 ",
+        "Radiator Support": "<b>Front</b>~ 240mm or 360mm <br><b>Top </b> ~ 240mm or 360mm",
+        "Drive Bay 3.5″" : "1",
+        "Drive Bay 2.5″" : "2",
+        "PCI Expansion Slots" : "7",
+        "Carton Size" : "535(L) x 381(W) x 531mm(H)",
+        "Chassis size" :"445(L) x 293(W) x 455mm (H)", 
+        "Case Size": "445(L) x 293(W) x 403mm (H)",
+        "Max VGA Card Length" : "300mm",
+        "Max CPU Cooler Height" : "180mm"
+      }
     }
+
     
   ]
 }
