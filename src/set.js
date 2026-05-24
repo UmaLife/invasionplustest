@@ -130,6 +130,47 @@ const footerTemplate = `
 // This injects the footer at the very end of the body
 document.body.insertAdjacentHTML('beforeend', footerTemplate);
 
+//floating button
+const floatingSocial = `
+<div class="floating-social">
+
+    <div class="social-toggle" onclick="toggleSocialMenu()">
+        <i class="fa-solid fa-comment-dots"></i>
+    </div>
+
+    <div class="social-menu" id="socialMenu">
+
+        <a href="https://wa.me/60123456789" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <a href="https://www.facebook.com/InvasionPlus" target="_blank">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="https://www.instagram.com/invasionplus" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="mailto:your@email.com">
+            <i class="fa-regular fa-envelope"></i>
+        </a>
+
+        <a href="https://www.tiktok.com/@invasionplus" target="_blank">
+        <i class="fa-brands fa-tiktok"></i>
+        </a>
+
+    </div>
+
+</div>
+`;
+
+document.body.insertAdjacentHTML('beforeend', floatingSocial);
+
+function toggleSocialMenu(){
+    document.getElementById("socialMenu").classList.toggle("active");
+}
+
 //navigation bar
 const navbarTemplate = `
     <div class="navbar">
@@ -152,11 +193,26 @@ const navbarTemplate = `
     </div>
 <!---Overlay Search-->
     <div id="searchOverlay" class="search-overlay">
+    <div class="search-container">
+
+        <i class="fa-solid fa-xmark close-btn" onclick="closeSearch()"></i>
+
         <div class="search-box">
-            <input type="text" placeholder="Search your product" autofocus>
-            <i class="fa-solid fa-xmark close-btn" onclick="closeSearch()"></i>
+
+        <input type="text" placeholder="Search your product" id="searchInput">
+
+        <button class="search-btn">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
         </div>
+
+        <div class="search-logo">
+            <img src="static/logo.png" alt="Invasion Plus Logo">
+        </div>
+
     </div>
+</div>
 <!--Menu bar-->
     <div class="side-menu" id="sideMenu">
         <div class="menu-content">
@@ -216,22 +272,24 @@ const navbarTemplate = `
 document.body.insertAdjacentHTML('afterbegin', navbarTemplate);
 
 function openSearch(){
-    document.getElementById("searchOverlay").classList.toggle("active");
-    document.getElementById("homepage").classList.toggle("blur");
+    document.getElementById("searchOverlay").classList.add("active");
+    document.body.classList.add("page-blur");
 }
 
 function closeSearch(){
     document.getElementById("searchOverlay").classList.remove("active");
-    document.getElementById("homepage").classList.remove("blur");
+    document.body.classList.remove("page-blur");
 }
 
 function openMenu(){
     document.getElementById("sideMenu").classList.toggle("active");
+    document.body.classList.add("page-blur");
 }
 
 function closeMenu(){
     document.getElementById("sideMenu").classList.remove("active");
     document.getElementById("productPanel").classList.remove("active");
+    document.body.classList.remove("page-blur");
 }
 
 function openProductPanel(){
@@ -261,3 +319,14 @@ function closeProductPanel(){
 
     document.getElementById("sideMenu").classList.remove("shift");
 }
+window.addEventListener("scroll", () => {
+
+    const navbar = document.querySelector(".navbar");
+
+    if(window.scrollY > 50){
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+
+});
