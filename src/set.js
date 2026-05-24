@@ -148,12 +148,6 @@ const navbarTemplate = `
             <div class="search-icon" onclick="openSearch()">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
-            <div class="allproduct-icon">
-                <i class="fa fa-shopping-bag"></i>
-            </div>
-            <div class="location-icon">
-                <i class="fa-solid fa-location-dot"></i>
-            </div>
         </div>
     </div>
 <!---Overlay Search-->
