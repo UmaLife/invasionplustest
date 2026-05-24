@@ -121,10 +121,9 @@ const footerTemplate = `
                     <h4>Invasion Product Showcase</h4>
                     <p>Latest builds, performance & innovations.</p>
                 </div>
-
+            </div>
         </div>
-
-
+    </div>
 </footer>`;
 
 // This injects the footer at the very end of the body
