@@ -1,4 +1,4 @@
-import { LightRaysNative } from './lightray.js';
+import { HomeLightRays } from './homelight.js';
 import './magicbento.js';
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -7,10 +7,35 @@ window.addEventListener('DOMContentLoaded', () => {
     const raysContainer = document.querySelector('.rays-container');
 
     if (raysContainer) {
-        new LightRaysNative(raysContainer, {
+        new HomeLightRays(raysContainer, {
             raysColor: "#ffffff",
-            lightSpread: 0.6
+            raysSpeed: 0,
+            lightSpread: 0.4,
+            rayLength: 7,
+            mouseInfluence: 0.6
         });
+    }
+
+    /* HERO TEXT LIGHT EFFECT */
+    const mouseLight = { x: window.innerWidth / 2, y: window.innerHeight * 0.3 };
+    window.addEventListener('mousemove', (e) => {
+        mouseLight.x = e.clientX;
+        mouseLight.y = e.clientY;
+        updateLightTextEffect();
+    });
+    
+    function updateLightTextEffect() {
+        const text = document.querySelector('.light-text');
+        if (!text) return;
+        const textRect = text.getBoundingClientRect();
+    
+        const x = mouseLight.x - textRect.left;
+        const y = mouseLight.y - textRect.top;
+    
+        text.style.setProperty(
+            '--clip',
+            `circle(120px at ${x}px ${y}px)`
+        );
     }
 
     /* BANNER SCROLL */
@@ -18,12 +43,37 @@ window.addEventListener('DOMContentLoaded', () => {
     const dots = document.querySelectorAll('.nav-dot');
     const banner = document.querySelector('.banner-container');
 
+    let currentIndex = 0;
+    let autoSlideTimer;
+
+    function getBannerTop() {
+        return banner.getBoundingClientRect().top + window.scrollY;
+    }
+
+    function goToSlide(index, isAuto = false) {
+        if (!banner || slides.length <= 1) return;
+
+        currentIndex = index;
+
+        const bannerTop = getBannerTop();
+        const scrollArea = banner.offsetHeight - window.innerHeight;
+        const target = (scrollArea / (slides.length - 1)) * index;
+
+        window.scrollTo({
+            top: bannerTop + target,
+            behavior: 'smooth'
+        });
+
+        if (!isAuto) {
+            resetAutoSlide();
+        }
+    }
+
     function updateSlides() {
         if (!banner || slides.length === 0) return;
 
         const rect = banner.getBoundingClientRect();
-        const windowHeight = window.innerHeight;
-        const totalScrollable = banner.offsetHeight - windowHeight;
+        const totalScrollable = banner.offsetHeight - window.innerHeight;
 
         if (totalScrollable <= 0) return;
 
@@ -34,6 +84,8 @@ window.addEventListener('DOMContentLoaded', () => {
             slides.length - 1,
             Math.round(progress * (slides.length - 1))
         );
+
+        currentIndex = index;
 
         slides.forEach((slide, i) => {
             const content = slide.querySelector('.slide-content');
@@ -57,43 +109,64 @@ window.addEventListener('DOMContentLoaded', () => {
         if (raysContainer) {
             raysContainer.style.opacity = index === 0 ? '1' : '0';
         }
-    }
 
-    window.addEventListener('scroll', updateSlides);
-    window.addEventListener('resize', updateSlides);
-    updateSlides();
+        updateLightTextEffect();
+    }
 
     dots.forEach((dot, i) => {
         dot.addEventListener('click', () => {
-            if (!banner || slides.length <= 1) return;
-
-            const sectionHeight = banner.offsetHeight - window.innerHeight;
-            const target = (sectionHeight / (slides.length - 1)) * i;
-
-            window.scrollTo({
-                top: banner.offsetTop + target,
-                behavior: 'smooth'
-            });
+            goToSlide(i);
         });
     });
+
+    function startAutoSlide() {
+        autoSlideTimer = setInterval(() => {
+            if (!banner) return;
+
+            const rect = banner.getBoundingClientRect();
+
+            const isInsideBanner =
+                rect.top <= 0 && rect.bottom >= window.innerHeight;
+
+            if (!isInsideBanner) return;
+
+            if (currentIndex < slides.length - 1) {
+                goToSlide(currentIndex + 1, true);
+            }
+
+        }, 5000);
+    }
+
+    function resetAutoSlide() {
+        clearInterval(autoSlideTimer);
+        startAutoSlide();
+    }
+
+    window.addEventListener('scroll', updateSlides);
+    window.addEventListener('resize', () => {
+        updateSlides();
+        updateLightTextEffect();
+    });
+
+    updateSlides();
+    updateLightTextEffect();
+    startAutoSlide();
 
     /* FEATURE CARD SCROLL REVEAL */
     const revealCards = document.querySelectorAll('.reveal-card');
 
-    if (revealCards.length > 0) {
-        const revealObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('show');
-                }
-            });
-        }, {
-            threshold: 0.15
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
         });
+    }, {
+        threshold: 0.15
+    });
 
-        revealCards.forEach(card => {
-            revealObserver.observe(card);
-        });
-    }
+    revealCards.forEach(card => {
+        revealObserver.observe(card);
+    });
 
 });
