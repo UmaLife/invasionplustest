@@ -1413,7 +1413,7 @@ border-glow {
     pointer-events:none;
 }
 
-.hero-content{
+.hero-text{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1426,7 +1426,7 @@ border-glow {
     transform: translate(-50%, -35%);
 }
 
-.hero-content h1{
+.hero-text h1{
     font-size: clamp(3rem, 5.5vw, 5.8rem);
     font-weight: 900;
     line-height: 1.1;
@@ -1437,7 +1437,7 @@ border-glow {
     white-space: nowrap;
 }
 
-.hero-content p{
+.hero-text p{
     font-size: 1.2rem;
     line-height: 1.8;
     color: #ffd000;
