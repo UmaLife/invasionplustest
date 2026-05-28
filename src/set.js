@@ -54,7 +54,7 @@ const footerTemplate = `
                             </a>
                         </li>
                         <li>
-                            <a href="aboutus.html">
+                            <a href="AboutUs.html">
                                 About Us
                             </a>
                         </li>
@@ -88,8 +88,8 @@ const footerTemplate = `
                 <div class="footer-social-section">
                     <h3>FOLLOW US</h3>
                     <div class="social-icons">
-                        <a href="#"><i class="fa-regular fa-envelope"></i></a>
-                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="admin@invasionplus.com"><i class="fa-regular fa-envelope"></i></a>
+                        <a href="https://wa.me/60176704896"><i class="fa-brands fa-whatsapp"></i></a>
                         <a href="https://www.facebook.com/InvasionPlus" target="_blank">
                             <i class="fa-brands fa-facebook"></i>
                         </a>
@@ -139,7 +139,7 @@ const floatingSocial = `
 
     <div class="social-menu" id="socialMenu">
 
-        <a href="https://wa.me/60123456789" target="_blank">
+        <a href="https://wa.me/60176704896" target="_blank">
             <i class="fa-brands fa-whatsapp"></i>
         </a>
 
@@ -151,7 +151,7 @@ const floatingSocial = `
             <i class="fa-brands fa-instagram"></i>
         </a>
 
-        <a href="mailto:your@email.com">
+        <a href="admin@invasionplus.com">
             <i class="fa-regular fa-envelope"></i>
         </a>
 
@@ -234,8 +234,8 @@ const navbarTemplate = `
             BREAK THE NORM, FORGE TOMORROW.
         </div>
         <div class="menu-socials">
-            <a href="#"><i class="fa-regular fa-envelope"></i></a>
-            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="admin@invasionplus.com"><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://wa.me/60176704896"><i class="fa-brands fa-whatsapp"></i></a>
             <a href="https://www.facebook.com/InvasionPlus" target="_blank">
                 <i class="fa-brands fa-facebook"></i>
             </a>
