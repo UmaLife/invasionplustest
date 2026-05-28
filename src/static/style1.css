@@ -1,6 +1,6 @@
 .cases{
     font-family: 'DM Sans', sans-serif;
-    padding: 4rem 0 3rem;
+    padding: 0 0 3rem;
     background: #000;
     color: white;
 }
@@ -12,7 +12,7 @@
 
 .breadcrumb{
     color: white;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 500;
     opacity: 50%;
     margin-bottom: 1rem;
@@ -21,7 +21,7 @@
 .product-type{
     font-size: 3rem;
     margin-bottom: 0.8rem;
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
 }
 
 .category-subtitle{
@@ -35,6 +35,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
+    margin-left: 2rem;
     gap: 4rem;
     width: 100%;
 }
@@ -203,6 +204,7 @@
     min-height: 430px;
     padding: 1.5rem;
     box-sizing: border-box;
+    cursor: pointer;
     transition:
         transform 0.3s ease,
         box-shadow 0.3s ease;
@@ -224,12 +226,14 @@
 .product-name h3{
     font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.25rem;
+    letter-spacing: 1px;
 }
 
 .product-name p{
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #aaa;
+    letter-spacing: 0.5px;
     margin-bottom: 1.2rem;
 }
 

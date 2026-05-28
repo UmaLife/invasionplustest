@@ -68,16 +68,16 @@
         </p>
 
         <div class="type-list">
-            <a href="e-atx.html" class="type-card-link">
+            <a href="#" class="type-card-link" onclick="filterProducts('All')">
                 <article class="card">
                     <img src="static/e-atx-icon.png" alt="E-ATX Case">
                     <div class="type-name">
-                        <h3>E-ATX</h3>
+                        <h3>All Cases</h3>
                     </div>
                 </article>
             </a>
 
-            <a href="atx.html" class="type-card-link">
+            <a href="#" class="type-card-link" onclick="filterProducts('ATX')">
                 <article class="card">
                     <img src="static/atx-icon.png" alt="ATX Case">
                     <div class="type-name">
@@ -86,7 +86,7 @@
                 </article>
             </a>
 
-            <a href="m-atx.html" class="type-card-link">
+            <a href="#" class="type-card-link" onclick="filterProducts('M-ATX')">
                 <article class="card">
                     <img src="static/m-atx-icon.png" alt="M-ATX Case">
                     <div class="type-name">
@@ -132,15 +132,18 @@
 <script src="set.js">
 </script>
 <script>
+let allProducts = [];
+
 async function loadCasesProducts() {
     const productList = document.getElementById("cases-product-list");
 
     const response = await fetch("products.json");
     const data = await response.json();
+    allProducts = data.products;
 
     productList.innerHTML = "";
 
-    data.products.forEach(product => {
+    allProducts.forEach(product => {
         const image =
             product.mainImage ||
             product.images?.[0] ||
@@ -152,12 +155,59 @@ async function loadCasesProducts() {
             : "Black";
 
         productList.innerHTML += `
-            <article class="product">
+            <article onclick="window.location.href='product2.html?id=${product.id}'" class="product">
                 <img src="${image}" alt="${product.name}">
 
                 <div class="product-name">
                     <h3>${product.name}</h3>
-                    <p>Gaming Case</p>
+                    <p>Category: ${product["product-type"]}</p>
+                    <p>Variation: ${variations}</p>
+
+                    <span class="price">${product.price}</span>
+                    <div class="price-divider"></div>
+
+                    <a href="product2.html?id=${product.id}" class="product-learn-more">
+                        Learn More →
+                    </a>
+                </div>
+            </article>
+        `;
+    });
+}
+
+function filterProducts(type) {
+    const productList = document.getElementById("cases-product-list");
+
+    let filteredProducts;
+
+    if (type === "All") {
+        filteredProducts = allProducts;
+    } else {
+        filteredProducts = allProducts.filter(product => {
+            return product["product-type"] === type;
+        });
+    }
+
+    productList.innerHTML = "";
+
+    filteredProducts.forEach(product => {
+        const image =
+            product.mainImage ||
+            product.images?.[0] ||
+            product.variations?.black?.[0] ||
+            "static/fallback.png";
+
+        const variations = product.variations
+            ? Object.keys(product.variations).join("/")
+            : "Black";
+
+        productList.innerHTML += `
+            <article class="product" onclick="window.location.href='product2.html?id=${product.id}'">
+                <img src="${image}" alt="${product.name}">
+
+                <div class="product-name">
+                    <h3>${product.name}</h3>
+                    <p>Category: ${product["product-type"]}</p>
                     <p>Variation: ${variations}</p>
 
                     <span class="price">${product.price}</span>
