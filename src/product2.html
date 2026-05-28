@@ -49,11 +49,20 @@
                                   data-color="black"
                                   style="background:#111;">
                             </span>
+                            <span class="section6-variation led-variation"
+                                data-color="lcd"
+                                style="
+                                    background-image: url('static/KRATOS/lcd.png');
+                                    background-size: cover;
+                                    background-position: center;
+                                ">
+                            </span>
 
                             <span class="section6-variation white-variation"
                                   data-color="white"
                                   style="background:#f1f1f1;">
                             </span>
+
                         </div>
                     </div>
 
@@ -94,12 +103,60 @@
 
     </section>
 
+    <section class="custom-section" id="s3">
+
+    <div id="light-rays-container-2"></div>
+
+    <div class="custom-text-content">
+        <h3 id="custom-title"></h3>
+        <p id="custom-description" class="custom-description"></p>
+    </div>
+
+</section>
+
+<section class="videodesc-section">
+
+    <video
+        class="videodesc-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        id="videodesc-video">
+    </video>
+
+    <div class="videodesc-overlay"></div>
+
+    <div class="videodesc-content">
+
+        <h3 id="videodesc-brand"></h3>
+
+        <h1 id="videodesc-title" class="typing-text"></h1>
+
+        <p id="videodesc-subtitle"></p>
+
+    </div>
+
+</section>
+
+    <!-- LIFESTYLE SECTION -->
+    <section class="lifestyle-section">
+
+        <div class="lifestyle-grid" id="lifestyle-grid"></div>
+
+    </section>
+
+        <!-- FEATURE GALLERY SECTION -->
+    <section class="feature-gallery-section">
+        <div id="feature-gallery"></div>
+    </section>
+
     <!-- PRODUCT DESCRIPTION -->
     <section class="product-section5">
 
-        <div class="spec-topic-wrapper">
-            <h1 class="spec-topic">| Product Description</h1>
-        </div>
+    <div class="topic-wrapper">
+                <h1 class="spec3-topic">| Product Description</h1>
+            </div>
 
         <div class="product-card5">
             <div class="glow"></div>
@@ -109,7 +166,10 @@
             <div class="feature5 left5 one5">
                 <div class="text5">
                     <h3 id="feature-title-1"></h3>
+
                     <p id="feature-desc-1"></p>
+
+        
                 </div>
                 <span class="line5"></span>
                 <span class="dot5"></span>
@@ -118,7 +178,9 @@
             <div class="feature5 left5 two5">
                 <div class="text5">
                     <h3 id="feature-title-2"></h3>
+
                     <p id="feature-desc-2"></p>
+
                 </div>
                 <span class="line5"></span>
                 <span class="dot5"></span>
@@ -127,7 +189,9 @@
             <div class="feature5 left5 three5">
                 <div class="text5">
                     <h3 id="feature-title-3"></h3>
+
                     <p id="feature-desc-3"></p>
+
                 </div>
                 <span class="line5"></span>
                 <span class="dot5"></span>
@@ -135,6 +199,8 @@
 
         </div>
     </section>
+    <!-- HTML -->
+<section class="character-style-section" id="characterStyleSection"></section>
 
     <!-- SCROLLING SECTION -->
     <section class="product-description-scroll">
@@ -143,28 +209,45 @@
                 <h1 class="spec-topic">| Product Highlight</h1>
             </div>
     
-            <div id="highlight-slides"></div>
+            <div id="highlight-slides">
+               
+            </div>
 
         </div>
     </section>
 
 
     <!-- SPECS -->
-    <div class="section4">
+<div class="section4">
 
-        <h1 class="spec-topic2">| Specs</h1>
+    <h1 class="spec4-topic">| Specs</h1>
 
-        <div class="spec-container">
+    <div class="spec-container">
 
-            <div class="spec-image">
-                <img id="spec-image" src="" alt="Product Spec Image">
-            </div>
-
-            <div class="spec-content" id="spec-content"></div>
-
+        <div class="spec-image">
+            <img id="spec-image" src="" alt="">
         </div>
-    </div>
 
+        <div class="spec-content" id="spec-content"></div>
+
+    </div>
+</div>
+
+<!-- SPECS 2 -->
+<div class="section4 section4-duplicate" id="spec-section-2">
+
+    <h1 class="spec4-topic">| 5inch TFT Screen Specification</h1>
+
+    <div class="spec-container">
+
+        <div class="spec-image">
+            <img id="spec-image-2" src="" alt="">
+        </div>
+
+        <div class="spec-content" id="spec-content-2"></div>
+
+    </div>
+</div>
     <section class="section7"></section>
 
 </div>
@@ -172,14 +255,16 @@
 <script type="module">
 import { LightRaysNative } from './lightray.js';
 
-const raysContainer = document.getElementById('light-rays-container');
+["light-rays-container", "light-rays-container-2"].forEach(id => {
+    const container = document.getElementById(id);
 
-if (raysContainer) {
-    new LightRaysNative(raysContainer, {
-        raysColor: "#ffffff",
-        lightSpread: 0.6
-    });
-}
+    if (container) {
+        new LightRaysNative(container, {
+            raysColor: "#ffffff",
+            lightSpread: 0.6
+        });
+    }
+});
 </script>
 <script src="scroll.js"></script>
 <script src="borderglow.js"></script>
@@ -188,6 +273,190 @@ if (raysContainer) {
 let productScrollFeatureData = [];
 let currentScrollFeatureIndex = 0;
 let scrollFeatureChanging = false;
+
+
+function enableFeatureClick() {
+
+    const card = document.querySelector(".product-card5");
+    const features = document.querySelectorAll(".feature5");
+
+    let currentIndex = 0;
+
+    /* START WITH ALL BRIGHT */
+
+    features.forEach(feature => {
+        feature.style.opacity = "1";
+        feature.style.filter = "brightness(1)";
+    });
+
+    function showFeature(index) {
+
+        features.forEach((feature, i) => {
+
+            feature.classList.remove("active-feature");
+
+            if (i === index) {
+
+                feature.classList.add("active-feature");
+
+                feature.style.opacity = "1";
+                feature.style.filter = "brightness(1.4)";
+
+            } else {
+
+                feature.style.opacity = "0.35";
+                feature.style.filter = "brightness(0.45)";
+            }
+
+        });
+
+    }
+
+    /* AFTER 4 SECONDS START FOCUS MODE */
+
+    setTimeout(() => {
+
+        card.classList.add("focus-mode");
+
+        showFeature(currentIndex);
+
+        /* AUTO SWITCH */
+
+        setInterval(() => {
+
+            currentIndex++;
+
+            if (currentIndex >= features.length) {
+                currentIndex = 0;
+            }
+
+            showFeature(currentIndex);
+
+        }, 8000);
+
+    }, 4000);
+
+    /* USER CLICK */
+
+    features.forEach((feature, index) => {
+
+        feature.addEventListener("click", () => {
+
+            card.classList.add("focus-mode");
+
+            currentIndex = index;
+
+            showFeature(currentIndex);
+
+        });
+
+    });
+
+    /* CLICK OUTSIDE RESET */
+
+    document.addEventListener("click", (e) => {
+
+        const clickedFeature = e.target.closest(".feature5");
+        const clickedCard = e.target.closest(".product-card5");
+
+            if (!clickedFeature && !clickedCard) {
+
+        features.forEach(feature => {
+
+            feature.classList.remove("active-feature");
+
+            feature.style.opacity = "1";
+            feature.style.filter = "brightness(1)";
+        });
+
+        /* IMAGE BRIGHT AGAIN */
+
+        card.classList.remove("focus-mode");
+
+    }
+
+    });
+
+}
+
+function loadLifestyleSection(product) {
+
+    if (!product.lifestyleSection) return;
+
+    const data = product.lifestyleSection;
+
+    const container = document.getElementById("lifestyle-grid");
+
+    container.innerHTML = `
+    
+        <div class="lifestyle-card lifestyle-large">
+            <img src="${data.leftImage}" alt="">
+        </div>
+
+        <div class="lifestyle-card lifestyle-large">
+            <img src="${data.middleImage}" alt="">
+        </div>
+
+        <div class="lifestyle-content">
+
+            <div>
+                <h2>${data.title}</h2>
+                <p>${data.description}</p>
+            </div>
+
+            <div class="lifestyle-small-images">
+                <img src="${data.bottomImage1}" alt="">
+                <img src="${data.bottomImage2}" alt="">
+            </div>
+
+        </div>
+    `;
+}
+
+function loadFeatureGallery(product) {
+    if (!product.featureGallery) return;
+
+    const gallery = product.featureGallery;
+    const container = document.getElementById("feature-gallery");
+
+    container.innerHTML = `
+        <div class="feature-gallery-hero">
+            <img src="${gallery.heroImage}" alt="">
+        </div>
+
+        <div class="feature-gallery-cards">
+            ${gallery.cards.map(card => `
+                <div class="feature-gallery-card">
+                    <img src="${card.image}" alt="">
+                    <h3>${card.title}</h3>
+                    <p>${card.description}</p>
+                </div>
+            `).join("")}
+        </div>
+    `;
+}
+
+/* ================= SCROLL ANIMATION ================= */
+
+const gallerySection = document.querySelector(".feature-gallery-section");
+
+const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+
+            gallerySection.classList.add("show");
+
+        }
+
+    });
+
+}, {
+    threshold: 0.25
+});
+
+observer.observe(gallerySection);
 
 async function loadProduct() {
     const params = new URLSearchParams(window.location.search);
@@ -198,10 +467,27 @@ async function loadProduct() {
 
     const product = data.products.find(item => item.id === productId);
 
+    document.querySelectorAll(".section6-variation").forEach(btn => {
+    const color = btn.dataset.color;
+
+    // If product has variations, only show available colors
+    if (product.variations) {
+        btn.style.display = product.variations[color] ? "block" : "none";
+    } 
+    
+    // If product has no variations, only show black/default
+    else {
+        btn.style.display = color === "black" ? "block" : "none";
+    }
+});
+
     if (!product) {
         alert("Product not found");
         return;
     }
+    
+
+    applyProductSections(product);
 
     document.title = product.name + " Product Page";
 
@@ -216,31 +502,285 @@ async function loadProduct() {
 
     document.getElementById("hero-image").src = product.heroImage;
     document.getElementById("description-image").src = product.descriptionImage;
-    document.getElementById("spec-image").src = product.specImage;
+    const specImg = document.getElementById("spec-image");
+
+        if (product.specImage) {
+            specImg.src = product.specImage;
+            specImg.style.display = "block";
+        } else {
+            specImg.style.display = "none";
+        }
 
     document.getElementById("titleS2").textContent = product.heroTitle;
     document.getElementById("hero-description").textContent = product.heroDescription;
 
+    if (product.customSection) {
+    document.getElementById("custom-title").textContent = product.customSection.title;
+    document.getElementById("custom-description").textContent = product.customSection.description;
+}
+
+    /* VIDEODESC */
+
+   /* VIDEODESC */
+
+if(product.videodesc){
+
+    const video = document.getElementById("videodesc-video");
+    const brand = document.getElementById("videodesc-brand");
+    const title = document.getElementById("videodesc-title");
+    const subtitle = document.getElementById("videodesc-subtitle");
+
+    video.src = product.videodesc.video;
+    brand.textContent = product.videodesc.brand;
+    subtitle.textContent = product.videodesc.subtitle;
+
+    title.textContent = "";
+
+    const videodescSection = document.querySelector(".videodesc-section");
+
+    let typedStarted = false;
+
+    function typeText(text, element, speed = 120){
+        let index = 0;
+        element.textContent = "";
+
+        const typing = setInterval(() => {
+            element.textContent += text.charAt(index);
+            index++;
+
+            if(index >= text.length){
+                clearInterval(typing);
+            }
+        }, speed);
+    }
+
+    const videoDescObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting && !typedStarted){
+
+                typedStarted = true;
+
+                videodescSection.classList.add("show");
+
+                setTimeout(() => {
+                    typeText(product.videodesc.title, title, 130);
+                }, 500);
+            }
+        });
+    }, {
+        threshold: 0.45
+    });
+
+    videoDescObserver.observe(videodescSection);
+}
+
     loadThumbnails(product);
     loadFeatures(product);
+    enableFeatureClick();
     loadSpecs(product);
-
+    if (product.sections?.lifestyle !== false) {
+    loadLifestyleSection(product);
+    }
+    if (product.sections?.featureGallery !== false) {
+    loadFeatureGallery(product);
+    }
+    loadVerticalFeatures(product);
     loadScrollFeatures(product);
     updateDescriptionScroll();
+}
+function loadVerticalFeatures(product){
+
+    const container = document.getElementById("characterStyleSection");
+
+    if(!container) return;
+
+    const items = product.verticalFeatures || [];
+
+    if(items.length === 0) return;
+
+    let currentIndex = 0;
+    let autoTimer;
+
+    function render(index){
+
+        const item = items[index];
+
+        container.innerHTML = `
+        
+            <div class="
+                character-card
+                intro-animation
+                ${index === 0 ? "first-page" : ""}
+            ">
+
+                <div class="character-left">
+
+                    <span class="character-side-text">
+                        KRATOS
+                    </span>
+
+                    <div class="image-reveal">
+
+                        <img 
+                            src="${item.image}" 
+                            class="character-main-image"
+                        >
+
+                    </div>
+
+                </div>
+
+                <div class="character-right">
+
+                    <div class="content-reveal">
+
+                        <span class="character-step">
+                            0${index + 1} / 0${items.length}
+                        </span>
+
+                        <h1>${item.title}</h1>
+
+                        <h3>
+                            ${item.subtitle || "Product Feature"}
+                        </h3>
+
+                        <p>${item.description}</p>
+
+                    </div>
+
+                    <div class="character-thumbnails">
+
+                        ${items.map((thumb, i)=>`
+                        
+                            <div class="
+                                character-thumb
+                                ${i === index ? "active" : ""}
+                            " data-index="${i}">
+                            
+                                <img src="${thumb.image}">
+                            
+                            </div>
+                        
+                        `).join("")}
+
+                    </div>
+
+                </div>
+
+            </div>
+        
+        `;
+
+        document.querySelectorAll(".character-thumb")
+        .forEach(thumb=>{
+
+            thumb.addEventListener("click",()=>{
+
+                currentIndex = Number(thumb.dataset.index);
+
+                render(currentIndex);
+
+                stopAuto();
+
+            });
+
+        });
+
+    }
+
+    function nextSlide(){
+
+        currentIndex++;
+
+        if(currentIndex >= items.length){
+            currentIndex = 0;
+        }
+
+        render(currentIndex);
+
+    }
+
+    function restartAuto(){
+
+        clearInterval(autoTimer);
+
+        autoTimer = setInterval(()=>{
+            nextSlide();
+        }, 5000);
+
+    }
+
+    function stopAuto(){
+
+        clearInterval(autoTimer);
+
+    }
+
+    render(currentIndex);
+
+    restartAuto();
+}
+
+function applyProductSections(product) {
+
+    const sections = product.sections || {};
+
+    const sectionMap = {
+    hero: document.querySelector(".section-2"),
+    lifestyle: document.querySelector(".lifestyle-section"),
+    description: document.querySelector(".product-section5"),
+    highlight: document.querySelector(".product-description-scroll"),
+    specs: document.querySelector(".section4"),
+    featureGallery: document.querySelector(".feature-gallery-section"),
+    custom: document.querySelector(".custom-section"),
+    verticalFeatures: document.querySelector(".character-style-section"),
+    videodesc: document.querySelector(".videodesc-section")
+        };
+
+    Object.keys(sectionMap).forEach(key => {
+
+        const section = sectionMap[key];
+
+        if (!section) return;
+
+        if (sections[key] === false) {
+
+            section.style.display = "none";
+
+            section.style.visibility = "hidden";
+
+            section.style.height = "0";
+
+            section.style.overflow = "hidden";
+
+        } else {
+
+            section.style.display = "";
+
+            section.style.visibility = "";
+
+            section.style.height = "";
+
+            section.style.overflow = "";
+        }
+
+    });
+
 }
 
 function loadThumbnails(product, color = "black") {
     const thumbnailContainer = document.getElementById("thumbnail-container");
-
     thumbnailContainer.innerHTML = "";
 
     let images;
 
-    if (product.variations) {
+    if (product.variations && product.variations[color]) {
         images = product.variations[color];
     } else {
         images = product.images;
     }
+
+    if (!images || images.length === 0) return;
 
     images.forEach((image, index) => {
         const img = document.createElement("img");
@@ -276,32 +816,44 @@ function loadThumbnails(product, color = "black") {
     const variations = document.querySelectorAll(".section6-variation");
 
     if (product.variations) {
-        variations.forEach(btn => {
-            btn.style.display = "block";
 
-            btn.addEventListener("click", function () {
-                const color = btn.dataset.color;
-                const images = product.variations[color];
-                const mainImage = document.getElementById("main-image");
+    variations.forEach(btn => {
 
-                variations.forEach(v => v.classList.remove("active"));
-                btn.classList.add("active");
+        const color = btn.dataset.color;
 
-                loadThumbnails(product, color);
+        /* HIDE IF PRODUCT DOESN'T HAVE THIS VARIATION */
 
-                mainImage.classList.remove("img-animate");
-                void mainImage.offsetWidth;
+        if (!product.variations[color]) {
+            btn.style.display = "none";
+            return;
+        }
 
-                mainImage.src = images[0];
-                mainImage.classList.add("img-animate");
-            });
+        btn.style.display = "block";
+
+        btn.addEventListener("click", function () {
+
+            const images = product.variations[color];
+            const mainImage = document.getElementById("main-image");
+
+            variations.forEach(v => v.classList.remove("active"));
+            btn.classList.add("active");
+
+            loadThumbnails(product, color);
+
+            mainImage.classList.remove("img-animate");
+            void mainImage.offsetWidth;
+
+            mainImage.src = images[0];
+            mainImage.classList.add("img-animate");
         });
-    } else {
-        document.querySelector(".white-variation").style.display = "none";
-    }
+    });
+
+}
 }
 
 function loadFeatures(product) {
+    if (!product.features) return;
+
     product.features.forEach((feature, index) => {
         const number = index + 1;
 
@@ -316,10 +868,13 @@ function loadFeatures(product) {
 }
 
 function loadSpecs(product) {
+
+    // FIRST SPECS
     const specContent = document.getElementById("spec-content");
     specContent.innerHTML = "";
 
     for (const [title, value] of Object.entries(product.specs)) {
+
         const row = document.createElement("div");
         row.className = "spec-row";
 
@@ -329,6 +884,40 @@ function loadSpecs(product) {
         `;
 
         specContent.appendChild(row);
+    }
+
+    // SECOND SPECS SECTION
+    const specSection2 = document.getElementById("spec-section-2");
+    const specContent2 = document.getElementById("spec-content-2");
+
+    // IF PRODUCT HAS specs2
+    if (product.specs2) {
+
+        specSection2.style.display = "block";
+
+        specContent2.innerHTML = "";
+
+        for (const [title, value] of Object.entries(product.specs2)) {
+
+            const row = document.createElement("div");
+            row.className = "spec-row";
+
+            row.innerHTML = `
+                <span class="spec-title">${title}</span>
+                <span class="spec-value">${value}</span>
+            `;
+
+            specContent2.appendChild(row);
+        }
+
+        document.getElementById("spec-image-2").src =
+            product.specImage2 || product.specImage;
+
+    }
+
+    else {
+
+        specSection2.style.display = "none";
     }
 }
 
@@ -352,7 +941,7 @@ function loadScrollFeatures(product) {
 
         slide.innerHTML = `
             <div class="description-left">
-                <h1>${feature.title}</h1>
+                <h1 class="highlight-title">${feature.title}</h1>
                 <p>${feature.description}</p>
             </div>
 
@@ -414,7 +1003,7 @@ window.addEventListener("scroll", () => {
 
     const photo = document.getElementById("photo");
     const titleS2 = document.getElementById("titleS2");
-    const description = document.querySelector(".description");
+    const description = document.getElementById("hero-description");
 
     if (photo) {
         photo.style.opacity = p;
@@ -443,7 +1032,21 @@ window.addEventListener("scroll", () => {
 
 loadProduct();
 </script>
+<script>
+const lifestyleSection = document.querySelector('.lifestyle-section');
 
+const lifestyleObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
+    });
+}, {
+    threshold: 0.2
+});
+
+lifestyleObserver.observe(lifestyleSection);
+</script>
 <script src="animatescroll.js"></script>
 
 </body>
