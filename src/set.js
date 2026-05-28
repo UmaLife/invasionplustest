@@ -5,7 +5,7 @@ const footerTemplate = `
         <img src="static/logo.png" alt="INVASION PLUS">
     </div>
 
-    <div class="footer-logo-text">ENGINEERED FOR PERFORMANCE</div>
+    <div class="footer-logo-text">BREAK THE NORM, FORGE TOMORROW.</div>
         <div class="footer-content">
             <div class="footer-links-group">
                 <div class="footer-column">
@@ -121,10 +121,9 @@ const footerTemplate = `
                     <h4>Invasion Product Showcase</h4>
                     <p>Latest builds, performance & innovations.</p>
                 </div>
-
+            </div>
         </div>
-
-
+    </div>
 </footer>`;
 
 // This injects the footer at the very end of the body
@@ -232,7 +231,7 @@ const navbarTemplate = `
             </a>
         </div>
         <div class="menu-bottom-text">
-            ENGINEERED FOR PERFORMANCE
+            BREAK THE NORM, FORGE TOMORROW.
         </div>
         <div class="menu-socials">
             <a href="#"><i class="fa-regular fa-envelope"></i></a>
