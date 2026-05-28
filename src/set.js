@@ -54,7 +54,7 @@ const footerTemplate = `
                             </a>
                         </li>
                         <li>
-                            <a href="AboutUs.html">
+                            <a href="aboutus.html">
                                 About Us
                             </a>
                         </li>
