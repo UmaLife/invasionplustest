@@ -485,10 +485,10 @@ function observeProducts(){
 
 function toggleFilterPanel() {
     const panel = document.getElementById("filterPanel");
+    const button = document.querySelector(".filter-toggle");
 
-    if (panel) {
-        panel.classList.toggle("active");
-    }
+    panel.classList.toggle("active");
+    button.classList.toggle("active");
 }
 
 document.addEventListener("DOMContentLoaded", function() {
