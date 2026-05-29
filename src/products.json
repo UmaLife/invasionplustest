@@ -468,7 +468,7 @@
       ],
       "specs": {
         "Model": "GENESIS",
-        "MB Type": "ATX , M-ATX , ITX (support MB back plug)",
+        "MB Type": "ATX , M-ATX , ITX",
         "Front Panel": "Tempered Glass Panel",
         "Side Panel": "Left Tempered Glass, Right Metal with Airy Holes",
         "Top Panel": "Tempered Glass Panel",
@@ -557,7 +557,7 @@
       ],
       "specs": {
         "Model": "GENESIS-M",
-        "MB Type": "M-ATX , ITX (support MB back plug)",
+        "MB Type": "M-ATX , ITX",
         "Front Panel": "Tempered Glass Panel",
         "Side Panel": "Left Tempered Glass, Right Metal with Airy Holes",
         "Top Panel": "Tempered Glass Panel",
@@ -972,7 +972,7 @@
 
       "specs": {
         "Model": "ZOOM",
-        "MB Type" : "ATX, Micro-ATX, Mini-ITX (Support back-connect motherboard)",
+        "MB Type" : "ATX, Micro-ATX, Mini-ITX",
         "Front Panel": "Tempered Glass Panel",
         "Side Panel": "Left Quick Detachable Tempered Glass, Right Metal",
         "Top Panel": "Quick Detachable Metal Board",
