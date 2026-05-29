@@ -49,11 +49,6 @@ const footerTemplate = `
                             </a>
                         </li>
                         <li>
-                            <a href="Location.html">
-                                Location
-                            </a>
-                        </li>
-                        <li>
                             <a href="AboutUs.html">
                                 About Us
                             </a>
@@ -68,17 +63,17 @@ const footerTemplate = `
 
                     <ul>
                         <li>
-                            <a href="ContactUs.html">
+                            <a href="#">
                                 Software 1
                             </a>
                         </li>
                         <li>
-                            <a href="Location.html">
+                            <a href="#">
                                 Software 1
                             </a>
                         </li>
                         <li>
-                            <a href="AboutUs.html">
+                            <a href="#">
                                 Software 1
                             </a>
                         </li>
@@ -221,9 +216,18 @@ const navbarTemplate = `
         </div>
         <ul>
             <li id="productMenu" onclick="openProductPanel()">Product</li>
-            <li onclick="closeProductPanel()">Software</li>
-            <li onclick="closeProductPanel()">Contact</li>
-            <li onclick="closeProductPanel()">About Us</li>
+
+            <li onclick="closeProductPanel()">
+            <a href="software.html"> Software </a>
+            </li>
+
+            <li onclick="closeProductPanel()">
+            <a href="ContactUs.html">Contact</a>
+            </li>
+
+            <li onclick="closeProductPanel()">
+            <a href="AboutUs.html">About Us</a>
+            </li>
         </ul>
         <div class="menu-logo">
             <a href="homepage.html">
