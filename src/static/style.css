@@ -171,6 +171,10 @@ section {
     font-size: 24px;
     transition: 0.3s;
 }
+.close-btn:hover{
+    color: #ffc700;
+    transform: rotate(90deg);
+}
 body.page-blur > *:not(.search-overlay):not(.side-menu):not(.product-panel):not(.navbar){
     filter: blur(8px);
     transition: 0.3s ease;

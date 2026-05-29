@@ -68,7 +68,7 @@
         </p>
 
         <div class="type-list">
-            <a href="#" class="type-card-link" onclick="filterProducts('All')">
+            <a href="#" class="type-card-link" onclick="filterProducts('All'); return false;">
                 <article class="card">
                     <img src="static/e-atx-icon.png" alt="E-ATX Case">
                     <div class="type-name">
@@ -77,8 +77,7 @@
                 </article>
             </a>
 
-            <a href="#" class="type-card-link" onclick="filterProducts('ATX')">
-                <article class="card">
+            <a href="#" class="type-card-link" onclick="filterProducts('ATX'); return false;">                <article class="card">
                     <img src="static/atx-icon.png" alt="ATX Case">
                     <div class="type-name">
                         <h3>ATX</h3>
@@ -86,8 +85,7 @@
                 </article>
             </a>
 
-            <a href="#" class="type-card-link" onclick="filterProducts('M-ATX')">
-                <article class="card">
+            <a href="#" class="type-card-link" onclick="filterProducts('M-ATX'); return false;">                <article class="card">
                     <img src="static/m-atx-icon.png" alt="M-ATX Case">
                     <div class="type-name">
                         <h3>M-ATX</h3>
@@ -95,11 +93,11 @@
                 </article>
             </a>
         </div>
-        <div class="divider"></div>
+        <div class="divider" id="filtersArea"></div>
     </section>
 
 <!---Product-->
-    <div class ="product-area">
+    <div id="productArea" class="product-area">
         
         <!--buttons-->
         <div class="filters">
@@ -173,6 +171,7 @@ async function loadCasesProducts() {
             </article>
         `;
     });
+    observeProducts();
 }
 
 function filterProducts(type) {
@@ -219,6 +218,31 @@ function filterProducts(type) {
                 </div>
             </article>
         `;
+    });
+    observeProducts();
+
+    document.getElementById("filtersArea").scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+    });
+
+}
+
+function observeProducts(){
+    const products = document.querySelectorAll(".product");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                entry.target.classList.add("show");
+            }
+        });
+    }, {
+        threshold: 0.2
+    });
+
+    products.forEach(product => {
+        observer.observe(product);
     });
 }
 

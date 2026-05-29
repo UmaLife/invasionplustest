@@ -197,6 +197,7 @@
 
 .product{
     background: #111;
+    border: 1px solid transparent;
     border-radius: 18px;
     overflow: hidden;
     color: white;
@@ -205,14 +206,27 @@
     padding: 1.5rem;
     box-sizing: border-box;
     cursor: pointer;
+    opacity: 0;
+    transform: translateY(35px);
     transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
+        opacity 0.7s ease,
+        transform 0.7s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
 }
 
-.product:hover{
-    transform: translateY(-10px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+.product.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.product.show:hover{
+    transform: translateY(-10px) scale(1.02);
+    border-color: rgba(240,165,0,0.55);
+    background: #151515;
+    box-shadow:
+        0 12px 35px rgba(0,0,0,0.55),
+        0 0 25px rgba(240,165,0,0.12);
 }
 
 .product img{
@@ -221,6 +235,15 @@
     object-fit: contain;
     display: block;
     margin-bottom: 1.5rem;
+
+    transition:
+        transform 0.35s ease,
+        filter 0.35s ease;
+}
+
+.product:hover img{
+    transform: scale(1.06);
+    filter: drop-shadow(0 0 14px rgba(240,165,0,0.25));
 }
 
 .product-name h3{
@@ -228,6 +251,21 @@
     font-weight: 700;
     margin-bottom: 1.25rem;
     letter-spacing: 1px;
+}
+
+.product-name h3,
+.product-name p,
+.price,
+.product-learn-more{
+    transition:
+        color 0.3s ease,
+        opacity 0.3s ease,
+        transform 0.3s ease,
+        letter-spacing 0.3s ease;
+}
+
+.product:hover .product-name h3{
+    color: #f0a500;
 }
 
 .product-name p{
@@ -276,8 +314,9 @@
 }
 
 .product:hover .product-learn-more{
-    letter-spacing: 1px;
     opacity: 1;
+    letter-spacing: 1px;
+    transform: translateY(0);
 }
 
 
