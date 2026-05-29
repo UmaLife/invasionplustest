@@ -1691,18 +1691,18 @@ border-glow {
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
-.cards {
+.about-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-top: 30px;
 }
 
-.card {
+.about-card {
     padding: 35px;
     border-right: 1px solid rgba(214,168,79,0.25);
 }
 
-.card:last-child {
+.about-card:last-child {
     border-right: none;
 }
 
