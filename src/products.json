@@ -3,6 +3,7 @@
     {
       "id": "e20",
       "name": "E-20",
+      "category": "case",
       "sections": {
         "hero": false,
         "description": true,
@@ -76,6 +77,7 @@
       {
       "id": "atlas",
       "name": "ATLAS",
+      "category": "case",
       "sections": {
         "hero": false,
         "description": false,
@@ -171,6 +173,7 @@
     {
       "id": "e10",
       "name": "E-10",
+      "category": "case",
       "sections": {
         "hero": true,
         "description": false,
@@ -242,6 +245,7 @@
      {
       "id": "t1000",
       "name": "T-1000",
+      "category": "case",
       "price": "RM259.00 - RM299.00",
       "sections": {
         "hero": false,
@@ -310,6 +314,7 @@
     {
       "id": "erebus",
       "name": "EREBUS",
+      "category": "case",
       "sections": {
         "hero": true,
         "description": false,
@@ -389,6 +394,7 @@
     {
       "id": "genesis",
       "name": "GENESIS",
+      "category": "case",
       "sections": {
         "hero": false,
         "description": true,
@@ -491,6 +497,7 @@
     {
       "id": "genesism",
       "name": "GENESIS-M",
+      "category": "case",
       "price": "RM329.00 - RM339.00",
       "sections": {
         "hero": true,
@@ -580,6 +587,7 @@
      {
       "id": "kratos",
       "name": "KRATOS",
+      "category": "case",
       "price": "RM279.00 - RM329.00",
       "sections": {
         "hero": true,
@@ -677,6 +685,7 @@
     {
       "id": "thanatos",
       "name": "THANATOS",
+      "category": "case",
       "sections": {
         "hero": false,
         "description": true,
@@ -754,6 +763,7 @@
     {
       "id": "theview5",
       "name": "THE VIEW 5",
+      "category": "case",
       "sections": {
         "hero": false,
         "description": false,
@@ -891,6 +901,7 @@
     {
       "id": "zoom",
       "name": "ZOOM",
+      "category": "case",
       "sections": {
         "hero": false,
         "description": false,
@@ -989,8 +1000,228 @@
         "Max VGA Card Length" : "300mm",
         "Max CPU Cooler Height" : "180mm"
       }
-    }
+    },
 
+    {
+      "id": "XTG-34VPRX",
+      "name": "XTG-34VPRX",
+      "category": "monitor",
+      "sections": {
+        "hero": false,
+        "description": false,
+        "highlight": false,
+        "specs": true,
+        "lifestyle": false,
+        "featuregallery": true,
+        "custom": true,
+        "verticalFeatures": false,
+        "videodesc": false
+      },
+
+      "price": "RM1,399.00",
+      "fans": "with 3 Infinity ARGB Fans",
+      "product-type": "M-ATX",
+
+      "description": "Invasion Plus View 5 puts your build on full panoramic seaview, with its 5.5-inch TFT screen for crisp, vibrant visuals. Vertical airflow keeps it cool and smooth—make your rig truly your own.",
+
+      "heroTitle": "Exceptional Air Cooling Support",
+
+      "mainImage": "static/XTG-34VPRX/monitor1.png",
+      "descriptionImage": "static/XTG-34VPRX/monitor2.png",
+      "specImage": "static/XTG-34VPRX/monitor3.png",
+      "specImage2": "static/XTG-34VPRX/monitor4.png",
+
+      "variations": {
+        "black": [
+          "static/XTG-34VPRX/monitor1.png",
+          "static/XTG-34VPRX/monitor2.png",
+          "static/XTG-34VPRX/monitor3.png",
+          "static/XTG-34VPRX/monitor4.png",
+          "static/XTG-34VPRX/monitor5.png"
+        ]
+      },
+
+      "customSection": {
+        "description": "delivers both powerful performance and a clean modern aesthetic for every gaming setup."
+      },
+
+      "lifestyleSection": {
+        "title": "The View 5",
+        "description": "delivers both powerful performance and a clean modern aesthetic for every gaming setup.",
+
+        "leftImage": "static/XTG-34VPRX/monitor1.png",
+        "middleImage": "static/XTG-34VPRX/monitor2.png",
+        "bottomImage1": "static/XTG-34VPRX/monitor3.png",
+        "bottomImage2": "static/XTG-34VPRX/monitor4.png"
+      },
+
+      "featureGallery": {
+        "heroImage": "static/XTG-34VPRX/monitor5.png",
+        "cards": [
+          {
+            "image": "static/XTG-34VPRX/monitor6.png",
+            "title": "Metal Side Cover",
+            "description": "Sturdy metal side panel adds a premium touch and extra durability."
+          },
+          {
+            "image": "static/XTG-34VPRX/monitor7.png",
+            "title": "TFT Display",
+            "description": "The built-in TFT display lets you personalize your setup with system info, animations, images, or your favorite content."
+          }
+        ]
+      },
+
+      "features": [
+        {
+          "title": "Optimized Airflow Layout",
+          "description": "Designed with multiple fan mounting positions and ventilated panels to maintain consistent airflow throughout the system."
+        },
+        {
+          "title": "Multiple Storage Expansion",
+          "description": "Supports several SSD and HDD installation slots for flexible storage upgrades and faster data access performance."
+        },
+        {
+          "title": "Spacious Mid-Tower Interior",
+          "description": "Provides ample space for high-end GPUs, multiple storage devices, and easy cable management for a clean build appearance."
+        }
+      ],
+
+      "specs": {
+        "Model": "XTG-34VPRX",
+        "Screen Type": "Curved Monitor",
+        "Screen Size": "34 Inch",
+        "Curvature": "1500R",
+        "Backlight Type": "LED",
+        "Resolution": "UWQHD 3440x1440P",
+        "Panel Type": "VA Panel",
+        "Refresh Rate": "180Hz",
+        "Response Time": "1ms",
+        "Color Support": "16.7M (Typical)",
+        "Maximum Brightness": "300 cd/m² (Typical)",
+        "Aspect Ratio": "21:9",
+        "Static Contrast Ratio": "3000:1 (Typical)",
+        "HDR": "400",
+        "sRGB": "99% Color Gamut",
+        "Adobe RGB": "100% G86% B77%",
+        "Color Depth": "8-bit",
+        "Viewing Angle": "H178° / V178°",
+        "Ports": "2x HDMI + 2x DP + Audio + DC",
+        "Max CPU Cooler Height": "174mm",
+        "Features": "G-Sync, FreeSync, Low Blue Light"
+      }
+    },
+
+      {
+      "id": "XTG-49ARCX",
+      "name": "XTG-49ARCX",
+      "category": "monitor",
+      "sections": {
+        "hero": false,
+        "description": false,
+        "highlight": false,
+        "specs": true,
+        "lifestyle": false,
+        "featuregallery": true,
+        "custom": true,
+        "verticalFeatures": false,
+        "videodesc": false
+      },
+      "price": "RM2,899.00",
+      "fans": "with 3 Infinity ARGB Fans",
+      "product-type": "M-ATX",
+
+      "description": "Invasion Plus View 5 puts your build on full panoramic seaview, with its 5.5-inch TFT screen for crisp, vibrant visuals. Vertical airflow keeps it cool and smooth—make your rig truly your own.",
+      "heroTitle": "Exceptional Air Cooling Support",
+
+      "mainImage": "static/XTG-49ARCX/monitor1.png",
+      "descriptionImage": "static/XTG-49ARCX/monitor2.png",
+      "specImage": "static/XTG-49ARCX/monitor3.png",
+      "specImage2": "static/XTG-49ARCX/monitor4.png",
+
+      "variations": {
+        "black": [
+          "static/XTG-49ARCX/monitor1.png",
+          "static/XTG-49ARCX/monitor2.png",
+          "static/XTG-49ARCX/monitor3.png",
+          "static/XTG-49ARCX/monitor4.png",
+          "static/XTG-49ARCX/monitor5.png"
+        ]
+      },
+
+      "customSection": {
+        "description": "delivers both powerful performance and a clean modern aesthetic for every gaming setup."
+      },
+
+      "lifestyleSection": {
+        "title": "The View 5",
+        "description": "delivers both powerful performance and a clean modern aesthetic for every gaming setup.",
+
+        "leftImage": "static/XTG-49ARCX/monitor1.png",
+        "middleImage": "static/XTG-49ARCX/monitor2.png",
+        "bottomImage1": "static/XTG-49ARCX/monitor3.png",
+        "bottomImage2": "static/XTG-49ARCX/monitor4.png"
+      },
+
+      "featureGallery": {
+        "heroImage": "static/XTG-49ARCX/monitor5.png",
+        "cards": [
+          {
+            "image": "static/XTG-49ARCX/monitor6.png",
+            "title": "Metal Side Cover",
+            "description": "Sturdy metal side panel adds a premium touch and extra durability."
+          },
+          {
+            "image": "static/XTG-49ARCX/monitor7.png",
+            "title": "TFT Display",
+            "description": "The built-in TFT display lets you personalize your setup with system info, animations, images, or your favorite content."
+          },
+          {
+            "image": "static/XTG-49ARCX/monitor8.png",
+            "title": "I / O Connectivity",
+            "description": "Equipped with modern front-panel connectivity, featuring USB and Type-C support."
+          }
+        ]
+      },
+
+      "features": [
+        {
+          "title": "Optimized Airflow Layout",
+          "description": "Designed with multiple fan mounting positions and ventilated panels to maintain consistent airflow throughout the system."
+        },
+        {
+          "title": "Multiple Storage Expansion",
+          "description": "Supports several SSD and HDD installation slots for flexible storage upgrades and faster data access performance."
+        },
+        {
+          "title": "Spacious Mid-Tower Interior",
+          "description": "Provides ample space for high-end GPUs, multiple storage devices, and easy cable management for a clean build appearance."
+        }
+      ],
+
+      "specs": {
+        "Model": "RM2,899.00",
+        "Screen Type": "Curved Monitor",
+        "Screen Size": "49 Inch",
+        "Curvature": "1500R",
+        "Backlight Type": "LED",
+        "Resolution": "5120x1440P",
+        "Panel Type": "VA Panel",
+        "Refresh Rate": "165Hz",
+        "Response Time": "1ms",
+        "Color Support": "16.7M (Typical)",
+        "Maximum Brightness": "300 cd/m² (Typical)",
+        "Aspect Ratio": "32:9",
+        "Static Contrast Ratio": "3000:1 (Typical)",
+        "HDR": "400",
+        "sRGB": "99% Color Gamut",
+        "Adobe RGB": "100% G86% B77%",
+        "Color Depth": "8-bit + Hi-FRC",
+        "Viewing Angle": "H178° / V178°",
+        "Ports": "HDMI + DP + Type-C + USB + Audio + DC",
+        "Max CPU Cooler Height": "174mm",
+        "Features": "G-Sync, FreeSync, Low Blue Light, Speaker"
+      }
+    }
     
   ]
 }
