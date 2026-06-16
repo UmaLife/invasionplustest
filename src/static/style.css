@@ -1130,39 +1130,6 @@ html {
     background: #ffc700;
     transform: translateY(-3px);
 }
-@media (max-width: 768px) {
-    .footer-content {
-        grid-template-columns: 1fr;
-        text-align: left;
-        justify-items: start;
-        padding-left: 0;
-    }
-    
-    .footer-column {
-        margin-bottom: 30px;
-        align-items: flex-start;
-        width: 100%;
-    }
-    .footer-column ul{
-        padding-left: 0;
-        margin-left: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        list-style: none;
-    }
-    .footer-column h3{
-        margin-left: 0;
-    }
-    .footer-logo{
-        text-align: left;
-        display: flex;
-        justify-content: flex-start;
-    }
-    .footer-logo{
-        margin-left: 0;
-    }
-}
 
 /* product animation */
 #viewer-container {
