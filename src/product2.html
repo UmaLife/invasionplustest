@@ -465,7 +465,8 @@ async function loadProduct() {
     const response = await fetch("products.json");
     const data = await response.json();
 
-    const product = data.products.find(item => item.id === productId);
+    const product = data.products.find(item =>
+    item.id.toLowerCase() === productId);
 
     document.querySelectorAll(".section6-variation").forEach(btn => {
     const color = btn.dataset.color;

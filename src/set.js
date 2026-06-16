@@ -25,12 +25,12 @@ const footerTemplate = `
                             </a>
                         </li>
                         <li>
-                            <a href="cooling.html">
+                            <a href="coolers.html">
                                 Cooling
                             </a>
                         </li>
                         <li>
-                            <a href="monitor.html">
+                            <a href="monitors.html">
                                 Monitors
                             </a>
                         </li>
@@ -255,15 +255,15 @@ const navbarTemplate = `
     </div>
     <div class="product-panel" id="productPanel">
         <div class="panel-content">
-        <a href="all-product.html" class="product-item">
+        <a href="cases.html" class="product-item">
             <img src="static/cases.png">
             <span>Cases</span>
         </a>
-        <a href="cooling.html" class="product-item">
+        <a href="coolers.html" class="product-item">
             <img src="static/cooling.png">
             <span>Cooling</span>
         </a>
-        <a href="monitor.html" class="product-item">
+        <a href="monitors.html" class="product-item">
             <img src="static/monitor.png">
             <span>Monitor</span>
         </a>
