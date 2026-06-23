@@ -5,7 +5,7 @@
     font-family: Arial,sans-serif;
 }
 :root {
-    --gold: #ffc700; 
+    --gold: #fbb03b; 
 }
 
 body{
@@ -66,7 +66,7 @@ section {
     font-size: 18px;
 }
 .search-icon:hover{
-    color: #ffc700;
+    color: #fbb03b;
 }
 .search-overlay{
     position: fixed;
@@ -124,7 +124,7 @@ section {
 }
 
 .search-box input:focus{
-    border: 1px solid #f5b400;
+    border: 1px solid #fbb03b;
     box-shadow: 0 0 20px rgba(245,180,0,0.25);
     background: rgba(20,20,20,0.95);
 }
@@ -144,7 +144,7 @@ section {
 }
 .search-btn:hover{
     background: rgba(245,180,0,0.15);
-    color: #f5b400;
+    color: #fbb03b;
 }
 
 .search-btn i{
@@ -172,7 +172,7 @@ section {
     transition: 0.3s;
 }
 .close-btn:hover{
-    color: #ffc700;
+    color: #fbb03b;
     transform: rotate(90deg);
 }
 body.page-blur > *:not(.search-overlay):not(.side-menu):not(.product-panel):not(.navbar){
@@ -205,7 +205,7 @@ body.page-blur > *:not(.search-overlay):not(.side-menu):not(.product-panel):not(
     transition: 0.3s ease;
 }
 .menu-icon :hover span{
-    color: #ffc700;
+    color: #fbb03b;
 }
 .side-menu{
     position: fixed;
@@ -249,7 +249,7 @@ body.page-blur > *:not(.search-overlay):not(.side-menu):not(.product-panel):not(
 }
 
 .menu-search input:focus{
-    border-color: #ffc700;
+    border-color: #fbb03b;
     background: rgba(255,255,255,0.08);
 }
 
@@ -280,11 +280,11 @@ body.page-blur > *:not(.search-overlay):not(.side-menu):not(.product-panel):not(
 }
 .menu-content li:hover,
 .menu-content li.active{
-    color: #ffc700;
+    color: #fbb03b;
     transform: translateX(8px);
 }
 .menu-content li:hover a{
-    color: #ffc700;
+    color: #fbb03b;
 }
 .menu-logo{
     width: 150px;
@@ -314,7 +314,7 @@ body.page-blur > *:not(.search-overlay):not(.side-menu):not(.product-panel):not(
     transition: 0.3s ease;
 }
 .menu-close:hover{
-    color: #ffc700;
+    color: #fbb03b;
     transform: rotate(90deg);
 }
 .product-panel {
@@ -375,10 +375,10 @@ body.page-blur > *:not(.search-overlay):not(.side-menu):not(.product-panel):not(
 }
 .product-item:hover{
     transform: translateY(-4px);
-    border-color: #ffc700;
+    border-color: #fbb03b;
 }
 .product-item:hover span{
-    color: #ffc700;
+    color: #fbb03b;
 }
 .product-item:hover img{
     transform: scale(1.05);
@@ -421,7 +421,7 @@ body.page-blur > *:not(.search-overlay):not(.side-menu):not(.product-panel):not(
     transition: 0.3s ease;
 }
 .menu-socials a:hover{
-    color: #ffc700;
+    color: #fbb03b;
     transform: translateY(-3px);
 }
 /*footer*/
@@ -473,7 +473,7 @@ body.page-blur > *:not(.search-overlay):not(.side-menu):not(.product-panel):not(
 }
 
 .footer-column h3{
-    color: #ffc700;
+    color: #fbb03b;
     margin-bottom: 20px;
     font-weight: 600;
     letter-spacing: 1.5px;
@@ -495,7 +495,7 @@ body.page-blur > *:not(.search-overlay):not(.side-menu):not(.product-panel):not(
 }
 
 .footer-column a:hover{
-    color: #ffc700;
+    color: #fbb03b;
     transform: translateX(5px);
 }
 .footer-video{
@@ -507,7 +507,7 @@ body.page-blur > *:not(.search-overlay):not(.side-menu):not(.product-panel):not(
 }
 
 .footer-video h3{
-    color: #ffc700;
+    color: #fbb03b;
     font-size: 1.8rem;
     margin-bottom: 25px;
     letter-spacing: 1px;
@@ -528,7 +528,7 @@ body.page-blur > *:not(.search-overlay):not(.side-menu):not(.product-panel):not(
 }
 
 .video-meta span{
-    color: #ffc700;
+    color: #fbb03b;
     font-size: 0.8rem;
     letter-spacing: 2px;
 }
@@ -554,7 +554,7 @@ body.page-blur > *:not(.search-overlay):not(.side-menu):not(.product-panel):not(
 }
 
 .footer-social-section h3{
-    color: #ffc700;
+    color: #fbb03b;
     display: block;
     margin-bottom: 20px;
     font-weight: 700;
@@ -586,7 +586,7 @@ body.page-blur > *:not(.search-overlay):not(.side-menu):not(.product-panel):not(
 }
 
 .footer-social-section .social-icons a:hover{
-    background: #ffc700;
+    background: #fbb03b;
     color: black !important;
     transform: translateY(-5px);
 }
@@ -835,7 +835,7 @@ html {
 .light-text {
     position: relative;
     display: inline-block;
-    color: #ffffff;
+    color: #fbb03b;
     font-size: 40px;
     font-weight: 900;
     font-style: italic;
@@ -846,7 +846,7 @@ html {
     content: attr(data-text);
     position: absolute;
     inset: 0;
-    color: #fbb03b;
+    color: #ffffff;
     clip-path: var(--clip, circle(0px at -999px -999px));
     pointer-events: none;
 }
@@ -1255,7 +1255,6 @@ border-glow {
     margin: 0 auto;     
     position: relative; 
 }
-
 
 
 /* product scroll effect*/
