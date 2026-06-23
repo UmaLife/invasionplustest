@@ -606,7 +606,7 @@ body.page-blur > *:not(.search-overlay):not(.side-menu):not(.product-panel):not(
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: #f5c400;
+    background: #fbb03b;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -662,7 +662,7 @@ body.page-blur > *:not(.search-overlay):not(.side-menu):not(.product-panel):not(
 
 .social-menu a:hover{
     transform: scale(1.1);
-    background: #f5c400;
+    background: #fbb03b;
 }
 
 .social-menu i{
@@ -812,9 +812,9 @@ html {
     transition: 0.3s;
 }
 .learn-more:hover {
-    text-shadow: 0 0 10px #ffc700;
+    text-shadow: 0 0 10px #fbb03b;
     transform: scale(1.05);
-    color: #ffc700;
+    color: #fbb03b;
 }
 .hero-content {
     position: absolute;
@@ -846,7 +846,7 @@ html {
     content: attr(data-text);
     position: absolute;
     inset: 0;
-    color: #ffad25;
+    color: #fbb03b;
     clip-path: var(--clip, circle(0px at -999px -999px));
     pointer-events: none;
 }
@@ -979,7 +979,7 @@ html {
 .category-content h3{
     font-size: 2.2rem;
     font-weight: 550;
-    color:#ffc800;
+    color:#fbb03b;
     margin-bottom: 20px;
 }
 .category-content p{
@@ -998,7 +998,7 @@ html {
 }
 .category-content a:hover{
     gap: 16px;
-    color: #ffc700;
+    color: #fbb03b;
 }
 .category-image{
     position: absolute;
@@ -1023,7 +1023,7 @@ html {
     position: absolute;
     border-radius: 50%;
     transform: scale(0);
-    background:#ffc700;
+    background:#fbb03b;
     animation: rippleAnim .8s ease-out;
     pointer-events: none;
     z-index: 10;
@@ -1102,7 +1102,7 @@ html {
     text-align: right;
 }
 .feature-content span {
-    color: #ffc700;
+    color: #fbb03b;
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -1127,7 +1127,7 @@ html {
     transition: .3s ease;
 }
 .feature-content a:hover {
-    background: #ffc700;
+    background: #fbb03b;
     transform: translateY(-3px);
 }
 
@@ -1419,7 +1419,7 @@ border-glow {
 .hero-text p{
     font-size: 1.2rem;
     line-height: 1.8;
-    color: #ffd000;
+    color: #fbb03b;
     max-width: 760px;
     margin: 0 auto;
 }
@@ -1427,7 +1427,7 @@ border-glow {
 .yellow-line{
     width: 140px;
     height: 4px;
-    background: #ffd000;
+    background: #fbb03b;
     margin: 35px auto 0;
     border-radius: 50px;
 }
@@ -1448,7 +1448,7 @@ border-glow {
 }
 
 .section-title span{
-    color:#ffd000;
+    color:#fbb03b;
 }
 
 /* CONTACT CARDS */
@@ -1492,13 +1492,13 @@ border-glow {
 .contact-card i{
     position:relative;
     font-size:36px;
-    color:#ffd000;
+    color:#fbb03b;
     margin-bottom:25px;
 }
 
 .contact-card h3{
     position:relative;
-    color:#ffd000;
+    color:#fbb03b;
     margin-bottom:15px;
     letter-spacing:1.5px;
 }
@@ -1534,7 +1534,7 @@ border-glow {
 }
 
 .map-content i{
-    color:#ffd000;
+    color:#fbb03b;
     font-size:58px;
     margin-bottom:20px;
     animation:pulse 1.5s infinite;
@@ -1566,7 +1566,7 @@ border-glow {
     width:220px;
     height:72px;
     border-radius:60px;
-    background:#ffd000;
+    background:#fbb03b;
     color:white;
     font-size:1.2rem;
     font-weight:800;
@@ -1583,7 +1583,7 @@ border-glow {
 
 .map-buttons a:hover{
     background:white;
-    color:#ffd000;
+    color:#fbb03b;
     transform:translateY(-5px);
     box-shadow:
     0 0 18px rgba(255,208,0,0.6),
@@ -1592,7 +1592,7 @@ border-glow {
 
 
 .map-buttons a:hover i{
-    color:#ffd000;
+    color:#fbb03b;
 }
 
 @keyframes pulse{
@@ -1630,7 +1630,7 @@ border-glow {
 }
 .label,
 .section-label {
-    color: #ffc700;
+    color: #fbb03b;
     letter-spacing: 3px;
     font-size: 30px;
     margin-bottom: 20px;
@@ -1645,7 +1645,7 @@ border-glow {
 .line {
     width: 400px;
     height: 2px;
-    background: #ffc700;
+    background: #fbb03b;
     margin: 28px 0;
 }
 
@@ -1679,7 +1679,7 @@ border-glow {
 
 .icon{
     font-size:42px;
-    color:#ffc700;
+    color:#fbb03b;
     margin-bottom:25px;
     transition:.4s;
 }
@@ -1708,7 +1708,7 @@ border-glow {
 }
 
 .stat h2 {
-    color: #ffc700;
+    color: #fbb03b;
     font-size: 58px;
     margin-bottom: 10px;
 }
@@ -1720,7 +1720,7 @@ border-glow {
 }
 
 .stat-text h3 {
-    color: #ffc700;
+    color: #fbb03b;
     margin-top: 15px;
     line-height: 1.5;
     font-weight: 500;
@@ -1751,7 +1751,7 @@ border-glow {
 }
 
 .thank-you h4 {
-    color: #ffc700;
+    color: #fbb03b;
     margin: 25px 0;
 }
 
@@ -1772,7 +1772,7 @@ border-glow {
 .join h1 {
     font-size: 42px;
     letter-spacing: 10px;
-    color: #ffc700;
+    color: #fbb03b;
 }
 
 .join p {
@@ -1783,7 +1783,7 @@ border-glow {
 
 .buttons a {
     display: inline-block;
-    color: #ffc700;
+    color: #fbb03b;
     border: 1px solid #ffc700;
     padding: 13px 38px;
     margin: 0 10px;
@@ -1794,6 +1794,6 @@ border-glow {
 }
 
 .buttons a:hover {
-    background: #ffc700;
+    background: #fbb03b;
     color: white;
 }
