@@ -13,7 +13,11 @@
         "custom": false,
         "featuregallery":false,
         "verticalFeatures": false,
-        "videodesc": true
+        "videodesc": true,
+        "videoShowcase": false,
+        "imageShowcase": false
+        
+        
       },
       "price": "RM259.00",
       "fans": "with 4 ARGB Fans",
@@ -87,7 +91,9 @@
         "custom": true,
         "featuregallery":false,
         "verticalFeatures": false,
-        "videodesc": false
+        "videodesc": false,
+        "videoShowcase": false,
+        "imageShowcase": false
       },
         "highlightImages": [
           "static/ATLAS/atlas1.jpg",
@@ -183,7 +189,9 @@
         "featuregallery":true,
         "custom": false,
         "verticalFeatures": false,
-        "videodesc": false
+        "videodesc": false,
+        "videoShowcase": false,
+        "imageShowcase": false
       },
       "price": "RM239.00",
       "fans": "with 3 ARGB Fans",
@@ -256,7 +264,9 @@
         "featuregallery":false,
         "custom": true,
         "verticalFeatures": false,
-        "videodesc": false
+        "videodesc": false,
+        "videoShowcase": false,
+        "imageShowcase": false
       },
       "fans": "with 10 ARGB Fans / with 4 ARGB Fans / with 7 ARGB Fans",
       "description": "",
@@ -324,7 +334,9 @@
         "featuregallery":false,
         "custom": false,
         "verticalFeatures": false,
-        "videodesc": false
+        "videodesc": false,
+        "videoShowcase": false,
+        "imageShowcase": false
       },
       "price": "RM249.00 - RM259.00",
       "fans": "with 6 Infinity ARGB Fans",
@@ -404,7 +416,9 @@
         "featuregallery":false,
         "custom": true,
         "verticalFeatures": false,
-        "videodesc": false
+        "videodesc": false,
+        "videoShowcase": false,
+        "imageShowcase": false
       },
       "price": "RM249.00 - RM259.00",
       "fans": "with 6 Infinity ARGB Fans",
@@ -508,7 +522,9 @@
         "featuregallery":false,
         "custom": false,
         "verticalFeatures": false,
-        "videodesc": false
+        "videodesc": false,
+        "videoShowcase": false,
+        "imageShowcase": false
       },
       "fans": "with 4 Infinity ARGB Fans",
       "product-type": "M-ATX",
@@ -598,7 +614,9 @@
         "featureGallery":false,
         "custom": false,
         "verticalFeatures": true,
-        "videodesc": false
+        "videodesc": false,
+        "videoShowcase": false,
+        "imageShowcase": false
       },
       "fans": "with 4 Infinity ARGB Fans",
       "description": "",
@@ -695,7 +713,9 @@
         "featuregallery":false,
         "custom": true,
         "verticalFeatures": false,
-        "videodesc": true
+        "videodesc": true,
+        "videoShowcase": false,
+        "imageShowcase": false
       },
       "price": "RM309.00 - RM319.00",
       "fans": "with 6 Infinity ARGB Fans",
@@ -773,7 +793,9 @@
         "featuregallery":true,
         "custom": true,
         "verticalFeatures": false,
-        "videodesc": false
+        "videodesc": false,
+        "videoShowcase": false,
+        "imageShowcase": false
       },
       "price": "RM249.00 - RM259.00",
       "fans": "with 3 Infinity ARGB Fans",
@@ -881,6 +903,7 @@
 
       },
 
+      "specTitle2": "5inch TFT Screen Specification",
       "specs2": {
         "Screen Size": "5 inch",
         "Screen Resolution": "480 x 854",
@@ -911,7 +934,9 @@
         "featuregallery":false,
         "custom": true,
         "verticalFeatures": true,
-        "videodesc": true
+        "videodesc": true,
+        "videoShowcase": false,
+        "imageShowcase": false
       },
       "price": "RM309.00 - RM319.00",
       "fans": "with 4 Infinity ARGB Fans",
@@ -920,8 +945,6 @@
       "heroTitle": "Exceptional Air Cooling Support",
       "heroDescription": "Featuring a Hight - Airflow layout and multiple fan mounts to keep your components cool under heavy workloads ",
       "mainImage": "static/ZOOM/6.png",
-      "heroImage": "static/ALTAS-BLACK-02.png",
-      "descriptionImage": "static/ALTAS-BLACK-03.png",
       "specImage": "static/ZOOM/15.png",
       "variations": {
       "black": [
@@ -1001,6 +1024,365 @@
         "Max CPU Cooler Height" : "180mm"
       }
     },
+
+    {
+      "id": "aeolus",
+      "name": "AEOLUS 50 PRO",
+      "sections": {
+        "hero": false,
+        "description": false,
+        "highlight": false,
+        "specs": true,
+        "lifestyle" : false,
+        "featuregallery":false,
+        "custom": true,
+        "verticalFeatures": false,
+        "videodesc": false,
+        "videoShowcase": true,
+        "imageShowcase": true
+      },
+      "price": "RM159.00",
+      "product-type": "ATX",
+      "description": "Invasion Plus Aeolus displays your CPU temperature and fan speed in real time, while six 6mm copper heat pipes quietly keep your system cool. Its PWM hydraulic-bearing fan runs smoothly and adjusts automatically. Designed for gaming and creative builds, Aeolus keeps your PC steady so you can enjoy your setup with complete peace of mind.",
+      "heroTitle": "Exceptional Air Cooling Support",
+      "heroDescription": "Featuring a Hight - Airflow layout and multiple fan mounts to keep your components cool under heavy workloads ",
+      "mainImage": "static/AEOLUS/AEOLUS-B-01.png",
+      "specImage": "static/AEOLUS/spec.jpg",
+      "variations": {
+      "black": [
+        "static/AEOLUS/AEOLUS-B-01.png",
+        "static/AEOLUS/2.png",
+        "static/AEOLUS/1.png",
+        "static/AEOLUS/3.png",
+        "static/AEOLUS/4.png",
+        "static/AEOLUS/5.png"
+      
+      ],
+      "white": [
+        "static/AEOLUS/6.png",
+        "static/AEOLUS/7.png",
+        "static/AEOLUS/8.png",
+        "static/AEOLUS/9.png"
+      ]
+    },
+  
+
+    "videoShowcase": {
+        "video": "static/AEOLUS/am.mp4"
+      },
+
+      "imageShowcase": [
+    "static/AEOLUS/ban1.png",
+    "static/AEOLUS/ban2.png",
+    "static/AEOLUS/ban3.png"
+],
+
+      "specs": {
+        "Model": "AEOLUS 50 PRO",
+        "Product Size":"123(L) x 98(W) x 145(H) mm",
+        "Fan Size" : "120 x 120 x 25 mm",
+        "Heatpipe Specs": "Φ6mm x 6 pcs",
+        "Fan Voltage": "DC 12V",
+        "Fan Current": "0.25A",
+        "Power Output": "3W",
+        "Fan Connector" : "12V 4-PIN PWM",
+        "Bearing Type" : "Hydraulic Bearing",
+        "Fan Speed (Max)" : "2150 RPM ±10% (MAX)",
+        "Fan Air Pressure" : "2.50 mm/H₂O",
+        "Fan Airflow" :"80.18 CFM", 
+        "Fan Noise (Max)": "32 dBA",
+        "TDP" : "230W",
+        "Supported Platforms" : "<b>INTEL</b> ~ 1851 / 1700 / 115X <br><b>AMD</b> ~ AM4 / AM5",
+        "Recommend CPU <br><br>(Non-overclocked)":"14600 / 7950X3D AND BELOW"
+      }
+    },
+
+     {
+      "id": "aeronix360",
+      "name": "AERONIX-360",
+      "sections": {
+        "hero": false,
+        "description": false,
+        "highlight": false,
+        "specs": true,
+        "lifestyle" : true,
+        "featuregallery":false,
+        "custom": true,
+        "verticalFeatures":false,
+        "videodesc": false,
+        "videoShowcase": false,
+        "imageShowcase": false
+      },
+      "price": "RM159.00",
+      "product-type": "ATX",
+      "fan": "forward fan / Reverse Fan",
+      "description": "",
+      "mainImage": "static/AERONIX/AERONIX 360.png",
+      "specImage": "static/AERONIX/spec.jpg",
+      
+      "variations": {
+        
+      "black": [
+        "static/AERONIX/AERONIX 360.png"
+      ],
+      "white": [
+        "static/AERONIX/AERONIX 360 - WHITE.png"
+      ]
+    },
+    "customSection": {
+          "title": "AERONIX 360",
+          "description": "Powerful Cooling. Brilliant Lighting. Silent Performance."
+        },
+
+    "lifestyleSection": {
+        "title": "Build for Power",
+        "description": "Experience powerful liquid cooling with three high-performance 120mm PWM fans delivering up to 2300 RPM, 66.66 CFM airflow, and 2.77 mmH₂O static pressure. Featuring vibrant ARGB lighting, ultra-quiet hydraulic bearings, and a lifespan exceeding 40,000 hours, the Aeronix 360 is built to keep your system cool, quiet, and visually stunning.",
+        
+        "leftImage":  "static/AERONIX/AERONIX 360.png",
+        
+        "middleImage": "static/AERONIX/AERONIX 360 - WHITE.png",
+        
+        "bottomImage1": "static/AERONIX/ban1.jpg",
+        
+        "bottomImage2": "static/AERONIX/ban2.jpg"
+      },
+
+      "specs": {
+        "Model": "AERONIX 360",
+        "Product Size":"365(L) x 122.5(W) x 25(H) mm",
+        "Fan Size" : "120 x 25 mm",
+        "Fan Speed": "800 -2300 ± 10%RPM",
+        "Rated Voltage": "DC 12V",
+        "Bearing Type" : "Hydraulic Bearing",
+        "Interface" : "4Pin + 5V 3Pin",
+        "Fan Pressure" : "2.77 mm/H₂O",
+        "Service Life" :"≥40.000h", 
+        "Maximum Volunm": "66.66 CFM",
+        "Rated Current" : "0.18A",
+        "LED Color" : "ARGB",
+        "Maximum Noise":"31dBA"
+      }
+    },
+
+    {
+      "id": "aeronix240",
+      "name": "AERONIX-240",
+      "sections": {
+        "hero": false,
+        "description": false,
+        "highlight": false,
+        "specs": false,
+        "lifestyle" : true,
+        "featuregallery":false,
+        "custom": false,
+        "verticalFeatures":false,
+        "videodesc": false,
+        "videoShowcase": false,
+        "imageShowcase": false
+      },
+      "price": ".00",
+      "product-type": "ATX",
+      "fan": "",
+      "description": "",
+      "mainImage": "static/AERONIX/AERONIX 240.png",
+      "specImage": "static/AERONIX/AERONIX 240.jpg",
+      
+      "specs": {
+        "Model": "AERONIX 360",
+        "Product Size":"365(L) x 122.5(W) x 25(H) mm",
+        "Fan Size" : "120 x 25 mm",
+        "Fan Speed": "800 -2300 ± 10%RPM",
+        "Rated Voltage": "DC 12V",
+        "Bearing Type" : "Hydraulic Bearing",
+        "Interface" : "4Pin + 5V 3Pin",
+        "Fan Pressure" : "2.77 mm/H₂O",
+        "Service Life" :"≥40.000h", 
+        "Maximum Volunm": "66.66 CFM",
+        "Rated Current" : "0.18A",
+        "LED Color" : "ARGB",
+        "Maximum Noise":"31dBA"
+      }
+    },
+
+    {
+      "id": "aerovis",
+      "name": "AEROVIS",
+      "sections": {
+        "hero": false,
+        "description": false,
+        "highlight": false,
+        "specs": false,
+        "lifestyle" : true,
+        "featuregallery":false,
+        "custom": false,
+        "verticalFeatures":false,
+        "videodesc": false,
+        "videoShowcase": false,
+        "imageShowcase": false
+      },
+      "price": ".00",
+      "product-type": "ATX",
+      "fan": "",
+      "description": "",
+      "mainImage": "static/AEROVIS/AEROVIS-B-01.png",
+      "specImage": "static/AEROVIS/AEROVIS-B-02.png",
+      "variations": {
+      "black": [
+       "static/AEROVIS/AEROVIS-B-01.png",
+       "static/AEROVIS/AEROVIS-B-02.png",
+       "static/AEROVIS/AEROVIS-B-03.png"
+      
+      ],
+      "white": [
+        "static/AEROVIS/AEROVIS-W-01.png",
+        "static/AEROVIS/AEROVIS-W-02.png",
+        "static/AEROVIS/AEROVIS-W-03.png"
+      ]
+    },
+      "specs": {
+        "Model": "AEROVIS",
+        "Product Size":"365(L) x 122.5(W) x 25(H) mm",
+        "Fan Size" : "120 x 25 mm",
+        "Fan Speed": "800 -2300 ± 10%RPM",
+        "Rated Voltage": "DC 12V",
+        "Bearing Type" : "Hydraulic Bearing",
+        "Interface" : "4Pin + 5V 3Pin",
+        "Fan Pressure" : "2.77 mm/H₂O",
+        "Service Life" :"≥40.000h", 
+        "Maximum Volunm": "66.66 CFM",
+        "Rated Current" : "0.18A",
+        "LED Color" : "ARGB",
+        "Maximum Noise":"31dBA"
+      }
+    },
+    
+
+    {
+      "id": "dy240",
+      "name": "DY-240",
+      "sections": {
+        "hero": false,
+        "description": false,
+        "highlight": false,
+        "specs": true,
+        "lifestyle" : false,
+        "featuregallery":false,
+        "custom": true,
+        "verticalFeatures":false,
+        "videodesc": false,
+        "videoShowcase": false,
+        "imageShowcase": true
+      },
+      "price": "RM 519.00",
+      "product-type": "ATX",
+      "fan": "",
+      "description": "",
+      "mainImage": "static/dy240.png",
+      "specImage": "static/dy240.png",
+      "variations": {
+      "black": [
+       "static/dy240.png"
+      
+      ]
+    },
+    "imageShowcase": [
+    "static/ban11.png"
+],
+      "specs": {
+        "Model": "DY-240",
+        "Dimension":"120(L) x 120(W) x 25(H) mm",
+        "Fan Speed": "800 -2000 ± 10 RPM",
+        "Rated Voltage": "DC 12V",
+        "Bearing Type" : "Hydro Bearing",
+        "Connector" : "4Pin + 5V 3Pin",
+        "Blade Quantity" : "7",
+        "Weight":"603g",
+        "Life Life" :"40,000h", 
+        "Air Flow": "58.36 CFM",
+        "Noise Level" : "29 dbA",
+        "Cable Length" : "550mm + 10mm",
+        "Light Mode":"ARGB"
+      },
+      "specTitle2": "Water Cooling Specification",
+      "specs2": {
+      "Water Block Dimension": "70.2 × 60.3 × 53.8mm",
+      "Water Block Material": "<b>Block</b> ~ Copper <br><b>Housing</b> ~ Plastic <br><b>Cover</b> ~ Plastic",
+
+      "Water Pump": "<b>Power</b> ~ 12V <br><b>Motor Speed</b> ~ 3100 ± 10% RPM <br><b>Bearing</b> ~ Ceramic",
+
+      "Radiator": "<b>Dimension</b> ~ 275 × 120 × 25mm <br><b>Material</b> ~ Aluminum <br><b>Colour</b> ~ Black",
+
+      "Tubing": "<b>Dimension</b> ~ Φ12.5 / 400mm <br><b>Material</b> ~ Evaporation Rubber with Nylon Braided Sleeve"
+    }
+    },
+
+
+     {
+      "id": "frostvision360",
+      "name": "DY-240",
+      "sections": {
+        "hero": false,
+        "description": false,
+        "highlight": false,
+        "specs": true,
+        "lifestyle" : false,
+        "featuregallery":false,
+        "custom": true,
+        "verticalFeatures":false,
+        "videodesc": false,
+        "videoShowcase": false,
+        "imageShowcase": true
+      },
+      "price": "RM 519.00",
+      "product-type": "ATX",
+      "fan": "",
+      "description": "",
+      "mainImage": "static/dy240.png",
+      "specImage": "static/dy240.png",
+      "variations": {
+      "black": [
+       "static/dy240.png"
+      
+      ]
+    },
+    "imageShowcase": [
+    "static/ban11.png"
+],
+     "specs": {
+      "Model": "Frost Vision 360",
+      "Dimension": "120(L) x 120(W) x 25(H) mm",
+      "Fan Speed": "500 - 2200 ± 10 RPM",
+      "Rated Voltage": "12V (Fan) / 5V (LED)",
+      "Bearing Type": "FDB",
+      "Connector": "4-PIN PWM",
+      "Air Flow": "30.39 - 91.19 CFM",
+      "Air Pressure": "2.23 mmH₂O",
+      "Noise Level": "22 - 33 dBA",
+      "Package Contents": "<b>Fan</b> ~ 3PCS <br><b>All-In-One CPU Liquid Cooler</b> ~ 1PC <br><b>Thermal Grease</b> ~ 1PC <br><b>3.95 IPS Screen</b> ~ 1PC <br><b>Mounting Kit</b> ~ Included <br><b>Online User Manual</b> ~ Included"
+
+},
+
+    "specTitle2": "Cooler Specification",
+
+    "specs2": {
+      "Pump Connector": "3-PIN",
+
+      "Radiator": "<b>Dimensions</b> ~ 274 × 119 × 27mm <br><b>Material</b> ~ Aluminium",
+
+      "Tube Material": "Teflon",
+
+      "Base Plate Material": "Copper",
+
+      "Rated Voltage": "12V (Pump) / 5V (LED)",
+
+      "IPS Display": "<b>Screen Size</b> ~ 3.95 inch <br><b>Type</b> ~ IPS Display",
+
+      "Intel Compatibility": "LGA2066 / 2011-V3 / 2011 / 1151 / 1150 / 1155 / 1156 / 1366 / 775 / 1700",
+
+      "AMD Compatibility": "AM4 / AM3+ / AM3 / AM2+ / AM2 / FM2+ / FM2 / FM1 / AM5"
+
+    }
+   },
 
     {
       "id": "XTG-34VPRX",

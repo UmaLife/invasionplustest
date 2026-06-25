@@ -114,6 +114,22 @@
 
 </section>
 
+ <section class="video-hero-section">
+
+    <video
+        class="video-hero-bg"
+        autoplay
+        muted
+        loop
+        controls
+        playsinline
+        id="video-showcase-video">
+    </video>
+
+    <div class="video-hero-overlay"></div>
+
+</section>
+
 <section class="videodesc-section">
 
     <video
@@ -137,6 +153,19 @@
 
     </div>
 
+</section>
+
+<section class="image-showcase-section">
+    
+    <div class="image-topic-wrapper">
+        <h1 class="image-topic">
+            | Product Description
+        </h1>
+    </div>
+    <div class="image-glow glow-one"></div>
+    <div class="image-glow glow-two"></div>
+
+    <div class="image-showcase-grid" id="image-showcase-grid"></div>
 </section>
 
     <!-- LIFESTYLE SECTION -->
@@ -217,6 +246,7 @@
     </section>
 
 
+
     <!-- SPECS -->
 <div class="section4">
 
@@ -236,7 +266,7 @@
 <!-- SPECS 2 -->
 <div class="section4 section4-duplicate" id="spec-section-2">
 
-    <h1 class="spec4-topic">| 5inch TFT Screen Specification</h1>
+    <h1 class="spec4-topic" id="spec-title-2"></h1>
 
     <div class="spec-container">
 
@@ -494,7 +524,16 @@ async function loadProduct() {
 
     document.getElementById("product-name").textContent = product.name;
     document.getElementById("product-price").textContent = product.price;
-    document.getElementById("product-fans").textContent = product.fans;
+    const fansRow = document.querySelector(".section6-fans");
+    const fansText = document.getElementById("product-fans");
+
+    if (product.fans) {
+        fansText.textContent = product.fans;
+        fansRow.style.display = "block";
+    } else {
+        fansRow.style.display = "none";
+    }
+
     document.getElementById("product-description").textContent = product.description;
 
     const mainImage = document.getElementById("main-image");
@@ -519,7 +558,53 @@ async function loadProduct() {
     document.getElementById("custom-title").textContent = product.customSection.title;
     document.getElementById("custom-description").textContent = product.customSection.description;
 }
+if(product.videoShowcase){
 
+    const video = document.getElementById("video-showcase-video");
+
+    if(video){
+        video.src = product.videoShowcase.video;
+    }
+}
+
+if(product.imageShowcase){
+
+    const grid = document.getElementById("image-showcase-grid");
+
+    if(grid){
+        grid.innerHTML = "";
+
+        product.imageShowcase.slice(0, 4).forEach((image, index) => {
+
+            const card = document.createElement("div");
+            card.className = "image-showcase-card";
+            card.style.animationDelay = `${index * 0.4}s`;
+            card.style.transitionDelay = `${index * 0.15}s`;
+
+            card.innerHTML = `
+                <img src="${image}" alt="Product Image">
+            `;
+
+            grid.appendChild(card);
+        });
+
+        const imageCards = document.querySelectorAll(".image-showcase-card");
+
+        const imageObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting){
+                    entry.target.classList.add("show");
+                }
+            });
+        }, {
+            threshold:0.25
+        });
+
+        imageCards.forEach(card => {
+            imageObserver.observe(card);
+        });
+    }
+}
     /* VIDEODESC */
 
    /* VIDEODESC */
@@ -735,7 +820,9 @@ function applyProductSections(product) {
     featureGallery: document.querySelector(".feature-gallery-section"),
     custom: document.querySelector(".custom-section"),
     verticalFeatures: document.querySelector(".character-style-section"),
-    videodesc: document.querySelector(".videodesc-section")
+    videodesc: document.querySelector(".videodesc-section"),
+    imageShowcase: document.querySelector(".image-showcase-section"),
+    videoShowcase: document.querySelector(".video-hero-section")
         };
 
     Object.keys(sectionMap).forEach(key => {
@@ -894,6 +981,9 @@ function loadSpecs(product) {
     // IF PRODUCT HAS specs2
     if (product.specs2) {
 
+        document.getElementById("spec-title-2").textContent =
+    "| " + (product.specTitle2 || "Specification");
+    
         specSection2.style.display = "block";
 
         specContent2.innerHTML = "";
