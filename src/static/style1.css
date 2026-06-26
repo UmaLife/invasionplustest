@@ -54,6 +54,7 @@
     overflow: hidden;
     color: white;
     height: 60px;
+    height: 60px;
     width: 80%;
     transform: translateY(0);
     transition:
@@ -64,7 +65,7 @@
 
 .card:hover{
     transform: translateY(-10px) scale(1.02);
-    border-color: #f0a500;
+    border-color: #fbb03b;
     box-shadow: 0 10px 30px rgba(240,165,0,0.18);
 }
 
@@ -98,7 +99,7 @@
 }
 
 .card:hover .type-name h3{
-    color: #f0a500;
+    color: #fbb03b;
 }
 
 .card:hover .type-name h3::after{
@@ -431,7 +432,7 @@
 .price-divider{
     width: 0;
     height: 4px;
-    background: #f0a500;
+    background: #fbb03b;
     border-radius: 20px;
     margin-bottom: 1.5rem;
     transition: width 0.4s ease;
@@ -457,7 +458,7 @@
 
 .product-learn-more{
     display: inline-block;
-    color: #f0a500;
+    color: #fbb03b;
     font-size: 1.1rem;
     font-weight: 600;
     text-decoration: none;

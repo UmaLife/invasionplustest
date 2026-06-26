@@ -51,23 +51,28 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     function goToSlide(index, isAuto = false) {
-        if (!banner || slides.length <= 1) return;
+    if (!banner || slides.length <= 1) return;
 
-        currentIndex = index;
+    index = Math.max(0, Math.min(index, slides.length - 1));
+    currentIndex = index;
 
-        const bannerTop = getBannerTop();
-        const scrollArea = banner.offsetHeight - window.innerHeight;
-        const target = (scrollArea / (slides.length - 1)) * index;
+    const bannerTop = banner.offsetTop;
+    const scrollArea = banner.offsetHeight - window.innerHeight;
 
-        window.scrollTo({
-            top: bannerTop + target,
-            behavior: 'smooth'
-        });
-
-        if (!isAuto) {
-            resetAutoSlide();
-        }
+    if (scrollArea <= 0) {
+        console.warn("banner-container height 不够，不能 scroll");
+        return;
     }
+
+    const target = (scrollArea / (slides.length - 1)) * index;
+
+    window.scrollTo({
+        top: bannerTop + target,
+        behavior: 'smooth'
+    });
+
+    if (!isAuto) resetAutoSlide();
+}
 
     function updateSlides() {
         if (!banner || slides.length === 0) return;
