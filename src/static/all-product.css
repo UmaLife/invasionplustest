@@ -1,3 +1,56 @@
+/* FLOATING NAV*/
+.floating-nav{
+    position: fixed;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+
+    display: flex;
+    gap: 10px;
+
+    padding: 6px;
+
+    background: rgba(15,15,15,0.85);
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 999px;
+
+    transition: all 0.4s ease;
+}
+
+.floating-nav.hidden{
+    opacity: 0;
+    transform: translate(-50%, -30px);
+    pointer-events: none;
+}
+
+.floating-nav a{
+    color: #bbb;
+    text-decoration: none;
+
+    padding: 12px 24px;
+
+    border-radius: 999px;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    transition: all .3s ease;
+}
+
+.floating-nav a:hover{
+    color: #fff;
+}
+
+.floating-nav a.active{
+    background: #f0a500;
+    color: black;
+}
+
+
 /* PAGE WRAPPER */
 .product-area{
     padding: 2rem 5%;
@@ -11,10 +64,28 @@
     font-weight: 700;
     color: #fff;
     letter-spacing: 1px;
+    padding-top: 3rem;
     margin-bottom: 1rem;
     position: relative;
     display: inline-block;
 }
+
+.section-title a{
+    color: white;
+    text-decoration: none;
+    transition: all .3s ease;
+    display: inline-block;
+}
+
+.section-title a:hover{
+    color: #f0a500;
+
+    text-shadow:
+        0 0 6px rgba(240,165,0,0.15);
+
+    transform: scale(1.05);
+}
+
 
 .section-subtitle{
     color: #aaa;
@@ -166,7 +237,7 @@
 .monitors-list{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
+    gap: 7rem;
     width: 90%;
 }
 
@@ -186,4 +257,87 @@
     border-color: #ffc700;
     color: #ffc700;
     transform: translateY(-2px);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#hot-selling,
+#new-arrivals,
+#cases,
+#cooling,
+#monitor{
+    scroll-margin-top: 50px;
+}
+
+.view-more-circle{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    cursor: pointer;
+    user-select: none;
+
+    flex-shrink: 0;
+
+    transition: .3s ease;
+}
+
+.view-more-circle span{
+    color: #777;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    opacity: 0;
+    transform: translateX(10px);
+
+    transition: .3s ease;
+}
+
+.view-arrow{
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid grey;
+
+    background: rgba(255,255,255,0.02);
+
+    color: white;
+
+    font-size: 2rem;
+    font-weight: 300;
+
+    transition: .3s ease;
+}
+
+.view-more-circle:hover span{
+    opacity: 1;
+    transform: translateX(0);
+
+    color: #f0a500;
+}
+
+.view-more-circle:hover .view-arrow{
+    color: #f0a500;
+
+    border-color: rgba(240,165,0,0.35);
+
+    box-shadow:
+        0 0 12px rgba(240,165,0,0.12);
+
+    transform: scale(1.08);
+}
+
+.section-row{
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }

@@ -1050,6 +1050,7 @@
     {
       "id": "aeolus",
       "name": "AEOLUS 50 PRO",
+      "category": "cooler",
       "sections": {
         "hero": false,
         "description": false,
@@ -1122,6 +1123,7 @@
      {
       "id": "aeronix360",
       "name": "AERONIX-360",
+      "category": "cooler",
       "sections": {
         "hero": false,
         "description": false,
@@ -1189,6 +1191,7 @@
     {
       "id": "aeronix240",
       "name": "AERONIX-240",
+      "category": "cooler",
       "sections": {
         "hero": false,
         "description": false,
@@ -1229,6 +1232,7 @@
     {
       "id": "aerovis",
       "name": "AEROVIS",
+      "category": "cooler",
       "sections": {
         "hero": false,
         "description": false,
@@ -1282,6 +1286,7 @@
     {
       "id": "dy240",
       "name": "DY-240",
+      "category": "cooler",
       "sections": {
         "hero": false,
         "description": false,
@@ -1342,6 +1347,7 @@
      {
       "id": "frostvision360",
       "name": "DY-240",
+      "category": "cooler",
       "sections": {
         "hero": false,
         "description": false,

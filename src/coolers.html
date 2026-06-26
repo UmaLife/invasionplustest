@@ -151,7 +151,7 @@
     </div>
 
         <div class="product-container">
-            <div class="product-list" id="cases-product-list">
+            <div class="product-list" id="cooling-product-list">
             </div>
         </div>
     </section>
@@ -163,40 +163,36 @@
 <script>
 let allProducts = [];
 
-let selectedFilters = {
-    colors: [],
-    motherboards: [],
-    pcie: [],
-    fans: []
-};
-
-//Load Products
-async function loadCasesProducts() {
+// Load cooling products
+async function loadCoolingProducts() {
     const response = await fetch("products.json");
     const data = await response.json();
 
-    allProducts = data.products;
+    allProducts = data.products.filter(
+        product => product.category === "cooler"
+    );
 
     displayProducts(allProducts);
-    renderFilterCounts();
 }
 
-//Display products
+// Display products
 function displayProducts(products) {
-    const productList = document.getElementById("cases-product-list");
+
+    const productList = document.getElementById("cooling-product-list");
 
     productList.innerHTML = "";
 
-    if (products.length === 0) {
+    if(products.length === 0){
         productList.innerHTML = `
             <p style="color:#aaa; grid-column:1/-1;">
-                No products found.
+                No cooling products found.
             </p>
         `;
         return;
     }
 
     products.forEach(product => {
+
         const image =
             product.mainImage ||
             product.images?.[0] ||
@@ -208,23 +204,29 @@ function displayProducts(products) {
             : "Black";
 
         productList.innerHTML += `
-            <article onclick="window.location.href='product2.html?id=${product.id}'" class="product">
+            <article
+                onclick="window.location.href='product2.html?id=${product.id}'"
+                class="product">
+
                 <img src="${image}" alt="${product.name}">
 
                 <div class="product-name">
                     <h3>${product.name}</h3>
+
                     <p>Category: ${product["product-type"] || "N/A"}</p>
                     <p>Variation: ${variations}</p>
 
                     <span class="price">${product.price}</span>
+
                     <div class="price-divider"></div>
 
-                    <a href="product2.html?id=${product.id}" 
+                    <a href="product2.html?id=${product.id}"
                        class="product-learn-more"
                        onclick="event.stopPropagation()">
                         Learn More →
                     </a>
                 </div>
+
             </article>
         `;
     });
@@ -232,253 +234,21 @@ function displayProducts(products) {
     observeProducts();
 }
 
-//Filter case type
-function filterProducts(type) {
-    if (type === "All") {
-        selectedFilters.motherboards = [];
-    } else {
-        selectedFilters.motherboards = [type];
-    }
-
-    applyAllFilters();
-
-    document.getElementById("filtersArea").scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-    });
-}
-//filter colour
-function getProductColors(product) {
-    if (!product.variations) {
-        return ["black"];
-    }
-
-    return Object.keys(product.variations);
-}
-//filter mb support
-function getMotherboardSupport(product) {
-    const specs = product.specs || {};
-
-    const value =
-        specs["Motherboard Support"] ||
-        specs["MB Type"] ||
-        "";
-
-    if (!value) return [];
-
-    return value
-        .replaceAll("/", ",")
-        .replaceAll("<br>", ",")
-        .replaceAll("(", ",")
-        .replaceAll(")", ",")
-        .split(",")
-        .map(item => item.trim().toUpperCase())
-        .filter(item => item !== "")
-        .map(item => {
-            if (item.includes("MICROATX")) return "M-ATX";
-            if (item.includes("MICRO-ATX")) return "M-ATX";
-            if (item.includes("M-ATX")) return "M-ATX";
-            if (item.includes("MINI-ITX")) return "ITX";
-            if (item.includes("ITX")) return "ITX";
-            if (item.includes("ATX")) return "ATX";
-            return item;
-        });
-}
-//filter pcie slots
-function getPcieSlots(product) {
-    const specs = product.specs || {};
-
-    const value =
-        specs["PCI Slots"] ||
-        specs["PCI Expansion Slots"] ||
-        "";
-
-    if (!value) return [];
-
-    const numberMatch = value.match(/\d+/);
-
-    if (!numberMatch) return [];
-
-    return [`${numberMatch[0]} Slots`];
-}
-//filter fans
-function getFans(product) {
-    if (!product.fans) return [];
-
-    return [product.fans];
-}
-//check product matches filters
-function productMatchesFilters(product, ignoreGroup = null) {
-    const productColors = getProductColors(product);
-    const motherboardSupport = getMotherboardSupport(product);
-    const pcieSlots = getPcieSlots(product);
-    const fans = getFans(product);
-
-    const matchColor =
-        ignoreGroup === "colors" ||
-        selectedFilters.colors.length === 0 ||
-        selectedFilters.colors.some(color => productColors.includes(color));
-
-    const matchMotherboard =
-        ignoreGroup === "motherboards" ||
-        selectedFilters.motherboards.length === 0 ||
-        selectedFilters.motherboards.some(board => motherboardSupport.includes(board));
-
-    const matchPcie =
-        ignoreGroup === "pcie" ||
-        selectedFilters.pcie.length === 0 ||
-        selectedFilters.pcie.some(slot => pcieSlots.includes(slot));
-
-    const matchFans =
-        ignoreGroup === "fans" ||
-        selectedFilters.fans.length === 0 ||
-        selectedFilters.fans.some(fan => fans.includes(fan));
-
-    return matchColor && matchMotherboard && matchPcie && matchFans;
-}
-//Apply filters
-function applyAllFilters() {
-    let filteredProducts = allProducts.filter(product => {
-        return productMatchesFilters(product);
-    });
-
-    const sortFilter = document.getElementById("sortFilter");
-
-    if (sortFilter) {
-        const sortValue = sortFilter.value;
-
-        if (sortValue === "low-high") {
-            filteredProducts.sort((a, b) => getPriceNumber(a.price) - getPriceNumber(b.price));
-        }
-
-        if (sortValue === "high-low") {
-            filteredProducts.sort((a, b) => getPriceNumber(b.price) - getPriceNumber(a.price));
-        }
-    }
-
-    displayProducts(filteredProducts);
-    renderFilterCounts();
-}
-//sort pricing
-function getPriceNumber(priceText) {
-    const match = priceText.match(/\d+(\.\d+)?/);
-    return match ? parseFloat(match[0]) : 0;
-}
-function getUniqueOptions(group) {
-    const values = new Set();
-
-    allProducts.forEach(product => {
-        if (group === "colors") {
-            getProductColors(product).forEach(color => values.add(color));
-        }
-
-        if (group === "motherboards") {
-            getMotherboardSupport(product).forEach(board => values.add(board));
-        }
-
-        if (group === "pcie") {
-            getPcieSlots(product).forEach(slot => values.add(slot));
-        }
-
-        if (group === "fans") {
-            getFans(product).forEach(fan => values.add(fan));
-        }
-    });
-
-    return Array.from(values);
-}
-
-function countOptions(group, optionValue) {
-    return allProducts.filter(product => {
-        if (!productMatchesFilters(product, group)) {
-            return false;
-        }
-
-        if (group === "colors") {
-            return getProductColors(product).includes(optionValue);
-        }
-
-        if (group === "motherboards") {
-            return getMotherboardSupport(product).includes(optionValue);
-        }
-
-        if (group === "pcie") {
-            return getPcieSlots(product).includes(optionValue);
-        }
-
-        if (group === "fans") {
-            return getFans(product).includes(optionValue);
-        }
-
-        return false;
-    }).length;
-}
-
-function renderFilterCounts() {
-    renderCheckboxGroup("colorFilters", "colors", getUniqueOptions("colors"));
-    renderCheckboxGroup("motherboardFilters", "motherboards", getUniqueOptions("motherboards"));
-    renderCheckboxGroup("pcieFilters", "pcie", getUniqueOptions("pcie"));
-    renderCheckboxGroup("fanFilters", "fans", getUniqueOptions("fans"));
-}
-
-function renderCheckboxGroup(containerId, group, options) {
-    const container = document.getElementById(containerId);
-
-    if (!container) return;
-
-    container.innerHTML = "";
-
-    options.forEach(option => {
-        const count = countOptions(group, option);
-        const isChecked = selectedFilters[group].includes(option);
-        const isDisabled = count === 0 && !isChecked;
-
-        container.innerHTML += `
-            <label class="filter-option ${isDisabled ? "disabled" : ""}">
-                <input
-                    type="checkbox"
-                    value="${option}"
-                    ${isChecked ? "checked" : ""}
-                    ${isDisabled ? "disabled" : ""}
-                    onchange="toggleFilter('${group}', '${escapeQuotes(option)}')"
-                >
-                <span>${formatFilterName(option)}</span>
-                <em>${count}</em>
-            </label>
-        `;
-    });
-}
-
-function toggleFilter(group, value) {
-    if (selectedFilters[group].includes(value)) {
-        selectedFilters[group] = selectedFilters[group].filter(item => item !== value);
-    } else {
-        selectedFilters[group].push(value);
-    }
-
-    applyAllFilters();
-}
-
-function formatFilterName(value) {
-    return String(value)
-        .replaceAll("-", " ")
-        .replace(/\b\w/g, char => char.toUpperCase());
-}
-
-function escapeQuotes(value) {
-    return String(value).replace(/'/g, "\\'");
-}
-
-//Effects
+// Product animation
 function observeProducts(){
+
     const products = document.querySelectorAll(".product");
 
     const observer = new IntersectionObserver((entries) => {
+
         entries.forEach(entry => {
+
             if(entry.isIntersecting){
                 entry.target.classList.add("show");
             }
+
         });
+
     }, {
         threshold: 0.2
     });
@@ -488,7 +258,9 @@ function observeProducts(){
     });
 }
 
+// Filter panel animation (optional)
 function toggleFilterPanel() {
+
     const panel = document.getElementById("filterPanel");
     const button = document.querySelector(".filter-toggle");
 
@@ -496,14 +268,9 @@ function toggleFilterPanel() {
     button.classList.toggle("active");
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    loadCasesProducts();
-
-    const sortFilter = document.getElementById("sortFilter");
-
-    if (sortFilter) {
-        sortFilter.addEventListener("change", applyAllFilters);
-    }
+// Start
+document.addEventListener("DOMContentLoaded", () => {
+    loadCoolingProducts();
 });
 
 </script>
