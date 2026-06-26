@@ -4,6 +4,8 @@
       "id": "e20",
       "name": "E-20",
       "category": "case",
+      "hot": true,
+      "new": true,
       "sections": {
         "hero": false,
         "description": true,
@@ -78,6 +80,8 @@
       "id": "atlas",
       "name": "ATLAS",
       "category": "case",
+      "hot": false,
+      "new": false,
       "sections": {
         "hero": false,
         "description": false,
@@ -174,6 +178,8 @@
       "id": "e10",
       "name": "E-10",
       "category": "case",
+      "hot": true,
+      "new": true,
       "sections": {
         "hero": true,
         "description": false,
@@ -247,6 +253,8 @@
       "name": "T-1000",
       "category": "case",
       "price": "RM259.00 - RM299.00",
+      "hot": true,
+      "new": true,
       "sections": {
         "hero": false,
         "description": false,
@@ -315,6 +323,8 @@
       "id": "erebus",
       "name": "EREBUS",
       "category": "case",
+      "hot": false,
+      "new": true,
       "sections": {
         "hero": true,
         "description": false,
@@ -395,6 +405,8 @@
       "id": "genesis",
       "name": "GENESIS",
       "category": "case",
+      "hot": false,
+      "new": false,
       "sections": {
         "hero": false,
         "description": true,
@@ -498,6 +510,8 @@
       "id": "genesism",
       "name": "GENESIS-M",
       "category": "case",
+      "hot": false,
+      "new": false,
       "price": "RM329.00 - RM339.00",
       "sections": {
         "hero": true,
@@ -588,6 +602,8 @@
       "id": "kratos",
       "name": "KRATOS",
       "category": "case",
+      "hot": false,
+      "new": false,
       "price": "RM279.00 - RM329.00",
       "sections": {
         "hero": true,
@@ -686,6 +702,8 @@
       "id": "thanatos",
       "name": "THANATOS",
       "category": "case",
+      "hot": false,
+      "new": false,
       "sections": {
         "hero": false,
         "description": true,
@@ -764,6 +782,8 @@
       "id": "theview5",
       "name": "THE VIEW 5",
       "category": "case",
+      "hot": false,
+      "new": false,
       "sections": {
         "hero": false,
         "description": false,
@@ -902,6 +922,8 @@
       "id": "zoom",
       "name": "ZOOM",
       "category": "case",
+      "hot": false,
+      "new": false,
       "sections": {
         "hero": false,
         "description": false,
@@ -1006,6 +1028,8 @@
       "id": "XTG-34VPRX",
       "name": "XTG-34VPRX",
       "category": "monitor",
+      "hot": false,
+      "new": false,
       "sections": {
         "hero": false,
         "description": false,
@@ -1115,6 +1139,8 @@
       "id": "XTG-49ARCX",
       "name": "XTG-49ARCX",
       "category": "monitor",
+      "hot": true,
+      "new": false,
       "sections": {
         "hero": false,
         "description": false,

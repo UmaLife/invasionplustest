@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/all-product.css">
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans" rel="stylesheet">
+    <title>InvasionPlus</title>
+
+</head>
+<body>
+<!---Overlay Search-->
+    <div id="searchOverlay" class="search-overlay">
+        <div class="search-box">
+            <input type="text" placeholder="Search your product" autofocus>
+            <i class="fa-solid fa-xmark close-btn" onclick="closeSearch()"></i>
+        </div>
+    </div>
+<!--Menu bar-->
+    <div class="side-menu" id="sideMenu">
+        <div class="menu-content">
+        <h2>MENU</h2>
+        <div class="menu-search">
+            <input type="text" placeholder="Search your product">
+        </div>
+        <ul>
+            <li onclick="openProductPanel()">Product</li>
+            <li onclick="closeProductPanel()">Software</li>
+            <li onclick="closeProductPanel()">Contact</li>
+            <li onclick="closeProductPanel()">About Us</li>
+        </ul>
+        <div class="menu-logo">
+            <img src="static/logo.png"alt="logo">
+        </div>
+        <i class="fa-solid fa-xmark menu-close" onclick="closeMenu()"></i>
+        </div>
+    </div>
+    <div class="product-panel" id="productPanel">
+        <div class="panel-content">
+        <a href="cases.html" class="product-item">
+            <img src="static/cases.png">
+            <span>Cases</span>
+        </a>
+        <a href="cooling.html" class="product-item">
+            <img src="static/cooling.png">
+            <span>Cooling</span>
+        </a>
+        <a href="monitor.html" class="product-item">
+            <img src="static/monitor.png">
+            <span>Monitor</span>
+        </a>
+
+    </div>
+    </div>
+    <div class="homepage" id="homepage">
+
+    </div>
+
+    <!--Products Area-->
+    <div id="productArea" class="product-area">
+        
+        <div class="hot-selling">
+            <h2 class="section-title">Hot Selling</h2>
+                <h3 class="section-subtitle">Explore our most popular products loved by customers</h3>
+                <div class="divider"></div>
+                <div class="hot-selling-list" id="hot-selling-list">
+                </div>
+            </div>
+
+        <div class="new-products">
+            <h2 class="section-title">New Arrivals</h2>
+                <h3 class="section-subtitle">Discover the latest additions to our collection</h3>
+                <div class="divider"></div>
+                <div class="new-products-list" id="new-products-list">
+                </div>
+            </div>
+        
+        <div class="Cases">
+            <h2 class="section-title">Cases</h2>
+                <h3 class="section-subtitle">Find the perfect case for your build</h3>
+                <div class="divider"></div>
+                <div class="cases-list" id="cases-list">
+                <button class="view-all-btn" onclick="window.location.href='cases.html'">View All</button>
+                </div>
+            </div>
+
+        <div class="Coolers">
+            <h2 class="section-title">Coolers</h2>
+                <h3 class="section-subtitle">Keep your system cool with our cooling solutions</h3>
+                <div class="divider"></div>
+                <div class="coolers-list" id="coolers-list">
+                <button class="view-all-btn" onclick="window.location.href='cooling.html'">View All</button>
+                </div>
+            </div>
+
+        <div class="monitors">
+            <h2 class="section-title">Monitors</h2>
+                <h3 class="section-subtitle">Experience stunning visuals with our monitors</h3>
+                <div class="divider"></div>
+                <div class="monitors-list" id="monitors-list">
+                <button class="view-all-btn" onclick="window.location.href='monitor.html'">View All</button>
+                </div>
+            </div>
+
+    </div>
+
+
+<script type="module" src="home.js"></script>
+<script src="set.js">
+</script>
+<script>
+let allProducts = [];
+
+async function loadProducts(){
+    const res = await fetch("products.json");
+    const data = await res.json();
+
+    allProducts = data.products;
+
+    renderPage();
+}
+
+//get 4 products from each category and render them
+function renderPage() {
+
+    // HOT SELLING (first 4 products marked hot)
+    renderSection(
+        "hot-selling-list",
+        allProducts.filter(p => p.hot).slice(0, 4)
+    );
+
+    // NEW PRODUCTS (first 4 marked new)
+    renderSection(
+        "new-products-list",
+        allProducts.filter(p => p.new).slice(0, 4)
+    );
+
+    // CASES (first 4 cases)
+    renderSection(
+        "cases-list",
+        allProducts.filter(p => p.category === "case").slice(0, 4)
+    );
+
+    // COOLERS (first 4 coolers)
+    renderSection(
+        "coolers-list",
+        allProducts.filter(p => p.category === "cooler").slice(0, 4)
+    );
+
+    // MONITORS (first 4 monitors)
+    renderSection(
+        "monitors-list",
+        allProducts.filter(p => p.category === "monitor").slice(0, 4)
+    );
+}
+
+//Display products
+function renderSection(containerId, products){
+
+    const container = document.getElementById(containerId);
+
+    if (!container) return;
+
+    container.innerHTML = products.map(product => {
+
+        const image =
+            product.mainImage ||
+            product.images?.[0] ||
+            product.variations?.black?.[0] ||
+            "static/fallback.png";
+
+        const variations = product.variations
+            ? Object.keys(product.variations).join("/")
+            : "Black";
+
+        return `
+            <article class="product"
+                onclick="window.location.href='product2.html?id=${product.id}'">
+
+                <img src="${image}" alt="${product.name}">
+
+                <div class="product-name">
+                    <h3>${product.name}</h3>
+                    <p>Category: ${product["product-type"] || "N/A"}</p>
+                    <p>Variation: ${variations}</p>
+
+                    <span class="price">${product.price}</span>
+                    <div class="price-divider"></div>
+
+                    <a href="product2.html?id=${product.id}"
+                       class="product-learn-more"
+                       onclick="event.stopPropagation()">
+                        Learn More →
+                    </a>
+                </div>
+
+            </article>
+        `;
+    }).join("");
+
+    observeProducts();
+}
+
+let observer;
+
+function observeProducts(){
+
+    const products = document.querySelectorAll(".product");
+
+    // clear old observer
+    if (observer) observer.disconnect();
+
+    observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                entry.target.classList.add("show");
+                observer.unobserve(entry.target); // important
+            }
+        });
+    }, {
+        threshold: 0.2
+    });
+
+    products.forEach(product => {
+        observer.observe(product);
+    });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    loadProducts();
+});
+</script>
+</body>
+</html>
+
+        
+        
