@@ -189,21 +189,50 @@ const navbarTemplate = `
     <div id="searchOverlay" class="search-overlay">
     <div class="search-container">
 
-        <i class="fa-solid fa-xmark close-btn" onclick="closeSearch()"></i>
+        <i class="fa-solid fa-xmark search-close" onclick="closeSearch()"></i>
+        
+        <div class="search-logo">
+            <img src="static/logo.png" alt="Invasion Plus Logo">
+        </div>
 
         <div class="search-box">
 
         <input type="text" placeholder="Search your product" id="searchInput">
 
-        <button class="search-btn">
+        <button class="search-btn" onclick="performSearch()">
         <i class="fa-solid fa-magnifying-glass"></i>
         </button>
 
         </div>
 
-        <div class="search-logo">
-            <img src="static/logo.png" alt="Invasion Plus Logo">
-        </div>
+        
+            <div class="search-links">
+
+                <div class="search-column">
+                    <h4>HOT SELLING</h4>
+
+                    <a href="product2.html?id=e20">E-20</a>
+                    <a href="product2.html?id=t1000">T-1000</a>
+                    <a href="product2.html?id=xtg49">XTG-49ARCX</a>
+                </div>
+
+                <div class="search-column">
+                    <h4>NEW ARRIVALS</h4>
+
+                    <a href="#">ATLAS</a>
+                    <a href="#">ICE360</a>
+                    <a href="#">X3 PRO</a>
+                </div>
+
+                <div class="search-column">
+                    <h4>CATEGORIES</h4>
+
+                    <a href="cases.html">Cases</a>
+                    <a href="cooling.html">Cooling</a>
+                    <a href="monitor.html">Monitors</a>
+                </div>
+
+            </div>
 
     </div>
 </div>
@@ -275,13 +304,25 @@ const navbarTemplate = `
 document.body.insertAdjacentHTML('afterbegin', navbarTemplate);
 
 function openSearch(){
-    document.getElementById("searchOverlay").classList.add("active");
-    document.body.classList.add("page-blur");
+
+    document.getElementById("searchOverlay")
+        .classList.add("active");
+
+    setTimeout(() => {
+    document.getElementById("searchInput").focus();
+    }, 300);
+
+    document.querySelector(".nav-logo")
+        .style.opacity = "0";
 }
 
 function closeSearch(){
-    document.getElementById("searchOverlay").classList.remove("active");
-    document.body.classList.remove("page-blur");
+
+    document.getElementById("searchOverlay")
+        .classList.remove("active");
+
+    document.querySelector(".nav-logo")
+        .style.opacity = "1";
 }
 
 function openMenu(){
@@ -330,6 +371,30 @@ window.addEventListener("scroll", () => {
         navbar.classList.add("scrolled");
     } else {
         navbar.classList.remove("scrolled");
+    }
+
+});
+
+function performSearch() {
+
+    const keyword = document
+        .getElementById("searchInput")
+        .value
+        .trim();
+
+    if(keyword === "") return;
+
+    localStorage.setItem("searchKeyword", keyword);
+
+    window.location.href = "products.html";
+}
+
+document
+.getElementById("searchInput")
+.addEventListener("keydown", function(e){
+
+    if(e.key === "Enter"){
+        performSearch();
     }
 
 });

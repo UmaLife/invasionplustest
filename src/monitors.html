@@ -11,53 +11,6 @@
 
 </head>
 <body>
-<!---Overlay Search-->
-    <div id="searchOverlay" class="search-overlay">
-        <div class="search-box">
-            <input type="text" placeholder="Search your product" autofocus>
-            <i class="fa-solid fa-xmark close-btn" onclick="closeSearch()"></i>
-        </div>
-    </div>
-<!--Menu bar-->
-    <div class="side-menu" id="sideMenu">
-        <div class="menu-content">
-        <h2>MENU</h2>
-        <div class="menu-search">
-            <input type="text" placeholder="Search your product">
-        </div>
-        <ul>
-            <li onclick="openProductPanel()">Product</li>
-            <li onclick="closeProductPanel()">Software</li>
-            <li onclick="closeProductPanel()">Contact</li>
-            <li onclick="closeProductPanel()">About Us</li>
-        </ul>
-        <div class="menu-logo">
-            <img src="static/logo.png"alt="logo">
-        </div>
-        <i class="fa-solid fa-xmark menu-close" onclick="closeMenu()"></i>
-        </div>
-    </div>
-    <div class="product-panel" id="productPanel">
-        <div class="panel-content">
-        <a href="cases.html" class="product-item">
-            <img src="static/cases.png">
-            <span>Cases</span>
-        </a>
-        <a href="cooling.html" class="product-item">
-            <img src="static/cooling.png">
-            <span>Cooling</span>
-        </a>
-        <a href="monitor.html" class="product-item">
-            <img src="static/monitor.png">
-            <span>Monitor</span>
-        </a>
-
-    </div>
-    </div>
-    <div class="homepage" id="homepage">
-
-    </div>
-
 <!--Product type-->
 <section class="monitor">
     <div class="category-container">
@@ -67,7 +20,7 @@
             Experience stunning visuals and ultra-smooth gameplay with monitors built for gamers, creators, and professionals.
         </p>
         <div class="divider" id="filtersArea"></div>
-    </section>
+    </div>
 
 <!---Product-->
     <div id="productArea" class="product-area">
@@ -97,8 +50,7 @@
 
 
 <script type="module" src="home.js"></script>
-<script src="set.js">
-</script>
+<script src="set.js"></script>
 <script>
 let allProducts = [];
 
