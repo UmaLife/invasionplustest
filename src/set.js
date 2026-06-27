@@ -218,10 +218,9 @@ const navbarTemplate = `
 
                 <div class="search-column">
                     <h4>NEW ARRIVALS</h4>
-
-                    <a href="#">ATLAS</a>
-                    <a href="#">ICE360</a>
-                    <a href="#">X3 PRO</a>
+                    <a href="product2.html?id=atlas">ATLAS</a>
+                    <a href="product2.html?id=aerovis">AEROVIS</a>
+                    <a href="product2.html?id=xtg-49arcx">XTG-49ARCX</a>
                 </div>
 
                 <div class="search-column">
