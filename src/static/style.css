@@ -2279,8 +2279,16 @@ border-glow {
     border-radius:14px;
     overflow:hidden;
     padding:46px;
+    transition:.45s;
 }
+.feature-box.active-feature{
+    border-color:#ffc700;
+    box-shadow:
+        0 0 40px rgba(255,199,0,.35),
+        inset 0 0 25px rgba(255,199,0,.08);
 
+    transform:scale(1.01);
+}
 .feature-content{
     position: relative;
     z-index: 5;

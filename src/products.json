@@ -82,7 +82,7 @@
       "price": "RM259.00 - RM269.00",
       "fans": "with 4 Infinity ARGB Fans",
       "product-type": "M-ATX",
-      "description": "",
+      "description": "The ATLAS is engineered to deliver a perfect balance of panoramic aesthetics, optimized airflow, and hardware compatibility. Designed with premium tempered glass, efficient mesh ventilation, and flexible cooling support, it provides a clean showcase for modern PC builds without compromising thermal performance.",
       "mainImage": "static/ATLAS/ALTAS-BLACK-04.png",
       "heroImage": "static/ATLAS/ALTAS-BLACK-03.png",
       "descriptionImage": "static/ATLAS/ALTAS-BLACK-03.png",
@@ -103,6 +103,66 @@
         "static/ATLAS/ATLAS-WHITE-05.png"
       ]
     },
+    "sellingPoints": [
+    {
+      "icon": "fa-regular fa-square",
+      "title": "Extended Panoramic Glass Design",
+      "description": "Features tempered glass on the front, right and left panels for an unobstructed view from every angle"
+    },
+    {
+      "icon": "fa-solid fa-wind",
+      "title": "Optimized Mesh Ventilation",
+      "description": "Top and right mesh panels enhance airflow and heat dissipation for stable and efficient performance."
+    },
+    {
+      "icon": "fa-solid fa-microchip",
+      "title": "Wide Compatibility",
+      "description": "Supports M-ATX and ITX motherboards."
+    },
+    {
+      "icon": "fa-solid fa-ruler-combined",
+      "title": "Precisely Crafted Dimensions",
+      "description": "L435*W228*H475mm"
+    },
+    {
+      "icon": "fa-solid fa-temperature-arrow-up",
+      "title": "Powerful Cooling Support",
+      "description": "Liquid cooling up to 360mm air cooling up to 120mm"
+    }
+  ],
+  "productFeatureGrid": {
+  "title": "Product Highlights",
+  "cards": [
+    {
+      "type": "wide",
+      "title": "Extended Panoramic Glass Design",
+      "description": "Features tempered glass on the front, right and left panels for an unobstructed view from every angle.",
+      "image": "static/ATLAS/altas_fea1.png"
+    },
+    {
+      "title": "Optimized Mesh Ventilation",
+      "description": "Top and right mesh panels enhance airflow and heat dissipation for stable and efficient performance.",
+      "image": "static/ATLAS/atlas2.jpg"
+    },
+    {
+      "title": "Wide Compatibility",
+      "description": "Supports M-ATX and ITX motherboards.",
+      "image": "static/ATLAS/atlas_fea2.png"
+    },
+    {
+      "type":"wide",
+      "title": "Precisely Crafted Dimensions",
+      "description": "L435*W228*H475mm",
+      "image": "static/ATLAS/atlas_fea3.png"
+    },
+    {
+      "type": "wide",
+      "title": "Powerful Cooling Support",
+      "description": "Liquid cooling up to 360mm air cooling up to 120mm.",
+      "image": "static/ATLAS/atlas_fea4.png"
+    }
+  ]
+},
       "specs": {
         "Model": "ATLAS",
         "Front Panel": "Tempered Glass",

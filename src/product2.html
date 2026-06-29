@@ -68,6 +68,14 @@ const productId = urlParams.get("id") || "genesis";
 let currentProduct;
 let currentImages = [];
 
+const featureTargets = [
+    "feature-panoramic",
+    "feature-airflow",
+    "feature-magnetic",
+    "feature-compatibility",
+    "feature-cooling"
+];
+
 fetch("products.json")
 .then(res => res.json())
 .then(data => {
@@ -123,13 +131,16 @@ function renderThumbs(){
         thumb.onclick = () => {
             document.getElementById("mainImage").src = img;
 
-            document.querySelectorAll(".thumbs img").forEach(t => t.classList.remove("active"));
+            document.querySelectorAll(".thumbs img")
+            .forEach(t => t.classList.remove("active"));
+
             thumb.classList.add("active");
         };
 
         thumbs.appendChild(thumb);
     });
 }
+
 function initThumbArrows(){
     const thumbs = document.getElementById("thumbs");
     const up = document.getElementById("thumbUp");
@@ -151,41 +162,36 @@ function initThumbArrows(){
         });
     };
 }
-function renderColors(product){
 
+function renderColors(product){
     const box = document.getElementById("colorOptions");
     box.innerHTML = "";
 
     if(!product.variations) return;
 
-    Object.keys(product.variations).forEach((color,index)=>{
+    Object.keys(product.variations).forEach((color, index) => {
+        const dot = document.createElement("span");
+        dot.className = "color-dot " + color;
 
-        const dot=document.createElement("span");
-
-        dot.className="color-dot "+color;
-
-        if(index===0)
+        if(index === 0){
             dot.classList.add("active");
+        }
 
-        dot.onclick=()=>{
-
+        dot.onclick = () => {
             document.querySelectorAll(".color-dot")
-            .forEach(c=>c.classList.remove("active"));
+            .forEach(c => c.classList.remove("active"));
 
             dot.classList.add("active");
 
-            currentImages=product.variations[color];
+            currentImages = product.variations[color];
 
-            document.getElementById("mainImage").src=currentImages[0];
+            document.getElementById("mainImage").src = currentImages[0];
 
             renderThumbs();
-
         };
 
         box.appendChild(dot);
-
     });
-
 }
 
 function renderSellingPoints(product){
@@ -199,14 +205,41 @@ function renderSellingPoints(product){
 
     box.style.display = "grid";
 
-    product.sellingPoints.forEach(item => {
+    product.sellingPoints.forEach((item, index) => {
         box.innerHTML += `
-            <div class="point">
+            <div class="point" data-target="${featureTargets[index]}">
                 <i class="${item.icon}"></i>
                 <h4>${item.title}</h4>
                 <p>${item.description}</p>
             </div>
         `;
+    });
+
+    initSellingPointJump();
+}
+
+function initSellingPointJump(){
+    document.querySelectorAll(".point").forEach(point => {
+        point.addEventListener("click", () => {
+            const targetId = point.dataset.target;
+            const target = document.getElementById(targetId);
+
+            if(!target) return;
+
+            target.scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+            });
+
+            document.querySelectorAll(".feature-box")
+            .forEach(box => box.classList.remove("active-feature"));
+
+            target.classList.add("active-feature");
+
+            setTimeout(() => {
+                target.classList.remove("active-feature");
+            }, 1800);
+        });
     });
 }
 
@@ -226,23 +259,23 @@ function renderFeatureGrid(product){
     const cards = product.productFeatureGrid.cards;
 
     grid.innerHTML = `
-        ${featureBox(cards[0], "wide")}
+        ${featureBox(cards[0], "wide", "feature-panoramic")}
 
         <div class="feature-row">
-            ${featureBox(cards[1], "small")}
-            ${featureBox(cards[2], "small")}
+            ${featureBox(cards[1], "small", "feature-airflow")}
+            ${featureBox(cards[2], "small", "feature-magnetic")}
         </div>
 
-        ${featureBox(cards[3], "wide")}
-        ${featureBox(cards[4], "wide")}
+        ${featureBox(cards[3], "wide", "feature-compatibility")}
+        ${featureBox(cards[4], "wide", "feature-cooling")}
     `;
 }
 
-function featureBox(card, size){
+function featureBox(card, size, id){
     if(!card) return "";
 
     return `
-        <div class="feature-box ${size}">
+        <div class="feature-box ${size}" id="${id}">
             <div class="feature-content">
                 ${size === "wide" ? `<h2>${card.title}</h2>` : `<h3>${card.title}</h3>`}
                 ${card.subtitle ? `<span>${card.subtitle}</span>` : ""}
