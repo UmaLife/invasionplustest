@@ -40,31 +40,6 @@
         "static/E20/E20.1.png"
       ],
 
-       "videodesc": {
-      "video": "static/E20/E20.2.mp4",
-      "brand": "INVASION PLUS",
-      "title": "E-20",
-      "subtitle": "Experience peak performance with a chassis designed for high-end cooling"
-    },
-      "highlightImages": [
-      "static/E20/E20.11.png",
-      "static/E20/E20.1.png",
-      "static/E20/E20.3.png"
-      ],
-      "features": [
-        {
-          "title": "Optimized Airflow Layout",
-          "description": "Designed with multiple fan mounting positions and ventilated panels to maintain consistent airflow throughout the system."
-        },
-        {
-          "title": "Multiple Storage Expansion",
-          "description": "Supports several SSD and HDD installation slots for flexible storage upgrades and faster data access performance."
-        },
-        {
-          "title": "Spacious Mid-Tower Interior",
-          "description": "Provides ample space for high-end GPUs, multiple storage devices, and easy cable management for a clean build appearance."
-        }
-      ],
       "specs": {
         "Model": "E - 20",
         "Material": "SPCC 0.7 MM",
@@ -128,38 +103,6 @@
         "static/ATLAS/ATLAS-WHITE-05.png"
       ]
     },
-    "customSection": {
-          "title": "ATLAS - Exceptional Air Cooling Support",
-          "description": "Featuring a Hight - Airflow layout and multiple fan mounts to keep your components cool under heavy workloads"
-        },
-
-    "lifestyleSection": {
-        "title": "COMPACT MATX FRAME",
-        "description": "Experience elite cooling, premium tempered glass panels, and compact power engineered for modern battle stations.",
-        
-        "leftImage": "static/ATLAS/ALTAS-BLACK-04.png",
-        
-        "middleImage": "static/ATLAS/ATLAS-WHITE-04.png",
-        
-        "bottomImage1": "static/ATLAS/ALTAS-BLACK-03.png",
-        
-        "bottomImage2": "static/ATLAS/ATLAS-WHITE-03.png"
-      },
-
-      "features": [
-        {
-          "title": "Liquid Cooling Support",
-          "description": "Supports up to 360mm liquid cooling radiators for efficient thermal performance, optimized airflow, and stable high-performance cooling."
-        },
-        {
-          "title": "Air Cooling Support",
-          "description": "Optimized for high airflow performance with support for multiple cooling fans, ensuring efficient heat dissipation and stable system temperatures during intensive gaming sessions."
-        },
-        {
-          "title": "Motherboard Support",
-          "description": "Compatible with ITX and M-ATX motherboards, providing flexible build options in a compact yet spacious chassis layout"
-        }
-      ],
       "specs": {
         "Model": "ATLAS",
         "Front Panel": "Tempered Glass",
@@ -218,28 +161,6 @@
         "static/E10/E10 (5).png",
         "static/E10/E10 (8).png"
       ],
-  
-      "featureGallery": {
-          "heroImage": "static/E10/e10ban.jpg",
-          "cards": [
-            {
-              "image": "static/E10/E10.11.png",
-              "title": "Built for Power. Designed for Performance.",
-              "description": "Superior airflow, spacious interior design, and reliable cooling that keeps your system running at its best, whether for gaming, streaming, or heavy workloads."
-            },
-            {
-              "image": "static/E10/E10.12.png",
-             "title": "Smart Connectivity. Flexible Expansion.",
-              "description": "USB 3.0, Type-C support, multi-drive compatibility, and spacious PCI expansion designed for modern high-performance builds."
-            },
-            {
-              "image": "static/E10/E10.13.png",
-              "title": "Short & Strong",
-              "description": "Spacious design, efficient airflow, and premium cooling support for serious gaming and professional builds."
-  
-            }
-          ]
-        },
 
        "specs": {
         "Model": "E - 10",
@@ -292,26 +213,6 @@
       "static/T-1000/T1000bann.png",
       "static/T-1000/T-1000B-04.png",
       "static/T-1000/T-1000B-03.png"
-      ],
-
-      "customSection": {
-          "title": "T1000 - Tempered Glass Compact M-ATX PC Case",
-          "description": "Support up to 10 ARGB Fans, delivers exceptional airflow and uncompromising compatibility in a sleek modern design."
-        },
-
-      "features": [
-        {
-          "title": "Front I/O Panel",
-          "description": "Equipped with 2 USB 3.0 and Type-C connectivity for convenient device access."
-        },
-        {
-          "title": "Premium Build Quality",
-          "description": "built with durable 0.7mm SPCC steel construction, delivering a strong and stable chassis structure designed for long-term reliability"
-        },
-        {
-          "title": "Advanced Liquid Cooling Support",
-          "description": "accommodates multiple radiator and fan setups for maximum airflow efficiency."
-        }
       ],
        "specs": {
         "Model": "T - 1000",
@@ -371,27 +272,6 @@
         
       ]
     },
-    "highlightImages": [
-      "static/EREBUS/erebusbann.jpg",
-      "static/EREBUS/err.png",
-      "static/EREBUS/ere.png"
-      ],
-
-      "features": [
-        {
-          "title": "Designed For Legends",
-          "description": "Push your system beyond limits with support for 360mm liquid cooling, 420mm graphics cards, and optimized airflow architecture."
-        },
-        {
-          "title": "Power Without Compromise",
-          "description": "Handle powerful high-end graphics cards with up to 420mm VGA Card, giving gamers the freedom to build without limits."
-        },
-        {
-          "title": "Maximum Performance in a Compact Size",
-          "description": "Compact dimensions crafted for clean setups while supporting powerful GPUs, advanced cooling, and premium airflow performance."
-        }
-      ],
-
       "specs": {
         "Model": "EREBUS",
         "Front Panel": "Steel + Tempered Glass",
@@ -421,12 +301,12 @@
       "new": false,
       "sections": {
         "hero": false,
-        "description": true,
+        "description": false,
         "highlight": false,
         "specs": true,
          "lifestyle" : true,
         "featuregallery":false,
-        "custom": true,
+        "custom": false,
         "verticalFeatures": false,
         "videodesc": false,
         "videoShowcase": false,
@@ -465,39 +345,67 @@
         
       ]
     },
+    "sellingPoints": [
+    {
+      "icon": "fa-regular fa-square",
+      "title": "Panoramic 3-Sided Tempered Glass",
+      "description": "Aquarium-style showcase with front, side and top tempered glass panels."
+    },
+    {
+      "icon": "fa-solid fa-wind",
+      "title": "Right Optimized Mesh Ventilation",
+      "description": "Improves airflow and cooling performance for a cleaner, more stable build."
+    },
+    {
+      "icon": "fa-solid fa-magnet",
+      "title": "Magnetic Dust Filter",
+      "description": "Premium user experience with quick removal and easy cleaning."
+    },
+    {
+      "icon": "fa-solid fa-border-all",
+      "title": "Wide Motherboard Support",
+      "description": "Supports ATX, M-ATX and ITX motherboards."
+    },
+    {
+      "icon": "fa-solid fa-fan",
+      "title": "Flexible Cooling Support",
+      "description": "Supports liquid cooling up to 360mm and air cooling up to 120mm."
+    }
+  ],
+  "productFeatureGrid": {
+  "title": "Product Highlights",
+  "cards": [
+    {
+      "type": "wide",
+      "title": "Panoramic Design",
+      "subtitle": "Aquarium-Style Showcase",
+      "description": "The seamless 3-sided tempered glass design provides an unobstructed view of your build from every angle.",
+      "image": "static/GENESIS/GENESIS_FEA1.png"
+    },
+    {
+      "title": "Optimized Airflow",
+      "description": "Right-side mesh panel enhances air intake and heat dissipation for maximum performance.",
+      "image": "static/GENESIS/GENESIS_FEA2.png"
+    },
+    {
+      "title": "Magnetic Dust Filter",
+      "description": "Top, bottom and side magnetic filters keep your system clean and running smoothly.",
+      "image": "static/GENESIS/GENESIS_FEA3.png"
+    },
+    {
+      "title": "Wide Compatibility",
+      "description": "Supports ATX, M-ATX and ITX motherboards for flexible build options.",
+      "image": "static/GENESIS/GENESIS_FEA4.png"
+    },
+    {
+      "type": "wide",
+      "title": "Cooling Support",
+      "description": "Support up to 360mm radiator and 120mm air cooler height.",
+      "image": "static/GENESIS/GENESIS_FEA5.png"
+    }
+  ]
+},
 
-     "customSection": {
-          "title": "Genesis - Three-Sided Tempered Glass PC Case",
-          "description": "FORGED FOR GAMMERS"
-        },
-
-        "lifestyleSection": {
-        "title": "Power in Every Corner",
-        "description": "Engineered for maximum performance, smart cooling, and seamless hardware compatibility",
-        
-        "leftImage": "static/GENESIS/GENESIS BLACK-03.png",
-        
-        "middleImage": "static/GENESIS/GENESIS WHITE-04.png",
-        
-        "bottomImage1": "static/GENESIS/GENESIS WHITE-02.png",
-        
-        "bottomImage2": "static/GENESIS/GENESIS BLACK-02.png"
-      },
-
-      "features": [
-        {
-          "title": "Premium Design & Optimized Airflow",
-          "description": "combines premium tempered glass aesthetics with exceptional hardware compatibility and airflow optimization."
-        },
-        {
-          "title": "Built to Stay Cool",
-          "description": "Optimized airflow with support for up to 6 cooling fans."
-        },
-        {
-          "title": "Showcase Your Build",
-          "description": "offering a panoramic three-sided view that showcases your build with stunning clarity. "
-        }
-      ],
       "specs": {
         "Model": "GENESIS",
         "MB Type": "ATX , M-ATX , ITX",
@@ -572,26 +480,6 @@
         
       ]
     },
-      "highlightImages": [
-        "static/GENESIS-M/genesisbann3.png",
-        "static/GENESIS-M/GENESISbann.png",
-        "static/GENESIS-M/genesisbann2.png"
-      ],
-    
-      "features": [
-        {
-          "title": "Compact Powerhouse Design",
-          "description": "crafted for high-performance m-atx and itx builds with efficient airflow, premium tempered glass aesthetics, and seamless hardware compatibility."
-        },
-        {
-          "title": "Modern I/O Connectivity",
-          "description": "featuring dual usb 3.0 ports and type-c support for next-generation convenience."
-        },
-        {
-          "title": "Optimized Cooling Performance",
-          "description": "engineered with strategic fan and radiator support to maintain exceptional airflow and thermal efficiency."
-        }
-      ],
       "specs": {
         "Model": "GENESIS-M",
         "MB Type": "M-ATX , ITX",
@@ -661,40 +549,7 @@
         
       ]
     },
-    "verticalFeatures": [
-  {
-    "title": "KRATOS — Built in 3 Variations.",
-    "subtitle": "Black / LCD / White",
-    "description": "Featuring panoramic tempered glass panels, vibrant ARGB lighting, and a modern dual-chamber layout",
-    "image": "static/KRATOS/kratos.png"
-  },
-
-  {
-    "title": "KRATOS - Black Edition",
-    "subtitle": "- - - - - - -",
-    "description": "Modern panoramic gaming chassis crafted for clean aesthetics and powerful performance.",
-    "image": "static/KRATOS/KRATOS-BLACK-03.png"
-  },
-
-  {
-    "title": "KRATOS - White Edition",
-    "subtitle": "- - - - - - -",
-    "description": "Offers flexible compatibility for modern PC builds.",
-    "image":  "static/KRATOS/KRATOS-WHITE-03.png"
-  },
-  {
-  "title": "KRATOS - LCD Edition",
-  "subtitle": "- - - - - - -",
-  "description": "Advanced LCD display support for personalized monitoring, visuals, and premium showcase aesthetics.",
-  "image": "static/KRATOS/KRATOS-LCD-03.png"
-}
-],
-
-    "customSection": {
-  "title": "KRATOS - Powerful Cooling Design",
-  "description": "Built for high-performance setups with strong airflow and flexible hardware support."
-},
-
+    
       "specs": {
         "Model": "KRATOS",
         "Front Panel": "ABS + plastic + Tempered Glass Panel",
@@ -755,29 +610,6 @@
         
       ]
     },
-
-        "videodesc": {
-      "video": "static/THANATOS/123.mp4",
-      "brand": "INVASION PLUS",
-      "title": "THANATOS",
-      "subtitle": "BREAK THE NORM"
-    },
-      "features": [
-         {
-          "title": "High-Airflow Gaming PC Case",
-          "description": "Supports up to 360mm radiator for maximum airflow and high-performance cooling."
-        },
-
-        {
-          "title": "Durable Tempered Glass Design",
-          "description": "Featuring a solid steel frame, tempered glass side panel, and refined exterior materials designed for durability, stability, and elegant PC presentation."
-        },
-
-        {
-          "title": "Cleaner & More Aesthetic Builds",
-          "description": "Creating modern, clean, and visually appealing builds designed to enhance functionality, style, and user experience."
-        }
-      ],
       "specs": {
         "Model": "THANATOS",
         "Front Panel": "ABS + plastic + Tempered Glass Panel",
@@ -843,63 +675,6 @@
         
       ]
     },
-    "customSection": {
-        
-          "description": "delivers both powerful performance and a clean modern aesthetic for every gaming setup."
-        },
-
-
-        "lifestyleSection": {
-        "title": " The View 5",
-        "description": "delivers both powerful performance and a clean modern aesthetic for every gaming setup.",
-        
-        "leftImage": "static/THE VIEW 5/THE VIEW 5 BLACK-01.png",
-        
-        "middleImage": "static/THE VIEW 5/THE VIEW 5 WHITE-01.png",
-        
-        "bottomImage1": "static/THE VIEW 5/THE VIEW 5 WHITE-03.png",
-        
-        "bottomImage2": "static/THE VIEW 5/THE VIEW 5 BLACK-03.png"
-      },
-
-    "featureGallery": {
-          "heroImage": "static/THE VIEW 5/bann.png",
-          "cards": [
-            {
-              "image": "static/THE VIEW 5/bann4.png",
-             "title": "Metal Side Cover",
-              "description": "Sturdy metal side panel adds a premium touch and extra durability."
-            },
-            
-            {
-              "image":  "static/THE VIEW 5/bann6.png",
-              "title": "TFT Display",
-              "description": "The built-in TFT display lets you personalize your setup with system info, animations, images,or your favorite content."
-            },
-
-            {
-              "image":  "static/THE VIEW 5/bann3.png",
-              "title": "I / O Connectivity",
-              "description": "equipped with modern front-panel connectivity, featuring dual USB 3.0 ports, USB 3.1 Type-C support"
-  
-            }
-          ]
-        },
-
-      "features": [
-        {
-          "title": "Optimized Airflow Layout",
-          "description": "Designed with multiple fan mounting positions and ventilated panels to maintain consistent airflow throughout the system."
-        },
-        {
-          "title": "Multiple Storage Expansion",
-          "description": "Supports several SSD and HDD installation slots for flexible storage upgrades and faster data access performance."
-        },
-        {
-          "title": "Spacious Mid-Tower Interior",
-          "description": "Provides ample space for high-end GPUs, multiple storage devices, and easy cable management for a clean build appearance."
-        }
-      ],
       "specs": {
         "Model": "The View 5",
         "Motherboard Support": "MicroATX / ITX",
@@ -989,42 +764,6 @@
         "static/ZOOM/4.png"
       ]
     },
-    
-       "videodesc": {
-      "video": "static/ZOOM/zoom.mp4",
-      "brand": "INVASION PLUS",
-      "title": "ZOOM",
-      "subtitle": "Balanced, alive, and artful."
-    },
-
-        "verticalFeatures": [
-      {
-        "title": "ZOOM",
-        "subtitle": "- - - - - - -",
-        "description": "Panoramic Tempered Glass Performance Chassis",
-        "image": "static/ZOOM/bann.png"
-      },
-
-      {
-        "title": "Tempered Glass & Metal Design",
-        "subtitle": "- - - - - - -",
-        "description": "A refined combination of panoramic tempered glass and durable metal panels, crafted to deliver modern aesthetics.",
-        "image": "static/ZOOM/7.png"
-      },
-
-      {
-        "title": "Compact Performance Design",
-        "subtitle": "- - - - - - -",
-        "description": "Built with a compact structure, spacious interior support for powerful GPUs and efficient cable management.",
-        "image": "static/ZOOM/11.png"
-      },
-      {
-      "title": "Advanced Fan & Radiator Support",
-      "subtitle": "- - - - - - -",
-      "description": "Built for performance with extensive fan compatibility and support for up to 360mm liquid cooling radiators for enhanced system cooling.",
-      "image": "static/ZOOM/13.png"
-    }
-    ],
 
       "specs": {
         "Model": "ZOOM",
@@ -1089,17 +828,6 @@
       ]
     },
   
-
-    "videoShowcase": {
-        "video": "static/AEOLUS/am.mp4"
-      },
-
-      "imageShowcase": [
-    "static/AEOLUS/ban1.png",
-    "static/AEOLUS/ban2.png",
-    "static/AEOLUS/ban3.png"
-],
-
       "specs": {
         "Model": "AEOLUS 50 PRO",
         "Product Size":"123(L) x 98(W) x 145(H) mm",
@@ -1153,23 +881,6 @@
         "static/AERONIX/AERONIX 360 - WHITE.png"
       ]
     },
-    "customSection": {
-          "title": "AERONIX 360",
-          "description": "Powerful Cooling. Brilliant Lighting. Silent Performance."
-        },
-
-    "lifestyleSection": {
-        "title": "Build for Power",
-        "description": "Experience powerful liquid cooling with three high-performance 120mm PWM fans delivering up to 2300 RPM, 66.66 CFM airflow, and 2.77 mmH₂O static pressure. Featuring vibrant ARGB lighting, ultra-quiet hydraulic bearings, and a lifespan exceeding 40,000 hours, the Aeronix 360 is built to keep your system cool, quiet, and visually stunning.",
-        
-        "leftImage":  "static/AERONIX/AERONIX 360.png",
-        
-        "middleImage": "static/AERONIX/AERONIX 360 - WHITE.png",
-        
-        "bottomImage1": "static/AERONIX/ban1.jpg",
-        
-        "bottomImage2": "static/AERONIX/ban2.jpg"
-      },
 
       "specs": {
         "Model": "AERONIX 360",
@@ -1453,51 +1164,6 @@
         ]
       },
 
-      "customSection": {
-        "description": "delivers both powerful performance and a clean modern aesthetic for every gaming setup."
-      },
-
-      "lifestyleSection": {
-        "title": "The View 5",
-        "description": "delivers both powerful performance and a clean modern aesthetic for every gaming setup.",
-
-        "leftImage": "static/XTG-34VPRX/monitor1.png",
-        "middleImage": "static/XTG-34VPRX/monitor2.png",
-        "bottomImage1": "static/XTG-34VPRX/monitor3.png",
-        "bottomImage2": "static/XTG-34VPRX/monitor4.png"
-      },
-
-      "featureGallery": {
-        "heroImage": "static/XTG-34VPRX/monitor5.png",
-        "cards": [
-          {
-            "image": "static/XTG-34VPRX/monitor6.png",
-            "title": "Metal Side Cover",
-            "description": "Sturdy metal side panel adds a premium touch and extra durability."
-          },
-          {
-            "image": "static/XTG-34VPRX/monitor7.png",
-            "title": "TFT Display",
-            "description": "The built-in TFT display lets you personalize your setup with system info, animations, images, or your favorite content."
-          }
-        ]
-      },
-
-      "features": [
-        {
-          "title": "Optimized Airflow Layout",
-          "description": "Designed with multiple fan mounting positions and ventilated panels to maintain consistent airflow throughout the system."
-        },
-        {
-          "title": "Multiple Storage Expansion",
-          "description": "Supports several SSD and HDD installation slots for flexible storage upgrades and faster data access performance."
-        },
-        {
-          "title": "Spacious Mid-Tower Interior",
-          "description": "Provides ample space for high-end GPUs, multiple storage devices, and easy cable management for a clean build appearance."
-        }
-      ],
-
       "specs": {
         "Model": "XTG-34VPRX",
         "Screen Type": "Curved Monitor",
@@ -1561,56 +1227,6 @@
           "static/XTG-49ARCX/monitor5.png"
         ]
       },
-
-      "customSection": {
-        "description": "delivers both powerful performance and a clean modern aesthetic for every gaming setup."
-      },
-
-      "lifestyleSection": {
-        "title": "The View 5",
-        "description": "delivers both powerful performance and a clean modern aesthetic for every gaming setup.",
-
-        "leftImage": "static/XTG-49ARCX/monitor1.png",
-        "middleImage": "static/XTG-49ARCX/monitor2.png",
-        "bottomImage1": "static/XTG-49ARCX/monitor3.png",
-        "bottomImage2": "static/XTG-49ARCX/monitor4.png"
-      },
-
-      "featureGallery": {
-        "heroImage": "static/XTG-49ARCX/monitor5.png",
-        "cards": [
-          {
-            "image": "static/XTG-49ARCX/monitor6.png",
-            "title": "Metal Side Cover",
-            "description": "Sturdy metal side panel adds a premium touch and extra durability."
-          },
-          {
-            "image": "static/XTG-49ARCX/monitor7.png",
-            "title": "TFT Display",
-            "description": "The built-in TFT display lets you personalize your setup with system info, animations, images, or your favorite content."
-          },
-          {
-            "image": "static/XTG-49ARCX/monitor8.png",
-            "title": "I / O Connectivity",
-            "description": "Equipped with modern front-panel connectivity, featuring USB and Type-C support."
-          }
-        ]
-      },
-
-      "features": [
-        {
-          "title": "Optimized Airflow Layout",
-          "description": "Designed with multiple fan mounting positions and ventilated panels to maintain consistent airflow throughout the system."
-        },
-        {
-          "title": "Multiple Storage Expansion",
-          "description": "Supports several SSD and HDD installation slots for flexible storage upgrades and faster data access performance."
-        },
-        {
-          "title": "Spacious Mid-Tower Interior",
-          "description": "Provides ample space for high-end GPUs, multiple storage devices, and easy cable management for a clean build appearance."
-        }
-      ],
 
       "specs": {
         "Model": "RM2,899.00",
