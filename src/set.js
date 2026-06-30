@@ -174,7 +174,7 @@ const navbarTemplate = `
         </div>
 
         <div class="logo">
-            <a href="homepage.html">
+            <a href="index.html">
             <img src="static/logo1.jpeg"alt="logo">
             </a>
         </div>
@@ -213,7 +213,7 @@ const navbarTemplate = `
 
                     <a href="product2.html?id=e20">E-20</a>
                     <a href="product2.html?id=t1000">T-1000</a>
-                    <a href="product2.html?id=xtg49">XTG-49ARCX</a>
+                    <a href="product2.html?id=xtg-49arcx">XTG-49ARCX</a>
                 </div>
 
                 <div class="search-column">
@@ -258,7 +258,7 @@ const navbarTemplate = `
             </li>
         </ul>
         <div class="menu-logo">
-            <a href="homepage.html">
+            <a href="index.html">
             <img src="static/logo.png" alt="logo">
             </a>
         </div>
