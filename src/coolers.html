@@ -13,47 +13,70 @@
 <body>
 
 <!--Product type-->
-<section class="cases">
-    <div class="category-container">
-        <h3 class="breadcrumb">Home/Coolers</h3>
-        <h2 class="product-type">Coolers</h2>
-        <p class="category-subtitle">
+<section class="category-hero">
+
+    <div class="hero-left">
+
+        <p class="breadcrumb">
+            Home / <span>Coolers</span>
+        </p>
+
+        <h1>COOLERS</h1>
+
+        <p class="hero-description">
             Unlock maximum performance with cooling solutions designed for gamers and creators.
         </p>
 
         <div class="type-list">
 
+            <a href="#" class="type-card-link"
+               onclick="filterProducts('All'); return false;">
 
-            <a href="#" class="type-card-link" onclick="filterProducts('ATX'); return false;">
                 <article class="card">
-                    <img src="static/liquid-cooler.png" alt="liquid-cooler">
-                    <div class="type-name">
-                        <h3>AIO Cooler</h3>
-                    </div>
-                </article>
-            </a>
+                    <img src="static/pc-fan.png" alt="All Coolers">
 
-            <a href="#" class="type-card-link" onclick="filterProducts('M-ATX'); return false;">                
-                <article class="card">
-                    <img src="static/cpu-fan.png" alt="cpu-cooler">
-                    <div class="type-name">
-                        <h3>CPU Cooler</h3>
-                    </div>
-                </article>
-            </a>
-
-            <a href="#" class="type-card-link" onclick="filterProducts('M-ATX'); return false;">                
-                <article class="card">
-                    <img src="static/pc-fan.png" alt="pc-fan">
                     <div class="type-name">
                         <h3>PC Fans</h3>
                     </div>
                 </article>
+
+            </a>
+
+            <a href="#" class="type-card-link"
+               onclick="filterProducts('AIO'); return false;">
+
+                <article class="card">
+                    <img src="static/liquid-cooler.png" alt="AIO Cooler">
+
+                    <div class="type-name">
+                        <h3>AIO Cooler</h3>
+                    </div>
+                </article>
+
+            </a>
+
+            <a href="#" class="type-card-link"
+               onclick="filterProducts('Air'); return false;">
+
+                <article class="card">
+                    <img src="static/cpu-fan.png" alt="Air Cooler">
+
+                    <div class="type-name">
+                        <h3>Air Cooler</h3>
+                    </div>
+                </article>
+
             </a>
 
         </div>
-        <div class="divider" id="filtersArea"></div>
-    </section>
+
+    </div>
+
+    <div class="hero-right">
+        <img src="static/hero_cooler.png" alt="Cooler Hero">
+    </div>
+
+</section>
 
 <!---Product-->
     <div id="productArea" class="product-area">

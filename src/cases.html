@@ -13,48 +13,76 @@
 <body>
 
 <!--Product type-->
-<section class="cases">
-    <div class="category-container">
-        <h3 class="breadcrumb">Home/Gaming Cases</h3>
-        <h2 class="product-type">Gaming Cases</h2>
-        <p class="category-subtitle">
+<section class="category-hero">
+
+    <div class="hero-left">
+
+        <p class="breadcrumb">
+            Home / <span>Cases</span>
+        </p>
+
+        <h1>CASES</h1>
+
+        <p class="hero-description">
             Explore premium gaming cases built for airflow, performance, and aesthetics.
         </p>
 
         <div class="type-list">
-            <a href="#" class="type-card-link" onclick="filterProducts('All'); return false;">
-                <article class="card">
-                    <img src="static/e-atx-icon.png" alt="E-ATX Case">
-                    <div class="type-name">
-                        <h3>All Cases</h3>
-                    </div>
-                </article>
-            </a>
 
-            <a href="#" class="type-card-link" onclick="filterProducts('ATX'); return false;">                <article class="card">
-                    <img src="static/atx-icon.png" alt="ATX Case">
-                    <div class="type-name">
-                        <h3>ATX</h3>
-                    </div>
-                </article>
-            </a>
+    <a href="#" class="type-card-link"
+       onclick="filterProducts('All'); return false;">
 
-            <a href="#" class="type-card-link" onclick="filterProducts('M-ATX'); return false;">                <article class="card">
-                    <img src="static/m-atx-icon.png" alt="M-ATX Case">
-                    <div class="type-name">
-                        <h3>M-ATX</h3>
-                    </div>
-                </article>
-            </a>
-        </div>
-        <div class="divider" id="filtersArea"></div>
-    </section>
+        <article class="card">
+            <img src="static/e-atx-icon.png" alt="All Cases">
+
+            <div class="type-name">
+                <h3>All Cases</h3>
+            </div>
+        </article>
+
+    </a>
+
+    <a href="#" class="type-card-link"
+       onclick="filterProducts('ATX'); return false;">
+
+        <article class="card">
+            <img src="static/atx-icon.png" alt="ATX">
+
+            <div class="type-name">
+                <h3>ATX</h3>
+            </div>
+        </article>
+
+    </a>
+
+    <a href="#" class="type-card-link"
+       onclick="filterProducts('M-ATX'); return false;">
+
+        <article class="card">
+            <img src="static/m-atx-icon.png" alt="M-ATX">
+
+            <div class="type-name">
+                <h3>M-ATX</h3>
+            </div>
+        </article>
+
+    </a>
+
+</div>
+
+    </div>
+
+    <div class="hero-right">
+        <img src="static/hero_case.png">
+    </div>
+
+</section>
 
 <!---Product-->
     <div id="productArea" class="product-area">
         
         <!--buttons-->
-        <div class="filters">
+        <div id="filtersArea" class="filters">
 
             <div class="filters-left">
                 <button class="filter-toggle" onclick="toggleFilterPanel()">
@@ -195,7 +223,6 @@ function filterProducts(type) {
 
     document.getElementById("filtersArea").scrollIntoView({
         behavior: "smooth",
-        block: "start"
     });
 }
 //filter colour
