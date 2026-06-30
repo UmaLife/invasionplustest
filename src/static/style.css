@@ -2150,11 +2150,14 @@ border-glow {
 /* SELLING POINTS */
 .selling-points{
     width:88%;
-    min-height:450px;
-    margin:90px auto 80px;
+    margin:90px auto;
     display:grid;
-    grid-template-columns:repeat(5,1fr);
-    counter-reset:featureNum;
+
+    grid-template-columns:
+        repeat(auto-fit,minmax(220px,1fr));
+
+    gap:0;
+
     background:#080808;
     border:1px solid #242424;
     border-radius:14px;
@@ -2273,13 +2276,12 @@ border-glow {
 
 .feature-box{
     position:relative;
+    overflow:hidden;
     min-height:420px;
-    background:#090909;
+    background:#050505;
     border:1px solid #252525;
     border-radius:14px;
-    overflow:hidden;
-    padding:46px;
-    transition:.45s;
+    padding:60px;
 }
 .feature-box.active-feature{
     border-color:#ffc700;

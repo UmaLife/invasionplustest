@@ -204,16 +204,21 @@ function renderSellingPoints(product){
     }
 
     box.style.display = "grid";
+    box.style.gridTemplateColumns =
+    `repeat(${product.sellingPoints.length}, 1fr)`;
 
-    product.sellingPoints.forEach((item, index) => {
-        box.innerHTML += `
-            <div class="point" data-target="${featureTargets[index]}">
-                <i class="${item.icon}"></i>
-                <h4>${item.title}</h4>
-                <p>${item.description}</p>
-            </div>
-        `;
-    });
+    product.sellingPoints.forEach((item,index)=>{
+
+    box.innerHTML += `
+        <div class="point"
+             data-target="feature-${index}">
+            <i class="${item.icon}"></i>
+            <h4>${item.title}</h4>
+            <p>${item.description}</p>
+        </div>
+    `;
+
+});
 
     initSellingPointJump();
 }
@@ -244,31 +249,74 @@ function initSellingPointJump(){
 }
 
 function renderFeatureGrid(product){
+
     const section = document.querySelector(".feature-section");
     const grid = document.getElementById("featureGrid");
 
-    grid.innerHTML = "";
+    grid.innerHTML="";
 
-    if(!product.productFeatureGrid || !product.productFeatureGrid.cards){
-        section.style.display = "none";
+    if(!product.productFeatureGrid?.cards){
+        section.style.display="none";
         return;
     }
 
-    section.style.display = "block";
+    section.style.display="block";
 
     const cards = product.productFeatureGrid.cards;
 
-    grid.innerHTML = `
-        ${featureBox(cards[0], "wide", "feature-panoramic")}
+    let row = null;
 
-        <div class="feature-row">
-            ${featureBox(cards[1], "small", "feature-airflow")}
-            ${featureBox(cards[2], "small", "feature-magnetic")}
-        </div>
+    cards.forEach((card,index)=>{
 
-        ${featureBox(cards[3], "wide", "feature-compatibility")}
-        ${featureBox(cards[4], "wide", "feature-cooling")}
-    `;
+        const isWide = card.type === "wide";
+
+        if(isWide){
+
+            if(row){
+                grid.appendChild(row);
+                row = null;
+            }
+
+            const wrapper=document.createElement("div");
+            wrapper.innerHTML=featureBox(
+                card,
+                "wide",
+                `feature-${index}`
+            );
+
+            grid.appendChild(wrapper.firstElementChild);
+
+        }
+
+        else{
+
+            if(!row){
+                row=document.createElement("div");
+                row.className="feature-row";
+            }
+
+            const wrapper=document.createElement("div");
+            wrapper.innerHTML=featureBox(
+                card,
+                "small",
+                `feature-${index}`
+            );
+
+            row.appendChild(wrapper.firstElementChild);
+
+            if(row.children.length===2){
+                grid.appendChild(row);
+                row=null;
+            }
+
+        }
+
+    });
+
+    if(row){
+        grid.appendChild(row);
+    }
+
 }
 
 function featureBox(card, size, id){
