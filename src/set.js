@@ -83,7 +83,7 @@ const footerTemplate = `
                 <div class="footer-social-section">
                     <h3>FOLLOW US</h3>
                     <div class="social-icons">
-                        <a href="admin@invasionplus.com"><i class="fa-regular fa-envelope"></i></a>
+                        <a href="mailto:admin@invasionplus.com"><i class="fa-regular fa-envelope"></i></a>
                         <a href="https://wa.me/60176704896"><i class="fa-brands fa-whatsapp"></i></a>
                         <a href="https://www.facebook.com/InvasionPlus" target="_blank">
                             <i class="fa-brands fa-facebook"></i>
@@ -146,7 +146,7 @@ const floatingSocial = `
             <i class="fa-brands fa-instagram"></i>
         </a>
 
-        <a href="admin@invasionplus.com">
+        <a href="mailto:admin@invasionplus.com">
             <i class="fa-regular fa-envelope"></i>
         </a>
 
@@ -266,7 +266,7 @@ const navbarTemplate = `
             BREAK THE NORM, FORGE TOMORROW.
         </div>
         <div class="menu-socials">
-            <a href="admin@invasionplus.com"><i class="fa-regular fa-envelope"></i></a>
+            <a href="mailto:admin@invasionplus.com"><i class="fa-regular fa-envelope"></i></a>
             <a href="https://wa.me/60176704896"><i class="fa-brands fa-whatsapp"></i></a>
             <a href="https://www.facebook.com/InvasionPlus" target="_blank">
                 <i class="fa-brands fa-facebook"></i>
