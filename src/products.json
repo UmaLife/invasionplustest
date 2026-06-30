@@ -39,6 +39,78 @@
         "static/E20/E20.9.png",
         "static/E20/E20.1.png"
       ],
+      "sellingPoints": [
+    {
+      "icon": "fa-regular fa-fan",
+      "title": "Breathable Mesh Airflow Design",
+      "description": "Maximum ventilation, cooler performance, and a sleek modern build"
+    },
+    {
+      "icon": "fa-solid fa-grip-lines",
+      "title": "Full Seamless Curved Edge Mesh Design",
+      "description": "Upgrade your build with standout style and airflow. "
+    },
+    {
+      "icon": "fa-solid fa-screwdriver-wrench",
+      "title": "Tool-Free Quick Release Modular Design",
+      "description": "Enables fast assembly and effortless maintenance."
+    },
+    {
+      "icon": "fa-solid fa-ruler-combined",
+      "title": "Product Dimension",
+      "description": "L483mm*W238mm*H490mm"
+    },
+    {
+      "icon": "fa-solid fa-plug-circle-bolt",
+      "title": "Back- Connect Ready",
+      "description": "Designed for cleaner, cable-free looking build."
+    },
+    {
+      "icon":"fa-solid fa-temperature-arrow-up",
+      "title":"Radiator support",
+      "description":"Liquid cooling up to 360mm; air cooling up to 120mm"
+    }
+  ],
+  "productFeatureGrid": {
+  "title": "Product Highlights",
+  "cards": [
+    {
+      "type": "wide",
+      "title": "Breathable Mesh Airflow Design",
+      "description": "Maximum ventilation, cooler performance, and a sleek modern build.",
+      "image": "static/E20/e20_fea1.png"
+    },
+    {
+      "title": "Full Seamless Curved Edge Mesh Design",
+      "description": "upgrade your build with standout style and airflow. .",
+      "image": "static/E20/e20_fea2.png"
+    },
+    {
+      "title": "Back- Connect Ready",
+      "description": "Designed for cleaner, cable-free looking build",
+      "image": "static/E20/e20_fea3.png"
+    },
+    {
+      "type":"wide",
+      "title": "Product Dimension",
+      "subtitle":"L483mm*W238mm*H490mm",
+      "description": "I/O Ports USB",
+      "image": "static/E20/e20_fea4.png"
+    },
+    {
+      "type": "wide",
+      "title": "Tool-Free Quick Release Modular Design",
+      "description": "Enables fast assembly and effortless maintenance",
+      "image": "static/E20/e20.png"
+    },
+    {
+      "type":"wide",
+      "title":"Radiator support",
+      "description":"Liquid cooling up to 360mm, air cooling up to 120mm",
+      "image":"static/E20/e20_fea5.png"
+    }
+  ]
+},
 
       "specs": {
         "Model": "E - 20",
@@ -453,6 +525,7 @@
       "image": "static/GENESIS/GENESIS_FEA3.png"
     },
     {
+      "type":"wide",
       "title": "Wide Compatibility",
       "description": "Supports ATX, M-ATX and ITX motherboards for flexible build options.",
       "image": "static/GENESIS/GENESIS_FEA4.png"
@@ -824,6 +897,78 @@
         "static/ZOOM/4.png"
       ]
     },
+    "sellingPoints": [
+    {
+      "icon": "fa-regular fa-square",
+      "title": "Panoramic “Seaview”",
+      "description": "Designed to make every build stand out."
+    },
+    {
+      "icon": "fa-solid fa-plug",
+      "title": "Back-Connect Ready",
+      "description": "Supports back-connect motherboards for cleaner cable management and smoother airflow."
+    },
+    {
+      "icon": "fa-solid fa-microchip",
+      "title": "Wide Compatibility",
+      "description": "Supports ATX, Micro-ATX and Mini-ITX motherboards."
+    },
+    {
+      "icon": "fa-solid fa-ruler-combined",
+      "title": "Product Dimension",
+      "description": "L 445mm *W 293mm *H 455mm"
+    },
+    {
+      "icon": "fa-solid fa-fan",
+      "title": "Radiator support",
+      "description": "Supports up to 360mm liquid cooling and 120mm air coolers."
+    },
+    {
+      "icon": "fa-solid fa-screwdriver-wrench",
+      "title": "Quick Installation & Detachable Design",
+      "description": "Tool-friendly top metal panel and side tempered glass for fast installation and maintenance."
+    }
+  ],
+  "productFeatureGrid": {
+  "title": "Product Highlights",
+  "cards": [
+    {
+      "type": "wide",
+      "title": "Panoramic “Seaview”",
+      "description": "Designed to make every build stand out.",
+      "image": "static/ZOOM/zoom_fea1.png"
+    },
+    {
+      "title": "Back-Connect Ready",
+      "description": "Supports back-connect motherboards for cleaner cable management and smoother airflow.",
+      "image": "static/ZOOM/zoom_fea2.png"
+    },
+    {
+      "title": "Wide Compatibility",
+      "description": "Supports ATX, Micro-ATX and Mini-ITX motherboards. ",
+      "image": "static/ZOOM/zoom_fea3.png"
+    },
+    {
+      "type":"wide",
+      "title": "Product Dimension",
+      "subtitle":"L 445mm *W 293mm *H 455mm",
+      "description": "I/O Ports USB",
+      "image": "static/ZOOM/zoom_fea4.png"
+    },
+    {
+      "type": "wide",
+      "title": "Radiator support:",
+      "description": "Supports up to 360mm liquid cooling and 120mm air coolers.",
+      "image": "static/ZOOM/zoom_fea5.png"
+    },
+    {
+      "type": "wide",
+      "title": "Quick Installation & Detachable Design",
+      "description": "Tool-friendly top metal panel and side tempered glass for fast installation and maintenance.",
+      "image": "static/ZOOM/zoom_fea6.png"
+    }
+  ]
+},
 
       "specs": {
         "Model": "ZOOM",
