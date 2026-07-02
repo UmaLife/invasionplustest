@@ -104,14 +104,18 @@ section {
 
 .search-close{
     position: absolute;
+
     top: 40px;
-    right: -240px;
+    right: 40px;
+
     color: white;
     font-size: 24px;
     cursor: pointer;
+
     transition: .3s ease;
     z-index: 1001;
 }
+
 
 .search-close:hover{
     color: #f0a500;
