@@ -350,8 +350,7 @@
       "description": "Invasion Plus T-1000 features a compact footprint design with triple mesh filtration and a panoramic view layout, delivering efficient airflow, reduced dust intake, and stable cooling.",
       "heroDescription": "Featuring a Hight - Airflow layout and multiple fan mounts to keep your components cool under heavy workloads ",
       "mainImage": "static/T-1000/T-1000B-01.png",
-      "descriptionImage": "static/T-1000/T-1000B-03.png",
-      "specImage": "static/T-1000/bann.jpg",
+      "specImage": "static/T-1000/T-1000B-01.png",
       "images": [
         "static/T-1000/T-1000B-01.png",
         "static/T-1000/T-1000B-02.png",
@@ -464,9 +463,7 @@
       "heroTitle": "Compact Desisn Maximum Domination",
       "heroDescription": "Tempered glass elegance meets high-performance airflow engineering.",
       "mainImage": "static/EREBUS/EREBUS BLACK - 01.png",
-      "heroImage":   "static/EREBUS/EREBUS WHITE -01.png",
-      "descriptionImage": "static/ALTAS-BLACK-03.png",
-      "specImage":  "static/EREBUS/EREBUS WHITE - 02.png",
+      "specImage":  "static/EREBUS/EREBUS BLACK -02.png",
       "variations": {
       "black": [
         "static/EREBUS/EREBUS BLACK - 01.png",
