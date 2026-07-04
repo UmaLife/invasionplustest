@@ -261,19 +261,6 @@
       "category": "case",
       "hot": true,
       "new": true,
-      "sections": {
-        "hero": true,
-        "description": false,
-        "highlight": false,
-        "specs": true,
-        "lifestyle" : false,
-        "featuregallery":true,
-        "custom": false,
-        "verticalFeatures": false,
-        "videodesc": false,
-        "videoShowcase": false,
-        "imageShowcase": false
-      },
       "price": "RM239.00",
       "fans": "with 3 ARGB Fans",
       "description": "Invasion Plus E-10 puts your build on full display with a sleek horizontal layout. Dual chambers thoughtfully separate power and storage from your components, keeping airflow smooth, noise low, and cables neatly out of sight. Personalize your rig and make it feel just right.",
@@ -293,6 +280,74 @@
         "static/E10/E10 (5).png",
         "static/E10/E10 (8).png"
       ],
+      "sellingPoints": [
+  
+  {
+    "icon": "fa-solid fa-cube",
+    "title": "Four-Sided Glass Design",
+    "description": "Premium glass showcase design provides a maximum viewing experience from every angle."
+  },
+  {
+    "icon": "fa-solid fa-layer-group",
+    "title": "Dual Chamber Layout",
+    "description": "Separate power and storage zones improve airflow efficiency and keep cables clean."
+  },
+  {
+    "icon": "fa-solid fa-ruler-combined",
+    "title": "Product Dimension",
+    "description": "Case size: L436.5mm x W315mm x H300mm with convenient USB I/O connectivity."
+  },
+  {
+    "icon": "fa-solid fa-fan",
+    "title": "Cooling Support",
+    "description": "Supports liquid cooling up to 240mm and air cooling up to 120mm."
+  },
+  {
+    "icon": "fa-solid fa-microchip",
+    "title": "VGA Compatibility",
+    "description": "Supports VGA up to 430mm without MB fan and 300mm with MB fan installed."
+  }
+],
+ "productFeatureGrid": {
+  "title": "Product Highlights",
+  "cards": [
+    {
+       "type": "wide",
+      "title": "Four-Sided Glass",
+      "subtitle": "Maximum viewing experience with a  display design.",
+      "description": "",
+      "image": "static/E10/2.png"
+    },
+
+    {
+      "title": "Dual Chamber Layout",
+      "subtitle": "Clean Airflow Design",
+      "description": "",
+      "image": "static/E10/1.jpg"
+    },
+
+    {
+      "title": "Smart Case Layout",
+      "subtitle": "L436.5 × W315 × H300mm",
+      "description": "",
+      "image": "static/E10/3.png"
+    },
+    {
+      "type": "wide",
+      "title": "Advanced Cooling Support",
+      "subtitle": "240mm Liquid Cooling Ready",
+      "description": "Supports up to 240mm liquid cooling and 120mm air cooling.",
+      "image": "static/E10/4.png"
+    },
+    {
+      "type": "wide",
+      "title": "VGA Compatibility",
+      "subtitle": "Up to 430mm GPU Support",
+      "description": "Supports VGA up to 430mm without MB fan and 300mm with MB fan.",
+      "image": "static/E10/6.png"
+    }
+  ]
+},
 
        "specs": {
         "Model": "E - 10",
@@ -316,21 +371,9 @@
       "price": "RM259.00 - RM299.00",
       "hot": true,
       "new": true,
-      "sections": {
-        "hero": false,
-        "description": false,
-        "highlight": true,
-        "specs": true,
-        "lifestyle" : false,
-        "featuregallery":false,
-        "custom": true,
-        "verticalFeatures": false,
-        "videodesc": false,
-        "videoShowcase": false,
-        "imageShowcase": false
-      },
+  
       "fans": "with 10 ARGB Fans / with 4 ARGB Fans / with 7 ARGB Fans",
-      "description": "",
+      "description": "Invasion Plus T-1000 features a compact footprint design with triple mesh filtration and a panoramic view layout, delivering efficient airflow, reduced dust intake, and stable cooling.",
       "heroDescription": "Featuring a Hight - Airflow layout and multiple fan mounts to keep your components cool under heavy workloads ",
       "mainImage": "static/T-1000/T-1000B-01.png",
       "descriptionImage": "static/T-1000/T-1000B-03.png",
@@ -346,6 +389,77 @@
       "static/T-1000/T-1000B-04.png",
       "static/T-1000/T-1000B-03.png"
       ],
+
+      "sellingPoints": [
+      {
+        "icon": "fa-solid fa-filter",
+        "title": "Triple Mesh Filtration",
+        "description": "Top, rear and right mesh filters improve airflow while keeping dust away."
+      },
+      {
+        "icon": "fa-regular fa-square",
+        "title": "Compact Panoramic Design",
+        "description": "Wide viewing design provides a clearer showcase of your build."
+      },
+      {
+        "icon": "fa-solid fa-ruler-combined",
+        "title": "Product Dimension",
+        "description": "Case size: L440mm x W235mm x H405mm with convenient USB I/O ports."
+      },
+      {
+        "icon": "fa-solid fa-shield",
+        "title": "Bottom Dust Filter",
+        "description": "Bottom filter reduces maintenance and keeps components cleaner."
+      },
+      {
+        "icon": "fa-solid fa-fan",
+        "title": "Radiator Support",
+        "description": "Flexible cooling support for better thermal performance."
+      }
+    ],
+      "productFeatureGrid": {
+      "title": "Product Highlights",
+      "cards": [
+         {
+          "type": "wide",
+          "title": "Panoramic Design",
+          "subtitle": "Clear Build View",
+          "description": "Bottom filter keeps internal components cleaner.",
+          "image": "static/T-1000/1.png"
+        },
+      
+        {
+          "title": "Bottom Dust Filter",
+          "subtitle": "Easy Maintenance",
+          "description": "Compact showcase design provides a wider viewing experience.",
+          "image": "static/T-1000/2.png"
+        },
+
+         {
+          "title": "Smart Case Layout",
+          "subtitle": "L440 × W235 × H405mm",
+          "description": "",
+          "image": "static/T-1000/3.png"
+        },
+
+         {
+          "type": "wide",
+          "title": "Triple Mesh Filtration",
+          "subtitle": "Top + Rear + Right",
+          "description": "Multi-side mesh filters enhance airflow and dust protection.",
+          "image": "static/T-1000/4.png"
+        },
+
+        {
+          "type": "wide",
+          "title": "Radiator Support",
+          "subtitle": "Cooling Ready",
+          "description": "Designed for improved cooling performance.",
+          "image": "static/T-1000/5.png"
+        }
+      ]
+},
+
        "specs": {
         "Model": "T - 1000",
         "Material": "SPCC 0.7 MM",
@@ -384,7 +498,7 @@
       "price": "RM249.00 - RM259.00",
       "fans": "with 6 Infinity ARGB Fans",
       "product-type": "M-ATX",
-      "description": "",
+      "description": "Erebus Invasion Plus Erebus blends a stunning panoramic view with a space-saving design and high-airflow ventilation mesh, delivering the perfect balance of cooling performance and eye-catching design that makes your build truly your own.",
       "heroTitle": "Compact Desisn Maximum Domination",
       "heroDescription": "Tempered glass elegance meets high-performance airflow engineering.",
       "mainImage": "static/EREBUS/EREBUS BLACK - 01.png",
@@ -404,6 +518,71 @@
         
       ]
     },
+   "sellingPoints": [
+  {
+    "icon": "fa-solid fa-cube",
+    "title": "Space-Saving Design",
+    "description": "Compact chassis design with a wide and clear view to showcase your premium build."
+  },
+  {
+    "icon": "fa-solid fa-ruler-combined",
+    "title": "Product Dimension",
+    "description": "Case size: L443mm x W277mm x H377mm with convenient USB I/O ports."
+  },
+  {
+    "icon": "fa-solid fa-wind",
+    "title": "Optimized Mesh Ventilation",
+    "description": "Right-side mesh ventilation improves airflow efficiency for better cooling performance."
+  },
+  {
+    "icon": "fa-solid fa-microchip",
+    "title": "Motherboard Compatibility",
+    "description": "Supports M-ATX and ITX motherboards for flexible compact PC builds."
+  },
+  {
+    "icon": "fa-solid fa-fan",
+    "title": "Radiator Support",
+    "description": "Supports advanced cooling solutions with optimized radiator compatibility."
+  }
+],
+"productFeatureGrid": {
+  "title": "Product Highlights",
+  "cards": [
+    {
+      "type": "wide",
+      "title": "Space-Saving Design",
+      "subtitle": "Wide Showcase View",
+      "description": "Compact layout with a clear view to showcase your premium build.",
+      "image": "static/EREBUS/1.png"
+    },
+    {
+      "title": "Smart Case Layout",
+      "subtitle": "",
+      "description": "L443 × W277 × H377mm",
+      "image": "static/EREBUS/2.png"
+    },
+    {
+      "title": "Optimized Mesh Ventilation",
+      "subtitle": "",
+      "description": "Right-side mesh ventilation improves cooling and airflow performance.",
+      "image": "static/EREBUS/3.png"
+    },
+    {
+      "type": "wide",
+      "title": "Motherboard Support",
+      "subtitle": "M-ATX / ITX Ready",
+      "description": "Supports M-ATX and ITX motherboards for flexible compact builds.",
+      "image": "static/EREBUS/4.png"
+    },
+    {
+      "type": "wide",
+      "title": "Cooling Support",
+      "subtitle": "Radiator Ready",
+      "description": "Designed with radiator support for efficient cooling performance.",
+      "image": "static/EREBUS/5.png"
+    }
+  ]
+},
       "specs": {
         "Model": "EREBUS",
         "Front Panel": "Steel + Tempered Glass",
@@ -477,7 +656,7 @@
         
       ]
     },
-    "sellingPoints": [
+     "sellingPoints": [
     {
       "icon": "fa-regular fa-square",
       "title": "Panoramic 3-Sided Tempered Glass",
@@ -538,6 +717,7 @@
     }
   ]
 },
+
 
       "specs": {
         "Model": "GENESIS",
@@ -612,7 +792,73 @@
         "static/GENESIS-M/GENESIS-M WHITE-08.png"
         
       ]
+    }, 
+   "sellingPoints": [
+  {
+    "icon": "fa-regular fa-square",
+    "title": "Mini Aquarium Design",
+    "description": "Three-sided tempered glass design provides a wide and clear showcase view."
+  },
+  {
+    "icon": "fa-solid fa-ruler-combined",
+    "title": "Product Dimension",
+    "description": "Case size: L420mm x W285mm x H350mm with compact space design."
+  },
+  {
+    "icon": "fa-solid fa-wind",
+    "title": "Optimized Mesh Ventilation",
+    "description": "Right-side mesh ventilation improves airflow and cooling performance."
+  },
+  {
+    "icon": "fa-solid fa-magnet",
+    "title": "Magnetic Dust Filter",
+    "description": "Bottom magnetic dust filter keeps components cleaner with easy removal."
+  },
+  {
+    "icon": "fa-solid fa-fan",
+    "title": "Radiator Support",
+    "description": "Flexible cooling support for better thermal performance."
+  }
+],
+
+ "productFeatureGrid": {
+  "title": "Product Highlights",
+  "cards": [
+    {
+      "type": "wide",
+      "title": "Mini Aquarium Design",
+      "subtitle": "Three-Sided Glass View",
+      "description": "Three-sided tempered glass design provides a premium showcase experience.",
+      "image": "static/GENESIS-M/1.png"
     },
+    {
+      "title": "Smart Case Layout",
+      "subtitle": "",
+      "description": "L420 × W285 × H350mm",
+      "image": "static/GENESIS-M/2.png"
+    },
+    {
+      "title": "Optimized Mesh Ventilation",
+      "subtitle": "",
+      "description": "Right-side mesh ventilation improves airflow performance.",
+      "image": "static/GENESIS-M/3.png"
+    },
+    {
+      "type": "wide",
+      "title": "Magnetic Dust Filter",
+      "subtitle": "Easy Cleaning Design",
+      "description": "Bottom magnetic dust filter keeps components cleaner with easy removal.",
+      "image": "static/GENESIS-M/4.png"
+    },
+    {
+      "type": "wide",
+      "title": "Radiator Support",
+      "subtitle": "Cooling Ready",
+      "description": "Flexible radiator support for improved thermal performance.",
+      "image": "static/GENESIS-M/5.png"
+    }
+  ]
+},
       "specs": {
         "Model": "GENESIS-M",
         "MB Type": "M-ATX , ITX",
@@ -642,21 +888,9 @@
       "hot": false,
       "new": false,
       "price": "RM279.00 - RM329.00",
-      "sections": {
-        "hero": true,
-        "description": false,
-        "highlight": false,
-        "specs": true,
-        "lifestyle" : false,
-        "featureGallery":false,
-        "custom": false,
-        "verticalFeatures": true,
-        "videodesc": false,
-        "videoShowcase": false,
-        "imageShowcase": false
-      },
+     
       "fans": "with 4 Infinity ARGB Fans",
-      "description": "",
+      "description": "Invasion Plus Kratos features artistic geometric lines and an architectural front panel, highlighted by a subtle 5.5” front screen. Clean, modern, and quietly confident- made to give your setup a distinct presence.",
       "heroTitle": "Exceptional Air Cooling Support",
       "heroDescription": "Featuring a Hight - Airflow layout and multiple fan mounts to keep your components cool under heavy workloads ",
       "mainImage": "static/KRATOS/KRATOS-BLACK-01.png",
@@ -682,7 +916,84 @@
         
       ]
     },
-    
+    "sellingPoints": [
+  {
+    "icon": "fa-solid fa-shapes",
+    "title": "Geometric Front Design",
+    "description": "Unique artistic front panel with architectural-inspired geometric lines."
+  },
+  {
+    "icon": "fa-solid fa-tv",
+    "title": "5.5-inch Screen Support",
+    "description": "Optional front display screen for a premium visual experience."
+  },
+  {
+    "icon": "fa-solid fa-wind",
+    "title": "Optimized Mesh Ventilation",
+    "description": "Right-side mesh design improves airflow and cooling performance."
+  },
+  {
+    "icon": "fa-solid fa-ruler-combined",
+    "title": "Product Dimension",
+    "description": "Case size: L440mm x W242mm x H370mm with convenient USB I/O ports."
+  },
+  {
+    "icon": "fa-solid fa-border-all",
+    "title": "Motherboard Support",
+    "description": "Supports ATX, M-ATX and ITX motherboards for flexible builds."
+  },
+  {
+    "icon": "fa-solid fa-fan",
+    "title": "Radiator Support",
+    "description": "Top 360mm and rear 120mm liquid cooling support with bottom fan support."
+  }
+],
+
+    "productFeatureGrid": {
+  "title": "Product Highlights",
+  "cards": [
+    {
+      "type": "wide",
+      "title": "Geometric Front Design",
+      "subtitle": "Architectural Style",
+      "description": "Unique artistic front panel design with premium geometric lines.",
+      "image": "static/KRATOS/1.png"
+    },
+    {
+      "title": "5.5-inch Screen Ready",
+      "subtitle": "Smart Display Support",
+      "description": "",
+      "image": "static/KRATOS/2.png"
+    },
+    {
+      "title": "Optimized Ventilation",
+      "subtitle": "Better Airflow",
+      "description": "",
+      "image": "static/KRATOS/4.png"
+    },
+    {
+      "type": "wide",
+      "title": "Smart Case Layout",
+      "subtitle": "L440 × W242 × H370mm",
+      "description": "Compact chassis design with convenient USB I/O connectivity.",
+      "image": "static/KRATOS/3.png"
+    },
+    {
+      "type": "wide",
+      "title": "Wide Compatibility",
+      "subtitle": "ATX / M-ATX / ITX",
+      "description": "Supports multiple motherboard sizes for flexible PC builds.",
+      "image": "static/KRATOS/5.png"
+    },
+    {
+      "type": "wide",
+      "title": "Radiator Support",
+      "subtitle": "Cooling Ready",
+      "description": "Designed for enhanced cooling performance.",
+      "image": "static/KRATOS/6.png"
+    }
+  ]
+},
       "specs": {
         "Model": "KRATOS",
         "Front Panel": "ABS + plastic + Tempered Glass Panel",
@@ -693,7 +1004,7 @@
         "Type C x 1": "Included",
         "Motherboard Support": "ITX/M-ATX/ATX",
         "PSU Support": "Front Top/ATX/140-160MM",
-        "Size": "<b>Front</b>~ N/A <br><b>M/B</b> ~ N/A <b>Top </b>~ 3 x 120mm (Fan Optional) - support 360mm liquid cooler <br><b> Rear</b> ~ 1 x 120mm (Fan optional) - support 120mm liquid cooler <br><b>Bottom</b> ~ 3 x 120mm (Fan optional) ",
+        "Radiator Support": "<b>Front</b>~ N/A <br><b>M/B</b> ~ N/A <b>Top </b>~ 3 x 120mm (Fan Optional) - support 360mm liquid cooler <br><b> Rear</b> ~ 1 x 120mm (Fan optional) - support 120mm liquid cooler <br><b>Bottom</b> ~ 3 x 120mm (Fan optional) ",
         "Drive Bays": "5.25″ ODD x0 <br>3.5″ HDD x2<br>2.5″ SSD x3",
         "PCI Slots" : "x 7",
         "Product Dimesion": "<b>Chassis size</b> ~ 440(L) x 242(W) x 350mm (H) <br><b>Product Size</b> ~ 440(L) x 242(W) x 370mm (H) <br><b>Carton Size</b> ~ 440(L) x 305(W) x 530mm (H) ",
@@ -710,19 +1021,7 @@
       "category": "case",
       "hot": false,
       "new": false,
-      "sections": {
-        "hero": false,
-        "description": true,
-        "highlight": false,
-        "specs": true,
-        "lifestyle" : false,
-        "featuregallery":false,
-        "custom": true,
-        "verticalFeatures": false,
-        "videodesc": true,
-        "videoShowcase": false,
-        "imageShowcase": false
-      },
+  
       "price": "RM309.00 - RM319.00",
       "fans": "with 6 Infinity ARGB Fans",
       "product-type": "ATX",
@@ -743,6 +1042,76 @@
         
       ]
     },
+   "sellingPoints": [
+  {
+    "icon": "fa-solid fa-arrow-up",
+    "title": "Vertical Motherboard Placement",
+    "description": "Optimized motherboard layout improves internal airflow and helps heat move out more efficiently."
+  },
+  {
+    "icon": "fa-solid fa-display",
+    "title": "Standing Graphic Card",
+    "description": "Vertical GPU placement helps reduce GPU sag while creating a cleaner showcase build."
+  },
+  {
+    "icon": "fa-solid fa-ruler-combined",
+    "title": "Product Dimension",
+    "description": "Case size: L444mm x W238mm x H495mm, designed with practical space for modern builds."
+  },
+  {
+    "icon": "fa-solid fa-plug",
+    "title": "I/O Ports USB",
+    "description": "Convenient front I/O ports provide easy access for daily use and device connection."
+  },
+  {
+    "icon": "fa-solid fa-border-all",
+    "title": "Wide Motherboard Support",
+    "description": "Supports ATX, Micro-ATX and Mini-ITX motherboards for flexible build options."
+  },
+  {
+    "icon": "fa-solid fa-fan",
+    "title": "Cooling Support",
+    "description": "Supports liquid cooling up to 360mm and air cooling up to 120mm."
+  }
+],
+ "productFeatureGrid": {
+  "title": "Product Highlights",
+  "cards": [
+    {
+      "type": "wide",
+      "title": "Vertical Motherboard Placement",
+      "subtitle": "Better Airflow",
+      "description": "Vertical layout improves airflow efficiency for better cooling performance.",
+      "image": "static/thanatos/1.jpg"
+    },
+    {
+      "title": "Standing Graphic Card",
+      "subtitle": "",
+      "description": "Vertical GPU support reduces sag and improves GPU stability.",
+      "image": "static/GENESIS/2.png"
+    },
+    {
+      "title": "Smart Case Layout",
+      "subtitle": "",
+      "description": "L444 × W238 × H495mm",
+      "image": "static/GENESIS/3.png"
+    },
+    {
+      "type": "wide",
+      "title": "Wide Compatibility",
+      "subtitle": "ATX / Micro-ATX / Mini-ITX",
+      "description": "Supports multiple motherboard sizes for flexible PC builds.",
+      "image": "static/GENESIS/4.png"
+    },
+    {
+      "type": "wide",
+      "title": "Advanced Cooling Support",
+      "subtitle": "360mm Liquid Cooling Ready",
+      "description": "Supports up to 360mm liquid cooling and 120mm air cooling.",
+      "image": "static/GENESIS/5.png"
+    }
+  ]
+},
       "specs": {
         "Model": "THANATOS",
         "Front Panel": "ABS + plastic + Tempered Glass Panel",
@@ -769,19 +1138,7 @@
       "category": "case",
       "hot": false,
       "new": false,
-      "sections": {
-        "hero": false,
-        "description": false,
-        "highlight": false,
-        "specs": true,
-        "lifestyle" : false,
-        "featuregallery":true,
-        "custom": true,
-        "verticalFeatures": false,
-        "videodesc": false,
-        "videoShowcase": false,
-        "imageShowcase": false
-      },
+
       "price": "RM249.00 - RM259.00",
       "fans": "with 3 Infinity ARGB Fans",
       "product-type": "M-ATX",
@@ -808,6 +1165,44 @@
         
       ]
     },
+    "productFeatureGrid": {
+  "title": "Product Highlights",
+  "cards": [
+    {
+      "type": "wide",
+      "title": "5.5-inch TFT Screen",
+      "subtitle": "Vibrant Visual Display",
+      "description": "Crisp display screen enhances your PC showcase experience.",
+      "image": "static/THE VIEW 5/1.png"
+    },
+    {
+      "title": "Metal Top Cover",
+      "subtitle": "Dust Filter Design",
+      "description": "",
+      "image": "static/THE VIEW 5/2.png"
+    },
+    {
+      "title": "Smart Case Layout",
+      "subtitle": "L460 × W220 × H403mm",
+      "description": "",
+      "image": "static/THE VIEW 5/3.png"
+    },
+    {
+      "type": "wide",
+      "title": "Motherboard Support",
+      "subtitle": "M-ATX / ITX Ready",
+      "description": "Supports M-ATX and ITX motherboards for compact builds.",
+      "image": "static/THE VIEW 5/4.png"
+    },
+    {
+      "type": "wide",
+      "title": "Radiator Support",
+      "subtitle": "Cooling Ready",
+      "description": "Flexible radiator support improves cooling performance.",
+      "image": "static/THE VIEW 5/5.png"
+    }
+  ]
+},
       "specs": {
         "Model": "The View 5",
         "Motherboard Support": "MicroATX / ITX",
