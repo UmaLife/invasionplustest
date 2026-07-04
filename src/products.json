@@ -1517,63 +1517,77 @@
     }
     },
 
+{
+  "id": "frostvision360",
+  "name": "FROST VISION 360",
+  "category": "cooler",
+  "price": "RM 399.00",
+  "product-type": "ATX",
+  "fan": "",
+  "description": "3.95″ Magnetic IPS screen – stick it anywhere, customize everything. Detachable magnetic 3.95” IPS display that can be mounted on any metal surface of your case.",
+  "mainImage": "static/FROST VISION 360/a1.png",
+  "specImage": "static/FROST VISION 360/a5.png",
 
-     {
-      "id": "frostvision360",
-      "name": "DY-240",
-      "category": "cooler",
-     
-      "price": "RM 519.00",
-      "product-type": "ATX",
-      "fan": "",
-      "description": "",
-      "mainImage": "static/dy240.png",
-      "specImage": "static/dy240.png",
-      "variations": {
-      "black": [
-       "static/dy240.png"
-      
-      ]
-    },
-    "imageShowcase": [
-    "static/ban11.png"
-],
-     "specs": {
-      "Model": "Frost Vision 360",
-      "Dimension": "120(L) x 120(W) x 25(H) mm",
-      "Fan Speed": "500 - 2200 ± 10 RPM",
-      "Rated Voltage": "12V (Fan) / 5V (LED)",
-      "Bearing Type": "FDB",
-      "Connector": "4-PIN PWM",
-      "Air Flow": "30.39 - 91.19 CFM",
-      "Air Pressure": "2.23 mmH₂O",
-      "Noise Level": "22 - 33 dBA",
-      "Package Contents": "<b>Fan</b> ~ 3PCS <br><b>All-In-One CPU Liquid Cooler</b> ~ 1PC <br><b>Thermal Grease</b> ~ 1PC <br><b>3.95 IPS Screen</b> ~ 1PC <br><b>Mounting Kit</b> ~ Included <br><b>Online User Manual</b> ~ Included"
+  "variations": {
+    "black": [
+      "static/FROST VISION 360/a1.png",
+      "static/FROST VISION 360/a2.png",
+      "static/FROST VISION 360/a3.png",
+      "static/FROST VISION 360/a4.png",
+      "static/FROST VISION 360/a5.png",
+      "static/FROST VISION 360/a6.png",
+      "static/FROST VISION 360/a7.png",
+      "static/FROST VISION 360/a8.png",
+      "static/FROST VISION 360/a9.png"
+    ],
+    "white": [
+      "static/FROST VISION 360/a10.png",
+      "static/FROST VISION 360/a11.png",
+      "static/FROST VISION 360/a12.png",
+      "static/FROST VISION 360/a13.png",
+      "static/FROST VISION 360/a14.png",
+      "static/FROST VISION 360/a15.png",
+      "static/FROST VISION 360/a16.png",
+      "static/FROST VISION 360/a17.png",
+      "static/FROST VISION 360/a18.png",
+      "static/FROST VISION 360/a19.png"
+    ]
+  },
 
+  "specs": {
+    "Fan Specification": "",
+    "Model": "Frost Vision 360",
+    "Fan Dimension": "120 x 120 x 25MM",
+    "Fan Speed": "500 – 2200 RPM ± 10%",
+    "Air Flow": "30.39 – 91.19 CFM",
+    "Air Pressure": "2.23MMH2O",
+    "Noise Level": "22 – 33 DBA",
+    "Bearing": "FDB",
+    "Rated Voltage Fan": "12V (Fan) / 5V (LED)",
+    "Connector Fan": "4-PIN PWM",
+
+    "Cooler Specification": "",
+    "Pump Connector": "3-PIN",
+    "Radiator Dimensions": "274 x 119 x 27MM",
+    "Tube Material": "Teflon",
+    "Base Plate Material": "Copper",
+    "Radiator Material": "Aluminium",
+    "Rated Voltage Pump": "12V (Pump) / 5V (LED)",
+    "Rated Voltage": "12V (Fan) / 5V (LED)",
+    "Connector": "4-PIN PWM",
+
+    "Compability": "",
+    "Intel": "LGA2066/2011-V3/2011/1151/1150/1155/1156/1366/775/1700",
+    "AMD": "AM4/AM3+/AM3/AM2+/AM2/FM2+/FM2/FM1/AM5",
+
+    "Package Contents": "",
+    "Fan": "3 PCS",
+    "Thermal Grease": "1 PC",
+    "3.95″ IPS Screen": "1 PC",
+    "Mounting Kit": "Included",
+    "Online User Manual": "Included"
+  }
 },
-
-    "specTitle2": "Cooler Specification",
-
-    "specs2": {
-      "Pump Connector": "3-PIN",
-
-      "Radiator": "<b>Dimensions</b> ~ 274 × 119 × 27mm <br><b>Material</b> ~ Aluminium",
-
-      "Tube Material": "Teflon",
-
-      "Base Plate Material": "Copper",
-
-      "Rated Voltage": "12V (Pump) / 5V (LED)",
-
-      "IPS Display": "<b>Screen Size</b> ~ 3.95 inch <br><b>Type</b> ~ IPS Display",
-
-      "Intel Compatibility": "LGA2066 / 2011-V3 / 2011 / 1151 / 1150 / 1155 / 1156 / 1366 / 775 / 1700",
-
-      "AMD Compatibility": "AM4 / AM3+ / AM3 / AM2+ / AM2 / FM2+ / FM2 / FM1 / AM5"
-
-    }
-   },
-
     {
       "id": "XTG-34VPRX",
       "name": "XTG-34VPRX",
@@ -1585,12 +1599,11 @@
       "fans": "with 3 Infinity ARGB Fans",
       "product-type": "M-ATX",
 
-      "description": "Invasion Plus View 5 puts your build on full panoramic seaview, with its 5.5-inch TFT screen for crisp, vibrant visuals. Vertical airflow keeps it cool and smooth—make your rig truly your own.",
+      "description": "",
 
       "heroTitle": "Exceptional Air Cooling Support",
 
       "mainImage": "static/XTG-34VPRX/monitor1.png",
-      "descriptionImage": "static/XTG-34VPRX/monitor2.png",
       "specImage": "static/XTG-34VPRX/monitor3.png",
       "specImage2": "static/XTG-34VPRX/monitor4.png",
 
@@ -1640,11 +1653,9 @@
       "fans": "with 3 Infinity ARGB Fans",
       "product-type": "M-ATX",
 
-      "description": "Invasion Plus View 5 puts your build on full panoramic seaview, with its 5.5-inch TFT screen for crisp, vibrant visuals. Vertical airflow keeps it cool and smooth—make your rig truly your own.",
-      "heroTitle": "Exceptional Air Cooling Support",
+      "description": "",
 
       "mainImage": "static/XTG-49ARCX/monitor1.png",
-      "descriptionImage": "static/XTG-49ARCX/monitor2.png",
       "specImage": "static/XTG-49ARCX/monitor3.png",
       "specImage2": "static/XTG-49ARCX/monitor4.png",
 
@@ -1681,7 +1692,268 @@
         "Max CPU Cooler Height": "174mm",
         "Features": "G-Sync, FreeSync, Low Blue Light, Speaker"
       }
+    },
+
+     {
+      "id": "poseidon",
+      "name": "POSEIDON 360",
+      "category": "cooler",
+      "hot": false,
+      "new": false,
+
+      "price": "RM899.00 – RM909.00",
+      "fans": "",
+      "product-type": "",
+      "description":"",
+      "mainImage": "static/POSEIDON/POSEIDON BLACK-02.png",
+      "specImage": "static/POSEIDON/POSEIDON BLACK-01.png",
+
+      "variations": {
+      "black": [
+        "static/POSEIDON/POSEIDON BLACK-02.png",
+        "static/POSEIDON/POSEIDON BLACK-03.png",
+        "static/POSEIDON/POSEIDON BLACK-04.png",
+        "static/POSEIDON/POSEIDON BLACK-05.png",
+        "static/POSEIDON/POSEIDON BLACK-06.png",
+        "static/POSEIDON/POSEIDON BLACK-07.png",
+        "static/POSEIDON/POSEIDON BLACK-08.png",
+        "static/POSEIDON/POSEIDON BLACK-01.png",
+        "static/POSEIDON/POSEIDON BLACK-09.png",
+        "static/POSEIDON/POSEIDON BLACK-10.png"
+      ],
+      "white": [
+        "static/POSEIDON/360 Liquid WH 02.png",
+        "static/POSEIDON/360 Liquid WH 03.png",
+        "static/POSEIDON/360 Liquid WH 04.png",
+         "static/POSEIDON/360 Liquid WH 08.png",
+        "static/POSEIDON/360 Liquid WH 05.png",
+        "static/POSEIDON/360 Liquid WH 06.png",
+        "static/POSEIDON/360 Liquid WH 07.png",
+        "static/POSEIDON/360 Liquid WH 01.png",
+        "static/POSEIDON/360 Liquid WH 09.png",
+        "static/POSEIDON/360 Liquid WH 10.png"
+      ]
+    },
+
+      "specs": {
+      "Fan Specification": "",
+      "Fan Speed": "2500 ± 10% PWM",
+      "Fan Size": "120 × 120 × 28 mm",
+      "Rated Voltage": "12V",
+      "Start Voltage": "6V",
+      "Rated Current": "0.25A",
+      "Rated Power": "3W",
+      "Air Flow": "82 CFM",
+      "Air Pressure": "3.95 mmH₂O",
+      "Noise Level": "36 dB(A)",
+      "Bearing Type": "Double Ball Bearing",
+
+      "Pump Specification": "",
+      "Motor": "Three-phase-pole",
+      "Pump Noise": "29 dB(A)",
+      "Pump Rated Voltage": "12V",
+      "Pump Rated Current": "0.41A ± 10%",
+      "Pump Speed": "3300 ± 10% RPM",
+      "Lighting Control": "ARGB",
+
+      "Cooler Specification": "",
+      "Radiator Dimensions": "395 × 120 × 27 mm",
+      "Pipe Length": "410 mm",
+
+      "Compatibility": "",
+      "Intel": "LGA1200 / LGA17XX / LGA1851",
+      "AMD": "AM4 / AM5"
     }
-    
+    },
+
+    {
+      "id": "xqz",
+      "name": "XQZ INFINITY REVERSE FAN",
+      "category": "cooler",
+      "hot": false,
+      "new": false,
+
+      "price": "RM26.00 – RM129.00",
+      "fans": "3 in 1(With Hub) / 4 in 1(With Hub) / 5 in 1 (With Hub) / single",
+      "product-type": "",
+      "description":"",
+      "mainImage": "static/XQZ INFINITY FAN/XQZ FAN BLACK - 01.png",
+      "specImage": "static/XQZ INFINITY FAN/XQZ FAN BLACK - 07.png",
+
+      "variations": {
+      "black": [
+        "static/XQZ INFINITY FAN/XQZ FAN BLACK - 01.png",
+        "static/XQZ INFINITY FAN/XQZ FAN BLACK - 02.png",
+        "static/XQZ INFINITY FAN/XQZ FAN BLACK - 03.png",
+        "static/XQZ INFINITY FAN/XQZ FAN BLACK - 04.png",
+        "static/XQZ INFINITY FAN/XQZ FAN BLACK - 05.png",
+        "static/XQZ INFINITY FAN/XQZ FAN BLACK - 06.png",
+        "static/XQZ INFINITY FAN/XQZ FAN BLACK - 07.png",
+        "static/XQZ INFINITY FAN/XQZ FAN BLACK - 08.png"
+      ],
+      "white": [
+        "static/XQZ INFINITY FAN/XQZ FAN WHITE - 01.png",
+        "static/XQZ INFINITY FAN/XQZ FAN WHITE - 02.png",
+        "static/XQZ INFINITY FAN/XQZ FAN WHITE - 03.png",
+        "static/XQZ INFINITY FAN/XQZ FAN WHITE - 04.png",
+        "static/XQZ INFINITY FAN/XQZ FAN WHITE - 05.png",
+        "static/XQZ INFINITY FAN/XQZ FAN WHITE - 06.png"
+      ]
+    },
+    "specs": {
+            "Fan Specification": "",
+            "Fan Model": "XQZ INFINITY FAN",
+            "Fan Size": "120 × 120 × 25 mm",
+            "Fan Speed": "800~1500 RPM ±10%",
+            "Air Flow": "45 CFM ±10%",
+            "Noise Level": "15~20 dB(A) ±10%",
+            "Bearing Type": "Hydraulic Sleeve Bearing",
+            "Connector & Control": "6 Pin",
+            "Material": "Plastic Frame",
+            "Wireframe Outer Length": "550 mm",
+            "Rated Voltage": "12V DC",
+            "Rated Current": "0.12A",
+            "Rated Power": "1.5W",
+            "Fan Life": "50000 Hrs"
+          }
+
+        },
+
+    {
+      "id": "aether",
+      "name": "AETHER",
+      "category": "case",
+      "hot": false,
+      "new": false,
+
+      "price": "RM299.00",
+      "fans": "with 6 Infinity ARGB Fans",
+      "product-type": "",
+      "description":"",
+      "mainImage": "static/AETHER/AETHER BLACK-01.png",
+      "specImage": "static/AETHER/AETHER WHITE - 04.png",
+
+      "variations": {
+        "black": [
+          "static/AETHER/AETHER BLACK-01.png"
+        ],
+        "white": [
+          "static/AETHER/AETHER WHITE - 01.png",
+          "static/AETHER/AETHER WHITE - 02.png",
+          "static/AETHER/AETHER WHITE - 03.png",
+          "static/AETHER/AETHER WHITE - 04.png",
+          "static/AETHER/AETHER WHITE - 05.png"
+        ]
+      },
+      "specs": {
+      "Model": "AETHER",
+      "Front Panel": "Tempered Glass",
+      "Left Side Panel": "Tempered Glass",
+      "Right Side Panel": "Metal Panel",
+      "Chassis": "0.5 mm",
+      "USB3.0 x 2": "Included",
+      "Type C x 1": "Included",
+      "Motherboard Support": "M-ATX / ITX",
+      "PSU Support": "Rear / ATX / 140-160MM",
+      "Radiator Support": "<b>Top</b> ~ 3 x 120mm (Fan optional) - support 360mm liquid cooler <br><b>Side M/B</b> ~ 2 x 120mm (Fan optional) - support 240mm liquid cooler <br><b>Rear</b> ~ 1 x 120mm (Fan optional) <br><b>Bottom</b> ~ 3 x 120mm (Fan optional)",
+      "Drive Bays": "5.25″ ODD x0 <br>3.5″ HDD x1 <br>2.5″ SSD x1",
+      "PCI Slots": "x 4",
+      "Product Dimesion": "<b>Chassis size</b> ~ 416(L) x 278(W) x 333mm (H) <br><b>Product Size</b> ~ 420(L) x 278(W) x 365mm (H) <br><b>Carton Size</b> ~ 425(L) x 340(W) x 485mm (H)",
+      "Package": "Poly Foam",
+      "Max VGA Card": "410mm",
+      "Max CPU Cooler": "158mm"
+    }
+
+  },
+
+  {
+      "id": "hyperion",
+      "name": "HYPERION",
+      "category": "case",
+      "hot": false,
+      "new": false,
+
+      "price": "RM259.00",
+      "fans": "with 3 Infinity ARGB Fans",
+      "product-type": "",
+      "description":"",
+      "mainImage": "static/HYPERION/HYPERION-01.png",
+      "specImage": "static/HYPERION/HYPERION-03.png",
+
+      "variations": {
+        "black": [
+          "static/HYPERION/HYPERION-01.png",
+          "static/HYPERION/HYPERION-02.png",
+          "static/HYPERION/HYPERION-03.png",
+          "static/HYPERION/HYPERION-04.png",
+          "static/HYPERION/HYPERION-05.png",
+          "static/HYPERION/HYPERION-06.png"
+        ]
+      },
+      
+    "specs": {
+      "Model": "HYPERION",
+      "Front Panel": "Tempered gray glass with silk print",
+      "Left Side Panel": "Magnet glass side board with 1 screw",
+      "Right Side Panel": "Ventilation holes on right side",
+      "Chassis": "0.45 mm",
+      "USB3.0 x 2": "Included",
+      "Type C x 1": "Included",
+      "Motherboard Support": "ITX / M-ATX",
+      "PSU": "ATX - Up to 250mm length",
+      "Radiator Support": "<b>Front</b> ~ N/A <br><b>M/B</b> ~ 2 x 120mm (Fan optional) <br><b>Top</b> ~ 3 x 120mm (Fan optional) <br>Support 360mm liquid cooler <br><b>Rear</b> ~ 1 x 120mm (Fan optional) <br>Support 120mm liquid cooler <br><b>Bottom</b> ~ 3 x 120mm (Fan optional)",
+      "Drive Bays": "5.25″ ODD x0 <br>3.5″ HDD x2 <br>2.5″ SSD x1",
+      "PCI Slots": "x 5",
+      "Product Dimension": "<b>Chassis Size</b> ~ 430(L) x 218(W) x 395mm (H) <br><b>Product Size</b> ~ 434(L) x 218(W) x 414mm (H) <br><b>Carton Size</b> ~ 472(L) x 280(W) x 515mm (H)",
+      "Package": "Poly Foam",
+      "Max VGA Card": "425mm",
+      "Max CPU Cooler": "170mm"
+    }
+  },
+
+  {
+      "id": "perseus",
+      "name": "PERSEUS",
+      "category": "case",
+      "hot": false,
+      "new": false,
+
+      "price": "RM269.00",
+      "fans": "with 4 Infinity ARGB Fans",
+      "product-type": "",
+      "description":"",
+      "mainImage": "static/PERSEUS/PERSEUS-01.png",
+      "specImage": "static/PERSEUS/PERSEUS-02.png",
+
+      "variations": {
+        "black": [
+          "static/PERSEUS/PERSEUS-01.png",
+          "static/PERSEUS/PERSEUS-02.png",
+          "static/PERSEUS/PERSEUS-03.png",
+          "static/PERSEUS/PERSEUS-04.png",
+          "static/PERSEUS/PERSEUS-05.png",
+          "static/PERSEUS/PERSEUS-06.png"
+        ]
+      },
+   
+    "specs": {
+      "Model": "PERSEUS",
+      "Front Panel": "ABS + Iron Mesh",
+      "Left Side Panel": "Tempered glass with buckle",
+      "Right Side Panel": "Metal panel",
+      "Chassis": "0.5 mm",
+      "USB3.0 x 2": "Included",
+      "Type C x 1": "Included",
+      "Motherboard Support": "EATX / ATX / Micro-ATX / Mini-ITX",
+      "PSU": "ATX - Up to 200mm length",
+      "Fan/Radiator Support": "<b>Front</b> ~ 3 x 120mm or 2 x 140mm <br>Support 360mm liquid cooler <br><b>Top</b> ~ 3 x 120mm or 2 x 140mm <br>Support 360mm liquid cooler <br><b>Rear</b> ~ 1 x 120mm (Fan optional) <br>Support 120mm liquid cooler <br><b>PSU Top Cover</b> ~ 3 x 120mm",
+      "Drive Bays": "5.25″ ODD x0 <br>3.5″ HDD x2 <br>2.5″ SSD x1",
+      "PCI Slots": "x 7",
+      "Product Dimension": "<b>Chassis Size</b> ~ 425(L) x 218(W) x 460mm (H) <br><b>Product Size</b> ~ 440(L) x 218(W) x 472mm (H) <br><b>Carton Size</b> ~ 536(L) x 273(W) x 503mm (H)",
+      "Package": "Poly Foam",
+      "Max VGA Card": "395mm",
+      "Max CPU Cooler": "170mm"
+    }
+  }
   ]
 }
