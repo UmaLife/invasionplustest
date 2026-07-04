@@ -6,21 +6,7 @@
       "category": "case",
       "hot": true,
       "new": true,
-      "sections": {
-        "hero": false,
-        "description": true,
-        "highlight": false,
-        "specs": true,
-        "lifestyle": false,
-        "custom": false,
-        "featuregallery":false,
-        "verticalFeatures": false,
-        "videodesc": true,
-        "videoShowcase": false,
-        "imageShowcase": false
-        
-        
-      },
+    
       "price": "RM259.00",
       "fans": "with 4 ARGB Fans",
       "product-type": "ATX",
@@ -133,19 +119,7 @@
       "category": "case",
       "hot": false,
       "new": false,
-      "sections": {
-        "hero": false,
-        "description": false,
-        "highlight": true,
-        "specs": true,
-        "lifestyle": true,
-        "custom": true,
-        "featuregallery":false,
-        "verticalFeatures": false,
-        "videodesc": false,
-        "videoShowcase": false,
-        "imageShowcase": false
-      },
+     
         "highlightImages": [
           "static/ATLAS/atlas1.jpg",
           "static/ATLAS/atlas2.jpg",
@@ -482,19 +456,7 @@
       "category": "case",
       "hot": false,
       "new": true,
-      "sections": {
-        "hero": true,
-        "description": false,
-        "highlight": true,
-        "specs": true,
-        "lifestyle" : false,
-        "featuregallery":false,
-        "custom": false,
-        "verticalFeatures": false,
-        "videodesc": false,
-        "videoShowcase": false,
-        "imageShowcase": false
-      },
+   
       "price": "RM249.00 - RM259.00",
       "fans": "with 6 Infinity ARGB Fans",
       "product-type": "M-ATX",
@@ -610,19 +572,7 @@
       "category": "case",
       "hot": false,
       "new": false,
-      "sections": {
-        "hero": false,
-        "description": false,
-        "highlight": false,
-        "specs": true,
-         "lifestyle" : true,
-        "featuregallery":false,
-        "custom": false,
-        "verticalFeatures": false,
-        "videodesc": false,
-        "videoShowcase": false,
-        "imageShowcase": false
-      },
+     
       "price": "RM249.00 - RM259.00",
       "fans": "with 6 Infinity ARGB Fans",
       "product-type": "ATX",
@@ -748,19 +698,7 @@
       "hot": false,
       "new": false,
       "price": "RM329.00 - RM339.00",
-      "sections": {
-        "hero": true,
-        "description": false,
-        "highlight": true,
-        "specs": true,
-        "lifestyle" : false,
-        "featuregallery":false,
-        "custom": false,
-        "verticalFeatures": false,
-        "videodesc": false,
-        "videoShowcase": false,
-        "imageShowcase": false
-      },
+   
       "fans": "with 4 Infinity ARGB Fans",
       "product-type": "M-ATX",
       "description": "The Genesis-M reveals your build through three-sided tempered glass, offering a compact panoramic view. Mini aquarium-inspired, it frames GPUs, motherboards, and cooling solutions with refined simplicity, keeping the interior clean, polished, and striking",
@@ -1250,19 +1188,7 @@
       "category": "case",
       "hot": false,
       "new": false,
-      "sections": {
-        "hero": false,
-        "description": false,
-        "highlight": false,
-        "specs": true,
-        "lifestyle" : false,
-        "featuregallery":false,
-        "custom": true,
-        "verticalFeatures": true,
-        "videodesc": true,
-        "videoShowcase": false,
-        "imageShowcase": false
-      },
+   
       "price": "RM309.00 - RM319.00",
       "fans": "with 4 Infinity ARGB Fans",
       "product-type": "ATX",
@@ -1390,19 +1316,7 @@
       "id": "aeolus",
       "name": "AEOLUS 50 PRO",
       "category": "cooler",
-      "sections": {
-        "hero": false,
-        "description": false,
-        "highlight": false,
-        "specs": true,
-        "lifestyle" : false,
-        "featuregallery":false,
-        "custom": true,
-        "verticalFeatures": false,
-        "videodesc": false,
-        "videoShowcase": true,
-        "imageShowcase": true
-      },
+      
       "price": "RM159.00",
       "product-type": "ATX",
       "description": "Invasion Plus Aeolus displays your CPU temperature and fan speed in real time, while six 6mm copper heat pipes quietly keep your system cool. Its PWM hydraulic-bearing fan runs smoothly and adjusts automatically. Designed for gaming and creative builds, Aeolus keeps your PC steady so you can enjoy your setup with complete peace of mind.",
@@ -1452,19 +1366,7 @@
       "id": "aeronix360",
       "name": "AERONIX-360",
       "category": "cooler",
-      "sections": {
-        "hero": false,
-        "description": false,
-        "highlight": false,
-        "specs": true,
-        "lifestyle" : true,
-        "featuregallery":false,
-        "custom": true,
-        "verticalFeatures":false,
-        "videodesc": false,
-        "videoShowcase": false,
-        "imageShowcase": false
-      },
+    
       "price": "RM159.00",
       "product-type": "ATX",
       "fan": "forward fan / Reverse Fan",
@@ -1503,19 +1405,7 @@
       "id": "aeronix240",
       "name": "AERONIX-240",
       "category": "cooler",
-      "sections": {
-        "hero": false,
-        "description": false,
-        "highlight": false,
-        "specs": false,
-        "lifestyle" : true,
-        "featuregallery":false,
-        "custom": false,
-        "verticalFeatures":false,
-        "videodesc": false,
-        "videoShowcase": false,
-        "imageShowcase": false
-      },
+      
       "price": ".00",
       "product-type": "ATX",
       "fan": "",
@@ -1544,19 +1434,7 @@
       "id": "aerovis",
       "name": "AEROVIS",
       "category": "cooler",
-      "sections": {
-        "hero": false,
-        "description": false,
-        "highlight": false,
-        "specs": false,
-        "lifestyle" : true,
-        "featuregallery":false,
-        "custom": false,
-        "verticalFeatures":false,
-        "videodesc": false,
-        "videoShowcase": false,
-        "imageShowcase": false
-      },
+     
       "price": ".00",
       "product-type": "ATX",
       "fan": "",
@@ -1598,19 +1476,7 @@
       "id": "dy240",
       "name": "DY-240",
       "category": "cooler",
-      "sections": {
-        "hero": false,
-        "description": false,
-        "highlight": false,
-        "specs": true,
-        "lifestyle" : false,
-        "featuregallery":false,
-        "custom": true,
-        "verticalFeatures":false,
-        "videodesc": false,
-        "videoShowcase": false,
-        "imageShowcase": true
-      },
+    
       "price": "RM 519.00",
       "product-type": "ATX",
       "fan": "",
@@ -1659,19 +1525,7 @@
       "id": "frostvision360",
       "name": "DY-240",
       "category": "cooler",
-      "sections": {
-        "hero": false,
-        "description": false,
-        "highlight": false,
-        "specs": true,
-        "lifestyle" : false,
-        "featuregallery":false,
-        "custom": true,
-        "verticalFeatures":false,
-        "videodesc": false,
-        "videoShowcase": false,
-        "imageShowcase": true
-      },
+     
       "price": "RM 519.00",
       "product-type": "ATX",
       "fan": "",
@@ -1729,17 +1583,6 @@
       "category": "monitor",
       "hot": false,
       "new": false,
-      "sections": {
-        "hero": false,
-        "description": false,
-        "highlight": false,
-        "specs": true,
-        "lifestyle": false,
-        "featuregallery": true,
-        "custom": true,
-        "verticalFeatures": false,
-        "videodesc": false
-      },
 
       "price": "RM1,399.00",
       "fans": "with 3 Infinity ARGB Fans",
@@ -1795,17 +1638,7 @@
       "category": "monitor",
       "hot": true,
       "new": false,
-      "sections": {
-        "hero": false,
-        "description": false,
-        "highlight": false,
-        "specs": true,
-        "lifestyle": false,
-        "featuregallery": true,
-        "custom": true,
-        "verticalFeatures": false,
-        "videodesc": false
-      },
+  
       "price": "RM2,899.00",
       "fans": "with 3 Infinity ARGB Fans",
       "product-type": "M-ATX",
