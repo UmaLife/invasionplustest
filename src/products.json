@@ -1408,7 +1408,7 @@
       "fan": "",
       "description": "",
       "mainImage": "static/AERONIX/AERONIX 240.png",
-      "specImage": "static/AERONIX/AERONIX 240.jpg",
+      "specImage": "static/AERONIX/AERONIX 240.png",
       
       "specs": {
         "Model": "AERONIX 360",
@@ -1954,6 +1954,81 @@
       "Max VGA Card": "395mm",
       "Max CPU Cooler": "170mm"
     }
+  },
+
+  {
+  "id": "frostvision240",
+  "name": "FROST VISION 240",
+  "category": "cooler",
+  "price": "RM 349.00",
+  "product-type": "ATX",
+  "fan": "",
+  "description": "3.95″ Magnetic IPS screen – stick it anywhere, customize everything. Detachable magnetic 3.95” IPS display that can be mounted on any metal surface of your case.",
+  "mainImage": "static/FROST VISION 240/FV-240-B-01.png",
+  "specImage": "static/FROST VISION 240/FV-240-B-08.png",
+
+ "variations": {
+    "black": [
+      "static/FROST VISION 240/FV-240-B-01.png",
+      "static/FROST VISION 240/FV-240-B-02.png",
+      "static/FROST VISION 240/FV-240-B-03.png",
+      "static/FROST VISION 240/FV-240-B-04.png",
+      "static/FROST VISION 240/FV-240-B-05.png",
+      "static/FROST VISION 240/FV-240-B-06.png",
+      "static/FROST VISION 240/FV-240-B-07.png",
+      "static/FROST VISION 240/FV-240-B-08.png",
+      "static/FROST VISION 240/FV-240-B-09.png",
+      "static/FROST VISION 240/FV-240-B-10.png"
+    ],
+    "white": [
+      "static/FROST VISION 240/FV-240W-01.png",
+      "static/FROST VISION 240/FV-240W-02.png",
+      "static/FROST VISION 240/FV-240W-03.png",
+      "static/FROST VISION 240/FV-240W-04.png",
+      "static/FROST VISION 240/FV-240W-05.png",
+      "static/FROST VISION 240/FV-240W-06.png",
+      "static/FROST VISION 240/FV-240W-07.png",
+      "static/FROST VISION 240/FV-240W-08.png",
+      "static/FROST VISION 240/FV-240W-09.png",
+      "static/FROST VISION 240/FV-240W-10.png"
+    ]
+  },
+
+  "specs": {
+    "Fan Specification": "",
+    "Model": "Frost Vision 240", 
+    "Fan Dimension": "120 x 120 x 25MM",
+    "Fan Speed": "500 – 2200 RPM ± 10%",
+    "Air Flow": "30.39 – 91.19 CFM",
+    "Air Pressure": "2.23MMH2O",
+    "Noise Level": "22 – 33 DBA",
+    "Bearing": "FDB",
+    "Rated Voltage Fan": "12V (Fan) / 5V (LED)",
+    "Connector Fan": "4-PIN PWM",
+
+    "Cooler Specification": "",
+    "Pump Connector": "3-PIN",
+    "Radiator Dimensions": "274 x 119 x 27MM",
+    "Tube Material": "Teflon",
+    "Base Plate Material": "Copper",
+    "Radiator Material": "Aluminium",
+    "Rated Voltage Pump": "12V (Pump) / 5V (LED)",
+    "Rated Voltage": "12V (Fan) / 5V (LED)",
+    "Connector": "4-PIN PWM",
+
+    "Compatibility": "",
+    "Intel": "LGA2066/2011-V3/2011/1151/1150/1155/1156/1366/775/1700",
+    "AMD": "AM4/AM3+/AM3/AM2+/AM2/FM2+/FM2/FM1/AM5",
+
+    "Package Contents": "",
+    "Fan": "2PCS",
+    "ALL-IN-ONE CPU Liquid Cooler": "1PC",
+    "Thermal Grease": "1PC",
+    "3.95″ IPS Screen": "1PC",
+    "Mounting Kit": "Included",
+    "Online User Manual": "Included"
   }
+
+}
   ]
 }
