@@ -306,6 +306,7 @@ function openSearch(){
 
     document.getElementById("searchOverlay")
         .classList.add("active");
+    document.body.classList.add("page-blur");
 
     setTimeout(() => {
     document.getElementById("searchInput").focus();
@@ -319,7 +320,7 @@ function closeSearch(){
 
     document.getElementById("searchOverlay")
         .classList.remove("active");
-
+    document.body.classList.remove("page-blur");
     document.querySelector(".nav-logo")
         .style.opacity = "1";
 }
