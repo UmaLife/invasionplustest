@@ -1766,58 +1766,123 @@
     }
     },
 
+   {
+  "id": "xqz",
+  "name": "XQZ INFINITY REVERSE FAN",
+  "category": "cooler",
+  "hot": false,
+  "new": false,
+
+  "price": "RM26.00 – RM129.00",
+  "fans": "3 in 1 (With Hub) / 4 in 1 (With Hub) / 5 in 1 (With Hub) / Single",
+  "product-type": "ARGB Cooling Fan",
+  "description": "A dual-sided infinity mirror ARGB fan with forward and reverse airflow options, four lighting zones and a reliable copper alloy motor.",
+
+  "mainImage": "static/XQZ INFINITY FAN/XQZ FAN BLACK - 01.png",
+  "specImage": "static/XQZ INFINITY FAN/5.png",
+
+  "variations": {
+    "black": [
+      "static/XQZ INFINITY FAN/XQZ FAN BLACK - 01.png",
+      "static/XQZ INFINITY FAN/XQZ FAN BLACK - 02.png",
+      "static/XQZ INFINITY FAN/XQZ FAN BLACK - 03.png",
+      "static/XQZ INFINITY FAN/XQZ FAN BLACK - 04.png",
+      "static/XQZ INFINITY FAN/XQZ FAN BLACK - 05.png",
+      "static/XQZ INFINITY FAN/XQZ FAN BLACK - 06.png",
+      "static/XQZ INFINITY FAN/XQZ FAN BLACK - 07.png",
+      "static/XQZ INFINITY FAN/XQZ FAN BLACK - 08.png"
+    ],
+
+    "white": [
+      "static/XQZ INFINITY FAN/XQZ FAN WHITE - 01.png",
+      "static/XQZ INFINITY FAN/XQZ FAN WHITE - 02.png",
+      "static/XQZ INFINITY FAN/XQZ FAN WHITE - 03.png",
+      "static/XQZ INFINITY FAN/XQZ FAN WHITE - 04.png",
+      "static/XQZ INFINITY FAN/XQZ FAN WHITE - 05.png",
+      "static/XQZ INFINITY FAN/XQZ FAN WHITE - 06.png"
+    ]
+  },
+
+  "sellingPoints": [
     {
-      "id": "xqz",
-      "name": "XQZ INFINITY REVERSE FAN",
-      "category": "cooler",
-      "hot": false,
-      "new": false,
-
-      "price": "RM26.00 – RM129.00",
-      "fans": "3 in 1(With Hub) / 4 in 1(With Hub) / 5 in 1 (With Hub) / single",
-      "product-type": "",
-      "description":"",
-      "mainImage": "static/XQZ INFINITY FAN/XQZ FAN BLACK - 01.png",
-      "specImage": "static/XQZ INFINITY FAN/XQZ FAN BLACK - 07.png",
-
-      "variations": {
-      "black": [
-        "static/XQZ INFINITY FAN/XQZ FAN BLACK - 01.png",
-        "static/XQZ INFINITY FAN/XQZ FAN BLACK - 02.png",
-        "static/XQZ INFINITY FAN/XQZ FAN BLACK - 03.png",
-        "static/XQZ INFINITY FAN/XQZ FAN BLACK - 04.png",
-        "static/XQZ INFINITY FAN/XQZ FAN BLACK - 05.png",
-        "static/XQZ INFINITY FAN/XQZ FAN BLACK - 06.png",
-        "static/XQZ INFINITY FAN/XQZ FAN BLACK - 07.png",
-        "static/XQZ INFINITY FAN/XQZ FAN BLACK - 08.png"
-      ],
-      "white": [
-        "static/XQZ INFINITY FAN/XQZ FAN WHITE - 01.png",
-        "static/XQZ INFINITY FAN/XQZ FAN WHITE - 02.png",
-        "static/XQZ INFINITY FAN/XQZ FAN WHITE - 03.png",
-        "static/XQZ INFINITY FAN/XQZ FAN WHITE - 04.png",
-        "static/XQZ INFINITY FAN/XQZ FAN WHITE - 05.png",
-        "static/XQZ INFINITY FAN/XQZ FAN WHITE - 06.png"
-      ]
+      "icon": "fa-solid fa-infinity",
+      "title": "Dual-Sided Infinity Mirror Illumination",
+      "description": "Creates a stunning three-dimensional lighting effect from both sides."
     },
-    "specs": {
-            "Fan Specification": "",
-            "Fan Model": "XQZ INFINITY FAN",
-            "Fan Size": "120 × 120 × 25 mm",
-            "Fan Speed": "800~1500 RPM ±10%",
-            "Air Flow": "45 CFM ±10%",
-            "Noise Level": "15~20 dB(A) ±10%",
-            "Bearing Type": "Hydraulic Sleeve Bearing",
-            "Connector & Control": "6 Pin",
-            "Material": "Plastic Frame",
-            "Wireframe Outer Length": "550 mm",
-            "Rated Voltage": "12V DC",
-            "Rated Current": "0.12A",
-            "Rated Power": "1.5W",
-            "Fan Life": "50000 Hrs"
-          }
+    {
+      "icon": "fa-solid fa-lightbulb",
+      "title": "Four-Zone ARGB Lighting",
+      "description": "Delivers unique and vibrant lighting with four customizable illumination zones."
+    },
+    {
+      "icon": "fa-solid fa-gear",
+      "title": "Copper Alloy Motor",
+      "description": "Provides smooth, stable and reliable fan performance."
+    },
+    {
+      "icon": "fa-solid fa-arrows-rotate",
+      "title": "Forward and Reverse Fan Options",
+      "description": "Supports flexible airflow configurations for intake and exhaust setups."
+    },
+    {
+      "icon": "fa-solid fa-ruler-combined",
+      "title": "Product Size",
+      "description": "120 mm × 120 mm × 25 mm"
+    }
+  ],
 
+  "fanFeatureBanners": {
+    "hero": {
+      "title": "Dual-Sided Infinity Mirror",
+      "subtitle": "Stunning 3D Light Effect",
+      "description": "Dual-sided infinity mirror illumination creates a deep and layered lighting effect from both sides of the fan.",
+      "image": "static/XQZ INFINITY FAN/1.png"
+    },
+
+    "showcase": {
+      "title": "Advanced Cooling and ARGB Performance",
+      "subtitle": "Designed for Style and Airflow",
+      "description": "The XQZ Infinity Fan combines vibrant lighting, reliable cooling performance and flexible airflow configurations for modern PC builds.",
+
+      "cards": [
+        {
+          "title": "Four-Zone ARGB Lighting",
+          "subtitle": "Unique Lighting",
+          "description": "Four customizable lighting zones produce a vibrant and distinctive ARGB appearance.",
+          "image": "static/XQZ INFINITY FAN/2.png"
         },
+        {
+          "title": "Copper Alloy Motor",
+          "subtitle": "Smooth Performance",
+          "description": "The copper alloy motor delivers smooth, stable and reliable fan operation.",
+          "image": "static/XQZ INFINITY FAN/3.png"
+        },
+        {
+          "title": "Forward and Reverse Options",
+          "subtitle": "Flexible Airflow",
+          "description": "Forward and reverse fan options support flexible intake and exhaust configurations.",
+          "image": "static/XQZ INFINITY FAN/4.png"
+        }
+      ]
+    }
+  },
+
+  "specs": {
+    "Fan Model": "XQZ INFINITY FAN",
+    "Fan Size": "120 × 120 × 25 mm",
+    "Fan Speed": "800–1500 RPM ±10%",
+    "Air Flow": "45 CFM ±10%",
+    "Noise Level": "15–20 dB(A) ±10%",
+    "Bearing Type": "Hydraulic Sleeve Bearing",
+    "Connector & Control": "6 Pin",
+    "Material": "Plastic Frame",
+    "Wire Length": "550 mm",
+    "Rated Voltage": "12V DC",
+    "Rated Current": "0.12A",
+    "Rated Power": "1.5W",
+    "Fan Life": "50,000 Hours"
+  }
+},
 
    {
   "id": "aether",

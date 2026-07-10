@@ -51,6 +51,16 @@
     <div class="feature-grid" id="featureGrid"></div>
 </section>
 
+<section
+    class="fan-banner-section"
+    id="fanBannerSection"
+>
+    <div
+        class="fan-banner-container"
+        id="fanBannerGrid"
+    ></div>
+</section>
+
 <section class="spec-section">
     <div class="spec-image">
         <img id="specImage" src="">
@@ -59,16 +69,6 @@
     <div class="spec-table" id="specTable"></div>
 </section>
 
-<section class="feature-section">
-    <div class="feature-grid" id="featureGrid"></div>
-</section>
-
-<!-- New fan banner layout -->
-<section class="fan-banner-section" id="fanBannerSection">
-    <div class="fan-banner-grid" id="fanBannerGrid"></div>
-</section>
-
-<section class="spec-section">
 
 </main>
 <script src="set.js"></script>
@@ -345,6 +345,291 @@ function featureBox(card, size, id){
         </div>
     `;
 }
+function renderFanBanners(product){
+
+    const section =
+        document.getElementById("fanBannerSection");
+
+    const container =
+        document.getElementById("fanBannerGrid");
+
+
+    if(!section || !container){
+        return;
+    }
+
+
+    container.innerHTML = "";
+
+
+    const fanData =
+        product.fanFeatureBanners;
+
+
+    if(!fanData){
+        section.style.display = "none";
+        return;
+    }
+
+
+    section.style.display = "block";
+
+
+    let hero = null;
+    let features = [];
+
+
+    /* New object structure */
+
+    if(!Array.isArray(fanData)){
+
+        hero =
+            fanData.hero || null;
+
+        features =
+            fanData.features ||
+            fanData.showcase?.cards ||
+            [];
+
+    }
+
+
+    /* Old array structure support */
+
+    else{
+
+        hero =
+            fanData[0] || null;
+
+        features =
+            fanData.slice(1);
+
+    }
+
+
+    if(!hero && features.length === 0){
+        section.style.display = "none";
+        return;
+    }
+
+
+    /* =====================================
+       HERO
+    ===================================== */
+
+    if(hero){
+
+        const heroBanner =
+            document.createElement("article");
+
+        heroBanner.className =
+            "fan-hero-banner";
+
+        heroBanner.innerHTML = `
+
+            <div class="fan-hero-image fan-reveal-image">
+
+                <img
+                    src="${hero.image || ""}"
+                    alt="${hero.title || "Fan feature"}"
+                >
+
+            </div>
+
+
+            <div class="fan-hero-text fan-reveal-text">
+
+                ${
+                    hero.subtitle
+                    ? `
+                        <span class="fan-hero-eyebrow">
+                            ${hero.subtitle}
+                        </span>
+                    `
+                    : ""
+                }
+
+                ${
+                    hero.title
+                    ? `
+                        <h2 class="fan-hero-title">
+                            ${hero.title}
+                        </h2>
+                    `
+                    : ""
+                }
+
+                ${
+                    hero.description
+                    ? `
+                        <p class="fan-hero-description">
+                            ${hero.description}
+                        </p>
+                    `
+                    : ""
+                }
+
+            </div>
+
+        `;
+
+
+        container.appendChild(heroBanner);
+
+    }
+
+
+    /* =====================================
+       FEATURE BOXES
+    ===================================== */
+
+    if(features.length > 0){
+
+        const list =
+            document.createElement("div");
+
+        list.className =
+            "fan-alternating-list";
+
+
+        features.forEach((item,index)=>{
+
+            const feature =
+                document.createElement("article");
+
+            feature.className =
+                "fan-alternating-item";
+
+            feature.dataset.featureIndex =
+                index;
+
+
+            feature.innerHTML = `
+
+                <div class="fan-alternating-image fan-reveal-image">
+
+                    <img
+                        src="${item.image || ""}"
+                        alt="${item.title || "Fan feature"}"
+                        loading="lazy"
+                    >
+
+                </div>
+
+
+                <div class="fan-alternating-text fan-reveal-text">
+
+                    ${
+                        item.subtitle
+                        ? `
+                            <p class="fan-alternating-subtitle">
+                                ${item.subtitle}
+                            </p>
+                        `
+                        : ""
+                    }
+
+                    ${
+                        item.title
+                        ? `
+                            <h2 class="fan-alternating-title">
+                                ${item.title}
+                            </h2>
+                        `
+                        : ""
+                    }
+
+                    ${
+                        item.description
+                        ? `
+                            <p class="fan-alternating-description">
+                                ${item.description}
+                            </p>
+                        `
+                        : ""
+                    }
+
+                </div>
+
+            `;
+
+
+            list.appendChild(feature);
+
+        });
+
+
+        container.appendChild(list);
+
+    }
+
+
+    requestAnimationFrame(()=>{
+        initFanRevealAnimation();
+    });
+
+}
+
+function initFanRevealAnimation(){
+
+    const elements =
+        document.querySelectorAll(
+            "#fanBannerSection .fan-reveal-text, " +
+            "#fanBannerSection .fan-reveal-image"
+        );
+
+
+    if(elements.length === 0){
+        return;
+    }
+
+
+    if(!("IntersectionObserver" in window)){
+
+        elements.forEach(element=>{
+            element.classList.add("is-visible");
+        });
+
+        return;
+    }
+
+
+    const observer =
+        new IntersectionObserver(
+
+            entries=>{
+
+                entries.forEach(entry=>{
+
+                    if(entry.isIntersecting){
+
+                        entry.target.classList.add(
+                            "is-visible"
+                        );
+
+                        observer.unobserve(
+                            entry.target
+                        );
+
+                    }
+
+                });
+
+            },
+
+            {
+                threshold:0.12,
+                rootMargin:"0px 0px -30px 0px"
+            }
+
+        );
+
+
+    elements.forEach(element=>{
+        observer.observe(element);
+    });
+
+}
 
 function renderSpecs(product){
     const table = document.getElementById("specTable");
@@ -357,60 +642,6 @@ function renderSpecs(product){
                 <div class="spec-value">${value}</div>
             </div>
         `;
-    });
-}
-
-function renderFanBanners(product) {
-    const section = document.getElementById("fanBannerSection");
-    const grid = document.getElementById("fanBannerGrid");
-
-    grid.innerHTML = "";
-
-    const banners = product.fanFeatureBanners;
-
-    if (!banners || banners.length === 0) {
-        section.style.display = "none";
-        return;
-    }
-
-    section.style.display = "block";
-
-    banners.forEach((item, index) => {
-        const banner = document.createElement("article");
-
-        banner.className = "fan-banner";
-        banner.id = `fan-banner-${index}`;
-
-        banner.innerHTML = `
-            <img
-                class="fan-banner-image"
-                src="${item.image}"
-                alt="${item.title || "Fan feature"}"
-                loading="lazy"
-            >
-
-            <div class="fan-banner-shade"></div>
-
-            <div class="fan-banner-content">
-                <span class="fan-banner-number">
-                    ${String(index + 1).padStart(2, "0")}
-                </span>
-
-                ${item.title ? `<h2>${item.title}</h2>` : ""}
-
-                ${item.subtitle ? `
-                    <span class="fan-banner-subtitle">
-                        ${item.subtitle}
-                    </span>
-                ` : ""}
-
-                ${item.description ? `
-                    <p>${item.description}</p>
-                ` : ""}
-            </div>
-        `;
-
-        grid.appendChild(banner);
     });
 }
 </script>
