@@ -87,7 +87,7 @@
       "type": "wide",
       "title": "Tool-Free Quick Release Modular Design",
       "description": "Enables fast assembly and effortless maintenance",
-      "image": "static/E20/e20.png"
+      "image": "static/E20/6.png"
     },
     {
       "type":"wide",
@@ -1819,32 +1819,111 @@
 
         },
 
+   {
+  "id": "aether",
+  "name": "AETHER",
+  "category": "case",
+  "hot": false,
+  "new": false,
+
+  "price": "RM299.00",
+  "fans": "with 6 Infinity ARGB Fans",
+  "product-type": "",
+  "description": "Invasion Plus Aether blends refined aesthetics with thoughtful design. The detachable top panel enhances accessibility and airflow flexibility, while seamless ARGB accents on the top and bottom create a subtle futuristic glow, adding a distinctive character to your setup.",
+  "mainImage": "static/AETHER/AETHER BLACK-01.png",
+  "specImage": "static/AETHER/AETHER WHITE - 04.png",
+
+  "variations": {
+    "black": [
+      "static/AETHER/AETHER BLACK-01.png"
+    ],
+    "white": [
+      "static/AETHER/AETHER WHITE - 01.png",
+      "static/AETHER/AETHER WHITE - 02.png",
+      "static/AETHER/AETHER WHITE - 03.png",
+      "static/AETHER/AETHER WHITE - 04.png",
+      "static/AETHER/AETHER WHITE - 05.png"
+    ]
+  },
+
+  "sellingPoints": [
     {
-      "id": "aether",
-      "name": "AETHER",
-      "category": "case",
-      "hot": false,
-      "new": false,
+      "icon": "fa-solid fa-lightbulb",
+      "title": "Dual-Zone ARGB Design",
+      "description": "Top and bottom lighting accents create a stunning showcase build."
+    },
+    {
+      "icon": "fa-solid fa-layer-group",
+      "title": "Detachable Top Panel",
+      "description": "Easy removal design provides quick access for cooling setup and maintenance."
+    },
+    {
+      "icon": "fa-solid fa-cube",
+      "title": "Compact Panoramic View",
+      "description": "Space-saving design with a wide viewing area to showcase your build."
+    },
+    {
+      "icon": "fa-solid fa-border-all",
+      "title": "Dual Chamber Layout",
+      "description": "Separate layout improves cable organization and creates a cleaner build."
+    },
+    {
+      "icon": "fa-solid fa-ruler-combined",
+      "title": "Product Dimension",
+      "description": "Case size: L420mm x W278mm x H365mm with convenient USB I/O ports."
+    },
+    {
+      "icon": "fa-solid fa-fan",
+      "title": "Radiator Support",
+      "description": "Supports top 360mm and side 240mm liquid cooling with multiple fan installation options."
+    }
+  ],
 
-      "price": "RM299.00",
-      "fans": "with 6 Infinity ARGB Fans",
-      "product-type": "",
-      "description":"",
-      "mainImage": "static/AETHER/AETHER BLACK-01.png",
-      "specImage": "static/AETHER/AETHER WHITE - 04.png",
-
-      "variations": {
-        "black": [
-          "static/AETHER/AETHER BLACK-01.png"
-        ],
-        "white": [
-          "static/AETHER/AETHER WHITE - 01.png",
-          "static/AETHER/AETHER WHITE - 02.png",
-          "static/AETHER/AETHER WHITE - 03.png",
-          "static/AETHER/AETHER WHITE - 04.png",
-          "static/AETHER/AETHER WHITE - 05.png"
-        ]
+  "productFeatureGrid": {
+    "title": "Product Highlights",
+    "cards": [
+      {
+        "type": "wide",
+        "title": "Dual-Zone ARGB Design",
+        "subtitle": "Signature Lighting Style",
+        "description": "Top and bottom lighting accents create a premium showcase build.",
+        "image": "static/AETHER/1.png"
       },
+      {
+        "title": "Detachable Top Panel",
+        "subtitle": "Easy Access Design",
+        "description": "",
+        "image": "static/AETHER/2.png"
+      },
+      {
+        "title": "Compact Panoramic View",
+        "subtitle": "Wide Showcase Display",
+        "description": "",
+        "image": "static/AETHER/3.png"
+      },
+      {
+        "type": "wide",
+        "title": "Dual Chamber Layout",
+        "subtitle": "Clean Build Structure",
+        "description": "Separate chamber design improves cable organization and airflow efficiency.",
+        "image": "static/AETHER/4.png"
+      },
+      {
+        "type": "wide",
+        "title": "Smart Case Layout",
+        "subtitle": "L420 × W278 × H365mm",
+        "description": "Compact case size with convenient USB I/O connectivity.",
+        "image": "static/AETHER/5.png"
+      },
+      {
+        "type": "wide",
+        "title": "Radiator Support",
+        "subtitle": "360mm Liquid Cooling Ready",
+        "description": "Top supports 360mm liquid cooling, side supports 240mm cooling, with rear and bottom fan support.",
+        "image": "static/AETHER/6.png"
+      }
+    ]
+  },
       "specs": {
       "Model": "AETHER",
       "Front Panel": "Tempered Glass",
@@ -1876,7 +1955,7 @@
       "price": "RM259.00",
       "fans": "with 3 Infinity ARGB Fans",
       "product-type": "",
-      "description":"",
+      "description":"  Invasion Plus Aether transforms your setup with its sleek design and bottom ARGB accent, creating a distinctive glow that brings your build to life. With efficient airflow, quick access, and a clean layout, it delivers the perfect balance of performance, functionality, and style.",
       "mainImage": "static/HYPERION/HYPERION-01.png",
       "specImage": "static/HYPERION/HYPERION-03.png",
 
@@ -1890,6 +1969,73 @@
           "static/HYPERION/HYPERION-06.png"
         ]
       },
+
+      "sellingPoints": [
+      {
+        "icon": "fa-solid fa-lightbulb",
+        "title": "ARGB Underglow Design",
+        "description": "Bottom ARGB lighting creates a stunning visual highlight for your setup."
+      },
+      {
+        "icon": "fa-solid fa-wind",
+        "title": "Optimized Mesh Ventilation",
+        "description": "Right-side mesh ventilation improves airflow efficiency for better cooling performance."
+      },
+      {
+        "icon": "fa-solid fa-cube",
+        "title": "Compact Panoramic View",
+        "description": "Space-saving design with a wide viewing area to showcase your build."
+      },
+      {
+        "icon": "fa-solid fa-ruler-combined",
+        "title": "Product Dimension",
+        "description": "Case size: L434mm x W218mm x H414mm with convenient USB I/O ports."
+      },
+      {
+        "icon": "fa-solid fa-fan",
+        "title": "Radiator Support",
+        "description": "Supports 360mm liquid cooling with multiple fan installation options."
+      }
+    ],
+    "productFeatureGrid": {
+      "title": "Product Highlights",
+      "cards": [
+        {
+          "type": "wide",
+          "title": "ARGB Underglow Design",
+          "subtitle": "Visual Lighting Highlight",
+          "description": "Bottom ARGB lighting enhances your setup with a premium gaming appearance.",
+          "image": "static/HYPERION/1.png"
+        },
+        {
+          "title": "Optimized Mesh Ventilation",
+          "subtitle": "Better Cooling Airflow",
+          "description": "Right-side mesh panel improves airflow and keeps components cooler.",
+          "image": "static/HYPERION/2.png"
+        },
+        {
+          "title": "Compact Panoramic View",
+          "subtitle": "Wide Showcase Design",
+          "description": "Compact design fits smaller spaces while providing a clear build showcase.",
+          "image": "static/HYPERION/3.png"
+        },
+        {
+          "type": "wide",
+          "title": "Smart Case Layout",
+          "subtitle": "L434 × W218 × H414mm",
+          "description": "Optimized case size with convenient USB I/O connectivity.",
+          "image": "static/HYPERION/4.png"
+        },
+        {
+          "type": "wide",
+          "title": "Radiator Support",
+          "subtitle": "360mm Liquid Cooling Ready",
+          "description": "Supports top 360mm and rear 120mm liquid cooling with multiple fan options.",
+          "image": "static/HYPERION/5.png"
+        }
+      ]
+    },
+
       
     "specs": {
       "Model": "HYPERION",
@@ -1921,7 +2067,7 @@
       "price": "RM269.00",
       "fans": "with 4 Infinity ARGB Fans",
       "product-type": "",
-      "description":"",
+      "description":"   Invasion Plus Perseus brings an industrial- inspired design through its ABS and iron mesh front panel. The unique texture, combined with the left bottom mesh panel, blends airflow, durability, and design harmony into a chassis that reflects your personal style.",
       "mainImage": "static/PERSEUS/PERSEUS-01.png",
       "specImage": "static/PERSEUS/PERSEUS-02.png",
 
@@ -1935,6 +2081,72 @@
           "static/PERSEUS/PERSEUS-06.png"
         ]
       },
+
+      "sellingPoints": [
+      {
+        "icon": "fa-solid fa-border-all",
+        "title": "ABS+ Iron Mesh Front Panel",
+        "description": "Refined mesh texture design improves airflow while maintaining a premium appearance."
+      },
+      {
+        "icon": "fa-solid fa-wind",
+        "title": "Enhanced Mesh Ventilation",
+        "description": "Left-side bottom mesh ventilation improves airflow efficiency for better cooling."
+      },
+      {
+        "icon": "fa-solid fa-ruler-combined",
+        "title": "Product Dimension",
+        "description": "Case size: L440mm x W218mm x H472mm with convenient USB I/O ports."
+      },
+      {
+        "icon": "fa-solid fa-microchip",
+        "title": "Motherboard Compatibility",
+        "description": "Supports EATX, ATX, Micro-ATX and Mini-ITX motherboards."
+      },
+      {
+        "icon": "fa-solid fa-fan",
+        "title": "Radiator Support",
+        "description": "Supports front and top 360mm liquid cooling with multiple fan installation options."
+      }
+    ],
+    "productFeatureGrid": {
+      "title": "Product Highlights",
+      "cards": [
+        {
+          "type": "wide",
+          "title": "ABS+ Iron Mesh Front Panel",
+          "subtitle": "Premium Airflow Design",
+          "description": "Refined mesh texture provides improved ventilation and a stylish appearance.",
+          "image": "static/PERSEUS/1.png"
+        },
+        {
+          "title": "Enhanced Mesh Ventilation",
+          "subtitle": "Better Cooling Airflow",
+          "description": "Left-side bottom ventilation improves airflow for efficient cooling performance.",
+          "image": "static/PERSEUS/2.png"
+        },
+        {
+          "title": "Smart Case Layout",
+          "subtitle": "L440 × W218 × H472mm",
+          "description": "Optimized case size with convenient USB I/O connectivity.",
+          "image": "static/PERSEUS/3.png"
+        },
+        {
+          "type": "wide",
+          "title": "Wide Compatibility",
+          "subtitle": "EATX / ATX / M-ATX / Mini-ITX",
+          "description": "Supports multiple motherboard sizes for flexible PC configurations.",
+          "image": "static/PERSEUS/4.png"
+        },
+        {
+          "type": "wide",
+          "title": "Radiator Support",
+          "subtitle": "Dual 360mm Liquid Cooling Ready",
+          "description": "Supports front and top 360mm liquid cooling, rear 120mm cooling, and PSU cover fans.",
+          "image": "static/PERSEUS/5.png"
+        }
+      ]
+    },
    
     "specs": {
       "Model": "PERSEUS",
