@@ -35,16 +35,16 @@
       "title": "Full Seamless Curved Edge Mesh Design"
     },
     {
-      "icon": "fa-solid fa-screwdriver-wrench",
-      "title": "Tool-Free Quick Release Modular Design"
+      "icon": "fa-solid fa-plug-circle-bolt",
+      "title": "Back- Connect Ready"
     },
     {
       "icon": "fa-solid fa-ruler-combined",
       "title": "Product Dimension"
     },
     {
-      "icon": "fa-solid fa-plug-circle-bolt",
-      "title": "Back- Connect Ready"
+      "icon": "fa-solid fa-screwdriver-wrench",
+      "title": "Tool-Free Quick Release Modular Design"
     },
     {
       "icon":"fa-solid fa-temperature-arrow-up",
@@ -349,21 +349,22 @@
 
       "sellingPoints": [
       {
-        "icon": "fa-solid fa-filter",
-        "title": "Triple Mesh Filtration"
-      },
-      {
         "icon": "fa-regular fa-square",
         "title": "Compact Panoramic Design"
+      },
+      {
+        "icon": "fa-solid fa-shield",
+        "title": "Bottom Dust Filter"
       },
       {
         "icon": "fa-solid fa-ruler-combined",
         "title": "Product Dimension"
       },
       {
-        "icon": "fa-solid fa-shield",
-        "title": "Bottom Dust Filter"
+        "icon": "fa-solid fa-filter",
+        "title": "Triple Mesh Filtration"
       },
+      
       {
         "icon": "fa-solid fa-fan",
         "title": "Radiator Support"
@@ -948,10 +949,6 @@
   {
     "icon": "fa-solid fa-ruler-combined",
     "title": "Product Dimension"
-  },
-  {
-    "icon": "fa-solid fa-plug",
-    "title": "I/O Ports USB"
   },
   {
     "icon": "fa-solid fa-border-all",
@@ -2009,7 +2006,7 @@
 
       "price": "RM899.00 – RM909.00",
       "fans": "",
-      "product-type": "",
+      "product-type": "Liquid Cooler",
       "description":"Invasion Plus Poseidon 360 brings together powerful cooling and refined aesthetics with its stunning 6.67” 90° curved 2K display. Featuring an enlarged copper cold plate and 3,300RPM three-phase, six-pole motor, it delivers reliable cooling performance while adding a subtle yet distinctive touch to your build.",
       "mainImage": "static/POSEIDON/POSEIDON BLACK-02.png",
       "specImage": "static/POSEIDON/POSEIDON BLACK-01.png",
