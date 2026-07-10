@@ -59,6 +59,17 @@
     <div class="spec-table" id="specTable"></div>
 </section>
 
+<section class="feature-section">
+    <div class="feature-grid" id="featureGrid"></div>
+</section>
+
+<!-- New fan banner layout -->
+<section class="fan-banner-section" id="fanBannerSection">
+    <div class="fan-banner-grid" id="fanBannerGrid"></div>
+</section>
+
+<section class="spec-section">
+
 </main>
 <script src="set.js"></script>
 <script>
@@ -102,6 +113,7 @@ function renderProduct(product){
     renderColors(product);
     renderSellingPoints(product);
     renderFeatureGrid(product);
+    renderFanBanners(product);
     renderSpecs(product);
 }
 
@@ -345,6 +357,60 @@ function renderSpecs(product){
                 <div class="spec-value">${value}</div>
             </div>
         `;
+    });
+}
+
+function renderFanBanners(product) {
+    const section = document.getElementById("fanBannerSection");
+    const grid = document.getElementById("fanBannerGrid");
+
+    grid.innerHTML = "";
+
+    const banners = product.fanFeatureBanners;
+
+    if (!banners || banners.length === 0) {
+        section.style.display = "none";
+        return;
+    }
+
+    section.style.display = "block";
+
+    banners.forEach((item, index) => {
+        const banner = document.createElement("article");
+
+        banner.className = "fan-banner";
+        banner.id = `fan-banner-${index}`;
+
+        banner.innerHTML = `
+            <img
+                class="fan-banner-image"
+                src="${item.image}"
+                alt="${item.title || "Fan feature"}"
+                loading="lazy"
+            >
+
+            <div class="fan-banner-shade"></div>
+
+            <div class="fan-banner-content">
+                <span class="fan-banner-number">
+                    ${String(index + 1).padStart(2, "0")}
+                </span>
+
+                ${item.title ? `<h2>${item.title}</h2>` : ""}
+
+                ${item.subtitle ? `
+                    <span class="fan-banner-subtitle">
+                        ${item.subtitle}
+                    </span>
+                ` : ""}
+
+                ${item.description ? `
+                    <p>${item.description}</p>
+                ` : ""}
+            </div>
+        `;
+
+        grid.appendChild(banner);
     });
 }
 </script>
