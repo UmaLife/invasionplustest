@@ -1831,42 +1831,6 @@
     }
   ],
 
-  "fanFeatureBanners": {
-    "hero": {
-      "title": "Dual-Sided Infinity Mirror",
-      "subtitle": "Stunning 3D Light Effect",
-      "description": "Dual-sided infinity mirror illumination creates a deep and layered lighting effect from both sides of the fan.",
-      "image": "static/XQZ INFINITY FAN/1.png"
-    },
-
-    "showcase": {
-      "title": "Advanced Cooling and ARGB Performance",
-      "subtitle": "Designed for Style and Airflow",
-      "description": "The XQZ Infinity Fan combines vibrant lighting, reliable cooling performance and flexible airflow configurations for modern PC builds.",
-
-      "cards": [
-        {
-          "title": "Four-Zone ARGB Lighting",
-          "subtitle": "Unique Lighting",
-          "description": "Four customizable lighting zones produce a vibrant and distinctive ARGB appearance.",
-          "image": "static/XQZ INFINITY FAN/2.png"
-        },
-        {
-          "title": "Copper Alloy Motor",
-          "subtitle": "Smooth Performance",
-          "description": "The copper alloy motor delivers smooth, stable and reliable fan operation.",
-          "image": "static/XQZ INFINITY FAN/3.png"
-        },
-        {
-          "title": "Forward and Reverse Options",
-          "subtitle": "Flexible Airflow",
-          "description": "Forward and reverse fan options support flexible intake and exhaust configurations.",
-          "image": "static/XQZ INFINITY FAN/4.png"
-        }
-      ]
-    }
-  },
-
   "specs": {
     "Fan Model": "XQZ INFINITY FAN",
     "Fan Size": "120 × 120 × 25 mm",
