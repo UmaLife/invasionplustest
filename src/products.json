@@ -2107,7 +2107,7 @@
   "product-type": "ARGB Cooling Fan",
   "description": "Invasion Plus XQZ Infinity Fan — Crafted to make every build feel alive. With captivating lighting, refined design, and smooth performance, it brings personality and energy to your setup while reflecting your unique style",
   "mainImage": "static/XQZ INFINITY FAN/XQZ FAN BLACK - 01.png",
-  "specImage": "static/XQZ INFINITY FAN/5.png",
+  "specImage": "static/XQZ INFINITY FAN/XQZ FAN BLACK - 07.png",
 
   "variations": {
     "black": [
@@ -2153,43 +2153,80 @@
       "title": "Product Size"
     }
   ],
-
-  "fanFeatureBanners": {
-    "hero": {
-      "title": "Dual-Sided Infinity Mirror",
-      "subtitle": "Stunning 3D Light Effect",
-      "description": "Dual-sided infinity mirror illumination creates a deep and layered lighting effect from both sides of the fan.",
-      "image": "static/XQZ INFINITY FAN/1.png"
+"xqzDescription": {
+  "features": [
+    {
+      "number": "3.1",
+      "title": "<strong>DUAL-SIDED</strong> INFINITY MIRROR",
+      "description": "Create a stunning 3D light effect with premium dual-sided infinity mirror illumination.",
+      "image": "static/XQZ INFINITY FAN/1.png",
+      "textSide": "right"
     },
-
-    "showcase": {
-      "title": "Advanced Cooling and ARGB Performance",
-      "subtitle": "Designed for Style and Airflow",
-      "description": "The XQZ Infinity Fan combines vibrant lighting, reliable cooling performance and flexible airflow configurations for modern PC builds.",
-
-      "cards": [
-        {
-          "title": "Four-Zone ARGB Lighting",
-          "subtitle": "Unique Lighting",
-          "description": "Four customizable lighting zones produce a vibrant and distinctive ARGB appearance.",
-          "image": "static/XQZ INFINITY FAN/2.png"
-        },
-        {
-          "title": "Copper Alloy Motor",
-          "subtitle": "Smooth Performance",
-          "description": "The copper alloy motor delivers smooth, stable and reliable fan operation.",
-          "image": "static/XQZ INFINITY FAN/3.png"
-        },
-        {
-          "title": "Forward and Reverse Options",
-          "subtitle": "Flexible Airflow",
-          "description": "Forward and reverse fan options support flexible intake and exhaust configurations.",
-          "image": "static/XQZ INFINITY FAN/4.png"
-        }
-      ]
+    {
+      "number": "3.2",
+      "title": "FOUR-ZONE <strong>ARGB LIGHTING</strong>",
+      "description": "Four independent lighting zones produce richer colours and a unique lighting experience.",
+      "image": "static/XQZ INFINITY FAN/2.png",
+      "textSide": "left"
+    },
+    {
+      "number": "3.3",
+      "title": "COPPER ALLOY <strong>MOTOR</strong>",
+      "description": "Built for smooth rotation, stable airflow and reliable long-term performance.",
+      "image": "static/XQZ INFINITY FAN/3.png",
+      "textSide": "left"
+    },
+    {
+      "number": "3.4",
+      "title": "FORWARD & REVERSE <strong>FAN OPTIONS</strong>",
+      "description": "Choose forward or reverse airflow to match different cooling configurations.",
+      "image": "static/XQZ INFINITY FAN/4.png",
+      "textSide": "right"
     }
-  },
+  ],
 
+  "productSize": {
+    "number": "3.5",
+    "title": "PRODUCT <strong>SIZE</strong>",
+    "description": "Standard fan dimensions for compatibility with most PC cases and radiators.",
+    "image": "static/XQZ INFINITY FAN/5.png",
+
+    "dimensions": [
+      {
+        "value": "120",
+        "label": "WIDTH",
+        "unit": "MM"
+      },
+      {
+        "value": "120",
+        "label": "HEIGHT",
+        "unit": "MM"
+      },
+      {
+        "value": "25",
+        "label": "THICKNESS",
+        "unit": "MM"
+      }
+    ]
+  },
+"statements": [
+  {
+    "position": 2,
+    "eyebrow": "Designed to Stand Out",
+    "title": "Infinity Mirror ARGB Illumination",
+    "description": "Dual-sided reflections and four-zone ARGB lighting create a deeper, richer and more distinctive visual effect.",
+    "background": "static/XQZ INFINITY FAN/bg.png"
+  },
+  {
+    "position": 4,
+    "eyebrow": "Engineered for Performance",
+    "title": "Powerful Motor Flexible Airflow",
+    "description": "Copper alloy motor performance combines with forward and reverse airflow options for a cleaner, more flexible cooling setup.",
+    "background": "static/XQZ INFINITY FAN/bg.png"
+  }
+]
+
+},
   "specs": {
     "Fan Model": "XQZ INFINITY FAN",
     "Fan Size": "120 × 120 × 25 mm",
