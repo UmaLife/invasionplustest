@@ -916,13 +916,13 @@ html {
     transform: translate(-50%, -50%);
     z-index: 3;
     text-align: center;
-    width: 90%;
+    width: 100%;
 }
 .hero-logo {
-    width: min(820px, 80vw);
+    width: min(1200px, 90vw);
     height: auto;
     display: block;
-    margin: 0 auto 28px;
+    margin: 0 auto 35px;
     z-index: 4;
 }
 .light-text {
@@ -2495,3 +2495,4 @@ border-glow {
         gap:6px;
     }
 }
+
