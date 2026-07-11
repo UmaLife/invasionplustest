@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Product</title>
 <link rel="stylesheet" href="static/style.css">
+<link rel="stylesheet" href="static/css/xqz-description.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
@@ -51,16 +52,7 @@
     <div class="feature-grid" id="featureGrid"></div>
 </section>
 
-<section
-    class="fan-banner-section"
-    id="fanBannerSection"
->
-    <div
-        class="fan-banner-container"
-        id="fanBannerGrid"
-    ></div>
-</section>
-
+<div id="xqz-description" class="xqz-description"></div>
 <section class="spec-section">
     <div class="spec-image">
         <img id="specImage" src="">
@@ -86,18 +78,26 @@ const featureTargets = [
     "feature-compatibility",
     "feature-cooling"
 ];
-
 fetch("products.json")
 .then(res => res.json())
 .then(data => {
+
     currentProduct = data.products.find(p => p.id === productId);
 
     if(!currentProduct){
-        document.body.innerHTML = "<h1 style='color:white;padding:50px'>Product not found</h1>";
+        document.body.innerHTML =
+            "<h1 style='color:white'>Product not found</h1>";
         return;
     }
 
-    renderProduct(currentProduct);
+   renderProduct(currentProduct);
+
+if (currentProduct.xqzDescription) {
+    renderXQZDescription(currentProduct, "#xqz-description");
+} else {
+    document.getElementById("xqz-description").style.display = "none";
+}
+
 });
 
 function renderProduct(product){
@@ -645,6 +645,6 @@ function renderSpecs(product){
     });
 }
 </script>
-
+<script src="js/xqz-description.js"></script>
 </body>
 </html>
