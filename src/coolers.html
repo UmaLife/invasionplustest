@@ -30,7 +30,7 @@
         <div class="type-list">
 
             <a href="#" class="type-card-link"
-               onclick="filterProducts('All'); return false;">
+               onclick="filterProducts('Fan'); return false;">
 
                 <article class="card">
                     <img src="static/pc-fan.png" alt="All Coolers">
@@ -43,20 +43,20 @@
             </a>
 
             <a href="#" class="type-card-link"
-               onclick="filterProducts('AIO'); return false;">
+               onclick="filterProducts('Liquid Cooler'); return false;">
 
                 <article class="card">
                     <img src="static/liquid-cooler.png" alt="AIO Cooler">
 
                     <div class="type-name">
-                        <h3>AIO Cooler</h3>
+                        <h3>Liquid Cooler</h3>
                     </div>
                 </article>
 
             </a>
 
             <a href="#" class="type-card-link"
-               onclick="filterProducts('Air'); return false;">
+               onclick="filterProducts('Air Cooler'); return false;">
 
                 <article class="card">
                     <img src="static/cpu-fan.png" alt="Air Cooler">
@@ -82,7 +82,7 @@
     <div id="productArea" class="product-area">
         
         <!--buttons-->
-        <div class="filters">
+        <div id="filtersArea" class="filters">
 
             <div class="filters-left">
                 <button class="filter-toggle" onclick="toggleFilterPanel()">
@@ -146,7 +146,7 @@ async function loadCoolingProducts() {
     const data = await response.json();
 
     allProducts = data.products.filter(
-        product => product.category === "cooler"
+        product => product["product-type"]
     );
 
     displayProducts(allProducts);
@@ -210,6 +210,33 @@ function displayProducts(products) {
 
     observeProducts();
 }
+
+function filterProducts(type) {
+
+    if (type === "All") {
+        displayProducts(allProducts);
+        return;
+    }
+
+    const filtered = allProducts.filter(product =>
+        product["product-type"] === type
+    );
+
+    displayProducts(filtered);
+    
+    document.getElementById("filtersArea").scrollIntoView({
+    behavior: "smooth",
+    });
+
+}
+
+let selectedFilters = {
+    colors: [],
+    motherboards: [],
+    pcie: [],
+    fans: [],
+    coolers: []
+};
 
 // Product animation
 function observeProducts(){

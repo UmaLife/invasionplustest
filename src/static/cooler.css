@@ -513,6 +513,9 @@
     transform: translateY(0);
 }
 
+#filtersArea{
+    scroll-margin-top: 100px;
+}
 
 /* =========================
    RESPONSIVE

@@ -1614,7 +1614,7 @@
       "category": "cooler",
       
       "price": "RM159.00",
-      "product-type": "Air cooler",
+      "product-type": "Air Cooler",
       "description": "Invasion Plus Aeolus displays your CPU temperature and fan speed in real time, while six 6mm copper heat pipes quietly keep your system cool. Its PWM hydraulic-bearing fan runs smoothly and adjusts automatically. Designed for gaming and creative builds, Aeolus keeps your PC steady so you can enjoy your setup with complete peace of mind.",
       "heroTitle": "Exceptional Air Cooling Support",
       "heroDescription": "Featuring a Hight - Airflow layout and multiple fan mounts to keep your components cool under heavy workloads ",
@@ -2104,7 +2104,7 @@
 
   "price": "RM26.00 – RM129.00",
   "fans": "3 in 1 (With Hub) / 4 in 1 (With Hub) / 5 in 1 (With Hub) / Single",
-  "product-type": "ARGB Cooling Fan",
+  "product-type": "Fan",
   "description": "Invasion Plus XQZ Infinity Fan — Crafted to make every build feel alive. With captivating lighting, refined design, and smooth performance, it brings personality and energy to your setup while reflecting your unique style",
   "mainImage": "static/XQZ INFINITY FAN/XQZ FAN BLACK - 01.png",
   "specImage": "static/XQZ INFINITY FAN/5.png",
