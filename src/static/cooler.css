@@ -344,6 +344,22 @@
     cursor: not-allowed;
 }
 
+.clear-btn{
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #aaa;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+.clear-btn:hover{
+    border-color: #ffc700;
+    color: #ffc700;
+}
+
 /* sorting */
 .sorting{
     display: flex;
