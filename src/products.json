@@ -2245,58 +2245,105 @@
 },
 
     {
-      "id": "XTG-34VPRX",
-      "name": "XTG-34VPRX",
-      "category": "monitor",
-      "hot": false,
-      "new": false,
+    "id": "XTG-34VPRX",
+    "name": "XTG-34VPRX",
+    "category": "monitor",
+    "hot": false,
+    "new": false,
 
-      "price": "RM1,399.00",
-      "fans": "with 3 Infinity ARGB Fans",
-      "product-type": "M-ATX",
+    "price": "RM1,399.00",
+    "fans": "180Hz + 1ms",
+    "product-type": "34 Inch Curved",
 
-      "description": "",
+    "description": "Invasion Plus XTG-34VPRX transforms your setup with a stunning 34” UltraWide display, delivering a wider view, smoother motion, and vibrant visuals. Experience every detail with 180Hz speed, 1ms response, and 99% sRGB colour for a display that brings your games, creations, and content to life.",
 
-      "heroTitle": "Exceptional Air Cooling Support",
+    "heroTitle": "34” UltraWide Immersive Display",
 
-      "mainImage": "static/XTG-34VPRX/monitor1.png",
-      "specImage": "static/XTG-34VPRX/monitor3.png",
-      "specImage2": "static/XTG-34VPRX/monitor4.png",
+    "mainImage": "static/XTG-34VPRX/monitor1.png",
+    "specImage": "static/XTG-34VPRX/monitor3.png",
+    "specImage2": "static/XTG-34VPRX/monitor4.png",
 
-      "variations": {
-        "black": [
-          "static/XTG-34VPRX/monitor1.png",
-          "static/XTG-34VPRX/monitor2.png",
-          "static/XTG-34VPRX/monitor3.png",
-          "static/XTG-34VPRX/monitor4.png",
-          "static/XTG-34VPRX/monitor5.png"
-        ]
-      },
-
-      "specs": {
-        "Model": "XTG-34VPRX",
-        "Screen Type": "Curved Monitor",
-        "Screen Size": "34 Inch",
-        "Curvature": "1500R",
-        "Backlight Type": "LED",
-        "Resolution": "UWQHD 3440x1440P",
-        "Panel Type": "VA Panel",
-        "Refresh Rate": "180Hz",
-        "Response Time": "1ms",
-        "Color Support": "16.7M (Typical)",
-        "Maximum Brightness": "300 cd/m² (Typical)",
-        "Aspect Ratio": "21:9",
-        "Static Contrast Ratio": "3000:1 (Typical)",
-        "HDR": "400",
-        "sRGB": "99% Color Gamut",
-        "Adobe RGB": "100% G86% B77%",
-        "Color Depth": "8-bit",
-        "Viewing Angle": "H178° / V178°",
-        "Ports": "2x HDMI + 2x DP + Audio + DC",
-        "Max CPU Cooler Height": "174mm",
-        "Features": "G-Sync, FreeSync, Low Blue Light"
-      }
+    "variations": {
+      "black": [
+        "static/XTG-34VPRX/monitor1.png",
+        "static/XTG-34VPRX/monitor2.png",
+        "static/XTG-34VPRX/monitor3.png",
+        "static/XTG-34VPRX/monitor4.png",
+        "static/XTG-34VPRX/monitor5.png"
+      ]
     },
+
+    "sellingPoints": [
+      {
+        "icon": "fa-solid fa-display",
+        "title": "34” UltraWide Display"
+      },
+      {
+        "icon": "fa-solid fa-gamepad",
+        "title": "180Hz Ultra-Smooth Performance"
+      },
+      {
+        "icon": "fa-solid fa-bolt",
+        "title": "1ms Fast Response"
+      },
+      {
+        "icon": "fa-solid fa-palette",
+        "title": "99% sRGB Vivid Colour"
+      }
+    ],
+
+    "productFeatureGrid": {
+      "title": "Product Highlights",
+      "cards": [
+        {
+          "type": "wide",
+          "title": "34” UltraWide Immersive Display",
+          "subtitle": "More Screen. More Immersion.",
+          "description": "The expansive 34-inch UltraWide display provides more workspace and a wider field of view, making gaming, multitasking, and entertainment more immersive than ever.",
+          "image": "static/XTG-34VPRX/feature1.png"
+        },
+        {
+          "title": "180Hz Ultra-Smooth Performance",
+          "description": "Experience ultra-fluid gameplay with a 180Hz refresh rate, delivering smoother animations and faster responsiveness during every match.",
+          "image": "static/XTG-34VPRX/feature2.png"
+        },
+        {
+          "title": "1ms Fast Response",
+          "description": "A rapid 1ms response time reduces motion blur and ghosting, ensuring every frame remains sharp and responsive in fast-paced action.",
+          "image": "static/XTG-34VPRX/feature3.png"
+        },
+        {
+          "type": "wide",
+          "title": "99% sRGB Vivid Colour",
+          "description": "Enjoy rich, vibrant, and highly accurate colours with 99% sRGB coverage, ideal for gaming, movies, streaming, and creative work.",
+          "image": "static/XTG-34VPRX/feature4.png"
+        }
+      ]
+    },
+
+    "specs": {
+      "Model": "XTG-34VPRX",
+      "Screen Type": "Curved Monitor",
+      "Screen Size": "34 Inch",
+      "Curvature": "1500R",
+      "Backlight Type": "LED",
+      "Resolution": "UWQHD 3440 × 1440",
+      "Panel Type": "VA Panel",
+      "Refresh Rate": "180Hz",
+      "Response Time": "1ms",
+      "Color Support": "16.7M (Typical)",
+      "Maximum Brightness": "300 cd/m² (Typical)",
+      "Aspect Ratio": "21:9",
+      "Static Contrast Ratio": "3000:1 (Typical)",
+      "HDR": "HDR 400",
+      "sRGB": "99% Color Gamut",
+      "Adobe RGB": "100% R / 86% G / 77% B",
+      "Color Depth": "8-bit",
+      "Viewing Angle": "178° (H) / 178° (V)",
+      "Ports": "2 × HDMI + 2 × DisplayPort + Audio + DC",
+      "Features": "G-Sync Compatible, FreeSync, Low Blue Light"
+    }
+  },
 
       {
       "id": "XTG-49ARCX",
@@ -2304,15 +2351,13 @@
       "category": "monitor",
       "hot": true,
       "new": false,
+      "product-type": "Curved Monitor",
   
       "price": "RM2,899.00",
-      "fans": "with 3 Infinity ARGB Fans",
-      "product-type": "M-ATX",
-
-      "description": "",
+      "description": "Invasion Plus XTG-49ARCX delivers an immersive super ultrawide experience with its massive 49” curved display and 5K Realm resolution. Combining stunning visual clarity, smooth performance, and an expansive field of view, it transforms your setup with a seamless and premium display experience.",
 
       "mainImage": "static/XTG-49ARCX/monitor1.png",
-      "specImage": "static/XTG-49ARCX/monitor3.png",
+      "specImage": "static/XTG-49ARCX/monitor2.png",
       "specImage2": "static/XTG-49ARCX/monitor4.png",
 
       "variations": {
@@ -2325,8 +2370,66 @@
         ]
       },
 
+      "sellingPoints": [
+      {
+        "icon": "fa-solid fa-display",
+        "title": "5K Realm UltraWide"
+      },
+      {
+        "icon": "fa-solid fa-expand",
+        "title": "49” Super Ultrawide Immersion"
+      },
+      {
+        "icon": "fa-solid fa-arrows-to-eye",
+        "title": "1500R Curved Visual Experience"
+      },
+      {
+        "icon": "fa-solid fa-gamepad",
+        "title": "165Hz Smooth Gameplay"
+      },
+      {
+        "icon": "fa-solid fa-bolt",
+        "title": "1ms Fast Response"
+      }
+    ],
+
+    "productFeatureGrid": {
+      "title": "Product Highlights",
+      "cards": [
+        {
+          "type": "wide",
+          "title": "5K Realm UltraWide",
+          "subtitle": "5120 × 1440 Resolution",
+          "description": "Experience exceptional image clarity with 5K Realm resolution, delivering an expansive workspace and ultra-sharp details for gaming, multitasking, and content creation.",
+          "image": "static/XTG-49ARCX/feature1.png"
+        },
+        {
+          "title": "49” Super Ultrawide Immersion",
+          "description": "A massive 32:9 panoramic display provides a wider field of view, replacing dual-monitor setups with one seamless screen.",
+          "image": "static/XTG-49ARCX/feature2.png"
+        },
+        {
+          "title": "1500R Curved Visual Experience",
+          "description": "The immersive 1500R curvature wraps around your vision, bringing every corner of the screen closer for enhanced comfort and realism.",
+          "image": "static/XTG-49ARCX/feature3.png"
+        },
+        {
+          "type": "wide",
+          "title": "165Hz Smooth Gameplay",
+          "description": "Enjoy ultra-fluid visuals with a 165Hz refresh rate, ensuring smoother motion, lower latency, and a competitive edge in fast-paced games.",
+          "image": "static/XTG-49ARCX/feature4.png"
+        },
+        {
+          "type": "wide",
+          "title": "1ms Fast Response",
+          "description": "A rapid 1ms response time minimizes motion blur and ghosting, delivering sharper visuals during intense gaming and high-speed action.",
+          "image": "static/XTG-49ARCX/feature5.png"
+        }
+      ]
+    },
+
       "specs": {
-        "Model": "RM2,899.00",
+        "Model": "XTG-49ARCX",
         "Screen Type": "Curved Monitor",
         "Screen Size": "49 Inch",
         "Curvature": "1500R",
