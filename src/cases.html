@@ -88,6 +88,10 @@
                 <button class="filter-toggle" onclick="toggleFilterPanel()">
                     Filter by <i class="fa-solid fa-chevron-down"></i>
                 </button>
+
+                <button class="clear-btn" onclick="clearFilters()">
+                    Clear
+                </button>
                 
                 <div class="filter-panel" id="filterPanel">
 
@@ -445,6 +449,18 @@ function formatFilterName(value) {
 
 function escapeQuotes(value) {
     return String(value).replace(/'/g, "\\'");
+}
+
+function clearFilters() {
+    filters = {
+        colors: [],
+        types: [],
+        fans: []
+    };
+
+    document.querySelectorAll("input[type=checkbox]")
+       .forEach(c => c.checked = false);
+    displayProducts(allProducts);
 }
 
 //Effects

@@ -147,9 +147,6 @@
         fans: []
     };
 
-    /* =========================
-    LOAD PRODUCTS
-    ========================= */
     async function loadCoolingProducts() {
         const response = await fetch("products.json");
         const data = await response.json();
@@ -162,9 +159,6 @@
         initFilterOptions();
     }
 
-    /* =========================
-    DISPLAY PRODUCTS
-    ========================= */
     function displayProducts(products) {
 
         const productList = document.getElementById("cooling-product-list");
@@ -207,10 +201,31 @@
 
         observeProducts();
     }
+    
+    function filterProducts(type) {
 
-    /* =========================
-    FILTER CORE
-    ========================= */
+        // RESET all filters first (important)
+        filters.types = [];
+        filters.colors = [];
+        filters.fans = [];
+
+        // if "All" → show everything
+        if (type === "All") {
+            filteredProducts = [...allProducts];
+            displayProducts(filteredProducts);
+            return;
+        }
+
+        // apply type filter only
+        filters.types = [type];
+
+        applyFilters();
+
+        document.getElementById("filtersArea").scrollIntoView({
+            behavior: "smooth"
+        });
+    }
+
     function applyFilters() {
 
         const result = allProducts.filter(p => {
@@ -238,9 +253,6 @@
         displayProducts(result);
     }
 
-    /* =========================
-    TOGGLES
-    ========================= */
     function toggle(arr, value) {
         const i = arr.indexOf(value);
         if (i > -1) arr.splice(i, 1);
@@ -262,9 +274,6 @@
         applyFilters();
     }
 
-    /* =========================
-    BUILD FILTER UI (IMPORTANT)
-    ========================= */
     function initFilterOptions() {
 
         buildColors();
@@ -272,7 +281,6 @@
         buildFans();
     }
 
-    /* COLORS */
     function buildColors() {
         const el = document.getElementById("colorFilters");
         const set = new Set();
@@ -289,7 +297,6 @@
         `).join("");
     }
 
-    /* TYPES */
     function buildTypes() {
         const el = document.getElementById("typeFilters");
         const set = new Set();
@@ -323,17 +330,11 @@
         `).join("");
     }
 
-    /* =========================
-    PANEL TOGGLE
-    ========================= */
     function toggleFilterPanel() {
         const panel = document.getElementById("filterPanel");
         panel.classList.toggle("active");
     }
 
-    /* =========================
-    CLEAR FILTER
-    ========================= */
     function clearFilters() {
 
         filters = {
