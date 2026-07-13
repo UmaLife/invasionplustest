@@ -90,6 +90,11 @@ fetch("products.json")
         return;
     }
 
+    if (currentProduct.category === "monitor") {
+        window.location.replace(`product2-monitor.html?id=${currentProduct.id}`);
+        return;
+    }
+
    renderProduct(currentProduct);
 
 if (currentProduct.xqzDescription) {
