@@ -1651,6 +1651,31 @@
     "title": "PWM Hydraulic-Bearing Fan"
   }
 ],
+"xqzDescription": {
+  "features": [
+    {
+      "number": "1.1",
+      "title": "<strong>REAL-TIME DIGITAL</strong> DISPLAY",
+      "description": "Monitor CPU temperature and fan speed instantly.",
+      "image": "static/AEOLUS/1.jpg",
+      "textSide": "right"
+    },
+    {
+      "number": "1.2",
+      "title": "<strong>6× 6MM COPPER</strong> HEAT PIPES",
+      "description": "Fast heat transfer for efficient and reliable cooling.",
+      "image": "static/AEOLUS/2.jpg",
+      "textSide": "left"
+    },
+    {
+      "number": "1.3",
+      "title": "PWM <strong>HYDRAULIC-BEARING FAN</strong>",
+      "description": "Smooth, quiet operation with automatic fan-speed control.",
+      "image": "static/AEOLUS/3.jpg",
+      "textSide": "right"
+    }
+  ]
+},
   
       "specs": {
         "Model": "AEOLUS 50 PRO",
@@ -1721,6 +1746,82 @@
   }
 ],
 
+"xqzDescription": {
+  "features": [
+    {
+      "number": "2.1",
+      "title": "<strong>GATSBY-INSPIRED</strong> DUAL ALUMINIUM SIDE FRAMES",
+      "description": "Premium dual aluminium side frames crafted to make every build stand apart with a distinctive design.",
+      "image": "static/AERONIX/1.jpg",
+      "textSide": "right"
+    },
+    {
+      "number": "2.2",
+      "title": "LIVE <strong>FAN SPEED</strong> DISPLAY",
+      "description": "Monitor fan speed in real time for instant performance feedback at a glance.",
+      "image": "static/AERONIX/2.jpg",
+      "textSide": "left"
+    },
+
+    
+    {
+      "number": "2.3",
+      "title": "<strong>DAISY CHAIN</strong> CONNECTIVITY",
+      "description": "Simplify cable management with easy daisy chain connectivity for a cleaner-looking build.",
+      "image": "static/AERONIX/3.jpg",
+      "textSide": "right"
+    },
+    {
+      "number": "2.4",
+      "title": "FORWARD & <strong>REVERSE</strong> FAN OPTIONS",
+      "description": "Choose forward or reverse airflow to suit different cooling configurations and build styles.",
+      "image": "static/AERONIX/4.jpg",
+      "textSide": "left"
+    }
+  ],
+  "productSize": {
+    "number": "2.5",
+    "title": "PRODUCT <strong>SIZE</strong>",
+    "description": "365 × 122.5 × 25 mm",
+    "image": "static/AERONIX/5.png",
+    "textSide": "left",
+
+    "dimensions": [
+      {
+        "value": "365",
+        "label": "WIDTH",
+        "unit": "MM"
+      },
+      {
+        "value": "122.5",
+        "label": "HEIGHT",
+        "unit": "MM"
+      },
+      {
+        "value": "25",
+        "label": "THICKNESS",
+        "unit": "MM"
+      }
+    ]
+  },
+ "statements": [
+  {
+    "position": 2,
+    "eyebrow": "Designed to Stand Out",
+    "title": "Premium Aluminium. Intelligent Cooling.",
+    "description": "Gatsby-inspired dual aluminium side frames, live fan speed monitoring, and daisy chain connectivity combine to deliver a premium aesthetic with effortless installation.",
+    "background": "static/XQZ INFINITY FAN/bg.png"
+  },
+  {
+    "position": 4,
+    "eyebrow": "Engineered for Performance",
+    "title": "Optimized Airflow. Built to Perform.",
+    "description": "Forward and reverse fan options provide flexible airflow configurations, while the slim 365 mm radiator ensures efficient cooling for high-performance systems.",
+    "background": "static/XQZ INFINITY FAN/bg.png"
+  }
+]
+},
+
       "specs": {
         "Model": "AERONIX 360",
         "Product Size":"365(L) x 122.5(W) x 25(H) mm",
@@ -1788,6 +1889,87 @@
     "title": "Product Size"
   }
 ],
+"xqzDescription": {
+  "features": [
+    {
+      "number": "1.1",
+      "title": "<strong>DAISY CHAIN</strong> CONNECTIVITY",
+      "description": "Simplify cable management with easy daisy chain connectivity for a cleaner-looking build.",
+      "image": "static/AEROVIS/1.png",
+      "textSide": "left"
+    },
+    {
+      "number": "1.2",
+      "title": "<strong>TEMPERATURE</strong> DISPLAY",
+      "description": "Monitor coolant temperature in real time for accurate system status at a glance.",
+      "image": "static/AEROVIS/2.png",
+      "textSide": "right"
+    },
+    {
+      "number": "1.3",
+      "title": "LIVE <strong>FAN SPEED</strong> DISPLAY",
+      "description": "View fan speed instantly for quick performance monitoring and precise cooling control.",
+      "image": "static/AEROVIS/3.png",
+      "textSide": "right"
+    },
+    {
+      "number": "1.4",
+      "title": "DUAL ZONE <strong>ARGB</strong> LIGHTING",
+      "description": "Dual-zone ARGB illumination creates vibrant lighting effects for a stylish PC setup.",
+      "image": "static/AEROVIS/4.png",
+      "textSide": "left"
+    },
+    {
+      "number": "1.5",
+      "title": "FORWARD & <strong>REVERSE</strong> FAN OPTIONS",
+      "description": "Choose forward or reverse airflow to match different cooling configurations and build styles.",
+      "image": "static/AEROVIS/5.png",
+      "textSide": "right"
+    }
+  ],
+  "productSize": {
+    "number": "1.6",
+    "title": "PRODUCT <strong>SIZE</strong>",
+    "description": "360 × 120 × 30 mm",
+    "image": "static/AEROVIS/6.png",
+    "textSide": "right",
+
+    "dimensions": [
+      {
+        "value": "360",
+        "label": "WIDTH",
+        "unit": "MM"
+      },
+      {
+        "value": "120",
+        "label": "HEIGHT",
+        "unit": "MM"
+      },
+      {
+        "value": "30",
+        "label": "THICKNESS",
+        "unit": "MM"
+      }
+    ]
+  },
+
+  "statements": [
+    {
+      "position": 2,
+      "eyebrow": "Designed to Stand Out",
+      "title": "Smarter Monitoring. Cleaner Builds.",
+      "description": "Real-time temperature and fan speed displays, combined with daisy chain connectivity, deliver intelligent monitoring and a cleaner installation experience.",
+      "background": "static/XQZ INFINITY FAN/bg.png"
+    },
+    {
+      "position": 4,
+      "eyebrow": "Engineered for Performance",
+      "title": "Brilliant Lighting. Flexible Airflow.",
+      "description": "Dual-zone ARGB lighting and forward or reverse fan options provide eye-catching visuals and optimized airflow for every PC build.",
+      "background": "static/XQZ INFINITY FAN/bg.png"
+    }
+  ]
+},
       "specs": {
         "Model": "AEROVIS",
         "Product Size":"365(L) x 122.5(W) x 25(H) mm",
@@ -1864,6 +2046,62 @@
     "title": "Braided Teflon Tubing"
   }
 ],
+"xqzDescription": {
+  "features": [
+    {
+      "number": "3.1",
+      "title": "<strong>3.9” IPS LCD</strong> DISPLAY",
+      "description": "Crisp visuals with vibrant details and personalized customization.",
+      "image": "static/FROST VISION 360/1.png",
+      "textSide": "left"
+    },
+    {
+      "number": "3.2",
+      "title": "<strong>MAGNETIC</strong> MOUNTING DESIGN",
+      "description": "Flexible positioning for a clean and unique setup.",
+      "image": "static/FROST VISION 360/2.png",
+      "textSide": "right"
+    },
+    {
+      "number": "3.3",
+      "title": "FLUID DYNAMIC <strong>BEARING FAN</strong>",
+      "description": "Smooth and reliable performance with reduced noise.",
+      "image": "static/FROST VISION 360/3.png",
+      "textSide": "right"
+    },
+    {
+      "number": "3.4",
+      "title": "<strong>ALUMINIUM</strong> RADIATOR",
+      "description": "Efficient heat dissipation for better cooling performance.",
+      "image": "static/FROST VISION 360/4.png",
+      "textSide": "right"
+    },
+    {
+      "number": "3.5",
+      "title": "<strong>BRAIDED TEFLON</strong> TUBING",
+      "description": "Durable tubing with a refined, premium finish.",
+      "image": "static/FROST VISION 360/5.png",
+      "textSide": "left"
+    }
+  ],
+
+  "statements": [
+    {
+      "position": 2,
+      "eyebrow": "Designed to Stand Out",
+      "title": "Brilliant Display. Effortless Installation.",
+      "description": "A vibrant 3.9-inch IPS LCD display and magnetic mounting design combine to deliver stunning visuals with flexible positioning for a cleaner, more personalized build.",
+      "background": "static/XQZ INFINITY FAN/bg.png"
+    },
+    {
+      "position": 4,
+      "eyebrow": "Engineered for Performance",
+      "title": "Efficient Cooling. Built to Last.",
+      "description": "Fluid dynamic bearing fans, a high-efficiency aluminium radiator, and braided Teflon tubing work together to provide reliable cooling performance and long-lasting durability.",
+      "background": "static/XQZ INFINITY FAN/bg.png"
+    }
+  ]
+},
 
   "specs": {
     "Fan Specification": "",
@@ -1959,6 +2197,63 @@
     "title": "Braided Teflon Tubing"
   }
 ],
+"xqzDescription": {
+  "features": [
+    {
+      "number": "2.1",
+      "title": "<strong>3.9” IPS LCD</strong> DISPLAY",
+      "description": "Crisp visuals with vibrant details and personalized customization.",
+      "image":  "static/FROST VISION 240/1.png",
+      "textSide": "right"
+    },
+    {
+      "number": "2.2",
+      "title": "<strong>MAGNETIC</strong> MOUNTING DESIGN",
+      "description": "Flexible positioning for a clean and unique setup.",
+      "image":  "static/FROST VISION 240/2.png",
+      "textSide": "left"
+    },
+    {
+      "number": "2.3",
+      "title": "FLUID DYNAMIC <strong>BEARING FAN</strong>",
+      "description": "Smooth and reliable performance with reduced noise.",
+      "image":  "static/FROST VISION 240/3.png",
+      "textSide": "left"
+    },
+    {
+      "number": "2.4",
+      "title": "<strong>ALUMINIUM</strong> RADIATOR",
+      "description": "Efficient heat dissipation for better cooling performance.",
+      "image":  "static/FROST VISION 240/4.png",
+      "textSide": "left"
+    }
+  ],
+
+  "productSize": {
+    "number": "2.5",
+    "title": "<strong>BRAIDED TEFLON</strong> TUBING",
+    "description": "Durable tubing with a refined, premium finish.",
+    "image":  "static/FROST VISION 240/5.png"
+    
+  },
+
+  "statements": [
+    {
+      "position": 2,
+      "eyebrow": "Smart Display Technology",
+      "title": "3.9” IPS LCD Customization",
+      "description": "Display system information, animations, or personalized content with a vibrant IPS LCD screen and convenient magnetic mounting design.",
+      "background": "static/XQZ INFINITY FAN/bg.png"
+    },
+    {
+      "position": 4,
+      "eyebrow": "Built for Cooling Performance",
+      "title": "Efficient Cooling Reliable Operation",
+      "description": "A high-performance aluminium radiator, Fluid Dynamic Bearing fan, and braided Teflon tubing work together to deliver powerful, quiet, and long-lasting cooling.",
+      "background": "static/XQZ INFINITY FAN/bg.png"
+    }
+  ]
+},
 
   "specs": {
     "Fan Specification": "",
@@ -2063,6 +2358,69 @@
     "title": "3,300RPM Three-Phase Motor"
   }
 ],
+"xqzDescription": {
+  "features": [
+    {
+      "number": "1.1",
+      "title": "<strong>6.7” ULTRA-LARGE</strong> 90° CURVED 2K DISPLAY",
+      "description": "A bigger, immersive display with sharp details and stunning clarity.",
+      "image": "static/POSEIDON/1.png",
+      "textSide": "left"
+    },
+    {
+      "number": "1.2",
+      "title": "<strong>60HZ SMOOTH</strong> DISPLAY WITH 400 NITS BRIGHTNESS",
+      "description": "Delivers fluid visuals with bright and clear viewing.",
+      "image": "static/POSEIDON/2.png",
+      "textSide": "left"
+    },
+    {
+      "number": "1.3",
+      "title": "<strong>AG ANTI-GLARE</strong> COATING",
+      "description": "Reduces glare for a clearer and more comfortable viewing experience.",
+      "image": "static/POSEIDON/3.png",
+      "textSide": "right"
+    },
+    {
+      "number": "1.4",
+      "title": "<strong>MAGNETIC</strong> QUICK-SWAP PUMP HEAD",
+      "description": "Easy installation with effortless customization.",
+      "image": "static/POSEIDON/4.png",
+      "textSide": "right"
+    },
+    {
+      "number": "1.5",
+      "title": "<strong>ENLARGED COPPER</strong> COLD PLATE",
+      "description": "Enhances heat transfer for efficient cooling performance.",
+      "image": "static/POSEIDON/5.png",
+      "textSide": "right"
+    },
+    {
+      "number": "1.6",
+      "title": "<strong>3,300RPM</strong> THREE-PHASE, SIX-POLE MOTOR",
+      "description": "Provides powerful and stable cooling performance.",
+      "image": "static/POSEIDON/6.png",
+      "textSide": "right"
+    }
+  ],
+
+  "statements": [
+    {
+      "position": 2,
+      "eyebrow": "Designed to Stand Out",
+      "title": "Bigger Display. Sharper Experience.",
+      "description": "The 6.7-inch 2K curved display, 60Hz refresh rate, 400 nits brightness, and AG anti-glare coating combine to deliver an immersive and crystal-clear viewing experience.",
+      "background": "static/XQZ INFINITY FAN/bg.png"
+    },
+    {
+      "position": 4,
+      "eyebrow": "Engineered for Performance",
+      "title": "Powerful Cooling. Built to Last.",
+      "description": "A magnetic quick-swap pump head, enlarged copper cold plate, and 3,300RPM three-phase six-pole motor work together to provide exceptional cooling efficiency and long-term reliability.",
+      "background": "static/XQZ INFINITY FAN/bg.png"
+    }
+  ]
+},
 
       "specs": {
       "Fan Specification": "",
