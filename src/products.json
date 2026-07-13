@@ -2260,7 +2260,7 @@
     "heroTitle": "34” UltraWide Immersive Display",
 
     "mainImage": "static/XTG-34VPRX/monitor1.png",
-    "specImage": "static/XTG-34VPRX/monitor3.png",
+    "specImage": "static/XTG-34VPRX/monitor2.png",
     "specImage2": "static/XTG-34VPRX/monitor4.png",
 
     "variations": {
@@ -2303,11 +2303,6 @@
           "image": "static/XTG-34VPRX/feature1.png"
         },
         {
-          "title": "180Hz Ultra-Smooth Performance",
-          "description": "Experience ultra-fluid gameplay with a 180Hz refresh rate, delivering smoother animations and faster responsiveness during every match.",
-          "image": "static/XTG-34VPRX/feature2.png"
-        },
-        {
           "title": "1ms Fast Response",
           "description": "A rapid 1ms response time reduces motion blur and ghosting, ensuring every frame remains sharp and responsive in fast-paced action.",
           "image": "static/XTG-34VPRX/feature3.png"
@@ -2317,6 +2312,11 @@
           "title": "99% sRGB Vivid Colour",
           "description": "Enjoy rich, vibrant, and highly accurate colours with 99% sRGB coverage, ideal for gaming, movies, streaming, and creative work.",
           "image": "static/XTG-34VPRX/feature4.png"
+        },
+        {
+          "title": "180Hz Ultra-Smooth Performance",
+          "description": "Experience ultra-fluid gameplay with a 180Hz refresh rate, delivering smoother animations and faster responsiveness during every match.",
+          "image": "static/XTG-34VPRX/feature2.png"
         }
       ]
     },
