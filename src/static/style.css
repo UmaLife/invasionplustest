@@ -100,18 +100,14 @@ section {
 
 .search-close{
     position: absolute;
-
     top: 40px;
     right: 40px;
-
     color: white;
     font-size: 24px;
     cursor: pointer;
-
     transition: .3s ease;
     z-index: 1001;
 }
-
 
 .search-close:hover{
     color: #f0a500;
@@ -376,7 +372,7 @@ body.page-blur > *:not(.search-overlay):not(.side-menu):not(.product-panel):not(
 }
 
 .menu-logo{
-    width: 150px;
+    width: 180px;
     margin-top: auto;
     padding-bottom: 25px;
     display: flex;
@@ -530,11 +526,11 @@ body.page-blur > *:not(.search-overlay):not(.side-menu):not(.product-panel):not(
 }
 .footer-logo {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .footer-logo img {
-    max-width: 200px; 
+    max-width: 300px; 
     height: auto;
 }
 .footer-logo-text{

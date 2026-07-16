@@ -2,10 +2,9 @@
 const footerTemplate = `
 <footer class="site-footer">
     <div class="footer-logo">
-        <img src="static/logo.png" alt="INVASION PLUS">
+        <img src="static/bann.png" alt="INVASION PLUS">
     </div>
 
-    <div class="footer-logo-text">BREAK THE NORM, FORGE TOMORROW.</div>
         <div class="footer-content">
             <div class="footer-links-group">
                 <div class="footer-column">
@@ -259,11 +258,8 @@ const navbarTemplate = `
         </ul>
         <div class="menu-logo">
             <a href="index.html">
-            <img src="static/logo.png" alt="logo">
+            <img src="static/bann.png" alt="logo">
             </a>
-        </div>
-        <div class="menu-bottom-text">
-            BREAK THE NORM, FORGE TOMORROW.
         </div>
         <div class="menu-socials">
             <a href="mailto:admin@invasionplus.com"><i class="fa-regular fa-envelope"></i></a>
