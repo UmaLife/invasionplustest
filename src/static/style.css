@@ -2496,3 +2496,66 @@ border-glow {
     }
 }
 
+.option-box,
+.variation-option{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Left align */
+    text-align: center;
+
+    min-height: 40px;
+    padding: 0 16px;
+     width: fit-content;
+     font-size: 12px;
+
+    background: #0b0b0b;
+    border: 1px solid transparent;
+    border-radius: 4px;
+
+    color: #fff;
+}
+
+.variation-option{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    width: 70px;
+    height: 30px;         
+
+    padding: 0 10px;  
+
+    background:#0b0b0b;
+    border:1px solid transparent;
+    border-radius:4px;
+
+    color:#ffffff72;
+    cursor:pointer;
+    transition:all .25s ease;
+}
+
+/* Selected colour */
+.variation-option.active{
+    border:1px solid #ffffff;
+    color:#ffffff;
+}
+
+/* Hover */
+.variation-option:hover{
+    border-color:#ffb300;
+    color:#ffcc33;
+
+    box-shadow:
+        0 0 8px rgba(255,179,0,.5),
+        0 0 18px rgba(255,179,0,.25);
+}
+
+#productType{
+    font-size: 12px; 
+}
+
+#fanOptions{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}

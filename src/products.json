@@ -7,8 +7,8 @@
       "hot": true,
       "new": true,
     
-      "price": "RM259.00",
-      "fans": "with 4 ARGB Fans",
+
+      "fans": "with 10 ARGB Fans",
       "product-type": "ATX",
       "description": "Invasion Plus E-20 combines a mostly mesh design with optimised vertical airflow, letting air move naturally and efficiently through the case. Supporting up to 10 fans, it keeps your system cool, steady, and effortless, in a clean, carefully considered layout — designed so every detail simply works for you.",
       "mainImage": "static/E20/E20.4.png",
@@ -113,13 +113,7 @@
       "category": "case",
       "hot": false,
       "new": false,
-     
-        "highlightImages": [
-          "static/ATLAS/atlas1.jpg",
-          "static/ATLAS/atlas2.jpg",
-          "static/ATLAS/atlas3.jpg"
-        ],
-      "price": "RM259.00 - RM269.00",
+    
       "fans": "with 4 Infinity ARGB Fans",
       "product-type": "M-ATX",
       "description": "The ATLAS is engineered to deliver a perfect balance of panoramic aesthetics, optimized airflow, and hardware compatibility. Designed with premium tempered glass, efficient mesh ventilation, and flexible cooling support, it provides a clean showcase for modern PC builds without compromising thermal performance.",
@@ -177,7 +171,7 @@
     {
       "title": "Optimized Mesh Ventilation",
       "description": "Top and right mesh panels enhance airflow and heat dissipation for stable and efficient performance.",
-      "image": "static/ATLAS/atlas2.jpg"
+      "image": "static/ATLAS/atlas2.png"
     },
     {
       "title": "Wide Compatibility",
@@ -224,7 +218,6 @@
       "category": "case",
       "hot": true,
       "new": true,
-      "price": "RM239.00",
       "fans": "with 3 ARGB Fans",
       "description": "Invasion Plus E-10 puts your build on full display with a sleek horizontal layout. Dual chambers thoughtfully separate power and storage from your components, keeping airflow smooth, noise low, and cables neatly out of sight. Personalize your rig and make it feel just right.",
       "heroTitle": "E-10 - Smart Cooling Where It Counts",
@@ -326,7 +319,6 @@
       "id": "t1000",
       "name": "T-1000",
       "category": "case",
-      "price": "RM259.00 - RM299.00",
       "hot": true,
       "new": true,
   
@@ -384,7 +376,7 @@
         {
           "title": "Bottom Dust Filter",
           "subtitle": "Easy Maintenance",
-          "description": "Compact showcase design provides a wider viewing experience.",
+          "description": "Reduces dust buildup for easier maintenance.",
           "image": "static/T-1000/2.png"
         },
 
@@ -436,7 +428,6 @@
       "hot": false,
       "new": true,
    
-      "price": "RM249.00 - RM259.00",
       "fans": "with 6 Infinity ARGB Fans",
       "product-type": "M-ATX",
       "description": "Erebus Invasion Plus Erebus blends a stunning panoramic view with a space-saving design and high-airflow ventilation mesh, delivering the perfect balance of cooling performance and eye-catching design that makes your build truly your own.",
@@ -545,8 +536,7 @@
       "hot": false,
       "new": false,
      
-      "price": "RM249.00 - RM259.00",
-      "fans": "with 6 Infinity ARGB Fans",
+      "fans": "with 4 Infinity ARGB Fans",
       "product-type": "ATX",
       "description": "The Invasion Genesis features tempered glass panels on the front, side, and top, offering a panoramic three-sided view that showcases your build with stunning clarity. Its aquarium-inspired design elegantly displays GPUs, motherboards, and cooling solutions, creating a visually striking centerpiece while maintaining a clean, minimalist aesthetic.",
       "heroTitle": "Exceptional Air Cooling Support",
@@ -665,7 +655,6 @@
       "category": "case",
       "hot": false,
       "new": false,
-      "price": "RM329.00 - RM339.00",
    
       "fans": "with 4 Infinity ARGB Fans",
       "product-type": "M-ATX",
@@ -788,7 +777,6 @@
       "category": "case",
       "hot": false,
       "new": false,
-      "price": "RM279.00 - RM329.00",
      
       "fans": "with 4 Infinity ARGB Fans",
       "description": "Invasion Plus Kratos features artistic geometric lines and an architectural front panel, highlighted by a subtle 5.5” front screen. Clean, modern, and quietly confident- made to give your setup a distinct presence.",
@@ -917,7 +905,6 @@
       "hot": false,
       "new": false,
   
-      "price": "RM309.00 - RM319.00",
       "fans": "with 6 Infinity ARGB Fans",
       "product-type": "ATX",
       "description": "Invasion Plus Thanatos features a refined vertical layout that optimizes airflow through natural heat rise, reduces desk space, and showcases your components in a clean, architectural form-crafted for balanced performance and a premium sanctuary.",
@@ -1023,8 +1010,6 @@
       "category": "case",
       "hot": false,
       "new": false,
-
-      "price": "RM249.00 - RM259.00",
       "fans": "with 3 Infinity ARGB Fans",
       "product-type": "M-ATX",
       "description": "Invasion Plus View 5 puts your build on full panoramic seaview, with its 5.5-inch TFT screen for crisp, vibrant visuals. Vertical airflow keeps it cool and smooth—make your rig truly your own.",
@@ -1157,8 +1142,7 @@
       "category": "case",
       "hot": false,
       "new": false,
-   
-      "price": "RM309.00 - RM319.00",
+
       "fans": "with 4 Infinity ARGB Fans",
       "product-type": "ATX",
       "description": "Invasion Plus Zoom puts your build on full panoramic seaview, where every detail can be truly appreciated and shine. With smart vertical airflow and refined mesh, your system stays smooth, quiet, and naturally cool. Balanced, alive, and artful—it just feels right the moment you power it up.",
@@ -1282,7 +1266,6 @@
   "hot": false,
   "new": false,
 
-  "price": "RM299.00",
   "fans": "with 6 Infinity ARGB Fans",
   "product-type": "",
   "description": "Invasion Plus Aether blends refined aesthetics with thoughtful design. The detachable top panel enhances accessibility and airflow flexibility, while seamless ARGB accents on the top and bottom create a subtle futuristic glow, adding a distinctive character to your setup.",
@@ -1402,7 +1385,6 @@
       "hot": false,
       "new": false,
 
-      "price": "RM259.00",
       "fans": "with 3 Infinity ARGB Fans",
       "product-type": "",
       "description":"  Invasion Plus Aether transforms your setup with its sleek design and bottom ARGB accent, creating a distinctive glow that brings your build to life. With efficient airflow, quick access, and a clean layout, it delivers the perfect balance of performance, functionality, and style.",
@@ -1509,7 +1491,6 @@
       "hot": false,
       "new": false,
 
-      "price": "RM269.00",
       "fans": "with 4 Infinity ARGB Fans",
       "product-type": "",
       "description":"   Invasion Plus Perseus brings an industrial- inspired design through its ABS and iron mesh front panel. The unique texture, combined with the left bottom mesh panel, blends airflow, durability, and design harmony into a chassis that reflects your personal style.",
@@ -1613,7 +1594,6 @@
       "name": "AEOLUS 50 PRO",
       "category": "cooler",
       
-      "price": "RM159.00",
       "product-type": "Air Cooler",
       "description": "Invasion Plus Aeolus displays your CPU temperature and fan speed in real time, while six 6mm copper heat pipes quietly keep your system cool. Its PWM hydraulic-bearing fan runs smoothly and adjusts automatically. Designed for gaming and creative builds, Aeolus keeps your PC steady so you can enjoy your setup with complete peace of mind.",
       "heroTitle": "Exceptional Air Cooling Support",
@@ -1702,7 +1682,6 @@
       "name": "AERONIX-360",
       "category": "cooler",
     
-      "price": "RM159.00",
       "product-type": "Fan",
       "fan": "Forward fan / Reverse Fan",
       "description": "Invasion Plus Aeronix 360 reflects thoughtful design and practical innovation, featuring Gatsby- inspired dual aluminium side frames, live fan speed monitoring, and daisy chain connectivity for a setup that feels uniquely yours.",
@@ -1844,7 +1823,6 @@
       "name": "AEROVIS",
       "category": "cooler",
      
-      "price": "RM179.00",
       "product-type": "Fan",
       "fan": "Forward fan / Reverse Fan",
       "description": "More than just cooling —Invasion Plus Aerovis 360 gives you smarter control, cleaner builds, and a more personalized setup with integrated monitoring, seamless connectivity, and three-zone ARGB lighting",
@@ -1992,7 +1970,7 @@
   "id": "frostvision360",
   "name": "FROST VISION 360",
   "category": "cooler",
-  "price": "RM 399.00",
+
   "product-type": "Liquid Cooler",
   "fan": "",
   "description": "Elevates your build with Frost Vision 360mm, 3.9” IPS LCD for crisp, custom visuals and magnetic mounting freedom for flexible positioning. Equipped with a fluid dynamic bearing fan, aluminium radiator, and braided Teflon tubing, it quietly maintains smooth, reliable cooling, while the display adds a subtle, distinctive touch that makes your setup uniquely yours.",
@@ -2142,7 +2120,7 @@
   "id": "frostvision240",
   "name": "FROST VISION 240",
   "category": "cooler",
-  "price": "RM 349.00",
+
   "product-type": "Liquid Cooler",
   "fan": "",
   "description": "Invasion Plus Frost Vision 240mm brings your build to life with a 3.9” IPS LCD for crisp, custom visuals and magnetic mounting freedom for effortless positioning. Its fluid dynamic bearing fan, aluminium radiator, and braided Teflon tubing quietly support your system, while the display adds a subtle, distinctive touch that makes your setup feel genuinely personal.",
@@ -2299,7 +2277,6 @@
       "hot": false,
       "new": false,
 
-      "price": "RM899.00 – RM909.00",
       "fans": "",
       "product-type": "Liquid Cooler",
       "description":"Invasion Plus Poseidon 360 brings together powerful cooling and refined aesthetics with its stunning 6.67” 90° curved 2K display. Featuring an enlarged copper cold plate and 3,300RPM three-phase, six-pole motor, it delivers reliable cooling performance while adding a subtle yet distinctive touch to your build.",
@@ -2460,7 +2437,6 @@
   "hot": false,
   "new": false,
 
-  "price": "RM26.00 – RM129.00",
   "fans": "3 in 1 (With Hub) / 4 in 1 (With Hub) / 5 in 1 (With Hub) / Single",
   "product-type": "Fan",
   "description": "Invasion Plus XQZ Infinity Fan — Crafted to make every build feel alive. With captivating lighting, refined design, and smooth performance, it brings personality and energy to your setup while reflecting your unique style",
@@ -2609,7 +2585,6 @@
     "hot": false,
     "new": false,
 
-    "price": "RM1,399.00",
     "fans": "180Hz + 1ms",
     "product-type": "34 Inch Curved",
 
@@ -2711,7 +2686,6 @@
       "new": false,
       "product-type": "Curved Monitor",
   
-      "price": "RM2,899.00",
       "description": "Invasion Plus XTG-49ARCX delivers an immersive super ultrawide experience with its massive 49” curved display and 5K Realm resolution. Combining stunning visual clarity, smooth performance, and an expansive field of view, it transforms your setup with a seamless and premium display experience.",
 
       "mainImage": "static/XTG-49ARCX/monitor1.png",
