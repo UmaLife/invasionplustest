@@ -33,14 +33,10 @@ section {
     align-items: center;
     padding: 20px 40px;
     z-index: 1000;
-    background: rgba(0,0,0,0.15);
-    backdrop-filter: blur(10px);
+    background: rgb(0, 0, 0);
     transition: 0.3s ease;
 }
-.navbar.scrolled{
-    background: rgba(0,0,0,0.75);
-    box-shadow: 0 5px 30px rgba(0,0,0,0.4);
-}
+
 .logo{
     position: absolute;
     left: 50%;
@@ -1511,7 +1507,7 @@ border-glow {
 .hero-content p{
     font-size: 1.2rem;
     line-height: 1.8;
-    color: #ffd000;
+    color: #fbb03b;
     max-width: 760px;
     margin: 0 auto;
 }
@@ -1519,7 +1515,7 @@ border-glow {
 .yellow-line{
     width: 140px;
     height: 4px;
-    background: #ffd000;
+    background: #fbb03b;
     margin: 35px auto 0;
     border-radius: 50px;
 }
@@ -1540,7 +1536,7 @@ border-glow {
 }
 
 .section-title span{
-    color:#ffd000;
+    color:#fbb03b;
 }
 
 /* ContactUs */
@@ -1606,7 +1602,7 @@ border-glow {
 .hero-text p{
     font-size: 1.2rem;
     line-height: 1.8;
-    color: #ffd000;
+    color: #fbb03b;
     max-width: 760px;
     margin: 0 auto;
 }
@@ -1614,7 +1610,7 @@ border-glow {
 .yellow-line{
     width: 140px;
     height: 4px;
-    background: #ffd000;
+    background: #fbb03b;
     margin: 35px auto 0;
     border-radius: 50px;
 }
@@ -1635,7 +1631,7 @@ border-glow {
 }
 
 .section-title span{
-    color:#ffd000;
+    color:#fbb03b;
 }
 
 /* CONTACT CARDS */
@@ -1679,13 +1675,13 @@ border-glow {
 .contact-card i{
     position:relative;
     font-size:36px;
-    color:#ffd000;
+    color:#fbb03b;
     margin-bottom:25px;
 }
 
 .contact-card h3{
     position:relative;
-    color:#ffd000;
+    color:#fbb03b;
     margin-bottom:15px;
     letter-spacing:1.5px;
 }
@@ -1721,7 +1717,7 @@ border-glow {
 }
 
 .map-content i{
-    color:#ffd000;
+    color:#fbb03b;
     font-size:58px;
     margin-bottom:20px;
     animation:pulse 1.5s infinite;
@@ -1753,14 +1749,14 @@ border-glow {
     width:220px;
     height:72px;
     border-radius:60px;
-    background:#ffd000;
+    background:#fbb03b;
     color:white;
     font-size:1.2rem;
     font-weight:800;
 
     transition:0.35s ease;
 
-    border:2px solid #ffd000;
+    border:2px solid #fbb03b;
 }
 .map-buttons a i{
     color:white;
@@ -1770,7 +1766,7 @@ border-glow {
 
 .map-buttons a:hover{
     background:white;
-    color:#ffd000;
+    color:#fbb03b;
     transform:translateY(-5px);
     box-shadow:
     0 0 18px rgba(255,208,0,0.6),
@@ -1779,7 +1775,7 @@ border-glow {
 
 
 .map-buttons a:hover i{
-    color:#ffd000;
+    color:#fbb03b;
 }
 
 @keyframes pulse{
@@ -1817,7 +1813,7 @@ border-glow {
 }
 .label,
 .section-label {
-    color: #ffc700;
+    color: #fbb03b;
     letter-spacing: 3px;
     font-size: 30px;
     margin-bottom: 20px;
@@ -1832,7 +1828,7 @@ border-glow {
 .line {
     width: 400px;
     height: 2px;
-    background: #ffc700;
+    background: #fbb03b;
     margin: 28px 0;
 }
 
@@ -1866,7 +1862,7 @@ border-glow {
 
 .icon{
     font-size:42px;
-    color:#ffc700;
+    color:#fbb03b;
     margin-bottom:25px;
     transition:.4s;
 }
@@ -1895,7 +1891,7 @@ border-glow {
 }
 
 .stat h2 {
-    color: #ffc700;
+    color: #fbb03b;
     font-size: 58px;
     margin-bottom: 10px;
 }
@@ -1907,7 +1903,7 @@ border-glow {
 }
 
 .stat-text h3 {
-    color: #ffc700;
+    color: #fbb03b;
     margin-top: 15px;
     line-height: 1.5;
     font-weight: 500;
@@ -1938,7 +1934,7 @@ border-glow {
 }
 
 .thank-you h4 {
-    color: #ffc700;
+    color: #fbb03b;
     margin: 25px 0;
 }
 
@@ -1959,7 +1955,7 @@ border-glow {
 .join h1 {
     font-size: 42px;
     letter-spacing: 10px;
-    color: #ffc700;
+    color: #fbb03b;
 }
 
 .join p {
@@ -1970,8 +1966,8 @@ border-glow {
 
 .buttons a {
     display: inline-block;
-    color: #ffc700;
-    border: 1px solid #ffc700;
+    color: #fbb03b;
+    border: 1px solid #fbb03b;
     padding: 13px 38px;
     margin: 0 10px;
     text-decoration: none;
@@ -1981,7 +1977,7 @@ border-glow {
 }
 
 .buttons a:hover {
-    background: #ffc700;
+    background: #fbb03b;
     color: white;
 }
 /*product page*/
