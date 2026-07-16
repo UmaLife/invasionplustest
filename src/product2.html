@@ -32,15 +32,23 @@
         <h1 id="productName"></h1>
         <h3 id="productPrice"></h3>
 
-        <div class="info-row">
-            <span>Variation</span>
-            <div id="colorOptions"></div>
-        </div>
+       <div class="info-row">
+    <span>Variation</span>
+    <div id="colorOptions" class="option-list"></div>
+</div>
 
-        <div class="info-row">
-            <span>Product Type</span>
-            <p id="productType"></p>
-        </div>
+<div class="info-row">
+    <span>Fan</span>
+    <div id="fanOptions" class="option-list">
+        <div class="option-box" id="productFans"></div>
+    </div>
+</div>
+
+<div class="info-row">
+    <span>Product Type</span>
+    <p id="productType"></p>
+</div>
+
 
         <p class="desc" id="productDesc"></p>
     </div>
@@ -78,7 +86,7 @@ const featureTargets = [
     "feature-compatibility",
     "feature-cooling"
 ];
-fetch("products.json")
+fetch(`products.json?v=${Date.now()}`)
 .then(res => res.json())
 .then(data => {
 
@@ -108,11 +116,40 @@ if (currentProduct.xqzDescription) {
 function renderProduct(product){
     document.title = product.name;
 
-    document.getElementById("productName").textContent = product.name;
-    document.getElementById("productPrice").textContent = product.price || "";
-    document.getElementById("productType").textContent = product["product-type"] || "";
-    document.getElementById("productDesc").textContent = product.description || "";
-    document.getElementById("specImage").src = product.specImage || product.mainImage;
+    document.getElementById("productName").textContent =
+        product.name;
+
+    document.getElementById("productPrice").textContent =
+        product.price || "";
+
+    document.getElementById("productType").textContent =
+        product["product-type"] || "";
+
+   const fanContainer = document.getElementById("fanOptions");
+fanContainer.innerHTML = "";
+
+if (product.fans) {
+
+    product.fans.split("/").forEach(fan => {
+
+        const box = document.createElement("div");
+        box.className = "option-box";
+        box.textContent = fan.trim();
+
+        fanContainer.appendChild(box);
+    });
+
+} else {
+
+    fanContainer.innerHTML =
+        `<div class="option-box">N/A</div>`;
+}
+
+    document.getElementById("productDesc").textContent =
+        product.description || "";
+
+    document.getElementById("specImage").src =
+        product.specImage || product.mainImage;
 
     setupImages(product);
     renderColors(product);
@@ -180,37 +217,48 @@ function initThumbArrows(){
     };
 }
 
-function renderColors(product){
+function renderColors(product) {
     const box = document.getElementById("colorOptions");
     box.innerHTML = "";
 
-    if(!product.variations) return;
+    // Products such as E-20 have no variations object
+    if (!product.variations) {
+        box.textContent = "Black";
+        return;
+    }
 
     Object.keys(product.variations).forEach((color, index) => {
-        const dot = document.createElement("span");
-        dot.className = "color-dot " + color;
 
-        if(index === 0){
-            dot.classList.add("active");
-        }
+        const option = document.createElement("button");
+        option.type = "button";
+        option.className = "variation-option";
 
-        dot.onclick = () => {
-            document.querySelectorAll(".color-dot")
-            .forEach(c => c.classList.remove("active"));
+        option.textContent =
+            color.toLowerCase() === "lcd"
+                ? "LCD"
+                : color.charAt(0).toUpperCase() +
+                  color.slice(1).toLowerCase();
 
-            dot.classList.add("active");
+        option.onclick = () => {
+
+            document.querySelectorAll(".variation-option")
+                .forEach(item =>
+                    item.classList.remove("active")
+                );
+
+            option.classList.add("active");
 
             currentImages = product.variations[color];
 
-            document.getElementById("mainImage").src = currentImages[0];
+            document.getElementById("mainImage").src =
+                currentImages[0];
 
             renderThumbs();
         };
 
-        box.appendChild(dot);
+        box.appendChild(option);
     });
 }
-
 function renderSellingPoints(product){
     const box = document.getElementById("sellingPoints");
     box.innerHTML = "";
