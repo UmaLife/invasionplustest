@@ -31,7 +31,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding: 10px 40px;
     z-index: 1000;
     background: rgb(0, 0, 0);
     transition: 0.3s ease;
@@ -55,7 +55,7 @@ section {
     display:flex;
     align-items: center;
     justify-content: flex-end;
-    gap:20px;
+    gap:10px;
 }
 .nav-icons div{
     cursor: pointer;
