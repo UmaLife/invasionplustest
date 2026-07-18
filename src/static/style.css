@@ -300,11 +300,11 @@ body.page-blur > *:not(.search-overlay):not(.side-menu):not(.product-panel):not(
     left: 0;
     width: 320px;
     height: 100%;
-    background: rgba(12, 12, 12, 0.98);
+    background:black;
     transform: translateX(-100%);
     transition: 0.4s ease;
     z-index: 1001;
-    border-right: 1px solid rgba(255,255,255,0.08);
+    border-right: 1px solid rgba(255, 255, 255, 0.158);
 }
 .side-menu.active{
     transform: translateX(0);
@@ -355,7 +355,7 @@ body.page-blur > *:not(.search-overlay):not(.side-menu):not(.product-panel):not(
     color: #cfcfcf;
     cursor: pointer;
     font-size: 1rem;
-    border-bottom: 1px solid rgba(255,255,255,0.06);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.158);
     transition: 0.3s ease;
 }
 .menu-content li a{
@@ -866,6 +866,11 @@ html {
     0 20px 60px rgba(0,0,0,.25);
 }
 .slide-card img {
+    width:90%;
+    height:100%;
+    display:block;
+    object-fit:cover;
+
     transform: scale(1.08);
     transition:
         transform 1.4s ease,
