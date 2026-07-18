@@ -37,16 +37,15 @@
     <div id="colorOptions" class="option-list"></div>
 </div>
 
-<div class="info-row">
+<div class="info-row" id="fanRow">
     <span>Fan</span>
-    <div id="fanOptions" class="option-list">
-        <div class="option-box" id="productFans"></div>
-    </div>
+    <div id="fanOptions" class="option-list"></div>
 </div>
-
-<div class="info-row">
+<div class="info-row" id="productTypeRow">
     <span>Product Type</span>
-    <p id="productType"></p>
+    <div class="option-list">
+        <div class="option-box" id="productType"></div>
+    </div>
 </div>
 
 
@@ -122,27 +121,32 @@ function renderProduct(product){
     document.getElementById("productPrice").textContent =
         product.price || "";
 
-    document.getElementById("productType").textContent =
-        product["product-type"] || "";
+    const productTypeRow = document.getElementById("productTypeRow");
+const productTypeBox = document.getElementById("productType");
 
-   const fanContainer = document.getElementById("fanOptions");
+if (product["product-type"]) {
+    productTypeRow.style.display = "";
+    productTypeBox.textContent = product["product-type"];
+} else {
+    productTypeRow.style.display = "none";
+}
+
+   const fanRow = document.getElementById("fanRow");
+const fanContainer = document.getElementById("fanOptions");
+
 fanContainer.innerHTML = "";
 
-if (product.fans) {
+if (!product.fans) {
+    fanRow.style.display = "none";
+} else {
+    fanRow.style.display = "";
 
     product.fans.split("/").forEach(fan => {
-
         const box = document.createElement("div");
         box.className = "option-box";
         box.textContent = fan.trim();
-
         fanContainer.appendChild(box);
     });
-
-} else {
-
-    fanContainer.innerHTML =
-        `<div class="option-box">N/A</div>`;
 }
 
     document.getElementById("productDesc").textContent =
@@ -222,10 +226,17 @@ function renderColors(product) {
     box.innerHTML = "";
 
     // Products such as E-20 have no variations object
-    if (!product.variations) {
-        box.textContent = "Black";
-        return;
-    }
+   if (!product.variations) {
+
+    const option = document.createElement("button");
+    option.type = "button";
+    option.className = "variation-option";
+    option.textContent = "Black";
+
+    box.appendChild(option);
+
+    return;
+}
 
     Object.keys(product.variations).forEach((color, index) => {
 

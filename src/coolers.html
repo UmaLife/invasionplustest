@@ -188,12 +188,25 @@
 
                     <img src="${image}">
 
-                    <div class="product-name">
-                        <h3>${product.name}</h3>
-                        <p>${product["product-type"] || ""}</p>
-                        <p>${variations}</p>
-                        <span class="price">${product.price}</span>
-                    </div>
+                  <div class="product-name">
+    <h3>${product.name}</h3>
+
+    <p>
+        Category:
+        ${product["product-type"] || "N/A"}
+    </p>
+
+    <p>
+        Variation:
+        ${variations}
+    </p>
+
+    <a href="product2.html?id=${product.id}"
+       class="product-learn-more"
+       onclick="event.stopPropagation()">
+        Learn More →
+    </a>
+</div>
 
                 </article>
             `;

@@ -2521,15 +2521,15 @@ border-glow {
     border:1px solid transparent;
     border-radius:4px;
 
-    color:#ffffff72;
+    color:#ffffff98;
     cursor:pointer;
     transition:all .25s ease;
 }
 
 /* Selected colour */
 .variation-option.active{
-    border:1px solid #ffffff;
-    color:#ffffff;
+    border:1px solid #ffffffc8;
+    color:#ffffff9f;
 }
 
 /* Hover */
@@ -2544,6 +2544,7 @@ border-glow {
 
 #productType{
     font-size: 12px; 
+    color: #ffffffbb;
 }
 
 #fanOptions{
