@@ -2521,7 +2521,7 @@ border-glow {
     border:1px solid transparent;
     border-radius:4px;
 
-    color:#ffffff98;
+    color:#ffffffd6;
     cursor:pointer;
     transition:all .25s ease;
 }
@@ -2544,11 +2544,15 @@ border-glow {
 
 #productType{
     font-size: 12px; 
-    color: #ffffffbb;
+    color: #ffffffcf;
 }
 
 #fanOptions{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+}
+
+#fanOptions .option-box {
+    color: #ffffffcf;
 }
