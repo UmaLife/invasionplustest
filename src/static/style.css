@@ -31,7 +31,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 40px;
+    padding: 18px 40px;
     z-index: 1000;
     background: rgb(0, 0, 0);
     transition: 0.3s ease;
@@ -59,7 +59,7 @@ section {
 }
 .nav-icons div{
     cursor: pointer;
-    font-size: 18px;
+    font-size: 25px;
 }
 .search-icon:hover{
     color: #fbb03b;
@@ -285,8 +285,8 @@ body.page-blur > *:not(.search-overlay):not(.side-menu):not(.product-panel):not(
     cursor: pointer;
 }
 .menu-icon span{
-    width: 15px;
-    height: 1px;
+    width: 18px;
+    height: 2px;
     background: white;
     display: block;
     transition: 0.3s ease;
@@ -866,7 +866,7 @@ html {
     0 20px 60px rgba(0,0,0,.25);
 }
 .slide-card img {
-    width:90%;
+    width:100%;
     height:100%;
     display:block;
     object-fit:cover;
