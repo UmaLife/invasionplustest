@@ -12,7 +12,7 @@
 }
 
 .search-label{
-    color: #f0a500;
+    color: #fbb03b;
     font-size: 0.85rem;
     font-weight: 700;
     letter-spacing: 3px;
@@ -88,7 +88,7 @@
 }
 
 .sorting select:hover{
-    border-color: #f0a500;
+    border-color: #fbb03b;
 }
 
 /*Products*/
@@ -180,7 +180,7 @@ transform: translateY(-60px);
 }
 
 .product:hover .product-name h3{
-    color: #f0a500;
+    color: #fbb03b;
 }
 
 .product-name p{
@@ -193,7 +193,7 @@ transform: translateY(-60px);
 .price-divider{
     width: 0;
     height: 4px;
-    background: #f0a500;
+    background: #fbb03b;
     border-radius: 20px;
     margin-bottom: 1.5rem;
     transition: width 0.4s ease;
@@ -219,7 +219,7 @@ transform: translateY(-60px);
 
 .product-learn-more{
     display: inline-block;
-    color: #f0a500;
+    color: #fbb03b;
     font-size: 1.1rem;
     font-weight: 600;
     text-decoration: none;

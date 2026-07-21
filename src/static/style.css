@@ -110,7 +110,7 @@ section {
 }
 
 .search-close:hover{
-    color: #f0a500;
+    color: #fbb03b;
     transform: rotate(90deg);
 } 
 
@@ -163,7 +163,7 @@ section {
 }
 
 .search-box input:focus{
-    border-color: #f0a500;
+    border-color: #fbb03b;
 
     box-shadow:
         0 0 20px rgba(240,165,0,.18);
@@ -194,7 +194,7 @@ section {
 
 .search-btn:hover{
     background: rgba(240,165,0,.1);
-    color: #f0a500;
+    color: #fbb03b;
 }
 
 /* Listing Area */
@@ -222,7 +222,7 @@ section {
 }
 
 .search-column h4{
-    color: #f0a500;
+    color: #fbb03b;
 
     font-size: .9rem;
     font-weight: 700;
@@ -259,7 +259,7 @@ section {
 }
 
 .close-btn:hover{
-    color: #ffc700;
+    color: #fbb03b;
     transform: rotate(90deg);
 }
 body.page-blur > *:not(.search-overlay):not(.side-menu):not(.product-panel):not(.navbar){
@@ -1032,7 +1032,7 @@ html {
     background:
         radial-gradient(
             350px circle at var(--glow-x) var(--glow-y),
-            rgba(255, 199, 0, 1),
+            #fbb03b,
             rgba(255, 199, 0, 0.6) 15%,
             rgba(255, 199, 0, 0.25) 30%,
             transparent 65%
@@ -1647,7 +1647,7 @@ border-glow {
     padding:45px 30px;
     min-height:240px;
     background:linear-gradient(145deg,#111,#070707);
-    border:1px solid rgba(255,209,0,.45);
+    border:1px solid #fbb03b;
     border-radius:16px;
     text-align:center;
     cursor:pointer;
@@ -1698,7 +1698,7 @@ border-glow {
 .location-box{
     margin-top:80px;
     position:relative;
-    border:1px solid rgba(255,209,0,.5);
+    border:1px solid #fbb03b;
     border-radius:20px;
     overflow:hidden;
     background:#111;
@@ -2026,13 +2026,13 @@ border-glow {
     border-radius:50%;
     border:1px solid rgba(255,196,0,.35);
     background:rgba(10,10,10,.85);
-    color:#ffc400;
+    color:#fbb03b;
     cursor:pointer;
     transition:.25s;
 }
 
 .thumb-arrow:hover{
-    background:#ffc400;
+    background:#fbb03b;
     color:#000;
     box-shadow:0 0 18px rgba(255,196,0,.35);
 }
@@ -2054,7 +2054,7 @@ border-glow {
 .thumbs img:hover,
 .thumbs img.active{
     opacity:1;
-    border-color:#ffc400;
+    border-color:#fbb03b;
     box-shadow:0 0 20px rgba(255,196,0,.25);
 }
 
@@ -2088,7 +2088,7 @@ border-glow {
 .hero-info h3{
     font-size:18px;
     font-weight:300;
-    color:#ffc700;
+    color:#fbb03b;
     margin-top:15px;
     margin-bottom:40px;
     opacity: 0.8;
@@ -2244,7 +2244,7 @@ border-glow {
 }
 
 .point:hover i{
-    color:#ffd56d;
+    color:#fbb03b;
     transform:scale(1.08);
     filter:drop-shadow(0 0 14px rgba(214,160,57,.85));
 }
@@ -2285,7 +2285,7 @@ border-glow {
     padding:60px;
 }
 .feature-box.active-feature{
-    border-color:#ffc700;
+    border-color:#fbb03b;
     box-shadow:
         0 0 40px rgba(255,199,0,.35),
         inset 0 0 25px rgba(255,199,0,.08);
@@ -2314,7 +2314,7 @@ border-glow {
 
 .feature-box h2,
 .feature-box h3{
-    color:#ffc700;
+    color:#fbb03b;
     text-transform:uppercase;
     letter-spacing:2px;
     margin-bottom:12px;
@@ -2539,8 +2539,8 @@ border-glow {
 
 /* Hover */
 .variation-option:hover{
-    border-color:#ffb300;
-    color:#ffcc33;
+    border-color:#fbb03b;
+    color:#fbb23d;
 
     box-shadow:
         0 0 8px rgba(255,179,0,.5),

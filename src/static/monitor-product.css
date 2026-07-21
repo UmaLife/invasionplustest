@@ -118,7 +118,7 @@ section {
 
 
 .search-close:hover{
-    color: #f0a500;
+    color: #fbb03b;
     transform: rotate(90deg);
 } 
 
@@ -171,7 +171,7 @@ section {
 }
 
 .search-box input:focus{
-    border-color: #f0a500;
+    border-color: #fbb03b;
 
     box-shadow:
         0 0 20px rgba(240,165,0,.18);
@@ -202,7 +202,7 @@ section {
 
 .search-btn:hover{
     background: rgba(240,165,0,.1);
-    color: #f0a500;
+    color: #fbb03b;
 }
 
 /* Listing Area */
@@ -230,7 +230,7 @@ section {
 }
 
 .search-column h4{
-    color: #f0a500;
+    color: #fbb03b;
 
     font-size: .9rem;
     font-weight: 700;
@@ -267,7 +267,7 @@ section {
 }
 
 .close-btn:hover{
-    color: #ffc700;
+    color: #fbb03b;
     transform: rotate(90deg);
 }
 body.page-blur > *:not(.search-overlay):not(.side-menu):not(.product-panel):not(.navbar){
@@ -1140,7 +1140,7 @@ html {
 
 .feature-header span{
     display:block;
-    color:#ff9800;
+    color:#fbb03b;
     font-size:11px;
     letter-spacing:3px;
     text-transform:uppercase;
@@ -1176,7 +1176,7 @@ html {
 
 .feature-card:hover{
     transform:translateY(-6px);
-    border-color:#ff9800;
+    border-color:#fbb03b;
     box-shadow:0 15px 40px rgba(255,152,0,.15);
 }
 
@@ -1193,7 +1193,7 @@ html {
     display:flex;
     justify-content:center;
     align-items:center;
-    color:#ff9800;
+    color:#fbb03b;
     font-size:22px;
     flex-shrink:0;
 }
@@ -1213,7 +1213,7 @@ html {
 
 .feature-info span{
     display:block;
-    color:#ff9800;
+    color:#fbb03b;
     font-size:13px;
     letter-spacing:2px;
     text-transform:uppercase;

@@ -62,7 +62,7 @@
 
 .breadcrumb span{
 
-    color:#f0a500;
+    color:#fbb03b;
 }
 
 .hero-left h1{
@@ -156,7 +156,7 @@
 
 .card:hover{
     transform: translateY(-10px) scale(1.02);
-    border-color: #f0a500;
+    border-color: #fbb03b;
     box-shadow: 0 10px 30px rgba(240,165,0,0.18);
 }
 
@@ -190,7 +190,7 @@
 }
 
 .card:hover .type-name h3{
-    color: #f0a500;
+    color: #fbb03b;
 }
 
 .card:hover .type-name h3::after{
@@ -259,8 +259,8 @@
 
 .filter-toggle:hover,
 .filter-toggle.active{
-    color: #ffc700;
-    border-color: #ffc700;
+    color: #fbb03b;
+    border-color: #fbb03b;
     transform: translateY(-3px);
 }
 
@@ -314,7 +314,7 @@
 
 
 .filter-panel .filter-close:hover{
-    color: #ffc700;
+    color: #fbb03b;
     transform: rotate(90deg);
 }
 
@@ -356,8 +356,8 @@
     transition: 0.25s ease;
 }
 .filter-option input:checked{
-    background: #f0a500;
-    border-color: #f0a500;
+    background: #fbb03b;
+    border-color: #fbb03b;
 }
 .filter-option input:checked::after{
     content: "";
@@ -375,7 +375,7 @@
     transform: rotate(45deg);
 }
 .filter-option:hover input{
-    border-color: #f0a500;
+    border-color: #fbb03b;
 }
 
 .filter-option span{
@@ -383,7 +383,7 @@
 }
 
 .filter-option em{
-    color: #f0a500;
+    color: #fbb03b;
     font-style: normal;
     font-size: 0.85rem;
 }
@@ -421,7 +421,7 @@
 }
 
 .sorting select:hover{
-    border-color: #f0a500;
+    border-color: #fbb03b;
 }
 
 
@@ -511,7 +511,7 @@
 }
 
 .product:hover .product-name h3{
-    color: #f0a500;
+    color: #fbb03b;
 }
 
 .product-name p{
@@ -524,7 +524,7 @@
 .price-divider{
     width: 0;
     height: 4px;
-    background: #f0a500;
+    background: #fbb03b;
     border-radius: 20px;
     margin-bottom: 1.5rem;
     transition: width 0.4s ease;
@@ -550,7 +550,7 @@
 
 .product-learn-more{
     display: inline-block;
-    color: #f0a500;
+    color: #fbb03b;
     font-size: 1.1rem;
     font-weight: 600;
     text-decoration: none;
