@@ -614,8 +614,8 @@
   },
   {
     "type": "wide",
-    "title": "Right Optimized Mesh Ventilation",
-    "description": "The ventilated right-side panel improves airflow for efficient cooling performance.",
+    "title": "Optimized Rear Mesh Ventilation",
+    "description": "The ventilated rear mesh panel improves airflow for efficient cooling performance.",
     "image": "static/GENESIS/GENESIS_FEA2.png"
   },
   {
@@ -743,9 +743,9 @@
     },
     {
       "type": "wide",
-      "title": "Optimized Mesh Ventilation",
+      "title": "Optimized Rear Mesh Ventilation",
       "subtitle": "",
-      "description": "Right-side mesh ventilation improves airflow performance.",
+      "description": "Rear mesh ventilation improves airflow performance.",
       "image": "static/GENESIS-M/3.png"
     },
     {
