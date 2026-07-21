@@ -62,7 +62,7 @@
     },
     {
       "title": "Full Seamless Curved Edge Mesh Design",
-      "description": "upgrade your build with standout style and airflow. .",
+      "description": "upgrade your build with standout style and airflow.",
       "image": "static/E20/e20_fea2.png"
     },
     {
@@ -74,7 +74,7 @@
       "type":"wide",
       "title": "Product Dimension",
       "subtitle":"L483mm*W238mm*H490mm",
-      "description": "I/O Ports USB",
+      "description": "I/O with dual USB 3.0, Type-C and HD Audio ports.",
       "image": "static/E20/e20_fea4.png"
     },
     {
@@ -100,7 +100,7 @@
         "I/O Port": "USB 3.0*2 + TYPE-C*1 + HD AUDIO",
         "3.5″ + 2.5″ Drive Bays": "2 x HDD + 3 x SSD",
         "PCI Slots": "7 Slots",
-        "Air Cooling": "<b>Rear</b> ~ 120 MM x 1<br><b>MB</b> ~ 120MM x 3 OR 140MM x 2<br><b>PSU</b> ~ 120MM x 3 OR 140MM x 3",
+        "Air Cooling": "<b>Rear</b> ~ 120 MM x 1<br><b>TOP</b> ~ 120MM x 3 OR 140MM x 3<br><b>MB</b> ~ 120MM x 3 OR 140MM x 2<br><b>PSU</b> ~ 120MM x 3 OR 140MM x 3",
         "Liquid Cooling": "<b>Top </b>~ 120 MM <br><b> Rear</b> ~ 240 MM <br><b> MB</b> ~ 180 MM",
         "CPU Cooler Height": "180 MM",
         "VGA Card Length": "480 MM without MB Fan <br> 470 MM with MB Fan"
