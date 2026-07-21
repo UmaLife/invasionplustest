@@ -61,11 +61,13 @@
       "image": "static/E20/e20_fea1.png"
     },
     {
+      "type": "wide",
       "title": "Full Seamless Curved Edge Mesh Design",
-      "description": "upgrade your build with standout style and airflow.",
+      "description": "Upgrade your build with standout style and airflow.",
       "image": "static/E20/e20_fea2.png"
     },
     {
+      "type": "wide",
       "title": "Back- Connect Ready",
       "description": "Designed for cleaner, cable-free looking build",
       "image": "static/E20/e20_fea3.png"
@@ -73,7 +75,7 @@
     {
       "type":"wide",
       "title": "Product Dimension",
-      "subtitle":"L483mm*W238mm*H490mm",
+      "subtitle":"L 483mm * W 238mm * H 490mm",
       "description": "I/O with dual USB 3.0, Type-C and HD Audio ports.",
       "image": "static/E20/e20_fea4.png"
     },
@@ -169,11 +171,13 @@
       "image": "static/ATLAS/atlas_fea1.png"
     },
     {
+      "type": "wide",
       "title": "Optimized Mesh Ventilation",
-      "description": "Top and right mesh panels enhance airflow and heat dissipation for stable and efficient performance.",
+      "description": "Top and rear mesh panels enhance airflow and heat dissipation for stable and efficient performance.",
       "image": "static/ATLAS/atlas2.png"
     },
     {
+      "type": "wide",
       "title": "Wide Compatibility",
       "description": "Supports M-ATX and ITX motherboards.",
       "image": "static/ATLAS/atlas_fea2.png"
@@ -265,24 +269,25 @@
   "title": "Product Highlights",
   "cards": [
     {
-       "type": "wide",
+      "type": "wide",
       "title": "Four-Sided Glass",
-      "subtitle": "Maximum viewing experience with a  display design.",
-      "description": "",
+      "description": "Maximum viewing experience with a  display design.",
       "image": "static/E10/2.png"
     },
 
     {
-      "title": "Dual Chamber Layout",
-      "subtitle": "Clean Airflow Design",
-      "description": "",
+      "type": "wide",
+      "title": "Horizontal Dual Chamber Layout",
+      "subtitle": "",
+      "description": "Seperate power and storage, smooth airflow and neat cables.",
       "image": "static/E10/1.jpg"
     },
 
     {
+      "type": "wide",
       "title": "Smart Case Layout",
-      "subtitle": "L436.5 × W315 × H300mm",
-      "description": "",
+      "subtitle": "L 436.5mm × W 315mm × H300mm",
+      "description": "I/O Ports USB",
       "image": "static/E10/3.png"
     },
     {
@@ -377,6 +382,7 @@
         },
       
         {
+          "type": "wide",
           "title": "Bottom Dust Filter",
           "subtitle": "Easy Maintenance",
           "description": "Reduces dust buildup for easier maintenance.",
@@ -384,8 +390,9 @@
         },
 
          {
+          "type": "wide",
           "title": "Smart Case Layout",
-          "subtitle": "L440 × W235 × H405mm",
+          "subtitle": "L 440mm × W 235mm × H405mm",
           "description": "",
           "image": "static/T-1000/3.png"
         },
@@ -480,16 +487,18 @@
       "type": "wide",
       "title": "Space-Saving Design",
       "subtitle": "Wide Showcase View",
-      "description": "Compact layout with a clear view to showcase your premium build.",
+      "description": "",
       "image": "static/EREBUS/1.png"
     },
     {
+      "type": "wide",
       "title": "Smart Case Layout",
       "subtitle": "",
-      "description": "L443 × W277 × H377mm",
+      "description": "L 443mm × W 277mm × H 377mm",
       "image": "static/EREBUS/2.png"
     },
     {
+      "type": "wide",
       "title": "Optimized Mesh Ventilation",
       "subtitle": "",
       "description": "Right-side mesh ventilation improves cooling and airflow performance.",
@@ -597,36 +606,37 @@
   "productFeatureGrid": {
   "title": "Product Highlights",
   "cards": [
-    {
-      "type": "wide",
-      "title": "Panoramic Design",
-      "subtitle": "Aquarium-Style Showcase",
-      "description": "The seamless 3-sided tempered glass design provides an unobstructed view of your build from every angle.",
-      "image": "static/GENESIS/GENESIS_FEA1.png"
-    },
-    {
-      "title": "Optimized Airflow",
-      "description": "Right-side mesh panel enhances air intake and heat dissipation for maximum performance.",
-      "image": "static/GENESIS/GENESIS_FEA2.png"
-    },
-    {
-      "title": "Bottom Magnetic Dust Filter",
-      "description": "Magnetic filters at bottom keeps your system clean and running smoothly.",
-      "image": "static/GENESIS/GENESIS_FEA3.png"
-    },
-    {
-      "type":"wide",
-      "title": "Wide Compatibility",
-      "description": "Supports ATX, M-ATX and ITX motherboards for flexible build options.",
-      "image": "static/GENESIS/GENESIS_FEA4.png"
-    },
-    {
-      "type": "wide",
-      "title": "Cooling Support",
-      "description": "Support up to 360mm radiator and 120mm air cooler height.",
-      "image": "static/GENESIS/GENESIS_FEA5.png"
-    }
-  ]
+  {
+    "type": "wide",
+    "title": "Panoramic 3-Sided Tempered Glass Design",
+    "description": "Seamless aquarium-style tempered glass panels provide a stunning panoramic view of your entire build.",
+    "image": "static/GENESIS/GENESIS_FEA1.png"
+  },
+  {
+    "type": "wide",
+    "title": "Right Optimized Mesh Ventilation",
+    "description": "The ventilated right-side panel improves airflow for efficient cooling performance.",
+    "image": "static/GENESIS/GENESIS_FEA2.png"
+  },
+  {
+    "type": "wide",
+    "title": "Bottom Magnetic Dust Filter",
+    "description": "The bottom magnetic dust filter is easy to remove and clean, helping keep your system dust-free.",
+    "image": "static/GENESIS/GENESIS_FEA3.png"
+  },
+  {
+    "type": "wide",
+    "title": "Wide Motherboard Support",
+    "description": "Supports ATX, Micro-ATX and Mini-ITX motherboards, including back-connect motherboard designs.",
+    "image": "static/GENESIS/GENESIS_FEA4.png"
+  },
+  {
+    "type": "wide",
+    "title": "Flexible Cooling Support",
+    "description": "Supports up to a 360mm liquid cooling radiator and CPU air coolers up to 160mm in height.",
+    "image": "static/GENESIS/GENESIS_FEA5.png"
+  }
+]
 },
 
 
@@ -721,16 +731,18 @@
       "type": "wide",
       "title": "Mini Aquarium Design",
       "subtitle": "Three-Sided Glass View",
-      "description": "Three-sided tempered glass design provides a premium showcase experience.",
+      "description": "The design provides a premium showcase experience.",
       "image": "static/GENESIS-M/1.png"
     },
     {
+      "type": "wide",
       "title": "Smart Case Layout",
       "subtitle": "",
-      "description": "L420 × W285 × H350mm",
+      "description": "L 420mm × W 285mm × H350mm",
       "image": "static/GENESIS-M/2.png"
     },
     {
+      "type": "wide",
       "title": "Optimized Mesh Ventilation",
       "subtitle": "",
       "description": "Right-side mesh ventilation improves airflow performance.",
@@ -847,22 +859,24 @@
       "image": "static/KRATOS/1.png"
     },
     {
+      "type": "wide",
       "title": "5.5-inch Screen Ready",
       "subtitle": "Smart Display Support",
       "description": "",
       "image": "static/KRATOS/2.png"
     },
     {
+      "type": "wide",
       "title": "Optimized Ventilation",
-      "subtitle": "Better Airflow",
-      "description": "",
+      "subtitle": "",
+      "description": "Better airflow improves cooling",
       "image": "static/KRATOS/4.png"
     },
     {
       "type": "wide",
       "title": "Smart Case Layout",
-      "subtitle": "L440 × W242 × H370mm",
-      "description": "Compact chassis design with convenient USB I/O connectivity.",
+      "subtitle": "L 440mm × W 242mm × H 370mm",
+      "description": "USB I/O connectivity.",
       "image": "static/KRATOS/3.png"
     },
     {
@@ -958,33 +972,35 @@
       "title": "Vertical Motherboard Placement",
       "subtitle": "Better Airflow",
       "description": "Vertical layout improves airflow efficiency for better cooling performance.",
-      "image": "static/thanatos/1.png"
+      "image": "static/THANATOS/1.png"
     },
     {
+      "type": "wide",
       "title": "Standing Graphic Card",
       "subtitle": "",
       "description": "Vertical GPU support reduces sag and improves GPU stability.",
-      "image": "static/GENESIS/2.png"
+      "image": "static/THANATOS/2.png"
     },
     {
+      "type": "wide",
       "title": "Smart Case Layout",
       "subtitle": "",
       "description": "L444 × W238 × H495mm",
-      "image": "static/GENESIS/3.png"
+      "image": "static/THANATOS/3.png"
     },
     {
       "type": "wide",
       "title": "Wide Compatibility",
       "subtitle": "ATX / Micro-ATX / Mini-ITX",
       "description": "Supports multiple motherboard sizes for flexible PC builds.",
-      "image": "static/GENESIS/4.png"
+      "image": "static/THANATOS/4.png"
     },
     {
       "type": "wide",
       "title": "Advanced Cooling Support",
       "subtitle": "360mm Liquid Cooling Ready",
       "description": "Supports up to 360mm liquid cooling and 120mm air cooling.",
-      "image": "static/GENESIS/5.png"
+      "image": "static/THANATOS/5.png"
     }
   ]
 },
@@ -1073,14 +1089,16 @@
       "image": "static/THE VIEW 5/1.png"
     },
     {
+      "type": "wide",
       "title": "Metal Top Cover",
       "subtitle": "Dust Filter Design",
       "description": "",
       "image": "static/THE VIEW 5/2.png"
     },
     {
+      "type": "wide",
       "title": "Smart Case Layout",
-      "subtitle": "L460 × W220 × H403mm",
+      "subtitle": "L 460mm × W 220mm × H 403mm",
       "description": "",
       "image": "static/THE VIEW 5/3.png"
     },
@@ -1212,11 +1230,13 @@
       "image": "static/ZOOM/zoom_fea1.png"
     },
     {
+      "type": "wide",
       "title": "Back-Connect Ready",
       "description": "Supports back-connect motherboards for cleaner cable management and smoother airflow.",
       "image": "static/ZOOM/zoom_fea2.png"
     },
     {
+      "type": "wide",
       "title": "Wide Compatibility",
       "description": "Supports ATX, Micro-ATX and Mini-ITX motherboards. ",
       "image": "static/ZOOM/zoom_fea3.png"
@@ -1224,7 +1244,7 @@
     {
       "type":"wide",
       "title": "Product Dimension",
-      "subtitle":"L 445mm *W 293mm *H 455mm",
+      "subtitle":"L 445mm * W 293mm * H 455mm",
       "description": "I/O Ports USB",
       "image": "static/ZOOM/zoom_fea4.png"
     },
@@ -1328,15 +1348,17 @@
         "image": "static/AETHER/1.png"
       },
       {
+        "type": "wide",
         "title": "Detachable Top Panel",
-        "subtitle": "Easy Access Design",
-        "description": "",
+        "subtitle": "",
+        "description": "Easy and quick access for cooling setup and maintainance",
         "image": "static/AETHER/2.png"
       },
       {
+        "type": "wide",
         "title": "Compact Panoramic View",
-        "subtitle": "Wide Showcase Display",
-        "description": "",
+        "subtitle": "",
+        "description": "Fits with smaller desks while showcasing your build with a wide view",
         "image": "static/AETHER/3.png"
       },
       {
@@ -1349,8 +1371,8 @@
       {
         "type": "wide",
         "title": "Smart Case Layout",
-        "subtitle": "L420 × W278 × H365mm",
-        "description": "Compact case size with convenient USB I/O connectivity.",
+        "subtitle": "L 420mm × W 278mm × H365mm",
+        "description": "USB I/O connectivity.",
         "image": "static/AETHER/5.png"
       },
       {
@@ -1440,12 +1462,14 @@
           "image": "static/HYPERION/1.png"
         },
         {
+          "type": "wide",
           "title": "Optimized Mesh Ventilation",
           "subtitle": "Better Cooling Airflow",
           "description": "Right-side mesh panel improves airflow and keeps components cooler.",
           "image": "static/HYPERION/2.png"
         },
         {
+          "type": "wide",
           "title": "Compact Panoramic View",
           "subtitle": "Wide Showcase Design",
           "description": "Compact design fits smaller spaces while providing a clear build showcase.",
@@ -1454,7 +1478,7 @@
         {
           "type": "wide",
           "title": "Smart Case Layout",
-          "subtitle": "L434 × W218 × H414mm",
+          "subtitle": "L 434mm × W 218mm × H 414mm",
           "description": "Optimized case size with convenient USB I/O connectivity.",
           "image": "static/HYPERION/4.png"
         },
@@ -1546,14 +1570,16 @@
           "image": "static/PERSEUS/1.png"
         },
         {
+          "type": "wide",
           "title": "Enhanced Mesh Ventilation",
           "subtitle": "Better Cooling Airflow",
           "description": "Left-side bottom ventilation improves airflow for efficient cooling performance.",
           "image": "static/PERSEUS/2.png"
         },
         {
+          "type": "wide",
           "title": "Smart Case Layout",
-          "subtitle": "L440 × W218 × H472mm",
+          "subtitle": "L 440mm × W 218mm × H 472mm",
           "description": "Optimized case size with convenient USB I/O connectivity.",
           "image": "static/PERSEUS/3.png"
         },

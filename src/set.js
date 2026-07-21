@@ -25,7 +25,7 @@ const footerTemplate = `
                         </li>
                         <li>
                             <a href="coolers.html">
-                                Cooling
+                                Coolers
                             </a>
                         </li>
                         <li>
@@ -226,7 +226,7 @@ const navbarTemplate = `
                     <h4>CATEGORIES</h4>
 
                     <a href="cases.html">Cases</a>
-                    <a href="cooling.html">Cooling</a>
+                    <a href="cooling.html">Coolers</a>
                     <a href="monitor.html">Monitors</a>
                 </div>
 
@@ -285,11 +285,11 @@ const navbarTemplate = `
         </a>
         <a href="coolers.html" class="product-item">
             <img src="static/cooling.png">
-            <span>Cooling</span>
+            <span>Coolers</span>
         </a>
         <a href="monitors.html" class="product-item">
             <img src="static/monitor.png">
-            <span>Monitor</span>
+            <span>Monitors</span>
         </a>
 
     </div>
