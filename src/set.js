@@ -226,7 +226,7 @@ const navbarTemplate = `
                     <h4>CATEGORIES</h4>
 
                     <a href="cases.html">Cases</a>
-                    <a href="cooling.html">Coolers</a>
+                    <a href="coolers.html">Coolers</a>
                     <a href="monitors.html">Monitors</a>
                 </div>
 
