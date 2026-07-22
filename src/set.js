@@ -212,14 +212,14 @@ const navbarTemplate = `
 
                     <a href="product2.html?id=e20">E-20</a>
                     <a href="product2.html?id=t1000">T-1000</a>
-                    <a href="product2.html?id=xtg-49arcx">XTG-49ARCX</a>
+                    <a href="product2.html?id=XTG-49ARCX">XTG-49ARCX</a>
                 </div>
 
                 <div class="search-column">
                     <h4>NEW ARRIVALS</h4>
                     <a href="product2.html?id=atlas">ATLAS</a>
                     <a href="product2.html?id=aerovis">AEROVIS</a>
-                    <a href="product2.html?id=xtg-49arcx">XTG-49ARCX</a>
+                    <a href="product2.html?id=XTG-49ARCX">XTG-49ARCX</a>
                 </div>
 
                 <div class="search-column">
@@ -227,7 +227,7 @@ const navbarTemplate = `
 
                     <a href="cases.html">Cases</a>
                     <a href="cooling.html">Coolers</a>
-                    <a href="monitor.html">Monitors</a>
+                    <a href="monitors.html">Monitors</a>
                 </div>
 
             </div>
