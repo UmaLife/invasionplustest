@@ -172,7 +172,7 @@
     },
     {
       "type": "wide",
-      "title": "Optimized Mesh Ventilation",
+      "title": "Optimized Airflow",
       "description": "Top and rear mesh panels enhance airflow and heat dissipation for stable and efficient performance.",
       "image": "static/ATLAS/atlas2.png"
     },
@@ -407,7 +407,7 @@
 
         {
           "type": "wide",
-          "title": "Radiator Support",
+          "title": "Cooling Support",
           "subtitle": "Cooling Ready",
           "description": "Designed for improved cooling performance.",
           "image": "static/T-1000/5.png"
@@ -486,7 +486,7 @@
     {
       "type": "wide",
       "title": "Space-Saving Design",
-      "subtitle": "Wide Showcase View",
+      "subtitle": "With wide and clear view to showcase your build",
       "description": "",
       "image": "static/EREBUS/1.png"
     },
@@ -530,7 +530,7 @@
         "Type C x 1": "Included",
         "Motherboard Support": "ITX / M-ATX",
         "PSU Port": "Rear side / ATX",
-        "Size": "<b>Front</b>~ N/A <br><b>Top </b>~ 3 x 120mm (Fan Optional) - support 360mm liquid cooler <br><b> Rear</b> ~ 1 x 120mm (Fan optional) - support 120mm liquid cooler <br><b>Bottom</b> ~ 3 x 120mm (Fan optional) ",
+        "Size": "<b>M/B </b>~ 2 x 120mm(Fan optional)  <br><b>Top </b>~ 3 x 120mm (Fan Optional) - support 360mm liquid cooler <br><b> Rear</b> ~ 1 x 120mm (Fan optional) - support 120mm liquid cooler <br><b>Bottom</b> ~ 3 x 120mm (Fan optional) ",
         "Drive Bays": "5.25″ ODD x0 <br>3.5″ HDD x2<br>2.5″ SSD x2",
         "PCI Slots": "x 5",
         "Product Dimesion": "<b>Chassis size</b> ~ 430(L) x 227(W) x 355mm (H) <br><b>Product Size</b> ~ 443(L) x 277(W) x 377mm (H) <br><b>Carton Size</b> ~ 432(L) x 344(W) x 515mm (H) ",
