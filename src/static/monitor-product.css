@@ -2514,6 +2514,12 @@ border-glow {
     line-height:1.6;
 }
 
+.disclaimer{
+    color:#aaa;
+    font-size:12px;
+    margin-top:18px;
+}
+
 /* MOBILE */
 @media(max-width:900px){
     .product-hero{

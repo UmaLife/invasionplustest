@@ -48,7 +48,7 @@
     },
     {
       "icon":"fa-solid fa-temperature-arrow-up",
-      "title":"Radiator support"
+      "title":"Cooling support"
     }
   ],
   "productFeatureGrid": {
@@ -87,7 +87,7 @@
     },
     {
       "type":"wide",
-      "title":"Radiator support",
+      "title":"Cooling support",
       "description":"Liquid cooling up to 360mm, air cooling up to 120mm",
       "image":"static/E20/e20_fea5.png"
     }
@@ -103,7 +103,7 @@
         "3.5″ + 2.5″ Drive Bays": "2 x HDD + 3 x SSD",
         "PCI Slots": "7 Slots",
         "Air Cooling": "<b>Rear</b> ~ 120 MM x 1<br><b>TOP</b> ~ 120MM x 3 OR 140MM x 3<br><b>MB</b> ~ 120MM x 3 OR 140MM x 2<br><b>PSU</b> ~ 120MM x 3 OR 140MM x 3",
-        "Liquid Cooling": "<b>Top </b>~ 120 MM <br><b> Rear</b> ~ 240 MM <br><b> MB</b> ~ 180 MM",
+        "Liquid Cooling": "<b>Top </b>~ 120 MM <br><b> Rear</b> ~ 240 MM <br><b> MB</b> ~ 240 MM",
         "CPU Cooler Height": "180 MM",
         "VGA Card Length": "480 MM without MB Fan <br> 470 MM with MB Fan"
       }
@@ -367,7 +367,7 @@
       
       {
         "icon": "fa-solid fa-fan",
-        "title": "Radiator Support"
+        "title": "Cooling Support"
       }
     ],
       "productFeatureGrid": {
@@ -440,7 +440,7 @@
        "price":"",
       "fans": "with 6 Infinity ARGB Fans",
       "product-type": "M-ATX",
-      "description": "Erebus Invasion Plus Erebus blends a stunning panoramic view with a space-saving design and high-airflow ventilation mesh, delivering the perfect balance of cooling performance and eye-catching design that makes your build truly your own.",
+      "description": "Invasion Plus Erebus blends a stunning panoramic view with a space-saving design and high-airflow ventilation mesh, delivering the perfect balance of cooling performance and eye-catching design that makes your build truly your own.",
       "heroTitle": "Compact Desisn Maximum Domination",
       "heroDescription": "Tempered glass elegance meets high-performance airflow engineering.",
       "mainImage": "static/EREBUS/EREBUS BLACK - 01.png",
@@ -469,7 +469,7 @@
   },
   {
     "icon": "fa-solid fa-wind",
-    "title": "Optimized Mesh Ventilation"
+    "title": "Optimized Ventilation"
   },
   {
     "icon": "fa-solid fa-microchip",
@@ -477,7 +477,7 @@
   },
   {
     "icon": "fa-solid fa-fan",
-    "title": "Radiator Support"
+    "title": "Cooling Support"
   }
 ],
 "productFeatureGrid": {
@@ -499,9 +499,9 @@
     },
     {
       "type": "wide",
-      "title": "Optimized Mesh Ventilation",
+      "title": "Optimized Ventilation",
       "subtitle": "",
-      "description": "Right-side mesh ventilation improves cooling and airflow performance.",
+      "description": "Right-side ventilation improves cooling and airflow performance.",
       "image": "static/EREBUS/3.png"
     },
     {
@@ -514,7 +514,7 @@
     {
       "type": "wide",
       "title": "Cooling Support",
-      "subtitle": "Radiator Ready",
+      "subtitle": "Cooling Ready",
       "description": "Designed with radiator support for efficient cooling performance.",
       "image": "static/EREBUS/5.png"
     }
@@ -720,7 +720,7 @@
   },
   {
     "icon": "fa-solid fa-fan",
-    "title": "Radiator Support"
+    "title": "Cooling Support"
   }
 ],
 
@@ -757,7 +757,7 @@
     },
     {
       "type": "wide",
-      "title": "Radiator Support",
+      "title": "Cooling Support",
       "subtitle": "Cooling Ready",
       "description": "Flexible radiator support for improved thermal performance.",
       "image": "static/GENESIS-M/5.png"
@@ -795,25 +795,24 @@
       "price":"",
       "product-type": "ATX",
       "fans": "with 4 Infinity ARGB Fans",
-      "description": "Invasion Plus Kratos features artistic geometric lines and an architectural front panel, highlighted by a subtle 5.5” front screen. Clean, modern, and quietly confident- made to give your setup a distinct presence.",
+      "description": "Invasion Plus Kratos features artistic geometric lines and an architectural front panel, highlighted by a optional 5.5” front screen. Clean, modern, and quietly confident- made to give your setup a distinct presence.",
       "heroTitle": "Exceptional Air Cooling Support",
       "heroDescription": "Featuring a Hight - Airflow layout and multiple fan mounts to keep your components cool under heavy workloads ",
-      "mainImage": "static/KRATOS/KRATOS-BLACK-01.png",
-      "heroImage": "static/KRATOS/KRATOS-WHITE-01.png",
+      "mainImage": "static/KRATOS/KRATOS-LCD-00.png",
+      "heroImage": "static/KRATOS/KRATOS-LCD-00.png",
       "descriptionImage": "static/ALTAS-BLACK-03.png",
       "specImage": "static/KRATOS/KRATOS-BLACK-02.png",
       "variations": {
+      "lcd": [
+        "static/KRATOS/KRATOS-LCD-00.png",
+        "static/KRATOS/KRATOS-LCD-02.png",
+        "static/KRATOS/KRATOS-LCD-03.png"
+      ],
       "black": [
         "static/KRATOS/KRATOS-BLACK-01.png",
         "static/KRATOS/KRATOS-BLACK-02.png",
         "static/KRATOS/KRATOS-BLACK-03.png"
       ],
-       "lcd": [
-          "static/KRATOS/KRATOS-LCD-00.png",
-          "static/KRATOS/KRATOS-LCD-02.png",
-          "static/KRATOS/KRATOS-LCD-03.png"
-          
-        ],
       "white": [
         "static/KRATOS/KRATOS-WHITE-01.png",
         "static/KRATOS/KRATOS-WHITE-02.png",
@@ -844,7 +843,7 @@
   },
   {
     "icon": "fa-solid fa-fan",
-    "title": "Radiator Support"
+    "title": "Cooling Support"
   }
 ],
 
@@ -888,7 +887,7 @@
     },
     {
       "type": "wide",
-      "title": "Radiator Support",
+      "title": "Cooling Support",
       "subtitle": "Cooling Ready",
       "description": "Designed for enhanced cooling performance.",
       "image": "static/KRATOS/6.png"
@@ -1075,7 +1074,7 @@
   },
   {
     "icon": "fa-solid fa-fan",
-    "title": "Radiator Support"
+    "title": "Cooling Support"
   }
 ],
     "productFeatureGrid": {
@@ -1111,7 +1110,7 @@
     },
     {
       "type": "wide",
-      "title": "Radiator Support",
+      "title": "Cooling Support",
       "subtitle": "Cooling Ready",
       "description": "Flexible radiator support improves cooling performance.",
       "image": "static/THE VIEW 5/5.png"
@@ -1214,7 +1213,7 @@
     },
     {
       "icon": "fa-solid fa-fan",
-      "title": "Radiator support"
+      "title": "Cooling Support"
     },
     {
       "icon": "fa-solid fa-screwdriver-wrench",
@@ -1251,7 +1250,7 @@
     },
     {
       "type": "wide",
-      "title": "Radiator support:",
+      "title": "Cooling Support:",
       "description": "Supports up to 360mm liquid cooling and 120mm air coolers.",
       "image": "static/ZOOM/zoom_fea5.png"
     },
@@ -1272,7 +1271,7 @@
         "Top Panel": "Quick Detachable Metal Board",
         "I/O Port USB": "USB3.0 x 2 + TYPE-C; HD Audio x 1; Power Button",
         "PSU": "ATX PSU 200mm",
-        "Fan Support": "<b>Front</b>~ 12cm Fan x 2 <br><b>Left Rear </b>~ 12cm Fan x 1 <br><b>Top</b><b> ~ 12cm Fan x 3<br> Bottom</b> ~ 12cm Fan x 3 ",
+        "Fan Support": "<b>Front</b>~ 12cm Fan x 3 <br><b>Left Rear </b>~ 12cm Fan x 1 <br><b>Top</b><b> ~ 12cm Fan x 3<br> Bottom</b> ~ 12cm Fan x 3 ",
         "Radiator Support": "<b>Front</b>~ 240mm or 360mm <br><b>Top </b> ~ 240mm or 360mm",
         "Drive Bay 3.5″" : "1",
         "Drive Bay 2.5″" : "2",
@@ -1334,7 +1333,7 @@
     },
     {
       "icon": "fa-solid fa-fan",
-      "title": "Radiator Support"
+      "title": "Cooling Support"
     }
   ],
 
@@ -1378,7 +1377,7 @@
       },
       {
         "type": "wide",
-        "title": "Radiator Support",
+        "title": "Cooling Support",
         "subtitle": "360mm Liquid Cooling Ready",
         "description": "Top supports 360mm liquid cooling, side supports 240mm cooling, with rear and bottom fan support.",
         "image": "static/AETHER/6.png"
@@ -1449,7 +1448,7 @@
       },
       {
         "icon": "fa-solid fa-fan",
-        "title": "Radiator Support"
+        "title": "Cooling Support"
       }
     ],
     "productFeatureGrid": {
@@ -1485,7 +1484,7 @@
         },
         {
           "type": "wide",
-          "title": "Radiator Support",
+          "title": "Cooling Support",
           "subtitle": "360mm Liquid Cooling Ready",
           "description": "Supports top 360mm and rear 120mm liquid cooling with multiple fan options.",
           "image": "static/HYPERION/5.png"
@@ -1557,7 +1556,11 @@
       },
       {
         "icon": "fa-solid fa-fan",
-        "title": "Radiator Support"
+        "title": "Cooling Support"
+      },
+      {
+        "icon": "fa-solid fa-lightbulb",
+        "title": "Bottom ARGB Design"
       }
     ],
     "productFeatureGrid": {
@@ -1593,10 +1596,17 @@
         },
         {
           "type": "wide",
-          "title": "Radiator Support",
+          "title": "Cooling Support",
           "subtitle": "Dual 360mm Liquid Cooling Ready",
           "description": "Supports front and top 360mm liquid cooling, rear 120mm cooling, and PSU cover fans.",
           "image": "static/PERSEUS/5.png"
+        },
+        {
+          "type": "wide",
+          "title": "Bottom ARGB Design",
+          "subtitle": "Provides a sleek glow",
+          "description": "Integrated bottom ARGB lighting creates a sleek underglow effect, adding vibrant illumination that enhances your build with a clean, modern gaming aesthetic.",
+          "image": "static/PERSEUS/6.png"
         }
       ]
     },
