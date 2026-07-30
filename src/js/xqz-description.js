@@ -41,38 +41,37 @@
       }
     ];
   }
+function featureTemplate(feature, index) {
+  const side =
+    feature.textSide === "right"
+      ? "right"
+      : "left";
 
-  function featureTemplate(feature) {
-    const side =
-      feature.textSide === "right"
-        ? "right"
-        : "left";
+  const image =
+    escapeHtml(feature.image || "");
 
-    const image =
-      escapeHtml(feature.image || "");
+  return `
+    <section
+      id="xqz-feature-${index}"
+      class="xqz-feature is-${side}"
+      style="background-image:url('${image}')"
+    >
+      <div class="xqz-feature-content xqz-reveal">
+        <span class="xqz-number">
+          ${escapeHtml(feature.number)}
+        </span>
 
-    return `
-      <section
-  class="xqz-feature is-${side}"
-  style="background-image:url('${image}')"
->
-  <div class="xqz-feature-content xqz-reveal">
-        <div class="xqz-feature-content">
-          <span class="xqz-number">
-            ${escapeHtml(feature.number)}
-          </span>
+        <h2 class="xqz-title">
+          ${safeTitle(feature.title)}
+        </h2>
 
-          <h2 class="xqz-title">
-            ${safeTitle(feature.title)}
-          </h2>
-
-          <p class="xqz-description-text">
-            ${escapeHtml(feature.description)}
-          </p>
-        </div>
-      </section>
-    `;
-  }
+        <p class="xqz-description-text">
+          ${escapeHtml(feature.description)}
+        </p>
+      </div>
+    </section>
+  `;
+}
 
   function statementTemplate(statement) {
     if (!statement) {
@@ -247,7 +246,7 @@
     let html = "";
 
     features.forEach((feature, index) => {
-      html += featureTemplate(feature);
+      html += featureTemplate(feature, index);
 
       const featurePosition =
         index + 1;

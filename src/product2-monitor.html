@@ -5,12 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Product</title>
 <link rel="stylesheet" href="static/monitor-product.css">
+<link rel="stylesheet" href="static/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
 <main class="product-page">
+    <div class="product-navigation">
+    <a id="prevProduct" class="product-nav prev" href="#">
+        <i class="fa-solid fa-chevron-left"></i>
+        <span>Previous Product</span>
+    </a>
+
+    <a id="nextProduct" class="product-nav next" href="#">
+        <span>Next Product</span>
+        <i class="fa-solid fa-chevron-right"></i>
+    </a>
+</div>
 
 <section class="product-hero">
     <div class="thumb-panel">
@@ -91,6 +103,7 @@ fetch("products.json")
 .then(data => {
 
     currentProduct = data.products.find(p => p.id === productId);
+    setupProductNavigation(data.products);
 
     if(!currentProduct){
         document.body.innerHTML =
@@ -107,6 +120,47 @@ if (currentProduct.xqzDescription) {
 }
 
 });
+
+function getProductPage(product) {
+    return product.category === "monitor"
+        ? "product2-monitor.html"
+        : "product2.html";
+}
+
+function setupProductNavigation(products) {
+    const currentIndex =
+        products.findIndex(product => product.id === productId);
+
+    const prev =
+        currentIndex > 0
+            ? products[currentIndex - 1]
+            : null;
+
+    const next =
+        currentIndex < products.length - 1
+            ? products[currentIndex + 1]
+            : null;
+
+    const prevBtn =
+        document.getElementById("prevProduct");
+
+    const nextBtn =
+        document.getElementById("nextProduct");
+
+    if (prev) {
+        prevBtn.href =
+            `${getProductPage(prev)}?id=${prev.id}`;
+    } else {
+        prevBtn.classList.add("disabled");
+    }
+
+    if (next) {
+        nextBtn.href =
+            `${getProductPage(next)}?id=${next.id}`;
+    } else {
+        nextBtn.classList.add("disabled");
+    }
+}
 
 function renderProduct(product){
     document.title = product.name;

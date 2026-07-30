@@ -12,6 +12,17 @@
 <body>
 
 <main class="product-page">
+<div class="product-navigation">
+    <a id="prevProduct" class="product-nav prev" href="#">
+        <i class="fa-solid fa-chevron-left"></i>
+        <span>Previous Product</span>
+    </a>
+
+    <a id="nextProduct" class="product-nav next" href="#">
+        <span>Next Product</span>
+        <i class="fa-solid fa-chevron-right"></i>
+    </a>
+</div>
 
 <section class="product-hero">
     <div class="thumb-panel">
@@ -57,10 +68,11 @@
 
 <section class="feature-section">
     <div class="feature-grid" id="featureGrid"></div>
-    <p class="disclaimer">*Please note that the images shown are for illustrative purposes only and may not represent the exact color or finish of the product.</p>
 </section>
 
 <div id="xqz-description" class="xqz-description"></div>
+    <p class="disclaimer">*Please note that the images shown are for illustrative purposes only and may not represent the exact color or finish of the product.</p>
+
 <section class="spec-section">
     <div class="spec-image">
         <img id="specImage" src="">
@@ -91,6 +103,7 @@ fetch(`products.json?v=${Date.now()}`)
 .then(data => {
 
     currentProduct = data.products.find(p => p.id === productId);
+    setupProductNavigation(data.products);
 
     if(!currentProduct){
         document.body.innerHTML =
@@ -299,29 +312,33 @@ function renderSellingPoints(product){
     initSellingPointJump();
 }
 
-function initSellingPointJump(){
-    document.querySelectorAll(".point").forEach(point => {
-        point.addEventListener("click", () => {
-            const targetId = point.dataset.target;
-            const target = document.getElementById(targetId);
+function initSellingPointJump() {
+  document.querySelectorAll(".point").forEach((point, index) => {
+    point.addEventListener("click", () => {
+      let target;
 
-            if(!target) return;
+      if (currentProduct.xqzDescription) {
+        target = document.getElementById(`xqz-feature-${index}`);
+      } else {
+        target = document.getElementById(
+          point.dataset.target
+        );
+      }
 
-            target.scrollIntoView({
-                behavior: "smooth",
-                block: "center"
-            });
+      if (!target) return;
 
-            document.querySelectorAll(".feature-box")
-            .forEach(box => box.classList.remove("active-feature"));
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
 
-            target.classList.add("active-feature");
+      target.classList.add("active-feature");
 
-            setTimeout(() => {
-                target.classList.remove("active-feature");
-            }, 1800);
-        });
+      setTimeout(() => {
+        target.classList.remove("active-feature");
+      }, 1800);
     });
+  });
 }
 
 function renderFeatureGrid(product){
@@ -633,6 +650,33 @@ function renderFanBanners(product){
         initFanRevealAnimation();
     });
 
+}
+function setupProductNavigation(products){
+
+    const currentIndex = products.findIndex(p => p.id === productId);
+
+    const prev = currentIndex > 0
+        ? products[currentIndex - 1]
+        : null;
+
+    const next = currentIndex < products.length - 1
+        ? products[currentIndex + 1]
+        : null;
+
+    const prevBtn = document.getElementById("prevProduct");
+    const nextBtn = document.getElementById("nextProduct");
+
+    if (prev) {
+        prevBtn.href = `product2.html?id=${prev.id}`;
+    } else {
+        prevBtn.classList.add("disabled");
+    }
+
+    if (next) {
+        nextBtn.href = `product2.html?id=${next.id}`;
+    } else {
+        nextBtn.classList.add("disabled");
+    }
 }
 
 function initFanRevealAnimation(){
