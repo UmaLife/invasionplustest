@@ -633,3 +633,652 @@
   filter: blur(0);
   transform: translateY(0);
 }
+
+/* =========================================================
+   mobile */
+   @media (max-width: 768px) {
+    body {
+        min-width: 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 768px) {
+.product-title{
+        font-size:40px;
+        letter-spacing:6px;
+        line-height:1.1;
+        margin-bottom: 15px;
+    }
+    .product-navigation {
+        width: calc(100% - 30px);
+        height: 55px;
+        margin: 15px auto 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .product-nav {
+        flex: 1;
+        min-width: 0;
+        height: 55px;
+        font-size: 12px;
+        gap: 7px;
+    }
+    
+}
+@media (max-width: 768px) {
+
+    /* Reduce space below XQZ INFINITY FAN */
+    .hero-info h1 {
+        margin: 0 0 5px !important;
+        font-size: 40px;
+        line-height: 1;
+    }
+
+    /* Move Variation upward */
+    .hero-info .info-row:first-of-type {
+        margin-top: 20px !important;
+    }
+
+    /* Remove any empty price spacing */
+    .hero-info h3:empty {
+        display: none;
+    }
+}
+
+@media (max-width:768px){
+
+.product-hero{
+    display:flex;
+    flex-direction:column;
+}
+
+.thumb-panel{
+    order: 2;
+}
+
+.hero-image{
+    order: 1;
+}
+
+.hero-info{
+    order: 3;
+     margin-top: -10px !important;
+        transform: none !important;
+}
+
+    .thumbs{
+        display:grid;
+        grid-template-columns:repeat(4,1fr);
+        gap:10px;
+
+        overflow:visible;
+        height:auto;
+    }
+
+}
+@media (max-width:768px){
+
+    .thumbs img{
+        width:100%;
+        aspect-ratio:1;
+        object-fit:contain;
+         height:80px;
+    }
+    .thumb-arrow{
+        display:none;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .selling-points {
+        grid-template-columns: repeat(3, 1fr) !important;
+        width: calc(100% - 30px);
+        margin: 20px auto;
+    }
+
+    .point {
+        min-width: 0;
+        padding: 20px 8px;
+        border-right: 1px solid #1e1e1e;
+        border-bottom: 1px solid #1e1e1e;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .point i {
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+
+    .point h4 {
+        width: 100%;
+        font-size: 12px;
+        line-height: 1.35;
+        text-align: center;
+        overflow-wrap: anywhere;
+    }
+}
+/*content*//* =========================================================
+   MOBILE FEATURE BOX
+========================================================= */
+
+@media (max-width: 768px) {
+
+    /* Make the full page fit the phone */
+    body {
+        min-width: 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .product-page {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .feature-section {
+        width: 100%;
+        padding: 30px 10px;
+    }
+
+    .feature-grid {
+        width: 100%;
+        max-width: 100%;
+        display: block;
+    }
+
+    .feature-row {
+        width: 100%;
+        display: block;
+    }
+
+    /* Feature card */
+    .feature-box,
+    .feature-box.wide,
+    .feature-box.small {
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        width: 100%;
+        max-width: none;
+        min-height: auto;
+
+        margin: 0 0 28px;
+        padding: 22px 12px;
+
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    /* Reset desktop text position */
+    .feature-box .feature-content {
+        position: static !important;
+
+        top: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin: 0;
+        padding: 0 8px;
+
+        transform: none !important;
+
+        text-align: left;
+        box-sizing: border-box;
+        z-index: 2;
+    }
+
+    /* Title */
+    .feature-box .feature-content h2,
+    .feature-box .feature-content h3 {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0 0 14px;
+        padding: 0;
+
+        font-size: 22px;
+
+        text-align: left;
+        overflow-wrap: normal;
+        word-break: normal;
+          margin-bottom:20px;
+    }
+
+    /* Description */
+    .feature-box .feature-content p {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0;
+        padding: 0;
+
+        font-size: 14px;
+        line-height: 1.6;
+        text-align: left;
+        overflow-wrap: normal;
+        word-break: normal;
+    }
+
+    /* Image below the description */
+    .feature-box img,
+    .feature-box.wide img,
+    .feature-box.small img {
+        position: static !important;
+
+        top: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+
+        display: block;
+
+        width: 105% !important;
+        max-width: none !important;
+        height: auto !important;
+        max-height: none !important;
+
+        margin: 1px auto 0;
+
+        transform: none !important;
+
+        object-fit: contain;
+        object-position: center;
+        opacity: 1;
+
+
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        black 10%,
+        black 90%,
+        transparent 100%
+    );
+
+    mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        black 10%,
+        black 90%,
+        transparent 100%
+    );
+
+    }
+}
+
+
+@media (max-width: 768px) {
+.disclaimer{
+    margin-left: 10px;
+        margin-top: -15px;
+}
+}
+/* ----------------------------------------------*/
+/* logo nav*/
+@media (max-width: 768px) {
+
+    html,
+    body {
+        margin: 0;
+        width: 100%;
+        min-width: 0;
+        overflow-x: hidden;
+    }
+
+    body {
+        padding-top: 60px;
+    }
+
+    .navbar {
+        position: fixed !important;
+
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: auto !important;
+
+        width: 100% !important;
+        max-width: none !important;
+        height: 60px !important;
+
+        margin: 0 !important;
+        padding: 0 18px !important;
+
+        transform: none !important;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        background: #000;
+        z-index: 99999 !important;
+        box-sizing: border-box;
+    }
+
+    .logo img {
+        width: auto;
+        height: 38px;
+    }
+
+    .nav-icons {
+        gap: 8px;
+    }
+
+    .nav-icons div {
+        font-size: 20px;
+    }
+}
+/*footer*/
+/* =========================================================
+   MOBILE FOOTER
+========================================================= */
+
+@media (max-width:768px){
+
+    /* Footer */
+    .site-footer{
+        padding:35px 20px;
+        margin-top:-60px;
+    }
+
+    .footer-content{
+        display:flex;
+        flex-direction:column;
+        gap:35px;
+    }
+
+    /* Logo */
+    .footer-logo{
+        text-align:center;
+        margin-bottom:20px;
+    }
+
+    .footer-logo img{
+        width:250px;
+        max-width:60%;
+        height:auto;
+        margin-bottom:20px;
+    }
+
+    /* =============================
+       LINKS
+    ============================== */
+
+    .footer-links-group{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:30px 20px;
+        width:100%;
+    }
+
+    /* Explore */
+    .footer-column:nth-child(1){
+        grid-column:1;
+        grid-row:1;
+    }
+
+    /* About Us */
+    .footer-column:nth-child(2){
+        grid-column:2;
+        grid-row:1;
+    }
+
+    /* Software */
+    .footer-column:nth-child(3){
+        grid-column:1 / -1;
+        grid-row:2;
+    }
+
+    .footer-column{
+        width:100%;
+        min-width:0;
+    }
+
+    .footer-column h3{
+        font-size:17px;
+        margin-bottom:14px;
+    }
+
+    .footer-column ul{
+        list-style:none;
+        padding:0;
+        margin:0;
+    }
+
+    .footer-column li{
+        margin-bottom:10px;
+    }
+
+    .footer-column a{
+        display:block;
+        font-size:14px;
+        line-height:1.6;
+        white-space:nowrap;
+        text-decoration:none;
+    }
+
+    /* =============================
+       FOLLOW US
+    ============================== */
+
+    .footer-social-section{
+        width:100%;
+        grid-column:1 / -1;
+        grid-row:3;
+    }
+
+    .footer-social-section h3{
+        text-align:left;
+        margin-bottom:15px;
+    }
+
+    .footer-social-section .social-icons{
+        display:flex;
+        justify-content:flex-start;
+        flex-wrap:wrap;
+        gap:14px;
+    }
+
+    /* =============================
+       FEATURED CONTENT
+    ============================== */
+
+    .footer-video{
+        width:100%;
+        margin:0;
+        padding:0;
+        border:none;
+    }
+
+    .video-embed{
+        width:100%;
+        aspect-ratio:16/9;
+        height:auto;
+        border-radius:12px;
+    }
+
+    .video-meta h4{
+        font-size:18px;
+        line-height:1.3;
+        margin-top:15px;
+    }
+
+    .video-meta p{
+        font-size:14px;
+        line-height:1.6;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .footer-social-section{
+        border-top:1px solid #333;
+        padding-top:30px;
+    }
+
+}
+
+/*cooler case*/
+@media (max-width:768px){
+
+    .xqz-feature img{
+        width:100%;
+        height:280px;
+        object-fit:cover;
+        object-position:center;
+    }
+
+}
+
+/* =========================================================
+   XQZ MOBILE
+========================================================= */
+@media (max-width: 768px) {
+
+    .xqz-description {
+        padding: 20px 10px;
+    }
+
+    .xqz-description .xqz-feature {
+        position: relative;
+
+        width: 100%;
+        height: 220px !important;
+        min-height: 0 !important;
+
+        margin: 0 auto 22px;
+        padding: 18px;
+
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat;
+
+        border: none !important;
+        border-radius: 14px;
+        overflow: hidden;
+    }
+
+    /* Partial borders */
+    .xqz-description .xqz-feature::before,
+    .xqz-description .xqz-feature::after {
+        content: "";
+        display: none;
+
+        position: absolute;
+        top: 0;
+
+        width: 34%;
+        height: 100%;
+
+        border: none;
+        pointer-events: none;
+        z-index: 4;
+    }
+
+    .xqz-description .xqz-feature.is-left::before {
+        display: block;
+        left: 0;
+
+        border-top: 1px solid #fbb03b;
+        border-bottom: 1px solid #fbb03b;
+        border-left: 1px solid #fbb03b;
+
+        border-radius: 14px 0 0 14px;
+    }
+
+    .xqz-description .xqz-feature.is-right::after {
+        display: block;
+        right: 0;
+
+        border-top: 1px solid #fbb03b;
+        border-right: 1px solid #fbb03b;
+        border-bottom: 1px solid #fbb03b;
+
+        border-radius: 0 14px 14px 0;
+    }
+
+    /* Shared text block */
+    .xqz-description .xqz-feature-content {
+        position: absolute;
+
+        bottom: 18px;
+
+        width: 260px;
+        max-width: calc(100% - 40px);
+
+        margin: 0 !important;
+        padding: 0;
+
+        transform: none !important;
+        z-index: 5;
+    }
+
+    /* Left card text */
+    .xqz-description .xqz-feature.is-left .xqz-feature-content {
+        left: 20px !important;
+        right: auto !important;
+
+        text-align: left;
+    }
+
+    /* Right card text */
+    .xqz-description .xqz-feature.is-right .xqz-feature-content {
+        left: auto !important;
+        right: 20px !important;
+
+        text-align: right;
+    }
+
+    .xqz-description .xqz-title {
+        margin: 0;
+
+        font-size: 13px;
+        line-height: 1.1;
+    }
+
+    .xqz-description .xqz-description-text {
+        width: 220px;
+        max-width: 220px;
+
+        margin-top: 8px;
+        padding: 0;
+
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    /* Description follows left/right card alignment */
+    .xqz-description .xqz-feature.is-left .xqz-description-text {
+        margin-left: 0;
+        margin-right: auto;
+        text-align: left;
+    }
+
+    .xqz-description .xqz-feature.is-right .xqz-description-text {
+        margin-left: auto;
+        margin-right: 0;
+        text-align: right;
+    }
+
+    .xqz-description .xqz-number {
+        margin-bottom: 6px;
+        font-size: 8px;
+    }
+}
