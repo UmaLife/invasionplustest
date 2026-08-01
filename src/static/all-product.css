@@ -345,7 +345,7 @@ html{
 @media (max-width:768px){
 
     /* Floating Navigation */
-    .floating-nav{
+     .floating-nav{
         top: 75px;
         width: calc(100% - 24px);
         left: 50%;
@@ -434,17 +434,6 @@ html{
 
     .product-bottom{
         margin:0;
-    }
-
-    /* Always show Learn More on mobile */
-    .product-learn-more{
-        opacity:1;
-        font-size:.9rem;
-    }
-
-    .price-divider{
-        width:40px;
-        margin-bottom:15px;
     }
 
     /* View More */

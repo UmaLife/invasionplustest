@@ -1309,6 +1309,9 @@ border-glow {
     scroll-snap-align: end;
 }
 
+.footer-logo img {
+    padding-top: 40px;
+}
 
 .main-site-wrapper {
     width: 1200px;     
@@ -2468,6 +2471,7 @@ border-glow {
         grid-template-columns:1fr;
         gap:6px;
     }
+    
 }
 
 .option-box,

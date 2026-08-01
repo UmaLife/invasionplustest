@@ -685,6 +685,36 @@
         font-size: 2.2rem;
     }
 
+    .product{
+        min-height:auto;
+        padding:18px;
+        border-radius:16px;
+    }
+
+    .product img{
+        height:140px;
+        margin-bottom:18px;
+    }
+
+    .product-name h3{
+        font-size:1.15rem;
+        margin-bottom:12px;
+    }
+
+    .product-name p{
+        font-size:.8rem;
+        margin-bottom:12px;
+    }
+
+    .price{
+        font-size:1rem;
+        margin-bottom:0;
+    }
+
+    .product-bottom{
+        margin:0;
+    }
+
     .filters{
         flex-direction: column;
         align-items: flex-start;
@@ -695,8 +725,10 @@
         flex-wrap: wrap;
         gap: 1rem;
     }
-
+    
     .product-list{
-        grid-template-columns: 1fr;
+        grid-template-columns:repeat(2,1fr);
+        gap:18px;
+        width:100%;
     }
 }
