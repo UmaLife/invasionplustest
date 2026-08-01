@@ -207,7 +207,16 @@
   background: rgba(0, 0, 0, 0.45);
   pointer-events: none;
 }
+.xqz-feature.is-left.active-neon::before,
+.xqz-feature.is-right.active-neon::after {
 
+    border-color: #fbb03b;
+
+    filter:
+        drop-shadow(0 0 2px #fbb03b)
+        drop-shadow(0 0 4px #fbb03b)
+        drop-shadow(0 0 8px rgba(251,176,59,.6));
+}
 /* Soft orange glow */
 .xqz-description .xqz-statement::after {
     content: "";
@@ -674,6 +683,7 @@
     .hero-info h1 {
         margin: 0 0 5px !important;
         font-size: 40px;
+         letter-spacing: 6px !important;
         line-height: 1;
     }
 
@@ -739,8 +749,13 @@
         grid-template-columns: repeat(3, 1fr) !important;
         width: calc(100% - 30px);
         margin: 20px auto;
+    
     }
-
+.selling-points .point::after {
+    font-size: 10px !important;
+    font-weight: 600;
+    color: #fbb03b;
+}
     .point {
         min-width: 0;
         padding: 20px 8px;
@@ -760,7 +775,7 @@
 
     .point h4 {
         width: 100%;
-        font-size: 12px;
+        font-size: 10px;
         line-height: 1.35;
         text-align: center;
         overflow-wrap: anywhere;
@@ -1163,38 +1178,45 @@
         height: 220px !important;
         min-height: 0 !important;
 
-        margin: 0 auto 22px;
-        padding: 18px;
+        margin: 50px auto 22px;
+        padding: 0;
 
-        background-size: cover !important;
-        background-position: center !important;
+        background-size: 100% 100% !important;
+        background-position: center;
         background-repeat: no-repeat;
 
         border: none !important;
         border-radius: 14px;
         overflow: hidden;
+        box-sizing: border-box;
     }
 
-    /* Partial borders */
+    /* Half border */
     .xqz-description .xqz-feature::before,
     .xqz-description .xqz-feature::after {
         content: "";
-        display: none;
-
         position: absolute;
+
         top: 0;
+        bottom: 0;
 
-        width: 34%;
-        height: 100%;
+        display: none;
+        box-sizing: border-box;
 
-        border: none;
         pointer-events: none;
-        z-index: 4;
+        z-index: 5;
+
+        transition:
+            border-color 0.3s ease,
+            filter 0.3s ease;
     }
 
+    /* Left half border */
     .xqz-description .xqz-feature.is-left::before {
         display: block;
+
         left: 0;
+        width: 50%;
 
         border-top: 1px solid #fbb03b;
         border-bottom: 1px solid #fbb03b;
@@ -1203,9 +1225,14 @@
         border-radius: 14px 0 0 14px;
     }
 
+    /* Right half border */
     .xqz-description .xqz-feature.is-right::after {
         display: block;
+
         right: 0;
+        top: 3px;
+        bottom: 0;
+        width: 70%;
 
         border-top: 1px solid #fbb03b;
         border-right: 1px solid #fbb03b;
@@ -1214,76 +1241,122 @@
         border-radius: 0 14px 14px 0;
     }
 
-    /* Shared text block */
-    .xqz-description .xqz-feature-content {
-        position: absolute;
+    /* Left neon border */
+   /* Left neon */
+.xqz-description .xqz-feature.is-left.active-neon::before {
+    border-color: #fbb03b;
 
-        bottom: 18px;
+    filter:
+        drop-shadow(0 0 2px #fbb03b)
+        drop-shadow(0 0 4px rgba(189, 134, 44, 0.8))
+        brightness(1.15);
+}
 
-        width: 260px;
-        max-width: calc(100% - 40px);
+/* Right neon */
+.xqz-description .xqz-feature.is-right.active-neon::after {
+    border-color: #fbb03b;
 
-        margin: 0 !important;
-        padding: 0;
+    filter:
+        drop-shadow(0 0 2px #fbb03b)
+        drop-shadow(0 0 4px rgba(189, 134, 44, 0.8))
+        brightness(1.15);
+}
 
-        transform: none !important;
-        z-index: 5;
-    }
+    /* Text block */
+    /* Text block */
+.xqz-description .xqz-feature-content,
+.xqz-description .xqz-feature-content.xqz-reveal,
+.xqz-description .xqz-feature-content.xqz-reveal.is-visible {
+    position: absolute;
 
-    /* Left card text */
-    .xqz-description .xqz-feature.is-left .xqz-feature-content {
-        left: 20px !important;
-        right: auto !important;
+    top: 50%;
+    transform: translateY(-50%) !important;
+
+    width: 45%;
+    max-width: 45%;
+
+    margin: 0;
+    padding: 0;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    z-index: 6;
+}
+
+    /* Left text */
+    .xqz-description
+    .xqz-feature.is-left
+    .xqz-feature-content {
+        left: 5%;
+        right: auto;
 
         text-align: left;
     }
 
-    /* Right card text */
-    .xqz-description .xqz-feature.is-right .xqz-feature-content {
-        left: auto !important;
-        right: 20px !important;
+    /* Right text */
+    .xqz-description
+    .xqz-feature.is-right
+    .xqz-feature-content {
+        left: auto;
+        right: 5%;
 
-        text-align: right;
-    }
-
-    .xqz-description .xqz-title {
-        margin: 0;
-
-        font-size: 13px;
-        line-height: 1.1;
-    }
-
-    .xqz-description .xqz-description-text {
-        width: 220px;
-        max-width: 220px;
-
-        margin-top: 8px;
-        padding: 0;
-
-        font-size: 12px;
-        line-height: 1.4;
-    }
-
-    /* Description follows left/right card alignment */
-    .xqz-description .xqz-feature.is-left .xqz-description-text {
-        margin-left: 0;
-        margin-right: auto;
-        text-align: left;
-    }
-
-    .xqz-description .xqz-feature.is-right .xqz-description-text {
-        margin-left: auto;
-        margin-right: 0;
         text-align: right;
     }
 
     .xqz-description .xqz-number {
+        display: block;
+
         margin-bottom: 6px;
+
         font-size: 8px;
+    }
+
+    .xqz-description .xqz-title {
+    margin: 0;
+
+    font-size: 10px;
+    line-height: 1.2;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+  .xqz-description .xqz-description-text {
+    width: 100%;
+    max-width: 100%;
+
+    margin-top: 8px;
+    padding: 0;
+
+    font-size: 8px;
+    line-height: 1.4;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+    .xqz-description
+    .xqz-feature.is-left
+    .xqz-description-text {
+        margin-left: 0;
+        margin-right: auto;
+
+        text-align: left;
+    }
+
+    .xqz-description
+    .xqz-feature.is-right
+    .xqz-description-text {
+        margin-left: auto;
+        margin-right: 0;
+
+        text-align: right;
     }
 }
 
-/* top search box*/
+/*-----------------------------------------
+ top search box*/
 @media (max-width: 768px) {
 
     .search-overlay {

@@ -41,37 +41,37 @@
       }
     ];
   }
-function featureTemplate(feature, index) {
-  const side =
-    feature.textSide === "right"
-      ? "right"
-      : "left";
 
-  const image =
-    escapeHtml(feature.image || "");
+  function featureTemplate(feature, index) {
+    const side =
+      feature.textSide === "right"
+        ? "right"
+        : "left";
 
-  return `
-    <section
-      id="xqz-feature-${index}"
-      class="xqz-feature is-${side}"
-      style="background-image:url('${image}')"
-    >
-      <div class="xqz-feature-content xqz-reveal">
-        <span class="xqz-number">
-          ${escapeHtml(feature.number)}
-        </span>
+    const image = escapeHtml(feature.image || "");
 
-        <h2 class="xqz-title">
-          ${safeTitle(feature.title)}
-        </h2>
+    return `
+      <section
+        id="xqz-feature-${index}"
+        class="xqz-feature is-${side}"
+        style="background-image:url('${image}')"
+      >
+        <div class="xqz-feature-content xqz-reveal">
+          <span class="xqz-number">
+            ${escapeHtml(feature.number)}
+          </span>
 
-        <p class="xqz-description-text">
-          ${escapeHtml(feature.description)}
-        </p>
-      </div>
-    </section>
-  `;
-}
+          <h2 class="xqz-title">
+            ${safeTitle(feature.title)}
+          </h2>
+
+          <p class="xqz-description-text">
+            ${escapeHtml(feature.description)}
+          </p>
+        </div>
+      </section>
+    `;
+  }
 
   function statementTemplate(statement) {
     if (!statement) {
@@ -87,7 +87,6 @@ function featureTemplate(feature, index) {
         style="background-image:url('${background}')"
       >
         <div class="xqz-statement-inner">
-
           <span class="xqz-statement-eyebrow">
             ${escapeHtml(statement.eyebrow)}
           </span>
@@ -101,73 +100,76 @@ function featureTemplate(feature, index) {
           </p>
 
           <div class="xqz-statement-line"></div>
-
         </div>
       </section>
     `;
   }
 
   function sizeTemplate(product) {
-  const productSize =
-    product?.xqzDescription?.productSize;
+    const productSize =
+      product?.xqzDescription?.productSize;
 
-  if (!productSize) {
-    return "";
+    if (!productSize) {
+      return "";
+    }
+
+    const dimensions =
+      Array.isArray(productSize.dimensions)
+        ? productSize.dimensions
+        : [];
+
+    const image =
+      escapeHtml(productSize.image || "");
+
+    return `
+      <section
+        id="xqz-product-size"
+        class="xqz-feature is-left"
+        style="background-image:url('${image}')"
+      >
+        <div class="xqz-feature-content xqz-reveal">
+
+          <span class="xqz-number">
+            ${escapeHtml(productSize.number || "3.5")}
+          </span>
+
+          <h2 class="xqz-title">
+            ${safeTitle(productSize.title || "")}
+          </h2>
+
+          <p class="xqz-description-text">
+            ${escapeHtml(productSize.description || "")}
+          </p>
+
+          ${
+            dimensions.length
+              ? `
+                <div class="xqz-size-grid">
+                  ${dimensions.map(item => `
+                    <div class="xqz-size-card">
+                      <strong>
+                        ${escapeHtml(item.value)}
+                      </strong>
+
+                      <span>
+                        ${escapeHtml(item.label)}
+                        ${
+                          item.unit
+                            ? ` · ${escapeHtml(item.unit)}`
+                            : ""
+                        }
+                      </span>
+                    </div>
+                  `).join("")}
+                </div>
+              `
+              : ""
+          }
+
+        </div>
+      </section>
+    `;
   }
-
-  const dimensions =
-    Array.isArray(productSize.dimensions)
-      ? productSize.dimensions
-      : [];
-
-  const image =
-    escapeHtml(productSize.image || "");
-
-  return `
-   <section
-  class="xqz-feature is-left"
-  style="background-image:url('${image}')"
->
-  <div class="xqz-feature-content xqz-reveal">
-      <div class="xqz-feature-content">
-
-        <span class="xqz-number">
-          ${escapeHtml(productSize.number || "3.5")}
-        </span>
-
-        <h2 class="xqz-title">
-          ${safeTitle(productSize.title || "")}
-        </h2>
-
-        <p class="xqz-description-text">
-          ${escapeHtml(productSize.description || "")}
-        </p>
-
-        ${
-          dimensions.length
-            ? `
-              <div class="xqz-size-grid">
-                ${dimensions.map(item => `
-                  <div class="xqz-size-card">
-                    <strong>
-                      ${escapeHtml(item.value)}
-                    </strong>
-
-                    <span>
-                      ${escapeHtml(item.label)}
-                      ${item.unit ? ` · ${escapeHtml(item.unit)}` : ""}
-                    </span>
-                  </div>
-                `).join("")}
-              </div>
-            `
-            : ""
-        }
-
-      </div>
-    </section>
-  `;
-}
 
   function enableAnimation(root) {
     const items =
@@ -204,6 +206,50 @@ function featureTemplate(feature, index) {
     items.forEach(item => {
       item.classList.remove("is-visible");
       observer.observe(item);
+    });
+  }
+
+  /* Tab click and neon border */
+  function enableFeatureNavigation(root) {
+    const tabs =
+      document.querySelectorAll(".xqz-tab");
+
+    const features =
+      root.querySelectorAll(".xqz-feature");
+
+    tabs.forEach((tab, index) => {
+      tab.setAttribute("data-feature-index", index);
+
+      tab.addEventListener("click", function () {
+        const featureIndex =
+          this.getAttribute("data-feature-index");
+
+        const targetFeature =
+          root.querySelector(
+            `#xqz-feature-${featureIndex}`
+          );
+
+        tabs.forEach(item => {
+          item.classList.remove("active");
+        });
+
+        features.forEach(feature => {
+          feature.classList.remove("active-neon");
+        });
+
+        this.classList.add("active");
+
+        if (!targetFeature) {
+          return;
+        }
+
+        targetFeature.classList.add("active-neon");
+
+        targetFeature.scrollIntoView({
+          behavior: "smooth",
+          block: "center"
+        });
+      });
     });
   }
 
@@ -268,6 +314,7 @@ function featureTemplate(feature, index) {
     root.innerHTML = html;
 
     enableAnimation(root);
+    enableFeatureNavigation(root);
   }
 
   async function loadXQZFromJson(options) {

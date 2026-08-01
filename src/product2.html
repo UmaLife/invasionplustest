@@ -312,34 +312,56 @@ function renderSellingPoints(product){
 
     initSellingPointJump();
 }
-
 function initSellingPointJump() {
-  document.querySelectorAll(".point").forEach((point, index) => {
-    point.addEventListener("click", () => {
-      let target;
+    const points = document.querySelectorAll(".selling-points .point");
 
-      if (currentProduct.xqzDescription) {
-        target = document.getElementById(`xqz-feature-${index}`);
-      } else {
-        target = document.getElementById(
-          point.dataset.target
-        );
-      }
+    points.forEach((point, index) => {
+        point.style.cursor = "pointer";
 
-      if (!target) return;
+        point.addEventListener("click", () => {
+            let target;
 
-      target.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      });
+            if (currentProduct && currentProduct.xqzDescription) {
+                target = document.getElementById(
+                    `xqz-feature-${index}`
+                );
+            } else {
+                target = document.getElementById(
+                    point.dataset.target
+                );
+            }
 
-      target.classList.add("active-feature");
+            if (!target) {
+                console.warn(
+                    `Feature xqz-feature-${index} was not found.`
+                );
+                return;
+            }
 
-      setTimeout(() => {
-        target.classList.remove("active-feature");
-      }, 1800);
+            /* Remove active state from all top buttons */
+            points.forEach(item => {
+                item.classList.remove("active");
+            });
+
+            /* Remove neon from every feature card */
+            document
+                .querySelectorAll(
+                    "#xqz-description .xqz-feature"
+                )
+                .forEach(feature => {
+                    feature.classList.remove("active-neon");
+                });
+
+            /* Activate clicked button and matching card */
+            point.classList.add("active");
+            target.classList.add("active-neon");
+
+            target.scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+            });
+        });
     });
-  });
 }
 
 function renderFeatureGrid(product){
