@@ -341,3 +341,122 @@ html{
     align-items: center;
     gap: 40px;
 }
+
+@media (max-width:768px){
+
+    /* Floating Navigation */
+    .floating-nav{
+        top: 75px;
+        width: calc(100% - 24px);
+        left: 50%;
+        transform: translateX(-50%);
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding: 6px;
+        gap: 6px;
+
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .floating-nav::-webkit-scrollbar{
+        display:none;
+    }
+
+    .floating-nav a{
+        white-space: nowrap;
+        padding: 10px 18px;
+        font-size: .72rem;
+    }
+
+    /* Wrapper */
+    .product-area{
+        padding: 1.5rem 20px;
+    }
+
+    /* Section Header */
+    .section-row{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        gap:15px;
+    }
+
+    .section-title{
+        font-size:1.8rem;
+        padding-top:4rem;
+        margin-bottom:.6rem;
+    }
+
+    .section-subtitle{
+        font-size:.9rem;
+        margin-bottom:2rem;
+    }
+
+    /* Product Grid */
+    .product-list,
+    .hot-selling-list,
+    .new-products-list,
+    .cases-list,
+    .coolers-list,
+    .monitors-list{
+        grid-template-columns:repeat(2,1fr);
+        gap:18px;
+        width:100%;
+    }
+
+    /* Product Card */
+    .product{
+        min-height:auto;
+        padding:18px;
+        border-radius:16px;
+    }
+
+    .product img{
+        height:140px;
+        margin-bottom:18px;
+    }
+
+    .product-name h3{
+        font-size:1.15rem;
+        margin-bottom:12px;
+    }
+
+    .product-name p{
+        font-size:.8rem;
+        margin-bottom:12px;
+    }
+
+    .price{
+        font-size:1rem;
+        margin-bottom:0;
+    }
+
+    .product-bottom{
+        margin:0;
+    }
+
+    /* Always show Learn More on mobile */
+    .product-learn-more{
+        opacity:1;
+        font-size:.9rem;
+    }
+
+    .price-divider{
+        width:40px;
+        margin-bottom:15px;
+    }
+
+    /* View More */
+    .view-more-circle span{
+        display:none;
+    }
+
+    .view-arrow{
+        width:44px;
+        height:44px;
+        font-size:1.3rem;
+    }
+
+}
+
