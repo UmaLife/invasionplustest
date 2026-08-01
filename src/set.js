@@ -167,9 +167,7 @@ function toggleSocialMenu(){
 //navigation bar
 const navbarTemplate = `
     <div class="navbar">
-        <div class="menu-icon" onclick="openMenu()">
-            <span></span>
-            <span></span>
+<div class="menu-icon" id="menuIcon" onclick="handleMenuIcon()">    <span></span>        <span></span>
         </div>
 
         <div class="logo">
@@ -179,20 +177,31 @@ const navbarTemplate = `
         </div>
 
         <div class="nav-icons">
-            <div class="search-icon" onclick="openSearch()">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
+            <div class="search-icon" id="searchIcon" onclick="toggleSearch()">
+    <i class="fa-solid fa-magnifying-glass"></i>
+</div>
         </div>
     </div>
 <!---Overlay Search-->
     <div id="searchOverlay" class="search-overlay">
     <div class="search-container">
 
-        <i class="fa-solid fa-xmark search-close" onclick="closeSearch()"></i>
-        
-        <div class="search-logo">
-            <img src="static/logo.png" alt="Invasion Plus Logo">
-        </div>
+        <div class="search-header">
+
+    <div class="search-logo">
+        <img src="static/logo.png" alt="Invasion Plus Logo">
+    </div>
+
+    <button
+        type="button"
+        class="search-desktop-close"
+        onclick="toggleSearch()"
+        aria-label="Close search"
+    >
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+
+</div>
 
         <div class="search-box">
 
@@ -252,6 +261,7 @@ const navbarTemplate = `
             <a href="ContactUs.html">Contact</a>
             </li>
 
+            <i class="fa-solid fa-xmark menu-close" onclick="closeMenu()"></i>
             <li onclick="closeProductPanel()">
             <a href="AboutUs.html">About Us</a>
             </li>
@@ -274,10 +284,13 @@ const navbarTemplate = `
                 <i class="fa-brands fa-tiktok"></i>
             </a>
         </div>
-        <i class="fa-solid fa-xmark menu-close" onclick="closeMenu()"></i>
         </div>
     </div>
     <div class="product-panel" id="productPanel">
+    <button class="product-panel-back" onclick="closeProductPanel()">
+        <i class="fa-solid fa-chevron-left"></i>
+    </button>
+
         <div class="panel-content">
         <a href="cases.html" class="product-item">
             <img src="static/cases.png">
@@ -297,43 +310,117 @@ const navbarTemplate = `
 
 // This injects the navbar at the very top of the <body>
 document.body.insertAdjacentHTML('afterbegin', navbarTemplate);
+function toggleSearch(){
 
-function openSearch(){
+    const overlay = document.getElementById("searchOverlay");
+    const menuIcon = document.getElementById("menuIcon");
+    const logo = document.querySelector(".logo");
 
-    document.getElementById("searchOverlay")
-        .classList.add("active");
+    if(overlay.classList.contains("active")){
+
+        overlay.classList.remove("active");
+        menuIcon.classList.remove("search-active");
+
+        document.body.classList.remove("page-blur");
+
+        if(logo){
+            logo.style.opacity = "1";
+        }
+
+    }else{
+
+        overlay.classList.add("active");
+        menuIcon.classList.add("search-active");
+
+        document.body.classList.add("page-blur");
+
+        if(logo){
+            logo.style.opacity = "0";
+        }
+
+        setTimeout(()=>{
+            document.getElementById("searchInput")?.focus();
+        },300);
+    }
+}
+
+function openSearch() {
+    const overlay = document.getElementById("searchOverlay");
+    const menuIcon = document.getElementById("menuIcon");
+
+    overlay.classList.add("active");
     document.body.classList.add("page-blur");
+    document.getElementById("menuIcon").classList.remove("search-active");
+
+    /* Two bars become X */
+    menuIcon.classList.add("search-active");
 
     setTimeout(() => {
-    document.getElementById("searchInput").focus();
+        const input = document.getElementById("searchInput");
+
+        if (input) {
+            input.focus();
+        }
     }, 300);
-
-    document.querySelector(".nav-logo")
-        .style.opacity = "0";
 }
 
-function closeSearch(){
+function closeSearch() {
+    const overlay = document.getElementById("searchOverlay");
+    const menuIcon = document.getElementById("menuIcon");
 
-    document.getElementById("searchOverlay")
-        .classList.remove("active");
+    overlay.classList.remove("active");
     document.body.classList.remove("page-blur");
-    document.querySelector(".nav-logo")
-        .style.opacity = "1";
+
+    /* X becomes two bars again */
+    menuIcon.classList.remove("search-active");
 }
 
-function openMenu(){
-    document.getElementById("sideMenu").classList.toggle("active");
-    document.body.classList.add("page-blur");
+function handleMenuIcon() {
+    const overlay = document.getElementById("searchOverlay");
+
+    /* When search is open, clicking X closes search */
+    if (overlay.classList.contains("active")) {
+        closeSearch();
+        return;
+    }
+
+    /* Otherwise open/close normal side menu */
+    toggleMenu();
+}
+function toggleMenu(){
+
+    const menu = document.getElementById("sideMenu");
+    const icon = document.getElementById("menuIcon");
+
+    menu.classList.toggle("active");
+    icon.classList.toggle("active");
+
+    if(menu.classList.contains("active")){
+        document.body.classList.add("page-blur");
+        document.getElementById("menuIcon").classList.remove("search-active");
+    }else{
+        document.body.classList.remove("page-blur");
+        document.getElementById("productPanel").classList.remove("active");
+    }
 }
 
 function closeMenu(){
+
     document.getElementById("sideMenu").classList.remove("active");
     document.getElementById("productPanel").classList.remove("active");
+    document.getElementById("menuIcon").classList.remove("active");
     document.body.classList.remove("page-blur");
 }
 
 function openProductPanel(){
 
+    if(window.innerWidth <= 768){
+
+        document.getElementById("productPanel").classList.add("active");
+        return;
+    }
+
+    // Desktop (keep your current behavior)
     let menu = document.getElementById("sideMenu");
     let panel = document.getElementById("productPanel");
     let productMenu = document.getElementById("productMenu");
@@ -344,7 +431,7 @@ function openProductPanel(){
         menu.classList.remove("shift");
         productMenu.classList.remove("active");
 
-    } else {
+    }else{
 
         panel.classList.add("active");
         menu.classList.add("shift");
@@ -352,24 +439,19 @@ function openProductPanel(){
 
     }
 }
-
 function closeProductPanel(){
 
-    document.getElementById("productPanel").classList.remove("active");
+    const panel = document.getElementById("productPanel");
 
-    document.getElementById("sideMenu").classList.remove("shift");
-}
-window.addEventListener("scroll", () => {
+    if(window.innerWidth <= 768){
 
-    const navbar = document.querySelector(".navbar");
-
-    if(window.scrollY > 50){
-        navbar.classList.add("scrolled");
-    } else {
-        navbar.classList.remove("scrolled");
+        panel.classList.remove("active");
+        return;
     }
 
-});
+    panel.classList.remove("active");
+    document.getElementById("sideMenu").classList.remove("shift");
+}
 
 function performSearch() {
 

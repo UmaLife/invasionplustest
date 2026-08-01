@@ -98,21 +98,6 @@ section {
     position: relative;
 }
 
-.search-close{
-    position: absolute;
-    top: 40px;
-    right: 40px;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-    transition: .3s ease;
-    z-index: 1001;
-}
-
-.search-close:hover{
-    color: #fbb03b;
-    transform: rotate(90deg);
-} 
 
 .search-logo{
     position: absolute;
@@ -248,20 +233,6 @@ section {
     transform: translateX(5px);
 }
 
-.close-btn{
-    position: absolute;
-    top: 70px;
-    right: 120px;
-    color: white;
-    cursor: pointer;
-    font-size: 24px;
-    transition: 0.3s;
-}
-
-.close-btn:hover{
-    color: #fbb03b;
-    transform: rotate(90deg);
-}
 body.page-blur > *:not(.search-overlay):not(.side-menu):not(.product-panel):not(.navbar){
     filter: blur(8px);
     transition: 0.3s ease;
@@ -2539,7 +2510,7 @@ border-glow {
 
 /* Selected colour */
 .variation-option.active{
-    border:1px solid #ffffffc8;
+    border:1px solid #fbb03b;
     color:#ffffff9f;
 }
 
@@ -2615,4 +2586,68 @@ border-glow {
 .disclaimer{
     margin-left: 100px;
         margin-top: -70px;
+}
+.search-header{
+    position:absolute;
+    top:20px;
+    left:50%;
+    transform:translateX(-50%);
+
+    width:100%;
+    max-width:1200px;
+    height:50px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    z-index:10001;
+}
+
+.search-header .search-logo{
+    position:static;
+    transform:none;
+}
+
+.search-header .search-logo img{
+    display:block;
+    width:180px;
+    height:auto;
+}
+
+.search-desktop-close{
+    position:absolute;
+    top:50%;
+    right:100px;
+    transform:translateY(-50%);
+
+    width:32px;
+    height:32px;
+    padding:0;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:none;
+    border:none;
+
+    color:#fff;
+    font-size:22px;
+    cursor:pointer;
+
+    transition:color .3s ease;
+}
+
+.search-desktop-close{
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.search-desktop-close:hover{
+    transform: translateY(-50%) rotate(90deg);
+    color: #fbb03b;
+}
+
+.product-panel-back{
+    display:none;
 }
