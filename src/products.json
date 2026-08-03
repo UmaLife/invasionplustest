@@ -1860,8 +1860,8 @@
     },
 
     {
-      "id": "aerovis",
-      "name": "AEROVIS",
+      "id": "aerovis360",
+      "name": "AEROVIS 360",
       "category": "cooler",
        "price":"",
       "product-type": "Fan",
@@ -1990,19 +1990,19 @@
   ]
 },
       "specs": {
-        "Model": "AEROVIS",
-        "Product Size":"365(L) x 122.5(W) x 25(H) mm",
+        "Model": "AEROVIS 360",
+        "Product Size":"360(L) x 120(W) x 30(H) mm",
         "Fan Size" : "120 x 25 mm",
-        "Fan Speed": "800 -2300 ± 10%RPM",
+        "Fan Speed": "800 -2200 ± 10%RPM",
         "Rated Voltage": "DC 12V",
         "Bearing Type" : "Hydraulic Bearing",
         "Interface" : "4Pin + 5V 3Pin",
-        "Fan Pressure" : "2.77 mm/H₂O",
+        "Fan Pressure" : "2.35 mm/H₂O",
         "Service Life" :"≥40.000h", 
-        "Maximum Volunm": "66.66 CFM",
+        "Maximum Volunm": "79.99 CFM",
         "Rated Current" : "0.18A",
         "LED Color" : "ARGB",
-        "Maximum Noise":"31dBA"
+        "Maximum Noise":"≤32dBA"
       }
     },
     
