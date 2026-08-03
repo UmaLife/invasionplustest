@@ -2123,8 +2123,8 @@
 },
 
   "specs": {
-    "Fan Specification": "",
     "Model": "Frost Vision 360",
+    "Fan Specification": "",
     "Fan Dimension": "120 x 120 x 25MM",
     "Fan Speed": "500 – 2200 RPM ± 10%",
     "Air Flow": "30.39 – 91.19 CFM",
@@ -2150,6 +2150,7 @@
 
     "Package Contents": "",
     "Fan": "3 PCS",
+     "ALL-IN-ONE CPU Liquid Cooler": "1 PC",
     "Thermal Grease": "1 PC",
     "3.95″ IPS Screen": "1 PC",
     "Mounting Kit": "Included",
