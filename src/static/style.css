@@ -2655,3 +2655,16 @@ border-glow {
 .product-panel-back{
     display:none;
 }
+.spec-title {
+    margin: 24px 0 0 !important;
+    padding: 0 0 14px;
+    font-size: 22px !important;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+    border-bottom: 1px solid #202020;
+}
+
+.spec-title:first-child {
+    margin-top: 0;
+}

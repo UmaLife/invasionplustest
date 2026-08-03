@@ -103,9 +103,9 @@
         "3.5″ + 2.5″ Drive Bays": "2 x HDD + 3 x SSD",
         "PCI Slots": "7 Slots",
         "Air Cooling": "<b>Rear</b> ~ 120 MM x 1<br><b>TOP</b> ~ 120MM x 3 OR 140MM x 3<br><b>MB</b> ~ 120MM x 3 OR 140MM x 2<br><b>PSU</b> ~ 120MM x 3 OR 140MM x 3",
-        "Liquid Cooling": "<b>Top </b>~ 120 MM <br><b> Rear</b> ~ 240 MM <br><b> MB</b> ~ 240 MM",
+        "Liquid Cooling": "<b>Top </b>~ 360 MM <br><b> Rear</b> ~ 120 MM <br><b> MB</b> ~ 240 MM",
         "CPU Cooler Height": "180 MM",
-        "VGA Card Length": "480 MM without MB Fan <br> 470 MM with MB Fan"
+        "VGA Card Length": "400 MM without MB Fan <br> 370 MM with MB Fan"
       }
     },
 
@@ -310,7 +310,7 @@
        "specs": {
         "Model": "E - 10",
         "Material": "SPCC 0.7mm",
-        "Chasis Dimension": "436.5mm(L) x 315mm(W) x 390mm(H)",
+        "Chasis Dimension": "436.5mm(L) x 315mm(W) x 300mm(H)",
         "Carton Size": "531.5mm(L) x 409.5mm(W) x 398mm(H)",
         "I/O Port": "USB 3.0 x 2 + Type-C x 1 + HD Audio",
         "3.5″ + 2.5″ Drive Bays": "2 x HDD + 1 x SSD",
@@ -420,7 +420,6 @@
         "Material": "SPCC 0.7 MM",
         "Chasis Dimension": "440mm(L) x 235mm(W) x 405mm(H)",
         "Carton Size": "534mm(L) x 337mm(W) x 577mm(H)",
-        "I/O Port": "USB 3.0 x 2 + Type-C x 1 + HD Audio",
         "Weight": "7.3KGS(N.W.) / 9.1KGS(G.W.)",
         "3.5″ + 2.5″ Drive Bays": "1 + 1",
         "PCI Slots": "5 Slots",
@@ -530,10 +529,10 @@
         "Type C x 1": "Included",
         "Motherboard Support": "ITX / M-ATX",
         "PSU Port": "Rear side / ATX",
-        "Size": "<b>M/B </b>~ 2 x 120mm(Fan optional)  <br><b>Top </b>~ 3 x 120mm (Fan Optional) - support 360mm liquid cooler <br><b> Rear</b> ~ 1 x 120mm (Fan optional) - support 120mm liquid cooler <br><b>Bottom</b> ~ 3 x 120mm (Fan optional) ",
+        "Size": "<b>Front</b> ~ N/A <br><b>M/B </b>~ 2 x 120mm(Fan optional)  <br><b>Top </b>~ 3 x 120mm (Fan Optional) - support 360mm liquid cooler <br><b> Rear</b> ~ 1 x 120mm (Fan optional) - support 120mm liquid cooler <br><b>Bottom</b> ~ 3 x 120mm (Fan optional) ",
         "Drive Bays": "5.25″ ODD x0 <br>3.5″ HDD x2<br>2.5″ SSD x2",
         "PCI Slots": "x 5",
-        "Product Dimesion": "<b>Chassis size</b> ~ 430(L) x 227(W) x 355mm (H) <br><b>Product Size</b> ~ 443(L) x 277(W) x 377mm (H) <br><b>Carton Size</b> ~ 432(L) x 344(W) x 515mm (H) ",
+        "Product Dimesion": "<b>Chassis size</b> ~ 430(L) x 277(W) x 355mm (H) <br><b>Product Size</b> ~ 443(L) x 277(W) x 377mm (H) <br><b>Carton Size</b> ~ 432(L) x 344(W) x 515mm (H) ",
         "Package": "Poly Foam",
         "Max.VGA Card": "420mm",
         "Max.CPU Cooler": "155mm"
@@ -642,7 +641,7 @@
 
       "specs": {
         "Model": "GENESIS",
-        "MB Type": "ATX , M-ATX , ITX",
+        "MB Type": "ATX , M-ATX , ITX (support MB back plug)",
         "Front Panel": "Tempered Glass Panel",
         "Side Panel": "Left Tempered Glass, Right Metal with Airy Holes",
         "Top Panel": "Tempered Glass Panel",
@@ -766,7 +765,7 @@
 },
       "specs": {
         "Model": "GENESIS-M",
-        "MB Type": "M-ATX , ITX",
+        "MB Type": "M-ATX , ITX (support MB back plug)",
         "Front Panel": "Tempered Glass Panel",
         "Side Panel": "Left Tempered Glass, Right Metal with Airy Holes",
         "Top Panel": "Tempered Glass Panel",
@@ -896,7 +895,7 @@
 },
       "specs": {
         "Model": "KRATOS",
-        "Front Panel": "ABS + plastic + Tempered Glass Panel",
+        "Front Panel": "ABS + plastic + Tempered Glass",
         "Left Side Panel": "Tempered glass with buckle",
         "Right Side Panel": "Ventilation holes on right side",
         "Chassis": "0.6 - 0.8 mm",
@@ -904,7 +903,7 @@
         "Type C x 1": "Included",
         "Motherboard Support": "ITX/M-ATX/ATX",
         "PSU Support": "Front Top/ATX/140-160MM",
-        "Radiator Support": "<b>Front</b>~ N/A <br><b>M/B</b> ~ N/A <b>Top </b>~ 3 x 120mm (Fan Optional) - support 360mm liquid cooler <br><b> Rear</b> ~ 1 x 120mm (Fan optional) - support 120mm liquid cooler <br><b>Bottom</b> ~ 3 x 120mm (Fan optional) ",
+        "Radiator Support": "<b>Front</b>~ N/A <br><b>M/B</b> ~ N/A <br> <b>Top </b>~ 3 x 120mm (Fan Optional) - support 360mm liquid cooler <br><b> Rear</b> ~ 1 x 120mm (Fan optional) - support 120mm liquid cooler <br><b>Bottom</b> ~ 3 x 120mm (Fan optional) ",
         "Drive Bays": "5.25″ ODD x0 <br>3.5″ HDD x2<br>2.5″ SSD x3",
         "PCI Slots" : "x 7",
         "Product Dimesion": "<b>Chassis size</b> ~ 440(L) x 242(W) x 350mm (H) <br><b>Product Size</b> ~ 440(L) x 242(W) x 370mm (H) <br><b>Carton Size</b> ~ 440(L) x 305(W) x 530mm (H) ",
@@ -1005,14 +1004,15 @@
 },
       "specs": {
         "Model": "THANATOS",
-        "Front Panel": "ABS + plastic + Tempered Glass Panel",
+        "Front Panel": "ABS + plastic + Tempered Glass",
         "Left Side Panel": "Tempered glass with buckle",
         "Right Side Panel": "Ventilation holes on right side",
         "Chassis": "0.6 - 0.7 mm",
         "USB3.0 x 2": "Included",
         "Type C x 1": "Included",
         "Motherboard Support": "ITX/M-ATX/ATX",
-        "Size": "<b>Front</b>~ N/A <br><b>M/B</b> ~ 3 x 120mm(Fan optional) <b>Top </b>~ 2 x 120mm (Fan Optional) - support 240mm liquid cooler <br><b> Rear</b> ~ 3 x 120mm (Fan optional) - support 240 or 360mm liquid cooler <br><b>Bottom</b> ~ 2 x 120mm (Fan optional) ",
+         "PSU Port": "Top/ATX/140-160MM",
+        "Size": "<b>Front</b>~ N/A <br><b>M/B</b> ~ 3 x 120mm(Fan optional)<br> <b>Top </b>~ 2 x 120mm (Fan Optional) - support 240mm liquid cooler <br><b> Rear</b> ~ 3 x 120mm (Fan optional) - support 240 or 360mm liquid cooler <br><b>Bottom</b> ~ 2 x 120mm (Fan optional) ",
         "Drive Bays": "5.25″ ODD x0 <br>3.5″ HDD x2<br>2.5″ SSD x4",
         "PCI Slots" : "x 8",
         "Product Dimesion": "<b>Chassis size</b> ~ 444(L) x 238(W) x 495mm (H) <br><b>Product Size</b> ~ 444(L) x 238(W) x 495mm (H) <br><b>Carton Size</b> ~ 542(L) x 310(W) x 588mm (H) ",
@@ -1134,10 +1134,9 @@
         "Chassis size": "455(L) x 220(W) x 395mm (H)",
         "Product Size": "460(L) x 220(W) x 403mm (H)",
         "Carton Size": "452(L) x 277(W) x 538mm (H)",
-        "Max VGA Card Length" : "420mm",
         "Max CPU Cooler Height" : "174mm",
-        "Cable Management Space" : "Max 21mm",
-        "5inch TFT Screen Specification" : "ss"
+        "Max VGA Card Length" : "420mm",
+        "Cable Management Space" : "Max 21mm"
 
       },
 
@@ -1146,8 +1145,7 @@
         "Screen Size": "5 inch",
         "Screen Resolution": "480 x 854",
         "Screen Aspect Ratio": "2:1",
-        "Screen Type": "Metal Top Cover with Dust Filter",
-        "Left Side Panel": "TFT",
+        "Screen Type": "TFT",
         "Screen Brightness": "350-400 cd/m²",
         "Color Display Capability": "3 SPI + 24-bit RGB",
         "Viewing Angle": "Full Viewing Angle",
@@ -1265,22 +1263,22 @@
 
       "specs": {
         "Model": "ZOOM",
-        "MB Type" : "ATX, Micro-ATX, Mini-ITX",
-        "Front Panel": "Tempered Glass Panel",
+        "MB Type" : "ATX, Micro-ATX, Mini-ITX (Support back-connect motherboard)",
+        "Front Panel": "Tempered Gray Glass",
         "Side Panel": "Left Quick Detachable Tempered Glass, Right Metal",
         "Top Panel": "Quick Detachable Metal Board",
         "I/O Port USB": "USB3.0 x 2 + TYPE-C; HD Audio x 1; Power Button",
         "PSU": "ATX PSU 200mm",
-        "Fan Support": "<b>Front</b>~ 12cm Fan x 3 <br><b>Left Rear </b>~ 12cm Fan x 1 <br><b>Top</b><b> ~ 12cm Fan x 3<br> Bottom</b> ~ 12cm Fan x 3 ",
+        "Fan Support": "<b>Front</b>~ 12cm Fan x 3 <br><b>Left Rear </b>~ 12cm Fan x 1 <br><b>Top</b> ~ 12cm Fan x 3<br><b> Bottom</b> ~ 12cm Fan x 3 ",
         "Radiator Support": "<b>Front</b>~ 240mm or 360mm <br><b>Top </b> ~ 240mm or 360mm",
         "Drive Bay 3.5″" : "1",
         "Drive Bay 2.5″" : "2",
         "PCI Expansion Slots" : "7",
+        "Chassis size" :"445(L) x 293(W) x 435mm (H)", 
+        "Case Size": "445(L) x 293(W) x 455mm (H)",
         "Carton Size" : "535(L) x 381(W) x 531mm(H)",
-        "Chassis size" :"445(L) x 293(W) x 455mm (H)", 
-        "Case Size": "445(L) x 293(W) x 403mm (H)",
-        "Max VGA Card Length" : "300mm",
-        "Max CPU Cooler Height" : "180mm"
+         "Max CPU Cooler Height" : "180mm",
+        "Max VGA Card Length" : "300mm"
       }
     },
 
@@ -1394,7 +1392,7 @@
       "Type C x 1": "Included",
       "Motherboard Support": "M-ATX / ITX",
       "PSU Support": "Rear / ATX / 140-160MM",
-      "Radiator Support": "<b>Top</b> ~ 3 x 120mm (Fan optional) - support 360mm liquid cooler <br><b>Side M/B</b> ~ 2 x 120mm (Fan optional) - support 240mm liquid cooler <br><b>Rear</b> ~ 1 x 120mm (Fan optional) <br><b>Bottom</b> ~ 3 x 120mm (Fan optional)",
+      "Fan/Radiator Support": "<b>Top</b> ~ 3 x 120mm (Fan optional) - support 360mm liquid cooler <br><b>Side M/B</b> ~ 2 x 120mm (Fan optional) - support 240mm liquid cooler <br><b>Rear</b> ~ 1 x 120mm (Fan optional) <br><b>Bottom</b> ~ 3 x 120mm (Fan optional)",
       "Drive Bays": "5.25″ ODD x0 <br>3.5″ HDD x1 <br>2.5″ SSD x1",
       "PCI Slots": "x 4",
       "Product Dimesion": "<b>Chassis size</b> ~ 416(L) x 278(W) x 333mm (H) <br><b>Product Size</b> ~ 420(L) x 278(W) x 365mm (H) <br><b>Carton Size</b> ~ 425(L) x 340(W) x 485mm (H)",
@@ -1503,7 +1501,7 @@
       "Type C x 1": "Included",
       "Motherboard Support": "ITX / M-ATX",
       "PSU": "ATX - Up to 250mm length",
-      "Radiator Support": "<b>Front</b> ~ N/A <br><b>M/B</b> ~ 2 x 120mm (Fan optional) <br><b>Top</b> ~ 3 x 120mm (Fan optional) <br>Support 360mm liquid cooler <br><b>Rear</b> ~ 1 x 120mm (Fan optional) <br>Support 120mm liquid cooler <br><b>Bottom</b> ~ 3 x 120mm (Fan optional)",
+      "Fan/Radiator Support": "<b>Front</b> ~ N/A <br><b>M/B</b> ~ 2 x 120mm (Fan optional) <br><b>Top</b> ~ 3 x 120mm (Fan optional) - Support 360mm liquid cooler <br><b>Rear</b> ~ 1 x 120mm (Fan optional) - Support 120mm liquid cooler <br><b>Bottom</b> ~ 3 x 120mm (Fan optional)",
       "Drive Bays": "5.25″ ODD x0 <br>3.5″ HDD x2 <br>2.5″ SSD x1",
       "PCI Slots": "x 5",
       "Product Dimension": "<b>Chassis Size</b> ~ 430(L) x 218(W) x 395mm (H) <br><b>Product Size</b> ~ 434(L) x 218(W) x 414mm (H) <br><b>Carton Size</b> ~ 472(L) x 280(W) x 515mm (H)",
@@ -1621,7 +1619,7 @@
       "Type C x 1": "Included",
       "Motherboard Support": "EATX / ATX / Micro-ATX / Mini-ITX",
       "PSU": "ATX - Up to 200mm length",
-      "Fan/Radiator Support": "<b>Front</b> ~ 3 x 120mm or 2 x 140mm <br>Support 360mm liquid cooler <br><b>Top</b> ~ 3 x 120mm or 2 x 140mm <br>Support 360mm liquid cooler <br><b>Rear</b> ~ 1 x 120mm (Fan optional) <br>Support 120mm liquid cooler <br><b>PSU Top Cover</b> ~ 3 x 120mm",
+      "Fan/Radiator Support": "<b>Front</b> ~ 3 x 120mm or 2 x 140mm - Support 360mm liquid cooler <br><b>Top</b> ~ 3 x 120mm or 2 x 140mm - Support 360mm liquid cooler <br><b>Rear</b> ~ 1 x 120mm (Fan optional) - Support 120mm liquid cooler <br><b>PSU Top Cover</b> ~ 3 x 120mm",
       "Drive Bays": "5.25″ ODD x0 <br>3.5″ HDD x2 <br>2.5″ SSD x1",
       "PCI Slots": "x 7",
       "Product Dimension": "<b>Chassis Size</b> ~ 425(L) x 218(W) x 460mm (H) <br><b>Product Size</b> ~ 440(L) x 218(W) x 472mm (H) <br><b>Carton Size</b> ~ 536(L) x 273(W) x 503mm (H)",

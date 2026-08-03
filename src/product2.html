@@ -763,18 +763,31 @@ function initFanRevealAnimation(){
 
 }
 
-function renderSpecs(product){
+function renderSpecs(product) {
     const table = document.getElementById("specTable");
     table.innerHTML = "";
 
-    Object.entries(product.specs || {}).forEach(([key, value]) => {
-        table.innerHTML += `
-            <div class="spec-row">
-                <div class="spec-key">${key}</div>
-                <div class="spec-value">${value}</div>
-            </div>
-        `;
-    });
+    function renderSpecGroup(title, specs) {
+        if (!specs || Object.keys(specs).length === 0) return;
+
+        if (title) {
+            table.innerHTML += `
+                <h2 class="spec-title">${title}</h2>
+            `;
+        }
+
+        Object.entries(specs).forEach(([key, value]) => {
+            table.innerHTML += `
+                <div class="spec-row">
+                    <div class="spec-key">${key}</div>
+                    <div class="spec-value">${value}</div>
+                </div>
+            `;
+        });
+    }
+
+    renderSpecGroup(product.specTitle, product.specs);
+    renderSpecGroup(product.specTitle2, product.specs2);
 }
 </script>
 <script src="js/xqz-description.js"></script>
