@@ -2276,8 +2276,8 @@
 },
 
   "specs": {
-    "Fan Specification": "",
     "Model": "Frost Vision 240", 
+    "Fan Specification": "",
     "Fan Dimension": "120 x 120 x 25MM",
     "Fan Speed": "500 – 2200 RPM ± 10%",
     "Air Flow": "30.39 – 91.19 CFM",
@@ -2313,7 +2313,7 @@
 },
 
  {
-      "id": "poseidon",
+      "id": "poseidon360",
       "name": "POSEIDON 360",
       "category": "cooler",
       "hot": false,
@@ -2435,6 +2435,7 @@
 },
 
       "specs": {
+         "Model": "Poseidon 360", 
       "Fan Specification": "",
       "Fan Speed": "2500 ± 10% PWM",
       "Fan Size": "120 × 120 × 28 mm",
@@ -2449,10 +2450,10 @@
 
       "Pump Specification": "",
       "Motor": "Three-phase-pole",
-      "Pump Noise": "29 dB(A)",
+      "Noise": "29 dB(A)",
       "Pump Rated Voltage": "12V",
-      "Pump Rated Current": "0.41A ± 10%",
-      "Pump Speed": "3300 ± 10% RPM",
+      "Pump Rated Power": "0.41A ± 10%",
+      "Rated Speed": "3300 ± 10% RPM",
       "Lighting Control": "ARGB",
 
       "Cooler Specification": "",
@@ -2690,25 +2691,24 @@
 
     "specs": {
       "Model": "XTG-34VPRX",
-      "Screen Type": "Curved Monitor",
-      "Screen Size": "34 Inch",
-      "Curvature": "1500R",
+      "Screen Size": "34″",
+      "Curvature": "R 1500",
       "Backlight Type": "LED",
-      "Resolution": "UWQHD 3440 × 1440",
-      "Panel Type": "VA Panel",
+      "Resolution": "UWQHD 3440 × 1440P",
+      "Panel Type": "VA",
       "Refresh Rate": "180Hz",
       "Response Time": "1ms",
       "Color Support": "16.7M (Typical)",
-      "Maximum Brightness": "300 cd/m² (Typical)",
-      "Aspect Ratio": "21:9",
+      "Brightness": "300 cd/m² (Typical)",
+      "Aspect Ratio": "21:09",
       "Static Contrast Ratio": "3000:1 (Typical)",
-      "HDR": "HDR 400",
+      "HDR": "400",
       "sRGB": "99% Color Gamut",
-      "Adobe RGB": "100% R / 86% G / 77% B",
+      "Adobe RGB": "100% R  / 86% G / 77% B ",
       "Color Depth": "8-bit",
       "Viewing Angle": "178° (H) / 178° (V)",
       "Ports": "2 × HDMI + 2 × DisplayPort + Audio + DC",
-      "Features": "G-Sync Compatible, FreeSync, Low Blue Light"
+      "Features": "G-Sync, FreeSync, Low Blue Light"
     }
   },
 
@@ -2796,24 +2796,23 @@
 
       "specs": {
         "Model": "XTG-49ARCX",
-        "Screen Type": "Curved Monitor",
-        "Screen Size": "49 Inch",
-        "Curvature": "1500R",
+        "Screen Size": "49″",
+        "Curvature": "R 1500",
         "Backlight Type": "LED",
-        "Resolution": "5120x1440P",
-        "Panel Type": "VA Panel",
+        "Resolution": "WLED 5120x1440P",
+        "Panel Type": "VA",
         "Refresh Rate": "165Hz",
         "Response Time": "1ms",
         "Color Support": "16.7M (Typical)",
         "Maximum Brightness": "300 cd/m² (Typical)",
         "Aspect Ratio": "32:9",
-        "Static Contrast Ratio": "3000:1 (Typical)",
+        "Static Contrast Ratio": "1000:1 (Typical)",
         "HDR": "400",
         "sRGB": "99% Color Gamut",
-        "Adobe RGB": "100% G86% B77%",
+        "Adobe RGB": "100% R / 86% G / 77% B",
         "Color Depth": "8-bit + Hi-FRC",
         "Viewing Angle": "H178° / V178°",
-        "Ports": "HDMI + DP + Type-C + USB + Audio + DC",
+        "Ports": "2× HDMI + 1× DP + 1× Type-C + 3× USB + Audio + DC",
         "Max CPU Cooler Height": "174mm",
         "Features": "G-Sync, FreeSync, Low Blue Light, Speaker"
       }
