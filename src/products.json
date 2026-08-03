@@ -2806,14 +2806,13 @@
         "Color Support": "16.7M (Typical)",
         "Maximum Brightness": "300 cd/m² (Typical)",
         "Aspect Ratio": "32:9",
-        "Static Contrast Ratio": "3000:1 (Typical)",
+        "Static Contrast Ratio": "1000:1 (Typical)",
         "HDR": "400",
         "sRGB": "99% Color Gamut",
         "Adobe RGB": "100% G86% B77%",
         "Color Depth": "8-bit + Hi-FRC",
         "Viewing Angle": "H178° / V178°",
-        "Ports": "HDMI + DP + Type-C + USB + Audio + DC",
-        "Max CPU Cooler Height": "174mm",
+        "Ports": "2× HDMI + 1× DP + 1× Type-C + 3× USB + Audio + DC",
         "Features": "G-Sync, FreeSync, Low Blue Light, Speaker"
       }
     }
