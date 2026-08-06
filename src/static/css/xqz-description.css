@@ -677,6 +677,12 @@
         font-size: 12px;
         gap: 7px;
     }
+
+    .product-nav i {
+    width: 22px;
+    height: 22px;
+    font-size: 8px;
+    }
     
 }
 @media (max-width: 768px) {

@@ -2549,7 +2549,6 @@ border-glow {
     max-width:1400px;
     margin:20px auto 0px;
     display:flex;
-    background:#0d0d0d;
     
   
 }
@@ -2570,17 +2569,24 @@ border-glow {
     transition:.3s ease;
 }
 
-.product-nav:first-child{
-    border-right:1px solid #262626;
-}
 
 .product-nav:hover{
-    background:#181818;
    color: #fbb03b;      /* yellow hover */
 }
 
-.product-nav i{
-    font-size:16px;
+.product-nav i {
+    width: 34px;
+    height: 34px;
+    border: 2px solid #d9d9d98b;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+.product-nav:hover i {
+    border-color: #fbb03b;  /* Yellow arrow */
+       color: #fbb03b;  
 }
 
 .product-nav.disabled{
