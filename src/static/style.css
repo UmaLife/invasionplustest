@@ -811,12 +811,10 @@ html {
     background: transparent !important;
 }
 .image-box img:not(.hero-product){
-    width: 70%;
-    max-height: 70%;
+    width: 50%;
+    max-height: 50%;
     object-fit: contain;
     border-radius: 20px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
-    filter: brightness(0.8);
     z-index: 3;
     transition:
         transform 0.8s cubic-bezier(0.16, 1, 0.3, 1),
@@ -842,7 +840,7 @@ html {
     display:block;
     object-fit:cover;
 
-    transform: scale(1.08);
+    transform: scale(1);
     transition:
         transform 1.4s ease,
         opacity 1s ease;
@@ -1931,6 +1929,7 @@ border-glow {
     font-size: 42px;
     letter-spacing: 10px;
     color: #fbb03b;
+    margin: 15px 0 30px;
 }
 
 .join p {
@@ -2315,29 +2314,32 @@ border-glow {
     line-height:1.7;
     margin-top:18px;
 }
+.feature-box img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
 
-.feature-box img{
-    position:absolute;
-    right:0;
-    bottom:0;
-    width:58%;
-    height:100%;
-    object-fit:cover;
-    opacity:.85;
-    z-index:1;
+    width: 55%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 
-    -webkit-mask-image:linear-gradient(
-        90deg,
+    opacity: 1;
+    z-index: 1;
+
+    -webkit-mask-image: linear-gradient(
+        to right,
         transparent 0%,
-        rgba(0,0,0,.25) 12%,
-        #000 35%,
+        rgba(0, 0, 0, 0.75) 6%,
+        #000 12%,
         #000 100%
     );
-    mask-image:linear-gradient(
-        90deg,
+
+    mask-image: linear-gradient(
+        to right,
         transparent 0%,
-        rgba(0,0,0,.25) 12%,
-        #000 35%,
+        rgba(0, 0, 0, 0.75) 6%,
+        #000 12%,
         #000 100%
     );
 }
@@ -2548,7 +2550,6 @@ border-glow {
     max-width:1400px;
     margin:20px auto 0px;
     display:flex;
-    background:#0d0d0d;
     
   
 }
@@ -2569,17 +2570,24 @@ border-glow {
     transition:.3s ease;
 }
 
-.product-nav:first-child{
-    border-right:1px solid #262626;
-}
 
 .product-nav:hover{
-    background:#181818;
    color: #fbb03b;      /* yellow hover */
 }
 
-.product-nav i{
-    font-size:16px;
+.product-nav i {
+    width: 34px;
+    height: 34px;
+    border: 2px solid #d9d9d9bd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+.product-nav:hover i {
+    border-color: #fbb03b;  /* Yellow arrow */
+       color: #fbb03b;  
 }
 
 .product-nav.disabled{
