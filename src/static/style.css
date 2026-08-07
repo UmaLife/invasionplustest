@@ -2668,3 +2668,259 @@ border-glow {
 .spec-title:first-child {
     margin-top: 0;
 }
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+@media (max-width:768px){
+
+    /* HERO */
+    .contact-hero{
+        min-height:80vh;
+        padding:0 20px;
+    }
+
+    .hero-content,
+    .hero-text{
+        width:100%;
+        padding:0 10px;
+        transform:translate(-50%, -50%);
+    }
+
+    .hero-content h1,
+    .hero-text h1{
+        font-size:clamp(2rem, 9vw, 3rem);
+        letter-spacing:2px;
+        white-space:normal;
+    }
+
+    .hero-content p,
+    .hero-text p{
+        font-size:1rem;
+        line-height:1.6;
+    }
+
+    .yellow-line{
+        width:90px;
+        margin-top:20px;
+    }
+
+    /* SECTION */
+    .section{
+        padding:60px 20px;
+    }
+
+    .section-title{
+        margin-bottom:35px;
+    }
+
+    .section-title h2{
+        font-size:28px;
+        letter-spacing:2px;
+    }
+
+    /* CONTACT GRID */
+    .contact-grid{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .contact-card{
+        min-height:auto;
+        padding:35px 25px;
+    }
+
+    .contact-card i{
+        font-size:30px;
+        margin-bottom:18px;
+    }
+
+    .contact-card h3{
+        font-size:20px;
+    }
+
+    .contact-card p{
+        font-size:15px;
+    }
+
+    /* LOCATION */
+    .location-box{
+        margin-top:30px;
+    }
+
+    .map-preview{
+        height:400px;
+        padding:20px;
+    }
+
+    .map-content i{
+        font-size:42px;
+    }
+
+    .map-content h3{
+        font-size:24px;
+    }
+
+    .map-content p{
+        font-size:14px;
+        line-height:1.6;
+    }
+
+    /* BUTTONS */
+    .map-buttons{
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+    }
+
+    .map-buttons a{
+        width:100%;
+        max-width:280px;
+        height:58px;
+        font-size:1rem;
+    }
+
+    .map-buttons a i{
+        font-size:1.1rem;
+    }
+     /* HERO */
+    .about-sec{
+        min-height:80vh;
+        padding:0 20px;
+        background-position:center;
+    }
+
+    .hero-sec{
+        max-width:100%;
+        text-align: center;
+    }
+
+    .label,
+    .section-label{
+        font-size:20px;
+        letter-spacing:2px;
+        margin-bottom:12px;
+    }
+
+    .hero-sec h1{
+        font-size:clamp(2.3rem, 10vw, 4rem);
+        line-height:1.05;
+        text-align: center;
+    }
+
+    .line{
+        width:90px;
+        margin-top:20px;
+    }
+
+    .desc{
+        max-width:100%;
+        font-size:15px;
+        line-height:1.7;
+        text-align: center;
+    }
+
+    /* PHILOSOPHY */
+    .philosophy{
+        padding:60px 20px;
+    }
+
+    .about-cards{
+        grid-template-columns:1fr;
+        gap:25px;
+    }
+
+    .about-card{
+        border-right:none;
+        border-bottom:1px solid rgba(214,168,79,0.25);
+        padding:25px 10px;
+    }
+
+    .about-card:last-child{
+        border-bottom:none;
+    }
+
+    .icon{
+        font-size:34px;
+        margin-bottom:18px;
+    }
+
+    /* STATS */
+    .stats{
+        grid-template-columns:repeat(2,1fr);
+        gap:25px;
+        padding:60px 20px;
+    }
+
+    .stat{
+        border-right:none;
+        text-align:center;
+    }
+
+    .stat h2{
+        font-size:40px;
+    }
+
+    .stat p,
+    .stat-text p{
+        font-size:14px;
+    }
+
+    .stat-text h3{
+        font-size:16px;
+    }
+
+    /* THANK YOU */
+    .thank-you{
+        padding:70px 20px;
+    }
+
+    .thank-you h1{
+        font-size:32px;
+        letter-spacing:6px;
+        line-height:1.2;
+    }
+
+    .thank-you p{
+        font-size:15px;
+    }
+
+    .thank-you h4{
+        font-size:18px;
+    }
+
+    .signature{
+        font-size:13px;
+    }
+
+    /* JOIN */
+    .join{
+        padding:60px 20px;
+    }
+
+    .join h1{
+        font-size:28px;
+        letter-spacing:4px;
+        line-height:1.3;
+    }
+
+    .join p{
+        font-size:12px;
+        letter-spacing:1px;
+    }
+
+    .buttons{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+    }
+
+    .buttons a{
+        width:240px;
+        margin:0;
+        text-align:center;
+    }
+
+
+}
