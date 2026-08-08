@@ -2246,16 +2246,16 @@
       "description": "Efficient heat dissipation for better cooling performance.",
       "image":  "static/FROST VISION 240/4.png",
       "textSide": "left"
-    }
-  ],
-
-  "productSize": {
+    },
+     {
     "number": "05",
     "title": "<strong>BRAIDED TEFLON</strong> TUBING",
     "description": "Durable tubing with a refined, premium finish.",
     "image":  "static/FROST VISION 240/5.png"
     
-  },
+  }
+
+  ],
 
   "statements": [
     {
