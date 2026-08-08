@@ -114,10 +114,7 @@
 
   border-radius: 0 16px 16px 0;
 }
-.xqz-feature-content {
-    position: relative;
-    left: 12%;
-}
+
 
 /* Feature text */
 .xqz-description .xqz-feature-content {
@@ -1745,3 +1742,22 @@
         cursor:pointer;
     }
 }
+
+  .xqz-description
+    .xqz-feature.is-left
+    .xqz-feature-content {
+        left: 5%;
+        right: auto;
+
+        text-align: left;
+    }
+
+    /* Right text */
+    .xqz-description
+    .xqz-feature.is-right
+    .xqz-feature-content {
+        left: auto;
+        right: 5%;
+
+        text-align: right;
+    }
