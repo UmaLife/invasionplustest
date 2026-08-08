@@ -14,7 +14,7 @@ body{
     min-width: 1200px;
     overflow-x: auto;
     overflow-y: visible;
-    padding-top: 90px;
+
     }
 
 section {
@@ -789,15 +789,13 @@ html {
 .slide-overlay{
     position:absolute;
     inset:0;
-
-    background:
-    linear-gradient(
+      background: linear-gradient(
         to top,
-        rgba(0,0,0,.55),
-        rgba(0,0,0,.1)
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.02)
     );
-}
 
+}
 .image-box {
     position: relative;
     top: 0;
@@ -2935,3 +2933,844 @@ border-glow {
 .mobile-banner-arrows {
     display: none;
 }
+
+ .sticky-slide:first-child .slide-card > img {
+        width: 70% !important;
+        height: auto !important;
+
+        max-width: 1100px !important;
+
+        object-fit: contain !important;
+
+        position: absolute;
+        left: 50%;
+        top: 50%;
+
+        transform: translate(-50%, -50%) !important;
+    }
+
+
+    
+@media (max-width: 768px) {
+
+    /* =========================
+       MOBILE BANNER SECTION
+    ========================= */
+
+    .banner-container,
+    .sticky-section {
+        position: relative !important;
+
+        width: 100% !important;
+
+        height: 680px !important;
+        min-height: 680px !important;
+        max-height: 680px !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        background: #000 !important;
+
+        overflow: hidden !important;
+    }
+
+
+    /* =========================
+       BANNER WRAPPER
+    ========================= */
+
+    .sticky-wrapper {
+        position: relative !important;
+
+        top: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+
+        width: 100% !important;
+
+        height: 680px !important;
+        min-height: 680px !important;
+        max-height: 680px !important;
+
+        display: block !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        background: #000 !important;
+
+        overflow: hidden !important;
+    }
+
+
+    /* =========================
+       ALL SLIDES
+    ========================= */
+
+    .sticky-wrapper .sticky-slide {
+        position: absolute !important;
+
+        top: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        left: 0 !important;
+
+        width: 100% !important;
+        height: 100% !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        opacity: 0 !important;
+        visibility: hidden !important;
+
+        pointer-events: none !important;
+
+        transform: none !important;
+
+        transition: opacity 0.5s ease !important;
+
+        overflow: hidden !important;
+
+        z-index: 1 !important;
+    }
+
+
+    /* =========================
+       ACTIVE SLIDE
+    ========================= */
+
+    .sticky-wrapper .sticky-slide.active {
+        opacity: 1 !important;
+        visibility: visible !important;
+
+        pointer-events: auto !important;
+
+        transform: none !important;
+
+        z-index: 5 !important;
+    }
+
+
+    /* =========================
+       SLIDE CARD
+    ========================= */
+
+    .sticky-wrapper .slide-card {
+        position: relative !important;
+
+        width: 100% !important;
+        height: 100% !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        background: #000 !important;
+
+        border: none !important;
+        border-radius: 0 !important;
+
+        overflow: hidden !important;
+    }
+
+
+    /* =========================
+       BANNER IMAGE
+    ========================= */
+
+    .sticky-wrapper .slide-card > img {
+        position: absolute !important;
+
+        top: 0 !important;
+        left: 0 !important;
+
+        width: 100% !important;
+        height: 82% !important;
+
+        object-fit: cover !important;
+
+        /* center the important part */
+        object-position: center center !important;
+
+        background: #000 !important;
+
+        transform: none !important;
+    }
+
+    /* =========================
+       BANNER 0 IMAGE
+    ========================= */
+
+    .sticky-wrapper
+    .slide-card
+    > img.banner0-img {
+
+        width: 100% !important;
+        height: 85% !important;
+
+        object-fit: contain !important;
+        object-position: center center !important;
+
+        background: #000 !important;
+
+        transform: none !important;
+    }
+
+
+    /* =========================
+       DARK / FADE OVERLAY
+    ========================= */
+
+    .sticky-wrapper .slide-overlay {
+        position: absolute !important;
+        inset: 0 !important;
+
+        width: 100% !important;
+        height: 100% !important;
+
+        background: linear-gradient(
+            to bottom,
+            transparent 55%,
+            rgba(0, 0, 0, 0.15) 65%,
+            rgba(0, 0, 0, 0.45) 73%,
+            rgba(0, 0, 0, 0.75) 80%,
+            #000 88%
+        ) !important;
+
+        pointer-events: none !important;
+        z-index: 2 !important;
+    }
+
+    /* =========================
+       HIDE INACTIVE CONTENT
+    ========================= */
+
+    .sticky-wrapper
+    .sticky-slide:not(.active)
+    .slide-content {
+
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+    }
+
+
+    /* =========================
+       ACTIVE BANNER CONTENT
+    ========================= */
+
+    .sticky-wrapper
+    .sticky-slide.active
+    .slide-content {
+
+        position: absolute !important;
+
+        top: auto !important;
+
+        left: 24px !important;
+        right: 24px !important;
+
+        bottom: 56px !important;
+
+        width: auto !important;
+        height: auto !important;
+
+        display: flex !important;
+
+        flex-direction: column !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        gap: 8px !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        visibility: visible !important;
+        opacity: 1 !important;
+
+        text-align: center !important;
+
+        background: transparent !important;
+
+        transform: none !important;
+
+        z-index: 100 !important;
+    }
+
+
+    /* =========================
+       PRODUCT NAME
+    ========================= */
+
+    .sticky-wrapper
+    .sticky-slide.active
+    .slide-content h1 {
+
+        position: relative !important;
+
+        display: block !important;
+
+        width: 100% !important;
+        height: auto !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        color: #ffffff !important;
+
+        font-size: 23px !important;
+        line-height: 1.1 !important;
+        font-weight: 700 !important;
+
+        text-align: center !important;
+
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+
+    /* =========================
+       LEARN MORE BUTTON
+    ========================= */
+
+    .sticky-wrapper
+    .sticky-slide.active
+    .slide-content
+    .learn-more {
+
+        position: relative !important;
+
+        display: flex !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        width: 100% !important;
+        height: 42px !important;
+
+        margin: 0 !important;
+        padding: 0 20px !important;
+
+        box-sizing: border-box !important;
+
+        background: rgba(18, 18, 18, 0.92) !important;
+
+        color: #ffffff !important;
+
+        border: 1px solid rgba(255, 255, 255, 0.08) !important;
+        border-radius: 30px !important;
+
+        font-size: 10px !important;
+        line-height: 1 !important;
+        font-weight: 600 !important;
+
+        text-align: center !important;
+        text-decoration: none !important;
+
+        visibility: visible !important;
+        opacity: 1 !important;
+
+        box-shadow: none !important;
+    }
+
+
+    /* =========================
+       BANNER 0
+       NO PRODUCT NAME
+    ========================= */
+
+    .sticky-wrapper
+    .sticky-slide.banner0-slide.active
+    .slide-content {
+
+        bottom: 26px !important;
+    }
+
+
+    /* =========================
+       VERTICAL BANNER DOTS
+    ========================= */
+
+    .sticky-wrapper .banner-nav {
+        position: absolute !important;
+
+        top: 50% !important;
+
+        right: 10px !important;
+        bottom: auto !important;
+        left: auto !important;
+
+        display: flex !important;
+
+        flex-direction: column !important;
+
+        flex-wrap: nowrap !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        width: auto !important;
+        height: auto !important;
+
+        gap: 6px !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        transform: translateY(-50%) !important;
+
+        z-index: 150 !important;
+    }
+
+
+    /* =========================
+       NORMAL DOT
+    ========================= */
+
+    .sticky-wrapper
+    .banner-nav
+    .nav-dot {
+
+        position: relative !important;
+
+        display: block !important;
+
+        flex: 0 0 auto !important;
+
+        width: 6px !important;
+        height: 6px !important;
+
+        min-width: 6px !important;
+        min-height: 6px !important;
+
+        max-width: 6px !important;
+        max-height: 6px !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+
+        background:
+            rgba(255, 255, 255, 0.40) !important;
+
+        border: none !important;
+        border-radius: 50% !important;
+
+        transform: none !important;
+
+        cursor: pointer !important;
+    }
+
+
+    /* =========================
+       ACTIVE DOT
+    ========================= */
+
+    .sticky-wrapper
+    .banner-nav
+    .nav-dot.active {
+
+        width: 6px !important;
+        height: 30px !important;
+
+        min-width: 6px !important;
+        min-height: 30px !important;
+
+        max-width: 6px !important;
+        max-height: 30px !important;
+
+        background: #ffffff !important;
+
+        border-radius: 20px !important;
+
+        transform: none !important;
+    }
+
+
+    /* =========================
+       REMOVE MOBILE ARROWS
+    ========================= */
+
+    .mobile-banner-arrows,
+    .banner-arrow,
+    .mobile-banner-prev,
+    .mobile-banner-next {
+
+        display: none !important;
+
+        visibility: hidden !important;
+
+        pointer-events: none !important;
+    }
+
+
+    /* =========================
+       FEATURE SECTION
+    ========================= */
+
+    .feature-section {
+        display: flex !important;
+
+        flex-direction: column !important;
+
+        width: 100% !important;
+
+        gap: 18px !important;
+
+        margin: 0 !important;
+        padding: 16px !important;
+
+        box-sizing: border-box !important;
+
+        background: #000 !important;
+    }
+
+
+    /* =========================
+       FEATURE CARD
+    ========================= */
+
+    .feature-card {
+        position: relative !important;
+
+        width: 100% !important;
+        height: 330px !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        border-radius: 18px !important;
+
+        overflow: hidden !important;
+
+        background: #111 !important;
+    }
+
+
+    .feature-card > img {
+        position: absolute !important;
+
+        inset: 0 !important;
+
+        width: 100% !important;
+        height: 100% !important;
+
+        object-fit: cover !important;
+        object-position: center !important;
+    }
+
+
+    .feature-dark {
+        position: absolute !important;
+
+        inset: 0 !important;
+
+        background:
+            linear-gradient(
+                to top,
+                rgba(0,0,0,0.85),
+                rgba(0,0,0,0.08)
+            ) !important;
+
+        z-index: 2 !important;
+    }
+
+
+    /* =========================
+       FEATURE TEXT
+    ========================= */
+
+    .feature-title,
+    .feature-title.left,
+    .feature-title.right {
+
+        position: absolute !important;
+
+        left: 20px !important;
+        right: 20px !important;
+        bottom: 24px !important;
+
+        width: auto !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        text-align: left !important;
+
+        z-index: 5 !important;
+    }
+
+
+    .feature-title span {
+        color: #ffad27 !important;
+
+        font-size: 11px !important;
+
+        text-transform: uppercase !important;
+        letter-spacing: 1px !important;
+    }
+
+
+    .feature-title h2 {
+        margin: 6px 0 8px 0 !important;
+
+        color: #ffffff !important;
+
+        font-size: 22px !important;
+        line-height: 1.15 !important;
+        font-weight: 600 !important;
+    }
+
+
+    .feature-title p {
+        margin: 0 0 14px 0 !important;
+
+        color: rgba(255,255,255,0.85) !important;
+
+        font-size: 10px !important;
+        line-height: 1.5 !important;
+    }
+
+
+   .feature-title a {
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+
+        width: auto !important;
+        min-width: 135px;
+        height: 42px;
+
+        padding: 0 20px !important;
+
+        background: #fff !important;
+        color: #000 !important;
+
+        font-size: 13px !important;
+        font-weight: 600 !important;
+        line-height: 1 !important;
+
+        text-decoration: none !important;
+
+        border-radius: 9px;
+
+        opacity: 1 !important;
+        visibility: visible !important;
+
+        position: relative;
+        z-index: 10;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .category-section {
+        padding: 30px 0 45px;
+        padding-left: 18px !important;
+    }
+
+    .category-section h2 {
+        padding: 0 18px;
+        margin: 0 0 22px;
+
+        font-size: 22px;
+        text-align: left;
+    }
+
+
+    /* Horizontal scroll */
+    .category-grid {
+        display: flex;
+        flex-direction: row;
+
+        gap: 12px;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        padding: 0 18px 10px;
+
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+
+        scroll-snap-type: x proximity;
+        scroll-behavior: smooth;
+
+        scrollbar-width: none;
+
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .category-grid::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    /* Card */
+    .category-card {
+        position: relative;
+
+        flex: 0 0 90%;
+        min-width: 90%;
+
+        height: 260px;
+
+        padding: 25px 20px;
+
+        border-radius: 18px;
+
+        box-sizing: border-box;
+        overflow: hidden;
+
+        scroll-snap-align: start;
+    }
+
+
+    /* Text content */
+    .category-content {
+        position: absolute !important;
+
+        left: 22px !important;
+        top: 50% !important;
+
+        width: 53% !important;
+
+        transform: translateY(-50%) !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        z-index: 3 !important;
+    }
+
+
+    .category-content h3 {
+        font-size: 24px;
+        line-height: 1.1;
+
+        margin: 0 0 10px;
+    }
+
+
+    .category-content p {
+        font-size: 13px;
+        line-height: 1.45;
+
+        margin: 0 0 24px;
+
+        color: #bdbdbd;
+    }
+
+
+    .category-content a {
+        display: inline-flex;
+        align-items: center;
+
+        gap: 8px;
+
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+
+    .category-content a i {
+        font-size: 12px;
+    }
+
+
+    /* Product image area */
+    .category-image {
+        position: absolute;
+
+        right: 5px;
+        top: 50%;
+
+        transform: translateY(-50%);
+
+        width: 50%;
+        height: 190px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        z-index: 2;
+    }
+
+
+    /* Soft colour behind image */
+    .category-image::before {
+        content: "";
+
+        position: absolute;
+
+        width: 150px;
+        height: 150px;
+
+        left: 50%;
+        top: 50%;
+
+        transform: translate(-50%, -50%);
+
+        filter: blur(12px);
+
+        border-radius: 50%;
+
+        z-index: 0;
+
+        pointer-events: none;
+    }
+
+
+    .category-image img {
+        position: relative;
+
+        width: 100%;
+        height: 100%;
+
+        object-fit: contain;
+
+        z-index: 1;
+    }
+
+
+    .category-header {
+        margin-bottom: 10px !important;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .category-card,
+    .category-card:hover,
+    .category-card:active,
+    .category-card:focus,
+    .category-card:focus-within {
+        transform: none !important;
+    }
+
+    .category-image,
+    .category-card:hover .category-image,
+    .category-card:active .category-image,
+    .category-card:focus .category-image,
+    .category-card:focus-within .category-image {
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+    }
+
+    .category-image img,
+    .category-card:hover .category-image img,
+    .category-card:active .category-image img,
+    .category-card:focus .category-image img,
+    .category-card:focus-within .category-image img {
+        transform: none !important;
+        margin: 0 !important;
+    }
+
+}
+
