@@ -20,60 +20,55 @@
     <section class="banner-container">   
         <div class="sticky-wrapper">
             <div class="sticky-slide active">
-                <div class="image-box transparent-bg" >
-                    <div class="slide-content hero-content">
-                        <img class="hero-logo" src="static/bann.png" alt="Invasion">
-                        <a href="aboutus.html" class="learn-more">LEARN MORE ></a>
-                    </div>
-                </div>
-            </div>
+    <div class="slide-card">
+        <img src="static/banner0.png" class="banner0-img" alt="Banner 0">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+            <h1>EREBUS</h1>
+            <a href="product2.html?id=erebus" class="learn-more">LEARN MORE ></a>
+        </div>
+    </div>
+</div>
 
-            <div class="sticky-slide">
-                <div class="slide-card">
-                    <img src="static/banner1.png" alt="New Model">
-                    <div class="slide-overlay"></div>
-                    <div class="slide-content">
-                        <h1>EREBUS</h1>
-                        <a href="product2.html?id=erebus" class="learn-more">LEARN MORE ></a>
-                    </div>
-                </div>
-            </div>
+<div class="sticky-slide">
+    <div class="slide-card">
+        <img src="static/banner1.png" class="banner1-img" alt="Banner 1">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+            <h1>EREBUS</h1>
+            <a href="product2.html?id=erebus" class="learn-more">LEARN MORE ></a>
+        </div>
+    </div>
+</div>
 
-            <div class="sticky-slide">
-                <div class="slide-card">
-                    <img src="static/banner2.png" alt="High Performance">
-                    <div class="slide-overlay"></div>
-                    <div class="slide-content">
-                        <h1>POSEIDON 360</h1>
-                        <a href="product2.html?id=poseidon" class="learn-more">LEARN MORE ></a>
-                    </div>
-                </div>
-            </div>
+<div class="sticky-slide">
+    <div class="slide-card">
+        <img src="static/banner2.png" class="banner2-img" alt="High Performance">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+            <h1>POSEIDON 360</h1>
+            <a href="product2.html?id=poseidon" class="learn-more">LEARN MORE ></a>
+        </div>
+    </div>
+</div>
 
-            <div class="sticky-slide">
-                <div class="slide-card">
-                    <img src="static/banner3.png" alt="Future Tech">
-                    <div class="slide-overlay"></div>
-                    <div class="slide-content">
-                        <h1>ATLAS</h1>
-                        <a href="product2.html?id=atlas" class="learn-more">LEARN MORE ></a>
-                    </div>
-                </div>
-            </div>
-            <div class="banner-nav">
-            <span class="nav-dot active" data-slide="0"></span>
-            <span class="nav-dot" data-slide="1"></span>
-            <span class="nav-dot" data-slide="2"></span>
-            <span class="nav-dot" data-slide="3"></span>
-            </div>
-            <div class="mobile-banner-arrows">
-                <button class="banner-arrow mobile-banner-prev" type="button">
-                    <i class="fa-solid fa-angle-left"></i>
-                </button>
-                <button class="banner-arrow mobile-banner-next" type="button">
-                    <i class="fa-solid fa-angle-right"></i>
-                </button>
-            </div>
+<div class="sticky-slide">
+    <div class="slide-card">
+        <img src="static/banner3.png" class="banner3-img" alt="Future Tech">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+            <h1>ATLAS</h1>
+            <a href="product2.html?id=atlas" class="learn-more">LEARN MORE ></a>
+        </div>
+    </div>
+</div>
+
+<div class="banner-nav">
+    <span class="nav-dot active" data-slide="0"></span>
+    <span class="nav-dot" data-slide="1"></span>
+    <span class="nav-dot" data-slide="2"></span>
+    <span class="nav-dot" data-slide="3"></span>
+</div>
         </div>
     </section>
     <!--category-->
@@ -164,6 +159,73 @@
     </section>
 
 <script type="module" src="home.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const slides = document.querySelectorAll(".sticky-slide");
+    const dots = document.querySelectorAll(".banner-nav .nav-dot");
+
+    let currentSlide = 0;
+    let autoSlide;
+
+    function showSlide(index) {
+
+        if (index >= slides.length) {
+            index = 0;
+        }
+
+        if (index < 0) {
+            index = slides.length - 1;
+        }
+
+        slides.forEach(function(slide) {
+            slide.classList.remove("active");
+        });
+
+        dots.forEach(function(dot) {
+            dot.classList.remove("active");
+        });
+
+        slides[index].classList.add("active");
+
+        if (dots[index]) {
+            dots[index].classList.add("active");
+        }
+
+        currentSlide = index;
+    }
+
+    function nextSlide() {
+        showSlide(currentSlide + 1);
+    }
+
+    function startAutoSlide() {
+
+        clearInterval(autoSlide);
+
+        autoSlide = setInterval(function () {
+
+            if (window.innerWidth <= 768) {
+                nextSlide();
+            }
+
+        }, 4000);
+    }
+
+    dots.forEach(function(dot, index) {
+
+        dot.addEventListener("click", function () {
+            showSlide(index);
+            startAutoSlide();
+        });
+
+    });
+
+    showSlide(0);
+    startAutoSlide();
+});
+</script>
+</script>
 </body>
 <script src="set.js">
 </script>

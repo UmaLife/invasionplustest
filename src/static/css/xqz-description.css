@@ -1761,3 +1761,436 @@
 
         text-align: right;
     }
+
+    /* =====================================================
+   FINAL MOBILE BANNER
+===================================================== */
+
+@media (max-width: 768px) {
+
+    /* OUTER BANNER SECTION */
+    .banner-container,
+    .sticky-section {
+        position: relative !important;
+
+        width: 100% !important;
+
+        height: 220px !important;
+        min-height: 220px !important;
+        max-height: 220px !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        overflow: hidden !important;
+
+        background: #000 !important;
+    }
+
+
+    /* WRAPPER */
+    .sticky-wrapper {
+        position: relative !important;
+
+        top: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+
+        width: 100% !important;
+
+        height: 220px !important;
+        min-height: 220px !important;
+        max-height: 220px !important;
+
+        display: block !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        overflow: hidden !important;
+
+        background: #000 !important;
+    }
+
+
+    /* ALL SLIDES */
+    .sticky-slide {
+        position: absolute !important;
+
+        top: 0 !important;
+        right: 0 !important;
+        bottom: auto !important;
+        left: 0 !important;
+
+        width: 100% !important;
+
+        height: 220px !important;
+        min-height: 220px !important;
+        max-height: 220px !important;
+
+        display: block !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        opacity: 0 !important;
+        visibility: hidden !important;
+
+        transform: none !important;
+
+        pointer-events: none !important;
+
+        transition: opacity 0.5s ease !important;
+
+        z-index: 1 !important;
+    }
+
+
+    /* ACTIVE SLIDE */
+    .sticky-slide.active {
+        position: absolute !important;
+
+        top: 0 !important;
+        left: 0 !important;
+
+        width: 100% !important;
+        height: 220px !important;
+
+        display: block !important;
+
+        opacity: 1 !important;
+        visibility: visible !important;
+
+        pointer-events: auto !important;
+
+        transform: none !important;
+
+        z-index: 5 !important;
+    }
+
+
+    /* CARD */
+    .sticky-slide .slide-card {
+        position: relative !important;
+
+        top: 0 !important;
+        left: 0 !important;
+
+        width: 100% !important;
+
+        height: 220px !important;
+        min-height: 220px !important;
+        max-height: 220px !important;
+
+        display: block !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        border-radius: 0 !important;
+
+        overflow: hidden !important;
+
+        background: #000 !important;
+    }
+
+
+    /* ALL 3 BANNER IMAGES */
+    .sticky-slide .slide-card > img {
+        position: absolute !important;
+
+        top: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        left: 0 !important;
+
+        display: block !important;
+
+        width: 100% !important;
+        height: 100% !important;
+
+        min-width: 100% !important;
+        min-height: 100% !important;
+
+        max-width: none !important;
+        max-height: none !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        opacity: 1 !important;
+        visibility: visible !important;
+
+        object-fit: cover !important;
+        object-position: center center !important;
+
+        transform: none !important;
+
+        border-radius: 0 !important;
+
+        z-index: 1 !important;
+    }
+
+
+    /* BANNER0 */
+    .sticky-slide .slide-card > img.banner0-img {
+        position: absolute !important;
+
+        top: 0 !important;
+        left: 0 !important;
+
+        width: 100% !important;
+        height: 100% !important;
+
+        display: block !important;
+
+        opacity: 1 !important;
+        visibility: visible !important;
+
+        object-fit: cover !important;
+        object-position: center center !important;
+
+        transform: none !important;
+
+        z-index: 1 !important;
+    }
+
+
+    /* REMOVE DARK OVERLAY */
+    .slide-overlay {
+        position: absolute !important;
+
+        inset: 0 !important;
+
+        width: 100% !important;
+        height: 100% !important;
+
+        background: transparent !important;
+
+        pointer-events: none !important;
+
+        z-index: 2 !important;
+    }
+
+
+    /* HIDE HTML TEXT ON MOBILE */
+    .slide-content,
+    .slide-content h1,
+    .slide-content .learn-more {
+        display: none !important;
+
+        visibility: hidden !important;
+    }
+
+
+    /* DOT CONTAINER */
+    .banner-nav {
+        position: absolute !important;
+
+        top: auto !important;
+        right: auto !important;
+        bottom: 10px !important;
+        left: 50% !important;
+
+        display: flex !important;
+
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        width: auto !important;
+        height: auto !important;
+
+        gap: 7px !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        transform: translateX(-50%) !important;
+
+        z-index: 50 !important;
+    }
+
+
+    /* NORMAL DOT */
+    .banner-nav .nav-dot {
+        position: static !important;
+
+        display: block !important;
+
+        flex: 0 0 auto !important;
+
+        width: 6px !important;
+        height: 6px !important;
+
+        min-width: 6px !important;
+        min-height: 6px !important;
+
+        max-width: 6px !important;
+        max-height: 6px !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        border: none !important;
+        border-radius: 50% !important;
+
+        background: rgba(255, 255, 255, 0.45) !important;
+
+        transform: none !important;
+    }
+
+
+    /* ACTIVE DOT */
+    .banner-nav .nav-dot.active {
+        width: 18px !important;
+        height: 6px !important;
+
+        min-width: 18px !important;
+        min-height: 6px !important;
+
+        max-width: 18px !important;
+        max-height: 6px !important;
+
+        border-radius: 20px !important;
+
+        background: #ffffff !important;
+    }
+
+
+    /* REMOVE LEFT / RIGHT BUTTONS */
+    .mobile-banner-arrows,
+    .banner-arrow,
+    .mobile-banner-prev,
+    .mobile-banner-next {
+        display: none !important;
+        visibility: hidden !important;
+        pointer-events: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* banner2 + banner3 */
+    .sticky-slide .slide-card > img {
+        position: absolute !important;
+
+        top: 0 !important;
+        left: 0 !important;
+
+        width: 100% !important;
+        height: 100% !important;
+
+        display: block !important;
+
+        object-fit: cover !important;
+        object-position: center center !important;
+
+        opacity: 1 !important;
+        visibility: visible !important;
+
+        transform: none !important;
+    }
+
+
+    /* =================================
+       BANNER0 - SHOW WHOLE IMAGE
+    ================================= */
+
+    .sticky-slide .slide-card > img.banner0-img {
+        position: absolute !important;
+
+        top: 50% !important;
+        left: 50% !important;
+
+        width: 100% !important;
+        height: 100% !important;
+
+        display: block !important;
+
+        max-width: none !important;
+        max-height: none !important;
+
+        object-fit: contain !important;
+        object-position: center center !important;
+
+        opacity: 1 !important;
+        visibility: visible !important;
+
+        transform: translate(-50%, -50%) !important;
+
+        z-index: 1 !important;
+    }
+
+
+    /* remove text because text already exists in banner image */
+    .slide-content {
+        display: none !important;
+    }
+
+
+    /* dots */
+    .banner-nav {
+        position: absolute !important;
+
+        left: 50% !important;
+        bottom: 10px !important;
+
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        gap: 7px !important;
+
+        transform: translateX(-50%) !important;
+
+        z-index: 50 !important;
+    }
+
+
+    /* remove arrows */
+    .mobile-banner-arrows,
+    .banner-arrow,
+    .mobile-banner-prev,
+    .mobile-banner-next {
+        display: none !important;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    /* FIRST BANNER ONLY */
+    .sticky-slide:first-of-type .slide-card > img {
+        position: absolute !important;
+
+        top: 0 !important;
+        left: 0 !important;
+
+        width: 100% !important;
+        height: 100% !important;
+
+        min-width: 100% !important;
+        min-height: 100% !important;
+
+        max-width: none !important;
+        max-height: none !important;
+
+        display: block !important;
+
+        opacity: 1 !important;
+        visibility: visible !important;
+
+        object-fit: cover !important;
+        object-position: center center !important;
+
+        transform: none !important;
+
+        z-index: 1 !important;
+    }
+
+}
