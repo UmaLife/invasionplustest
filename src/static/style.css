@@ -2953,6 +2953,8 @@ border-glow {
     .sticky-wrapper {
         width: 100%;
         height: 100vh;
+        position: relative;
+        overflow: hidden;
     }
 
     .sticky-slide {
@@ -2983,38 +2985,36 @@ border-glow {
         display: none;
     }
     .mobile-banner-arrows {
-        display: block !important;
-        position: fixed !important;
+        display: block;
 
-        top: 0 !important;
-        left: 0 !important;
+        position: absolute;
+        inset: 0;
 
-        width: 100vw !important;
-        height: 100vh !important;
+        width: 100%;
+        height: 100%;
 
-        z-index: 2147483646 !important;
+        z-index: 9999;
 
-        pointer-events: none !important;
+        pointer-events: none;
     }
     .banner-arrow {
-        position: fixed !important;
-
+        position: absolute !important;
         top: 50% !important;
 
         width: 50px !important;
         height: 50px !important;
 
         display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
+        justify-content: center;
+        align-items: center;
 
         transform: translateY(-50%) !important;
 
-        border: 1px solid rgba(255,255,255,.6);
+        border: 1px solid rgba(255,255,255,.5);
         border-radius: 50%;
 
-        background: rgba(0,0,0,.6);
-        color: white;
+        background: rgba(0,0,0,.45);
+        color: #fff;
 
         font-size: 20px;
 
@@ -3025,24 +3025,18 @@ border-glow {
 
         touch-action: manipulation;
     }
+    .mobile-banner-prev {
+        left: 18px !important;
+        right: auto !important;
+    }
+    .mobile-banner-next {
+        right: 18px !important;
+        left: auto !important;
+    }
+     .banner-arrow i {
+        pointer-events: none !important;
+    }
 
-
-/* LEFT ARROW */
-.mobile-banner-prev {
-    left: 18px !important;
-}
-
-
-/* RIGHT ARROW */
-.mobile-banner-prev{
-    right: 18px !important;
-}
-
-
-/* Icon cannot block button click */
-.banner-arrow i {
-    pointer-events: none;
-}
 
 
 /* Press effect */
@@ -3067,43 +3061,48 @@ border-glow {
 
     width: 100% !important;
 
-    display: flex !important;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
     padding: 0 !important;
     margin: 0 !important;
 
-    text-align: center;
+    text-align: center !important;
 }
 
-    .hero-logo {
-    width: 230% !important;
+
+/* Logo */
+.hero-logo {
+    width: 210% !important;
     max-width: none !important;
     height: auto !important;
 
-    position: static !important;
-    left: auto !important;
+    position: relative !important;
 
-    transform: none !important;
+    left: 50% !important;
+
+    transform: translateX(-50%) !important;
 
     display: block;
 
-    margin: 0 auto !important;
+    margin: 0 0 30px 0 !important;
 }
-    .hero-content .learn-more {
-    position: static !important;
+
+
+/* Learn More */
+.hero-content .learn-more {
+    position: relative !important;
+
+    left: 50% !important;
+
+    transform: translateX(-50%) !important;
 
     display: block;
 
-    margin: 25px auto 0 !important;
+    width: fit-content;
+
+    margin: 25px 0 0 0 !important;
 
     font-size: 1.05rem;
 
     text-align: center;
-
-    transform: none !important;
 }
 
     /* Other banner text */
