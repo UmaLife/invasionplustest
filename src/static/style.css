@@ -1975,17 +1975,20 @@ border-glow {
     align-items:center;
     justify-content:flex-start;
     gap:12px;
-}
 
+    position: relative;
+    top: -40px; /* move the WHOLE panel upward */
+}
 .thumbs{
     height:auto;
-    max-height:520px;
+    max-height:400px;
     overflow-y:auto;
     display:flex;
     flex-direction:column;
     gap:20px;
     padding:4px 8px;
     scroll-behavior:smooth;
+
 }
 
 .thumbs::-webkit-scrollbar{
@@ -3778,3 +3781,8 @@ border-glow {
     margin-top: 70px;
 }
 
+body.cases-page,
+body.cooler-page,
+body.monitor-page{
+    padding-top: 60px !important;
+}
