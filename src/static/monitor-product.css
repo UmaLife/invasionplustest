@@ -30,16 +30,12 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding: 18px 40px;
     z-index: 1000;
-    background: rgba(0,0,0,0.15);
-    backdrop-filter: blur(10px);
+    background: rgb(0, 0, 0);
     transition: 0.3s ease;
 }
-.navbar.scrolled{
-    background: rgba(0,0,0,0.75);
-    box-shadow: 0 5px 30px rgba(0,0,0,0.4);
-}
+
 .logo{
     position: absolute;
     left: 50%;
@@ -62,7 +58,7 @@ section {
 }
 .nav-icons div{
     cursor: pointer;
-    font-size: 18px;
+    font-size: 25px;
 }
 .search-icon:hover{
     color: #fbb03b;
@@ -273,7 +269,6 @@ body.page-blur > *:not(.search-overlay):not(.side-menu):not(.product-panel):not(
     filter: blur(8px);
     transition: 0.3s ease;
 }
-
 .search-overlay,
 .side-menu,
 .product-panel,
@@ -285,6 +280,7 @@ body.page-blur > *:not(.search-overlay):not(.side-menu):not(.product-panel):not(
     opacity: 0.3;
     transition: 0.3;
 }
+
 .menu-icon{
     display: flex;
     flex-direction: column;
@@ -292,8 +288,8 @@ body.page-blur > *:not(.search-overlay):not(.side-menu):not(.product-panel):not(
     cursor: pointer;
 }
 .menu-icon span{
-    width: 15px;
-    height: 1px;
+    width: 18px;
+    height: 2px;
     background: white;
     display: block;
     transition: 0.3s ease;
@@ -301,13 +297,14 @@ body.page-blur > *:not(.search-overlay):not(.side-menu):not(.product-panel):not(
 .menu-icon :hover span{
     color: #fbb03b;
 }
+
 .side-menu{
     position: fixed;
     top: 0;
     left: 0;
     width: 320px;
     height: 100%;
-    background: rgba(12, 12, 12, 0.98);
+     background:black;
     transform: translateX(-100%);
     transition: 0.4s ease;
     z-index: 1001;
@@ -316,6 +313,9 @@ body.page-blur > *:not(.search-overlay):not(.side-menu):not(.product-panel):not(
 .side-menu.active{
     transform: translateX(0);
     }
+    .product-panel-back {
+    display: none !important;
+}
 .menu-content{
     padding: 42px 22px;
     position: relative;
@@ -2070,25 +2070,28 @@ border-glow {
 
 /* HERO */
 .product-hero{
-    min-height:100vh;
+    min-height:auto;
     display:grid;
     grid-template-columns:120px minmax(520px, 1fr) minmax(420px, 540px);
-    align-items:center;
+    align-items:start;
     gap:60px;
-    padding:80px 8%;
+    padding:60px 8% 20px;
 }
 
 .thumb-panel{
-    height:620px;
+    height:auto;
     display:flex;
     flex-direction:column;
     align-items:center;
-    justify-content:center;
+    justify-content:flex-start;
     gap:12px;
+    top: -30px;
+    position: relative;
 }
 
 .thumbs{
-    height:520px;             
+    height:auto;
+    max-height:400px;
     overflow-y:auto;
     display:flex;
     flex-direction:column;
@@ -2096,7 +2099,6 @@ border-glow {
     padding:4px 8px;
     scroll-behavior:smooth;
 }
-
 .thumbs::-webkit-scrollbar{
     width:0;
 }
@@ -2756,19 +2758,56 @@ border-glow {
         gap:6px;
     }
 }
+
+.product-navigation{
+    width:95%;
+    max-width:1400px;
+    margin:20px auto 0px;
+    display:flex;
+    
+  
+}
+
+.product-nav{
+    flex:1;
+    height:55px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+
+    color:#fff;
+    text-decoration:none;
+    font-size:15px;
+    font-weight:500;
+
+    transition:.3s ease;
+}
+
 .product-navigation {
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
+    margin-top: 70px;
 }
 
-.product-nav {
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
+.product-nav:hover{
+   color: #fbb03b;      /* yellow hover */
 }
 
-.product-nav.prev,
-.product-nav.next {
-    border: none !important;
+.product-nav i {
+    width: 34px;
+    height: 34px;
+    border: 2px solid #d9d9d9bd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+.product-nav:hover i {
+    border-color: #fbb03b;  /* Yellow arrow */
+       color: #fbb03b;  
+}
+
+.product-nav.disabled{
+    opacity:.35;
+    pointer-events:none;
 }

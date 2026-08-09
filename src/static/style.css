@@ -1975,11 +1975,13 @@ border-glow {
     align-items:center;
     justify-content:flex-start;
     gap:12px;
+    top: -30px;
+    position: relative;
 }
 
 .thumbs{
     height:auto;
-    max-height:520px;
+    max-height:400px;
     overflow-y:auto;
     display:flex;
     flex-direction:column;
@@ -2125,7 +2127,6 @@ border-glow {
     width:88%;
     margin:90px auto;
     display:grid;
-
     grid-template-columns:
         repeat(auto-fit,minmax(220px,1fr));
 
@@ -3737,5 +3738,9 @@ border-glow {
 
 .product-navigation {
     margin-top: 70px;
+}
+
+body.allproduct-page {
+    padding-top: 60px !important;
 }
 
