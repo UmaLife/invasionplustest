@@ -1975,10 +1975,16 @@ border-glow {
     align-items:center;
     justify-content:flex-start;
     gap:12px;
+<<<<<<< HEAD
     top: -30px;
     position: relative;
 }
+=======
+>>>>>>> aa6df01f8c2f3d4c333a56fbb25cfb2b1a7f8eb9
 
+    position: relative;
+    top: -40px; /* move the WHOLE panel upward */
+}
 .thumbs{
     height:auto;
     max-height:400px;
@@ -1988,6 +1994,7 @@ border-glow {
     gap:20px;
     padding:4px 8px;
     scroll-behavior:smooth;
+
 }
 
 .thumbs::-webkit-scrollbar{
@@ -3740,7 +3747,15 @@ border-glow {
     margin-top: 70px;
 }
 
+<<<<<<< HEAD
 body.allproduct-page {
     padding-top: 60px !important;
 }
 
+=======
+body.cases-page,
+body.cooler-page,
+body.monitor-page{
+    padding-top: 60px !important;
+}
+>>>>>>> aa6df01f8c2f3d4c333a56fbb25cfb2b1a7f8eb9
