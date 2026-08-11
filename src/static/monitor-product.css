@@ -2811,3 +2811,7 @@ border-glow {
     opacity:.35;
     pointer-events:none;
 }
+.feature-image {
+    margin-top:auto;
+    display:flex;
+}

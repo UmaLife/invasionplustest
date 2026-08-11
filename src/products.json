@@ -903,7 +903,7 @@
         "Type C x 1": "Included",
         "Motherboard Support": "ITX/M-ATX/ATX",
         "PSU Support": "Front Top/ATX/140-160MM",
-        "Radiator Support": "<b>Front</b>~ N/A <br><b>M/B</b> ~ N/A <br> <b>Top </b>~ 3 x 120mm (Fan Optional) - support 360mm liquid cooler <br><b> Rear</b> ~ 1 x 120mm (Fan optional) - support 120mm liquid cooler <br><b>Bottom</b> ~ 3 x 120mm (Fan optional) ",
+        "Cooling Support": "<b>Front</b>~ N/A <br><b>M/B</b> ~ N/A <br> <b>Top </b>~ 3 x 120mm (Fan Optional) - support 360mm liquid cooler <br><b> Rear</b> ~ 1 x 120mm (Fan optional) - support 120mm liquid cooler <br><b>Bottom</b> ~ 3 x 120mm (Fan optional) ",
         "Drive Bays": "5.25″ ODD x0 <br>3.5″ HDD x2<br>2.5″ SSD x3",
         "PCI Slots" : "x 7",
         "Product Dimesion": "<b>Chassis size</b> ~ 440(L) x 242(W) x 350mm (H) <br><b>Product Size</b> ~ 440(L) x 242(W) x 370mm (H) <br><b>Carton Size</b> ~ 440(L) x 305(W) x 530mm (H) ",
@@ -1809,17 +1809,17 @@
     "dimensions": [
       {
         "value": "365",
-        "label": "WIDTH",
+        "label": "LENGTH",
         "unit": "MM"
       },
       {
         "value": "122.5",
-        "label": "HEIGHT",
+        "label": "WIDTH",
         "unit": "MM"
       },
       {
         "value": "25",
-        "label": "THICKNESS",
+        "label": "HEIGHT",
         "unit": "MM"
       }
     ]
@@ -1866,7 +1866,7 @@
        "price":"",
       "product-type": "Fan",
       "fan": "Forward fan / Reverse Fan",
-      "description": "More than just cooling —Invasion Plus Aerovis 360 gives you smarter control, cleaner builds, and a more personalized setup with integrated monitoring, seamless connectivity, and three-zone ARGB lighting",
+      "description": "More than just cooling —Invasion Plus Aerovis 360 gives you smarter control, cleaner builds, and a more personalized setup with integrated monitoring, seamless connectivity, and dual zone ARGB lighting",
       "mainImage": "static/AEROVIS/AEROVIS-B-01.png",
       "specImage": "static/AEROVIS/AEROVIS-B-02.png",
       "variations": {
@@ -1956,17 +1956,17 @@
     "dimensions": [
       {
         "value": "360",
-        "label": "WIDTH",
+        "label": "LENGTH",
         "unit": "MM"
       },
       {
         "value": "120",
-        "label": "HEIGHT",
+        "label": "WIDTH",
         "unit": "MM"
       },
       {
         "value": "30",
-        "label": "THICKNESS",
+        "label": "HEIGHT",
         "unit": "MM"
       }
     ]
@@ -2564,17 +2564,17 @@
     "dimensions": [
       {
         "value": "120",
-        "label": "WIDTH",
+        "label": "LENGTH",
         "unit": "MM"
       },
       {
         "value": "120",
-        "label": "HEIGHT",
+        "label": "WIDTH",
         "unit": "MM"
       },
       {
         "value": "25",
-        "label": "THICKNESS",
+        "label": "HEIGHT",
         "unit": "MM"
       }
     ]
@@ -2651,11 +2651,11 @@
         "title": "180Hz Ultra-Smooth Performance"
       },
       {
-        "icon": "fa-solid fa-palette",
+        "icon": "fa-solid fa-bolt",
         "title": "1ms Fast Response"
       },
       {
-        "icon": "fa-solid fa-bolt",
+        "icon": "fa-solid fa-palette",
         "title": "99% sRGB Vivid Colour"
       }
     ],
@@ -2671,6 +2671,11 @@
           "image": "static/XTG-34VPRX/feature1.png"
         },
         {
+          "title": "180Hz Ultra-Smooth Performance",
+          "description": "Experience ultra-fluid gameplay with a 180Hz refresh rate, delivering smoother animations and faster responsiveness during every match.",
+          "image": "static/XTG-34VPRX/feature2.png"
+        },
+        {
           "title": "1ms Fast Response",
           "description": "A rapid 1ms response time reduces motion blur and ghosting, ensuring every frame remains sharp and responsive in fast-paced action.",
           "image": "static/XTG-34VPRX/feature3.png"
@@ -2680,11 +2685,6 @@
           "title": "99% sRGB Vivid Colour",
           "description": "Enjoy rich, vibrant, and highly accurate colours with 99% sRGB coverage, ideal for gaming, movies, streaming, and creative work.",
           "image": "static/XTG-34VPRX/feature4.png"
-        },
-        {
-          "title": "180Hz Ultra-Smooth Performance",
-          "description": "Experience ultra-fluid gameplay with a 180Hz refresh rate, delivering smoother animations and faster responsiveness during every match.",
-          "image": "static/XTG-34VPRX/feature2.png"
         }
       ]
     },
