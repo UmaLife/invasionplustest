@@ -1417,24 +1417,24 @@ border-glow {
 
 /* ContactUs */
 .contact-hero{
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 5%;
+    position: relative !important;
+    width: 100% !important;
+    min-height: 100vh !important;
+    overflow: hidden !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 0 5% !important;
     background:
     linear-gradient(
         rgba(0,0,0,0.55),
         rgba(0,0,0,0.65)
     ),
-    url("contact-bg.png");
+    url("bg.png") !important;
 
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
 }
 
 .contact-hero::before{
@@ -1465,20 +1465,20 @@ border-glow {
 }
 
 .hero-text h1{
-    font-size: clamp(3rem, 5.5vw, 5.8rem);
+    font-size: clamp(2rem, 3vw, 4rem) !important;
     font-weight: 900;
-    line-height: 1.1;
+    line-height: 1;
     letter-spacing: 4px;
-    color: #fbb03b;
+    color: #fbb03b !important;
     margin-bottom: 28px;
     text-transform: uppercase;
     white-space: nowrap;
 }
 
 .hero-text p{
-    font-size: 1.2rem;
+    font-size: 1rem !;
     line-height: 1.8;
-    color: white;
+    color: white !important;
     max-width: 760px;
     margin: 0 auto;
 }
@@ -1671,8 +1671,13 @@ border-glow {
     border:1px solid #fbb03b;
     border-radius:20px;
     overflow:hidden;
-    background:#111;
     box-shadow:0 0 40px rgba(255,209,0,.12);
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.65)
+    ),
+    url("bg.png") !important;
 }
 
 .map-preview{
@@ -3391,14 +3396,16 @@ border-glow {
 
     .feature-card > img {
         position: absolute !important;
-
+        
         inset: 0 !important;
 
         width: 100% !important;
         height: 100% !important;
 
         object-fit: cover !important;
-        object-position: center !important;
+        object-position: 75% center !important;
+        transform: scale(1.08);
+        z-index: 1;
     }
 
 
@@ -3413,6 +3420,7 @@ border-glow {
                 rgba(0,0,0,0.85),
                 rgba(0,0,0,0.08)
             ) !important;
+        pointer-events: none;
 
         z-index: 2 !important;
     }
@@ -3730,7 +3738,7 @@ body.allproduct-page {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
+  gap: 45px;
 
 }
 
@@ -3767,7 +3775,7 @@ body.allproduct-page {
   padding: 4px 16px;
   background-color: transparent;
   border: 1px solid rgba(255, 153, 0, 0.4); /* Subtle orange border */
-  color: #FF9900;                           /* Matching text color */
+  color: #fbb03b;                           /* Matching text color */
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.25em;
