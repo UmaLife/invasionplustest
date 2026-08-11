@@ -32,7 +32,7 @@
   <div class="aboutus-container">
     
     <!-- Section 1 -->
-    <article class="aboutus-card">
+    <article class="aboutus-card ">
       <div class="aboutus-image-wrapper">
         <img src="static/KRATOS/42.png" alt="Thoughtful Engineering">
       </div>
@@ -45,7 +45,7 @@
     </article>
 
     <!-- Section 2 -->
-    <article class="aboutus-card">
+    <article class="aboutus-card ">
       <div class="aboutus-image-wrapper">
         <img src="static/KRATOS/43.png" alt="Beyond Specifications">
       </div>
@@ -82,6 +82,23 @@
     </div>
 </section>
 
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".aboutus-title, .aboutus-text");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // Add the class that triggers CSS animation
+        entry.target.classList.add("animate");
+        observer.unobserve(entry.target); // Stops repeating
+      }
+    });
+  }, { threshold: 0.2 });
+
+  elements.forEach((el) => observer.observe(el));
+});
+</script>
 </body>
 <script src="set.js"></script>
 </html>
