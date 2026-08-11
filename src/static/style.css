@@ -2343,10 +2343,7 @@ border-glow {
     );
 }
 
-.feature-box:hover{
-    border-color:rgba(214,160,57,.65);
-    box-shadow:0 0 35px rgba(214,160,57,.18);
-}
+
 
 /* SPECS */
 .spec-section{
