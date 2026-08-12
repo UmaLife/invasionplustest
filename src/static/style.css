@@ -2241,11 +2241,7 @@ border-glow {
     padding:60px;
 }
 .feature-box.active-feature{
-    border-color:#fbb03b;
-    box-shadow:
-        0 0 40px rgba(255,199,0,.35),
-        inset 0 0 25px rgba(255,199,0,.08);
-
+    border-color:black !important;
     transform:scale(1.01);
 }
 .feature-content{
