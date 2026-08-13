@@ -293,15 +293,15 @@ const navbarTemplate = `
 
         <div class="panel-content">
         <a href="cases.html" class="product-item">
-            <img src="static/cases.png">
+            <img src="static/1.png">
             <span>Cases</span>
         </a>
         <a href="coolers.html" class="product-item">
-            <img src="static/cooling.png">
+            <img src="static/2.png">
             <span>Coolers</span>
         </a>
         <a href="monitors.html" class="product-item">
-            <img src="static/monitor.png">
+            <img src="static/3.png">
             <span>Monitors</span>
         </a>
 
