@@ -2213,6 +2213,7 @@ border-glow {
     position: relative;
     padding: 80px 7% 140px; 
     overflow: hidden;
+    background: #000000;
 }
 .feature-section::before { 
     content: ""; 
@@ -2242,9 +2243,10 @@ border-glow {
     min-height: 520px;
     overflow:hidden;
     padding: 70px 6%;
-    background: linear-gradient( 
+    background: #000000,
+    linear-gradient( 
         90deg, rgba(255,255,255,0.018),
-         rgba(255,255,255,0) );
+        rgba(255,255,255,0) );
     transition: border-color 0.5s ease, transform 0.5s ease;
 }
 
