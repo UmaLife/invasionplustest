@@ -17,147 +17,202 @@
     <title>InvasionPlus</title>
 </head>
 <body>    
-    <section class="banner-container">   
-        <div class="sticky-wrapper">
-            <div class="sticky-slide active">
-    <div class="slide-card">
-        <img src="static/banner0.png" class="banner0-img" alt="Banner 0">
-        <div class="slide-overlay"></div>
-        <div class="slide-content">
-           <a href="AboutUs.html" class="learn-more">LEARN MORE ></a>
-        </div>
-    </div>
-</div>
+  <section class="banner-container">   
+    <div class="sticky-wrapper">
 
-<div class="sticky-slide">
-    <div class="slide-card">
-        <img src="static/banner1.png" class="banner1-img" alt="Banner 1">
-        <div class="slide-overlay"></div>
-        <div class="slide-content">
-            <h1>EREBUS</h1>
-            <a href="product2.html?id=erebus" class="learn-more">LEARN MORE ></a>
-        </div>
-    </div>
-</div>
-
-            <div class="sticky-slide">
-                <div class="slide-card">
-                    <img src="static/banner2.png" alt="High Performance">
-                    <div class="slide-overlay"></div>
-                    <div class="slide-content">
-                        <h1>XTG-49ARCX</h1>
-                        <a href="product2.html?id=XTG-49ARCX" class="learn-more">LEARN MORE ></a>
-                    </div>
+        <!-- SLIDE 0: Left as a single full image -->
+        <div class="sticky-slide active">
+            <div class="slide-card">
+                <img src="static/bannn.png" class="banner0-img" alt="Banner 0">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                   <a href="AboutUs.html" class="learn-more">LEARN MORE ></a>
                 </div>
             </div>
-
-<div class="sticky-slide">
-    <div class="slide-card">
-        <img src="static/banner3.png" class="banner3-img" alt="Future Tech">
-        <div class="slide-overlay"></div>
-        <div class="slide-content">
-            <h1>E-20</h1>
-            <a href="product2.html?id=e20" class="learn-more">LEARN MORE ></a>
         </div>
+
+        <!-- SLIDE 1: Erebus (Background + Centered Product) -->
+        <div class="sticky-slide">
+            <div class="slide-card">
+                <!-- Image 1: Full Background -->
+                <img src="static/6.png" class="slide-bg-img" alt="Erebus Background">
+                <div class="slide-overlay"></div>
+
+                <!-- Image 2: Centered Product Image -->
+                <div class="slide-product-center">
+                    <img src="static/EREBUS/EREBUS BLACK - 01.png" alt="EREBUS Product">
+                </div>
+
+                <div class="slide-content">
+                    <h1>EREBUS</h1>
+                    <a href="product2.html?id=erebus" class="learn-more">LEARN MORE ></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 2: XTG-49ARCX (Background + Centered Product) -->
+        <div class="sticky-slide">
+            <div class="slide-card">
+                <!-- Image 1: Full Background -->
+                <img src="static/6.png" class="slide-bg-img" alt="High Performance Background">
+                <div class="slide-overlay"></div>
+
+                <!-- Image 2: Centered Product Image -->
+                <div class="slide-product-center">
+                    <img src="static/XTG-49ARCX/monitor1.png" alt="XTG-49ARCX Product">
+                </div>
+
+                <div class="slide-content">
+                    <h1>XTG-49ARCX</h1>
+                    <a href="product2.html?id=XTG-49ARCX" class="learn-more">LEARN MORE ></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 3: E-20 (Background + Centered Product) -->
+        <div class="sticky-slide">
+            <div class="slide-card">
+                <!-- Image 1: Full Background -->
+                <img src="static/6.png" class="slide-bg-img" alt="Future Tech Background">
+                <div class="slide-overlay"></div>
+
+                <!-- Image 2: Centered Product Image -->
+                <div class="slide-product-center">
+                    <img src="static/E20/E20.4.png" alt="E-20 Product">
+                </div>
+
+                <div class="slide-content">
+                    <h1>E-20</h1>
+                    <a href="product2.html?id=e20" class="learn-more">LEARN MORE ></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Dots -->
+        <div class="banner-nav">
+            <span class="nav-dot active" data-slide="0"></span>
+            <span class="nav-dot" data-slide="1"></span>
+            <span class="nav-dot" data-slide="2"></span>
+            <span class="nav-dot" data-slide="3"></span>
+        </div>
+
     </div>
-</div>
-
-<div class="banner-nav">
-    <span class="nav-dot active" data-slide="0"></span>
-    <span class="nav-dot" data-slide="1"></span>
-    <span class="nav-dot" data-slide="2"></span>
-    <span class="nav-dot" data-slide="3"></span>
-</div>
-        </div>
-    </section>
+</section>
     <!--category-->
-    <section class="category-section">
-      <div class="categories-header">
+   <section class="category-section">
+<div class="categories-header reveal-card">
     <h2 class="categories-header-title">EXPLORE BY CATEGORIES</h2>
-  </div>
-        <div class="category-grid">
-            <div class="category-card">
-                <div class="category-content">
-                    <h3>Cooler</h3>
-                    <p>
-                        Experience premium cooling performance
-                        with next generation airflow design.
-                    </p>
-                    <a href="coolers.html">
-                        View products
-                        <i class="fa-solid fa-angle-right"></i>
-                    </a>
-                </div>
-                <div class="category-image">
-                    <img src="static/cate2.png">
-                </div>
+</div>
+    <div class="category-grid">
+        <div class="category-card reveal-card">
+            <div class="category-content">
+                <h3>Cooler</h3>
+                <p>
+                    Experience premium cooling performance
+                    with next generation airflow design.
+                </p>
+                <a href="coolers.html">
+                    View products
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
             </div>
-            <div class="category-card">
-                <div class="category-content">
-                    <h3>Case</h3>
-                    <p>
-                        Minimalist chassis engineered
-                        for maximum thermal efficiency.
-                    </p>
-
-                    <a href="cases.html">
-                        View products
-                        <i class="fa-solid fa-angle-right"></i>
-                    </a>
-                </div>
-                <div class="category-image">
-                    <img src="static/cate1.png">
-                </div>
-            </div>
-            <div class="category-card">
-                <div class="category-content">
-                    <h3>Monitor</h3>
-                    <p>
-                        Ultra immersive display built
-                        for creators and gamers
-                    </p>
-                    <a href="monitors.html">
-                        View products
-                        <i class="fa-solid fa-angle-right"></i>
-                    </a>
-                </div>
-                <div class="category-image">
-                    <img src="static/cate3.png">
-                </div>
+            <div class="category-image">
+                <img src="static/cate2.png" alt="Cooler">
             </div>
         </div>
-    </section>
+
+        <div class="category-card reveal-card">
+            <div class="category-content">
+                <h3>Case</h3>
+                <p>
+                    Minimalist chassis engineered
+                    for maximum thermal efficiency.
+                </p>
+                <a href="cases.html">
+                    View products
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+            </div>
+            <div class="category-image">
+                <img src="static/cate1.png" alt="Case">
+            </div>
+        </div>
+
+        <div class="category-card reveal-card">
+            <div class="category-content">
+                <h3>Monitor</h3>
+                <p>
+                    Ultra immersive display built
+                    for creators and gamers
+                </p>
+                <a href="monitors.html">
+                    View products
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+            </div>
+            <div class="category-image">
+                <img src="static/cate3.png" alt="Monitor">
+            </div>
+        </div>
+    </div>
+</section>
     
-    <section class="feature-section">
-        <div class="feature-card reveal-card">
-            <img src="static/card1.png" alt="Hot Selling">
-            <div class="feature-dark"></div>
-            <div class="feature-title left">
-                <span>Hot Selling</span>
-                <h2>Built for Peak Performance</h2>
-                <p>
-                    Discover our most popular setup, designed for powerful airflow,
-                    stable cooling and a premium gaming experience.
-                </p>
-                <a href="all-product.html">Explore More ></a>
+   <section class="hero-banner-section reveal-card">
+    <div class="hero-banner-container ">
+        <!-- IMAGE 1: Full Section Background -->
+        <img src="static/5.png" alt="Background" class="hero-banner-bg">
+        
+        <!-- Dark Overlay for Contrast (Optional) -->
+        <div class="hero-banner-overlay"></div>
+
+        <!-- Left Side: Floating Text Content -->
+        <div class="hero-banner-content">
+            <span class="banner-tag">HOT SELLING</span>
+            <h2>Built For Peak Performance</h2>
+            <p>
+                Discover our most popular setup, designed for powerful airflow, stable cooling and a premium gaming experience.
+            </p>
+            
+            <div class="hero-actions">
+                <a href="all-product.html" class="btn-secondary">Explore Now</a>
+
             </div>
         </div>
 
-        <div class="feature-card reveal-card">
-            <img src="static/card2.png" alt="New Product">
-            <div class="feature-dark"></div>
-            <div class="feature-title right">
-                <span>New Product</span>
-                <h2>Meet the next generation</h2>
-                <p>
-                    Introducing our latest product line with refined design,
-                    improved thermal control and futuristic aesthetics.
-                </p>
-                <a href="all-product.html">Explore More ></a>
+        <!-- IMAGE 2: Foreground Featured Product -->
+        <div class="hero-banner-product">
+            <img src="static/FROST VISION 240/FV-240-B-02.png" alt="Featured Product">
+        </div>
+    </div>
+</section>
+
+<section class="hero-banner-section reveal-card">
+    <div class="hero-banner-container">
+        <!-- IMAGE 1: Full Section Background -->
+        <img src="static/5.png" alt="Background" class="hero-banner-bg">
+        
+        <!-- Dark Overlay for Contrast (Optional) -->
+        <div class="hero-banner-overlay"></div>
+
+        <!-- Left Side: Floating Text Content -->
+        <div class="hero-banner-content">
+             <span class="banner-tag">NEW ARRIVALS</span>
+            <h2>Meet the next generation</h2>
+            <p>
+                Introducing our latest product line with refined design, improved thermal control and futuristic aesthetics.
+            </p>
+            
+            <div class="hero-actions">
+                <a href="all-product.html#new-arrivals" class="btn-secondary">Explore Now</a>
             </div>
         </div>
-    </section>
 
+        <!-- IMAGE 2: Foreground Featured Product -->
+        <div class="hero-banner-product">
+            <img src="static/PERSEUS/PERSEUS-01.png" alt="Featured Product">
+        </div>
+    </div>
+</section>
 <script type="module" src="home.js"></script>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
@@ -226,6 +281,27 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 </script>
+<script>// Intersection Observer for the Spotlight Scroll Effect
+const observerOptions = {
+    root: null, // relative to the viewport
+    rootMargin: "-20% 0px -20% 0px", // triggers spotlight when card enters middle 60% of screen
+    threshold: 0.3 // percentage of the card that must be visible
+};
+
+const spotlightObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("spotlight-active");
+        } else {
+            entry.target.classList.remove("spotlight-active");
+        }
+    });
+}, observerOptions);
+
+// Observe all elements with the 'reveal-card' class
+document.querySelectorAll(".reveal-card").forEach(card => {
+    spotlightObserver.observe(card);
+});</script>
 </body>
 <script src="set.js">
 </script>

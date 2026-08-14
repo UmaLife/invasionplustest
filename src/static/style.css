@@ -855,9 +855,9 @@ html {
     transition:opacity 0.8s ease,transform 0.8s ease;
 }
 .slide-content h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     text-shadow: 0px 0px 15px rgba(0,0,0,0.5); 
 }
 .learn-more {
@@ -867,6 +867,7 @@ html {
     font-size: 1.1rem;
     letter-spacing: 1px;
     transition: 0.3s;
+    margin-bottom: 10px;
 }
 .learn-more:hover {
     text-shadow: 0 0 10px #fbb03b;
@@ -4175,4 +4176,326 @@ body.allproduct-page {
   .cat-desc {
     min-height: auto;
   }
+}
+
+/* Base state for cards: dimmed and slightly scaled back */
+.feature-card {
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+                opacity 0.6s ease,
+                filter 0.6s ease;
+    opacity: 0.3;
+    filter: brightness(0.4) grayscale(30%);
+    transform: scale(0.95);
+    will-change: transform, opacity, filter;
+}
+
+/* Focused/Illuminated state: full brightness and size */
+.feature-card.is-focused {
+    opacity: 1;
+    filter: brightness(1) grayscale(0%);
+    transform: scale(1);
+}
+
+/* Custom Spotlight Tuning for Category Cards */
+.category-card.reveal-card {
+    opacity: 0.6; /* Keeps dimmed text bright enough to read */
+    filter: brightness(0.75);
+    transition: opacity 0.4s ease, filter 0.4s ease, transform 0.4s ease;
+}
+
+/* Brightens to 100% when centered in scroll OR on mouse hover */
+.category-card.reveal-card.spotlight-active,
+.category-card.reveal-card:hover {
+    opacity: 1;
+    filter: brightness(1);
+    transform: translateY(-4px);
+}
+
+/* Force high-contrast colors so text is never hidden */
+.category-card .category-content h3 {
+    color: #fbb03b !important; /* Sharp orange header */
+}
+
+.category-card .category-content p,
+.category-card .category-content a {
+    color: #ffffff !important; /* Clean white text & link */
+}
+
+/* Initial state: Dimmed, scaled down, and translucent */
+.reveal-card {
+    opacity: 0.25;
+    filter: brightness(0.6) grayscale(30%);
+    transform: scale(0.95);
+    transition: transform 0.6s ease, opacity 0.6s ease, filter 0.6s ease;
+}
+
+/* Active "Spotlight" state: Fully lit and normal size */
+.reveal-card.spotlight-active {
+    opacity: 1;
+    filter: brightness(1) grayscale(0%);
+    transform: scale(1);
+}
+
+/* Dimmed initial state for the title */
+.categories-header.reveal-card {
+    opacity: 0.2;
+    filter: brightness(0.3);
+    transform: translateY(10px);
+    transition: opacity 0.6s ease, filter 0.6s ease, transform 0.6s ease;
+}
+
+/* Illuminated active state when scrolled into view */
+.categories-header.reveal-card.spotlight-active {
+    opacity: 1;
+    filter: brightness(1);
+    transform: translateY(0);
+}
+
+/* Disable zooming/scaling for the banner card */
+.hero-banner-section.reveal-card {
+    transform: none !important; /* Prevents the container from scaling up */
+    
+}
+/* Full-Bleed Section Container */
+.hero-banner-section {
+    width: 100%;
+    margin: 40px 0;
+    padding: 0;
+}
+
+.hero-banner-container {
+    position: relative;
+    width: 100%;
+    min-height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Pushes text left and product right */
+    padding: 0 12%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* --- LAYER 1: Full-Width Background Image --- */
+.hero-banner-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Stretches edge-to-edge smoothly */
+    z-index: 1;
+}
+
+/* --- LAYER 2: Dark Overlay for Text Readability --- */
+.hero-banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    z-index: 2;
+}
+
+/* --- LAYER 3: Left Floating Text Content --- */
+.hero-banner-content {
+    position: relative;
+    z-index: 3;
+    max-width: 480px;
+}
+
+.hero-banner-content h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 12px;
+    font-weight: 700;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.hero-banner-content p {
+    font-size: 0.95rem;
+    color: #d0d0d8;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Buttons */
+.hero-actions {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.btn-primary {
+    background-color: #ffffff;
+    color: #000000 !important;
+    padding: 10px 24px;
+    font-size: 0.9rem;
+    border-radius: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #fbb03b;
+    color: #ffffff !important;
+}
+
+.btn-secondary {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+    color: #ffffff !important;
+    padding: 10px 24px;
+    font-size: 0.9rem;
+    border-radius: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* --- LAYER 3: Right Foreground Product Image --- */
+/* Foreground Product Image Container */
+.hero-banner-product {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent; /* Ensures container has no solid background */
+    transform: translateX(30px);
+}
+
+
+/* 2. Increase the maximum dimensions of the product image */
+.hero-banner-product img {
+    max-height: 380px; /* Increased from 280px */
+    max-width: 450px;  /* Increased from 320px */
+    object-fit: contain;
+    background: transparent;
+    filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.6));
+    transition: transform 0.3s ease;
+}
+
+.hero-banner-product img:hover {
+    transform: scale(1.05); /* Smooth lift effect on hover */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero-banner-container {
+        flex-direction: column;
+        padding: 40px 24px;
+        text-align: center;
+    }
+
+    .hero-banner-product {
+        margin-top: 24px;
+    }
+
+    .hero-banner-product img {
+        max-height: 200px;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+}
+
+.banner-tag {
+    display: inline-block;
+    color: #fbb03b;            /* Bright orange color */
+    font-size: 0.8rem;         /* Small font size */
+    font-weight: 800;          /* Extra bold */
+    text-transform: uppercase; /* Ensures ALL CAPS */
+    letter-spacing: 2px;       /* Adds space between letters like the design */
+    margin-bottom: 8px;        /* Spacing above the main heading */
+}
+
+/*banner eewen*/
+/* Card relative anchor */
+.slide-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Layer 1: Background Image (Spans 100% full cover) */
+.slide-bg-img, 
+.banner0-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* Layer 2: Dark Overlay Tint */
+.slide-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35); /* Adjust brightness tint if needed */
+    z-index: 2;
+}
+
+/* Layer 3: Centered Product Image Container */
+.slide-product-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    /* Shift the image up: Change second -50% to -60% or -65% */
+    transform: translate(-50%, -58%); 
+    
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.slide-product-center img {
+    /* Reduce these percentages to make the image smaller */
+    max-height: 60%; /* Decreased from 70% */
+    max-width: 50%;  /* Decreased from 60% */
+    
+    object-fit: contain;
+    background: transparent;
+    filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.7));
+    transition: transform 0.4s ease;
+}
+
+
+/* Layer 4: Text Content on top */
+.slide-content {
+    position: absolute;
+    z-index: 4;
+    /* Adjust position values as desired (e.g., bottom left corner) */
+    bottom: 40px;
+    left: 50px;
+}
+
+/* Removes the dark overlay on Slide 0 only */
+.sticky-slide:first-child .slide-overlay {
+    display: none;
+}
+
+/* Ensures the banner image on Slide 0 is at 100% brightness */
+.banner0-img {
+    filter: brightness(1) !important;
+    opacity: 1 !important;
 }

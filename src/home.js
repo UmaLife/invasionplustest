@@ -325,41 +325,29 @@ window.addEventListener('DOMContentLoaded', () => {
    MOBILE ARROWS
 ========================= */
 
-document.addEventListener('click', function (e) {
+document.addEventListener("DOMContentLoaded", function () {
+    // Select the elements to spotlight
+    const cards = document.querySelectorAll(".feature-card");
 
-    const nextBtn = e.target.closest('.mobile-banner-next');
-    const prevBtn = e.target.closest('.mobile-banner-prev');
+    // Configure observer to focus on elements near the center line of the screen
+    const observerOptions = {
+        root: null, // default is browser viewport
+        rootMargin: "-20% 0px -20% 0px", // triggers when element enters middle 60% of screen
+        threshold: 0.4 // 40% of the element must be visible
+    };
 
+    const spotlightObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("is-focused");
+            } else {
+                entry.target.classList.remove("is-focused");
+            }
+        });
+    }, observerOptions);
 
-    /* NEXT */
-    if (nextBtn) {
-
-        e.preventDefault();
-        e.stopPropagation();
-
-        console.log('RIGHT ARROW CLICKED');
-
-        displaySlide(currentIndex + 1);
-
-        return;
-    }
-
-
-    /* PREVIOUS */
-    if (prevBtn) {
-
-        e.preventDefault();
-        e.stopPropagation();
-
-        console.log('LEFT ARROW CLICKED');
-
-        displaySlide(currentIndex - 1);
-
-        return;
-    }
-
+    cards.forEach(card => spotlightObserver.observe(card));
 });
-
 
     /* =========================
        AUTO SLIDE
