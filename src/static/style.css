@@ -851,20 +851,25 @@ html {
     z-index: 4;
     text-align: center;
     opacity: 0;
-    bottom: 15%;
+bottom: 20px;
     transition:opacity 0.8s ease,transform 0.8s ease;
+    transform: translateY(30px);
 }
+
+.slide-content.content-low {
+    bottom: 15px; /* Adjust to place it as low as you need */
+}
+
 .slide-content h1 {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     color: white;
-    margin-bottom: 5px;
     text-shadow: 0px 0px 15px rgba(0,0,0,0.5); 
 }
 .learn-more {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     letter-spacing: 1px;
     transition: 0.3s;
     margin-bottom: 10px;
@@ -2962,9 +2967,9 @@ border-glow {
 
         width: 100% !important;
 
-        height: 680px !important;
-        min-height: 680px !important;
-        max-height: 680px !important;
+        height: 700px !important;
+        min-height: 700px !important;
+        max-height: 700px !important;
 
         margin: 0 !important;
         padding: 0 !important;
@@ -3286,7 +3291,7 @@ border-glow {
     .sticky-slide.banner0-slide.active
     .slide-content {
 
-        bottom: 26px !important;
+        bottom:30px !important;
     }
 
 
@@ -4538,8 +4543,8 @@ body.allproduct-page {
 
 .slide-product-center img {
     /* Reduce these percentages to make the image smaller */
-    max-height: 60%; /* Decreased from 70% */
-    max-width: 50%;  /* Decreased from 60% */
+    max-height: 70%; /* Decreased from 70% */
+    max-width: 60%;  /* Decreased from 60% */
     
     object-fit: contain;
     background: transparent;
@@ -4553,7 +4558,7 @@ body.allproduct-page {
     position: absolute;
     z-index: 4;
     /* Adjust position values as desired (e.g., bottom left corner) */
-    bottom: 40px;
+    bottom: 80px;
     left: 50px;
 }
 
