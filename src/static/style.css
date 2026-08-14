@@ -2231,7 +2231,7 @@ border-glow {
     position: relative; 
     display: flex; 
     flex-direction: column; 
-    gap: 150px;
+    gap: 50px;
 }
 
 .feature-box.wide{
