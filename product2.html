@@ -440,7 +440,7 @@ function featureBox(card, size, id){
 
     return `
         <div class="feature-box ${size}" id="${id}">
-            <div class="feature-content">
+            <div class="feature-content" data-number="${String(Number(id.replace('feature-', '')) + 1).padStart(2, '0')}">
                 ${size === "wide" ? `<h2>${card.title}</h2>` : `<h3>${card.title}</h3>`}
                 ${card.subtitle ? `<span>${card.subtitle}</span>` : ""}
                 <p>${card.description}</p>
