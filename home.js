@@ -176,68 +176,41 @@ window.addEventListener('DOMContentLoaded', () => {
 
     function goToSlide(index, isAuto = false) {
 
-        if (!banner || slides.length <= 1) return;
+    if (!banner || slides.length <= 1) return;
 
-
-        /*
-        MOBILE
-        Never scroll the page.
-        Just directly display the slide.
-        */
-        if (isMobile()) {
-
-            displaySlide(index);
-
-            return;
-        }
-
-
-        /* DESKTOP */
-        index = Math.max(
-            0,
-            Math.min(
-                index,
-                slides.length - 1
-            )
-        );
-
-
-        currentIndex = index;
-
-
-        const bannerTop =
-            banner.offsetTop;
-
-
-        const scrollArea =
-            banner.offsetHeight -
-            window.innerHeight;
-
-
-        if (scrollArea <= 0) {
-            return;
-        }
-
-
-        const target =
-            (
-                scrollArea /
-                (slides.length - 1)
-            ) * index;
-
-
-        window.scrollTo({
-            top: bannerTop + target,
-            behavior: 'smooth'
-        });
-
-
-        if (!isAuto) {
-
-            resetAutoSlide();
-
-        }
+    if (isMobile()) {
+        displaySlide(index);
+        return;
     }
+
+    index = Math.max(
+        0,
+        Math.min(index, slides.length - 1)
+    );
+
+    const totalScrollable =
+        banner.offsetHeight - window.innerHeight;
+
+    if (totalScrollable <= 0) return;
+
+    const bannerTop =
+        banner.getBoundingClientRect().top +
+        window.scrollY;
+
+    const target =
+        (totalScrollable / (slides.length - 1)) * index;
+
+    window.scrollTo({
+        top: bannerTop + target,
+        behavior: isAuto ? 'smooth' : 'smooth'
+    });
+
+    currentIndex = index;
+
+    if (!isAuto) {
+        resetAutoSlide();
+    }
+}
 
 
     /* =========================
