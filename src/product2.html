@@ -71,6 +71,43 @@
     <div class="feature-grid" id="featureGrid"></div>
 </section>
 
+<section class="product-video-section" id="productVideoSection">
+    <div class="video-heading">
+        <span class="video-eyebrow">SEE IT IN ACTION</span>
+        <h2>Designed to Perform.</h2>
+        <p>Experience the product beyond the specifications.</p>
+    </div>
+
+    <div class="product-video-frame">
+
+        <div class="video-corner corner-tl"></div>
+        <div class="video-corner corner-tr"></div>
+        <div class="video-corner corner-bl"></div>
+        <div class="video-corner corner-br"></div>
+
+        <video
+            id="productVideo"
+            playsinline
+            muted
+            controls
+            preload="metadata">
+        </video>
+
+        <div class="video-play-overlay" id="videoPlayOverlay">
+            <div class="video-play-button">
+                <i class="fa-solid fa-play"></i>
+            </div>
+            <span>PLAY VIDEO</span>
+        </div>
+
+    </div>
+
+    <div class="video-meta">
+        <span>PRODUCT SHOWCASE</span>
+        <span id="videoProductName"></span>
+    </div>
+</section>
+
 <div id="xqz-description" class="xqz-description"></div>
     <p class="disclaimer">*Please note that the images shown are for illustrative purposes only and may not represent the exact color or finish of the product.</p>
 
@@ -118,6 +155,7 @@ fetch(`products.json?v=${Date.now()}`)
     }
 
    renderProduct(currentProduct);
+   renderProductVideo(currentProduct);
 
 if (currentProduct.xqzDescription) {
     renderXQZDescription(currentProduct, "#xqz-description");
@@ -789,6 +827,204 @@ function renderSpecs(product) {
     renderSpecGroup(product.specTitle, product.specs);
     renderSpecGroup(product.specTitle2, product.specs2);
 }
+
+function renderProductVideo(product) {
+
+    const section =
+        document.getElementById("productVideoSection");
+
+    const video =
+        document.getElementById("productVideo");
+
+    const overlay =
+        document.getElementById("videoPlayOverlay");
+
+    const productName =
+        document.getElementById("videoProductName");
+
+    if (!section || !video) return;
+
+    const videoData = product.video;
+
+    /*
+    ==========================================
+    NO VIDEO
+    ==========================================
+    */
+
+    if (!videoData) {
+        section.style.display = "none";
+        return;
+    }
+
+    /*
+    ==========================================
+    NORMALIZE VIDEO DATA
+    ==========================================
+    */
+
+    let horizontal = videoData.horizontal || "";
+    let vertical = videoData.vertical || "";
+
+    /*
+    If customer only provides one video,
+    use the same video everywhere.
+    */
+
+    if (!horizontal && vertical) {
+        horizontal = vertical;
+    }
+
+    if (!vertical && horizontal) {
+        vertical = horizontal;
+    }
+
+    /*
+    ==========================================
+    CREATE VIDEO SOURCES
+    ==========================================
+    */
+
+    video.innerHTML = "";
+
+    /*
+    Desktop source
+    */
+
+    const desktopSource =
+        document.createElement("source");
+
+    desktopSource.src = horizontal;
+
+    desktopSource.media =
+        "(min-width: 769px)";
+
+    desktopSource.type =
+        "video/mp4";
+
+    video.appendChild(desktopSource);
+
+
+    /*
+    Mobile source
+    */
+
+    const mobileSource =
+        document.createElement("source");
+
+    mobileSource.src = vertical;
+
+    mobileSource.media =
+        "(max-width: 768px)";
+
+    mobileSource.type =
+        "video/mp4";
+
+    video.appendChild(mobileSource);
+
+
+    /*
+    ==========================================
+    DISPLAY
+    ==========================================
+    */
+
+    section.style.display = "block";
+
+    productName.textContent =
+        product.name;
+
+    video.load();
+
+
+    /*
+    ==========================================
+    PLAY INTERACTION
+    ==========================================
+    */
+
+    overlay.onclick = () => {
+
+        if (video.paused) {
+
+            video.play();
+
+        } else {
+
+            video.pause();
+
+        }
+
+    };
+
+
+    video.addEventListener("play", () => {
+
+        overlay.classList.add("playing");
+
+    });
+
+
+    video.addEventListener("pause", () => {
+
+        overlay.classList.remove("playing");
+
+    });
+
+
+    /*
+    ==========================================
+    REVEAL ANIMATION
+    ==========================================
+    */
+
+    requestAnimationFrame(() => {
+
+        initProductVideoReveal();
+
+    });
+
+}
+
+function initProductVideoReveal() {
+
+    const frame =
+        document.querySelector(".product-video-frame");
+
+    if (!frame) return;
+
+    if (!("IntersectionObserver" in window)) {
+
+        frame.classList.add("is-visible");
+
+        return;
+    }
+
+    const observer =
+        new IntersectionObserver(
+            entries => {
+
+                entries.forEach(entry => {
+
+                    if (entry.isIntersecting) {
+
+                        frame.classList.add("is-visible");
+
+                        observer.unobserve(frame);
+
+                    }
+
+                });
+
+            },
+            {
+                threshold: .15
+            }
+        );
+
+    observer.observe(frame);
+}
+
 </script>
 <script src="js/xqz-description.js"></script>
 </body>

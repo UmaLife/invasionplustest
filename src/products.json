@@ -93,6 +93,9 @@
     }
   ]
 },
+"video": {
+    "horizontal": "static/E20/E20.mp4"
+},
 
       "specs": {
         "Model": "E - 20",
@@ -196,6 +199,11 @@
     }
   ]
 },
+
+"video": {
+    "vertical": "static/ATLAS/ATLAS.mp4"
+},
+
       "specs": {
         "Model": "ATLAS",
         "Front Panel": "Tempered Glass",
@@ -893,6 +901,9 @@
     }
   ]
 },
+"video": {
+    "vertical": "static/KRATOS/KRATOS.mp4"
+},
       "specs": {
         "Model": "KRATOS",
         "Front Panel": "ABS + plastic + Tempered Glass",
@@ -1260,6 +1271,10 @@
     }
   ]
 },
+"video": {
+    "vertical": "static/ZOOM/ZOOM.mp4"
+},
+
 
       "specs": {
         "Model": "ZOOM",

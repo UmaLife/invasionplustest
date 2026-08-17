@@ -2190,6 +2190,8 @@ border-glow {
     padding: 80px 7% 140px; 
     overflow: hidden;
     background: #000000;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
 }
 .feature-section::before { 
     content: ""; 
@@ -2208,7 +2210,7 @@ border-glow {
     position: relative; 
     display: flex; 
     flex-direction: column; 
-    gap: 50px;
+    gap: 20px;
 }
 
 .feature-box.wide{
@@ -2380,6 +2382,411 @@ border-glow {
 .feature-box.wide:hover { 
     border-top-color: rgba(251,176,59,0.18); 
     transform: translateY(-3px); 
+}
+
+/* =========================================
+   PRODUCT VIDEO SHOWCASE
+========================================= */
+
+.product-video-section {
+    position: relative;
+    width: 100%;
+    padding: 150px 7vw 120px;
+    background:
+        radial-gradient(
+            circle at 50% 45%,
+            rgba(255,255,255,.045),
+            transparent 42%
+        ),
+        #050505;
+
+    overflow: hidden;
+    margin-top: 0 !important;
+    padding-top: 100px !important;
+}
+
+
+/* subtle background line */
+
+.product-video-section::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    width: 1px;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            to bottom,
+            transparent,
+            rgba(255,255,255,.08),
+            transparent
+        );
+
+    opacity: .4;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.video-heading {
+    position: relative;
+    z-index: 2;
+
+    max-width: 900px;
+    margin: 0 auto 60px;
+
+    text-align: center;
+}
+
+
+.video-eyebrow {
+    display: block;
+
+    margin-bottom: 18px;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: .28em;
+
+    color: rgba(255,255,255,.45);
+}
+
+
+.video-heading h2 {
+    margin: 0;
+
+    font-size: clamp(42px, 5vw, 78px);
+
+    line-height: .95;
+
+    letter-spacing: -.045em;
+
+    color: #fff;
+}
+
+
+.video-heading p {
+    margin-top: 22px;
+
+    font-size: 15px;
+
+    color: rgba(255,255,255,.45);
+}
+
+
+/* =========================================
+   VIDEO FRAME
+========================================= */
+
+.product-video-frame {
+
+    position: relative;
+
+    width: min(1200px, 100%);
+
+    margin: auto;
+
+    aspect-ratio: 16 / 9;
+
+    background: #080808;
+
+    border: 1px solid rgba(255,255,255,.1);
+
+    overflow: hidden;
+
+    box-shadow:
+        0 40px 100px rgba(0,0,0,.7),
+        0 0 80px rgba(255,255,255,.025);
+
+    transform:
+        translateY(40px)
+        scale(.97);
+
+    opacity: 0;
+
+    transition:
+        transform 1s cubic-bezier(.16,1,.3,1),
+        opacity 1s ease;
+}
+
+
+.product-video-frame.is-visible {
+
+    transform:
+        translateY(0)
+        scale(1);
+
+    opacity: 1;
+}
+
+
+/* =========================================
+   VIDEO
+========================================= */
+
+.product-video-frame video {
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    background: #000;
+
+    transition:
+        transform .8s cubic-bezier(.16,1,.3,1),
+        filter .5s ease;
+}
+
+
+.product-video-frame:hover video {
+
+    transform: scale(1.015);
+
+}
+
+
+/* =========================================
+   PLAY OVERLAY
+========================================= */
+
+.video-play-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 14px;
+
+    cursor: pointer;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(0,0,0,.05),
+            rgba(0,0,0,.25)
+        );
+
+    transition:
+        opacity .4s ease;
+}
+
+
+.video-play-overlay.playing {
+
+    opacity: 0;
+
+    pointer-events: none;
+}
+
+
+.video-play-button {
+
+    width: 76px;
+    height: 76px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255,255,255,.45);
+
+    background:
+        rgba(0,0,0,.35);
+
+    backdrop-filter: blur(12px);
+
+    transition:
+        transform .4s cubic-bezier(.16,1,.3,1),
+        background .3s ease;
+}
+
+
+.video-play-button i {
+
+    margin-left: 3px;
+
+    font-size: 18px;
+
+    color: #fff;
+}
+
+
+.video-play-overlay:hover
+.video-play-button {
+
+    transform: scale(1.12);
+
+    background:
+        rgba(255,255,255,.12);
+}
+
+
+.video-play-overlay span {
+
+    font-size: 10px;
+
+    letter-spacing: .22em;
+
+    color: rgba(255,255,255,.7);
+}
+
+
+/* =========================================
+   CORNER DETAILS
+========================================= */
+
+.video-corner {
+
+    position: absolute;
+
+    width: 24px;
+    height: 24px;
+
+    z-index: 3;
+
+    pointer-events: none;
+}
+
+
+.corner-tl {
+    top: 14px;
+    left: 14px;
+
+    border-top: 1px solid rgba(255,255,255,.6);
+    border-left: 1px solid rgba(255,255,255,.6);
+}
+
+
+.corner-tr {
+    top: 14px;
+    right: 14px;
+
+    border-top: 1px solid rgba(255,255,255,.6);
+    border-right: 1px solid rgba(255,255,255,.6);
+}
+
+
+.corner-bl {
+    bottom: 14px;
+    left: 14px;
+
+    border-bottom: 1px solid rgba(255,255,255,.6);
+    border-left: 1px solid rgba(255,255,255,.6);
+}
+
+
+.corner-br {
+    bottom: 14px;
+    right: 14px;
+
+    border-bottom: 1px solid rgba(255,255,255,.6);
+    border-right: 1px solid rgba(255,255,255,.6);
+}
+
+
+/* =========================================
+   META
+========================================= */
+
+.video-meta {
+
+    width: min(1200px, 100%);
+
+    margin: 18px auto 0;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 10px;
+
+    letter-spacing: .18em;
+
+    color: rgba(255,255,255,.35);
+}
+
+
+/* =========================================
+   MOBILE VERTICAL VIDEO
+========================================= */
+
+@media (max-width: 768px) {
+
+    .product-video-section {
+
+        padding:
+            90px 20px
+            80px;
+
+    }
+
+
+    .video-heading {
+
+        margin-bottom: 35px;
+
+    }
+
+
+    .video-heading h2 {
+
+        font-size: 42px;
+
+    }
+
+
+    .product-video-frame {
+
+        aspect-ratio: 9 / 16;
+
+        max-width: 420px;
+
+    }
+
+
+    .product-video-frame video {
+
+        object-fit: cover;
+
+    }
+
+
+    .video-play-button {
+
+        width: 64px;
+        height: 64px;
+
+    }
+
+
+    .video-meta {
+
+        font-size: 8px;
+
+        margin-top: 14px;
+
+    }
+
 }
 
 /* SPECS */
