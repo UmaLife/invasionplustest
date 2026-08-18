@@ -96,26 +96,6 @@ const footerTemplate = `
                     </div>
                 </div>
             </div>
-
-            <div class="footer-column footer-video">
-                <h3>FEATURED CONTENT</h3>
-
-                <div class="video-embed">
-                    <iframe 
-                        src="https://www.youtube.com/embed/_69uSha2mes"
-                        title="Invasion Product Showcase"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                    </iframe>
-                </div>
-
-                <div class="video-meta">
-                    <span>LATEST VIDEO</span>
-                    <h4>Invasion Product Showcase</h4>
-                    <p>Latest builds, performance & innovations.</p>
-                </div>
-            </div>
         </div>
     </div>
 </footer>`;
