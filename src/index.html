@@ -20,7 +20,7 @@
         /* STACKING BANNER STYLES */
         .banner-container {
             position: relative;
-            height: 400vh;
+            height: 600vh; /* INCREASED FROM 400vh TO SLOW DOWN SCROLLING PROGRESSION */
             background-color: #000;
         }
 
@@ -245,7 +245,7 @@
 
         let targetScrollY = window.scrollY;
         let currentScrollY = window.scrollY;
-        const ease = 0.08; // Control softness: 0.05 (softest) to 0.12 (snappier)
+        const ease = 0.04; // Smooth lag factor
 
         window.addEventListener("scroll", () => {
             targetScrollY = window.scrollY;
@@ -262,52 +262,52 @@
             requestAnimationFrame(render);
         }
 
-      function updateCardStack(scrollYPos) {
-    const containerTop = bannerContainer.offsetTop;
-    const containerHeight = bannerContainer.offsetHeight - window.innerHeight;
-    
-    let scrollPosition = scrollYPos - containerTop;
-    scrollPosition = Math.max(0, Math.min(scrollPosition, containerHeight));
+        function updateCardStack(scrollYPos) {
+            const containerTop = bannerContainer.offsetTop;
+            const containerHeight = bannerContainer.offsetHeight - window.innerHeight;
+            
+            let scrollPosition = scrollYPos - containerTop;
+            scrollPosition = Math.max(0, Math.min(scrollPosition, containerHeight));
 
-    const totalSlides = slides.length;
-    
-    // Raw progress across total slides
-    const rawProgress = (scrollPosition / containerHeight) * (totalSlides - 1);
-    
-    // Add a 30% pause buffer so cards hold still in full view before next card slides in
-    const activeIndex = Math.floor(rawProgress);
-    const subProgress = rawProgress % 1;
-    
-    // Hold phase: subProgress below 0.3 stays held at 0 (full visibility, no next card movement)
-    // Motion phase: subProgress between 0.3 and 1.0 smoothly moves the incoming card
-    const transitionProgress = Math.max(0, (subProgress - 0.3) / 0.7);
+            const totalSlides = slides.length;
+            
+            // Raw progress across total slides
+            const rawProgress = (scrollPosition / containerHeight) * (totalSlides - 1);
+            
+            const activeIndex = Math.floor(rawProgress);
+            const subProgress = rawProgress % 1;
+            
+            // INCREASED HOLD BUFFER FROM 0.3 TO 0.5 FOR SLOWER SLIDE TRANSITIONS
+            // Hold phase: subProgress below 0.5 stays held at 0 (cards rest longer)
+            // Motion phase: subProgress between 0.5 and 1.0 smoothly moves the incoming card
+            const transitionProgress = Math.max(0, (subProgress - 0.5) / 0.5);
 
-    slides.forEach((slide, index) => {
-        slide.style.opacity = "1";
-        slide.style.filter = "none";
+            slides.forEach((slide, index) => {
+                slide.style.opacity = "1";
+                slide.style.filter = "none";
 
-        if (index < activeIndex) {
-            const distance = rawProgress - index;
-            const scale = Math.max(0.88, 1 - distance * 0.04);
-            slide.style.transform = `translate3d(0, 0%, 0) scale(${scale})`;
+                if (index < activeIndex) {
+                    const distance = rawProgress - index;
+                    const scale = Math.max(0.88, 1 - distance * 0.04);
+                    slide.style.transform = `translate3d(0, 0%, 0) scale(${scale})`;
 
-        } else if (index === activeIndex) {
-            const scale = 1 - (transitionProgress * 0.04);
-            slide.style.transform = `translate3d(0, 0%, 0) scale(${scale})`;
+                } else if (index === activeIndex) {
+                    const scale = 1 - (transitionProgress * 0.04);
+                    slide.style.transform = `translate3d(0, 0%, 0) scale(${scale})`;
 
-        } else if (index === activeIndex + 1) {
-            const translateY = 100 - (transitionProgress * 100);
-            slide.style.transform = `translate3d(0, ${translateY}%, 0) scale(1)`;
+                } else if (index === activeIndex + 1) {
+                    const translateY = 100 - (transitionProgress * 100);
+                    slide.style.transform = `translate3d(0, ${translateY}%, 0) scale(1)`;
 
-        } else {
-            slide.style.transform = `translate3d(0, 100%, 0) scale(1)`;
+                } else {
+                    slide.style.transform = `translate3d(0, 100%, 0) scale(1)`;
+                }
+            });
+
+            dots.forEach((dot, idx) => {
+                dot.classList.toggle("active", idx === Math.round(rawProgress));
+            });
         }
-    });
-
-    dots.forEach((dot, idx) => {
-        dot.classList.toggle("active", idx === Math.round(rawProgress));
-    });
-}
 
         // Run animation loop
         requestAnimationFrame(render);

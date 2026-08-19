@@ -695,7 +695,7 @@ html {
 .banner-container {
     position: relative;
     width: 100%;
-    height: 600vh !important;
+    height: 900vh !important;
     background: #000;
     overflow: visible;
     justify-content: center;
@@ -5290,8 +5290,6 @@ body.allproduct-page {
 .banner-container{
     padding-top: 30px;
 }
-/* --- BASE STATES (Hidden) --- */
-/* --- BASE STATES (Hidden) --- */
 
 /* 1. Titles slide DOWN from above */
 .reveal-card .category-content h3,
