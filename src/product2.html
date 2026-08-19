@@ -36,8 +36,8 @@
         </button>
     </div>
 
-    <div class="hero-image">
-        <img id="mainImage" src="">
+    <div class="hero-image" id="heroImageViewer">
+        <img id="mainImage" src="" alt="Product Image">
     </div>
 
     <div class="hero-info">
@@ -156,6 +156,9 @@ fetch(`products.json?v=${Date.now()}`)
 
    renderProduct(currentProduct);
    renderProductVideo(currentProduct);
+   initHeroReveal();
+   initSpecImageZoom();
+   initHeroImageViewer();
 
 if (currentProduct.xqzDescription) {
     renderXQZDescription(currentProduct, "#xqz-description");
@@ -1302,7 +1305,156 @@ function initSpecImageZoom() {
     });
 
 }
+
+/* =========================================
+   HERO INFO REVEAL
+========================================= */
+
+function initHeroReveal() {
+
+    const heroInfo = document.querySelector(".hero-info");
+
+    if (!heroInfo) return;
+
+    requestAnimationFrame(() => {
+
+        setTimeout(() => {
+            heroInfo.classList.add("is-visible");
+        }, 150);
+
+    });
+}
+
+function initHeroImageViewer() {
+
+    const hero = document.getElementById("heroImageViewer");
+    const image = document.getElementById("mainImage");
+
+    const modal = document.getElementById("imagePreviewModal");
+    const previewImage = document.getElementById("previewImage");
+    const closeButton = document.getElementById("imagePreviewClose");
+
+    const zoomCursor = hero?.querySelector(".zoom-cursor");
+
+    if (!hero || !image || !modal || !previewImage) {
+        console.log("Hero image viewer: element not found");
+        return;
+    }
+
+
+    /* =========================================
+       MAGNIFY CURSOR POSITION
+    ========================================= */
+
+    hero.addEventListener("mousemove", function(e) {
+
+        if (!zoomCursor) return;
+
+        const rect = hero.getBoundingClientRect();
+
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        zoomCursor.style.left = `${x}px`;
+        zoomCursor.style.top = `${y}px`;
+
+    });
+
+
+    /* =========================================
+       OPEN IMAGE
+    ========================================= */
+
+    image.addEventListener("click", function() {
+
+        if (!image.src) return;
+
+        previewImage.src = image.src;
+
+        modal.classList.add("active");
+
+        document.body.style.overflow = "hidden";
+
+    });
+
+
+    /* =========================================
+       CLOSE
+    ========================================= */
+
+    function closePreview() {
+
+        modal.classList.remove("active");
+
+        document.body.style.overflow = "";
+
+    }
+
+
+    closeButton.addEventListener("click", function(e) {
+
+        e.stopPropagation();
+
+        closePreview();
+
+    });
+
+
+    /* =========================================
+       CLICK BACKGROUND TO CLOSE
+    ========================================= */
+
+    modal.addEventListener("click", function(e) {
+
+        if (e.target === modal) {
+
+            closePreview();
+
+        }
+
+    });
+
+
+    /* =========================================
+       ESC KEY
+    ========================================= */
+
+    document.addEventListener("keydown", function(e) {
+
+        if (e.key === "Escape") {
+
+            closePreview();
+
+        }
+
+    });
+
+}
+
 </script>
 <script src="js/xqz-description.js"></script>
+
+<!-- IMAGE PREVIEW MODAL -->
+<div class="image-preview-modal" id="imagePreviewModal">
+
+    <button
+        class="image-preview-close"
+        id="imagePreviewClose">
+
+        <i class="fa-solid fa-xmark"></i>
+
+    </button>
+
+    <img
+        id="previewImage"
+        src=""
+        alt="Product Preview">
+
+    <div class="image-preview-label">
+        PRODUCT IMAGE
+    </div>
+
+</div>
+
 </body>
 </html>
