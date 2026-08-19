@@ -7,41 +7,54 @@
     <link rel="stylesheet" href="static/css/xqz-description.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>About Us</title>
+
+    <style>
+        /* Spotlight Card Transitions */
+        .spotlight-card {
+            filter: brightness(0.4);
+            opacity: 0.25;
+            transform: scale(0.95);
+            transition: filter 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+            will-change: filter, opacity, transform;
+        }
+
+        .spotlight-card.spotlight-active {
+            filter: brightness(1);
+            opacity: 1;
+            transform: scale(1);
+        }
+    </style>
 </head>
 <body>
+
 <section class="invasion-hero-section" style="background-image: url('static/bg.png');">
   <div class="invasion-hero-overlay"></div>
   <div class="invasion-hero-content">
-    
-    <!-- About Us Page Label -->
     <span class="invasion-page-tag">ABOUT US</span>
-
-    
-    <!-- Main Logo Image -->
-<h1 class="invasion-hero-title">
-  <img src="static/bannerabout.png" alt="Invasion+ Logo" class="invasion-hero-logo">
-</h1>
-    
-    
+    <h1 class="invasion-hero-title">
+      <img src="static/bannerabout.png" alt="Invasion+ Logo" class="invasion-hero-logo">
+    </h1>
   </div>
 </section>
 
-<section class="thank-you">
-    <h1>ABOUT <img src="static/logo.png" alt="Invasion Logo" class="about-logo"></h1>
+<!-- ABOUT SECTION WITH SPOTLIGHT CARDS -->
+<section class="thank-you section">
+    <h1 class="about-title">ABOUT INVASION+</h1>
     <div class="line center"></div>
 
-    <p> At Invasion Plus, every product starts with one purpose:<strong>
-            To build something worth owning.<br><br></strong>
-            Every detail is designed with intention — combining thoughtful engineering, refined design, and exceptional performance to create a product you are proud to own, use, and appreciate every day.<br><br>
-            Because great hardware is more than specifications.<br>
-            It is about understanding your needs, caring for your experience, and creating a connection between you and your build — where craftsmanship, design, and purpose come together.<br><br>
-            Built with purpose. Crafted without compromise.<br>
-      </p>
-      <p><strong>Break the Norm. Forge Tomorrow.</strong></p>
+    <div class="about-text">
+        <p class="text-line spotlight-card">At Invasion+, every product starts with one purpose: <strong>To build something worth owning.</strong></p>
+        <p class="text-line spotlight-card">Every detail is designed with intention — combining thoughtful engineering, refined design, and exceptional performance to create a product you are proud to own, use, and appreciate every day.</p>
+        <p class="text-line spotlight-card">Because great hardware is more than specifications.</p>
+        <p class="text-line spotlight-card">It is about understanding your needs, caring for your experience, and creating a connection between you and your build — where craftsmanship, design, and purpose come together.</p>
+        <p class="text-line highlight spotlight-card">Built with purpose. Crafted without compromise.</p>
+        <p class="text-line highlight spotlight-card">Break the Norm. Forge Tomorrow.</p>
+    </div>
 </section>
 
-<section class="join">
-    <h1>DISCOVER <img src="static/logo.png" alt="Invasion Logo" class="discover-logo"></h1>
+<!-- DISCOVER SECTION -->
+<section class="join section">
+    <h1 class="about-title">DISCOVER INVASION+</h1>
     <div class="buttons">
         <a href="all-product.html">VIEW PRODUCTS →</a>
         <a href="ContactUs.html">CONTACT US →</a>
@@ -50,21 +63,38 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-  const elements = document.querySelectorAll(".aboutus-title, .aboutus-text");
-
-  const observer = new IntersectionObserver((entries) => {
+  // 1. Observer for section visibility
+  const sectionObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        // Add the class that triggers CSS animation
-        entry.target.classList.add("animate");
-        observer.unobserve(entry.target); // Stops repeating
+        entry.target.classList.add("active");
+      } else {
+        entry.target.classList.remove("active");
       }
     });
-  }, { threshold: 0.2 });
+  }, { root: null, threshold: 0.15 });
 
-  elements.forEach((el) => observer.observe(el));
+  document.querySelectorAll(".section").forEach((sec) => sectionObserver.observe(sec));
+
+  // 2. Observer for Spotlight Cards (illuminates cards as they center in viewport)
+  const spotlightObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("spotlight-active");
+      } else {
+        entry.target.classList.remove("spotlight-active");
+      }
+    });
+  }, {
+    root: null,
+    rootMargin: "-20% 0px -20% 0px", // Focus area centered in the viewport
+    threshold: 0.5                   // Requires 50% visibility to trigger focus
+  });
+
+  document.querySelectorAll(".spotlight-card").forEach((card) => spotlightObserver.observe(card));
 });
 </script>
-</body>
+
 <script src="set.js"></script>
+</body>
 </html>
