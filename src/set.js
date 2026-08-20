@@ -1,103 +1,102 @@
 /* footer.js */
 const footerTemplate = `
 <footer class="site-footer">
+
     <div class="footer-logo">
         <img src="static/bann.png" alt="INVASION PLUS">
     </div>
 
-        <div class="footer-content">
-            <div class="footer-links-group">
-                <div class="footer-column">
-                    <h3>
-                        EXPLORE
-                    </h3>
+    <div class="footer-content">
 
-                    <ul>
-                        <li>
-                            <a href="all-product.html">
-                                All Product
-                            </a>
-                        </li>
-                        <li>
-                            <a href="cases.html">
-                                Cases
-                            </a>
-                        </li>
-                        <li>
-                            <a href="coolers.html">
-                                Coolers
-                            </a>
-                        </li>
-                        <li>
-                            <a href="monitors.html">
-                                Monitors
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+        <!-- Footer Links -->
+        <div class="footer-links-group">
 
-                <div class="footer-column">
-                    <h3>
-                        ABOUT US
-                    </h3>
+            <div class="footer-column">
+                <h3>EXPLORE</h3>
 
-                    <ul>
-                        <li>
-                            <a href="ContactUs.html">
-                                Contact Us
-                            </a>
-                        </li>
-                        <li>
-                            <a href="AboutUs.html">
-                                About Us
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h3>
-                        SOFTWARE
-                    </h3>
-
-                    <ul>
-                        <li>
-                            <a href="#">
-                                Software 1
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Software 1
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Software 1
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                
-                <div class="footer-social-section">
-                    <h3>FOLLOW US</h3>
-                    <div class="social-icons">
-                        <a href="mailto:admin@invasionplus.com"><i class="fa-regular fa-envelope"></i></a>
-                        <a href="https://wa.me/60176704896"><i class="fa-brands fa-whatsapp"></i></a>
-                        <a href="https://www.facebook.com/InvasionPlus" target="_blank">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                        <a href="https://www.instagram.com/invasionplus" target="_blank">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="https://www.tiktok.com/@invasionplus" target="_blank">
-                            <i class="fa-brands fa-tiktok"></i>
-                        </a>
-                    </div>
-                </div>
+                <ul>
+                    <li>
+                        <a href="all-product.html">All Product</a>
+                    </li>
+                    <li>
+                        <a href="cases.html">Cases</a>
+                    </li>
+                    <li>
+                        <a href="coolers.html">Coolers</a>
+                    </li>
+                    <li>
+                        <a href="monitors.html">Monitors</a>
+                    </li>
+                </ul>
             </div>
+
+
+            <div class="footer-column">
+                <h3>ABOUT US</h3>
+
+                <ul>
+                    <li>
+                        <a href="ContactUs.html">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="AboutUs.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="footer-column">
+                <h3>SOFTWARE</h3>
+
+                <ul>
+                    <li>
+                        <a href="#">Software 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Software 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Software 1</a>
+                    </li>
+                </ul>
+            </div>
+
         </div>
+
+
+        <!-- Social Media -->
+        <div class="footer-social-section">
+
+            <h3>FOLLOW US</h3>
+
+            <div class="social-icons">
+
+                <a href="mailto:admin@invasionplus.com">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+
+                <a href="https://wa.me/60176704896">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="https://www.facebook.com/InvasionPlus" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="https://www.instagram.com/invasionplus" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://www.tiktok.com/@invasionplus" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+
+            </div>
+
+        </div>
+
     </div>
+
 </footer>`;
 
 // This injects the footer at the very end of the body

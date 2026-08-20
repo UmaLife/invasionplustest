@@ -180,7 +180,7 @@ function displayProducts(products) {
         return;
     }
 
-    products.forEach(product => {
+    products.forEach((product, index) => {
         const image =
             product.mainImage ||
             product.images?.[0] ||
@@ -192,7 +192,11 @@ function displayProducts(products) {
             : "Black";
 
         productList.innerHTML += `
-            <article onclick="window.location.href='product2.html?id=${product.id}'" class="product">
+            <article 
+                onclick="window.location.href='product2.html?id=${product.id}'" 
+                class="product"
+                style="transition-delay:${(index % 4) * 0.15}s;"
+            >
                 <img src="${image}" alt="${product.name}">
 
                 <div class="product-name">

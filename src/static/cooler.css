@@ -171,6 +171,38 @@
     transform: scale(.98);
 }
 
+.category-hero .type-list,
+.category-hero .type-card-link,
+.category-hero .card{
+    opacity:1 !important;
+    filter:none !important;
+}
+
+.category-hero .card img{
+    opacity:1 !important;
+    filter:none !important;
+}
+
+.category-hero .type-name h3{
+    opacity:1 !important;
+    color:#fff !important;
+}.category-hero .type-list,
+.category-hero .type-card-link,
+.category-hero .card{
+    opacity:1 !important;
+    filter:none !important;
+}
+
+.category-hero .card img{
+    opacity:1 !important;
+    filter:none !important;
+}
+
+.category-hero .type-name h3{
+    opacity:1 !important;
+    color:#fff !important;
+}
+
 /*FILTER*/
 
 .product-area{
