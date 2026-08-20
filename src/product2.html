@@ -71,42 +71,7 @@
     <div class="feature-grid" id="featureGrid"></div>
 </section>
 
-<section class="product-video-section" id="productVideoSection">
-    <div class="video-heading">
-        <span class="video-eyebrow">SEE IT IN ACTION</span>
-        <h2>Designed to Perform.</h2>
-        <p>Experience the product beyond the specifications.</p>
-    </div>
 
-    <div class="product-video-frame">
-
-        <div class="video-corner corner-tl"></div>
-        <div class="video-corner corner-tr"></div>
-        <div class="video-corner corner-bl"></div>
-        <div class="video-corner corner-br"></div>
-
-        <video
-            id="productVideo"
-            playsinline
-            muted
-            controls
-            preload="metadata">
-        </video>
-
-        <div class="video-play-overlay" id="videoPlayOverlay">
-            <div class="video-play-button">
-                <i class="fa-solid fa-play"></i>
-            </div>
-            <span>PLAY VIDEO</span>
-        </div>
-
-    </div>
-
-    <div class="video-meta">
-        <span>PRODUCT SHOWCASE</span>
-        <span id="videoProductName"></span>
-    </div>
-</section>
 
 <div id="xqz-description" class="xqz-description"></div>
     <p class="disclaimer">*Please note that the images shown are for illustrative purposes only and may not represent the exact color or finish of the product.</p>
@@ -159,6 +124,7 @@ fetch(`products.json?v=${Date.now()}`)
    initHeroReveal();
    initSpecImageZoom();
    initHeroImageViewer();
+   initSectionReveal();
 
 if (currentProduct.xqzDescription) {
     renderXQZDescription(currentProduct, "#xqz-description");
@@ -220,16 +186,32 @@ if (!product.fans) {
 }
 
 function setupImages(product){
+
     if(product.variations){
-        const firstColor = Object.keys(product.variations)[0];
-        currentImages = product.variations[firstColor];
+
+        const firstColor =
+            Object.keys(product.variations)[0];
+
+        currentImages =
+            product.variations[firstColor];
+
     }else{
-        currentImages = product.images || [product.mainImage];
+
+        currentImages =
+            product.images ||
+            [product.mainImage];
+
     }
 
-    document.getElementById("mainImage").src = currentImages[0];
+    currentImageIndex = 0;
+
+    document.getElementById(
+        "mainImage"
+    ).src = currentImages[0];
+
     renderThumbs();
     initThumbArrows();
+    initHeroAutoSlideObserver();
 }
 
 function renderThumbs(){
@@ -243,12 +225,11 @@ function renderThumbs(){
         if(index === 0) thumb.classList.add("active");
 
         thumb.onclick = () => {
-            document.getElementById("mainImage").src = img;
-
-            document.querySelectorAll(".thumbs img")
-            .forEach(t => t.classList.remove("active"));
-
-            thumb.classList.add("active");
+            changeMainImage(index);
+            if (heroIsVisible) {
+                stopAutoImageSlider();
+                startAutoImageSlider();
+            }
         };
 
         thumbs.appendChild(thumb);
@@ -275,6 +256,178 @@ function initThumbArrows(){
             behavior: "smooth"
         });
     };
+}
+
+/* =========================================
+   AUTO MAIN IMAGE SLIDER
+========================================= */
+let autoSlideTimer = null;
+let currentImageIndex = 0;
+let heroIsVisible = false;
+
+
+/* =========================================
+   CHECK IF HERO IS VISIBLE
+========================================= */
+
+function initHeroAutoSlideObserver() {
+
+    const hero =
+        document.querySelector(".product-hero");
+
+    if (!hero) return;
+
+    const observer =
+        new IntersectionObserver(
+            entries => {
+
+                entries.forEach(entry => {
+
+                    heroIsVisible =
+                        entry.isIntersecting;
+
+                    if (heroIsVisible) {
+
+                        startAutoImageSlider();
+
+                    } else {
+
+                        stopAutoImageSlider();
+
+                    }
+
+                });
+
+            },
+            {
+                threshold: 0.2
+            }
+        );
+
+    observer.observe(hero);
+}
+
+
+/* =========================================
+   START AUTO SLIDER
+========================================= */
+
+function startAutoImageSlider() {
+
+    if (autoSlideTimer) return;
+
+    if (
+        !currentImages ||
+        currentImages.length <= 1
+    ) {
+        return;
+    }
+
+    autoSlideTimer =
+        setInterval(() => {
+
+            /*
+             Only continue if Hero is visible
+            */
+
+            if (!heroIsVisible) {
+
+                stopAutoImageSlider();
+
+                return;
+
+            }
+
+            currentImageIndex++;
+
+            if (
+                currentImageIndex >=
+                currentImages.length
+            ) {
+
+                currentImageIndex = 0;
+
+            }
+
+            changeMainImage(
+                currentImageIndex
+            );
+
+        }, 3000);
+}
+
+
+/* =========================================
+   STOP AUTO SLIDER
+========================================= */
+
+function stopAutoImageSlider() {
+
+    if (autoSlideTimer) {
+
+        clearInterval(
+            autoSlideTimer
+        );
+
+        autoSlideTimer = null;
+
+    }
+
+}
+/* =========================================
+   CHANGE MAIN IMAGE
+========================================= */
+
+function changeMainImage(index) {
+
+    if (!currentImages[index]) return;
+
+    currentImageIndex = index;
+
+    const mainImage =
+        document.getElementById("mainImage");
+
+    mainImage.style.opacity = "0";
+
+    setTimeout(() => {
+
+        mainImage.src =
+            currentImages[index];
+
+        mainImage.style.opacity = "1";
+
+    }, 180);
+
+
+    /* Update thumbnail active state */
+
+    document
+        .querySelectorAll(".thumbs img")
+        .forEach((thumb, i) => {
+
+            thumb.classList.toggle(
+                "active",
+                i === index
+            );
+
+        });
+
+
+    /* Automatically scroll thumbnail into view */
+
+    const activeThumb =
+        document.querySelector(
+            ".thumbs img.active"
+        );
+
+    if (heroIsVisible && activeThumb) {
+
+        activeThumb.scrollIntoView({
+            behavior: "smooth",
+            block: "nearest"
+        });
+
+    }
 }
 
 function renderColors(product) {
@@ -321,6 +474,7 @@ function renderColors(product) {
                 currentImages[0];
 
             renderThumbs();
+            initAutoImageSlider();
         };
 
         box.appendChild(option);
@@ -438,7 +592,8 @@ function renderFeatureGrid(product){
             wrapper.innerHTML=featureBox(
                 card,
                 "wide",
-                `feature-${index}`
+                `feature-${index}`,
+                index
             );
 
             grid.appendChild(wrapper.firstElementChild);
@@ -480,19 +635,41 @@ function renderFeatureGrid(product){
 });
 
 }
-
-function featureBox(card, size, id){
+function featureBox(card, size, id, index){
     if(!card) return "";
 
+    const imageSide =
+        index % 2 === 0
+            ? "image-left"
+            : "image-right";
+
     return `
-        <div class="feature-box ${size}" id="${id}">
+        <div
+            class="feature-box ${size} ${imageSide}"
+            id="${id}"
+        >
             <div class="feature-content">
-                ${size === "wide" ? `<h2>${card.title}</h2>` : `<h3>${card.title}</h3>`}
-                ${card.subtitle ? `<span>${card.subtitle}</span>` : ""}
+
+                ${
+                    size === "wide"
+                        ? `<h2>${card.title}</h2>`
+                        : `<h3>${card.title}</h3>`
+                }
+
+                ${
+                    card.subtitle
+                        ? `<span>${card.subtitle}</span>`
+                        : ""
+                }
+
                 <p>${card.description}</p>
+
             </div>
 
-            <img src="${card.image}" alt="${card.title}">
+            <img
+                src="${card.image}"
+                alt="${card.title}"
+            >
         </div>
     `;
 }
@@ -1034,19 +1211,16 @@ function initProductVideoReveal() {
 }
 
 function initFeatureScrollInteraction() {
-
     const features =
         document.querySelectorAll(".feature-box.wide");
 
     if (!features.length) return;
 
     function updateFeatures() {
-
         const viewportCenter =
             window.innerHeight * 0.5;
 
         features.forEach(feature => {
-
             const rect =
                 feature.getBoundingClientRect();
 
@@ -1058,73 +1232,35 @@ function initFeatureScrollInteraction() {
                     viewportCenter - featureCenter
                 );
 
-            /*
-            How close the feature is
-            to the center of the screen
-            */
-
             const range =
                 window.innerHeight * 0.65;
 
+
             let progress =
                 1 - distance / range;
-
             progress =
                 Math.max(
                     0,
                     Math.min(1, progress)
                 );
 
-            /*
-            Smooth easing
-            */
-
             progress =
                 progress * progress *
                 (3 - 2 * progress);
 
-            /*
-            ACTIVE STATE
-            */
-
             if (progress > 0.55) {
+
                 feature.classList.add("is-active");
             } else {
                 feature.classList.remove("is-active");
+
             }
-
-            /*
-            Subtle opacity
-            */
-
-            const opacity =
-                0.25 + progress * 0.75;
-
-            feature.style.opacity = opacity;
-
-            /*
-            Subtle scale
-            */
-
-            const scale =
-                0.96 + progress * 0.04;
-
-            /*
-            Slight vertical movement
-            */
-
-            const moveY =
-                18 - progress * 18;
-
-            feature.style.transform =
-                `translateY(${moveY}px) scale(${scale})`;
 
         });
 
     }
 
     let ticking = false;
-
     window.addEventListener("scroll", () => {
 
         if (!ticking) {
@@ -1132,18 +1268,16 @@ function initFeatureScrollInteraction() {
             requestAnimationFrame(() => {
 
                 updateFeatures();
-
                 ticking = false;
 
             });
-
             ticking = true;
         }
-
     });
-
-    window.addEventListener("resize", updateFeatures);
-
+    window.addEventListener(
+        "resize",
+        updateFeatures
+    );
     updateFeatures();
 }
 
@@ -1194,12 +1328,10 @@ function initFeatureMouseInteraction() {
             );
 
             feature.style.transform =
-                `
-                translateY(${moveY * 0.15}px)
-                rotateX(${rotateX}deg)
-                rotateY(${rotateY}deg)
-                scale(1.01)
-                `;
+            `rotateX(${rotateX}deg)
+            rotateY(${rotateY}deg)
+            scale(1.01)
+    `       ;
 
             const image =
                 feature.querySelector("img");
@@ -1325,35 +1457,59 @@ function initHeroReveal() {
     });
 }
 
+
 function initHeroImageViewer() {
 
-    const hero = document.getElementById("heroImageViewer");
-    const image = document.getElementById("mainImage");
+    const hero =
+        document.getElementById("heroImageViewer");
 
-    const modal = document.getElementById("imagePreviewModal");
-    const previewImage = document.getElementById("previewImage");
-    const closeButton = document.getElementById("imagePreviewClose");
+    const image =
+        document.getElementById("mainImage");
 
-    const zoomCursor = hero?.querySelector(".zoom-cursor");
+    const modal =
+        document.getElementById("imagePreviewModal");
 
-    if (!hero || !image || !modal || !previewImage) {
-        console.log("Hero image viewer: element not found");
+    const previewImage =
+        document.getElementById("previewImage");
+
+    const closeButton =
+        document.getElementById("imagePreviewClose");
+
+    const zoomCursor =
+        hero?.querySelector(".zoom-cursor");
+
+
+    if (
+        !hero ||
+        !image ||
+        !modal ||
+        !previewImage
+    ) {
+
+        console.log(
+            "Hero image viewer: element not found"
+        );
+
         return;
     }
 
 
     /* =========================================
-       MAGNIFY CURSOR POSITION
+       MAGNIFY CURSOR
     ========================================= */
 
     hero.addEventListener("mousemove", function(e) {
 
         if (!zoomCursor) return;
 
-        const rect = hero.getBoundingClientRect();
+        const rect =
+            hero.getBoundingClientRect();
 
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
+        const x =
+            e.clientX - rect.left;
+
+        const y =
+            e.clientY - rect.top;
 
         zoomCursor.style.left = `${x}px`;
         zoomCursor.style.top = `${y}px`;
@@ -1362,12 +1518,15 @@ function initHeroImageViewer() {
 
 
     /* =========================================
-       OPEN IMAGE
+       OPEN PREVIEW
     ========================================= */
 
     image.addEventListener("click", function() {
 
         if (!image.src) return;
+        previewImage.onload = () => {
+            resetPreviewView();
+        };
 
         previewImage.src = image.src;
 
@@ -1388,47 +1547,525 @@ function initHeroImageViewer() {
 
         document.body.style.overflow = "";
 
+        resetPreviewView();
     }
 
 
-    closeButton.addEventListener("click", function(e) {
+    if (closeButton) {
 
-        e.stopPropagation();
+        closeButton.addEventListener(
+            "click",
+            function(e) {
 
-        closePreview();
+                e.stopPropagation();
 
-    });
+                closePreview();
+
+            }
+        );
+
+    }
 
 
     /* =========================================
        CLICK BACKGROUND TO CLOSE
     ========================================= */
 
-    modal.addEventListener("click", function(e) {
+    modal.addEventListener(
+        "click",
+        function(e) {
 
-        if (e.target === modal) {
+            if (e.target === modal) {
 
-            closePreview();
+                closePreview();
+
+            }
 
         }
-
-    });
+    );
 
 
     /* =========================================
-       ESC KEY
+       ESC
     ========================================= */
 
-    document.addEventListener("keydown", function(e) {
+    document.addEventListener(
+        "keydown",
+        function(e) {
 
-        if (e.key === "Escape") {
+            if (
+                e.key === "Escape" &&
+                modal.classList.contains("active")
+            ) {
 
-            closePreview();
+                closePreview();
+
+            }
+
+        }
+    );
+
+
+    /* =========================================
+   PREVIEW ZOOM + DRAG / PAN
+========================================= */
+
+let previewZoom = 1;
+
+let previewX = 0;
+let previewY = 0;
+
+let isDragging = false;
+
+let dragStartX = 0;
+let dragStartY = 0;
+
+let dragStartTranslateX = 0;
+let dragStartTranslateY = 0;
+
+
+/* =========================================
+   PREVENT NATIVE IMAGE DRAG
+========================================= */
+
+previewImage.draggable = false;
+
+
+/* =========================================
+   UPDATE IMAGE
+========================================= */
+
+function updatePreviewTransform() {
+
+    previewImage.style.transform =
+        `translate3d(
+            ${previewX}px,
+            ${previewY}px,
+            0
+        ) scale(${previewZoom})`;
+
+}
+
+
+/* =========================================
+   CALCULATE DRAG LIMIT
+========================================= */
+
+function getDragBounds() {
+
+    const modalRect =
+        modal.getBoundingClientRect();
+
+    /*
+     * Get original image dimensions.
+     * Do NOT use getBoundingClientRect()
+     * because that already includes transform.
+     */
+
+    const naturalWidth =
+        previewImage.naturalWidth;
+
+    const naturalHeight =
+        previewImage.naturalHeight;
+
+    if (!naturalWidth || !naturalHeight) {
+
+        return {
+            maxX: 0,
+            maxY: 0
+        };
+
+    }
+
+
+    /*
+     * Calculate displayed image size
+     */
+
+    const imageWidth =
+        naturalWidth * previewZoom;
+
+    const imageHeight =
+        naturalHeight * previewZoom;
+
+
+    /*
+     * How much the image can move
+     */
+
+    const maxX =
+        Math.max(
+            0,
+            (imageWidth - modalRect.width) / 2
+        );
+
+    const maxY =
+        Math.max(
+            0,
+            (imageHeight - modalRect.height) / 2
+        );
+
+
+    return {
+        maxX,
+        maxY
+    };
+
+}
+
+
+/* =========================================
+   LIMIT POSITION
+========================================= */
+
+function clampPreviewPosition() {
+
+    const bounds =
+        getDragBounds();
+
+
+    previewX =
+        Math.max(
+            -bounds.maxX,
+            Math.min(
+                bounds.maxX,
+                previewX
+            )
+        );
+
+
+    previewY =
+        Math.max(
+            -bounds.maxY,
+            Math.min(
+                bounds.maxY,
+                previewY
+            )
+        );
+
+}
+
+
+/* =========================================
+   RESET VIEW
+========================================= */
+
+function resetPreviewView() {
+
+    previewZoom = 1;
+
+    previewX = 0;
+    previewY = 0;
+
+    isDragging = false;
+
+    previewImage.classList.remove(
+        "is-dragging"
+    );
+
+    updatePreviewTransform();
+
+}
+
+
+/* =========================================
+   MOUSE WHEEL ZOOM
+========================================= */
+
+previewImage.addEventListener(
+    "wheel",
+    function(e) {
+
+        e.preventDefault();
+
+        const oldZoom =
+            previewZoom;
+
+        const zoomStep = 0.15;
+
+
+        if (e.deltaY < 0) {
+
+            previewZoom += zoomStep;
+
+        } else {
+
+            previewZoom -= zoomStep;
 
         }
 
-    });
 
+        /*
+         * Zoom limit
+         */
+
+        previewZoom =
+            Math.max(
+                1,
+                Math.min(
+                    5,
+                    previewZoom
+                )
+            );
+
+
+        /*
+         * If zooming back to 1x,
+         * return image to center.
+         */
+
+        if (previewZoom === 1) {
+
+            previewX = 0;
+            previewY = 0;
+
+        } else {
+
+            clampPreviewPosition();
+
+        }
+
+
+        updatePreviewTransform();
+
+    },
+    {
+        passive: false
+    }
+);
+
+
+/* =========================================
+   START DRAG
+========================================= */
+
+previewImage.addEventListener(
+    "pointerdown",
+    function(e) {
+
+        /*
+         * Only allow dragging when zoomed.
+         */
+
+        if (previewZoom <= 1) {
+            return;
+        }
+
+
+        if (e.button !== 0) {
+            return;
+        }
+
+
+        e.preventDefault();
+
+
+        isDragging = true;
+
+
+        dragStartX =
+            e.clientX;
+
+        dragStartY =
+            e.clientY;
+
+
+        dragStartTranslateX =
+            previewX;
+
+        dragStartTranslateY =
+            previewY;
+
+
+        previewImage.classList.add(
+            "is-dragging"
+        );
+
+
+        /*
+         * Capture pointer.
+         *
+         * This is important because
+         * the mouse can leave the image
+         * while dragging.
+         */
+
+        previewImage.setPointerCapture(
+            e.pointerId
+        );
+
+    }
+);
+
+
+/* =========================================
+   DRAG IMAGE
+========================================= */
+
+previewImage.addEventListener(
+    "pointermove",
+    function(e) {
+
+        if (!isDragging) {
+            return;
+        }
+
+
+        const deltaX =
+            e.clientX - dragStartX;
+
+        const deltaY =
+            e.clientY - dragStartY;
+
+
+        previewX =
+            dragStartTranslateX +
+            deltaX;
+
+        previewY =
+            dragStartTranslateY +
+            deltaY;
+
+
+        /*
+         * Keep image inside preview area.
+         */
+
+        clampPreviewPosition();
+
+
+        updatePreviewTransform();
+
+    }
+);
+
+
+/* =========================================
+   STOP DRAG
+========================================= */
+
+previewImage.addEventListener(
+    "pointerup",
+    function(e) {
+
+        if (!isDragging) {
+            return;
+        }
+
+
+        isDragging = false;
+
+
+        previewImage.classList.remove(
+            "is-dragging"
+        );
+
+
+        try {
+
+            previewImage.releasePointerCapture(
+                e.pointerId
+            );
+
+        } catch(error) {}
+
+    }
+);
+
+
+previewImage.addEventListener(
+    "pointercancel",
+    function() {
+
+        isDragging = false;
+
+        previewImage.classList.remove(
+            "is-dragging"
+        );
+
+    }
+);
+
+
+/* =========================================
+   DOUBLE CLICK
+========================================= */
+
+previewImage.addEventListener(
+    "dblclick",
+    function(e) {
+
+        e.preventDefault();
+
+        e.stopPropagation();
+
+
+        if (previewZoom === 1) {
+
+            previewZoom = 2.5;
+
+        } else {
+
+            previewZoom = 1;
+
+            previewX = 0;
+            previewY = 0;
+
+        }
+
+
+        clampPreviewPosition();
+
+        updatePreviewTransform();
+
+    }
+);
+}
+/* =========================================
+   SELLING POINT + SPEC REVEAL
+========================================= */
+
+function initSectionReveal() {
+
+    const sections = document.querySelectorAll(
+        ".selling-points, .spec-section"
+    );
+
+    if (!sections.length) return;
+
+    if (!("IntersectionObserver" in window)) {
+
+        sections.forEach(section => {
+            section.classList.add("is-visible");
+        });
+
+        return;
+    }
+
+    const observer = new IntersectionObserver(
+        entries => {
+
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add("is-visible");
+
+                    observer.unobserve(entry.target);
+                }
+
+            });
+
+        },
+        {
+            threshold: 0.15,
+            rootMargin: "0px 0px -40px 0px"
+        }
+    );
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
 }
 
 </script>
