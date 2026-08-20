@@ -695,7 +695,7 @@ html {
 .banner-container {
     position: relative;
     width: 100%;
-    height: 600vh !important;
+    height: 900vh !important;
     background: #000;
     overflow: visible;
     justify-content: center;
@@ -5268,4 +5268,604 @@ body.allproduct-page {
 .banner0-img {
     filter: brightness(1) !important;
     opacity: 1 !important;
+}
+
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--nav-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    z-index: 1000;
+    background: rgb(0, 0, 0);
+    transition: 0.3s ease;
+}
+
+/* push homepage/banner below navbar */
+.banner-container{
+    padding-top: 30px;
+}
+
+/* 1. Titles slide DOWN from above */
+.reveal-card .category-content h3,
+.reveal-card .hero-banner-content h2 {
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: transform 1.2s cubic-bezier(0.25, 1, 0.5, 1), 
+                opacity 1.2s ease-out;
+    will-change: transform, opacity;
+}
+
+/* 2. Uses clip-path to create a wipe-down reveal */
+.reveal-card .category-content p,
+.reveal-card .hero-banner-content p {
+    opacity: 0;
+    clip-path: inset(0 0 100% 0); /* Hides text from the bottom up */
+    transition: clip-path 1.4s cubic-bezier(0.16, 1, 0.3, 1), 
+                opacity 0.8s ease-out;
+    will-change: clip-path, opacity;
+}
+
+.reveal-card.spotlight-active p {
+    opacity: 1;
+    clip-path: inset(0 0 0 0); /* Uncovers full text */
+}
+
+/* 3. Links/Buttons slide UP from below */
+.reveal-card .category-content a,
+.reveal-card .hero-actions {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: transform 1.2s cubic-bezier(0.25, 1, 0.5, 1), 
+                opacity 1.2s ease-out;
+    will-change: transform, opacity;
+}
+
+/* 4. Product Images ZOOM IN */
+.reveal-card img {
+    opacity: 0;
+    transform: scale(0.85);
+    transition: transform 1.4s cubic-bezier(0.25, 1, 0.5, 1), 
+                opacity 1.4s ease-out;
+    will-change: transform, opacity;
+}
+
+
+/* --- ACTIVE REVEAL STATES --- */
+
+.reveal-card.spotlight-active h2,
+.reveal-card.spotlight-active h3,
+.reveal-card.spotlight-active p,
+.reveal-card.spotlight-active a,
+.reveal-card.spotlight-active .hero-actions,
+.reveal-card.spotlight-active img {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+}
+
+
+/* --- SLOWER STAGGER TIMINGS --- */
+
+/* Step 1: Title drops in & Hero Image starts immediately */
+.reveal-card.spotlight-active h3,
+.reveal-card.spotlight-active h2,
+.hero-banner-section.spotlight-active .hero-banner-product img {
+    transition-delay: 0.2s;
+}
+
+/* Step 2: Category Product Images (for non-hero cards) */
+.category-card.spotlight-active img {
+    transition-delay: 0.4s;
+}
+
+/* Step 3: Description wipes open smoothly */
+.reveal-card.spotlight-active p {
+    transition-delay: 0.5s;
+}
+
+/* Step 4: Button rises from bottom last */
+.reveal-card.spotlight-active a,
+.reveal-card.spotlight-active .hero-actions {
+    transition-delay: 0.8s;
+}
+
+/* --- HERO CONTENT STYLING --- */
+
+.invasion-hero-content {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero-text-1 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.hero-text-2 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #a0a0a0;
+    line-height: 1.6;
+    margin-top: 0;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Primary statement */
+.invasion-hero-desc {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Orange highlight spans */
+.invasion-hero-desc span {
+    color: #fbb03b; /* Match your brand's orange accent color */
+}
+
+/* Secondary detail sentence */
+.invasion-hero-subdesc {
+    font-size: 0.95rem;
+    color: #ffffff;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+/* --- ANIMATION DEFINITION --- */
+/* --- ANIMATION DEFINITIONS --- */
+
+/* Slide UP animation (for Tag and Main Text) */
+@keyframes heroFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Move from far left to center animation (for Sub-description) */
+@keyframes slideFromLeftToCenter {
+    0% {
+        opacity: 0;
+        transform: translateX(-150px); /* Starts noticeably to the left */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* Lands perfectly centered */
+    }
+}
+
+
+/* --- ANIMATION ASSIGNMENTS & TIMINGS --- */
+
+/* 1. CONTACT US Tag */
+.invasion-hero-content .invasion-page-tag {
+    opacity: 0;
+    animation: heroFadeUp 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    animation-delay: 0.2s;
+    will-change: transform, opacity;
+}
+
+/* 2. Main Question Paragraph ("Need support...") */
+.invasion-hero-content .invasion-hero-desc {
+    opacity: 0;
+    animation: heroFadeUp 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    animation-delay: 0.5s;
+    will-change: transform, opacity;
+}
+
+/* 3. Sub-description Paragraph ("Reach out to...") SLIDES FROM LEFT */
+.invasion-hero-content .invasion-hero-subdesc {
+    opacity: 0;
+    display: block; /* Ensures transform applies smoothly to text blocks */
+    animation: slideFromLeftToCenter 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    animation-delay: 0.8s;
+    will-change: transform, opacity;
+}
+
+/* --- ENTRANCE ANIMATIONS (SCROLL TRIGGERED) --- */
+
+/* Base state for title */
+.section .section-title {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 1s cubic-bezier(0.25, 1, 0.5, 1), 
+                transform 1s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Base state for contact cards */
+.contact-card {
+    opacity: 0;
+    transform: translateY(35px) scale(0.95);
+    transition: opacity 1s cubic-bezier(0.25, 1, 0.5, 1), 
+                transform 1s cubic-bezier(0.25, 1, 0.5, 1),
+                border-color 0.3s ease,
+                box-shadow 0.3s ease; /* Keeps hover smooth */
+    will-change: transform, opacity;
+}
+
+/* --- REVEAL STATES ON SCROLL (.active) --- */
+
+.section.active .section-title {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section.active .contact-card {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* --- STAGGER DELAYS FOR CARDS --- */
+
+/* Card 1: WhatsApp */
+.section.active .contact-card:nth-child(1) {
+    transition-delay: 0.2s;
+}
+
+/* Card 2: Email */
+.section.active .contact-card:nth-child(2) {
+    transition-delay: 0.4s;
+}
+
+/* Card 3: Address */
+.section.active .contact-card:nth-child(3) {
+    transition-delay: 0.6s;
+}
+
+
+/* --- HOVER MICRO-INTERACTIONS --- */
+
+/* Cards lift slightly and glow on mouse hover */
+.contact-card:hover {
+    transform: translateY(-8px) scale(1.02) !important;
+    border-color: #fbb03b; /* Match your brand's orange color */
+  
+    cursor: pointer;
+}
+
+/* Icons bounce slightly on card hover */
+.contact-card:hover i {
+    transform: translateY(-4px) scale(1.1);
+    color: #fbb03b;
+}
+
+.contact-card i {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+/* --- ICON SHAKE (Continuous Ring) --- */
+@keyframes iconShakeInfinite {
+    0%, 100% { transform: rotate(0deg) scale(1); }
+    10% { transform: rotate(-12deg) scale(1.1); }
+    20% { transform: rotate(12deg) scale(1.1); }
+    30% { transform: rotate(-12deg) scale(1.1); }
+    40% { transform: rotate(12deg) scale(1.1); }
+    50% { transform: rotate(0deg) scale(1); }
+}
+
+
+/* --- BASE HIDDEN STATES --- */
+
+/* 1. Logos / Icons */
+.contact-card i {
+    display: inline-block;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform, opacity;
+}
+
+/* 2. Yellow Headings: Wipe Down */
+.contact-card h3 {
+    opacity: 0;
+    clip-path: inset(0 0 100% 0);
+    transition: clip-path 1s cubic-bezier(0.16, 1, 0.3, 1), 
+                opacity 0.8s ease-out;
+    will-change: clip-path, opacity;
+}
+
+/* 3. White Text: Wipe Up */
+.contact-card p {
+    opacity: 0;
+    clip-path: inset(100% 0 0 0);
+    transition: clip-path 1s cubic-bezier(0.16, 1, 0.3, 1), 
+                opacity 0.8s ease-out;
+    will-change: clip-path, opacity;
+}
+
+
+/* --- REVEAL SEQUENCE ON SCROLL (.active) --- */
+
+/* STEP 1: All Logos appear first (0.2s) */
+.section.active .contact-card i {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.2s;
+    animation: iconShakeInfinite 3.5s infinite ease-in-out 1s; /* Starts shake after reveal */
+}
+
+/* STEP 2: All Yellow Headings wipe open next (0.7s) */
+.section.active .contact-card h3 {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+    transition-delay: 0.7s;
+}
+
+/* STEP 3: All White Text details wipe open last (1.2s) */
+.section.active .contact-card p {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+    transition-delay: 1.2s;
+}
+
+/* --- BASE HIDDEN STATES (OUR LOCATION) --- */
+
+/* Section title */
+.section-title {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Location Pin Icon */
+.map-content i.fa-location-dot {
+    display: inline-block;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform, opacity;
+}
+
+/* Yellow Heading (INVASION PLUS) */
+.map-content h3 {
+    opacity: 0;
+    clip-path: inset(0 0 100% 0);
+    transition: clip-path 1s cubic-bezier(0.16, 1, 0.3, 1), 
+                opacity 0.8s ease-out;
+    will-change: clip-path, opacity;
+}
+
+/* White Address Text */
+.map-content p {
+    opacity: 0;
+    clip-path: inset(100% 0 0 0);
+    transition: clip-path 1s cubic-bezier(0.16, 1, 0.3, 1), 
+                opacity 0.8s ease-out;
+    will-change: clip-path, opacity;
+}
+
+/* Google Map & Waze Buttons */
+.map-buttons a {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+                background-color 0.3s ease,
+                box-shadow 0.3s ease;
+    will-change: transform, opacity;
+}
+
+
+/* --- REVEAL ON SCROLL (.active TRIGGER) --- */
+
+/* Title drops in */
+.section.active .section-title {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* STEP 1: Location Pin Logo appears first (0.2s) */
+.section.active .map-content i.fa-location-dot {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.2s;
+    animation: iconShakeInfinite 3.5s infinite ease-in-out 1s;
+}
+
+/* STEP 2: Heading wipes down next (0.7s) */
+.section.active .map-content h3 {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+    transition-delay: 0.7s;
+}
+
+/* STEP 3: White Address Text wipes up next (1.2s) */
+.section.active .map-content p {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+    transition-delay: 1.2s;
+}
+
+/* STEP 4: Google Map & Waze Buttons pop up last (1.6s) */
+.section.active .map-buttons a {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    transition-delay: 1.6s;
+}
+
+/* --- SPOTLIGHT EFFECT FOR CARDS & BOXES --- */
+/* --- SPOTLIGHT SCROLL DIMMING --- */
+
+/* Default state: Dimmed, dark, and slightly scaled down */
+.contact-card,
+.location-box {
+    opacity: 0.25;
+    filter: brightness(40%) grayscale(50%);
+    transform: scale(0.95);
+    transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1),
+                filter 0.8s cubic-bezier(0.25, 1, 0.5, 1),
+                transform 0.8s cubic-bezier(0.25, 1, 0.5, 1),
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
+    will-change: opacity, filter, transform;
+}
+
+/* Focused/Scrolled-in state: Fully illuminated and original size */
+.section.active .contact-card,
+.section.active .location-box {
+    opacity: 1;
+    filter: brightness(100%) grayscale(0%);
+    transform: scale(1);
+}
+
+/* Optional: Extra brightness boost when directly hovering with cursor */
+.contact-card:hover,
+.location-box:hover {
+    filter: brightness(115%) grayscale(0%);
+}
+
+/* --- TITLE ANIMATION --- */
+.thank-you .about-title,
+.join .about-title {
+    opacity: 0.3;
+    letter-spacing: 2px;
+    transition: opacity 1.2s ease-out, letter-spacing 1.2s ease-out;
+}
+
+.thank-you .line.center {
+    opacity: 0;
+    transform: scaleX(0);
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+.section.active .about-title {
+    opacity: 1;
+    letter-spacing: 4px;
+}
+
+.section.active .line.center {
+    opacity: 1;
+    transform: scaleX(1);
+    transition-delay: 0.3s;
+}
+
+
+/* --- LINES 1 TO 5: SHARP TYPEWRITER SWEEP --- */
+.about-text .text-line {
+    margin-bottom: 1.2rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+
+    background: linear-gradient(to right, #ffffff 50%, #333333 50.1%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    will-change: background-position;
+}
+
+.about-text .text-line.highlight {
+    background: linear-gradient(to right, #fbb03b 50%, #333333 50.1%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* --- LINE 6 OVERRIDE: DRAMATIC TAGLINE GLOW (NO TYPING) --- */
+.about-text .text-line:nth-child(6) {
+    background: none;
+    -webkit-background-clip: unset;
+    background-clip: unset;
+    -webkit-text-fill-color: initial;
+    color: #333333; /* Darkened initial state */
+    opacity: 0.3;
+    transition: color 1.2s ease-out, opacity 1.2s ease-out, text-shadow 1.2s ease-out;
+}
+
+.section.active .about-text .text-line:nth-child(6) {
+    color: #fbb03b; /* Brand orange */
+    opacity: 1;
+    text-shadow: 0 0 15px rgba(251, 176, 59, 0.4); /* Glow effect */
+    transition-delay: 12.5s; /* Triggers after line 5 finishes typing */
+}
+
+
+/* --- ILLUMINATION SWEEP KEYFRAMES --- */
+@keyframes type-illuminate {
+    from {
+        background-position: 100% 0;
+    }
+    to {
+        background-position: 0% 0;
+    }
+}
+
+
+/* --- SEQUENTIAL TIMING (.section.active) --- */
+
+/* Line 1 */
+.section.active .about-text .text-line:nth-child(1) {
+    animation: type-illuminate 2.2s linear 0.4s forwards;
+}
+
+/* Line 2 */
+.section.active .about-text .text-line:nth-child(2) {
+    animation: type-illuminate 4.2s linear 2.2s forwards;
+}
+
+/* Line 3 */
+.section.active .about-text .text-line:nth-child(3) {
+    animation: type-illuminate 1.6s linear 6.1s forwards;
+}
+
+/* Line 4 */
+.section.active .about-text .text-line:nth-child(4) {
+    animation: type-illuminate 4.0s linear 7.4s forwards;
+}
+
+/* Line 5 */
+.section.active .about-text .text-line:nth-child(5) {
+    animation: type-illuminate 1.6s linear 11.1s forwards;
+}
+
+/* Card Base / Dimmed State */
+.card {
+    opacity: 0.25;
+    filter: brightness(40%);
+    transform: scale(0.95);
+    transition: opacity 0.6s ease, 
+                filter 0.6s ease, 
+                transform 0.6s ease;
+    will-change: opacity, filter, transform;
+}
+
+/* Active / Spotlight State */
+.card.active {
+    opacity: 1;
+    filter: brightness(100%);
+    transform: scale(1);
+}
+
+.thank-you.section {
+    padding-top: 15vh;    /* Adjust height as needed */
+    padding-bottom: 15vh;
+    min-height: 80vh;    /* Forces section to take up full screen height */
+}
+
+.about-text .text-line {
+    margin-bottom: 2rem; /* Increases space between each text line */
 }

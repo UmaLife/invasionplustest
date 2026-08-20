@@ -9,21 +9,24 @@
     <title>INVASION PLUS</title>
 </head>
 <body>
-    <section class="contact-hero">
-    <div class="hero-text">
-        <h1>Contact Us</h1>
-        <p>
-            Need support, product information, or business enquiries?
-        </p>
-        <p>
-            Reach out to Invasion Plus and our team will respond as soon as possible.
-        </p>
-        <div class="yellow-line"></div>
-    </div>
-</section>
+    <section class="invasion-hero-section" style="background-image: url('static/bg.png');">
+  <div class="invasion-hero-overlay"></div>
+  <div class="invasion-hero-content">
+    
+    <!-- About Us Page Label -->
+    <span class="invasion-page-tag">CONTACT US</span>
+<p class="invasion-hero-desc">
+    <span>Need support, product information, or business enquiries ?</span>
+</p>
+<p class="invasion-hero-subdesc">
+    Reach out to Invasion Plus and our team will respond as soon as possible.
+</p>
+    
 
-<section class="section">
-    <div class="section-title">
+</section>
+   
+<section class="section ">
+    <div class="section-title ">
         <h2>Contact <span>Information</span></h2>
     </div>
 
@@ -50,33 +53,33 @@
         </div>
 
     </div>
+    </section>
 
-    <div class="section-title" style="margin-top:90px;">
-        <h2>Our <span>Location</span></h2>
-    </div>
+    <section class="section">
+        <div class="section-title">
+            <h2>Our <span>Location</span></h2>
+        </div>
 
-    <div class="location-box">
-        <div class="map-preview">
-            <div class="map-content">
-                <i class="fa-solid fa-location-dot"></i>
-                <h3>INVASION PLUS</h3>
-                <p>No 10, Jalan Gendang 9/KS02, Taman Perindustrian Klang Jaya, 41200 Klang, Selangor, Malaysia.</p>
+        <div class="location-box">
+            <div class="map-preview">
+                <div class="map-content">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h3>INVASION PLUS</h3>
+                    <p>No 10, Jalan Gendang 9/KS02, Taman Perindustrian Klang Jaya, 41200 Klang, Selangor, Malaysia.</p>
 
-                <div class="map-buttons">
-                    <a href="#" onclick="openGoogleMap(); return false;">
-                        <i class="fa-brands fa-google"></i> 
-                        Google Map
-                    </a>
+                    <div class="map-buttons">
+                        <a href="#" onclick="openGoogleMap(); return false;">
+                            <i class="fa-brands fa-google"></i> Google Map
+                        </a>
 
-                    <a href="#" onclick="openWaze(); return false;">
-                        <i class="fa-brands fa-waze"></i> 
-                        Waze
-                    </a>
+                        <a href="#" onclick="openWaze(); return false;">
+                            <i class="fa-brands fa-waze"></i> Waze
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 <script>
 const phoneNumber = "60176704896";
@@ -100,6 +103,34 @@ function openWaze(){
     const wazeUrl = `https://waze.com/ul?q=${encodeURIComponent(address)}&navigate=yes`;
     window.open(wazeUrl, "_blank");
 }
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const observerOptions = {
+        root: null,
+        // Requires 20% of the section to enter view before lighting up
+        threshold: 0.2 
+    };
+
+    const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Lights up when scrolled into view
+                entry.target.classList.add("active");
+            } else {
+                // Gently dims back down when scrolling past or away
+                entry.target.classList.remove("active");
+            }
+        });
+    }, observerOptions);
+
+    // Observe all target sections
+    document.querySelectorAll(".section").forEach(sec => {
+        sectionObserver.observe(sec);
+    });
+});
+</script>
 </script>
 </body>
 <script src="set.js">

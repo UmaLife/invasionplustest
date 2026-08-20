@@ -15,309 +15,337 @@
     }
     </script>
     <title>InvasionPlus</title>
+
+    <style>
+        /* STACKING BANNER STYLES */
+        .banner-container {
+            position: relative;
+            height: 600vh; /* INCREASED FROM 400vh TO SLOW DOWN SCROLLING PROGRESSION */
+            background-color: #000;
+        }
+
+        .sticky-wrapper {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            perspective: 1000px;
+        }
+
+        .sticky-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            will-change: transform;
+            transform-origin: center top;
+            transition: none;
+            background-color: #0d0d0d;
+            opacity: 1 !important;
+            filter: none !important;
+            box-shadow: 0 -25px 50px rgba(0, 0, 0, 0.95);
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+            /* PREVENTS INNER IMAGE BLEED AT THE BOTTOM */
+            overflow: hidden; 
+        }
+
+        /* Initial Z-Index Layering */
+        .sticky-slide:nth-child(1) { z-index: 1; }
+        .sticky-slide:nth-child(2) { z-index: 2; }
+        .sticky-slide:nth-child(3) { z-index: 3; }
+        .sticky-slide:nth-child(4) { z-index: 4; }
+
+        .banner-nav {
+            position: absolute;
+            right: 2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 100;
+        }
+
+        /* SPOTLIGHT / REVEAL ANIMATION STYLES */
+        .reveal-card {
+            opacity: 0.3;
+            transform: scale(0.96);
+            transition: opacity 0.5s ease, transform 0.5s ease, filter 0.5s ease;
+            filter: brightness(0.6);
+        }
+
+        .reveal-card.spotlight-active {
+            opacity: 1;
+            transform: scale(1);
+            filter: brightness(1);
+        }
+    </style>
 </head>
 <body>    
-  <section class="banner-container">   
-    <div class="sticky-wrapper">
+    <!-- STACKING BANNER SECTION -->
+    <section class="banner-container">   
+        <div class="sticky-wrapper">
 
-        <div class="sticky-slide active">
-            <div class="slide-card">
-                <img src="static/bannn.png" class="banner0-img" alt="Banner 0">
-                <div class="slide-overlay"></div>
-                <div class="slide-content">
-                   <a href="AboutUs.html" class="learn-more">LEARN MORE ></a>
+            <!-- SLIDE 0 -->
+            <div class="sticky-slide">
+                <div class="slide-card">
+                    <img src="static/bannn.png" class="banner0-img" alt="Banner 0">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                       <a href="AboutUs.html" class="learn-more">LEARN MORE ></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 1: Erebus -->
+            <div class="sticky-slide">
+                <div class="slide-card">
+                    <img src="static/6.png" class="slide-bg-img" alt="Erebus Background">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-product-center">
+                        <img src="static/EREBUS/EREBUS BLACK - 01.png" alt="EREBUS Product">
+                    </div>
+                    <div class="slide-content">
+                        <h1>EREBUS</h1>
+                        <a href="product2.html?id=erebus" class="learn-more">LEARN MORE ></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 2: XTG-49ARCX -->
+            <div class="sticky-slide">
+                <div class="slide-card">
+                    <img src="static/6.png" class="slide-bg-img" alt="High Performance Background">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-product-center">
+                        <img src="static/XTG-49ARCX/monitor1.png" alt="XTG-49ARCX Product">
+                    </div>
+                    <div class="slide-content">
+                        <h1>XTG-49ARCX</h1>
+                        <a href="product2.html?id=XTG-49ARCX" class="learn-more">LEARN MORE ></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 3: E-20 -->
+            <div class="sticky-slide">
+                <div class="slide-card">
+                    <img src="static/6.png" class="slide-bg-img" alt="Future Tech Background">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-product-center">
+                        <img src="static/E20/E20.4.png" alt="E-20 Product">
+                    </div>
+                    <div class="slide-content">
+                        <h1>E-20</h1>
+                        <a href="product2.html?id=e20" class="learn-more">LEARN MORE ></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Dots -->
+            <div class="banner-nav">
+                <span class="nav-dot active" data-slide="0"></span>
+                <span class="nav-dot" data-slide="1"></span>
+                <span class="nav-dot" data-slide="2"></span>
+                <span class="nav-dot" data-slide="3"></span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CATEGORY SECTION -->
+    <section class="category-section">
+        <div class="categories-header reveal-card">
+            <h2 class="categories-header-title">EXPLORE BY CATEGORIES</h2>
+        </div>
+        <div class="category-grid">
+            <div class="category-card reveal-card">
+                <div class="category-content">
+                    <h3>Cooler</h3>
+                    <p>Experience premium cooling performance with next generation airflow design.</p>
+                    <a href="coolers.html">View products <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+                <div class="category-image">
+                    <img src="static/cate2.png" alt="Cooler">
+                </div>
+            </div>
+
+            <div class="category-card reveal-card">
+                <div class="category-content">
+                    <h3>Case</h3>
+                    <p>Minimalist chassis engineered for maximum thermal efficiency.</p>
+                    <a href="cases.html">View products <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+                <div class="category-image">
+                    <img src="static/cate1.png" alt="Case">
+                </div>
+            </div>
+
+            <div class="category-card reveal-card">
+                <div class="category-content">
+                    <h3>Monitor</h3>
+                    <p>Ultra immersive display built for creators and gamers.</p>
+                    <a href="monitors.html">View products <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+                <div class="category-image">
+                    <img src="static/cate3.png" alt="Monitor">
                 </div>
             </div>
         </div>
-
-        <div class="sticky-slide">
-            <div class="slide-card">
-                <!-- Image 1: Full Background -->
-                <img src="static/6.png" class="slide-bg-img" alt="Atlas Background">
-                <div class="slide-overlay"></div>
-
-                <!-- Image 2: Centered Product Image -->
-                <div class="slide-product-center">
-                    <img src="static/ATLAS/ALTAS-BLACK-04.png" alt="EREBUS Product">
-                </div>
-
-               <div class="slide-content content-low">
-                    <h1>ATLAS</h1>
-                    <a href="product2.html?id=atlas" class="learn-more">LEARN MORE ></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="sticky-slide">
-            <div class="slide-card">
-                <!-- Image 1: Full Background -->
-                <img src="static/6.png" class="slide-bg-img" alt="High Performance Background">
-                <div class="slide-overlay"></div>
-
-                <!-- Image 2: Centered Product Image -->
-                <div class="slide-product-center">
-                    <img src="static/KRATOS/KRATOS-LCD-00.png" alt="KRATOS Product">
-                </div>
-
-                <div class="slide-content">
-                    <h1>KRATOS</h1>
-                    <a href="product2.html?id=kratos" class="learn-more">LEARN MORE ></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="sticky-slide">
-            <div class="slide-card">
-                <!-- Image 1: Full Background -->
-                <img src="static/6.png" class="slide-bg-img" alt="Future Tech Background">
-                <div class="slide-overlay"></div>
-
-                <!-- Image 2: Centered Product Image -->
-                <div class="slide-product-center">
-                    <img src="static/POSEIDON/POSEIDON BLACK-02（1）.png" alt="POSEIDON Product">
-                </div>
-
-                <div class="slide-content">
-                    <h1>POSEIDON</h1>
-                    <a href="product2.html?id=poseidon360" class="learn-more">LEARN MORE ></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="sticky-slide">
-            <div class="slide-card">
-                <!-- Image 1: Full Background -->
-                <img src="static/6.png" class="slide-bg-img" alt="Future Tech Background">
-                <div class="slide-overlay"></div>
-
-                <!-- Image 2: Centered Product Image -->
-                <div class="slide-product-center">
-                    <img src="static/XTG-49ARCX/monitor1.png" alt="Monitor Product">
-                </div>
-
-                <div class="slide-content">
-                    <h1>XTG-49ARCX</h1>
-                    <a href="product2.html?id=XTG-49ARCX" class="learn-more">LEARN MORE ></a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Navigation Dots -->
-        <div class="banner-nav">
-            <span class="nav-dot active" data-slide="0"></span>
-            <span class="nav-dot" data-slide="1"></span>
-            <span class="nav-dot" data-slide="2"></span>
-            <span class="nav-dot" data-slide="3"></span>
-            <span class="nav-dot" data-slide="4"></span>
-        </div>
-
-    </div>
-</section>
-    <!--category-->
-   <section class="category-section">
-<div class="categories-header reveal-card">
-    <h2 class="categories-header-title">EXPLORE BY CATEGORIES</h2>
-</div>
-    <div class="category-grid">
-        <div class="category-card reveal-card">
-            <div class="category-content">
-                <h3>Cooler</h3>
-                <p>
-                    Experience premium cooling performance
-                    with next generation airflow design.
-                </p>
-                <a href="coolers.html">
-                    View products
-                    <i class="fa-solid fa-angle-right"></i>
-                </a>
-            </div>
-            <div class="category-image">
-                <img src="static/cate2.png" alt="Cooler">
-            </div>
-        </div>
-
-        <div class="category-card reveal-card">
-            <div class="category-content">
-                <h3>Case</h3>
-                <p>
-                    Minimalist chassis engineered
-                    for maximum thermal efficiency.
-                </p>
-                <a href="cases.html">
-                    View products
-                    <i class="fa-solid fa-angle-right"></i>
-                </a>
-            </div>
-            <div class="category-image">
-                <img src="static/cate1.png" alt="Case">
-            </div>
-        </div>
-
-        <div class="category-card reveal-card">
-            <div class="category-content">
-                <h3>Monitor</h3>
-                <p>
-                    Ultra immersive display built
-                    for creators and gamers
-                </p>
-                <a href="monitors.html">
-                    View products
-                    <i class="fa-solid fa-angle-right"></i>
-                </a>
-            </div>
-            <div class="category-image">
-                <img src="static/cate3.png" alt="Monitor">
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
     
-   <section class="hero-banner-section reveal-card">
-    <div class="hero-banner-container ">
-        <!-- IMAGE 1: Full Section Background -->
-        <img src="static/5.png" alt="Background" class="hero-banner-bg">
-        
-        <!-- Dark Overlay for Contrast (Optional) -->
-        <div class="hero-banner-overlay"></div>
-
-        <!-- Left Side: Floating Text Content -->
-        <div class="hero-banner-content">
-            <span class="banner-tag">HOT SELLING</span>
-            <h2>Built For Peak Performance</h2>
-            <p>
-                Discover our most popular setup, designed for powerful airflow, stable cooling and a premium gaming experience.
-            </p>
-            
-            <div class="hero-actions">
-                <a href="all-product.html" class="btn-secondary">Explore Now</a>
-
+    <!-- HERO BANNER SECTION 1 -->
+    <section class="hero-banner-section reveal-card">
+        <div class="hero-banner-container">
+            <img src="static/5.png" alt="Background" class="hero-banner-bg">
+            <div class="hero-banner-overlay"></div>
+            <div class="hero-banner-content">
+                <span class="banner-tag">HOT SELLING</span>
+                <h2>Built For Peak Performance</h2>
+                <p>Discover our most popular setup, designed for powerful airflow, stable cooling and a premium gaming experience.</p>
+                <div class="hero-actions">
+                    <a href="all-product.html" class="btn-secondary">Explore Now</a>
+                </div>
+            </div>
+            <div class="hero-banner-product">
+                <img src="static/FROST VISION 240/FV-240-B-02.png" alt="Featured Product">
             </div>
         </div>
+    </section>
 
-        <!-- IMAGE 2: Foreground Featured Product -->
-        <div class="hero-banner-product">
-            <img src="static/FROST VISION 240/FV-240-B-02.png" alt="Featured Product">
-        </div>
-    </div>
-</section>
-
-<section class="hero-banner-section reveal-card">
-    <div class="hero-banner-container">
-        <!-- IMAGE 1: Full Section Background -->
-        <img src="static/5.png" alt="Background" class="hero-banner-bg">
-        
-        <!-- Dark Overlay for Contrast (Optional) -->
-        <div class="hero-banner-overlay"></div>
-
-        <!-- Left Side: Floating Text Content -->
-        <div class="hero-banner-content">
-             <span class="banner-tag">NEW ARRIVALS</span>
-            <h2>Meet the next generation</h2>
-            <p>
-                Introducing our latest product line with refined design, improved thermal control and futuristic aesthetics.
-            </p>
-            
-            <div class="hero-actions">
-                <a href="all-product.html#new-arrivals" class="btn-secondary">Explore Now</a>
+    <!-- HERO BANNER SECTION 2 -->
+    <section class="hero-banner-section reveal-card">
+        <div class="hero-banner-container">
+            <img src="static/5.png" alt="Background" class="hero-banner-bg">
+            <div class="hero-banner-overlay"></div>
+            <div class="hero-banner-content">
+                <span class="banner-tag">NEW ARRIVALS</span>
+                <h2>Meet the next generation</h2>
+                <p>Introducing our latest product line with refined design, improved thermal control and futuristic aesthetics.</p>
+                <div class="hero-actions">
+                    <a href="all-product.html#new-arrivals" class="btn-secondary">Explore Now</a>
+                </div>
+            </div>
+            <div class="hero-banner-product">
+                <img src="static/PERSEUS/PERSEUS-01.png" alt="Featured Product">
             </div>
         </div>
+    </section>
 
-        <!-- IMAGE 2: Foreground Featured Product -->
-        <div class="hero-banner-product">
-            <img src="static/PERSEUS/PERSEUS-01.png" alt="Featured Product">
-        </div>
-    </div>
-</section>
-<script type="module" src="home.js"></script>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
+    <script type="module" src="home.js"></script>
 
-    const slides = document.querySelectorAll(".sticky-slide");
-    const dots = document.querySelectorAll(".banner-nav .nav-dot");
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
 
-    let currentSlide = 0;
-    let autoSlide;
+        // 1. LERP SMOOTH SCROLL ENGINE
+        const bannerContainer = document.querySelector(".banner-container");
+        const slides = document.querySelectorAll(".sticky-slide");
+        const dots = document.querySelectorAll(".banner-nav .nav-dot");
 
-    function showSlide(index) {
+        if (!bannerContainer) return;
 
-        if (index >= slides.length) {
-            index = 0;
-        }
+        let targetScrollY = window.scrollY;
+        let currentScrollY = window.scrollY;
+        const ease = 0.04; // Smooth lag factor
 
-        if (index < 0) {
-            index = slides.length - 1;
-        }
+        window.addEventListener("scroll", () => {
+            targetScrollY = window.scrollY;
+        }, { passive: true });
 
-        slides.forEach(function(slide) {
-            slide.classList.remove("active");
-        });
+        function render() {
+            currentScrollY += (targetScrollY - currentScrollY) * ease;
 
-        dots.forEach(function(dot) {
-            dot.classList.remove("active");
-        });
-
-        slides[index].classList.add("active");
-
-        if (dots[index]) {
-            dots[index].classList.add("active");
-        }
-
-        currentSlide = index;
-    }
-
-    function nextSlide() {
-        showSlide(currentSlide + 1);
-    }
-
-    function startAutoSlide() {
-
-        clearInterval(autoSlide);
-
-        autoSlide = setInterval(function () {
-
-            if (window.innerWidth <= 768) {
-                nextSlide();
+            if (Math.abs(targetScrollY - currentScrollY) < 0.01) {
+                currentScrollY = targetScrollY;
             }
 
-        }, 4000);
-    }
+            updateCardStack(currentScrollY);
+            requestAnimationFrame(render);
+        }
 
-    dots.forEach(function(dot, index) {
+        function updateCardStack(scrollYPos) {
+            const containerTop = bannerContainer.offsetTop;
+            const containerHeight = bannerContainer.offsetHeight - window.innerHeight;
+            
+            let scrollPosition = scrollYPos - containerTop;
+            scrollPosition = Math.max(0, Math.min(scrollPosition, containerHeight));
 
-        dot.addEventListener("click", function () {
-            showSlide(index);
-            startAutoSlide();
+            const totalSlides = slides.length;
+            
+            // Raw progress across total slides
+            const rawProgress = (scrollPosition / containerHeight) * (totalSlides - 1);
+            
+            const activeIndex = Math.floor(rawProgress);
+            const subProgress = rawProgress % 1;
+            
+            // INCREASED HOLD BUFFER FROM 0.3 TO 0.5 FOR SLOWER SLIDE TRANSITIONS
+            // Hold phase: subProgress below 0.5 stays held at 0 (cards rest longer)
+            // Motion phase: subProgress between 0.5 and 1.0 smoothly moves the incoming card
+            const transitionProgress = Math.max(0, (subProgress - 0.5) / 0.5);
+
+            slides.forEach((slide, index) => {
+                slide.style.opacity = "1";
+                slide.style.filter = "none";
+
+                if (index < activeIndex) {
+                    const distance = rawProgress - index;
+                    const scale = Math.max(0.88, 1 - distance * 0.04);
+                    slide.style.transform = `translate3d(0, 0%, 0) scale(${scale})`;
+
+                } else if (index === activeIndex) {
+                    const scale = 1 - (transitionProgress * 0.04);
+                    slide.style.transform = `translate3d(0, 0%, 0) scale(${scale})`;
+
+                } else if (index === activeIndex + 1) {
+                    const translateY = 100 - (transitionProgress * 100);
+                    slide.style.transform = `translate3d(0, ${translateY}%, 0) scale(1)`;
+
+                } else {
+                    slide.style.transform = `translate3d(0, 100%, 0) scale(1)`;
+                }
+            });
+
+            dots.forEach((dot, idx) => {
+                dot.classList.toggle("active", idx === Math.round(rawProgress));
+            });
+        }
+
+        // Run animation loop
+        requestAnimationFrame(render);
+
+        // Dot navigation click events
+        dots.forEach((dot, index) => {
+            dot.addEventListener("click", () => {
+                const containerTop = bannerContainer.offsetTop;
+                const containerHeight = bannerContainer.offsetHeight - window.innerHeight;
+                const targetScrollPosition = containerTop + (containerHeight / (slides.length - 1)) * index;
+
+                window.scrollTo({
+                    top: targetScrollPosition,
+                    behavior: "smooth"
+                });
+            });
         });
 
+        // 2. SPOTLIGHT REVEAL OBSERVER FOR CARDS
+        const spotlightObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("spotlight-active");
+                } else {
+                    entry.target.classList.remove("spotlight-active");
+                }
+            });
+        }, {
+            root: null,
+            rootMargin: "-15% 0px -15% 0px",
+            threshold: 0.2
+        });
+
+        document.querySelectorAll(".reveal-card").forEach(card => {
+            spotlightObserver.observe(card);
+        });
     });
-
-    showSlide(0);
-    startAutoSlide();
-});
-</script>
-</script>
-<script>// Intersection Observer for the Spotlight Scroll Effect
-const observerOptions = {
-    root: null, // relative to the viewport
-    rootMargin: "-20% 0px -20% 0px", // triggers spotlight when card enters middle 60% of screen
-    threshold: 0.3 // percentage of the card that must be visible
-};
-
-const spotlightObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("spotlight-active");
-        } else {
-            entry.target.classList.remove("spotlight-active");
-        }
-    });
-}, observerOptions);
-
-// Observe all elements with the 'reveal-card' class
-document.querySelectorAll(".reveal-card").forEach(card => {
-    spotlightObserver.observe(card);
-});</script>
+    </script>
+    <script src="set.js"></script>
 </body>
-<script src="set.js">
-</script>
 </html>
