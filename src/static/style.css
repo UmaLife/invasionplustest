@@ -912,8 +912,9 @@ bottom: 20px;
 }
 /*category*/
 .category-section{
-    padding:120px 7%;
+    padding:90px 12%;
     background: #000000;
+
 }
 .category-header{
     display: flex;
@@ -3886,6 +3887,7 @@ border-glow {
     .category-section {
         padding: 30px 0 45px;
         padding-left: 18px !important;
+        
     }
 
     .category-section h2 {
@@ -4639,7 +4641,7 @@ body.allproduct-page {
 /* Full-Bleed Section Container */
 .hero-banner-section {
     width: 100%;
-    margin: 40px 0;
+    margin: 30px 0;
     padding: 0;
 }
 
@@ -4850,7 +4852,7 @@ body.allproduct-page {
 
 .slide-product-center img {
     /* Reduce these percentages to make the image smaller */
-    max-height: 70%; /* Decreased from 70% */
+    max-height: 65%; /* Decreased from 70% */
     max-width: 60%;  /* Decreased from 60% */
     
     object-fit: contain;
@@ -5370,106 +5372,6 @@ body.allproduct-page {
 }
 
 
-/* --- LINES 1 TO 5: SHARP TYPEWRITER SWEEP --- */
-.about-text .text-line {
-    margin-bottom: 1.2rem;
-    font-size: 1.1rem;
-    line-height: 1.6;
-
-    background: linear-gradient(to right, #ffffff 50%, #333333 50.1%);
-    background-size: 200% 100%;
-    background-position: 100% 0;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    will-change: background-position;
-}
-
-.about-text .text-line.highlight {
-    background: linear-gradient(to right, #fbb03b 50%, #333333 50.1%);
-    background-size: 200% 100%;
-    background-position: 100% 0;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
-/* --- LINE 6 OVERRIDE: DRAMATIC TAGLINE GLOW (NO TYPING) --- */
-.about-text .text-line:nth-child(6) {
-    background: none;
-    -webkit-background-clip: unset;
-    background-clip: unset;
-    -webkit-text-fill-color: initial;
-    color: #333333; /* Darkened initial state */
-    opacity: 0.3;
-    transition: color 1.2s ease-out, opacity 1.2s ease-out, text-shadow 1.2s ease-out;
-}
-
-.section.active .about-text .text-line:nth-child(6) {
-    color: #fbb03b; /* Brand orange */
-    opacity: 1;
-    text-shadow: 0 0 15px rgba(251, 176, 59, 0.4); /* Glow effect */
-    transition-delay: 12.5s; /* Triggers after line 5 finishes typing */
-}
-
-
-/* --- ILLUMINATION SWEEP KEYFRAMES --- */
-@keyframes type-illuminate {
-    from {
-        background-position: 100% 0;
-    }
-    to {
-        background-position: 0% 0;
-    }
-}
-
-
-/* --- SEQUENTIAL TIMING (.section.active) --- */
-
-/* Line 1 */
-.section.active .about-text .text-line:nth-child(1) {
-    animation: type-illuminate 2.2s linear 0.4s forwards;
-}
-
-/* Line 2 */
-.section.active .about-text .text-line:nth-child(2) {
-    animation: type-illuminate 4.2s linear 2.2s forwards;
-}
-
-/* Line 3 */
-.section.active .about-text .text-line:nth-child(3) {
-    animation: type-illuminate 1.6s linear 6.1s forwards;
-}
-
-/* Line 4 */
-.section.active .about-text .text-line:nth-child(4) {
-    animation: type-illuminate 4.0s linear 7.4s forwards;
-}
-
-/* Line 5 */
-.section.active .about-text .text-line:nth-child(5) {
-    animation: type-illuminate 1.6s linear 11.1s forwards;
-}
-
-/* Card Base / Dimmed State */
-.card {
-    opacity: 0.25;
-    filter: brightness(40%);
-    transform: scale(0.95);
-    transition: opacity 0.6s ease, 
-                filter 0.6s ease, 
-                transform 0.6s ease;
-    will-change: opacity, filter, transform;
-}
-
-/* Active / Spotlight State */
-.card.active {
-    opacity: 1;
-    filter: brightness(100%);
-    transform: scale(1);
-}
-
 .thank-you.section {
     padding-top: 15vh;    /* Adjust height as needed */
     padding-bottom: 15vh;
@@ -5479,3 +5381,6 @@ body.allproduct-page {
 .about-text .text-line {
     margin-bottom: 2rem; /* Increases space between each text line */
 }
+
+
+.sticky-slide:nth-child(5) { z-index: 5 !important;} /* ADD THIS LINE */

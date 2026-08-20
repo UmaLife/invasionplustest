@@ -9,19 +9,78 @@
     <title>About Us</title>
 
     <style>
-        /* Spotlight Card Transitions */
+        /* SCROLL ANIMATION STYLES */
+
+        /* Title Fade & Slide In */
+        .section h1 {
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .section.active h1 {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+
+        .spotlight-card .highlight {
+            color: #fbb03b;
+            display: block; /* Ensures highlight text stays on its own line */
+            margin-top: 15px;
+        }
+
+        /* Line Expanding Animation */
+        .line.center {
+            width: 0;
+            transition: width 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        .section.active .line.center {
+            width: 450px; /* Adjust width as needed to match your design */
+        }
+
+        /* Text Spotlight & Fade Animation */
         .spotlight-card {
             filter: brightness(0.4);
             opacity: 0.25;
-            transform: scale(0.95);
+            transform: scale(0.95) translateY(15px);
             transition: filter 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
             will-change: filter, opacity, transform;
         }
 
+        /* Increase line height and space out individual text blocks */
+.spotlight-card p {
+    line-height: 1.8;       /* Increases space between lines of text */
+    margin-bottom: 2.15rem;    /* Adds space below each paragraph to lengthen the block */
+}
+
+/* Adjust yellow highlight text spacing */
+.spotlight-card .highlight {
+    color: #fbb03b;
+    display: block;
+    margin-top: 1.5rem;
+    line-height: 1.6;
+}
+
+
+
         .spotlight-card.spotlight-active {
             filter: brightness(1);
             opacity: 1;
-            transform: scale(1);
+            transform: scale(1) translateY(0);
+        }
+
+        /* Button Fade Up Animation */
+        .join .buttons {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out 0.2s, transform 0.8s ease-out 0.2s;
+        }
+
+        .join.active .buttons {
+            opacity: 1;
+            transform: translateY(0);
         }
     </style>
 </head>
@@ -37,24 +96,26 @@
   </div>
 </section>
 
-<!-- ABOUT SECTION WITH SPOTLIGHT CARDS -->
+<!-- ABOUT SECTION WITH SINGLE SPOTLIGHT CARD -->
 <section class="thank-you section">
-    <h1 class="about-title">ABOUT INVASION+</h1>
+    <h1>ABOUT <img src="static/logo.png" alt="Invasion Logo" class="about-logo"></h1>
     <div class="line center"></div>
 
     <div class="about-text">
-        <p class="text-line spotlight-card">At Invasion+, every product starts with one purpose: <strong>To build something worth owning.</strong></p>
-        <p class="text-line spotlight-card">Every detail is designed with intention — combining thoughtful engineering, refined design, and exceptional performance to create a product you are proud to own, use, and appreciate every day.</p>
-        <p class="text-line spotlight-card">Because great hardware is more than specifications.</p>
-        <p class="text-line spotlight-card">It is about understanding your needs, caring for your experience, and creating a connection between you and your build — where craftsmanship, design, and purpose come together.</p>
-        <p class="text-line highlight spotlight-card">Built with purpose. Crafted without compromise.</p>
-        <p class="text-line highlight spotlight-card">Break the Norm. Forge Tomorrow.</p>
+        <div class="spotlight-card">
+            <p>At Invasion+, every product starts with one purpose: <strong>To build something worth owning.</strong></p>
+            <p>Every detail is designed with intention — combining thoughtful engineering, refined design, and exceptional performance to create a product you are proud to own, use, and appreciate every day.</p>
+            <p>Because great hardware is more than specifications.</p>
+            <p>It is about understanding your needs, caring for your experience, and creating a connection between you and your build — where craftsmanship, design, and purpose come together.</p>
+            <span class="highlight">Built with purpose. Crafted without compromise.</span>
+            <span class="highlight">Break the Norm. Forge Tomorrow.</span>
+        </div>
     </div>
 </section>
 
 <!-- DISCOVER SECTION -->
 <section class="join section">
-    <h1 class="about-title">DISCOVER INVASION+</h1>
+    <h1>DISCOVER <img src="static/logo.png" alt="Invasion Logo" class="discover-logo"></h1>
     <div class="buttons">
         <a href="all-product.html">VIEW PRODUCTS →</a>
         <a href="ContactUs.html">CONTACT US →</a>
@@ -63,7 +124,7 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-  // 1. Observer for section visibility
+  // 1. Observer for section visibility (animates h1, line, and buttons)
   const sectionObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -76,7 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll(".section").forEach((sec) => sectionObserver.observe(sec));
 
-  // 2. Observer for Spotlight Cards (illuminates cards as they center in viewport)
+  // 2. Observer for Spotlight Card (illuminates block when centered)
   const spotlightObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -87,8 +148,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }, {
     root: null,
-    rootMargin: "-20% 0px -20% 0px", // Focus area centered in the viewport
-    threshold: 0.5                   // Requires 50% visibility to trigger focus
+    rootMargin: "-20% 0px -20% 0px",
+    threshold: 0.3 // Adjusted threshold so the longer card illuminates smoothly
   });
 
   document.querySelectorAll(".spotlight-card").forEach((card) => spotlightObserver.observe(card));
