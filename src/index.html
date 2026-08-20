@@ -246,6 +246,27 @@
         </div>
     </section>
 
+    <section class="media-hero">
+
+    <iframe
+        class="media-hero-video"
+        src="https://www.youtube.com/embed/13GSktm4xjk?autoplay=1&mute=1&loop=1&playlist=13GSktm4xjk&controls=0&playsinline=1&rel=0"
+        allow="autoplay; encrypted-media"
+        frameborder="0">
+    </iframe>
+
+        <div class="media-hero-overlay"></div>
+
+        <div class="media-hero-content">
+            <h1>Invasion Plus Cases</h1>
+
+            <a href="#" class="media-hero-btn">
+                View More <span>›</span>
+            </a>
+        </div>
+
+    </section>
+
     <script type="module" src="home.js"></script>
 
     <script>
@@ -360,6 +381,26 @@
             spotlightObserver.observe(card);
         });
     });
+
+    const mediaHero = document.querySelector('.media-hero');
+
+    const mediaObserver = new IntersectionObserver(
+        (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    mediaObserver.unobserve(entry.target);
+                }
+            });
+        },
+        {
+            threshold: 0.2
+        }
+    );
+
+    if (mediaHero) {
+        mediaObserver.observe(mediaHero);
+    }
     </script>
     <script src="set.js"></script>
 </body>

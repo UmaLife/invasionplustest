@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Product</title>
 <link rel="stylesheet" href="static/monitor-product.css">
-<link rel="stylesheet" href="static/css/xqz-description.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
@@ -13,76 +12,76 @@
 <body>
 
 <main class="product-page">
-    <div class="product-navigation">
-    <a id="prevProduct" class="product-nav prev" href="#">
-        <i class="fa-solid fa-chevron-left"></i>
-        <span>Previous Product</span>
-    </a>
+        <div class="product-navigation">
+        <a id="prevProduct" class="product-nav prev" href="#">
+            <i class="fa-solid fa-chevron-left"></i>
+            <span>Previous Product</span>
+        </a>
 
-    <a id="nextProduct" class="product-nav next" href="#">
-        <span>Next Product</span>
-        <i class="fa-solid fa-chevron-right"></i>
-    </a>
-</div>
-
-<section class="product-hero">
-    <div class="thumb-panel">
-        <button class="thumb-arrow" id="thumbUp">
-            <i class="fa-solid fa-chevron-up"></i>
-        </button>
-        <div class="thumbs" id="thumbs"></div>
-        <button class="thumb-arrow" id="thumbDown">
-            <i class="fa-solid fa-chevron-down"></i>
-        </button>
+        <a id="nextProduct" class="product-nav next" href="#">
+            <span>Next Product</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </a>
     </div>
 
-    <div class="hero-image">
-        <img id="mainImage" src="">
-    </div>
-
-    <div class="hero-info">
-        <h1 id="productName"></h1>
-        <h3 id="productPrice"></h3>
-
-        <div class="info-row">
-            <span>Variation</span>
-            <div id="colorOptions" class="option-list"></div>
+    <section class="product-hero">
+        <div class="thumb-panel">
+            <button class="thumb-arrow" id="thumbUp">
+                <i class="fa-solid fa-chevron-up"></i>
+            </button>
+            <div class="thumbs" id="thumbs"></div>
+            <button class="thumb-arrow" id="thumbDown">
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
         </div>
 
-        <div class="info-row">
-            <span>Product Type</span>
-                <div class="option-list">
-                    <div class="option-box" id="productType"></div>
-                </div>
+        <div class="hero-image">
+            <img id="mainImage" src="">
         </div>
 
-        <p class="desc" id="productDesc"></p>
-    </div>
-</section>
+        <div class="hero-info">
+            <h1 id="productName"></h1>
+            <h3 id="productPrice"></h3>
 
-<section class="selling-points" id="sellingPoints"></section>
+            <div class="info-row">
+                <span>Variation</span>
+                <div id="colorOptions" class="option-list"></div>
+            </div>
 
-<section class="feature-section">
+            <div class="info-row">
+                <span>Product Type</span>
+                    <div class="option-list">
+                        <div class="option-box" id="productType"></div>
+                    </div>
+            </div>
 
-    <div class="feature-header">
-        <span>Next-Level Performance</span>
-        <h2>Made For Gamers</h2>
-        <p>Every detail designed to give you the competitive edge.</p>
-    </div>
+            <p class="desc" id="productDesc"></p>
+        </div>
+    </section>
 
-    <div class="feature-grid" id="featureGrid"></div>
-    <p class="disclaimer">*Please note that the images shown are for illustrative purposes only and may not represent the exact color or finish of the product.</p>
+    <section class="selling-points" id="sellingPoints"></section>
 
-</section>
+    <section class="feature-section">
 
-<div id="xqz-description" class="xqz-description"></div>
-<section class="spec-section">
-    <div class="spec-image">
-        <img id="specImage" src="">
-    </div>
+        <div class="feature-header">
+            <span>Next-Level Performance</span>
+            <h2>Made For Gamers</h2>
+            <p>Every detail designed to give you the competitive edge.</p>
+        </div>
 
-    <div class="spec-table" id="specTable"></div>
-</section>
+        <div class="feature-grid" id="featureGrid"></div>
+        <p class="disclaimer">*Please note that the images shown are for illustrative purposes only and may not represent the exact color or finish of the product.</p>
+
+    </section>
+
+    <div id="xqz-description" class="xqz-description"></div>
+    <section class="spec-section">
+        <div class="spec-image">
+            <img id="specImage" src="">
+        </div>
+
+        <div class="spec-table" id="specTable"></div>
+    </section>
 
 
 </main>

@@ -171,21 +171,23 @@
             return;
         }
 
-        products.forEach(product => {
+           products.forEach((product, index) => {
+        const image =
+            product.mainImage ||
+            product.images?.[0] ||
+            product.variations?.black?.[0] ||
+            "static/fallback.png";
 
-            const image =
-                product.mainImage ||
-                product.images?.[0] ||
-                product.variations?.black?.[0] ||
-                "static/fallback.png";
+        const variations = product.variations
+            ? Object.keys(product.variations).join("/")
+            : "Black";
 
-            const variations = product.variations
-                ? Object.keys(product.variations).join("/")
-                : "Black";
-
-            productList.innerHTML += `
-                <article class="product"
-                    onclick="window.location.href='product2.html?id=${product.id}'">
+        productList.innerHTML += `
+            <article 
+                onclick="window.location.href='product2.html?id=${product.id}'" 
+                class="product"
+                style="transition-delay:${(index % 4) * 0.15}s;"
+            >
 
                     <img src="${image}">
 
