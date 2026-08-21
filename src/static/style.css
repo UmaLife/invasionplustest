@@ -5398,7 +5398,7 @@ body.allproduct-page {
 .media-hero{
     position:relative;
 
-    width:85%;
+    width:min(85vw, 151.11vh);
     aspect-ratio:16 / 9;
     height:auto;
 
@@ -5420,7 +5420,6 @@ body.allproduct-page {
     opacity:1;
     transform:translateY(0);
 }
-
 
 /* =========================
    VIDEO CAROUSEL
@@ -5494,12 +5493,11 @@ body.allproduct-page {
     filter:brightness(1);
 }
 
-
 .media-left,
 .media-right{
     position:absolute;
 
-    width:17%;
+    width:18%;
     aspect-ratio:16 / 9;
     height:auto;
 
