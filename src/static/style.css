@@ -5397,17 +5397,23 @@ body.allproduct-page {
 }
 .media-hero{
     position:relative;
-    opacity:0;
-    transform:translateY(40px);
-    transition:
-        opacity 1s ease,
-        transform 1s ease;
-    width:100%;
-    height:650px;
-   margin-top: 100px;
+
+    width:85%;
+    aspect-ratio:16 / 9;
+    height:auto;
+
+    margin:100px auto 0;
+
     overflow:hidden;
 
     background:#000;
+
+    opacity:0;
+    transform:translateY(40px);
+
+    transition:
+        opacity 1s ease,
+        transform 1s ease;
 }
 
 .media-hero.visible{
@@ -5415,50 +5421,158 @@ body.allproduct-page {
     transform:translateY(0);
 }
 
-.media-hero-video{
+
+/* =========================
+   VIDEO CAROUSEL
+========================= */
+
+.media-carousel{
     position:absolute;
-    top:50%;
-    left:50%;
 
-    width:100vw;
-    height:56.25vw;
+    inset:0;
 
-    min-height:100%;
-    min-width:177.78vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 
-    transform:translate(-50%, -50%);
+    gap:20px;
 
-    border:0;
+    overflow:hidden;
+
     z-index:0;
 }
+
+
+/* =========================
+   ALL SLIDES
+========================= */
+
+.media-slide{
+    position:relative;
+
+    flex-shrink:0;
+
+    overflow:hidden;
+
+    border-radius:2px;
+
+    transition:
+        width .7s cubic-bezier(.16,1,.3,1),
+        height .7s cubic-bezier(.16,1,.3,1),
+        opacity .7s ease,
+        transform .7s cubic-bezier(.16,1,.3,1),
+        filter .7s ease;
+}
+
+.media-slide video{
+    width:100%;
+    height:100%;
+
+    display:block;
+
+    object-fit:cover;
+
+    pointer-events:none;
+}
+
+
+/* =========================
+   CENTER VIDEO
+========================= */
+
+.media-center{
+    width:75%;
+    aspect-ratio:16 / 9;
+    height:auto;
+
+    z-index:3;
+
+    opacity:1;
+
+    transform:scale(1);
+
+    filter:brightness(1);
+}
+
+
+.media-left,
+.media-right{
+    position:absolute;
+
+    width:17%;
+    aspect-ratio:16 / 9;
+    height:auto;
+
+    z-index:2;
+
+    opacity:.65;
+
+    filter:brightness(.55);
+
+    cursor:pointer;
+}
+
+.media-left{
+    left:-5%;
+    transform:scale(.9);
+}
+
+.media-right{
+    right:-5%;
+    transform:scale(.9);
+}
+
+
+/* =========================
+   HOVER PREVIEW
+========================= */
+
+.media-left:hover,
+.media-right:hover{
+    opacity:.9;
+
+    filter:brightness(.8);
+
+    transform:scale(.94);
+}
+
+
+/* =========================
+   DARK OVERLAY
+========================= */
 
 .media-hero-overlay{
     position:absolute;
 
     inset:0;
 
-    background:rgba(0,0,0,.6);
+    background:rgba(0,0,0,.4);
 
-    z-index:1;
+    z-index:4;
+
+    pointer-events:none;
 }
 
 
-/* CONTENT */
+/* =========================
+   CONTENT
+========================= */
 
 .media-hero-content{
     position:absolute;
 
-    top:80%;
+    top:75%;
     left:50%;
 
     transform:translate(-50%,-50%);
 
-    width:90%;
-    max-width:1100px;
+    width:80%;
 
     text-align:center;
 
-    z-index:2;
+    z-index:5;
+
+    pointer-events:none;
 }
 
 .media-hero-content h1{
@@ -5472,85 +5586,78 @@ body.allproduct-page {
 
     margin:0 0 25px;
 
-    text-shadow:0 3px 12px rgba(0,0,0,.5);
+    text-shadow:
+        0 3px 15px rgba(0,0,0,.7);
 }
 
 
-/* BUTTON */
+/* =========================
+   BUTTON
+========================= */
 
 .media-hero-btn{
     display:inline-flex;
 
     align-items:center;
+
     gap:8px;
 
-    padding:11px 20px;
+    padding:12px 22px;
 
     color:#fff;
 
+    border:1px solid rgba(255,255,255,.8);
+    border-radius: 30px;
     text-decoration:none;
 
-    font-size:14px;
-    font-weight:500;
-
-    border:1px solid rgba(255,255,255,.8);
-
-    border-radius:4px;
+    font-size:13px;
 
     transition:.3s ease;
-}
 
-.media-hero-btn span{
-    font-size:18px;
-    line-height:0;
+    pointer-events:auto;
 }
 
 .media-hero-btn:hover{
     background:#fbb03b;
+
     border-color:#fbb03b;
 
     color:#000;
-
-    transform:translateY(-2px);
 }
 
 
-/* ARROWS */
+/* =========================
+   ARROWS
+========================= */
 
 .media-arrow{
     position:absolute;
 
     top:50%;
+
     transform:translateY(-50%);
 
-    width:46px;
-    height:46px;
+    width:45px;
+    height:45px;
 
     border-radius:50%;
 
-    border:1px solid rgba(255,255,255,.8);
+    border:1px solid rgba(255,255,255,.7);
 
     background:rgba(0,0,0,.15);
 
     color:#fff;
 
     display:flex;
-    justify-content:center;
+
     align-items:center;
+    justify-content:center;
 
     cursor:pointer;
 
-    z-index:3;
+    z-index:6;
 
     transition:.3s ease;
-}
-
-.media-arrow-left{
-    left:30px;
-}
-
-.media-arrow-right{
-    right:30px;
 }
 
 .media-arrow:hover{
@@ -5559,7 +5666,12 @@ body.allproduct-page {
     border-color:#fbb03b;
 
     color:#000;
-
-    transform:translateY(-50%) scale(1.08);
 }
 
+.media-arrow-left{
+    left:5%;
+}
+
+.media-arrow-right{
+    right:5%;
+}

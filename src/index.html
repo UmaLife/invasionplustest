@@ -248,22 +248,45 @@
 
     <section class="media-hero">
 
-    <iframe
-        class="media-hero-video"
-        src="https://www.youtube.com/embed/13GSktm4xjk?autoplay=1&mute=1&loop=1&playlist=13GSktm4xjk&controls=0&playsinline=1&rel=0"
-        allow="autoplay; encrypted-media"
-        frameborder="0">
-    </iframe>
+        <div class="media-carousel">
+
+            <div class="media-slide media-left">
+                <video muted playsinline preload="metadata">
+                    <source src="static/videos/video4.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="media-slide media-center">
+                <video autoplay muted loop playsinline preload="auto">
+                    <source src="static/videos/video1.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="media-slide media-right">
+                <video muted playsinline preload="metadata">
+                    <source src="static/videos/video2.mp4" type="video/mp4">
+                </video>
+            </div>
+
+        </div>
 
         <div class="media-hero-overlay"></div>
 
         <div class="media-hero-content">
-            <h1>Invasion Plus Cases</h1>
+            <h1 id="mediaTitle">Video 1</h1>
 
-            <a href="#" class="media-hero-btn">
+            <a href="#" class="media-hero-btn" id="mediaButton">
                 View More <span>›</span>
             </a>
         </div>
+
+        <button class="media-arrow media-arrow-left" id="mediaPrev">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <button class="media-arrow media-arrow-right" id="mediaNext">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
 
     </section>
 
@@ -401,6 +424,115 @@
     if (mediaHero) {
         mediaObserver.observe(mediaHero);
     }
+
+        const mediaVideos = [
+        {
+            video: "static/home_vid_1.mp4",
+            title: "E20 Case",
+            link: "cases.html"
+        },
+        {
+            video: "static/home_vid_2.mp4",
+            title: "Atlas",
+            link: "cases.html"
+        },
+        {
+            video: "static/home_vid_3.mp4",
+            title: "Aeolus 50 Pro",
+            link: "coolers.html"
+        },
+        {
+            video: "static/home_vid_4.mp4",
+            title: "Frost Vision",
+            link: "monitors.html"
+        }
+    ];
+
+        let currentMedia = 0;
+
+        const centerVideo = document.querySelector(".media-center video");
+        const leftVideo = document.querySelector(".media-left video");
+        const rightVideo = document.querySelector(".media-right video");
+
+        const title = document.getElementById("mediaTitle");
+        const button = document.getElementById("mediaButton");
+
+        function updateMedia(){
+
+            const total = mediaVideos.length;
+
+            const current = mediaVideos[currentMedia];
+
+            const previous =
+                mediaVideos[(currentMedia - 1 + total) % total];
+
+            const next =
+                mediaVideos[(currentMedia + 1) % total];
+
+
+            /* CENTER */
+
+            centerVideo.src = current.video;
+
+            centerVideo.load();
+
+            centerVideo.play().catch(() => {});
+
+
+            /* LEFT PREVIEW */
+
+            leftVideo.src = previous.video;
+            leftVideo.load();
+
+
+            /* RIGHT PREVIEW */
+
+            rightVideo.src = next.video;
+            rightVideo.load();
+
+
+            /* TEXT */
+
+            title.textContent = current.title;
+
+            button.href = current.link;
+        }
+
+
+        document.getElementById("mediaNext").addEventListener("click", () => {
+
+            currentMedia =
+                (currentMedia + 1) % mediaVideos.length;
+
+            updateMedia();
+
+        });
+
+
+        document.getElementById("mediaPrev").addEventListener("click", () => {
+
+            currentMedia =
+                (currentMedia - 1 + mediaVideos.length)
+                % mediaVideos.length;
+
+            updateMedia();
+
+        });
+
+        document.querySelector(".media-left").addEventListener("click", () => {
+            document.getElementById("mediaPrev").click();
+        });
+
+        document.querySelector(".media-right").addEventListener("click", () => {
+            document.getElementById("mediaNext").click();
+        });
+
+
+        /* =========================
+        INITIAL
+        ========================= */
+
+        updateMedia();
     </script>
     <script src="set.js"></script>
 </body>
