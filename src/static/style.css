@@ -829,7 +829,7 @@ bottom: 20px;
 }
 
 .slide-content h1 {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     color: white;
     text-shadow: 0px 0px 15px rgba(0,0,0,0.5); 
 }
@@ -925,7 +925,7 @@ bottom: 20px;
 }
 /*category*/
 .category-section{
-    padding:90px 12%;
+    padding:90px 10%;
     background: #000000;
 
 }
@@ -5397,13 +5397,11 @@ body.allproduct-page {
 }
 .media-hero{
     position:relative;
-
     width:min(85vw, 151.11vh);
     aspect-ratio:16 / 9;
     height:auto;
 
-    margin:100px auto 0;
-
+    margin: -60px auto 0;
     overflow:hidden;
 
     background:#000;
