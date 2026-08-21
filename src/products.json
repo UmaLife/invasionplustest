@@ -89,12 +89,11 @@
       "type":"wide",
       "title":"Cooling support",
       "description":"Liquid cooling up to 360mm, air cooling up to 120mm",
-      "image":"static/E20/e20_fea5.png"
+      "image":"static/E20/1.png",
+      "airCoolingImage": "static/E20/e20_aircooling.png",
+      "liquidCoolingImage": "static/E20/e20_liquidcooling.png"
     }
   ]
-},
-"video": {
-    "horizontal": "static/E20/E20.mp4"
 },
 
       "specs": {
@@ -195,7 +194,9 @@
       "type": "wide",
       "title": "Powerful Cooling Support",
       "description": "Liquid cooling up to 360mm air cooling up to 120mm.",
-      "image": "static/ATLAS/atlas_fea4.png"
+      "image": "static/ATLAS/2.png",
+      "airCoolingImage": "static/ATLAS/atlas_aircooling.png",
+      "liquidCoolingImage": "static/ATLAS/atlas_liquidcooling.png"
     }
   ]
 },

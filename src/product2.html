@@ -632,10 +632,13 @@ function renderFeatureGrid(product){
     requestAnimationFrame(() => {
     initFeatureScrollInteraction();
     initFeatureMouseInteraction();
+    initCoolingButtons();
 });
 
 }
+
 function featureBox(card, size, id, index){
+
     if(!card) return "";
 
     const imageSide =
@@ -643,11 +646,16 @@ function featureBox(card, size, id, index){
             ? "image-left"
             : "image-right";
 
+    const hasCoolingButtons =
+        card.airCoolingImage ||
+        card.liquidCoolingImage;
+
     return `
         <div
             class="feature-box ${size} ${imageSide}"
             id="${id}"
         >
+
             <div class="feature-content">
 
                 ${
@@ -664,14 +672,104 @@ function featureBox(card, size, id, index){
 
                 <p>${card.description}</p>
 
+                ${
+                    hasCoolingButtons
+                        ? `
+                            <div class="cooling-buttons">
+
+                                ${
+                                    card.airCoolingImage
+                                        ? `
+                                            <button
+                                                type="button"
+                                                class="cooling-btn"
+                                                data-cooling-type="air"
+                                                data-image="${card.airCoolingImage}"
+                                            >
+                                                AIR COOLING
+                                            </button>
+                                        `
+                                        : ""
+                                }
+
+                                ${
+                                    card.liquidCoolingImage
+                                        ? `
+                                            <button
+                                                type="button"
+                                                class="cooling-btn"
+                                                data-cooling-type="liquid"
+                                                data-image="${card.liquidCoolingImage}"
+                                            >
+                                                LIQUID COOLING
+                                            </button>
+                                        `
+                                        : ""
+                                }
+
+                            </div>
+                        `
+                        : ""
+                }
+
             </div>
 
             <img
                 src="${card.image}"
                 alt="${card.title}"
+                class="feature-main-image"
             >
+
         </div>
     `;
+}
+function initCoolingButtons() {
+    const coolingBoxes =
+        document.querySelectorAll(".feature-box");
+    coolingBoxes.forEach(box => {
+        const buttons =
+            box.querySelectorAll(".cooling-btn");
+        if (!buttons.length) return;
+        const image =
+            box.querySelector(".feature-main-image");
+        if (!image) return;
+        buttons.forEach(button => {
+            button.addEventListener("click", () => {
+                const newImage =
+                    button.dataset.image;
+                if (!newImage) {
+                    console.warn(
+                        "Cooling image not found."
+                    );
+                    return;
+                }
+
+                buttons.forEach(btn => {
+                    btn.classList.remove("active");
+                });
+
+                button.classList.add("active");
+
+                image.classList.add("cooling-image-changing");
+
+                setTimeout(() => {
+
+                    image.src = newImage;
+
+                    image.onload = () => {
+                        image.classList.remove(
+                            "cooling-image-changing"
+                        );
+                    };
+
+                }, 180);
+
+            });
+
+        });
+
+    });
+
 }
 function renderFanBanners(product){
 
@@ -1211,76 +1309,36 @@ function initProductVideoReveal() {
 }
 
 function initFeatureScrollInteraction() {
+
     const features =
         document.querySelectorAll(".feature-box.wide");
 
     if (!features.length) return;
 
-    function updateFeatures() {
-        const viewportCenter =
-            window.innerHeight * 0.5;
+    const observer = new IntersectionObserver(
+        entries => {
 
-        features.forEach(feature => {
-            const rect =
-                feature.getBoundingClientRect();
+            entries.forEach(entry => {
 
-            const featureCenter =
-                rect.top + rect.height / 2;
+                if (!entry.isIntersecting) return;
 
-            const distance =
-                Math.abs(
-                    viewportCenter - featureCenter
-                );
+                entry.target.classList.add("is-active");
 
-            const range =
-                window.innerHeight * 0.65;
-
-
-            let progress =
-                1 - distance / range;
-            progress =
-                Math.max(
-                    0,
-                    Math.min(1, progress)
-                );
-
-            progress =
-                progress * progress *
-                (3 - 2 * progress);
-
-            if (progress > 0.55) {
-
-                feature.classList.add("is-active");
-            } else {
-                feature.classList.remove("is-active");
-
-            }
-
-        });
-
-    }
-
-    let ticking = false;
-    window.addEventListener("scroll", () => {
-
-        if (!ticking) {
-
-            requestAnimationFrame(() => {
-
-                updateFeatures();
-                ticking = false;
-
+                // 只触发一次
+                observer.unobserve(entry.target);
             });
-            ticking = true;
-        }
-    });
-    window.addEventListener(
-        "resize",
-        updateFeatures
-    );
-    updateFeatures();
-}
 
+        },
+        {
+            threshold: 0.25,
+            rootMargin: "0px 0px -10% 0px"
+        }
+    );
+
+    features.forEach(feature => {
+        observer.observe(feature);
+    });
+}
 function initFeatureMouseInteraction() {
 
     const features =
