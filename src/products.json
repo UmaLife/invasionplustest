@@ -300,7 +300,9 @@
       "title": "Advanced Cooling Support",
       "subtitle": "240mm Liquid Cooling Ready",
       "description": "Supports up to 240mm liquid cooling and 120mm air cooling.",
-      "image": "static/E10/4.png"
+      "image": "static/E10/e10.png",
+      "airCoolingImage": "static/E10/e10_aircooling.png",
+      "liquidCoolingImage": "static/E10/e10_liquidcooling.png"
     },
     {
       "type": "wide",
@@ -415,7 +417,9 @@
           "title": "Cooling Support",
           "subtitle": "Cooling Ready",
           "description": "Designed for improved cooling performance.",
-          "image": "static/T-1000/5.png"
+          "image": "static/T-1000/t1000.png",
+          "airCoolingImage": "static/T-1000/t1000_aircooling.png",
+          "liquidCoolingImage": "static/T-1000/t1000_liquidcooling.png"
         }
       ]
 },
@@ -520,7 +524,9 @@
       "title": "Cooling Support",
       "subtitle": "Cooling Ready",
       "description": "Designed with radiator support for efficient cooling performance.",
-      "image": "static/EREBUS/5.png"
+      "image": "static/EREBUS/EREBUS.png",
+      "airCoolingImage": "static/EREBUS/erebus_aircooling.png",
+      "liquidCoolingImage": "static/EREBUS/erebus_liquidcooling.png"
     }
   ]
 },
