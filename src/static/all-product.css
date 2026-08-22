@@ -449,3 +449,171 @@ html{
 
 }
 
+/* 1. RESET PRODUCT SECTION WRAPPER */
+.product-section {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* 2. MATCH HERO BANNER & GRID DIMENSIONS EXACTLY */
+.category-hero,
+.hot-selling-list,
+.new-products-list,
+.cases-list,
+.coolers-list,
+.monitors-list {
+    width: 95% !important;
+    max-width: 1250px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+}
+
+/* 3. HERO BANNER SPECIFIC STYLES */
+.category-hero {
+    min-height: 400px;
+    margin-top: 0;
+    margin-bottom: 40px !important;
+    padding: 40px 50px;
+    scroll-margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 4. PRODUCT GRID SPECIFIC STYLES */
+.hot-selling-list,
+.new-products-list,
+.cases-list,
+.coolers-list,
+.monitors-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+    margin-bottom: 90px !important;
+    padding: 0;
+}
+
+/* 5. Scale Down Typography */
+.product-name h3 {
+    font-size: 1.4rem;           /* Reduced from 2.2rem */
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 8px 0;
+}
+
+.product-name p {
+    font-size: 0.9rem;           /* Reduced from 1.1rem */
+    color: #888888;
+    margin: 4px 0;
+}
+/* Moves the content down ONLY on the page with .all-products-page */
+body.all-products-page {
+    padding-top: 150px; /* Adjust this value to shift content down as needed */
+}
+/* Container: Reduces top spacing to move the button UP */
+.view-more-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: -50px; /* Negative margin pulls the button UP towards the products */
+    margin-bottom: 20px;
+}
+
+/* Button: Increased vertical padding for more height */
+.view-more-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+    max-width: 1200px;
+    
+    /* Increase 18px to 24px if you want it even taller vertically */
+    padding: 15px 0; 
+    
+    border-radius: 50px;
+    background: rgba(35, 35, 35, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    
+    color: #ffffff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    
+    transition: all 0.25s ease;
+    backdrop-filter: blur(4px);
+}
+
+/* Hover state */
+.view-more-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.6);
+    color: #ffffff;
+}
+
+/* Pushes ONLY the Coolers hero section down */
+.category-hero.coolers-hero,
+.category-hero.monitors-hero
+ {
+    margin-top: 90px; /* Increase or decrease this px value to adjust spacing */
+}
+
+/* Offsets the hero sections down from the top when scrolled into view */
+.category-hero {
+    scroll-margin-top: 100px; /* Increase this value (e.g., 120px - 150px) to move it lower */
+}
+
+/* Base hidden state for hero text */
+.category-hero .hero-left h1,
+.category-hero .hero-left .hero-description,
+.category-hero .hero-left .type-list {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1),
+                transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Active state triggered when scrolled into view */
+.category-hero.animate-hero .hero-left h1 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.1s;
+}
+
+.category-hero.animate-hero .hero-left .hero-description {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.25s;
+}
+
+.category-hero.animate-hero .hero-left .type-list {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.4s;
+}
+.category-hero .hero-left h1 {
+    font-size: 2.8rem;          /* Main hero title size (e.g., "HOT SELLING") */
+    font-weight: 800;
+}
+
+.category-hero .hero-left .hero-description {
+    font-size: 0.9rem;          /* Hero subtitle size */
+}
+
+
+/* 2. PRODUCT CARD FONTS */
+.product-name h3 {
+    font-size: 1rem;          /* Product title size (e.g., "THE VIEW 5") */
+    font-weight: 700;
+}
+
+.product-name p {
+    font-size: 0.55rem;         /* Category & Variation text size */
+}

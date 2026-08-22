@@ -7,189 +7,175 @@
     <link rel="stylesheet" href="static/style.css">
     <link rel="stylesheet" href="static/css/xqz-description.css">
     <link rel="stylesheet" href="static/all-product.css">
+    <link rel="stylesheet" href="static/style1.css">
     <link href="https://fonts.googleapis.com/css?family=DM+Sans" rel="stylesheet">
     <title>InvasionPlus</title>
-
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
-<body>
-    <!--Floating Nav-->
+<body class="all-products-page">
+
+    <!-- Floating Nav -->
     <div class="floating-nav" id="floatingNav">
-        <a href="#hot-selling" class="active">HOT SELLING</a>
-        <a href="#new-arrivals">NEW ARRIVALS</a>
-        <a href="#cases">CASES</a>
-        <a href="#cooling">COOLERS</a>
-        <a href="#monitor">MONITORS</a>
+        <a href="#hot-selling-hero" class="active">HOT SELLING</a>
+        <a href="#new-arrivals-hero">NEW ARRIVALS</a>
+        <a href="#cases-hero">CASES</a>
+        <a href="#coolers-hero">COOLERS</a>
+        <a href="#monitors-hero">MONITORS</a>
     </div>
 
+    <!-- HERO 1: HOT SELLING -->
+    <section id="hot-selling-hero" class="category-hero">
+        <div class="hero-left">
+            <h1>HOT SELLING</h1>
+            <p class="hero-description">Explore our most popular products loved by customers.</p>
+            <div class="type-list"></div>
+        </div>
+        <div class="hero-right">
+            <img src="static/all1.png" alt="Hero Banner">
+        </div>
+    </section>
 
-    <!--Products Area-->
-    <div id="productArea" class="product-area">
+    <!-- SECTION 1: HOT SELLING LIST -->
+    <section id="hot-selling" class="product-section hot-selling">
+        <div class="divider"></div>
+        <div class="hot-selling-list" id="hot-selling-list"></div>
+    </section>
+
+    <!-- HERO 2: NEW ARRIVALS -->
+    <section id="new-arrivals-hero" class="category-hero">
+        <div class="hero-left">
+            <h1>NEW ARRIVALS</h1>
+            <p class="hero-description">Discover the latest additions to our collection.</p>
+            <div class="type-list"></div>
+        </div>
+        <div class="hero-right">
+            <img src="static/all2.png" alt="Hero Banner">
+        </div>
+    </section>
+
+    <!-- SECTION 2: NEW ARRIVALS LIST -->
+    <section id="new-arrivals" class="product-section new-products">
+        <div class="divider"></div>
+        <div class="new-products-list" id="new-products-list"></div>
+    </section>
+
+    <!-- HERO 3: CASES -->
+    <section id="cases-hero" class="category-hero">
+        <div class="hero-left">
+            <h1>Cases</h1>
+            <p class="hero-description">Find the perfect case for your build</p>
+            <div class="type-list"></div>
+        </div>
+        <div class="hero-right">
+            <img src="static/hero_case.png" alt="Hero Banner">
+        </div>
+    </section>
+
+    <!-- SECTION 3: CASES -->
+    <section id="cases" class="product-section Cases">
+        <div class="divider"></div>
+        <div class="cases-list" id="cases-list"></div>
         
-        <div id="hot-selling" class="hot-selling">
-            <h2 class="section-title">Hot Selling</h2>
-                <h3 class="section-subtitle">Explore our most popular products loved by customers</h3>
-                <div class="divider"></div>
-                <div class="hot-selling-list" id="hot-selling-list">
-                </div>
-            </div>
+        <div class="view-more-container">
+            <a href="cases.html" class="view-more-btn">Explore Now</a>
+        </div>
+    </section>
 
-        <div id="new-arrivals" class="new-products">
-            <h2 class="section-title">New Arrivals</h2>
-                <h3 class="section-subtitle">Discover the latest additions to our collection</h3>
-                <div class="divider"></div>
-                <div class="new-products-list" id="new-products-list">
-                </div>
-            </div>
+    <!-- HERO 4: COOLERS -->
+    <section id="coolers-hero" class="category-hero coolers-hero">
+        <div class="hero-left">
+            <h1>Coolers</h1>
+            <p class="hero-description">Keep your system cool with our cooling solutions</p>
+            <div class="type-list"></div>
+        </div>
+        <div class="hero-right">
+            <img src="static/all3.png" alt="Hero Banner">
+        </div>
+    </section>
+
+    <!-- SECTION 4: COOLERS -->
+    <section id="cooling" class="product-section Coolers">
+        <div class="divider"></div>
+        <div class="coolers-list" id="coolers-list"></div>
         
-        <div id="cases" class="Cases">
-            <h2 class="section-title"><a href="cases.html">Cases</a></h2>
-                <h3 class="section-subtitle">Find the perfect case for your build</h3>
-                <div class="divider"></div>
-                <div class="section-row">
+        <div class="view-more-container">
+            <a href="coolers.html" class="view-more-btn">Explore Now</a>
+        </div>
+    </section>
 
-                    <div class="cases-list" id="cases-list">
-                    </div>
+    <!-- HERO 5: MONITORS -->
+    <section id="monitors-hero" class="category-hero monitors-hero">
+        <div class="hero-left">
+            <h1>Monitors</h1>
+            <p class="hero-description">Experience stunning visuals with our monitors</p>
+            <div class="type-list"></div>
+        </div>
+        <div class="hero-right">
+            <img src="static/hero_monitor.png" alt="Hero Banner">
+        </div>
+    </section>
 
-                    <div class="view-more-circle"
-                        onclick="window.location.href='cases.html'">
-
-                        <div class="view-arrow">></div>
-
-                        <span>View More</span>
-
-                    </div>
-            </div>
-
-        <div id="cooling" class="Coolers">
-            <h2 class="section-title"><a href="coolers.html">Coolers</a></h2>
-                <h3 class="section-subtitle">Keep your system cool with our cooling solutions</h3>
-                <div class="divider"></div>
-                <div class="section-row">
-
-                    <div class="coolers-list" id="coolers-list">
-                    </div>
-
-                    <div class="view-more-circle"
-                        onclick="window.location.href='coolers.html'">
-
-                        <div class="view-arrow">></div>
-
-                        <span>View More</span>
-
-                    </div>
-            </div>
-
-        <div id="monitor" class="monitors">
-            <h2 class="section-title"><a href="monitors.html">Monitors</a></h2>
-                <h3 class="section-subtitle">Experience stunning visuals with our monitors</h3>
-                <div class="divider"></div>
-                <div class="section-row">
-
-                    <div class="monitors-list" id="monitors-list">
-                    </div>
-
-                    <div class="view-more-circle"
-                        onclick="window.location.href='monitors.html'">
-
-                        <div class="view-arrow">></div>
-
-                        <span>View More</span>
-
-                    </div>
-            </div>
-
-    </div>
-
+    <!-- SECTION 5: MONITORS -->
+    <section id="monitor" class="product-section monitors">
+        <div class="divider"></div>
+        <div class="monitors-list" id="monitors-list"></div>
+        
+        <div class="view-more-container">
+            <a href="monitors.html" class="view-more-btn">Explore Now</a>
+        </div>
+    </section>
 
 <script type="module" src="home.js"></script>
-<script src="set.js">
-</script>
+<script src="set.js"></script>
 <script>
 let allProducts = [];
 
-async function loadProducts(){
-    const res = await fetch("products.json");
-    const data = await res.json();
-
-    allProducts = data.products;
-
-    renderPage();
+async function loadProducts() {
+    try {
+        const res = await fetch("products.json");
+        const data = await res.json();
+        allProducts = data.products;
+        renderPage();
+    } catch (err) {
+        console.error("Failed to load products:", err);
+    }
 }
 
-//get 4 products from each category and render them
 function renderPage() {
-
-    // HOT SELLING (first 4 products marked hot)
-    renderSection(
-        "hot-selling-list",
-        allProducts.filter(p => p.hot).slice(0, 4)
-    );
-
-    // NEW PRODUCTS (first 4 marked new)
-    renderSection(
-        "new-products-list",
-        allProducts.filter(p => p.new).slice(0, 4)
-    );
-
-    // CASES (first 4 cases)
-    renderSection(
-        "cases-list",
-        allProducts.filter(p => p.category === "case").slice(0, 4)
-    );
-
-    // COOLERS (first 4 coolers)
-    renderSection(
-        "coolers-list",
-        allProducts.filter(p => p.category === "cooler").slice(0, 4)
-    );
-
-    // MONITORS (first 4 monitors)
-    renderSection(
-        "monitors-list",
-        allProducts.filter(p => p.category === "monitor").slice(0, 4)
-    );
+    renderSection("hot-selling-list", allProducts.filter(p => p.hot).slice(0, 4));
+    renderSection("new-products-list", allProducts.filter(p => p.new).slice(0, 4));
+    renderSection("cases-list", allProducts.filter(p => p.category === "case").slice(0, 4));
+    renderSection("coolers-list", allProducts.filter(p => p.category === "cooler").slice(0, 4));
+    renderSection("monitors-list", allProducts.filter(p => p.category === "monitor").slice(0, 4));
 }
 
-//Display products
-function renderSection(containerId, products){
-
+function renderSection(containerId, products) {
     const container = document.getElementById(containerId);
-
     if (!container) return;
 
     container.innerHTML = products.map(product => {
-
-        const image =
-            product.mainImage ||
-            product.images?.[0] ||
-            product.variations?.black?.[0] ||
-            "static/fallback.png";
-
-        const variations = product.variations
-            ? Object.keys(product.variations).join("/")
-            : "Black";
+        const image = product.mainImage || product.images?.[0] || product.variations?.black?.[0] || "static/fallback.png";
+        const variations = product.variations ? Object.keys(product.variations).join("/") : "Black";
 
         return `
-            <article class="product"
-                onclick="window.location.href='product2.html?id=${product.id}'">
-
+            <article class="product" onclick="window.location.href='product2.html?id=${product.id}'">
                 <img src="${image}" alt="${product.name}">
-
                 <div class="product-name">
                     <h3>${product.name}</h3>
                     <p>Category: ${product["product-type"] || "N/A"}</p>
                     <p>Variation: ${variations}</p>
-
-                    <span class="price">${product.price}</span>
+                    
+                    <span class="price">${product.price || ''}</span>
                     <div class="price-divider"></div>
 
-                    <a href="product2.html?id=${product.id}"
-                       class="product-learn-more"
-                       onclick="event.stopPropagation()">
-                        Learn More →
+                    <a href="product2.html?id=${product.id}" class="product-learn-more" onclick="event.stopPropagation()">
+                        Learn More &rarr;
                     </a>
                 </div>
-
             </article>
         `;
     }).join("");
@@ -198,93 +184,77 @@ function renderSection(containerId, products){
 }
 
 let observer;
-
-function observeProducts(){
-
+function observeProducts() {
     const products = document.querySelectorAll(".product");
-
-    // clear old observer
     if (observer) observer.disconnect();
 
     observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-            if(entry.isIntersecting){
+            if (entry.isIntersecting) {
                 entry.target.classList.add("show");
-                observer.unobserve(entry.target); // important
+                observer.unobserve(entry.target);
             }
         });
-    }, {
-        threshold: 0.2
-    });
+    }, { threshold: 0.2 });
 
-    products.forEach(product => {
-        observer.observe(product);
-    });
+    products.forEach(product => observer.observe(product));
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-    loadProducts();
-});
 
 let lastScroll = 0;
 const nav = document.getElementById("floatingNav");
-
-window.addEventListener("scroll", () => {
-
-    let current = window.scrollY;
-
-    if(current > 200){
-
-        if(current > lastScroll){
-            nav.classList.add("hidden");
-        }
-        else{
-            nav.classList.remove("hidden");
-        }
-
-    }else{
-        nav.classList.remove("hidden");
-    }
-
-   
-    lastScroll = current;
-});
-
-const sections = document.querySelectorAll(
-    "#hot-selling, #new-arrivals, #cases, #cooling, #monitor"
-);
-
+const heroSections = document.querySelectorAll(".category-hero");
 const navLinks = document.querySelectorAll(".floating-nav a");
 
 window.addEventListener("scroll", () => {
+    let current = window.scrollY;
 
-    let currentSection = "";
-
-    sections.forEach(section => {
-
-        const sectionTop = section.offsetTop - 200;
-
-        if(window.scrollY >= sectionTop){
-            currentSection = section.getAttribute("id");
+    if (current > 200) {
+        if (current > lastScroll) {
+            nav.classList.add("hidden");
+        } else {
+            nav.classList.remove("hidden");
         }
+    } else {
+        nav.classList.remove("hidden");
+    }
+    lastScroll = current;
 
+    let currentHeroId = "";
+    heroSections.forEach(hero => {
+        const heroTop = hero.offsetTop - 250;
+        if (current >= heroTop) {
+            currentHeroId = hero.getAttribute("id");
+        }
     });
 
     navLinks.forEach(link => {
-
         link.classList.remove("active");
-
-        if(link.getAttribute("href") === "#" + currentSection){
+        if (link.getAttribute("href") === "#" + currentHeroId) {
             link.classList.add("active");
         }
-
     });
-
 });
 
+document.addEventListener("DOMContentLoaded", loadProducts);
+</script>
+<script>
+    // Observe hero sections and animate text on scroll
+const heroObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("animate-hero");
+        } else {
+            // Optional: Remove class to re-trigger animation when scrolling back up
+            entry.target.classList.remove("animate-hero");
+        }
+    });
+}, {
+    threshold: 0.25 // Triggers when 25% of the hero section is visible
+});
+
+document.querySelectorAll(".category-hero").forEach(hero => {
+    heroObserver.observe(hero);
+});
 </script>
 </body>
 </html>
-
-        
-        
