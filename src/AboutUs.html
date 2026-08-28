@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/css/xqz-description.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>About Us</title>
+
+    <style>
+        /* SCROLL ANIMATION STYLES */
+
+        /* Title Fade & Slide In */
+        .section h1 {
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .section.active h1 {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+
+        .spotlight-card .highlight {
+            color: #fbb03b;
+            display: block; /* Ensures highlight text stays on its own line */
+            margin-top: 15px;
+        }
+
+        /* Line Expanding Animation */
+        .line.center {
+            width: 0;
+            transition: width 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        .section.active .line.center {
+            width: 450px; /* Adjust width as needed to match your design */
+        }
+
+        /* Text Spotlight & Fade Animation */
+        .spotlight-card {
+            filter: brightness(0.4);
+            opacity: 0.25;
+            transform: scale(0.95) translateY(15px);
+            transition: filter 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+            will-change: filter, opacity, transform;
+        }
+
+        /* Increase line height and space out individual text blocks */
+.spotlight-card p {
+    line-height: 1.8;       /* Increases space between lines of text */
+    margin-bottom: 2.15rem;    /* Adds space below each paragraph to lengthen the block */
+}
+
+/* Adjust yellow highlight text spacing */
+.spotlight-card .highlight {
+    color: #fbb03b;
+    display: block;
+    margin-top: 1.5rem;
+    line-height: 1.6;
+}
+
+
+
+        .spotlight-card.spotlight-active {
+            filter: brightness(1);
+            opacity: 1;
+            transform: scale(1) translateY(0);
+        }
+
+        /* Button Fade Up Animation */
+        .join .buttons {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out 0.2s, transform 0.8s ease-out 0.2s;
+        }
+
+        .join.active .buttons {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+
+<!-- ABOUT SECTION WITH SINGLE SPOTLIGHT CARD -->
+<section class="thank-you section">
+    <h1>ABOUT <img src="static/logo.png" alt="Invasion Logo" class="about-logo"></h1>
+    <div class="line center"></div>
+
+    <div class="about-text">
+        <div class="spotlight-card">
+            <p>At Invasion+, every product starts with one purpose: <strong>To build something worth owning.</strong></p>
+            <p>Every detail is designed with intention — combining thoughtful engineering, refined design, and exceptional performance to create a product you are proud to own, use, and appreciate every day.</p>
+            <p>Because great hardware is more than specifications.</p>
+            <p>It is about understanding your needs, caring for your experience, and creating a connection between you and your build — where craftsmanship, design, and purpose come together.</p>
+            <span class="highlight">Built with purpose. Crafted without compromise.</span>
+            <span class="highlight">Break the Norm. Forge Tomorrow.</span>
+        </div>
+    </div>
+</section>
+
+<!-- DISCOVER SECTION -->
+<section class="join section">
+    <h1>DISCOVER <img src="static/logo.png" alt="Invasion Logo" class="discover-logo"></h1>
+    <div class="buttons">
+        <a href="all-product.html">VIEW PRODUCTS →</a>
+        <a href="ContactUs.html">CONTACT US →</a>
+    </div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  // 1. Observer for section visibility (animates h1, line, and buttons)
+  const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+      } else {
+        entry.target.classList.remove("active");
+      }
+    });
+  }, { root: null, threshold: 0.15 });
+
+  document.querySelectorAll(".section").forEach((sec) => sectionObserver.observe(sec));
+
+  // 2. Observer for Spotlight Card (illuminates block when centered)
+  const spotlightObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("spotlight-active");
+      } else {
+        entry.target.classList.remove("spotlight-active");
+      }
+    });
+  }, {
+    root: null,
+    rootMargin: "-20% 0px -20% 0px",
+    threshold: 0.3 // Adjusted threshold so the longer card illuminates smoothly
+  });
+
+  document.querySelectorAll(".spotlight-card").forEach((card) => spotlightObserver.observe(card));
+});
+</script>
+
+<script src="set.js"></script>
+</body>
+</html>

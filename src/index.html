@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/responsive.css">
+    <link rel="stylesheet" href="static/css/xqz-description.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script type="importmap">
+    {
+        "imports": {
+            "ogl": "https://cdn.jsdelivr.net/npm/ogl@1.0.11/+esm"
+        }
+    }
+    </script>
+    <title>InvasionPlus</title>
+
+    <style>
+        /* STACKING BANNER STYLES */
+        .banner-container {
+            position: relative;
+            height: 600vh; /* INCREASED FROM 400vh TO SLOW DOWN SCROLLING PROGRESSION */
+            background-color: #000;
+        }
+
+        .sticky-wrapper {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            perspective: 1000px;
+        }
+
+        .sticky-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            will-change: transform;
+            transform-origin: center top;
+            transition: none;
+            background-color: #0d0d0d;
+            opacity: 1 !important;
+            filter: none !important;
+            box-shadow: 0 -25px 50px rgba(0, 0, 0, 0.95);
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+            /* PREVENTS INNER IMAGE BLEED AT THE BOTTOM */
+            overflow: hidden; 
+        }
+
+        /* Initial Z-Index Layering */
+        .sticky-slide:nth-child(1) { z-index: 1; }
+        .sticky-slide:nth-child(2) { z-index: 2; }
+        .sticky-slide:nth-child(3) { z-index: 3; }
+        .sticky-slide:nth-child(4) { z-index: 4; }
+
+        .banner-nav {
+            position: absolute;
+            right: 2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 100;
+        }
+
+        /* SPOTLIGHT / REVEAL ANIMATION STYLES */
+        .reveal-card {
+            opacity: 0.3;
+            transform: scale(0.96);
+            transition: opacity 0.5s ease, transform 0.5s ease, filter 0.5s ease;
+            filter: brightness(0.6);
+        }
+
+        .reveal-card.spotlight-active {
+            opacity: 1;
+            transform: scale(1);
+            filter: brightness(1);
+        }
+    </style>
+</head>
+<body>    
+    <!-- STACKING BANNER SECTION -->
+    <section class="banner-container">   
+        <div class="sticky-wrapper">
+
+            <!-- SLIDE 0 -->
+            <div class="sticky-slide">
+                <div class="slide-card">
+                    <img src="static/bannn.png" class="banner0-img" alt="Banner 0">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                       <a href="AboutUs.html" class="learn-more">LEARN MORE ></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 1: Erebus -->
+            <div class="sticky-slide">
+                <div class="slide-card">
+                    <img src="static/6.png" class="slide-bg-img" alt="Erebus Background">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-product-center">
+                        <img src="static/ATLAS/ALTAS-BLACK-04.png" alt="EREBUS Product">
+                    </div>
+                    <div class="slide-content">
+                        <h1>ATLAS</h1>
+                        <a href="product2.html?id=atlas" class="learn-more">LEARN MORE ></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 2: XTG-49ARCX -->
+            <div class="sticky-slide">
+                <div class="slide-card">
+                    <img src="static/6.png" class="slide-bg-img" alt="High Performance Background">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-product-center">
+                        <img src="static/KRATOS/KRATOS-LCD-00.png" alt="XTG-49ARCX Product">
+                    </div>
+                    <div class="slide-content">
+                        <h1>KRATOS</h1>
+                        <a href="product2.html?id=kratos" class="learn-more">LEARN MORE ></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 3: E-20 -->
+            <div class="sticky-slide">
+                <div class="slide-card">
+                    <img src="static/6.png" class="slide-bg-img" alt="Future Tech Background">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-product-center">
+                        <img src="static/POSEIDON/POSEIDON BLACK-01.png" alt="E-20 Product">
+                    </div>
+                    <div class="slide-content">
+                        <h1>POSEIDON</h1>
+                        <a href="product2.html?id=poseidon360" class="learn-more">LEARN MORE ></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sticky-slide">
+                <div class="slide-card">
+                    <img src="static/6.png" class="slide-bg-img" alt="Future Tech Background">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-product-center">
+                        <img src="static/XTG-49ARCX/monitor1.png" alt="E-20 Product">
+                    </div>
+                    <div class="slide-content">
+                        <h1>XTG-49ARCX</h1>
+                        <a href="product2.html?id=XTG-49ARCX" class="learn-more">LEARN MORE ></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Dots -->
+            <div class="banner-nav">
+                <span class="nav-dot active" data-slide="0"></span>
+                <span class="nav-dot" data-slide="1"></span>
+                <span class="nav-dot" data-slide="2"></span>
+                <span class="nav-dot" data-slide="3"></span>
+                <span class="nav-dot" data-slide="4"></span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CATEGORY SECTION -->
+    <section class="category-section">
+        <div class="categories-header reveal-card">
+            <h2 class="categories-header-title">EXPLORE BY CATEGORIES</h2>
+        </div>
+        <div class="category-grid">
+            <div class="category-card reveal-card">
+                <div class="category-content">
+                    <h3>Cooler</h3>
+                    <p>Experience premium cooling performance with next generation airflow design.</p>
+                    <a href="coolers.html">View products <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+                <div class="category-image">
+                    <img src="static/cate2.png" alt="Cooler">
+                </div>
+            </div>
+
+            <div class="category-card reveal-card">
+                <div class="category-content">
+                    <h3>Case</h3>
+                    <p>Minimalist chassis engineered for maximum thermal efficiency.</p>
+                    <a href="cases.html">View products <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+                <div class="category-image">
+                    <img src="static/cate1.png" alt="Case">
+                </div>
+            </div>
+
+            <div class="category-card reveal-card">
+                <div class="category-content">
+                    <h3>Monitor</h3>
+                    <p>Ultra immersive display built for creators and gamers.</p>
+                    <a href="monitors.html">View products <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+                <div class="category-image">
+                    <img src="static/cate3.png" alt="Monitor">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- HERO BANNER SECTION 1 -->
+    <section class="hero-banner-section reveal-card">
+        <div class="hero-banner-container">
+            <img src="static/5.png" alt="Background" class="hero-banner-bg">
+            <div class="hero-banner-overlay"></div>
+            <div class="hero-banner-content">
+                <span class="banner-tag">HOT SELLING</span>
+                <h2>Built For Peak Performance</h2>
+                <p>Discover our most popular setup, designed for powerful airflow, stable cooling and a premium gaming experience.</p>
+                <div class="hero-actions">
+                    <a href="all-product.html" class="btn-secondary">Explore Now</a>
+                </div>
+            </div>
+            <div class="hero-banner-product">
+                <img src="static/FROST VISION 240/FV-240-B-02.png" alt="Featured Product">
+            </div>
+        </div>
+    </section>
+
+    <!-- HERO BANNER SECTION 2 -->
+    <section class="hero-banner-section reveal-card">
+        <div class="hero-banner-container">
+            <img src="static/5.png" alt="Background" class="hero-banner-bg">
+            <div class="hero-banner-overlay"></div>
+            <div class="hero-banner-content">
+                <span class="banner-tag">NEW ARRIVALS</span>
+                <h2>Meet the next generation</h2>
+                <p>Introducing our latest product line with refined design, improved thermal control and futuristic aesthetics.</p>
+                <div class="hero-actions">
+                    <a href="all-product.html#new-arrivals" class="btn-secondary">Explore Now</a>
+                </div>
+            </div>
+            <div class="hero-banner-product">
+                <img src="static/PERSEUS/PERSEUS-01.png" alt="Featured Product">
+            </div>
+        </div>
+    </section>
+
+    <div class="media-wrapper">
+        <section class="media-hero">
+
+            <div class="media-carousel">
+
+                <div class="media-slide media-left"></div>
+
+                <div class="media-slide media-center"></div>
+
+                <div class="media-slide media-right"></div>
+
+            </div>
+
+            <div class="media-hero-overlay"></div>
+
+            <button class="media-arrow media-arrow-left" id="mediaPrev">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <button class="media-arrow media-arrow-right" id="mediaNext">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+        </section>
+    </div>
+    <script type="module" src="home.js"></script>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // 1. LERP SMOOTH SCROLL ENGINE
+        const bannerContainer = document.querySelector(".banner-container");
+        const slides = document.querySelectorAll(".sticky-slide");
+        const dots = document.querySelectorAll(".banner-nav .nav-dot");
+
+        if (!bannerContainer) return;
+
+        let targetScrollY = window.scrollY;
+        let currentScrollY = window.scrollY;
+        const ease = 0.04; // Smooth lag factor
+
+        window.addEventListener("scroll", () => {
+            targetScrollY = window.scrollY;
+        }, { passive: true });
+
+        function render() {
+            currentScrollY += (targetScrollY - currentScrollY) * ease;
+
+            if (Math.abs(targetScrollY - currentScrollY) < 0.01) {
+                currentScrollY = targetScrollY;
+            }
+
+            if (window.innerWidth > 768) {
+    updateCardStack(currentScrollY);
+}
+            requestAnimationFrame(render);
+        }
+
+        function updateCardStack(scrollYPos) {
+           const containerTop = bannerContainer.offsetTop;
+
+const containerHeight =
+    bannerContainer.offsetHeight - window.innerHeight;
+            
+            let scrollPosition = scrollYPos - containerTop;
+            scrollPosition = Math.max(0, Math.min(scrollPosition, containerHeight));
+
+            const totalSlides = slides.length;
+            
+            // Raw progress across total slides
+            const rawProgress = (scrollPosition / containerHeight) * (totalSlides - 1);
+            
+            const activeIndex = Math.floor(rawProgress);
+            const subProgress = rawProgress % 1;
+            
+            // INCREASED HOLD BUFFER FROM 0.3 TO 0.5 FOR SLOWER SLIDE TRANSITIONS
+            // Hold phase: subProgress below 0.5 stays held at 0 (cards rest longer)
+            // Motion phase: subProgress between 0.5 and 1.0 smoothly moves the incoming card
+            const transitionProgress = Math.max(0, (subProgress - 0.5) / 0.5);
+
+            slides.forEach((slide, index) => {
+                slide.style.opacity = "1";
+                slide.style.filter = "none";
+
+                if (index < activeIndex) {
+                    const distance = rawProgress - index;
+                    const scale = Math.max(0.88, 1 - distance * 0.04);
+                    slide.style.transform = `translate3d(0, 0%, 0) scale(${scale})`;
+
+                } else if (index === activeIndex) {
+                    const scale = 1 - (transitionProgress * 0.04);
+                    slide.style.transform = `translate3d(0, 0%, 0) scale(${scale})`;
+
+                } else if (index === activeIndex + 1) {
+                    const translateY = 100 - (transitionProgress * 100);
+                    slide.style.transform = `translate3d(0, ${translateY}%, 0) scale(1)`;
+
+                } else {
+                    slide.style.transform = `translate3d(0, 100%, 0) scale(1)`;
+                }
+            });
+
+            dots.forEach((dot, idx) => {
+                dot.classList.toggle("active", idx === Math.round(rawProgress));
+            });
+        }
+
+        // Run animation loop
+        requestAnimationFrame(render);
+
+        // Dot navigation click events
+        dots.forEach((dot, index) => {
+            dot.addEventListener("click", () => {
+                const containerTop = bannerContainer.offsetTop;
+                const containerHeight = bannerContainer.offsetHeight - window.innerHeight;
+                const targetScrollPosition = containerTop + (containerHeight / (slides.length - 1)) * index;
+
+                window.scrollTo({
+                    top: targetScrollPosition,
+                    behavior: "smooth"
+                });
+            });
+        });
+
+        // 2. SPOTLIGHT REVEAL OBSERVER FOR CARDS
+        const spotlightObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("spotlight-active");
+                } else {
+                    entry.target.classList.remove("spotlight-active");
+                }
+            });
+        }, {
+            root: null,
+            rootMargin: "-15% 0px -15% 0px",
+            threshold: 0.2
+        });
+
+        document.querySelectorAll(".reveal-card").forEach(card => {
+            spotlightObserver.observe(card);
+        });
+    });
+
+const mediaVideos = [
+    "13GSktm4xjk",
+    "_69uSha2mes",
+    "ZhtYSTInYCs"
+];
+
+let currentMedia = 0;
+
+const centerSlide = document.querySelector(".media-center");
+const leftSlide = document.querySelector(".media-left");
+const rightSlide = document.querySelector(".media-right");
+
+
+function createYoutube(slide, videoId, autoplay = false) {
+
+    slide.innerHTML = `
+        <iframe
+            src="https://www.youtube.com/embed/${videoId}?autoplay=${autoplay ? 1 : 0}&mute=1&controls=1&loop=1&playlist=${videoId}&rel=0&playsinline=1"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen>
+        </iframe>
+    `;
+}
+
+
+function updateMedia() {
+
+    const total = mediaVideos.length;
+
+    const current =
+        mediaVideos[currentMedia];
+
+    const previous =
+        mediaVideos[
+            (currentMedia - 1 + total) % total
+        ];
+
+    const next =
+        mediaVideos[
+            (currentMedia + 1) % total
+        ];
+
+function changeMedia(direction) {
+
+    const center = document.querySelector(".media-center");
+
+    // Start transition
+    center.style.opacity = "0";
+    center.style.transform = "scale(0.96)";
+
+    setTimeout(() => {
+
+        currentMedia =
+            (currentMedia + direction + mediaVideos.length)
+            % mediaVideos.length;
+
+        updateMedia();
+
+        // Small delay so the new iframe is ready
+        requestAnimationFrame(() => {
+
+            center.style.opacity = "1";
+            center.style.transform = "scale(1)";
+
+        });
+
+    }, 300);
+}
+
+    /* CENTER */
+
+    createYoutube(
+        centerSlide,
+        current,
+        true
+    );
+
+
+    /* LEFT */
+
+    createYoutube(
+        leftSlide,
+        previous
+    );
+
+
+    /* RIGHT */
+
+    createYoutube(
+        rightSlide,
+        next
+    );
+}
+
+document.getElementById("mediaNext").addEventListener("click", () => {
+
+    const center = document.querySelector(".media-center");
+
+    center.style.opacity = "0";
+    center.style.transform = "scale(.96)";
+
+    setTimeout(() => {
+
+        currentMedia =
+            (currentMedia + 1) % mediaVideos.length;
+
+        updateMedia();
+
+        center.style.opacity = "1";
+        center.style.transform = "scale(1)";
+
+    }, 300);
+
+});
+
+document.getElementById("mediaPrev").addEventListener("click", () => {
+
+    const center = document.querySelector(".media-center");
+
+    center.style.opacity = "0";
+    center.style.transform = "scale(.96)";
+
+    setTimeout(() => {
+
+        currentMedia =
+            (currentMedia - 1 + mediaVideos.length)
+            % mediaVideos.length;
+
+        updateMedia();
+
+        center.style.opacity = "1";
+        center.style.transform = "scale(1)";
+
+    }, 300);
+
+});
+
+/* CLICK LEFT */
+
+leftSlide.addEventListener("click", () => {
+
+    currentMedia =
+        (currentMedia - 1 +
+            mediaVideos.length)
+        % mediaVideos.length;
+
+    updateMedia();
+});
+
+
+/* CLICK RIGHT */
+
+rightSlide.addEventListener("click", () => {
+
+    currentMedia =
+        (currentMedia + 1)
+        % mediaVideos.length;
+
+    updateMedia();
+});
+
+
+/* INITIAL */
+
+updateMedia();
+    </script>
+    <script src="set.js"></script>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const mobileSlides = document.querySelectorAll(".sticky-slide");
+    const mobileDots = document.querySelectorAll(".banner-nav .nav-dot");
+
+    let mobileCurrentSlide = 0;
+    let mobileInterval;
+
+    function isMobile() {
+        return window.innerWidth <= 768;
+    }
+
+    function showMobileSlide(index) {
+
+        mobileSlides.forEach((slide, i) => {
+
+            slide.classList.remove(
+                "mobile-active",
+                "mobile-prev"
+            );
+
+            if (i === index) {
+                slide.classList.add("mobile-active");
+            }
+
+            if (i < index) {
+                slide.classList.add("mobile-prev");
+            }
+
+        });
+
+        mobileDots.forEach((dot, i) => {
+            dot.classList.toggle(
+                "active",
+                i === index
+            );
+        });
+    }
+
+    function startMobileSlider() {
+
+        clearInterval(mobileInterval);
+
+        if (!isMobile()) {
+            return;
+        }
+
+        showMobileSlide(mobileCurrentSlide);
+
+        mobileInterval = setInterval(() => {
+
+            mobileCurrentSlide =
+                (mobileCurrentSlide + 1) %
+                mobileSlides.length;
+
+            showMobileSlide(mobileCurrentSlide);
+
+        }, 4000); // Change every 4 seconds
+    }
+
+    /* Mobile dot click */
+    mobileDots.forEach((dot, index) => {
+
+        dot.addEventListener("click", function () {
+
+            if (!isMobile()) return;
+
+            mobileCurrentSlide = index;
+
+            showMobileSlide(mobileCurrentSlide);
+
+            /* Restart auto slide timer */
+            startMobileSlider();
+
+        });
+
+    });
+
+    /* Start */
+    startMobileSlider();
+
+    /* Check when screen is resized */
+    window.addEventListener("resize", function () {
+
+        clearInterval(mobileInterval);
+
+        if (isMobile()) {
+
+            showMobileSlide(mobileCurrentSlide);
+            startMobileSlider();
+
+        } else {
+
+            /* Remove mobile classes when returning to laptop */
+            mobileSlides.forEach(slide => {
+
+                slide.classList.remove(
+                    "mobile-active",
+                    "mobile-prev"
+                );
+
+            });
+
+        }
+
+    });
+
+});
+</script>
+</body>
+</html>

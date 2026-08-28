@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/css/xqz-description.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>INVASION PLUS</title>
+</head>
+<body>
+    <section class="invasion-hero-section" style="background-image: url('static/bg.png');">
+  <div class="invasion-hero-overlay"></div>
+  <div class="invasion-hero-content">
+    
+    <!-- About Us Page Label -->
+    <span class="invasion-page-tag">CONTACT US</span>
+<p class="invasion-hero-desc">
+    <span>Need support, product information, or business enquiries ?</span>
+</p>
+<p class="invasion-hero-subdesc">
+    Reach out to Invasion Plus and our team will respond as soon as possible.
+</p>
+    
+
+</section>
+   
+<section class="section ">
+    <div class="section-title ">
+        <h2>Contact <span>Information</span></h2>
+    </div>
+
+    <div class="contact-grid">
+
+        <div class="contact-card" onclick="openWhatsApp()">
+            <i class="fa-brands fa-whatsapp"></i>
+            <h3>PHONE / WHATSAPP</h3>
+            <p>+60 17-670 4896</p>
+        </div>
+
+        <div class="contact-card" onclick="openEmail()">
+            <i class="fa-solid fa-envelope"></i>
+            <h3>EMAIL</h3>
+            <p>admin@invasionplus.com</p>
+        </div>
+
+        <div class="contact-card" onclick="openGoogleMap()">
+            <i class="fa-solid fa-location-dot"></i>
+            <h3>ADDRESS</h3>
+            <p>No 10, Jalan Gendang 9/KS02,</p>
+            <p>Taman Perindustrian Klang Jaya,</p>
+            <p>41200 Klang, Selangor, Malaysia.</p>
+        </div>
+
+    </div>
+    </section>
+
+    <section class="section">
+        <div class="section-title">
+            <h2>Our <span>Location</span></h2>
+        </div>
+
+        <div class="location-box">
+            <div class="map-preview">
+                <div class="map-content">
+                    <i class="fa-solid fa-location-dot"></i>
+                       <h3> <img src="static/logo.png" alt="Invasion Logo" class="about-logo"></h3>
+                    <p>No 10, Jalan Gendang 9/KS02, Taman Perindustrian Klang Jaya, 41200 Klang, Selangor, Malaysia.</p>
+
+                    <div class="map-buttons">
+                        <a href="#" onclick="openGoogleMap(); return false;">
+                            <i class="fa-brands fa-google"></i> Google Map
+                        </a>
+
+                        <a href="#" onclick="openWaze(); return false;">
+                            <i class="fa-brands fa-waze"></i> Waze
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script>
+const phoneNumber = "60176704896";
+const emailAddress = "admin@invasionplus.com";
+const address = "No 10, Jalan Gendang 9/KS02, Taman Perindustrian Klang Jaya, 41200 Klang, Selangor, Malaysia.";
+
+function openWhatsApp(){
+    window.open(`https://wa.me/${phoneNumber}?text=Hi%20Invasion,%20I%20would%20like%20to%20ask%20about%20your%20products.`, "_blank");
+}
+
+function openEmail(){
+    window.location.href = `mailto:${emailAddress}?subject=Invasion Enquiry&body=Hi Invasion,%0D%0A%0D%0AI would like to ask about...`;
+}
+
+function openGoogleMap(){
+    const mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
+    window.open(mapUrl, "_blank");
+}
+
+function openWaze(){
+    const wazeUrl = `https://waze.com/ul?q=${encodeURIComponent(address)}&navigate=yes`;
+    window.open(wazeUrl, "_blank");
+}
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const observerOptions = {
+        root: null,
+        // Requires 20% of the section to enter view before lighting up
+        threshold: 0.2 
+    };
+
+    const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Lights up when scrolled into view
+                entry.target.classList.add("active");
+            } else {
+                // Gently dims back down when scrolling past or away
+                entry.target.classList.remove("active");
+            }
+        });
+    }, observerOptions);
+
+    // Observe all target sections
+    document.querySelectorAll(".section").forEach(sec => {
+        sectionObserver.observe(sec);
+    });
+});
+</script>
+</script>
+</body>
+<script src="set.js">
+</script>
+</html>

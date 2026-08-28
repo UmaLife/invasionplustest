@@ -1,0 +1,389 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="static/style.css">
+        <link rel="stylesheet" href="static/css/xqz-description.css">
+        <link rel="stylesheet" href="static/cooler.css">
+        <link href="https://fonts.googleapis.com/css?family=DM+Sans" rel="stylesheet">
+        <title>InvasionPlus</title>
+
+    </head>
+   <body class="allproduct-page">
+
+    <!--Product type-->
+    <section class="category-hero">
+
+        <div class="hero-left">
+
+            <p class="breadcrumb">
+                Home / <span>Coolers</span>
+            </p>
+
+            <h1>COOLERS</h1>
+
+            <p class="hero-description">
+                Unlock maximum performance with cooling solutions designed for gamers and creators.
+            </p>
+
+            <div class="type-list">
+
+                <a href="#" class="type-card-link"
+                onclick="filterProducts('Fan'); return false;">
+
+                    <article class="card">
+                        <img src="static/pc-fan.png" alt="All Coolers">
+
+                        <div class="type-name">
+                            <h3>PC Fans</h3>
+                        </div>
+                    </article>
+
+                </a>
+
+                <a href="#" class="type-card-link"
+                onclick="filterProducts('Liquid Cooler'); return false;">
+
+                    <article class="card">
+                        <img src="static/liquid-cooler.png" alt="AIO Cooler">
+
+                        <div class="type-name">
+                            <h3>Liquid Cooler</h3>
+                        </div>
+                    </article>
+
+                </a>
+
+                <a href="#" class="type-card-link"
+                onclick="filterProducts('Air Cooler'); return false;">
+
+                    <article class="card">
+                        <img src="static/cpu-fan.png" alt="Air Cooler">
+
+                        <div class="type-name">
+                            <h3>Air Cooler</h3>
+                        </div>
+                    </article>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-right">
+            <img src="static/hero_cooler.png" alt="Cooler Hero">
+        </div>
+
+    </section>
+
+    <!---Product-->
+        <div id="productArea" class="product-area">
+            
+            <!--buttons-->
+            <div id="filtersArea" class="filters">
+
+                <div class="filters-left">
+                    <button class="filter-toggle" onclick="toggleFilterPanel()">
+                        Filter by <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <button class="clear-btn" onclick="clearFilters()">
+                        Clear
+                    </button>
+                    
+                        <div class="filter-panel" id="filterPanel">
+
+                            <button class="close-btn filter-close" onclick="toggleFilterPanel()">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+
+                            <div class="filter-group">
+                                <h4>Colour</h4>
+                                <div id="colorFilters"></div>
+                            </div>
+
+                            <div class="filter-group">
+                                <h4>Cooler Type</h4>
+                                <div id="typeFilters"></div>
+                            </div>
+
+                            <div class="filter-group">
+                                <h4>Fan Setup</h4>
+                                <div id="fanFilters"></div>
+                            </div>
+
+                        </div>
+                </div>
+        </div>
+
+            <div class="product-container">
+                <div class="product-list" id="cooling-product-list">
+                </div>
+            </div>
+        </section>
+
+
+    <script type="module" src="home.js"></script>
+    <script src="set.js">
+    </script>
+    <script>
+    let allProducts = [];
+    let filteredProducts = [];
+
+    let filters = {
+        colors: [],
+        types: [],
+        fans: []
+    };
+
+    async function loadCoolingProducts() {
+        const response = await fetch("products.json");
+        const data = await response.json();
+
+        allProducts = data.products.filter(p => p.category === "cooler");
+
+        filteredProducts = [...allProducts];
+
+        displayProducts(filteredProducts);
+        initFilterOptions();
+    }
+
+    function displayProducts(products) {
+
+        const productList = document.getElementById("cooling-product-list");
+
+        productList.innerHTML = "";
+
+        if (!products || products.length === 0) {
+            productList.innerHTML = `<p style="color:#aaa;">No products found</p>`;
+            return;
+        }
+
+           products.forEach((product, index) => {
+        const image =
+            product.mainImage ||
+            product.images?.[0] ||
+            product.variations?.black?.[0] ||
+            "static/fallback.png";
+
+        const variations = product.variations
+            ? Object.keys(product.variations).join("/")
+            : "Black";
+
+        productList.innerHTML += `
+            <article 
+                onclick="window.location.href='product2.html?id=${product.id}'" 
+                class="product"
+                style="transition-delay:${(index % 4) * 0.15}s;"
+            >
+
+                    <img src="${image}">
+
+                  <div class="product-name">
+    <h3>${product.name}</h3>
+
+    <p>
+        Category:
+        ${product["product-type"] || "N/A"}
+    </p>
+
+    <p>
+        Variation:
+        ${variations}
+    </p>
+
+    <div class="price-divider"></div>
+
+    <a href="product2.html?id=${product.id}"
+       class="product-learn-more"
+       onclick="event.stopPropagation()">
+        Learn More →
+    </a>
+</div>
+
+                </article>
+            `;
+        });
+
+        observeProducts();
+    }
+    
+    function filterProducts(type) {
+
+        // RESET all filters first (important)
+        filters.types = [];
+        filters.colors = [];
+        filters.fans = [];
+
+        // if "All" → show everything
+        if (type === "All") {
+            filteredProducts = [...allProducts];
+            displayProducts(filteredProducts);
+            return;
+        }
+
+        // apply type filter only
+        filters.types = [type];
+
+        applyFilters();
+
+        document.getElementById("filtersArea").scrollIntoView({
+            behavior: "smooth"
+        });
+    }
+
+    function applyFilters() {
+
+        const result = allProducts.filter(p => {
+
+            // TYPE
+            if (filters.types.length > 0) {
+                if (!filters.types.includes(p["product-type"])) return false;
+            }
+
+            // COLOR
+            if (filters.colors.length > 0) {
+                const colors = Object.keys(p.variations || {});
+                if (!filters.colors.some(c => colors.includes(c))) return false;
+            }
+
+            // FANS
+            if (filters.fans.length > 0) {
+                if (!filters.fans.includes(p.fans)) return false;
+            }
+
+            return true;
+        });
+
+        filteredProducts = result;
+        displayProducts(result);
+    }
+
+    function toggle(arr, value) {
+        const i = arr.indexOf(value);
+        if (i > -1) arr.splice(i, 1);
+        else arr.push(value);
+    }
+
+    function toggleColor(v) {
+        toggle(filters.colors, v);
+        applyFilters();
+    }
+
+    function toggleType(v) {
+        toggle(filters.types, v);
+        applyFilters();
+    }
+
+    function toggleFan(v) {
+        toggle(filters.fans, v);
+        applyFilters();
+    }
+
+    function initFilterOptions() {
+
+        buildColors();
+        buildTypes();
+        buildFans();
+    }
+
+    function buildColors() {
+        const el = document.getElementById("colorFilters");
+        const set = new Set();
+
+        allProducts.forEach(p => {
+            Object.keys(p.variations || {}).forEach(c => set.add(c));
+        });
+
+        el.innerHTML = [...set].map(c => `
+            <label class="filter-option">
+                <input type="checkbox" onchange="toggleColor('${c}')">
+                ${c}
+            </label>
+        `).join("");
+    }
+
+    function buildTypes() {
+        const el = document.getElementById("typeFilters");
+        const set = new Set();
+
+        allProducts.forEach(p => {
+            if (p["product-type"]) set.add(p["product-type"]);
+        });
+
+        el.innerHTML = [...set].map(t => `
+            <label class="filter-option">
+                <input type="checkbox" onchange="toggleType('${t}')">
+                ${t}
+            </label>
+        `).join("");
+    }
+
+    /* FANS */
+    function buildFans() {
+        const el = document.getElementById("fanFilters");
+        const set = new Set();
+
+        allProducts.forEach(p => {
+            if (p.fans) set.add(p.fans);
+        });
+
+        el.innerHTML = [...set].map(f => `
+            <label class="filter-option">
+                <input type="checkbox" onchange="toggleFan('${f}')">
+                ${f}
+            </label>
+        `).join("");
+    }
+
+    function toggleFilterPanel() {
+        const panel = document.getElementById("filterPanel");
+        panel.classList.toggle("active");
+    }
+
+    function clearFilters() {
+
+        filters = {
+            colors: [],
+            types: [],
+            fans: []
+        };
+
+        document.querySelectorAll("input[type=checkbox]")
+            .forEach(c => c.checked = false);
+
+        displayProducts(allProducts);
+    }
+
+    /* =========================
+    ANIMATION
+    ========================= */
+    function observeProducts() {
+
+        const products = document.querySelectorAll(".product");
+
+        const observer = new IntersectionObserver((entries) => {
+
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                }
+            });
+
+        }, { threshold: 0.2 });
+
+        products.forEach(p => observer.observe(p));
+    }
+
+    /* =========================
+    INIT
+    ========================= */
+    document.addEventListener("DOMContentLoaded", () => {
+        loadCoolingProducts();
+    });
+    </script>
+    </body>
+    </html>

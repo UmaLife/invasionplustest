@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/css/xqz-description.css">
+    <link rel="stylesheet" href="static/all-product.css">
+    <link rel="stylesheet" href="static/style1.css">
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans" rel="stylesheet">
+    <title>InvasionPlus</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="all-products-page">
+
+    <!-- Floating Nav -->
+    <div class="floating-nav" id="floatingNav">
+        <a href="#hot-selling-hero" class="active">HOT SELLING</a>
+        <a href="#new-arrivals-hero">NEW ARRIVALS</a>
+        <a href="#cases-hero">CASES</a>
+        <a href="#coolers-hero">COOLERS</a>
+        <a href="#monitors-hero">MONITORS</a>
+    </div>
+
+    <section id="hot-selling-hero" class="hero-banner-section">
+        <div class="hero-banner-container">
+            <img src="static/5.png" alt="Background" class="hero-banner-bg">
+            <div class="hero-banner-overlay"></div>
+            <div class="hero-banner-content">
+                <h2>HOT SELLING</h2>
+                <p>Explore our most popular products, loved by customers for their performance, design, and reliability.</p>
+            </div>
+            <div class="hero-banner-product">
+                <img src="static/FROST VISION 240/FV-240-B-02.png" alt="Featured Product">
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 1: HOT SELLING LIST -->
+    <section id="hot-selling" class="product-section hot-selling">
+        <div class="divider"></div>
+        <div class="hot-selling-list" id="hot-selling-list"></div>
+    </section>
+
+        <section  id="new-arrivals-hero" class="hero-banner-section">
+        <div class="hero-banner-container">
+            <img src="static/5.png" alt="Background" class="hero-banner-bg">
+            <div class="hero-banner-overlay"></div>
+            <div class="hero-banner-content">
+                <h2>NEW ARRIVALS</h2>
+                <p>Discover the latest additions to our collection, featuring fresh designs, and carefully crafted products made to elevate your setup.</p>
+            </div>
+            <div class="hero-banner-product">
+                <img src="static/PERSEUS/PERSEUS-01.png" alt="Featured Product">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECTION 2: NEW ARRIVALS LIST -->
+    <section id="new-arrivals" class="product-section new-products">
+        <div class="divider"></div>
+        <div class="new-products-list" id="new-products-list"></div>
+    </section>
+
+    <!-- HERO 3: CASES -->
+       <section  id="cases-hero" class="hero-banner-section">
+        <div class="hero-banner-container">
+            <img src="static/5.png" alt="Background" class="hero-banner-bg">
+            <div class="hero-banner-overlay"></div>
+            <div class="hero-banner-content">
+                <h2>CASES</h2>
+                <p>Find the perfect case for your build, designed to match your style, fit your components, and deliver the performance you need.</p>
+            </div>
+            <div class="hero-banner-product">
+                <img src="static/ATLAS/ALTAS-BLACK-04.png" alt="Featured Product">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECTION 3: CASES -->
+    <section id="cases" class="product-section Cases">
+        <div class="divider"></div>
+        <div class="cases-list" id="cases-list"></div>
+        
+        <div class="view-more-container">
+            <a href="cases.html" class="view-more-btn">View More</a>
+        </div>
+    </section>
+
+    <!-- HERO 4: COOLERS -->
+      <section  id="coolers-hero" class="hero-banner-section">
+        <div class="hero-banner-container">
+            <img src="static/5.png" alt="Background" class="hero-banner-bg">
+            <div class="hero-banner-overlay"></div>
+            <div class="hero-banner-content">
+                <h2>COOLERS</h2>
+                <p>Keep your system cool with our advanced cooling solutions, designed to improve airflow.</p>
+            </div>
+            <div class="hero-banner-product">
+                <img src="static/FROST VISION 360/a1.png" alt="Featured Product">
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: COOLERS -->
+    <section id="cooling" class="product-section Coolers">
+        <div class="divider"></div>
+        <div class="coolers-list" id="coolers-list"></div>
+        
+        <div class="view-more-container">
+            <a href="coolers.html" class="view-more-btn">View More</a>
+        </div>
+    </section>
+
+    <!-- HERO 5: MONITORS -->
+     <section  id="monitors-hero" class="hero-banner-section">
+        <div class="hero-banner-container">
+            <img src="static/5.png" alt="Background" class="hero-banner-bg">
+            <div class="hero-banner-overlay"></div>
+            <div class="hero-banner-content">
+                <h2>MONITORS</h2>
+                <p>Experience stunning visuals with our monitors, designed to deliver sharp details, vibrant colours, smooth performance</p>
+            </div>
+            <div class="hero-banner-product">
+                <img src="static/XTG-49ARCX/monitor1.png" alt="Featured Product">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECTION 5: MONITORS -->
+    <section id="monitor" class="product-section monitors">
+        <div class="divider"></div>
+        <div class="monitors-list" id="monitors-list"></div>
+        
+        <div class="view-more-container">
+            <a href="monitors.html" class="view-more-btn">View More</a>
+        </div>
+    </section>
+
+<script type="module" src="home.js"></script>
+<script src="set.js"></script>
+<script>
+let allProducts = [];
+
+async function loadProducts() {
+    try {
+        const res = await fetch("products.json");
+        const data = await res.json();
+        allProducts = data.products;
+        renderPage();
+    } catch (err) {
+        console.error("Failed to load products:", err);
+    }
+}
+
+function renderPage() {
+    renderSection("hot-selling-list", allProducts.filter(p => p.hot).slice(0, 4));
+    renderSection("new-products-list", allProducts.filter(p => p.new).slice(0, 4));
+    renderSection("cases-list", allProducts.filter(p => p.category === "case").slice(0, 4));
+    renderSection("coolers-list", allProducts.filter(p => p.category === "cooler").slice(0, 4));
+    renderSection("monitors-list", allProducts.filter(p => p.category === "monitor").slice(0, 4));
+}
+
+function renderSection(containerId, products) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+
+    container.innerHTML = products.map(product => {
+        const image = product.mainImage || product.images?.[0] || product.variations?.black?.[0] || "static/fallback.png";
+        const variations = product.variations ? Object.keys(product.variations).join("/") : "Black";
+
+        return `
+            <article class="product" onclick="window.location.href='product2.html?id=${product.id}'">
+                <img src="${image}" alt="${product.name}">
+                <div class="product-name">
+                    <h3>${product.name}</h3>
+                    <p>Category: ${product["product-type"] || "N/A"}</p>
+                    <p>Variation: ${variations}</p>
+                    
+                    <span class="price">${product.price || ''}</span>
+                    <div class="price-divider"></div>
+
+                    <a href="product2.html?id=${product.id}" class="product-learn-more" onclick="event.stopPropagation()">
+                        Learn More &rarr;
+                    </a>
+                </div>
+            </article>
+        `;
+    }).join("");
+
+    observeProducts();
+}
+
+let observer;
+function observeProducts() {
+    const products = document.querySelectorAll(".product");
+    if (observer) observer.disconnect();
+
+    observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 });
+
+    products.forEach(product => observer.observe(product));
+}
+
+let lastScroll = 0;
+const nav = document.getElementById("floatingNav");
+const heroSections = document.querySelectorAll(".category-hero");
+const navLinks = document.querySelectorAll(".floating-nav a");
+
+window.addEventListener("scroll", () => {
+    let current = window.scrollY;
+
+    if (current > 200) {
+        if (current > lastScroll) {
+            nav.classList.add("hidden");
+        } else {
+            nav.classList.remove("hidden");
+        }
+    } else {
+        nav.classList.remove("hidden");
+    }
+    lastScroll = current;
+
+    let currentHeroId = "";
+    heroSections.forEach(hero => {
+        const heroTop = hero.offsetTop - 250;
+        if (current >= heroTop) {
+            currentHeroId = hero.getAttribute("id");
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + currentHeroId) {
+            link.classList.add("active");
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", loadProducts);
+</script>
+<script>
+// Observe hero sections and animate on scroll
+const heroObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("animate-hero");
+        } else {
+            // Removes class so animation re-triggers when scrolling back into view
+            entry.target.classList.remove("animate-hero");
+        }
+    });
+}, {
+    threshold: 0.25 // Triggers when 25% of the hero section is visible
+});
+
+// Select all hero banner sections
+document.querySelectorAll(".hero-banner-section").forEach(hero => {
+    heroObserver.observe(hero);
+});
+</script>
+</body>
+</html>
