@@ -440,6 +440,8 @@ fetch(
      */
 
     initHeroImageViewer();
+    initSectionReveal();
+    initHeroReveal();
 
 
     /*
@@ -2306,6 +2308,65 @@ function renderSpecs(product) {
         }
     );
 
+}
+
+function initHeroReveal() {
+
+    const heroInfo = document.querySelector(".hero-info");
+
+    if (!heroInfo) return;
+
+    requestAnimationFrame(() => {
+
+        setTimeout(() => {
+            heroInfo.classList.add("is-visible");
+        }, 150);
+
+    });
+}
+
+
+function initSectionReveal() {
+
+    const sections = document.querySelectorAll(
+        ".spec-section"
+    );
+
+    if (!sections.length) return;
+
+    if (!("IntersectionObserver" in window)) {
+
+        sections.forEach(section => {
+            section.classList.add("is-visible");
+        });
+
+        return;
+    }
+
+    const observer = new IntersectionObserver(
+        entries => {
+
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add("is-visible");
+
+                    observer.unobserve(entry.target);
+                }
+
+            });
+
+        },
+        {
+            threshold: 0.15,
+            rootMargin: "0px 0px -40px 0px"
+        }
+    );
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
 }
 
 </script>
