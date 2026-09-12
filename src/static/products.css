@@ -477,6 +477,62 @@
         font-size: 2.2rem;
     }
 
+         .product {
+        position: relative;
+        min-height: 278px;
+        padding: 18px;
+        box-sizing: border-box;
+    }
+
+    .product-name {
+        width: 100%;
+        padding-bottom: 55px;
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .product img{
+        height:140px;
+        margin-bottom:18px;
+    }
+
+    .product-name h3{
+        font-size:1.15rem;
+        margin-bottom:12px;
+    }
+
+    .product-name p{
+        font-size:.8rem;
+        margin-bottom:12px;
+    }
+
+    .price{
+        font-size:1rem;
+        margin-bottom:0;
+    }
+
+    .product-bottom{
+        margin:0;
+    }
+
+    .product-learn-more {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%) !important;
+
+        opacity: 1;
+        margin: 0 !important;
+
+        white-space: nowrap;
+        width: max-content;
+        min-width: 60px;
+    }
+
     .filters{
         flex-direction: column;
         align-items: flex-start;
