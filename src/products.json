@@ -1,0 +1,2702 @@
+{
+  "products": [
+    {
+      "id": "e20",
+      "name": "E-20",
+      "category": "case",
+    
+      "price":"",
+      "fans": "with 10 ARGB Fans",
+      "product-type": "ATX",
+      "description": "Invasion Plus E-20 combines a mostly mesh design with optimised vertical airflow, letting air move naturally and efficiently through the case. Supporting up to 10 fans, it keeps your system cool, steady, and effortless, in a clean, carefully considered layout — designed so every detail simply works for you.",
+      "mainImage": "static/E20/E20.4.png",
+      "heroImage": "static/E20/E20.png",
+      "descriptionImage": "static/E20/E20.1.png",
+      "specImage": "static/E20/E20.5.png",
+      "images": [
+        "static/E20/E20.4.png",
+        "static/E20/E20.1.png",
+        "static/E20/E20.3.png",
+        "static/E20/E20.7.png",
+        "static/E20/E20.2.png",
+        "static/E20/E20.5.png",
+        "static/E20/E20.9.png",
+        "static/E20/E20.1.png"
+      ],
+      "sellingPoints": [
+    {
+      "icon": "fa-regular fa-fan",
+      "title": "Breathable Mesh Airflow Design"
+    },
+    {
+      "icon": "fa-solid fa-grip-lines",
+      "title": "Full Seamless Curved Edge Mesh Design"
+    },
+    {
+      "icon": "fa-solid fa-plug-circle-bolt",
+      "title": "Back- Connect Ready"
+    },
+    {
+      "icon": "fa-solid fa-ruler-combined",
+      "title": "Product Dimension"
+    },
+    {
+      "icon": "fa-solid fa-screwdriver-wrench",
+      "title": "Tool-Free Quick Release Modular Design"
+    },
+    {
+      "icon":"fa-solid fa-temperature-arrow-up",
+      "title":"Cooling support"
+    }
+  ],
+  "productFeatureGrid": {
+  "title": "Product Highlights",
+  "cards": [
+    {
+      "type": "wide",
+      "title": "Breathable Mesh Airflow Design",
+      "description": "Maximum ventilation, cooler performance, and a sleek modern build.",
+      "image": "static/E20/e20_fea1.png"
+    },
+    {
+      "type": "wide",
+      "title": "Full Seamless Curved Edge Mesh Design",
+      "description": "Upgrade your build with standout style and airflow.",
+      "image": "static/E20/e20_fea2.png"
+    },
+    {
+      "type": "wide",
+      "title": "Back- Connect Ready",
+      "description": "Designed for cleaner, cable-free looking build",
+      "image": "static/E20/e20_fea3.png"
+    },
+    {
+      "type":"wide",
+      "title": "Product Dimension",
+      "subtitle":"L 483mm * W 238mm * H 490mm",
+      "description": "I/O with dual USB 3.0, Type-C and HD Audio ports.",
+      "image": "static/E20/e20_fea4.png"
+    },
+    {
+      "type": "wide",
+      "title": "Tool-Free Quick Release Modular Design",
+      "description": "Enables fast assembly and effortless maintenance",
+      "image": "static/E20/6.png"
+    },
+    {
+      "type":"wide",
+      "title":"Cooling support",
+      "description":"Liquid cooling up to 360mm, air cooling up to 120mm",
+      "image":"static/E20/1.png",
+      "airCoolingImage": "static/E20/e20_aircooling.png",
+      "liquidCoolingImage": "static/E20/e20_liquidcooling.png"
+    }
+  ]
+},
+
+      "specs": {
+        "Model": "E - 20",
+        "Material": "SPCC 0.7 MM",
+        "Chasis Dimension": "483mm(L) x 238mm(W) x 490mm(H)",
+        "Carton Size": "553mm(L) x 302mm(W) x 552mm(H)",
+        "I/O Port": "USB 3.0*2 + TYPE-C*1 + HD AUDIO",
+        "3.5″ + 2.5″ Drive Bays": "2 x HDD + 3 x SSD",
+        "PCI Slots": "7 Slots",
+        "Air Cooling": "<b>Rear</b> ~ 120 MM x 1<br><b>TOP</b> ~ 120MM x 3 OR 140MM x 3<br><b>MB</b> ~ 120MM x 3 OR 140MM x 2<br><b>PSU</b> ~ 120MM x 3 OR 140MM x 3",
+        "Liquid Cooling": "<b>Top </b>~ 360 MM <br><b> Rear</b> ~ 120 MM <br><b> MB</b> ~ 240 MM",
+        "CPU Cooler Height": "180 MM",
+        "VGA Card Length": "400 MM without MB Fan <br> 370 MM with MB Fan"
+      }
+    },
+
+      {
+      "id": "atlas",
+      "name": "ATLAS",
+      "category": "case",
+       "price":"",
+      "fans": "with 4 Infinity ARGB Fans",
+      "product-type": "M-ATX",
+      "description": "The ATLAS is engineered to deliver a perfect balance of panoramic aesthetics, optimized airflow, and hardware compatibility. Designed with premium tempered glass, efficient mesh ventilation, and flexible cooling support, it provides a clean showcase for modern PC builds without compromising thermal performance.",
+      "mainImage": "static/ATLAS/ALTAS-BLACK-04.png",
+      "heroImage": "static/ATLAS/ALTAS-BLACK-03.png",
+      "descriptionImage": "static/ATLAS/ALTAS-BLACK-03.png",
+      "specImage": "static/ATLAS/ALTAS-BLACK-04.png",
+      "variations": {
+      "black": [
+        "static/ATLAS/ALTAS-BLACK-04.png",
+        "static/ATLAS/ALTAS-BLACK-02.png",
+        "static/ATLAS/ALTAS-BLACK-03.png",
+        "static/ATLAS/ALTAS-BLACK-01.png",
+        "static/ATLAS/ALTAS-BLACK-05.png"
+      ],
+      "white": [
+        "static/ATLAS/ALTAS-WHITE-01.png",
+        "static/ATLAS/ALTAS-WHITE-02.png",
+        "static/ATLAS/ATLAS-WHITE-03.png",
+        "static/ATLAS/ATLAS-WHITE-04.png",
+        "static/ATLAS/ATLAS-WHITE-05.png"
+      ]
+    },
+    "sellingPoints": [
+    {
+      "icon": "fa-regular fa-square",
+      "title": "Extended Panoramic Glass Design"
+    },
+    {
+      "icon": "fa-solid fa-wind",
+      "title": "Optimized Mesh Ventilation"
+    },
+    {
+      "icon": "fa-solid fa-microchip",
+      "title": "Wide Compatibility"
+    },
+    {
+      "icon": "fa-solid fa-ruler-combined",
+      "title": "Precisely Crafted Dimensions"
+    },
+    {
+      "icon": "fa-solid fa-temperature-arrow-up",
+      "title": "Powerful Cooling Support"
+    }
+  ],
+  "productFeatureGrid": {
+  "title": "Product Highlights",
+  "cards": [
+    {
+      "type": "wide",
+      "title": "Extended Panoramic Glass Design",
+      "description": "Features tempered glass on the front, right and left panels for an unobstructed view from every angle.",
+      "image": "static/ATLAS/atlas_fea1.png"
+    },
+    {
+      "type": "wide",
+      "title": "Optimized Airflow",
+      "description": "Top mesh panel and rear ventilation panels enhance airflow and heat dissipation for stable and efficient performance.",
+      "image": "static/ATLAS/atlas2.png"
+    },
+    {
+      "type": "wide",
+      "title": "Wide Compatibility",
+      "description": "Supports M-ATX and ITX motherboards.",
+      "image": "static/ATLAS/atlas_fea2.png"
+    },
+    {
+      "type":"wide",
+      "title": "Precisely Crafted Dimensions",
+      "description": "L435*W228*H475mm",
+      "image": "static/ATLAS/atlas_fea3.png"
+    },
+    {
+      "type": "wide",
+      "title": "Powerful Cooling Support",
+      "description": "Liquid cooling up to 360mm air cooling up to 120mm.",
+      "image": "static/ATLAS/2.png",
+      "airCoolingImage": "static/ATLAS/atlas_aircooling.png",
+      "liquidCoolingImage": "static/ATLAS/atlas_liquidcooling.png"
+    }
+  ]
+},
+
+      "specs": {
+        "Model": "ATLAS",
+        "Front Panel": "Tempered Glass",
+        "Left Side Panel": "Tempered Glass",
+        "Right Side Panel": "Tempered Glass",
+        "Chasis": "0.6mm",
+        "USB 3.0 x 2": "Included",
+        "Type C x 1": "Included",
+        "Motherboard Support": "ITX / M-ATX",
+        "PSU Port": "Bottom / ATX / 140-160mm",
+        "Size": "<b>Front</b>~ N/A <br><b>Top </b>~ 3 x 120mm (Fan Optional) - support 360mm liquid cooler <br><b> Rear</b> ~ 1 x 120mm (Fan optional) - support 120mm liquid cooler <br><b>Bottom</b> ~ 3 x 120mm (Fan optional) ",
+        "Drive Bays": "5.25″ ODD x0 <br>3.5″ HDD x2<br>2.5″ SSD x2",
+        "PCI Slots": "x 4",
+        "Product Dimesion": "<b>Chassis size</b> ~ 430(L) x 228(W) x 445mm (H) <br><b>Product Size</b> ~ 435(L) x 228(W) x 475mm (H) <br><b>Carton Size</b> ~ 525(L) x 290(W) x 500mm (H) ",
+        "Package": "Poly Foam",
+        "Max.VGA Card": "420mm",
+        "Max.CPU Cooler": "165mm"
+      }
+    },
+ 
+    {
+      "id": "e10",
+      "name": "E-10",
+      "category": "case",
+       "price":"",
+      "product-type": "M-ATX",
+      "fans": "with 3 ARGB Fans",
+      "description": "Invasion Plus E-10 puts your build on full display with a sleek horizontal layout. Dual chambers thoughtfully separate power and storage from your components, keeping airflow smooth, noise low, and cables neatly out of sight. Personalize your rig and make it feel just right.",
+      "heroTitle": "E-10 - Smart Cooling Where It Counts",
+      "heroDescription": "Built for dependable everyday performance and professional-grade setups, delivering focused ventilation exactly where it’s needed most.",
+      "mainImage": "static/E10/E10 (2).png",
+      "heroImage": "static/E10/E10 (7).png",
+      "descriptionImage": "static/ALTAS-BLACK-03.png",
+      "specImage": "static/E10/E10 (1).png",
+      "images": [
+        "static/E10/E10 (2).png",
+        "static/E10/E10 (1).png",
+        "static/E10/E10 (6).png",
+        "static/E10/E10 (7).png",
+        "static/E10/E10 (4).png",
+        "static/E10/E10 (3).png",
+        "static/E10/E10 (5).png",
+        "static/E10/E10 (8).png"
+      ],
+      "sellingPoints": [
+  
+  {
+    "icon": "fa-solid fa-cube",
+    "title": "Four-Sided Glass Design"
+  },
+  {
+    "icon": "fa-solid fa-layer-group",
+    "title": "Dual Chamber Layout"
+  },
+  {
+    "icon": "fa-solid fa-ruler-combined",
+    "title": "Product Dimension"
+  },
+  {
+    "icon": "fa-solid fa-fan",
+    "title": "Cooling Support"
+  },
+  {
+    "icon": "fa-solid fa-microchip",
+    "title": "VGA Compatibility"
+  }
+],
+ "productFeatureGrid": {
+  "title": "Product Highlights",
+  "cards": [
+    {
+      "type": "wide",
+      "title": "Four-Sided Glass",
+      "description": "Maximum viewing experience with a  display design.",
+      "image": "static/E10/2.png"
+    },
+
+    {
+      "type": "wide",
+      "title": "Horizontal Dual Chamber Layout",
+      "subtitle": "",
+      "description": "Seperate power and storage, smooth airflow and neat cables.",
+      "image": "static/E10/1.png"
+    },
+
+    {
+      "type": "wide",
+      "title": "Smart Case Layout",
+      "subtitle": "L 436.5mm × W 315mm × H300mm",
+      "description": "With USB 3.0 x 2 + Type-C x 1 + HD Audio",
+      "image": "static/E10/3.png"
+    },
+    {
+      "type": "wide",
+      "title": "Advanced Cooling Support",
+      "subtitle": "240mm Liquid Cooling Ready",
+      "description": "Supports up to 240mm liquid cooling and 120mm air cooling.",
+      "image": "static/E10/e10.png",
+      "airCoolingImage": "static/E10/e10_aircooling.png",
+      "liquidCoolingImage": "static/E10/e10_liquidcooling.png"
+    },
+    {
+      "type": "wide",
+      "title": "VGA Compatibility",
+      "subtitle": "Up to 430mm GPU Support",
+      "description": "Supports VGA up to 430mm without MB fan and 300mm with MB fan.",
+      "image": "static/E10/6.png"
+    }
+  ]
+},
+
+       "specs": {
+        "Model": "E - 10",
+        "Material": "SPCC 0.7mm",
+        "Chasis Dimension": "436.5mm(L) x 315mm(W) x 300mm(H)",
+        "Carton Size": "531.5mm(L) x 409.5mm(W) x 398mm(H)",
+        "I/O Port": "USB 3.0 x 2 + Type-C x 1 + HD Audio",
+        "3.5″ + 2.5″ Drive Bays": "2 x HDD + 1 x SSD",
+        "PCI Slots": "5 Slots",
+        "Air Cooling": "<b>Rear</b> ~ 120mm x 1<br><b>Bottom</b> ~ 120mm x 2",
+        "Liquid Cooling": "<b>Bottom </b>~ 240mm",
+        "CPU Cooler Height": "165mm",
+        "VGA Card Length": "430mm without MB Fan <br> 300mm with MB Fan"
+      }
+    },
+
+     {
+      "id": "t1000",
+      "name": "T-1000",
+      "category": "case",
+       "price":"",
+       "product-type": "M-ATX",
+      "fans": "with 10 ARGB Fans / with 4 ARGB Fans / with 7 ARGB Fans",
+      "description": "Invasion Plus T-1000 features a compact footprint design with triple mesh filtration and a panoramic view layout, delivering efficient airflow, reduced dust intake, and stable cooling.",
+      "heroDescription": "Featuring a Hight - Airflow layout and multiple fan mounts to keep your components cool under heavy workloads ",
+      "mainImage": "static/T-1000/T-1000B-01.png",
+      "specImage": "static/T-1000/T-1000B-01.png",
+      "images": [
+        "static/T-1000/T-1000B-01.png",
+        "static/T-1000/T-1000B-02.png",
+        "static/T-1000/T-1000B-03.png",
+        "static/T-1000/T-1000B-04.png"
+      ],
+        "highlightImages": [
+      "static/T-1000/T1000bann.png",
+      "static/T-1000/T-1000B-04.png",
+      "static/T-1000/T-1000B-03.png"
+      ],
+
+      "sellingPoints": [
+      {
+        "icon": "fa-regular fa-square",
+        "title": "Compact Panoramic Design"
+      },
+      {
+        "icon": "fa-solid fa-shield",
+        "title": "Bottom Dust Filter"
+      },
+      {
+        "icon": "fa-solid fa-ruler-combined",
+        "title": "Product Dimension"
+      },
+      {
+        "icon": "fa-solid fa-filter",
+        "title": "Triple Mesh Filtration"
+      },
+      
+      {
+        "icon": "fa-solid fa-fan",
+        "title": "Cooling Support"
+      }
+    ],
+      "productFeatureGrid": {
+      "title": "Product Highlights",
+      "cards": [
+         {
+          "type": "wide",
+          "title": "Panoramic Design",
+          "subtitle": "Clear Build View",
+          "description": "Showcases your components through a wide, uninterrupted viewing area.",
+          "image": "static/T-1000/1.png"
+        },
+      
+        {
+          "type": "wide",
+          "title": "Bottom Dust Filter",
+          "subtitle": "Easy Maintenance",
+          "description": "Reduces dust buildup for easier maintenance.",
+          "image": "static/T-1000/2.png"
+        },
+
+         {
+          "type": "wide",
+          "title": "Smart Case Layout",
+          "subtitle": "L 440mm × W 235mm × H405mm",
+          "description": "",
+          "image": "static/T-1000/3.png"
+        },
+
+         {
+          "type": "wide",
+          "title": "Triple Mesh Filtration",
+          "subtitle": "Top + Rear + Right",
+          "description": "Multi-side mesh filters enhance airflow and dust protection.",
+          "image": "static/T-1000/4.png"
+        },
+
+        {
+          "type": "wide",
+          "title": "Cooling Support",
+          "subtitle": "Cooling Ready",
+          "description": "Designed for improved cooling performance.",
+          "image": "static/T-1000/t1000.png",
+          "airCoolingImage": "static/T-1000/t1000_aircooling.png",
+          "liquidCoolingImage": "static/T-1000/t1000_liquidcooling.png"
+        }
+      ]
+},
+
+       "specs": {
+        "Model": "T - 1000",
+        "Material": "SPCC 0.7 MM",
+        "Chasis Dimension": "440mm(L) x 235mm(W) x 405mm(H)",
+        "Carton Size": "534mm(L) x 337mm(W) x 577mm(H)",
+        "Weight": "7.3KGS(N.W.) / 9.1KGS(G.W.)",
+        "3.5″ + 2.5″ Drive Bays": "1 + 1",
+        "PCI Slots": "5 Slots",
+        "Air Cooling": "<b>Top</b> ~ 120mm x 3 or 140mm x 2 (Max.)<br><b>Rear</b> ~ 120mm x 1 or 140mm x 1 (Max.)<br><b>Motherboard Cover</b> ~ 120mm x 3 (Max.)<br><b>PSU Cover</b> ~ 120mm x 2 or 140mm x 1 (Max.) <br><b>Bottom</b> ~ 120mm x 1 (Max.)",
+        "Liquid Cooling": "<b>Top</b> ~ 240mm / 280mm / 360mm <br><b>Rear </b>~ 120mm <br><b>Motherboard Cover</b> ~ 360mm",
+        "CPU Cooler Height": "180mm",
+        "VGA Card Length": "430mm"
+      }
+    },
+
+    {
+      "id": "erebus",
+      "name": "EREBUS",
+      "category": "case",
+      "hot": false,
+       "price":"",
+      "fans": "with 6 Infinity ARGB Fans",
+      "product-type": "M-ATX",
+      "description": "Invasion Plus Erebus blends a stunning panoramic view with a space-saving design and high-airflow ventilation mesh, delivering the perfect balance of cooling performance and eye-catching design that makes your build truly your own.",
+      "heroTitle": "Compact Desisn Maximum Domination",
+      "heroDescription": "Tempered glass elegance meets high-performance airflow engineering.",
+      "mainImage": "static/EREBUS/EREBUS BLACK - 01.png",
+      "specImage":  "static/EREBUS/EREBUS BLACK -02.png",
+      "variations": {
+      "black": [
+        "static/EREBUS/EREBUS BLACK - 01.png",
+        "static/EREBUS/EREBUS BLACK -02.png",
+        "static/EREBUS/EREBUS BLACK - 03.png"
+      ],
+      "white": [
+        "static/EREBUS/EREBUS WHITE -01.png",
+        "static/EREBUS/EREBUS WHITE - 02.png",
+        "static/EREBUS/EREBUS WHITE - 03.png"
+        
+      ]
+    },
+   "sellingPoints": [
+  {
+    "icon": "fa-solid fa-cube",
+    "title": "Space-Saving Design"
+  },
+  {
+    "icon": "fa-solid fa-ruler-combined",
+    "title": "Product Dimension"
+  },
+  {
+    "icon": "fa-solid fa-wind",
+    "title": "Optimized Ventilation"
+  },
+  {
+    "icon": "fa-solid fa-microchip",
+    "title": "Motherboard Compatibility"
+  },
+  {
+    "icon": "fa-solid fa-fan",
+    "title": "Cooling Support"
+  }
+],
+"productFeatureGrid": {
+  "title": "Product Highlights",
+  "cards": [
+    {
+      "type": "wide",
+      "title": "Space-Saving Design",
+      "subtitle": "With wide and clear view to showcase your build",
+      "description": "",
+      "image": "static/EREBUS/1.png"
+    },
+    {
+      "type": "wide",
+      "title": "Smart Case Layout",
+      "subtitle": "",
+      "description": "L 443mm × W 277mm × H 377mm",
+      "image": "static/EREBUS/2.png"
+    },
+    {
+      "type": "wide",
+      "title": "Optimized Ventilation",
+      "subtitle": "",
+      "description": "Right-side ventilation improves cooling and airflow performance.",
+      "image": "static/EREBUS/3.png"
+    },
+    {
+      "type": "wide",
+      "title": "Motherboard Support",
+      "subtitle": "M-ATX / ITX Ready",
+      "description": "Supports M-ATX and ITX motherboards for flexible compact builds.",
+      "image": "static/EREBUS/4.png"
+    },
+    {
+      "type": "wide",
+      "title": "Cooling Support",
+      "subtitle": "Cooling Ready",
+      "description": "Designed with radiator support for efficient cooling performance.",
+      "image": "static/EREBUS/EREBUS.png",
+      "airCoolingImage": "static/EREBUS/erebus_aircooling.png",
+      "liquidCoolingImage": "static/EREBUS/erebus_liquidcooling.png"
+    }
+  ]
+},
+      "specs": {
+        "Model": "EREBUS",
+        "Front Panel": "Steel + Tempered Glass",
+        "Left Side Panel": "Tempered glass with back screw",
+        "Right Side Panel": "Ventilation holes on right side",
+        "Chasis": "0.5mm",
+        "USB 3.0 x 2": "Included",
+        "Type C x 1": "Included",
+        "Motherboard Support": "ITX / M-ATX",
+        "PSU Port": "Rear side / ATX",
+        "Size": "<b>Front</b> ~ N/A <br><b>M/B </b>~ 2 x 120mm(Fan optional)  <br><b>Top </b>~ 3 x 120mm (Fan Optional) - support 360mm liquid cooler <br><b> Rear</b> ~ 1 x 120mm (Fan optional) - support 120mm liquid cooler <br><b>Bottom</b> ~ 3 x 120mm (Fan optional) ",
+        "Drive Bays": "5.25″ ODD x0 <br>3.5″ HDD x2<br>2.5″ SSD x2",
+        "PCI Slots": "x 5",
+        "Product Dimesion": "<b>Chassis size</b> ~ 430(L) x 277(W) x 355mm (H) <br><b>Product Size</b> ~ 443(L) x 277(W) x 377mm (H) <br><b>Carton Size</b> ~ 432(L) x 344(W) x 515mm (H) ",
+        "Package": "Poly Foam",
+        "Max.VGA Card": "420mm",
+        "Max.CPU Cooler": "155mm"
+      }
+    },
+
+
+    {
+      "id": "genesis",
+      "name": "GENESIS",
+      "category": "case",
+      "hot": false,
+      "new": false,
+       "price":"",
+      "fans": "with 4 Infinity ARGB Fans",
+      "product-type": "ATX",
+      "description": "The Invasion Genesis features tempered glass panels on the front, side, and top, offering a panoramic three-sided view that showcases your build with stunning clarity. Its aquarium-inspired design elegantly displays GPUs, motherboards, and cooling solutions, creating a visually striking centerpiece while maintaining a clean, minimalist aesthetic.",
+      "heroTitle": "Exceptional Air Cooling Support",
+      "heroDescription": "Featuring a Hight - Airflow layout and multiple fan mounts to keep your components cool under heavy workloads ",
+      "mainImage": "static/GENESIS/GENESIS BLACK-01.png",
+      "heroImage": "static/ALTAS-BLACK-02.png",
+      "descriptionImage": "static/GENESIS/GENESIS BLACK-08.png",
+      "specImage": "static/GENESIS/GENESIS BLACK-02.png",
+      "variations": {
+      "black": [
+        "static/GENESIS/GENESIS BLACK-01.png",
+        "static/GENESIS/GENESIS BLACK-02.png",
+        "static/GENESIS/GENESIS BLACK-03.png",
+        "static/GENESIS/GENESIS BLACK-04.png",
+        "static/GENESIS/GENESIS BLACK-05.png",
+        "static/GENESIS/GENESIS BLACK-06.png",
+        "static/GENESIS/GENESIS BLACK-07.png",
+        "static/GENESIS/GENESIS BLACK-08.png"
+      ],
+      "white": [
+        "static/GENESIS/GENESIS WHITE-01.png",
+        "static/GENESIS/GENESIS WHITE-02.png",
+        "static/GENESIS/GENESIS WHITE-03.png",
+        "static/GENESIS/GENESIS WHITE-04.png",
+        "static/GENESIS/GENESIS WHITE-05.png",
+        "static/GENESIS/GENESIS WHITE-06.png",
+        "static/GENESIS/GENESIS WHITE-07.png",
+        "static/GENESIS/GENESIS WHITE-08.png"
+        
+      ]
+    },
+     "sellingPoints": [
+    {
+      "icon": "fa-regular fa-square",
+      "title": "Panoramic 3-Sided Tempered Glass"
+    },
+    {
+      "icon": "fa-solid fa-wind",
+      "title": "Right Optimized Mesh Ventilation"
+    },
+    {
+      "icon": "fa-solid fa-magnet",
+      "title": "Magnetic Dust Filter"
+    },
+    {
+      "icon": "fa-solid fa-border-all",
+      "title": "Wide Motherboard Support",
+      "description": "Supports ATX, M-ATX and ITX motherboards."
+    },
+    {
+      "icon": "fa-solid fa-fan",
+      "title": "Flexible Cooling Support"
+    }
+  ],
+  "productFeatureGrid": {
+  "title": "Product Highlights",
+  "cards": [
+  {
+    "type": "wide",
+    "title": "Panoramic 3-Sided Tempered Glass Design",
+    "description": "Seamless aquarium-style tempered glass panels provide a stunning panoramic view of your entire build.",
+    "image": "static/GENESIS/GENESIS_FEA1.png"
+  },
+  {
+    "type": "wide",
+    "title": "Optimized Right Mesh Ventilation",
+    "description": "The ventilated right mesh panel improves airflow for efficient cooling performance.",
+    "image": "static/GENESIS/GENESIS_FEA2.png"
+  },
+  {
+    "type": "wide",
+    "title": "Bottom Magnetic Dust Filter",
+    "description": "The bottom magnetic dust filter is easy to remove and clean, helping keep your system dust-free.",
+    "image": "static/GENESIS/GENESIS_FEA3.png"
+  },
+  {
+    "type": "wide",
+    "title": "Wide Motherboard Support",
+    "description": "Supports ATX, Micro-ATX and Mini-ITX motherboards, including back-connect motherboard designs.",
+    "image": "static/GENESIS/GENESIS_FEA4.png"
+  },
+  {
+    "type": "wide",
+    "title": "Flexible Cooling Support",
+    "description": "Supports up to a 360mm liquid cooling radiator and CPU air coolers up to 160mm in height.",
+    "image": "static/GENESIS/GENESIS.png",
+    "airCoolingImage": "static/GENESIS/GENESIS_aircooling.png",
+    "liquidCoolingImage": "static/GENESIS/GENESIS_liquidcooling.png"
+  }
+]
+},
+
+
+      "specs": {
+        "Model": "GENESIS",
+        "MB Type": "ATX , M-ATX , ITX (support MB back plug)",
+        "Front Panel": "Tempered Glass Panel",
+        "Side Panel": "Left Tempered Glass, Right Metal with Airy Holes",
+        "Top Panel": "Tempered Glass Panel",
+        "Bottom Panel": "Magnetic Dust Filter",
+        "I/O Port USB": "USB3.0 x 1, USB2.0 x 1, Type-C x 1, HD Audio x 1, Power Button, Reset Button",
+        "PSU": "ATX PSU (max 240mm)",
+        "Fan Support": "<b>Motherboard</b>~ 12cm x 2 <br><b>Rear </b>~ 12cm x 1 <br><b> Bottom</b> ~ 12cm x 3 ",
+        "Radiator Support": "<b>Motherboard</b>~ 280 / 240 / 120mm <br><b>Bottom </b> ~ 360 / 280 / 240mm",
+        "Drive Bay 3.5″" : "HDD 1 pc",
+        "Drive Bay 2.5″" : "SSD 2 pcs",
+        "PCI Expansion Slots" : "7",
+        "Max VGA Card" : "410mm",
+        "Max CPU Cooler" : "160mm",
+        "Case Size" : "420mm(L) x 285mm(W) x 380mm(H)",
+        "Carton Size" : "515mm(L) x 358mm(W) x 425mm(H)"
+
+      }
+    },
+
+    {
+      "id": "genesism",
+      "name": "GENESIS-M",
+      "category": "case",
+      "hot": false,
+      "new": false,
+       "price":"",
+      "fans": "with 4 Infinity ARGB Fans",
+      "product-type": "M-ATX",
+      "description": "The Genesis-M reveals your build through three-sided tempered glass, offering a compact panoramic view. Mini aquarium-inspired, it frames GPUs, motherboards, and cooling solutions with refined simplicity, keeping the interior clean, polished, and striking",
+      "heroTitle": "Genesis-M Micro-ATX Tempered Glass PC Case",
+      "heroDescription": "offers efficient cooling performance in a clean and compact form factor",
+      "mainImage": "static/GENESIS-M/GENESIS-M BLACK-01.png",
+      "heroImage": "static/GENESIS-M/GENESIS-M WHITE-03.png",
+      "descriptionImage": "static/ALTAS-BLACK-03.png",
+      "specImage": "static/GENESIS-M/GENESIS-M BLACK-02.png",
+      "variations": {
+      "black": [
+        "static/GENESIS-M/GENESIS-M BLACK-01.png",
+        "static/GENESIS-M/GENESIS-M BLACK-02.png",
+        "static/GENESIS-M/GENESIS-M BLACK-03.png",
+        "static/GENESIS-M/GENESIS-M BLACK-04.png",
+        "static/GENESIS-M/GENESIS-M BLACK-05.png",
+        "static/GENESIS-M/GENESIS-M BLACK-06.png",
+        "static/GENESIS-M/GENESIS-M BLACK-07.png",
+        "static/GENESIS-M/GENESIS-M BLACK-08.png"
+      ],
+      "white": [
+        "static/GENESIS-M/GENESIS-M WHITE-01.png",
+        "static/GENESIS-M/GENESIS-M WHITE-02.png",
+        "static/GENESIS-M/GENESIS-M WHITE-03.png",
+        "static/GENESIS-M/GENESIS-M WHITE-04.png",
+        "static/GENESIS-M/GENESIS-M WHITE-05.png",
+        "static/GENESIS-M/GENESIS-M WHITE-06.png",
+        "static/GENESIS-M/GENESIS-M WHITE-07.png",
+        "static/GENESIS-M/GENESIS-M WHITE-08.png"
+        
+      ]
+    }, 
+   "sellingPoints": [
+  {
+    "icon": "fa-regular fa-square",
+    "title": "Mini Aquarium Design"
+  },
+  {
+    "icon": "fa-solid fa-wind",
+    "title": "Optimized Mesh Ventilation"
+  },
+  {
+    "icon": "fa-solid fa-ruler-combined",
+    "title": "Product Dimension"
+  },
+  {
+    "icon": "fa-solid fa-magnet",
+    "title": "Magnetic Dust Filter"
+  },
+  {
+    "icon": "fa-solid fa-fan",
+    "title": "Cooling Support"
+  }
+],
+
+ "productFeatureGrid": {
+  "title": "Product Highlights",
+  "cards": [
+    {
+      "type": "wide",
+      "title": "Mini Aquarium Design",
+      "subtitle": "Three-Sided Glass View",
+      "description": "The design provides a premium showcase experience.",
+      "image": "static/GENESIS-M/1.png"
+    },
+    {
+      "type": "wide",
+      "title": "Optimized Rear Mesh Ventilation",
+      "subtitle": "",
+      "description": "Rear mesh ventilation improves airflow performance.",
+      "image": "static/GENESIS-M/3.png"
+    },
+    {
+      "type": "wide",
+      "title": "Smart Case Layout",
+      "subtitle": "",
+      "description": "L 420mm × W 285mm × H350mm",
+      "image": "static/GENESIS-M/2.png"
+    },
+
+    {
+      "type": "wide",
+      "title": "Magnetic Dust Filter",
+      "subtitle": "Easy Cleaning Design",
+      "description": "Bottom magnetic dust filter keeps components cleaner with easy removal.",
+      "image": "static/GENESIS-M/4.png"
+    },
+    {
+      "type": "wide",
+      "title": "Cooling Support",
+      "subtitle": "Cooling Ready",
+      "description": "Flexible radiator support for improved thermal performance.",
+      "image": "static/GENESIS-M/5.png",
+      "airCoolingImage": "static/GENESIS-M/genesism_aircooling.png",
+    "liquidCoolingImage": "static/GENESIS-M/genesism_liquidcooling.png"
+    }
+  ]
+},
+      "specs": {
+        "Model": "GENESIS-M",
+        "MB Type": "M-ATX , ITX (support MB back plug)",
+        "Front Panel": "Tempered Glass Panel",
+        "Side Panel": "Left Tempered Glass, Right Metal with Airy Holes",
+        "Top Panel": "Tempered Glass Panel",
+        "Bottom Panel": "Magnetic Dust Filter",
+        "I/O Port USB": "USB3.0 x 2, Type-C x 1, HD Audio x 1, Power Button, Reset Button",
+        "PSU": "ATX PSU (max 240mm)",
+        "Fan Support": "<b>Motherboard</b>~ 12cm x 2 <br><b>Rear </b>~ 12cm x 1 <br><b> Bottom</b> ~ 12cm x 3 ",
+        "Radiator Support": "<b>Motherboard</b>~ 280 / 240 / 120mm <br><b>Bottom </b> ~ 360 / 280 / 240mm",
+        "Drive Bay 3.5″" : "HDD 1 pc",
+        "Drive Bay 2.5″" : "SSD 2 pcs",
+        "PCI Expansion Slots" : "5",
+        "Max VGA Card" : "410mm",
+        "Max CPU Cooler" : "160mm",
+        "Case Size" : "420mm(L) x 285mm(W) x 350mm(H)",
+        "Carton Size" : "515mm(L) x 358mm(W) x 415mm(H)"
+
+      }
+    },
+
+     {
+      "id": "kratos",
+      "name": "KRATOS",
+      "category": "case",
+      "hot": false,
+      "new": false,
+      "price":"",
+      "product-type": "ATX",
+      "fans": "with 4 Infinity ARGB Fans",
+      "description": "Invasion Plus Kratos features artistic geometric lines and an architectural front panel, highlighted by a optional 5.5” front screen. Clean, modern, and quietly confident- made to give your setup a distinct presence.",
+      "heroTitle": "Exceptional Air Cooling Support",
+      "heroDescription": "Featuring a Hight - Airflow layout and multiple fan mounts to keep your components cool under heavy workloads ",
+      "mainImage": "static/KRATOS/KRATOS-LCD-00.png",
+      "heroImage": "static/KRATOS/KRATOS-LCD-00.png",
+      "descriptionImage": "static/ALTAS-BLACK-03.png",
+      "specImage": "static/KRATOS/KRATOS-BLACK-02.png",
+      "variations": {
+      "lcd": [
+        "static/KRATOS/KRATOS-LCD-00.png",
+        "static/KRATOS/KRATOS-LCD-02.png",
+        "static/KRATOS/KRATOS-LCD-03.png"
+      ],
+      "black": [
+        "static/KRATOS/KRATOS-BLACK-01.png",
+        "static/KRATOS/KRATOS-BLACK-02.png",
+        "static/KRATOS/KRATOS-BLACK-03.png"
+      ],
+      "white": [
+        "static/KRATOS/KRATOS-WHITE-01.png",
+        "static/KRATOS/KRATOS-WHITE-02.png",
+        "static/KRATOS/KRATOS-WHITE-03.png"
+        
+      ]
+    },
+    "sellingPoints": [
+  {
+    "icon": "fa-solid fa-shapes",
+    "title": "Geometric Front Design"
+  },
+  {
+    "icon": "fa-solid fa-tv",
+    "title": "5.5-inch Screen Support"
+  },
+  {
+    "icon": "fa-solid fa-wind",
+    "title": "Optimized Mesh Ventilation"
+  },
+  {
+    "icon": "fa-solid fa-ruler-combined",
+    "title": "Product Dimension"
+  },
+  {
+    "icon": "fa-solid fa-border-all",
+    "title": "Motherboard Support"
+  },
+  {
+    "icon": "fa-solid fa-fan",
+    "title": "Cooling Support"
+  }
+],
+
+    "productFeatureGrid": {
+  "title": "Product Highlights",
+  "cards": [
+    {
+      "type": "wide",
+      "title": "Geometric Front Design",
+      "subtitle": "Architectural Style",
+      "description": "Unique artistic front panel design with premium geometric lines.",
+      "image": "static/KRATOS/1.png"
+    },
+    {
+      "type": "wide",
+      "title": "5.5-inch Screen Ready",
+      "subtitle": "Smart Display Support",
+      "description": "",
+      "image": "static/KRATOS/2.png"
+    },
+    {
+      "type": "wide",
+      "title": "Optimized Ventilation",
+      "subtitle": "",
+      "description": "Better airflow improves cooling",
+      "image": "static/KRATOS/4.png"
+    },
+    {
+      "type": "wide",
+      "title": "Smart Case Layout",
+      "subtitle": "L 440mm × W 242mm × H 370mm",
+      "description": "With USB 3.0 x 2 + Type-C x 1 + HD Audio",
+      "image": "static/KRATOS/3.png"
+    },
+    {
+      "type": "wide",
+      "title": "Wide Compatibility",
+      "subtitle": "ATX / M-ATX / ITX",
+      "description": "Supports multiple motherboard sizes for flexible PC builds.",
+      "image": "static/KRATOS/5.png"
+    },
+    {
+      "type": "wide",
+      "title": "Cooling Support",
+      "subtitle": "Cooling Ready",
+      "description": "Designed for enhanced cooling performance.",
+      "image": "static/KRATOS/kratos.png",
+      "airCoolingImage": "static/KRATOS/kratos_aircooling.png",
+    "liquidCoolingImage": "static/KRATOS/kratos_liquidcooling.png"
+    }
+  ]
+},
+
+      "specs": {
+        "Model": "KRATOS",
+        "Front Panel": "ABS + plastic + Tempered Glass",
+        "Left Side Panel": "Tempered glass with buckle",
+        "Right Side Panel": "Ventilation holes on right side",
+        "Chassis": "0.6 - 0.8 mm",
+        "USB3.0 x 2": "Included",
+        "Type C x 1": "Included",
+        "Motherboard Support": "ITX/M-ATX/ATX",
+        "PSU Support": "Front Top/ATX/140-160MM",
+        "Cooling Support": "<b>Front</b>~ N/A <br><b>M/B</b> ~ N/A <br> <b>Top </b>~ 3 x 120mm (Fan Optional) - support 360mm liquid cooler <br><b> Rear</b> ~ 1 x 120mm (Fan optional) - support 120mm liquid cooler <br><b>Bottom</b> ~ 3 x 120mm (Fan optional) ",
+        "Drive Bays": "5.25″ ODD x0 <br>3.5″ HDD x2<br>2.5″ SSD x3",
+        "PCI Slots" : "x 7",
+        "Product Dimesion": "<b>Chassis size</b> ~ 440(L) x 242(W) x 350mm (H) <br><b>Product Size</b> ~ 440(L) x 242(W) x 370mm (H) <br><b>Carton Size</b> ~ 440(L) x 305(W) x 530mm (H) ",
+        "Package" : "Poly Foam",
+        "Max VGA Card" : "395mm",
+        "Max CPU Cooler" : "180mm"
+
+      }
+    },
+
+    {
+      "id": "thanatos",
+      "name": "THANATOS",
+      "category": "case",
+      "hot": false,
+      "new": false,
+       "price":"",
+      "fans": "with 6 Infinity ARGB Fans",
+      "product-type": "ATX",
+      "description": "Invasion Plus Thanatos features a refined vertical layout that optimizes airflow through natural heat rise, reduces desk space, and showcases your components in a clean, architectural form-crafted for balanced performance and a premium sanctuary.",
+      "heroTitle": "Exceptional Air Cooling Support",
+      "heroDescription": "Featuring a Hight - Airflow layout and multiple fan mounts to keep your components cool under heavy workloads ",
+      "mainImage": "static/THANATOS/THANATOS BLACK - 01.png",
+      "descriptionImage": "static/THANATOS/THANATOS BLACK - 01.png",
+      "specImage": "static/THANATOS/spec.jpg",
+      "variations": {
+      "black": [
+        "static/THANATOS/THANATOS BLACK - 01.png",
+        "static/THANATOS/THANATOS BLACK - 02.png"
+      ],
+      "white": [
+        "static/THANATOS/THANATOS WHITE - 01.png",
+        "static/THANATOS/THANATOS WHITE - 02.png"
+        
+      ]
+    },
+   "sellingPoints": [
+  {
+    "icon": "fa-solid fa-arrow-up",
+    "title": "Vertical Motherboard Placement"
+  },
+  {
+    "icon": "fa-solid fa-display",
+    "title": "Standing Graphic Card"
+  },
+  {
+    "icon": "fa-solid fa-ruler-combined",
+    "title": "Product Dimension"
+  },
+  {
+    "icon": "fa-solid fa-border-all",
+    "title": "Wide Motherboard Support"
+  },
+  {
+    "icon": "fa-solid fa-fan",
+    "title": "Cooling Support"
+  }
+],
+ "productFeatureGrid": {
+  "title": "Product Highlights",
+  "cards": [
+    {
+      "type": "wide",
+      "title": "Vertical Motherboard Placement",
+      "subtitle": "Better Airflow",
+      "description": "Vertical layout improves airflow efficiency for better cooling performance.",
+      "image": "static/THANATOS/1.png"
+    },
+    {
+      "type": "wide",
+      "title": "Standing Graphic Card",
+      "subtitle": "",
+      "description": "Vertical GPU support reduces sag and improves GPU stability.",
+      "image": "static/THANATOS/2.png"
+    },
+    {
+      "type": "wide",
+      "title": "Smart Case Layout",
+      "subtitle": "L444 × W238 × H495mm",
+      "description": "With USB 3.0 x 2 + Type-C x 1 + HD Audio",
+      "image": "static/THANATOS/3.png"
+    },
+    {
+      "type": "wide",
+      "title": "Wide Compatibility",
+      "subtitle": "ATX / Micro-ATX / Mini-ITX",
+      "description": "Supports multiple motherboard sizes for flexible PC builds.",
+      "image": "static/THANATOS/4.png"
+    },
+    {
+      "type": "wide",
+      "title": "Advanced Cooling Support",
+      "subtitle": "360mm Liquid Cooling Ready",
+      "description": "Supports up to 360mm liquid cooling and 120mm air cooling.",
+      "image": "static/THANATOS/thanatos.png",
+      "airCoolingImage": "static/THANATOS/thanatos_aircooling.png",
+      "liquidCoolingImage": "static/THANATOS/thanatos_liquidcooling.png"
+    }
+  ]
+},
+      "specs": {
+        "Model": "THANATOS",
+        "Front Panel": "ABS + plastic + Tempered Glass",
+        "Left Side Panel": "Tempered glass with buckle",
+        "Right Side Panel": "Ventilation holes on right side",
+        "Chassis": "0.6 - 0.7 mm",
+        "USB3.0 x 2": "Included",
+        "Type C x 1": "Included",
+        "Motherboard Support": "ITX/M-ATX/ATX",
+         "PSU Port": "Top/ATX/140-160MM",
+        "Size": "<b>Front</b>~ N/A <br><b>M/B</b> ~ 3 x 120mm(Fan optional)<br> <b>Top </b>~ 2 x 120mm (Fan Optional) - support 240mm liquid cooler <br><b> Rear</b> ~ 3 x 120mm (Fan optional) - support 240 or 360mm liquid cooler <br><b>Bottom</b> ~ 2 x 120mm (Fan optional) ",
+        "Drive Bays": "5.25″ ODD x0 <br>3.5″ HDD x2<br>2.5″ SSD x4",
+        "PCI Slots" : "x 8",
+        "Product Dimesion": "<b>Chassis size</b> ~ 444(L) x 238(W) x 495mm (H) <br><b>Product Size</b> ~ 444(L) x 238(W) x 495mm (H) <br><b>Carton Size</b> ~ 542(L) x 310(W) x 588mm (H) ",
+        "Package" : "PEPE Foam",
+        "Max VGA Card" : "410mm",
+        "Max CPU Cooler" : "178mm"
+
+      }
+    },
+
+    {
+      "id": "theview5",
+      "name": "THE VIEW 5",
+      "category": "case",
+      "hot": true,
+      "new": false,
+       "price":"",
+      "fans": "with 3 Infinity ARGB Fans",
+      "product-type": "M-ATX",
+      "description": "Invasion Plus View 5 puts your build on full panoramic seaview, with its 5.5-inch TFT screen for crisp, vibrant visuals. Vertical airflow keeps it cool and smooth—make your rig truly your own.",
+      "heroTitle": "Exceptional Air Cooling Support",
+      "mainImage": "static/THE VIEW 5/THE VIEW 5 BLACK-01.png",
+      "descriptionImage": "static/ALTAS-BLACK-03.png",
+      "specImage": "static/THE VIEW 5/THE VIEW 5 BLACK-03.png",
+      "specImage2": "static/THE VIEW 5/bann8.png",
+      "variations": {
+      "black": [
+        "static/THE VIEW 5/THE VIEW 5 BLACK-01.png",
+        "static/THE VIEW 5/THE VIEW 5 BLACK-02.png",
+        "static/THE VIEW 5/THE VIEW 5 BLACK-03.png",
+        "static/THE VIEW 5/THE VIEW 5 BLACK-04.png",
+        "static/THE VIEW 5/THE VIEW 5 BLACK-05.png"
+      ],
+      "white": [
+        "static/THE VIEW 5/THE VIEW 5 WHITE-01.png",
+        "static/THE VIEW 5/THE VIEW 5 WHITE-02.png",
+        "static/THE VIEW 5/THE VIEW 5 WHITE-03.png",
+        "static/THE VIEW 5/THE VIEW 5 WHITE-04.png",
+        "static/THE VIEW 5/THE VIEW 5 WHITE-05.png"
+        
+      ]
+    },
+    "sellingPoints": [
+  {
+    "icon": "fa-solid fa-tv",
+    "title": "5.5-inch TFT Screen"
+  },
+  {
+    "icon": "fa-solid fa-filter",
+    "title": "Metal Top Dust Filter"
+  },
+  {
+    "icon": "fa-solid fa-ruler-combined",
+    "title": "Product Dimension"
+  },
+  {
+    "icon": "fa-solid fa-border-all",
+    "title": "Motherboard Support"
+  },
+  {
+    "icon": "fa-solid fa-fan",
+    "title": "Cooling Support"
+  }
+],
+    "productFeatureGrid": {
+  "title": "Product Highlights",
+  "cards": [
+    {
+      "type": "wide",
+      "title": "5.5-inch TFT Screen",
+      "subtitle": "Vibrant Visual Display",
+      "description": "Crisp display screen enhances your PC showcase experience.",
+      "image": "static/THE VIEW 5/1.png"
+    },
+    {
+      "type": "wide",
+      "title": "Metal Top Cover",
+      "subtitle": "Dust Filter Design",
+      "description": "",
+      "image": "static/THE VIEW 5/2.png"
+    },
+    {
+      "type": "wide",
+      "title": "Smart Case Layout",
+      "subtitle": "L 460mm × W 220mm × H 403mm",
+      "description": "With USB 3.0 x 2 + Type-C x 1 + HD Audio",
+      "image": "static/THE VIEW 5/3.png"
+    },
+    {
+      "type": "wide",
+      "title": "Motherboard Support",
+      "subtitle": "M-ATX / ITX Ready",
+      "description": "Supports M-ATX and ITX motherboards for compact builds.",
+      "image": "static/THE VIEW 5/4.png"
+    },
+    {
+      "type": "wide",
+      "title": "Cooling Support",
+      "subtitle": "Cooling Ready",
+      "description": "Flexible radiator support improves cooling performance.",
+      "image": "static/THE VIEW 5/5.png",
+      "airCoolingImage": "static/THE VIEW 5/5_aircooling.png",
+      "liquidCoolingImage": "static/THE VIEW 5/5_liquidcooling.png"
+    }
+  ]
+},
+      "specs": {
+        "Model": "The View 5",
+        "Motherboard Support": "MicroATX / ITX",
+        "LCD Screen": "Optional Customized 5″ TFT Display",
+        "Top Cover": "Metal Top Cover with Dust Filter",
+        "Left Side Panel": "Tempered glass with Buckle Design",
+        "Right Side Panel": "Metal Side Cover",
+        "Chassis Thickness": "0.45 - 0.55 mm",
+        "I/O Port": "USB 3.0 x 2 + HD AUDIO (Included) <br>USB 3.1 / Type-C (Included)",
+        "PSU Position": "Bottom Mounted / ATX PSU Max 240mm",
+        "Reserved Fan Ports": "<b>M/B</b> ~ 2x120mm (Fan optional) <br><b>Rear</b> ~ 1 x 120mm (Fan optional) <br><b>Top</b> ~ 3x120mm or 2x140mm (Fan optional) <br><b>PSU Chamber</b> ~ 3 x 120mm (Fan optional)",
+        "Reserved Radiator Support": "<b>Rear</b> ~ 1 x 120mm AIO support <br><b>Top</b> ~ 240 / 280 / 360mm AIO support ",
+        "Drive Bays": "3.5″ HDD x2 , 2.5″ SSD x1",
+        "PCI Slots" : "4 Slots",
+        "Chassis size": "455(L) x 220(W) x 395mm (H)",
+        "Product Size": "460(L) x 220(W) x 403mm (H)",
+        "Carton Size": "452(L) x 277(W) x 538mm (H)",
+        "Max CPU Cooler Height" : "174mm",
+        "Max VGA Card Length" : "420mm",
+        "Cable Management Space" : "Max 21mm"
+
+      },
+
+      "specTitle2": "5inch TFT Screen Specification",
+      "specs2": {
+        "Screen Size": "5 inch",
+        "Screen Resolution": "480 x 854",
+        "Screen Aspect Ratio": "2:1",
+        "Screen Type": "TFT",
+        "Screen Brightness": "350-400 cd/m²",
+        "Color Display Capability": "3 SPI + 24-bit RGB",
+        "Viewing Angle": "Full Viewing Angle",
+        "Interface Type": "4-Pin USB",
+        "Power Supply Method": "USB Powered",
+        "Supported Video Format": "MP 4",
+        "Supported Image Format" : "JPG, GIF"
+
+      }
+    },
+
+    {
+      "id": "zoom",
+      "name": "ZOOM",
+      "category": "case",
+      "hot": true,
+      "new": false,
+       "price":"",
+      "fans": "with 4 Infinity ARGB Fans",
+      "product-type": "ATX",
+      "description": "Invasion Plus Zoom puts your build on full panoramic seaview, where every detail can be truly appreciated and shine. With smart vertical airflow and refined mesh, your system stays smooth, quiet, and naturally cool. Balanced, alive, and artful—it just feels right the moment you power it up.",
+      "heroTitle": "Exceptional Air Cooling Support",
+      "heroDescription": "Featuring a Hight - Airflow layout and multiple fan mounts to keep your components cool under heavy workloads ",
+      "mainImage": "static/ZOOM/6.png",
+      "specImage": "static/ZOOM/15.png",
+      "variations": {
+      "black": [
+        "static/ZOOM/6.png",
+        "static/ZOOM/13.png",
+        "static/ZOOM/14.png",
+        "static/ZOOM/15.png",
+        "static/ZOOM/7.png",
+        "static/ZOOM/8.png",
+        "static/ZOOM/9.png",
+        "static/ZOOM/10.png",
+        "static/ZOOM/11.png",
+        "static/ZOOM/12.png"
+      ],
+      "white": [
+        "static/ZOOM/5.png",
+        "static/ZOOM/1.png",
+        "static/ZOOM/2.png",
+        "static/ZOOM/3.png",
+        "static/ZOOM/4.png"
+      ]
+    },
+    "sellingPoints": [
+    {
+      "icon": "fa-regular fa-square",
+      "title": "Panoramic “Seaview”"
+    },
+    {
+      "icon": "fa-solid fa-microchip",
+      "title": "Wide Compatibility"
+    },
+    {
+      "icon": "fa-solid fa-plug",
+      "title": "Back-Connect Ready"
+    },
+    {
+      "icon": "fa-solid fa-ruler-combined",
+      "title": "Product Dimension"
+    },
+    {
+      "icon": "fa-solid fa-fan",
+      "title": "Cooling Support"
+    },
+    {
+      "icon": "fa-solid fa-screwdriver-wrench",
+      "title": "Quick Installation & Detachable Design"
+    }
+  ],
+  "productFeatureGrid": {
+  "title": "Product Highlights",
+  "cards": [
+    {
+      "type": "wide",
+      "title": "Panoramic “Seaview”",
+      "description": "Designed to make every build stand out.",
+      "image": "static/ZOOM/zoom_fea1.png"
+    },
+    {
+      "type": "wide",
+      "title": "Wide Compatibility",
+      "description": "Supports ATX, Micro-ATX and Mini-ITX motherboards. ",
+      "image": "static/ZOOM/zoom_fea3.png"
+    },
+    {
+      "type": "wide",
+      "title": "Back-Connect Ready",
+      "description": "Supports back-connect motherboards for cleaner cable management and smoother airflow.",
+      "image": "static/ZOOM/zoom_fea2.png"
+    },
+    {
+      "type":"wide",
+      "title": "Product Dimension",
+      "subtitle":"L 445mm * W 293mm * H 455mm",
+      "description": "I/O Ports USB",
+      "image": "static/ZOOM/zoom_fea4.png"
+    },
+    {
+      "type": "wide",
+      "title": "Cooling Support:",
+      "description": "Supports up to 360mm liquid cooling and 120mm air coolers.",
+      "image": "static/ZOOM/zoom_fea5.png",
+      "airCoolingImage": "static/ZOOM/zoom_aircooling.png",
+      "liquidCoolingImage": "static/ZOOM/zoom_liquidcooling.png"
+    },
+    {
+      "type": "wide",
+      "title": "Quick Installation & Detachable Design",
+      "description": "Tool-friendly top metal panel and side tempered glass for fast installation and maintenance.",
+      "image": "static/ZOOM/zoom_fea6.png"
+    }
+  ]
+},
+
+
+      "specs": {
+        "Model": "ZOOM",
+        "MB Type" : "ATX, Micro-ATX, Mini-ITX (Support back-connect motherboard)",
+        "Front Panel": "Tempered Gray Glass",
+        "Side Panel": "Left Quick Detachable Tempered Glass, Right Metal",
+        "Top Panel": "Quick Detachable Metal Board",
+        "I/O Port USB": "USB3.0 x 2 + TYPE-C; HD Audio x 1; Power Button",
+        "PSU": "ATX PSU 200mm",
+        "Fan Support": "<b>Front</b>~ 12cm Fan x 3 <br><b>Left Rear </b>~ 12cm Fan x 1 <br><b>Top</b> ~ 12cm Fan x 3<br><b> Bottom</b> ~ 12cm Fan x 3 ",
+        "Radiator Support": "<b>Front</b>~ 240mm or 360mm <br><b>Top </b> ~ 240mm or 360mm",
+        "Drive Bay 3.5″" : "1",
+        "Drive Bay 2.5″" : "2",
+        "PCI Expansion Slots" : "7",
+        "Chassis size" :"445(L) x 293(W) x 435mm (H)", 
+        "Case Size": "445(L) x 293(W) x 455mm (H)",
+        "Carton Size" : "535(L) x 381(W) x 531mm(H)",
+         "Max CPU Cooler Height" : "180mm",
+        "Max VGA Card Length" : "300mm"
+      }
+    },
+
+    {
+  "id": "aether",
+  "name": "AETHER",
+  "category": "case",
+  "hot": false,
+  "new": true,
+ "price":"",
+  "fans": "with 6 Infinity ARGB Fans",
+  "product-type": "M-ATX",
+  "description": "Invasion Plus Aether blends refined aesthetics with thoughtful design. The detachable top panel enhances accessibility and airflow flexibility, while seamless ARGB accents on the top and bottom create a subtle futuristic glow, adding a distinctive character to your setup.",
+  "mainImage": "static/AETHER/AETHER BLACK-01.png",
+  "specImage": "static/AETHER/AETHER WHITE - 04.png",
+
+  "variations": {
+    "black": [
+      "static/AETHER/AETHER BLACK-01.png"
+    ],
+    "white": [
+      "static/AETHER/AETHER WHITE - 01.png",
+      "static/AETHER/AETHER WHITE - 02.png",
+      "static/AETHER/AETHER WHITE - 03.png",
+      "static/AETHER/AETHER WHITE - 04.png",
+      "static/AETHER/AETHER WHITE - 05.png"
+    ]
+  },
+
+  "sellingPoints": [
+    {
+      "icon": "fa-solid fa-lightbulb",
+      "title": "Dual-Zone ARGB Design"
+    },
+    {
+      "icon": "fa-solid fa-layer-group",
+      "title": "Detachable Top Panel"
+    },
+    {
+      "icon": "fa-solid fa-cube",
+      "title": "Compact Panoramic View"
+    },
+    {
+      "icon": "fa-solid fa-border-all",
+      "title": "Dual Chamber Layout"
+    },
+    {
+      "icon": "fa-solid fa-ruler-combined",
+      "title": "Product Dimension"
+    },
+    {
+      "icon": "fa-solid fa-fan",
+      "title": "Cooling Support"
+    }
+  ],
+
+  "productFeatureGrid": {
+    "title": "Product Highlights",
+    "cards": [
+      {
+        "type": "wide",
+        "title": "Dual-Zone ARGB Design",
+        "subtitle": "Signature Lighting Style",
+        "description": "Top and bottom lighting accents create a premium showcase build.",
+        "image": "static/AETHER/1.png"
+      },
+      {
+        "type": "wide",
+        "title": "Detachable Top Panel",
+        "subtitle": "",
+        "description": "Easy and quick access for cooling setup and maintainance",
+        "image": "static/AETHER/2.png"
+      },
+      {
+        "type": "wide",
+        "title": "Compact Panoramic View",
+        "subtitle": "",
+        "description": "Fits with smaller desks while showcasing your build with a wide view",
+        "image": "static/AETHER/3.png"
+      },
+      {
+        "type": "wide",
+        "title": "Dual Chamber Layout",
+        "subtitle": "Clean Build Structure",
+        "description": "Separate chamber design improves cable organization and airflow efficiency.",
+        "image": "static/AETHER/4.png"
+      },
+      {
+        "type": "wide",
+        "title": "Smart Case Layout",
+        "subtitle": "L 420mm × W 278mm × H365mm",
+        "description": "USB I/O connectivity.",
+        "image": "static/AETHER/5.png"
+      },
+      {
+        "type": "wide",
+        "title": "Cooling Support",
+        "subtitle": "360mm Liquid Cooling Ready",
+        "description": "Top supports 360mm liquid cooling, side supports 240mm cooling, with rear and bottom fan support.",
+        "image": "static/AETHER/6.png",
+        "airCoolingImage": "static/AETHER/aether_aircooling.png",
+        "liquidCoolingImage": "static/AETHER/aether_liquidcooling.png"
+      }
+    ]
+  },
+      "specs": {
+      "Model": "AETHER",
+      "Front Panel": "Tempered Glass",
+      "Left Side Panel": "Tempered Glass",
+      "Right Side Panel": "Metal Panel",
+      "Chassis": "0.5 mm",
+      "USB3.0 x 2": "Included",
+      "Type C x 1": "Included",
+      "Motherboard Support": "M-ATX / ITX",
+      "PSU Support": "Rear / ATX / 140-160MM",
+      "Fan/Radiator Support": "<b>Top</b> ~ 3 x 120mm (Fan optional) - support 360mm liquid cooler <br><b>Side M/B</b> ~ 2 x 120mm (Fan optional) - support 240mm liquid cooler <br><b>Rear</b> ~ 1 x 120mm (Fan optional) <br><b>Bottom</b> ~ 3 x 120mm (Fan optional)",
+      "Drive Bays": "5.25″ ODD x0 <br>3.5″ HDD x1 <br>2.5″ SSD x1",
+      "PCI Slots": "x 4",
+      "Product Dimesion": "<b>Chassis size</b> ~ 416(L) x 278(W) x 333mm (H) <br><b>Product Size</b> ~ 420(L) x 278(W) x 365mm (H) <br><b>Carton Size</b> ~ 425(L) x 340(W) x 485mm (H)",
+      "Package": "Poly Foam",
+      "Max VGA Card": "410mm",
+      "Max CPU Cooler": "158mm"
+    }
+
+  },
+
+  {
+      "id": "hyperion",
+      "name": "HYPERION",
+      "category": "case",
+      "hot": false,
+      "new": true,
+       "price":"",
+      "fans": "with 3 Infinity ARGB Fans",
+      "product-type": "M-ATX",
+      "description":"  Invasion Plus Aether transforms your setup with its sleek design and bottom ARGB accent, creating a distinctive glow that brings your build to life. With efficient airflow, quick access, and a clean layout, it delivers the perfect balance of performance, functionality, and style.",
+      "mainImage": "static/HYPERION/HYPERION-01.png",
+      "specImage": "static/HYPERION/HYPERION-03.png",
+
+      "variations": {
+        "black": [
+          "static/HYPERION/HYPERION-01.png",
+          "static/HYPERION/HYPERION-02.png",
+          "static/HYPERION/HYPERION-03.png",
+          "static/HYPERION/HYPERION-04.png",
+          "static/HYPERION/HYPERION-05.png",
+          "static/HYPERION/HYPERION-06.png"
+        ]
+      },
+
+      "sellingPoints": [
+      {
+        "icon": "fa-solid fa-lightbulb",
+        "title": "ARGB Underglow Design"
+      },
+      {
+        "icon": "fa-solid fa-wind",
+        "title": "Optimized Mesh Ventilation"
+      },
+      {
+        "icon": "fa-solid fa-cube",
+        "title": "Compact Panoramic View"
+      },
+      {
+        "icon": "fa-solid fa-ruler-combined",
+        "title": "Product Dimension"
+      },
+      {
+        "icon": "fa-solid fa-fan",
+        "title": "Cooling Support"
+      }
+    ],
+    "productFeatureGrid": {
+      "title": "Product Highlights",
+      "cards": [
+        {
+          "type": "wide",
+          "title": "ARGB Underglow Design",
+          "subtitle": "Visual Lighting Highlight",
+          "description": "Bottom ARGB lighting enhances your setup with a premium gaming appearance.",
+          "image": "static/HYPERION/1.png"
+        },
+        {
+          "type": "wide",
+          "title": "Optimized Mesh Ventilation",
+          "subtitle": "Better Cooling Airflow",
+          "description": "Right-side mesh panel improves airflow and keeps components cooler.",
+          "image": "static/HYPERION/2.png"
+        },
+        {
+          "type": "wide",
+          "title": "Compact Panoramic View",
+          "subtitle": "Wide Showcase Design",
+          "description": "Compact design fits smaller spaces while providing a clear build showcase.",
+          "image": "static/HYPERION/3.png"
+        },
+        {
+          "type": "wide",
+          "title": "Smart Case Layout",
+          "subtitle": "L 434mm × W 218mm × H 414mm",
+          "description": "Optimized case size with convenient USB I/O connectivity.",
+          "image": "static/HYPERION/4.png"
+        },
+        {
+          "type": "wide",
+          "title": "Cooling Support",
+          "subtitle": "360mm Liquid Cooling Ready",
+          "description": "Supports top 360mm and rear 120mm liquid cooling with multiple fan options.",
+          "image": "static/HYPERION/5.png",
+          "airCoolingImage": "static/HYPERION/hyperion_aircooler.png",
+          "liquidCoolingImage": "static/HYPERION/hyperion_liquidcooler.png"
+        }
+      ]
+    },
+
+      
+    "specs": {
+      "Model": "HYPERION",
+      "Front Panel": "Tempered gray glass with silk print",
+      "Left Side Panel": "Magnet glass side board with 1 screw",
+      "Right Side Panel": "Ventilation holes on right side",
+      "Chassis": "0.45 mm",
+      "USB3.0 x 2": "Included",
+      "Type C x 1": "Included",
+      "Motherboard Support": "ITX / M-ATX",
+      "PSU": "ATX - Up to 250mm length",
+      "Fan/Radiator Support": "<b>Front</b> ~ N/A <br><b>M/B</b> ~ 2 x 120mm (Fan optional) <br><b>Top</b> ~ 3 x 120mm (Fan optional) - Support 360mm liquid cooler <br><b>Rear</b> ~ 1 x 120mm (Fan optional) - Support 120mm liquid cooler <br><b>Bottom</b> ~ 3 x 120mm (Fan optional)",
+      "Drive Bays": "5.25″ ODD x0 <br>3.5″ HDD x2 <br>2.5″ SSD x1",
+      "PCI Slots": "x 5",
+      "Product Dimension": "<b>Chassis Size</b> ~ 430(L) x 218(W) x 395mm (H) <br><b>Product Size</b> ~ 434(L) x 218(W) x 414mm (H) <br><b>Carton Size</b> ~ 472(L) x 280(W) x 515mm (H)",
+      "Package": "Poly Foam",
+      "Max VGA Card": "425mm",
+      "Max CPU Cooler": "170mm"
+    }
+  },
+
+  {
+      "id": "perseus",
+      "name": "PERSEUS",
+      "category": "case",
+      "hot": false,
+      "new": true,
+     "price":"",
+      "fans": "with 4 Infinity ARGB Fans",
+      "product-type": "ATX",
+      "description":"   Invasion Plus Perseus brings an industrial- inspired design through its ABS and iron mesh front panel. The unique texture, combined with the left bottom mesh panel, blends airflow, durability, and design harmony into a chassis that reflects your personal style.",
+      "mainImage": "static/PERSEUS/PERSEUS-01.png",
+      "specImage": "static/PERSEUS/PERSEUS-02.png",
+
+      "variations": {
+        "black": [
+          "static/PERSEUS/PERSEUS-01.png",
+          "static/PERSEUS/PERSEUS-02.png",
+          "static/PERSEUS/PERSEUS-03.png",
+          "static/PERSEUS/PERSEUS-04.png",
+          "static/PERSEUS/PERSEUS-05.png",
+          "static/PERSEUS/PERSEUS-06.png"
+        ]
+      },
+
+      "sellingPoints": [
+      {
+        "icon": "fa-solid fa-border-all",
+        "title": "ABS+ Iron Mesh Front Panel"
+      },
+      {
+        "icon": "fa-solid fa-wind",
+        "title": "Enhanced Mesh Ventilation"
+      },
+      {
+        "icon": "fa-solid fa-ruler-combined",
+        "title": "Product Dimension"
+      },
+      {
+        "icon": "fa-solid fa-microchip",
+        "title": "Motherboard Compatibility"
+      },
+      {
+        "icon": "fa-solid fa-fan",
+        "title": "Cooling Support"
+      },
+      {
+        "icon": "fa-solid fa-lightbulb",
+        "title": "Bottom ARGB Design"
+      }
+    ],
+    "productFeatureGrid": {
+      "title": "Product Highlights",
+      "cards": [
+        {
+          "type": "wide",
+          "title": "ABS+ Iron Mesh Front Panel",
+          "subtitle": "Premium Airflow Design",
+          "description": "Refined mesh texture provides improved ventilation and a stylish appearance.",
+          "image": "static/PERSEUS/1.png"
+        },
+        {
+          "type": "wide",
+          "title": "Enhanced Mesh Ventilation",
+          "subtitle": "Better Cooling Airflow",
+          "description": "Left-side bottom ventilation improves airflow for efficient cooling performance.",
+          "image": "static/PERSEUS/2.png"
+        },
+        {
+          "type": "wide",
+          "title": "Smart Case Layout",
+          "subtitle": "L 440mm × W 218mm × H 472mm",
+          "description": "Optimized case size with convenient USB I/O connectivity.",
+          "image": "static/PERSEUS/3.png"
+        },
+        {
+          "type": "wide",
+          "title": "Wide Compatibility",
+          "subtitle": "EATX / ATX / M-ATX / Mini-ITX",
+          "description": "Supports multiple motherboard sizes for flexible PC configurations.",
+          "image": "static/PERSEUS/4.png"
+        },
+        {
+          "type": "wide",
+          "title": "Cooling Support",
+          "subtitle": "Dual 360mm Liquid Cooling Ready",
+          "description": "Supports front and top 360mm liquid cooling, rear 120mm cooling, and PSU cover fans.",
+          "image": "static/PERSEUS/5.png",
+          "airCoolingImage": "static/PERSEUS/perseus_aircooling.png",
+          "liquidCoolingImage": "static/PERSEUS/perseus_liquidcooling.png"
+          
+        },
+        {
+          "type": "wide",
+          "title": "Bottom ARGB Design",
+          "subtitle": "Provides a sleek glow",
+          "description": "Integrated bottom ARGB lighting creates a sleek underglow effect, adding vibrant illumination that enhances your build with a clean, modern gaming aesthetic.",
+          "image": "static/PERSEUS/6.png"
+        }
+      ]
+    },
+   
+    "specs": {
+      "Model": "PERSEUS",
+      "Front Panel": "ABS + Iron Mesh",
+      "Left Side Panel": "Tempered glass with buckle",
+      "Right Side Panel": "Metal panel",
+      "Chassis": "0.5 mm",
+      "USB3.0 x 2": "Included",
+      "Type C x 1": "Included",
+      "Motherboard Support": "EATX / ATX / Micro-ATX / Mini-ITX",
+      "PSU": "ATX - Up to 200mm length",
+      "Fan/Radiator Support": "<b>Front</b> ~ 3 x 120mm or 2 x 140mm - Support 360mm liquid cooler <br><b>Top</b> ~ 3 x 120mm or 2 x 140mm - Support 360mm liquid cooler <br><b>Rear</b> ~ 1 x 120mm (Fan optional) - Support 120mm liquid cooler <br><b>PSU Top Cover</b> ~ 3 x 120mm",
+      "Drive Bays": "5.25″ ODD x0 <br>3.5″ HDD x2 <br>2.5″ SSD x1",
+      "PCI Slots": "x 7",
+      "Product Dimension": "<b>Chassis Size</b> ~ 425(L) x 218(W) x 460mm (H) <br><b>Product Size</b> ~ 440(L) x 218(W) x 472mm (H) <br><b>Carton Size</b> ~ 536(L) x 273(W) x 503mm (H)",
+      "Package": "Poly Foam",
+      "Max VGA Card": "395mm",
+      "Max CPU Cooler": "170mm"
+    }
+  },
+
+  {
+      "id": "aeolus",
+      "name": "AEOLUS 50 PRO",
+      "category": "cooler",
+       "price":"",
+      "product-type": "Air Cooler",
+      "description": "Invasion Plus Aeolus displays your CPU temperature and fan speed in real time, while six 6mm copper heat pipes quietly keep your system cool. Its PWM hydraulic-bearing fan runs smoothly and adjusts automatically. Designed for gaming and creative builds, Aeolus keeps your PC steady so you can enjoy your setup with complete peace of mind.",
+      "heroTitle": "Exceptional Air Cooling Support",
+      "heroDescription": "Featuring a Hight - Airflow layout and multiple fan mounts to keep your components cool under heavy workloads ",
+      "mainImage": "static/AEOLUS/AEOLUS-B-01.png",
+      "specImage": "static/AEOLUS/spec.jpg",
+      "variations": {
+      "black": [
+        "static/AEOLUS/AEOLUS-B-01.png",
+        "static/AEOLUS/2.png",
+        "static/AEOLUS/1.png",
+        "static/AEOLUS/3.png",
+        "static/AEOLUS/4.png",
+        "static/AEOLUS/5.png"
+      
+      ],
+      "white": [
+        "static/AEOLUS/6.png",
+        "static/AEOLUS/7.png",
+        "static/AEOLUS/8.png",
+        "static/AEOLUS/9.png"
+      ]
+    },
+    "sellingPoints": [
+  {
+    "icon": "fa-solid fa-temperature-half",
+    "title": "Real-Time Digital Display"
+  },
+  {
+    "icon": "fa-solid fa-fire-flame-simple",
+    "title": "6× 6mm Copper Heat Pipes"
+  },
+  {
+    "icon": "fa-solid fa-fan",
+    "title": "PWM Hydraulic-Bearing Fan"
+  }
+],
+
+"productFeatureGrid": {
+  "title": "Product Highlights",
+  "cards": [
+    {
+      "type": "wide",
+      "title": "REAL-TIME DIGITAL DISPLAY",
+      "subtitle": "Instant Monitoring",
+      "description": "Monitor CPU temperature and fan speed instantly.",
+      "image": "static/AEOLUS/1 (2).png"
+    },
+    {
+      "type": "wide",
+      "title": "6× 6MM COPPER HEAT PIPES",
+      "subtitle": "Efficient Thermal Transfer",
+      "description": "Fast heat transfer for efficient and reliable cooling.",
+      "image": "static/AEOLUS/2(2).png"
+    },
+    {
+      "type": "wide",
+      "title": "PWM HYDRAULIC-BEARING FAN",
+      "subtitle": "Quiet & Smart Cooling",
+      "description": "Smooth, quiet operation with automatic fan-speed control.",
+      "image": "static/AEOLUS/3(2).png"
+    }
+  ]
+},
+  
+      "specs": {
+        "Model": "AEOLUS 50 PRO",
+        "Product Size":"123(L) x 98(W) x 145(H) mm",
+        "Fan Size" : "120 x 120 x 25 mm",
+        "Heatpipe Specs": "Φ6mm x 6 pcs",
+        "Fan Voltage": "DC 12V",
+        "Fan Current": "0.25A",
+        "Power Output": "3W",
+        "Fan Connector" : "12V 4-PIN PWM",
+        "Bearing Type" : "Hydraulic Bearing",
+        "Fan Speed (Max)" : "2150 RPM ±10% (MAX)",
+        "Fan Air Pressure" : "2.50 mm/H₂O",
+        "Fan Airflow" :"80.18 CFM", 
+        "Fan Noise (Max)": "32 dBA",
+        "TDP" : "230W",
+        "Supported Platforms" : "<b>INTEL</b> ~ 1851 / 1700 / 115X <br><b>AMD</b> ~ AM4 / AM5",
+        "Recommend CPU <br><br>(Non-overclocked)":"14600 / 7950X3D AND BELOW"
+      }
+    },
+
+     {
+      "id": "aeronix360",
+      "name": "AERONIX-360",
+      "category": "cooler",
+       "price":"",
+      "product-type": "Fan",
+      "fan": "Forward fan / Reverse Fan",
+      "description": "Invasion Plus Aeronix 360 reflects thoughtful design and practical innovation, featuring Gatsby- inspired dual aluminium side frames, live fan speed monitoring, and daisy chain connectivity for a setup that feels uniquely yours.",
+      "mainImage": "static/AERONIX/AERONIX 360.png",
+      "specImage": "static/AERONIX/spec.jpg",
+      
+      "variations": {
+        
+      "black": [
+        "static/AERONIX/AERONIX 360.png"
+      ],
+      "white": [
+        "static/AERONIX/AERONIX 360 - WHITE.png"
+      ]
+    },
+    "sellingPoints": [
+  {
+    "icon": "fa-solid fa-gem",
+    "title": "Gatsby-Inspired Dual Aluminium Frames",
+    "description": "Distinctive dual aluminium side frames create a premium design crafted to stand apart."
+  },
+  {
+    "icon": "fa-solid fa-gauge-high",
+    "title": "Live Fan Speed Display",
+    "description": "Check fan performance instantly with a clear real-time speed display."
+  },
+  {
+    "icon": "fa-solid fa-link",
+    "title": "Daisy Chain Connectivity",
+    "description": "Daisy chain connectivity reduces cable clutter for a cleaner and more organized build."
+  },
+  {
+    "icon": "fa-solid fa-fan",
+    "title": "Forward & Reverse Fan Options",
+    "description": "Forward and reverse fan options provide flexible airflow for different cooling setups."
+  },
+  {
+    "icon": "fa-solid fa-ruler-combined",
+    "title": "Product Size",
+    "description": "Fan size: 365mm x 122.5mm x 25mm."
+  }
+],
+
+"productFeatureGrid": {
+  "title": "Product Highlights",
+  "cards": [
+    {
+      "type": "wide",
+      "title": "GATSBY-INSPIRED DUAL ALUMINIUM SIDE FRAMES",
+      "subtitle": "Premium Aesthetic",
+      "description": "Premium dual aluminium side frames crafted to make every build stand apart with a distinctive design.",
+      "image": "static/AERONIX/1.jpg"
+    },
+    {
+      "type": "wide",
+      "title": "LIVE FAN SPEED DISPLAY",
+      "subtitle": "Real-Time Monitoring",
+      "description": "Monitor fan speed in real time for instant performance feedback at a glance.",
+      "image": "static/AERONIX/2.jpg"
+    },
+    {
+      "type": "wide",
+      "title": "DAISY CHAIN CONNECTIVITY",
+      "subtitle": "Simplified Cable Management",
+      "description": "Simplify cable management with easy daisy chain connectivity for a cleaner-looking build.",
+      "image": "static/AERONIX/3.jpg"
+    },
+    {
+      "type": "wide",
+      "title": "FORWARD & REVERSE FAN OPTIONS",
+      "subtitle": "Flexible Airflow Setup",
+      "description": "Choose forward or reverse airflow to suit different cooling configurations and build styles.",
+      "image": "static/AERONIX/4.jpg"
+    },
+    {
+      "type": "wide",
+      "title": "PRODUCT SIZE",
+      "subtitle": "365 × 122.5 × 25 mm",
+      "description": "",
+      "image": "static/AERONIX/5.jpg"
+    }
+  ]
+},
+
+      "specs": {
+        "Model": "AERONIX 360",
+        "Product Size":"365(L) x 122.5(W) x 25(H) mm",
+        "Fan Size" : "120 x 25 mm",
+        "Fan Speed": "800 -2300 ± 10%RPM",
+        "Rated Voltage": "DC 12V",
+        "Bearing Type" : "Hydraulic Bearing",
+        "Interface" : "4Pin + 5V 3Pin",
+        "Fan Pressure" : "2.77 mm/H₂O",
+        "Service Life" :"≥40.000h", 
+        "Maximum Volunm": "66.66 CFM",
+        "Rated Current" : "0.18A",
+        "LED Color" : "ARGB",
+        "Maximum Noise":"31dBA"
+      }
+    },
+
+    {
+      "id": "aerovis360",
+      "name": "AEROVIS 360",
+      "category": "cooler",
+       "price":"",
+           "new": true,
+      "product-type": "Fan",
+      "fan": "Forward fan / Reverse Fan",
+      "description": "More than just cooling —Invasion Plus Aerovis 360 gives you smarter control, cleaner builds, and a more personalized setup with integrated monitoring, seamless connectivity, and dual zone ARGB lighting",
+      "mainImage": "static/AEROVIS/AEROVIS-B-01.png",
+      "specImage": "static/AEROVIS/AEROVIS-B-02.png",
+      "variations": {
+      "black": [
+       "static/AEROVIS/AEROVIS-B-01.png",
+       "static/AEROVIS/AEROVIS-B-02.png",
+       "static/AEROVIS/AEROVIS-B-03.png"
+      
+      ],
+      "white": [
+        "static/AEROVIS/AEROVIS-W-01.png",
+        "static/AEROVIS/AEROVIS-W-02.png",
+        "static/AEROVIS/AEROVIS-W-03.png"
+      ]
+    },
+    "sellingPoints": [
+  {
+    "icon": "fa-solid fa-link",
+    "title": "Daisy Chain Connectivity"
+  },
+  {
+    "icon": "fa-solid fa-temperature-half",
+    "title": "Temperature Display"
+  },
+  {
+    "icon": "fa-solid fa-gauge-high",
+    "title": "Fan Speed Display"
+  },
+  {
+    "icon": "fa-solid fa-fan",
+    "title": "Forward & Reverse Fan Options"
+  },
+   {
+    "icon": "fa-solid fa-lightbulb",
+    "title": "Dual Zone ARGB"
+  },
+  {
+    "icon": "fa-solid fa-ruler-combined",
+    "title": "Product Size"
+  }
+],
+"productFeatureGrid": {
+  "title": "Product Highlights",
+  "cards": [
+    {
+      "type": "wide",
+      "title": "DAISY CHAIN CONNECTIVITY",
+      "subtitle": "Simplified Cable Management",
+      "description": "Simplify cable management with easy daisy chain connectivity for a cleaner-looking build.",
+      "image": "static/AEROVIS/1.png"
+    },
+    {
+      "type": "wide",
+      "title": "TEMPERATURE DISPLAY",
+      "subtitle": "Real-Time Monitoring",
+      "description": "Monitor coolant temperature in real time for accurate system status at a glance.",
+      "image": "static/AEROVIS/2.png"
+    },
+    {
+      "type": "wide",
+      "title": "LIVE FAN SPEED DISPLAY",
+      "subtitle": "Instant Performance Feedback",
+      "description": "View fan speed instantly for quick performance monitoring and precise cooling control.",
+      "image": "static/AEROVIS/3.png"
+    },
+    {
+      "type": "wide",
+      "title": "FORWARD & REVERSE FAN OPTIONS",
+      "subtitle": "Flexible Airflow Setup",
+      "description": "Choose forward or reverse airflow to match different cooling configurations and build styles.",
+      "image": "static/AEROVIS/5.png"
+    },
+    {
+      "type": "wide",
+      "title": "DUAL ZONE ARGB LIGHTING",
+      "subtitle": "Vibrant Visual Effects",
+      "description": "Dual-zone ARGB illumination creates vibrant lighting effects for a stylish PC setup.",
+      "image": "static/AEROVIS/4.png"
+    },
+    {
+      "type": "wide",
+      "title": "PRODUCT SIZE",
+      "subtitle": "360 × 120 × 30 mm",
+      "description": "",
+      "image": "static/AEROVIS/6.png"
+    }
+  ]
+},
+      "specs": {
+        "Model": "AEROVIS 360",
+        "Product Size":"360(L) x 120(W) x 30(H) mm",
+        "Fan Size" : "120 x 25 mm",
+        "Fan Speed": "800 -2200 ± 10%RPM",
+        "Rated Voltage": "DC 12V",
+        "Bearing Type" : "Hydraulic Bearing",
+        "Interface" : "4Pin + 5V 3Pin",
+        "Fan Pressure" : "2.35 mm/H₂O",
+        "Service Life" :"≥40.000h", 
+        "Maximum Volunm": "79.99 CFM",
+        "Rated Current" : "0.18A",
+        "LED Color" : "ARGB",
+        "Maximum Noise":"≤32dBA"
+      }
+    },
+    
+
+{
+  "id": "frostvision360",
+  "name": "FROST VISION 360",
+  "category": "cooler",
+   "price":"",
+  "product-type": "Liquid Cooler",
+  "fan": "",
+  "description": "Elevates your build with Frost Vision 360mm, 3.9” IPS LCD for crisp, custom visuals and magnetic mounting freedom for flexible positioning. Equipped with a fluid dynamic bearing fan, aluminium radiator, and braided Teflon tubing, it quietly maintains smooth, reliable cooling, while the display adds a subtle, distinctive touch that makes your setup uniquely yours.",
+  "mainImage": "static/FROST VISION 360/a1.png",
+  "specImage": "static/FROST VISION 360/a5.png",
+
+  "variations": {
+    "black": [
+      "static/FROST VISION 360/a1.png",
+      "static/FROST VISION 360/a2.png",
+      "static/FROST VISION 360/a3.png",
+      "static/FROST VISION 360/a4.png",
+      "static/FROST VISION 360/a5.png",
+      "static/FROST VISION 360/a6.png",
+      "static/FROST VISION 360/a7.png",
+      "static/FROST VISION 360/a8.png",
+      "static/FROST VISION 360/a9.png"
+    ],
+    "white": [
+      "static/FROST VISION 360/a10.png",
+      "static/FROST VISION 360/a11.png",
+      "static/FROST VISION 360/a12.png",
+      "static/FROST VISION 360/a13.png",
+      "static/FROST VISION 360/a14.png",
+      "static/FROST VISION 360/a15.png",
+      "static/FROST VISION 360/a16.png",
+      "static/FROST VISION 360/a17.png",
+      "static/FROST VISION 360/a18.png",
+      "static/FROST VISION 360/a19.png"
+    ]
+  },
+  "sellingPoints": [
+  {
+    "icon": "fa-solid fa-display",
+    "title": "3.9-inch IPS LCD Display"
+  },
+  {
+    "icon": "fa-solid fa-magnet",
+    "title": "Magnetic Mounting Design"
+  },
+  {
+    "icon": "fa-solid fa-fan",
+    "title": "Fluid Dynamic Bearing Fan"
+  },
+  {
+    "icon": "fa-solid fa-temperature-arrow-down",
+    "title": "Aluminium Radiator"
+  },
+  {
+    "icon": "fa-solid fa-link",
+    "title": "Braided Teflon Tubing"
+  }
+],
+"productFeatureGrid": {
+  "title": "Product Highlights",
+  "cards": [
+    {
+      "type": "wide",
+      "title": "3.9” IPS LCD DISPLAY",
+      "subtitle": "Personalized Visuals",
+      "description": "Crisp visuals with vibrant details and personalized customization.",
+      "image": "static/FROST VISION 360/1.png"
+    },
+    {
+      "type": "wide",
+      "title": "MAGNETIC MOUNTING DESIGN",
+      "subtitle": "Flexible Positioning",
+      "description": "Flexible positioning for a clean and unique setup.",
+      "image": "static/FROST VISION 360/2.png"
+    },
+    {
+      "type": "wide",
+      "title": "FLUID DYNAMIC BEARING FAN",
+      "subtitle": "Quiet & Smooth Performance",
+      "description": "Smooth and reliable performance with reduced noise.",
+      "image": "static/FROST VISION 360/3.png"
+    },
+    {
+      "type": "wide",
+      "title": "ALUMINIUM RADIATOR",
+      "subtitle": "Efficient Thermal Dissipation",
+      "description": "Efficient heat dissipation for better cooling performance.",
+      "image": "static/FROST VISION 360/4.png"
+    },
+    {
+      "type": "wide",
+      "title": "BRAIDED TEFLON TUBING",
+      "subtitle": "Durable & Premium Finish",
+      "description": "Durable tubing with a refined, premium finish.",
+      "image": "static/FROST VISION 360/5.png"
+    }
+  ]
+},
+
+  "specs": {
+    "Model": "Frost Vision 360",
+    "Fan Specification": "",
+    "Fan Dimension": "120 x 120 x 25MM",
+    "Fan Speed": "500 – 2200 RPM ± 10%",
+    "Air Flow": "30.39 – 91.19 CFM",
+    "Air Pressure": "2.23MMH2O",
+    "Noise Level": "22 – 33 DBA",
+    "Bearing": "FDB",
+    "Rated Voltage Fan": "12V (Fan) / 5V (LED)",
+    "Connector Fan": "4-PIN PWM",
+
+    "Cooler Specification": "",
+    "Pump Connector": "3-PIN",
+    "Radiator Dimensions": "397 x 120 x 27MM",
+    "Tube Material": "Teflon",
+    "Base Plate Material": "Copper",
+    "Radiator Material": "Aluminium",
+    "Rated Voltage Pump": "12V (Pump) / 5V (LED)",
+    "Rated Voltage": "12V (Fan) / 5V (LED)",
+    "Connector": "4-PIN PWM",
+
+    "Compability": "",
+    "Intel": "LGA2066/2011-V3/2011/1151/1150/1155/1156/1366/775/1700",
+    "AMD": "AM4/AM3+/AM3/AM2+/AM2/FM2+/FM2/FM1/AM5",
+
+    "Package Contents": "",
+    "Fan": "3 PCS",
+     "ALL-IN-ONE CPU Liquid Cooler": "1 PC",
+    "Thermal Grease": "1 PC",
+    "3.95″ IPS Screen": "1 PC",
+    "Mounting Kit": "Included",
+    "Online User Manual": "Included"
+  }
+},
+
+  {
+  "id": "frostvision240",
+  "name": "FROST VISION 240",
+  "category": "cooler",
+     "price":"",
+   "hot": true,
+  "product-type": "Liquid Cooler",
+  "fan": "",
+  "description": "Invasion Plus Frost Vision 240mm brings your build to life with a 3.9” IPS LCD for crisp, custom visuals and magnetic mounting freedom for effortless positioning. Its fluid dynamic bearing fan, aluminium radiator, and braided Teflon tubing quietly support your system, while the display adds a subtle, distinctive touch that makes your setup feel genuinely personal.",
+  "mainImage": "static/FROST VISION 240/FV-240-B-01.png",
+  "specImage": "static/FROST VISION 240/FV-240-B-08.png",
+
+ "variations": {
+    "black": [
+      "static/FROST VISION 240/FV-240-B-01.png",
+      "static/FROST VISION 240/FV-240-B-02.png",
+      "static/FROST VISION 240/FV-240-B-03.png",
+      "static/FROST VISION 240/FV-240-B-04.png",
+      "static/FROST VISION 240/FV-240-B-05.png",
+      "static/FROST VISION 240/FV-240-B-06.png",
+      "static/FROST VISION 240/FV-240-B-07.png",
+      "static/FROST VISION 240/FV-240-B-08.png",
+      "static/FROST VISION 240/FV-240-B-09.png",
+      "static/FROST VISION 240/FV-240-B-10.png"
+    ],
+    "white": [
+      "static/FROST VISION 240/FV-240W-01.png",
+      "static/FROST VISION 240/FV-240W-02.png",
+      "static/FROST VISION 240/FV-240W-03.png",
+      "static/FROST VISION 240/FV-240W-04.png",
+      "static/FROST VISION 240/FV-240W-05.png",
+      "static/FROST VISION 240/FV-240W-06.png",
+      "static/FROST VISION 240/FV-240W-07.png",
+      "static/FROST VISION 240/FV-240W-08.png",
+      "static/FROST VISION 240/FV-240W-09.png",
+      "static/FROST VISION 240/FV-240W-10.png"
+    ]
+  },
+  "sellingPoints": [
+  {
+    "icon": "fa-solid fa-display",
+    "title": "3.9-inch IPS LCD Display"
+  },
+  {
+    "icon": "fa-solid fa-magnet",
+    "title": "Magnetic Mounting Design"
+  },
+  {
+    "icon": "fa-solid fa-fan",
+    "title": "Fluid Dynamic Bearing Fan"
+  },
+  {
+    "icon": "fa-solid fa-temperature-arrow-down",
+    "title": "Aluminium Radiator"
+  },
+  {
+    "icon": "fa-solid fa-link",
+    "title": "Braided Teflon Tubing"
+  }
+],
+"productFeatureGrid": {
+  "title": "Product Highlights",
+  "cards": [
+    {
+      "type": "wide",
+      "title": "3.9” IPS LCD DISPLAY",
+      "subtitle": "Personalized Visuals",
+      "description": "Crisp visuals with vibrant details and personalized customization.",
+      "image": "static/FROST VISION 240/1.png"
+    },
+    {
+      "type": "wide",
+      "title": "MAGNETIC MOUNTING DESIGN",
+      "subtitle": "Flexible Positioning",
+      "description": "Flexible positioning for a clean and unique setup.",
+      "image": "static/FROST VISION 240/2.png"
+    },
+    {
+      "type": "wide",
+      "title": "FLUID DYNAMIC BEARING FAN",
+      "subtitle": "Quiet & Smooth Performance",
+      "description": "Smooth and reliable performance with reduced noise.",
+      "image": "static/FROST VISION 240/3.png"
+    },
+    {
+      "type": "wide",
+      "title": "ALUMINIUM RADIATOR",
+      "subtitle": "Efficient Thermal Dissipation",
+      "description": "Efficient heat dissipation for better cooling performance.",
+      "image": "static/FROST VISION 240/4.png"
+    },
+    {
+      "type": "wide",
+      "title": "BRAIDED TEFLON TUBING",
+      "subtitle": "Durable & Premium Finish",
+      "description": "Durable tubing with a refined, premium finish.",
+      "image": "static/FROST VISION 240/5.png"
+    }
+  ]
+},
+
+  "specs": {
+    "Model": "Frost Vision 240", 
+    "Fan Specification": "",
+    "Fan Dimension": "120 x 120 x 25MM",
+    "Fan Speed": "500 – 2200 RPM ± 10%",
+    "Air Flow": "30.39 – 91.19 CFM",
+    "Air Pressure": "2.23MMH2O",
+    "Noise Level": "22 – 33 DBA",
+    "Bearing": "FDB",
+    "Rated Voltage Fan": "12V (Fan) / 5V (LED)",
+    "Connector Fan": "4-PIN PWM",
+
+    "Cooler Specification": "",
+    "Pump Connector": "3-PIN",
+    "Radiator Dimensions": "274 x 119 x 27MM",
+    "Tube Material": "Teflon",
+    "Base Plate Material": "Copper",
+    "Radiator Material": "Aluminium",
+    "Rated Voltage Pump": "12V (Pump) / 5V (LED)",
+    "Rated Voltage": "12V (Fan) / 5V (LED)",
+    "Connector": "4-PIN PWM",
+
+    "Compatibility": "",
+    "Intel": "LGA2066/2011-V3/2011/1151/1150/1155/1156/1366/775/1700",
+    "AMD": "AM4/AM3+/AM3/AM2+/AM2/FM2+/FM2/FM1/AM5",
+
+    "Package Contents": "",
+    "Fan": "2PCS",
+    "ALL-IN-ONE CPU Liquid Cooler": "1PC",
+    "Thermal Grease": "1PC",
+    "3.95″ IPS Screen": "1PC",
+    "Mounting Kit": "Included",
+    "Online User Manual": "Included"
+  }
+
+},
+
+ {
+      "id": "poseidon360",
+      "name": "POSEIDON 360",
+      "category": "cooler",
+      "hot": false,
+   "price":"",
+      "fans": "",
+      "product-type": "Liquid Cooler",
+      "description":"Invasion Plus Poseidon 360 brings together powerful cooling and refined aesthetics with its stunning 6.67” 90° curved 2K display. Featuring an enlarged copper cold plate and 3,300RPM three-phase, six-pole motor, it delivers reliable cooling performance while adding a subtle yet distinctive touch to your build.",
+      "mainImage": "static/POSEIDON/POSEIDON BLACK-02.png",
+      "specImage": "static/POSEIDON/POSEIDON BLACK-01.png",
+
+      "variations": {
+      "black": [
+        "static/POSEIDON/POSEIDON BLACK-02.png",
+        "static/POSEIDON/POSEIDON BLACK-03.png",
+        "static/POSEIDON/POSEIDON BLACK-04.png",
+        "static/POSEIDON/POSEIDON BLACK-05.png",
+        "static/POSEIDON/POSEIDON BLACK-06.png",
+        "static/POSEIDON/POSEIDON BLACK-07.png",
+        "static/POSEIDON/POSEIDON BLACK-08.png",
+        "static/POSEIDON/POSEIDON BLACK-01.png",
+        "static/POSEIDON/POSEIDON BLACK-09.png",
+        "static/POSEIDON/POSEIDON BLACK-10.png"
+      ],
+      "white": [
+        "static/POSEIDON/360 Liquid WH 02.png",
+        "static/POSEIDON/360 Liquid WH 03.png",
+        "static/POSEIDON/360 Liquid WH 04.png",
+         "static/POSEIDON/360 Liquid WH 08.png",
+        "static/POSEIDON/360 Liquid WH 05.png",
+        "static/POSEIDON/360 Liquid WH 06.png",
+        "static/POSEIDON/360 Liquid WH 07.png",
+        "static/POSEIDON/360 Liquid WH 01.png",
+        "static/POSEIDON/360 Liquid WH 09.png",
+        "static/POSEIDON/360 Liquid WH 10.png"
+      ]
+    },
+    "sellingPoints": [
+  {
+    "icon": "fa-solid fa-display",
+    "title": "6.7-inch 90° Curved 2K Display"
+  },
+  {
+    "icon": "fa-solid fa-eye",
+    "title": "AG Anti-Glare Coating"
+  },
+  {
+    "icon": "fa-solid fa-gauge-high",
+    "title": "60Hz Display & 400 Nits Brightness"
+  },
+  {
+    "icon": "fa-solid fa-magnet",
+    "title": "Magnetic Quick-Swap Pump Head"
+  },
+  {
+    "icon": "fa-solid fa-temperature-arrow-down",
+    "title": "Enlarged Copper Cold Plate"
+  },
+  {
+    "icon": "fa-solid fa-fan",
+    "title": "3,300RPM Three-Phase Motor"
+  }
+],
+"productFeatureGrid": {
+  "title": "Product Highlights",
+  "cards": [
+    {
+      "type": "wide",
+      "title": "6.7” ULTRA-LARGE 90° CURVED 2K DISPLAY",
+      "subtitle": "Immersive Visual Experience",
+      "description": "A bigger, immersive display with sharp details and stunning clarity.",
+      "image": "static/POSEIDON/1.png"
+    },
+    {
+      "type": "wide",
+      "title": "AG ANTI-GLARE COATING",
+      "subtitle": "Comfortable Viewing",
+      "description": "Reduces glare for a clearer and more comfortable viewing experience.",
+      "image": "static/POSEIDON/3.png"
+    },
+    {
+      "type": "wide",
+      "title": "60HZ SMOOTH DISPLAY WITH 400 NITS BRIGHTNESS",
+      "subtitle": "Fluid & Bright Viewing",
+      "description": "Delivers fluid visuals with bright and clear viewing.",
+      "image": "static/POSEIDON/2.png"
+    },
+    {
+      "type": "wide",
+      "title": "MAGNETIC QUICK-SWAP PUMP HEAD",
+      "subtitle": "Effortless Installation",
+      "description": "Easy installation with effortless customization.",
+      "image": "static/POSEIDON/4.png"
+    },
+    {
+      "type": "wide",
+      "title": "ENLARGED COPPER COLD PLATE",
+      "subtitle": "Enhanced Heat Transfer",
+      "description": "Enhances heat transfer for efficient cooling performance.",
+      "image": "static/POSEIDON/5.png"
+    },
+    {
+      "type": "wide",
+      "title": "3,300RPM THREE-PHASE, SIX-POLE MOTOR",
+      "subtitle": "Powerful & Stable Cooling",
+      "description": "Provides powerful and stable cooling performance.",
+      "image": "static/POSEIDON/6.png"
+    }
+  ]
+},
+      "specs": {
+         "Model": "Poseidon 360", 
+      "Fan Specification": "",
+      "Fan Speed": "2500 ± 10% PWM",
+      "Fan Size": "120 × 120 × 28 mm",
+      "Rated Voltage": "12V",
+      "Start Voltage": "6V",
+      "Rated Current": "0.25A",
+      "Rated Power": "3W",
+      "Air Flow": "82 CFM",
+      "Air Pressure": "3.95 mmH₂O",
+      "Noise Level": "36 dB(A)",
+      "Bearing Type": "Double Ball Bearing",
+
+      "Pump Specification": "",
+      "Motor": "Three-phase-pole",
+      "Noise": "29 dB(A)",
+      "Pump Rated Voltage": "12V",
+      "Pump Rated Power": "0.41A ± 10%",
+      "Rated Speed": "3300 ± 10% RPM",
+      "Lighting Control": "ARGB",
+
+      "Cooler Specification": "",
+      "Radiator Dimensions": "395 × 120 × 27 mm",
+      "Pipe Length": "410 mm",
+
+      "Compatibility": "",
+      "Intel": "LGA1200 / LGA17XX / LGA1851",
+      "AMD": "AM4 / AM5"
+    }
+    },
+
+   {
+  "id": "xqz",
+  "name": "XQZ INFINITY FAN",
+  "category": "cooler",
+  "hot": false,
+  "new": false,
+     "price":"",
+  "fans": "3 in 1 (With Hub) / 4 in 1 (With Hub) / 5 in 1 (With Hub) / Single",
+  "product-type": "Fan",
+  "description": "Invasion Plus XQZ Infinity Fan — Crafted to make every build feel alive. With captivating lighting, refined design, and smooth performance, it brings personality and energy to your setup while reflecting your unique style",
+  "mainImage": "static/XQZ INFINITY FAN/XQZ FAN BLACK - 01.png",
+  "specImage": "static/XQZ INFINITY FAN/XQZ FAN BLACK - 07.png",
+
+  "variations": {
+    "black": [
+      "static/XQZ INFINITY FAN/XQZ FAN BLACK - 01.png",
+      "static/XQZ INFINITY FAN/XQZ FAN BLACK - 02.png",
+      "static/XQZ INFINITY FAN/XQZ FAN BLACK - 03.png",
+      "static/XQZ INFINITY FAN/XQZ FAN BLACK - 04.png",
+      "static/XQZ INFINITY FAN/XQZ FAN BLACK - 05.png",
+      "static/XQZ INFINITY FAN/XQZ FAN BLACK - 06.png",
+      "static/XQZ INFINITY FAN/XQZ FAN BLACK - 07.png",
+      "static/XQZ INFINITY FAN/XQZ FAN BLACK - 08.png"
+    ],
+
+    "white": [
+      "static/XQZ INFINITY FAN/XQZ FAN WHITE - 01.png",
+      "static/XQZ INFINITY FAN/XQZ FAN WHITE - 02.png",
+      "static/XQZ INFINITY FAN/XQZ FAN WHITE - 03.png",
+      "static/XQZ INFINITY FAN/XQZ FAN WHITE - 04.png",
+      "static/XQZ INFINITY FAN/XQZ FAN WHITE - 05.png",
+      "static/XQZ INFINITY FAN/XQZ FAN WHITE - 06.png"
+    ]
+  },
+
+  "sellingPoints": [
+    {
+      "icon": "fa-solid fa-infinity",
+      "title": "Dual-Sided Infinity Mirror Illumination"
+    },
+    {
+      "icon": "fa-solid fa-lightbulb",
+      "title": "Four-Zone ARGB Lighting"
+    },
+    {
+      "icon": "fa-solid fa-gear",
+      "title": "Copper Alloy Motor"
+    },
+    {
+      "icon": "fa-solid fa-arrows-rotate",
+      "title": "Forward and Reverse Fan Options"
+    },
+    {
+      "icon": "fa-solid fa-ruler-combined",
+      "title": "Product Size"
+    }
+  ],
+"productFeatureGrid": {
+  "title": "Product Highlights",
+  "cards": [
+    {
+      "type": "wide",
+      "title": "DUAL-SIDED INFINITY MIRROR",
+      "subtitle": "Stunning 3D Illumination",
+      "description": "Create a stunning 3D light effect with premium dual-sided infinity mirror illumination.",
+      "image": "static/XQZ INFINITY FAN/1.png"
+    },
+    {
+      "type": "wide",
+      "title": "FOUR-ZONE ARGB LIGHTING",
+      "subtitle": "Rich Custom Lighting",
+      "description": "Four independent lighting zones produce richer colours and a unique lighting experience.",
+      "image": "static/XQZ INFINITY FAN/2.png"
+    },
+    {
+      "type": "wide",
+      "title": "COPPER ALLOY MOTOR",
+      "subtitle": "Stable & Reliable Performance",
+      "description": "Built for smooth rotation, stable airflow and reliable long-term performance.",
+      "image": "static/XQZ INFINITY FAN/3.png"
+    },
+    {
+      "type": "wide",
+      "title": "FORWARD & REVERSE FAN OPTIONS",
+      "subtitle": "Flexible Airflow Setup",
+      "description": "Choose forward or reverse airflow to match different cooling configurations.",
+      "image": "static/XQZ INFINITY FAN/4.png"
+    },
+    {
+      "type": "wide",
+      "title": "PRODUCT SIZE",
+      "subtitle": "120 × 120 × 25 mm",
+      "description": "Standard fan dimensions for compatibility with most PC cases and radiators.",
+      "image": "static/XQZ INFINITY FAN/5.png"
+    }
+  ]
+},
+
+  "specs": {
+    "Fan Model": "XQZ INFINITY FAN",
+    "Fan Size": "120 × 120 × 25 mm",
+    "Fan Speed": "800–1500 RPM ±10%",
+    "Air Flow": "45 CFM ±10%",
+    "Noise Level": "15–20 dB(A) ±10%",
+    "Bearing Type": "Hydraulic Sleeve Bearing",
+    "Connector & Control": "6 Pin",
+    "Material": "Plastic Frame",
+    "Wire Length": "550 mm",
+    "Rated Voltage": "12V DC",
+    "Rated Current": "0.12A",
+    "Rated Power": "1.5W",
+    "Fan Life": "50,000 Hours"
+  }
+},
+
+    {
+    "id": "XTG-34VPRX",
+    "name": "XTG-34VPRX",
+    "category": "monitor",
+    "hot": false,
+    "new": false,
+       "price":"",
+    "product-type": "Curved Monitor",
+
+    "description": "Invasion Plus XTG-34VPRX transforms your setup with a stunning 34” UltraWide display, delivering a wider view, smoother motion, and vibrant visuals. Experience every detail with 180Hz speed, 1ms response, and 99% sRGB colour for a display that brings your games, creations, and content to life.",
+
+    "heroTitle": "34” UltraWide Immersive Display",
+
+    "mainImage": "static/XTG-34VPRX/monitor1.png",
+    "specImage": "static/XTG-34VPRX/monitor2.png",
+    "specImage2": "static/XTG-34VPRX/monitor4.png",
+
+    "variations": {
+      "black": [
+        "static/XTG-34VPRX/monitor1.png",
+        "static/XTG-34VPRX/monitor2.png",
+        "static/XTG-34VPRX/monitor3.png",
+        "static/XTG-34VPRX/monitor4.png",
+        "static/XTG-34VPRX/monitor5.png"
+      ]
+    },
+
+    "sellingPoints": [
+      {
+        "icon": "fa-solid fa-display",
+        "title": "34” UltraWide Display"
+      },
+      {
+        "icon": "fa-solid fa-gamepad",
+        "title": "180Hz Ultra-Smooth Performance"
+      },
+      {
+        "icon": "fa-solid fa-bolt",
+        "title": "1ms Fast Response"
+      },
+      {
+        "icon": "fa-solid fa-palette",
+        "title": "99% sRGB Vivid Colour"
+      }
+    ],
+
+    "productFeatureGrid": {
+      "title": "Product Highlights",
+      "cards": [
+        {
+          "type": "wide",
+          "title": "34” UltraWide Immersive Display",
+          "subtitle": "More Screen. More Immersion.",
+          "description": "The expansive 34-inch UltraWide display provides more workspace and a wider field of view, making gaming, multitasking, and entertainment more immersive than ever.",
+          "image": "static/XTG-34VPRX/feature1.png"
+        },
+        {
+          "title": "180Hz Ultra-Smooth Performance",
+          "description": "Experience ultra-fluid gameplay with a 180Hz refresh rate, delivering smoother animations and faster responsiveness during every match.",
+          "image": "static/XTG-34VPRX/feature2.png"
+        },
+        {
+          "title": "1ms Fast Response",
+          "description": "A rapid 1ms response time reduces motion blur and ghosting, ensuring every frame remains sharp and responsive in fast-paced action.",
+          "image": "static/XTG-34VPRX/feature3.png"
+        },
+        {
+          "type": "wide",
+          "title": "99% sRGB Vivid Colour",
+          "description": "Enjoy rich, vibrant, and highly accurate colours with 99% sRGB coverage, ideal for gaming, movies, streaming, and creative work.",
+          "image": "static/XTG-34VPRX/feature4.png"
+        }
+      ]
+    },
+
+    "specs": {
+      "Model": "XTG-34VPRX",
+      "Screen Size": "34″",
+      "Curvature": "R 1500",
+      "Backlight Type": "LED",
+      "Resolution": "UWQHD 3440 × 1440P",
+      "Panel Type": "VA",
+      "Refresh Rate": "180Hz",
+      "Response Time": "1ms",
+      "Color Support": "16.7M (Typical)",
+      "Brightness": "300 cd/m² (Typical)",
+      "Aspect Ratio": "21:09",
+      "Static Contrast Ratio": "3000:1 (Typical)",
+      "HDR": "400",
+      "sRGB": "99% Color Gamut",
+      "Adobe RGB": "100% R  / 86% G / 77% B ",
+      "Color Depth": "8-bit",
+      "Viewing Angle": "178° (H) / 178° (V)",
+      "Ports": "2 × HDMI + 2 × DisplayPort + Audio + DC",
+      "Features": "G-Sync, FreeSync, Low Blue Light"
+    }
+  },
+
+      {
+      "id": "XTG-49ARCX",
+      "name": "XTG-49ARCX",
+      "category": "monitor",
+      "product-type": "Curved Monitor",
+         "price":"",
+               "hot": true,
+      "description": "Invasion Plus XTG-49ARCX delivers an immersive super ultrawide experience with its massive 49” curved display and 5K Realm resolution. Combining stunning visual clarity, smooth performance, and an expansive field of view, it transforms your setup with a seamless and premium display experience.",
+
+      "mainImage": "static/XTG-49ARCX/monitor1.png",
+      "specImage": "static/XTG-49ARCX/monitor2.png",
+      "specImage2": "static/XTG-49ARCX/monitor4.png",
+
+      "variations": {
+        "black": [
+          "static/XTG-49ARCX/monitor1.png",
+          "static/XTG-49ARCX/monitor2.png",
+          "static/XTG-49ARCX/monitor3.png",
+          "static/XTG-49ARCX/monitor4.png",
+          "static/XTG-49ARCX/monitor5.png"
+        ]
+      },
+
+      "sellingPoints": [
+      {
+        "icon": "fa-solid fa-display",
+        "title": "5K Realm UltraWide"
+      },
+      {
+        "icon": "fa-solid fa-expand",
+        "title": "49” Super Ultrawide Immersion"
+      },
+      {
+        "icon": "fa-solid fa-arrows-to-eye",
+        "title": "1500R Curved Visual Experience"
+      },
+      {
+        "icon": "fa-solid fa-gamepad",
+        "title": "165Hz Smooth Gameplay"
+      },
+      {
+        "icon": "fa-solid fa-bolt",
+        "title": "1ms Fast Response"
+      }
+    ],
+
+    "productFeatureGrid": {
+      "title": "Product Highlights",
+      "cards": [
+        {
+          "type": "wide",
+          "title": "5K Realm UltraWide",
+          "subtitle": "5120 × 1440 Resolution",
+          "description": "Experience exceptional image clarity with 5K Realm resolution, delivering an expansive workspace and ultra-sharp details for gaming, multitasking, and content creation.",
+          "image": "static/XTG-49ARCX/feature1.png"
+        },
+        {
+          "title": "49” Super Ultrawide Immersion",
+          "description": "A massive 32:9 panoramic display provides a wider field of view, replacing dual-monitor setups with one seamless screen.",
+          "image": "static/XTG-49ARCX/feature2.png"
+        },
+        {
+          "title": "1500R Curved Visual Experience",
+          "description": "The immersive 1500R curvature wraps around your vision, bringing every corner of the screen closer for enhanced comfort and realism.",
+          "image": "static/XTG-49ARCX/feature3.png"
+        },
+        {
+          "type": "wide",
+          "title": "165Hz Smooth Gameplay",
+          "description": "Enjoy ultra-fluid visuals with a 165Hz refresh rate, ensuring smoother motion, lower latency, and a competitive edge in fast-paced games.",
+          "image": "static/XTG-49ARCX/feature4.png"
+        },
+        {
+          "type": "wide",
+          "title": "1ms Fast Response",
+          "description": "A rapid 1ms response time minimizes motion blur and ghosting, delivering sharper visuals during intense gaming and high-speed action.",
+          "image": "static/XTG-49ARCX/feature5.png"
+        }
+      ]
+    },
+
+      "specs": {
+        "Model": "XTG-49ARCX",
+        "Screen Size": "49″",
+        "Curvature": "R 1500",
+        "Backlight Type": "LED",
+        "Resolution": "WLED 5120x1440P",
+        "Panel Type": "VA",
+        "Refresh Rate": "165Hz",
+        "Response Time": "1ms",
+        "Color Support": "16.7M (Typical)",
+        "Maximum Brightness": "300 cd/m² (Typical)",
+        "Aspect Ratio": "32:9",
+        "Static Contrast Ratio": "1000:1 (Typical)",
+        "HDR": "400",
+        "sRGB": "99% Color Gamut",
+        "Adobe RGB": "100% R / 86% G / 77% B",
+        "Color Depth": "8-bit + Hi-FRC",
+        "Viewing Angle": "H178° / V178°",
+        "Ports": "2× HDMI + 1× DP + 1× Type-C + 3× USB + Audio + DC",
+        "Features": "G-Sync, FreeSync, Low Blue Light, Speaker"
+      }
+    }
+
+    
+  ]
+}
