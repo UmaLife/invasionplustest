@@ -1,0 +1,314 @@
+/* =========================================================
+   RESPONSIVE SCALING
+   1920px = Base Design
+   2560px = 2K
+   3840px = 4K
+   ========================================================= */
+
+/* =========================
+   2K MONITOR
+   2560 × 1440
+   ========================= */
+
+@media (min-width: 2200px) and (max-width: 3199px) {
+
+    /* ---------- NAVBAR ---------- */
+
+    .navbar {
+        padding: 22px 52px;
+    }
+
+    .logo img {
+        height: 56px;
+    }
+
+    .nav-icons {
+        gap: 14px;
+    }
+
+    .nav-icons div {
+        font-size: 30px;
+    }
+
+    .menu-icon {
+        gap: 6px;
+    }
+
+    .menu-icon span {
+        width: 22px;
+        height: 2px;
+    }
+
+
+    /* ---------- SIDE MENU ---------- */
+
+    .side-menu {
+        width: 380px;
+    }
+
+    .product-panel.active {
+        transform: translateX(380px);
+    }
+
+    .menu-content {
+        padding: 50px 28px;
+    }
+
+    .menu-content h2 {
+        font-size: 2rem;
+        margin-bottom: 32px;
+    }
+
+    .menu-search input {
+        padding: 16px 20px;
+        margin-bottom: 42px;
+        font-size: 16px;
+    }
+
+    .menu-content li {
+        padding: 21px 0;
+        font-size: 1.1rem;
+    }
+
+    .menu-logo {
+        width: 210px;
+    }
+
+
+    /* ---------- PRODUCT PANEL ---------- */
+
+    .product-panel {
+        width: 760px;
+    }
+
+    .panel-content {
+        padding: 115px 38px 50px;
+        gap: 25px;
+
+        height: calc(100vh - 115px);
+    }
+
+    .product-item {
+        height: 270px;
+        border-radius: 16px;
+    }
+
+    .product-item:nth-child(3) {
+        height: 290px;
+    }
+
+    .product-item span {
+        left: 20px;
+        bottom: 18px;
+        font-size: 16px;
+    }
+
+
+    /* ---------- SEARCH ---------- */
+
+    .search-container {
+        max-width: 1500px;
+        padding-top: 110px;
+    }
+
+    .search-logo img {
+        width: 220px;
+    }
+
+    .search-box {
+        max-width: 1000px;
+    }
+
+    .search-box input {
+        height: 72px;
+        font-size: 1.15rem;
+        padding-left: 30px;
+        padding-right: 80px;
+    }
+
+    .search-btn {
+        width: 50px;
+        height: 50px;
+    }
+
+    .search-links {
+        max-width: 1100px;
+        gap: 70px;
+        margin-top: 50px;
+        padding-top: 35px;
+    }
+
+    .search-column {
+        gap: 15px;
+    }
+
+    .search-column h4 {
+        font-size: 1rem;
+    }
+
+    .search-column a {
+        font-size: 16px;
+    }
+}
+
+
+/* =========================================================
+   4K MONITOR
+   3840 × 2160
+   ========================================================= */
+
+@media (min-width: 3200px) {
+
+    /* ---------- NAVBAR ---------- */
+
+    .navbar {
+        padding: 32px 80px;
+    }
+
+    .logo img {
+        height: 78px;
+    }
+
+    .nav-icons {
+        gap: 20px;
+    }
+
+    .nav-icons div {
+        font-size: 40px;
+    }
+
+    .menu-icon {
+        gap: 8px;
+    }
+
+    .menu-icon span {
+        width: 30px;
+        height: 3px;
+    }
+
+
+    /* ---------- SIDE MENU ---------- */
+
+    .side-menu {
+        width: 520px;
+    }
+
+    .product-panel.active {
+        transform: translateX(520px);
+    }
+
+    .menu-content {
+        padding: 70px 42px;
+    }
+
+    .menu-content h2 {
+        font-size: 2.6rem;
+        margin-bottom: 42px;
+    }
+
+    .menu-search input {
+        padding: 20px 26px;
+        margin-bottom: 55px;
+        font-size: 20px;
+    }
+
+    .menu-content li {
+        padding: 28px 0;
+        font-size: 1.4rem;
+    }
+
+    .menu-logo {
+        width: 280px;
+    }
+
+    .menu-bottom-text {
+        font-size: .65rem;
+    }
+
+    .menu-socials {
+        gap: 25px;
+    }
+
+    .menu-socials a {
+        font-size: 22px;
+    }
+
+
+    /* ---------- PRODUCT PANEL ---------- */
+
+    .product-panel {
+        width: 1050px;
+    }
+
+    .panel-content {
+        padding: 145px 55px 70px;
+        gap: 35px;
+
+        height: calc(100vh - 145px);
+    }
+
+    .product-item {
+        height: 350px;
+        border-radius: 20px;
+    }
+
+    .product-item:nth-child(3) {
+        height: 390px;
+    }
+
+    .product-item span {
+        left: 28px;
+        bottom: 25px;
+        font-size: 20px;
+        letter-spacing: 1.5px;
+    }
+
+
+    /* ---------- SEARCH ---------- */
+
+    .search-container {
+        max-width: 1900px;
+        padding-top: 140px;
+    }
+
+    .search-logo img {
+        width: 300px;
+    }
+
+    .search-box {
+        max-width: 1400px;
+    }
+
+    .search-box input {
+        height: 88px;
+        font-size: 1.4rem;
+
+        padding-left: 42px;
+        padding-right: 105px;
+    }
+
+    .search-btn {
+        width: 64px;
+        height: 64px;
+    }
+
+    .search-links {
+        max-width: 1500px;
+        gap: 100px;
+
+        margin-top: 65px;
+        padding-top: 45px;
+    }
+
+    .search-column {
+        gap: 20px;
+    }
+
+    .search-column h4 {
+        font-size: 1.2rem;
+    }
+
+    .search-column a {
+        font-size: 19px;
+    }
+}

@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Existing Website CSS -->
+    <link rel="stylesheet"
+          href="static/style.css">
+
+    <link rel="stylesheet"
+          href="static/css/xqz-description.css">
+
+    <link rel="stylesheet"
+          href="static/explore.css">
+
+    <!-- Same product card CSS -->
+    <link rel="stylesheet"
+          href="static/style1.css">
+
+    <!-- DM Sans -->
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans"
+          rel="stylesheet">
+
+    <title>All Products | InvasionPlus</title>
+
+
+    <style>
+
+        /* =====================================================
+           GENERAL
+        ===================================================== */
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background: #000;
+            color: #fff;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+
+        /* =====================================================
+           PAGE CONTAINER
+        ===================================================== */
+
+        .all-products-container {
+
+            width: min(85%, 1500px);
+
+            margin: 0 auto;
+
+            padding-top: 150px;
+
+            padding-bottom: 100px;
+        }
+
+
+        /* =====================================================
+           HEADER
+        ===================================================== */
+
+        .all-products-header {
+
+            text-align: center;
+
+            margin-bottom: 60px;
+        }
+
+
+        .all-products-header .small-title {
+
+            display: block;
+
+            color: #fbb03b;
+
+            font-size: .75rem;
+
+            font-weight: 600;
+
+            letter-spacing: 4px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .all-products-header h1 {
+
+            margin: 0;
+
+            color: #fff;
+
+            font-size: clamp(
+                2.5rem,
+                5vw,
+                5rem
+            );
+
+            line-height: 1;
+
+            font-weight: 800;
+
+            letter-spacing: 3px;
+        }
+
+
+        .all-products-header p {
+
+            max-width: 650px;
+
+            margin:
+                25px auto 0;
+
+            color: #888;
+
+            font-size: .95rem;
+
+            line-height: 1.7;
+        }
+
+
+        /* =====================================================
+           CATEGORY NAVIGATION
+        ===================================================== */
+
+        .category-navigation {
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            flex-wrap: wrap;
+
+            gap: 12px;
+
+            margin-top: 40px;
+        }
+
+
+        .category-navigation a {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            height: 46px;
+
+            padding:
+                0 25px;
+
+            border:
+                1px solid
+                rgba(255,255,255,.2);
+
+            border-radius: 50px;
+
+            background: #111;
+
+            color: #aaa;
+
+            text-decoration: none;
+
+            font-size: .75rem;
+
+            font-weight: 600;
+
+            letter-spacing: 1px;
+
+            transition:
+                color .3s ease,
+                background .3s ease,
+                border-color .3s ease,
+                transform .3s ease;
+        }
+
+
+        .category-navigation a:hover {
+
+            color: #111;
+
+            background: #fbb03b;
+
+            border-color: #fbb03b;
+
+            transform:
+                translateY(-3px);
+        }
+
+
+        .category-navigation a.active {
+
+            color: #111;
+
+            background: #fbb03b;
+
+            border-color: #fbb03b;
+        }
+
+
+        /* =====================================================
+           PRODUCT TOP
+        ===================================================== */
+
+        .products-top {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            width: 100%;
+
+            margin-bottom: 3rem;
+
+            padding-bottom: 15px;
+
+            border-bottom:
+                1px solid
+                rgba(255,255,255,.15);
+        }
+
+
+        #product-count {
+
+            color: #777;
+
+            font-size: .75rem;
+
+            font-weight: 600;
+
+            letter-spacing: 2px;
+        }
+
+
+        /* =====================================================
+           PRODUCT GRID
+           Same structure as style1.css
+        ===================================================== */
+
+        .all-products-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 2rem;
+
+            width: 100%;
+        }
+
+
+        /* =====================================================
+           PRODUCT
+        ===================================================== */
+
+        .all-products-grid .product {
+
+            background: #111;
+
+            border:
+                1px solid
+                transparent;
+
+            border-radius: 18px;
+
+            overflow: hidden;
+
+            color: white;
+
+            width: 100%;
+
+            min-height: 430px;
+
+            padding: 1.5rem;
+
+            box-sizing: border-box;
+
+            cursor: pointer;
+
+            opacity: 0;
+
+            transform:
+                translateY(35px);
+
+            transition:
+                opacity .7s ease,
+                transform .7s ease,
+                box-shadow .3s ease,
+                border-color .3s ease;
+
+            text-align: center;
+        }
+
+
+        /* =====================================================
+           PRODUCT SHOW
+        ===================================================== */
+
+        .all-products-grid
+        .product.show {
+
+            opacity: 1;
+
+            transform:
+                translateY(0);
+        }
+
+
+        /* =====================================================
+           PRODUCT HOVER
+        ===================================================== */
+
+        .all-products-grid
+        .product.show:hover {
+
+            transform:
+                translateY(-10px)
+                scale(1.02);
+
+            border-color:
+                rgba(240,165,0,.55);
+
+            background: #151515;
+
+            box-shadow:
+                0 12px 35px
+                rgba(0,0,0,.55),
+
+                0 0 25px
+                rgba(240,165,0,.12);
+        }
+
+
+        /* =====================================================
+           PRODUCT IMAGE
+        ===================================================== */
+
+        .all-products-grid
+        .product img {
+
+            width: 105%;
+
+            height: 300px;
+
+            object-fit: contain;
+
+            object-position: center;
+
+            display: block;
+
+            margin:
+                0 auto 1.5rem;
+
+            transition:
+                transform .35s ease,
+                filter .35s ease;
+        }
+
+
+        .all-products-grid
+        .product:hover img {
+
+            transform:
+                scale(1.06);
+
+            filter:
+                drop-shadow(
+                    0 0 14px
+                    rgba(240,165,0,.25)
+                );
+        }
+
+
+        /* =====================================================
+           PRODUCT NAME
+        ===================================================== */
+
+        .all-products-grid
+        .product-name {
+
+            width: 100%;
+
+            text-align: center;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+        }
+
+
+        .all-products-grid
+        .product-name h3 {
+
+            width: 100%;
+
+            height: 58px;
+
+            margin:
+                0 0 2rem;
+
+            padding: 0;
+
+            display: flex;
+
+            align-items: flex-start;
+
+            justify-content: center;
+
+            text-align: center;
+
+            font-size: 2rem;
+
+            font-weight: 700;
+
+            line-height: 1.2;
+
+            letter-spacing: 1px;
+
+            box-sizing: border-box;
+
+            transition:
+                color .3s ease;
+        }
+
+
+        .all-products-grid
+        .product:hover
+        .product-name h3 {
+
+            color: #fbb03b;
+        }
+
+
+        /* =====================================================
+           PRODUCT INFO
+        ===================================================== */
+
+        .all-products-grid
+        .product-name p {
+
+            width: 100%;
+
+            margin:
+                0 0 1rem;
+
+            padding: 0;
+
+            text-align: center;
+
+            color: #aaa;
+
+            font-size: .9rem;
+
+            line-height: 1.5;
+
+            letter-spacing: .5px;
+        }
+
+
+        /* =====================================================
+           PRICE
+        ===================================================== */
+
+        .all-products-grid
+        .price {
+
+            display: block;
+
+            margin-top: 5px;
+
+            color: #fff;
+
+            font-size: 1rem;
+
+            font-weight: 600;
+        }
+
+
+        /* =====================================================
+           PRICE DIVIDER
+        ===================================================== */
+
+        .all-products-grid
+        .price-divider {
+
+            width: 0;
+
+            height: 4px;
+
+            background: #fbb03b;
+
+            border-radius: 20px;
+
+            margin:
+                0 auto 1rem;
+
+            transition:
+                width .4s ease;
+        }
+
+
+        .all-products-grid
+        .product:hover
+        .price-divider {
+
+            width: 50px;
+        }
+
+
+        /* =====================================================
+           LEARN MORE
+        ===================================================== */
+
+        .all-products-grid
+        .product-learn-more {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            width: auto;
+
+            margin:
+                0 auto !important;
+
+            padding:
+                10px 22px;
+
+            background: #fbb03b;
+
+            color: #111;
+
+            border-radius: 50px;
+
+            font-size: .85rem;
+
+            font-weight: 500;
+
+            line-height: 1;
+
+            text-decoration: none;
+
+            opacity: 0;
+
+            letter-spacing: 0;
+
+            transform:
+                translateY(5px);
+
+            transition:
+                opacity .3s ease,
+                transform .3s ease,
+                background .3s ease,
+                color .3s ease;
+        }
+
+
+        .all-products-grid
+        .product:hover
+        .product-learn-more {
+
+            opacity: 1;
+
+            transform:
+                translateY(0);
+        }
+
+
+        .all-products-grid
+        .product-learn-more:hover {
+
+            background: #fff;
+
+            color: #111;
+        }
+
+
+        /* =====================================================
+           ERROR
+        ===================================================== */
+
+        .products-error {
+
+            grid-column:
+                1 / -1;
+
+            text-align: center;
+
+            padding: 100px 20px;
+
+            color: #888;
+        }
+
+
+        .products-error h2 {
+
+            color: #fff;
+
+            margin-bottom: 10px;
+        }
+
+
+        /* =====================================================
+           TABLET
+        ===================================================== */
+
+        @media (max-width: 1100px) {
+
+            .all-products-grid {
+
+                grid-template-columns:
+                    repeat(3, 1fr);
+            }
+
+        }
+
+
+        @media (max-width: 900px) {
+
+            .all-products-grid {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+        }
+
+
+        /* =====================================================
+           MOBILE
+        ===================================================== */
+
+        @media (max-width: 768px) {
+
+        .all-products-container {
+            width: 92%;
+            padding-top: 110px;
+        }
+
+        .all-products-header {
+            margin-bottom: 45px;
+        }
+
+        .all-products-header h1 {
+            font-size: 2.5rem;
+        }
+
+        .all-products-header p {
+            font-size: .85rem;
+        }
+
+
+        /* =========================================
+        CATEGORY BUTTONS
+        ========================================= */
+
+        .category-navigation {
+            gap: 8px;
+        }
+
+        .category-navigation a {
+            height: 42px;
+            padding: 0 15px;
+            font-size: .62rem;
+        }
+
+
+        .all-products-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+            width: 100%;
+        }
+
+
+        .all-products-grid .product {
+
+            min-height: auto;
+
+            padding: 18px;
+
+            border-radius: 16px;
+        }
+
+        .all-products-grid .product img {
+
+            height: 140px;
+
+            margin-bottom: 18px;
+        }
+
+        .all-products-grid .product-name h3 {
+
+            font-size: 1.15rem;
+
+            margin-bottom: 12px;
+
+            height: auto;
+
+            min-height: 42px;
+        }
+
+
+        /* =========================================
+        PRODUCT INFO
+        EXACT style1.css MOBILE
+        ========================================= */
+
+        .all-products-grid .product-name p {
+
+            font-size: .8rem;
+
+            margin-bottom: 12px;
+        }
+
+
+        /* =========================================
+        PRICE
+        ========================================= */
+
+        .all-products-grid .price {
+
+            font-size: 1rem;
+
+            margin-bottom: 0;
+        }
+
+
+        /* =========================================
+        PRODUCT BOTTOM
+        ========================================= */
+
+        .all-products-grid .product-bottom {
+
+            margin: 0;
+        }
+
+
+        /* =========================================
+        LEARN MORE
+        ALWAYS VISIBLE ON MOBILE
+        ========================================= */
+
+        .all-products-grid .product-learn-more {
+
+            opacity: 1;
+
+            transform: translateY(0);
+        }
+
+
+        /* =========================================
+        PRICE DIVIDER
+        ========================================= */
+
+        .all-products-grid .price-divider {
+
+            margin-bottom: 1rem;
+        }
+
+    }
+
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <div id="navbar"></div>
+
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main class="all-products-container">
+
+
+        <!-- =================================================
+             HEADER
+        ================================================== -->
+
+        <section class="all-products-header">
+
+            <span class="small-title">
+                INVASIONPLUS
+            </span>
+
+
+            <h1>
+                ALL PRODUCTS
+            </h1>
+
+
+            <p>
+                Explore our complete collection of
+                PC cases, coolers and monitors.
+            </p>
+
+
+            <!-- =============================================
+                 CATEGORY NAVIGATION
+            ============================================== -->
+
+            <div class="category-navigation">
+
+
+                <!-- CURRENT PAGE -->
+
+                <a href="all-product.html"
+                   class="active">
+
+                    ALL PRODUCTS
+
+                </a>
+
+
+                <!-- CASES -->
+
+                <a href="cases.html">
+
+                    CASES
+
+                </a>
+
+
+                <!-- COOLERS -->
+
+                <a href="coolers.html">
+
+                    COOLERS
+
+                </a>
+
+
+                <!-- MONITORS -->
+
+                <a href="monitors.html">
+
+                    MONITORS
+
+                </a>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PRODUCT COUNT
+        ================================================== -->
+
+        <div class="products-top">
+
+            <span id="product-count">
+                LOADING PRODUCTS...
+            </span>
+
+        </div>
+
+
+
+        <!-- =================================================
+             ALL PRODUCTS
+        ================================================== -->
+
+        <section
+            class="all-products-grid"
+            id="all-products-grid">
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <div id="footer"></div>
+
+
+
+    <!-- =====================================================
+         EXISTING SITE JS
+    ====================================================== -->
+
+    <script src="set.js"></script>
+
+
+
+    <!-- =====================================================
+         ALL PRODUCTS JS
+    ====================================================== -->
+
+    <script>
+
+        let allProducts = [];
+
+
+
+        /* =================================================
+           LOAD PRODUCTS
+        ================================================= */
+
+        async function loadProducts() {
+
+            try {
+
+                const response =
+                    await fetch("products.json");
+
+
+                if (!response.ok) {
+
+                    throw new Error(
+                        "Failed to load products.json"
+                    );
+
+                }
+
+
+                const data =
+                    await response.json();
+
+
+                /*
+                 * USE THE SAME DATA STRUCTURE
+                 * AS YOUR PREVIOUS ALL PRODUCTS PAGE
+                 */
+
+                allProducts =
+                    data.products || [];
+
+
+                renderAllProducts();
+
+
+            }
+
+            catch (error) {
+
+                console.error(
+                    "Failed to load products:",
+                    error
+                );
+
+
+                document.getElementById(
+                    "product-count"
+                ).textContent =
+                    "0 PRODUCTS";
+
+
+                document.getElementById(
+                    "all-products-grid"
+                ).innerHTML = `
+
+                    <div class="products-error">
+
+                        <h2>
+                            Unable to load products
+                        </h2>
+
+                        <p>
+                            Please check products.json
+                        </p>
+
+                    </div>
+
+                `;
+
+            }
+
+        }
+
+
+
+        /* =================================================
+           RENDER ALL PRODUCTS
+        ================================================= */
+
+        function renderAllProducts() {
+
+            const container =
+                document.getElementById(
+                    "all-products-grid"
+                );
+
+
+            /*
+             * IMPORTANT:
+             *
+             * No .slice()
+             *
+             * No category limitation.
+             *
+             * Every product inside
+             * products.json is displayed.
+             */
+
+            const products =
+                allProducts;
+
+
+            /*
+             * PRODUCT COUNT
+             */
+
+            document.getElementById(
+                "product-count"
+            ).textContent =
+                `${products.length} PRODUCTS`;
+
+
+
+            /*
+             * RENDER PRODUCTS
+             */
+
+            container.innerHTML =
+                products.map(
+                    (product) => {
+
+
+                        /*
+                         * SAME IMAGE LOGIC
+                         * AS YOUR OLD PAGE
+                         */
+
+                        const image =
+                            product.mainImage ||
+                            product.images?.[0] ||
+                            product.variations?.black?.[0] ||
+                            "static/fallback.png";
+
+
+
+                        /*
+                         * SAME VARIATION LOGIC
+                         */
+
+                        const variations =
+                            product.variations
+                            ? Object.keys(
+                                product.variations
+                            ).join("/")
+                            : "Black";
+
+
+
+                        /*
+                         * PRODUCT TYPE
+                         */
+
+                        const productType =
+                            product["product-type"] ||
+                            "N/A";
+
+
+
+                        return `
+
+                            <article
+                                class="product"
+                                onclick="
+                                    window.location.href=
+                                    'product2.html?id=${product.id}'
+                                "
+                            >
+
+
+                                <!-- PRODUCT IMAGE -->
+
+                                <img
+                                    src="${image}"
+                                    alt="${product.name}"
+                                    loading="lazy"
+                                >
+
+
+                                <!-- PRODUCT INFORMATION -->
+
+                                <div
+                                    class="product-name"
+                                >
+
+
+                                    <!-- NAME -->
+
+                                    <h3>
+                                        ${product.name}
+                                    </h3>
+
+
+                                    <!-- CATEGORY -->
+
+                                    <p>
+                                        Category:
+                                        ${productType}
+                                    </p>
+
+
+                                    <!-- VARIATION -->
+
+                                    <p>
+                                        Variation:
+                                        ${variations}
+                                    </p>
+
+
+                                    <!-- PRICE -->
+
+                                    <span class="price">
+                                        ${product.price || ''}
+                                    </span>
+
+
+                                    <!-- DIVIDER -->
+
+                                    <div
+                                        class="price-divider"
+                                    ></div>
+
+
+                                    <!-- LEARN MORE -->
+
+                                    <a
+                                        href="product2.html?id=${product.id}"
+                                        class="product-learn-more"
+                                        onclick="
+                                            event.stopPropagation()
+                                        "
+                                    >
+                                        Learn More
+                                    </a>
+
+
+                                </div>
+
+                            </article>
+
+                        `;
+
+                    }
+                ).join("");
+
+
+            /*
+             * START SCROLL ANIMATION
+             */
+
+            observeProducts();
+
+        }
+
+
+
+        /* =================================================
+           PRODUCT SCROLL ANIMATION
+        ================================================= */
+
+        let productObserver;
+
+
+        function observeProducts() {
+
+            const products =
+                document.querySelectorAll(
+                    ".all-products-grid .product"
+                );
+
+
+            if (productObserver) {
+
+                productObserver.disconnect();
+
+            }
+
+
+            productObserver =
+                new IntersectionObserver(
+
+                    (entries) => {
+
+                        entries.forEach(
+                            (entry) => {
+
+                                if (
+                                    entry.isIntersecting
+                                ) {
+
+                                    entry.target.classList.add(
+                                        "show"
+                                    );
+
+
+                                    productObserver.unobserve(
+                                        entry.target
+                                    );
+
+                                }
+
+                            }
+                        );
+
+                    },
+
+                    {
+                        threshold: 0.2
+                    }
+
+                );
+
+
+            products.forEach(
+                product => {
+
+                    productObserver.observe(
+                        product
+                    );
+
+                }
+            );
+
+        }
+
+
+
+        /* =================================================
+           START
+        ================================================= */
+
+        document.addEventListener(
+            "DOMContentLoaded",
+            loadProducts
+        );
+
+    </script>
+
+
+</body>
+
+</html>
