@@ -938,7 +938,7 @@
       "heroDescription": "Featuring a Hight - Airflow layout and multiple fan mounts to keep your components cool under heavy workloads ",
       "mainImage": "static/THANATOS/THANATOS BLACK - 01.png",
       "descriptionImage": "static/THANATOS/THANATOS BLACK - 01.png",
-      "specImage": "static/THANATOS/spec.jpg",
+      "specImage": "static/THANATOS/THANATOS BLACK - 01.png",
       "variations": {
       "black": [
         "static/THANATOS/THANATOS BLACK - 01.png",
@@ -1184,7 +1184,7 @@
       "heroTitle": "Exceptional Air Cooling Support",
       "heroDescription": "Featuring a Hight - Airflow layout and multiple fan mounts to keep your components cool under heavy workloads ",
       "mainImage": "static/ZOOM/6.png",
-      "specImage": "static/ZOOM/15.png",
+      "specImage": "static/ZOOM/13.png",
       "variations": {
       "black": [
         "static/ZOOM/6.png",
@@ -1663,7 +1663,7 @@
       "heroTitle": "Exceptional Air Cooling Support",
       "heroDescription": "Featuring a Hight - Airflow layout and multiple fan mounts to keep your components cool under heavy workloads ",
       "mainImage": "static/AEOLUS/AEOLUS-B-01.png",
-      "specImage": "static/AEOLUS/spec.jpg",
+      "specImage": "static/AEOLUS/2.png",
       "variations": {
       "black": [
         "static/AEOLUS/AEOLUS-B-01.png",
@@ -1752,7 +1752,7 @@
       "fan": "Forward fan / Reverse Fan",
       "description": "Invasion Plus Aeronix 360 reflects thoughtful design and practical innovation, featuring Gatsby- inspired dual aluminium side frames, live fan speed monitoring, and daisy chain connectivity for a setup that feels uniquely yours.",
       "mainImage": "static/AERONIX/AERONIX 360.png",
-      "specImage": "static/AERONIX/spec.jpg",
+      "specImage": "static/AERONIX/spec.png",
       
       "variations": {
         
@@ -2391,7 +2391,7 @@
   "product-type": "Fan",
   "description": "Invasion Plus XQZ Infinity Fan — Crafted to make every build feel alive. With captivating lighting, refined design, and smooth performance, it brings personality and energy to your setup while reflecting your unique style",
   "mainImage": "static/XQZ INFINITY FAN/XQZ FAN BLACK - 01.png",
-  "specImage": "static/XQZ INFINITY FAN/XQZ FAN BLACK - 07.png",
+  "specImage": "static/XQZ INFINITY FAN/XQZ FAN BLACK - 02.png",
 
   "variations": {
     "black": [

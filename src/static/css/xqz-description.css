@@ -1792,3 +1792,73 @@
     width: 380px !important;
 }
 }
+
+@media (max-width: 768px) {
+    .spec-section {
+        margin-top: 40px !important;
+    }
+}
+@media (max-width: 768px) {
+
+    .spec-section {
+        height: auto !important;
+        min-height: 0 !important;
+        overflow: visible !important;
+    }
+
+    .spec-image {
+        /* This controls where Model starts */
+        height: 290px !important;
+        min-height: 0 !important;
+
+        overflow: visible !important;
+
+        display: flex !important;
+        justify-content: center !important;
+        align-items: flex-start !important;
+    }
+
+    .spec-image img {
+        /* Keep image large */
+        width: 80% !important;
+        max-width: none !important;
+        height: auto !important;
+        object-fit: contain !important;
+
+        transform: none !important;
+    }
+
+    .spec-table {
+        /* DON'T use negative margin */
+        margin-top: 0 !important;
+
+        height: auto !important;
+        min-height: 0 !important;
+        overflow: visible !important;
+        position: relative !important;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Disable spec image zoom/hover effect on mobile */
+    .spec-image::before,
+    .spec-image::after,
+    .spec-image.zoom-active::before,
+    .spec-image.zoom-active::after {
+        display: none !important;
+        content: none !important;
+    }
+
+    .spec-image.zoom-active {
+        background: transparent !important;
+        box-shadow: none !important;
+        border: none !important;
+    }
+
+    .spec-image img,
+    .spec-image.zoom-active img {
+        transform: none !important;
+        filter: none !important;
+    }
+}

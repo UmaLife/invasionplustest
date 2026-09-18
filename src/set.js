@@ -355,12 +355,18 @@ function openSearch() {
 function closeSearch() {
     const overlay = document.getElementById("searchOverlay");
     const menuIcon = document.getElementById("menuIcon");
+    const logo = document.querySelector(".logo");
 
     overlay.classList.remove("active");
     document.body.classList.remove("page-blur");
 
-    /* X becomes two bars again */
+    // X becomes two bars again
     menuIcon.classList.remove("search-active");
+
+    // Show logo again
+    if (logo) {
+        logo.style.opacity = "1";
+    }
 }
 
 function handleMenuIcon() {
