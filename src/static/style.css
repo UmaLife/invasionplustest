@@ -2491,7 +2491,7 @@ border-glow {
 
 .feature-section {
     position: relative;
-    padding: 80px 7% 160px;
+    padding: 80px 7% 30px;
     overflow: hidden;
     background: #000;
     margin: 0 !important;
@@ -2770,7 +2770,7 @@ border-glow {
 /* SPECS */
 .spec-section{
     width:86%;
-    margin:100px auto 100px;
+    margin:30px auto 100px;
     display:grid;
     grid-template-columns:38% 62%;
     gap:40px;
@@ -2868,6 +2868,54 @@ border-glow {
     color: #aaa;
     font-size: 12px;
     line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+
+    /* Feature section */
+    .feature-section {
+        padding: 50px 5% 15px;
+    }
+
+    /* Disclaimer */
+    .feature-section .disclaimer {
+        margin: 5px 0 0;
+        padding-top: 5px;
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+    /* Spec section */
+    .spec-section {
+        width: 90%;
+        margin: 15px auto 60px;
+        display: block;
+        padding: 0;
+    }
+
+    /* Spec image area */
+    .spec-image {
+        min-height: 280px;
+        height: 280px;
+    }
+
+    .spec-image img {
+        width: 75%;
+        height: 75%;
+        object-fit: contain;
+    }
+
+    /* Spec table */
+    .spec-table {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .spec-row {
+        grid-template-columns: 110px 1fr;
+        padding: 12px 0;
+        font-size: 12px;
+    }
 }
 
 /* MOBILE */
