@@ -1002,7 +1002,7 @@ html {
 .feature-grid{
     display:grid;
     grid-template-columns:1fr;
-    gap:80px;
+    gap:1px;
 }
 
 .feature-card{
@@ -3685,3 +3685,16 @@ body.page-blur > *:not(.search-overlay):not(.side-menu):not(.product-panel):not(
         font-size: 20px;
     }
 }
+
+/* Laptop/Desktop: hide */
+.product-panel-back {
+    display: none !important;
+}
+
+/* Mobile: show */
+@media (max-width: 768px) {
+    .product-panel-back {
+        display: block !important;
+    }
+}
+

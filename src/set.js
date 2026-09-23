@@ -200,21 +200,7 @@ const navbarTemplate = `
         
             <div class="search-links">
 
-                <div class="search-column">
-                    <h4>SOFTWARE</h4>
-
-                    <a href="software.html">Software</a>
-                    <a href="software.html#cases" onclick="softwareFooterClick('cases')">Cases</a>
-                    <a href="software.html#coolers" onclick="softwareFooterClick('coolers')">Coolers</a>
-                </div>
-
-                <div class="search-column">
-                    <h4>NEW ARRIVALS</h4>
-                    <a href="product2.html?id=atlas">ATLAS</a>
-                    <a href="product2.html?id=aerovis">AEROVIS</a>
-                    <a href="product2.html?id=XTG-49ARCX">XTG-49ARCX</a>
-                </div>
-
+            
                 <div class="search-column">
                     <h4>CATEGORIES</h4>
 
@@ -223,6 +209,21 @@ const navbarTemplate = `
                     <a href="monitors.html">Monitors</a>
                 </div>
 
+
+                <div class="search-column">
+                    <h4>NEW ARRIVALS</h4>
+                    <a href="product2.html?id=atlas">ATLAS</a>
+                    <a href="product2.html?id=aerovis">AEROVIS</a>
+                    <a href="product2.html?id=XTG-49ARCX">XTG-49ARCX</a>
+                </div>
+
+       <div class="search-column">
+                    <h4>SOFTWARE</h4>
+
+                    <a href="software.html">Software</a>
+                    <a href="software.html#cases" onclick="softwareFooterClick('cases')">Cases</a>
+                    <a href="software.html#coolers" onclick="softwareFooterClick('coolers')">Coolers</a>
+                </div>
             </div>
 
     </div>
