@@ -239,7 +239,7 @@ const navbarTemplate = `
             <li id="productMenu" onclick="openProductPanel()">Product</li>
 
                 <li onclick="closeProductPanel()">
-        <a href="all-product.html">Explore</a>
+        <a href="explore.html">Explore</a>
     </li>
     
             <li onclick="closeProductPanel()">

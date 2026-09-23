@@ -2497,25 +2497,6 @@ border-glow {
     margin: 0 !important;
 }
 
-.feature-section::before {
-    content: "";
-    position: absolute;
-    width: 900px;
-    height: 900px;
-    top: 15%;
-    left: 50%;
-    transform: translateX(-50%);
-    background:
-        radial-gradient(
-            circle,
-            rgba(251,176,59,.035) 0%,
-            rgba(251,176,59,.012) 30%,
-            transparent 70%
-        );
-    pointer-events: none;
-    filter: blur(20px);
-}
-
 .feature-grid {
     position: relative;
     display: flex;
