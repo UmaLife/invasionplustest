@@ -213,7 +213,7 @@ const navbarTemplate = `
                 <div class="search-column">
                     <h4>NEW ARRIVALS</h4>
                     <a href="product2.html?id=atlas">ATLAS</a>
-                    <a href="product2.html?id=aerovis">AEROVIS</a>
+                    <a href="product2.html?id=aerovis360">AEROVIS</a>
                     <a href="product2.html?id=XTG-49ARCX">XTG-49ARCX</a>
                 </div>
 

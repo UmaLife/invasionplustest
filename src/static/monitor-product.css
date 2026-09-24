@@ -3143,7 +3143,7 @@ border-glow {
 
 
 .search-column a{
-    color:#aaa;
+    color:white;
 
     text-decoration:none;
 
@@ -3152,7 +3152,7 @@ border-glow {
 
 
 .search-column a:hover{
-    color:white;
+    color:#fbb03b;
 
     transform:translateX(5px);
 }

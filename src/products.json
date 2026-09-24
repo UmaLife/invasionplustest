@@ -1299,7 +1299,7 @@
       }
     },
 
-    {
+  {
   "id": "aether",
   "name": "AETHER",
   "category": "case",
@@ -1541,7 +1541,7 @@
      "price":"",
       "fans": "with 4 Infinity ARGB Fans",
       "product-type": "ATX",
-      "description":"   Invasion Plus Perseus brings an industrial- inspired design through its ABS and iron mesh front panel. The unique texture, combined with the left bottom mesh panel, blends airflow, durability, and design harmony into a chassis that reflects your personal style.",
+      "description":"Perseus brings an industrial- inspired design through its ABS and iron mesh front panel. The unique texture, combined with the left bottom mesh panel, blends airflow, durability, and design harmony into a chassis that reflects your personal style.",
       "mainImage": "static/PERSEUS/PERSEUS-01.png",
       "specImage": "static/PERSEUS/PERSEUS-02.png",
 
@@ -1652,6 +1652,130 @@
       "Max CPU Cooler": "170mm"
     }
   },
+
+  {
+  "id": "ares-p",
+  "name": "ARES-P",
+  "category": "case",
+
+  "price": "",
+  "fans": "",
+  "product-type": "ATX/M-ATX",
+  "description": "Invasion Plus Aeres-P brings a refined, distinctive design with subtle industrial details, giving every build a sense of character and individuality.",
+  "mainImage": "static/ARES-P/ARES-P B-07.png",
+  "specImage": "static/ARES-P/ARES-P B-06.png",
+  "variations": {
+        "black": [
+          "static/ARES-P/ARES-P B-07.png",
+          "static/ARES-P/ARES-P B-01.png",
+          "static/ARES-P/ARES-P B-02.png",
+          "static/ARES-P/ARES-P B-04.png",
+          "static/ARES-P/ARES-P B-05.png",
+          "static/ARES-P/ARES-P B-06.png",
+          "static/ARES-P/ARES-P B-03.png",
+          "static/ARES-P/ARES-P B-09.png",
+          "static/ARES-P/ARES-P B-10.png"
+        ],
+        "white": [
+          "static/ARES-P/ARES-P W-01.png",
+          "static/ARES-P/ARES-P W-02.png",
+          "static/ARES-P/ARES-P W-03.png",
+          "static/ARES-P/ARES-P W-04.png",
+          "static/ARES-P/ARES-P W-05.png",
+          "static/ARES-P/ARES-P W-07.png"
+        ]
+      },
+
+  "sellingPoints": [
+    {
+      "icon": "fa-solid fa-layer-group",
+      "title": "Sculpted Industrial Frame"
+    },
+    {
+      "icon": "fa-solid fa-route",
+      "title": "Hidden Back-Connect Routing"
+    },
+    {
+      "icon": "fa-solid fa-display",
+      "title": "Secondary LCD Display Support"
+    },
+    {
+      "icon": "fa-solid fa-screwdriver-wrench",
+      "title": "Tool-Free Access"
+    },
+    {
+      "icon": "fa-solid fa-ruler-combined",
+      "title": "Product Dimension"
+    },
+    {
+      "icon": "fa-solid fa-temperature-arrow-up",
+      "title": "Radiator Support"
+    }
+  ],
+
+  "productFeatureGrid": {
+    "title": "Product Highlights",
+    "cards": [
+      {
+        "type": "wide",
+        "title": "Sculpted Industrial Frame",
+        "description": "3D layered frame with a refined metal-look finish for a distinctive industrial aesthetic.",
+        "image": "static/ARES-P/1.png"
+      },
+      {
+        "type": "wide",
+        "title": "Hidden Back-Connect Routing",
+        "description": "Concealed cable and tube routing for a cleaner, more organised interior.",
+        "image": "static/ARES-P/2.png"
+      },
+      {
+        "type": "wide",
+        "title": "Secondary LCD Display Support",
+        "description": "Dedicated space for a secondary LCD display for monitoring and personalised visuals.",
+        "image": "static/ARES-P/3.png"
+      },
+      {
+        "type": "wide",
+        "title": "Tool-Free Access",
+        "description": "Quick and convenient access for easier installation and maintenance.",
+        "image": "static/ARES-P/4.png"
+      },
+      {
+        "type": "wide",
+        "title": "Product Dimension",
+        "subtitle": "L 460mm * W 290mm * H 476mm",
+        "description": "I/O with dual USB 3.0 and Type-C 3.1 ports.",
+        "image": "static/ARES-P/5.png"
+      },
+      {
+        "type": "wide",
+        "title": "Radiator Support",
+        "description": "Supports up to 360mm liquid cooling for flexible and efficient thermal management.",
+        "image": "static/ARES-P/6.png",
+        "airCoolingImage": "static/ARES-P/ares_aircooling.png",
+        "liquidCoolingImage": "static/ARES-P/ares_liquidcooling.png"
+      }
+    ]
+  },
+
+  "specs": {
+    "Model": "ARES-P",
+    "Front Panel": "Tempered Glass",
+    "Right Side Panel": "Tempered Glass",
+    "Chassis": "0.6 MM",
+    "USB 3.0 x 2": "Included",
+    "Type-C 3.1 x 1": "Included",
+    "Motherboard Support": "ATX / M-ATX",
+    "PSU Port": "Rear / ATX / 140-160 MM",
+    "Fan/Radiator Support": "<b>TOP</b> ~ 120MM x 3 (Fan optional)<br>Support 360MM liquid cooler<br><b>Side MB</b> ~ 120MM x 3 (Fan optional)<br>Support 360MM liquid cooler<br><b>Rear</b> ~ 120MM x 2 (Fan optional)<br><b>Bottom</b> ~ 120MM x 3 (Fan optional)",
+    "Drive Bays": "5.25″ ODD x 0<br>3.5″ HDD x 1<br>2.5″ SSD x 3",
+    "PCI Slots": "7 Slots",
+    "Product Dimension": "Chassis size: L440mm x W285mm x H440mm<br>Product size: L460mm x W290mm x H476mm<br>Carton size: L530mm x W355mm x H525mm",
+    "Package": "Poly Foam",
+    "Max. VGA Card": "420 MM",
+    "Max. CPU Cooler": "165 MM"
+  }
+},
 
   {
       "id": "aeolus",
