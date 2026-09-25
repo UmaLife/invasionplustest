@@ -1657,7 +1657,7 @@
   "id": "ares-p",
   "name": "ARES-P",
   "category": "case",
-
+"new": true,
   "price": "",
   "fans": "Aeroxis 240 1pcs & 360 2pcs",
   "product-type": "ATX",

@@ -143,7 +143,7 @@ async function loadProducts() {
 
 function renderPage() {
     renderSection("hot-selling-list", allProducts.filter(p => p.hot).slice(0, 4));
-    renderSection("new-products-list", allProducts.filter(p => p.new).slice(0, 4));
+    renderSection("new-products-list", allProducts.filter(p => p.new).slice(0, 5));
     renderSection("cases-list", allProducts.filter(p => p.category === "case").slice(0, 4));
     renderSection("coolers-list", allProducts.filter(p => p.category === "cooler").slice(0, 4));
     renderSection("monitors-list", allProducts.filter(p => p.category === "monitor").slice(0, 4));
