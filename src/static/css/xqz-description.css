@@ -1820,7 +1820,7 @@
 
     .spec-image img {
         /* Keep image large */
-        width: 80% !important;
+        width: 70% !important;
         max-width: none !important;
         height: auto !important;
         object-fit: contain !important;
