@@ -440,12 +440,16 @@ function renderColors(product) {
     // Products such as E-20 have no variations object
    if (!product.variations) {
 
-    const option = document.createElement("button");
-    option.type = "button";
-    option.className = "variation-option";
-    option.textContent = "Black";
+    const colors = product.colors || ["Black"];
 
-    box.appendChild(option);
+    colors.forEach(color => {
+        const option = document.createElement("button");
+        option.type = "button";
+        option.className = "variation-option";
+        option.textContent = color;
+
+        box.appendChild(option);
+    });
 
     return;
 }

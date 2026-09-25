@@ -1661,11 +1661,12 @@
   "price": "",
   "fans": "Aeroxis 240 1pcs & 360 2pcs",
   "product-type": "ATX",
+  "colors": ["Grey", "Silver"],
   "description": "Invasion Plus Aeres-P brings a refined, distinctive design with subtle industrial details, giving every build a sense of character and individuality.",
   "mainImage": "static/ARES-P/ARES-P B-07.png",
   "specImage": "static/ARES-P/ARES-P B-06.png",
   "variations": {
-        "black": [
+        "grey": [
           "static/ARES-P/ARES-P B-07.png",
           "static/ARES-P/ARES-P B-01.png",
           "static/ARES-P/ARES-P B-02.png",
@@ -1676,7 +1677,7 @@
           "static/ARES-P/ARES-P B-09.png",
           "static/ARES-P/ARES-P B-10.png"
         ],
-        "white": [
+        "silver": [
           "static/ARES-P/ARES-P W-01.png",
           "static/ARES-P/ARES-P W-02.png",
           "static/ARES-P/ARES-P W-03.png",
@@ -1786,10 +1787,11 @@
   "fans": "Aeroxis 240 1pc & 360 2pcs",
   "product-type": "ATX",
   "description": "",
+  "colors": ["Grey", "Silver"],
   "mainImage": "static/ARES-G/ARES-G B-01.png",
   "specImage": "static/ARES-G/ARES-G B-06.png",
   "variations": {
-        "black": [
+        "grey": [
           "static/ARES-G/ARES-G B-01.png",
           "static/ARES-G/ARES-G B-02.png",
            "static/ARES-G/ARES-G B-03.png",
@@ -1799,7 +1801,7 @@
           "static/ARES-G/ARES-G B-07.png",
           "static/ARES-G/ARES-G B-08.png"
         ],
-        "white": [
+        "silver": [
           "static/ARES-G/ARES-G W-01.png",
           "static/ARES-G/ARES-G W-02.png",
           "static/ARES-G/ARES-G W-03.png",
